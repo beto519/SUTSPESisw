@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package mx.itson.vistas;
 
 /**
@@ -120,12 +116,12 @@ public class ReconocimCorporal extends javax.swing.JFrame {
 
         txtProcedimiento.setEditable(false);
         txtProcedimiento.setColumns(20);
-        txtProcedimiento.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        txtProcedimiento.setFont(new java.awt.Font("Dialog", 0, 17)); // NOI18N
         txtProcedimiento.setRows(5);
         txtProcedimiento.setText("PASO 1. Colóquese frente al niño y tenga a la mano la lista de instrucciones.\nPASO 2. Llame al niño por su nombre y dé la instrucción de la lista.\nPASO 3. Si el niño realiza la respuesta correcta de un reforzador.\nPASO 4. Si el niño no responde correctamente apoye físicamente.\nPASO 5. Disminuya el apoyo hasta alcanzar el criterio (reconocer el 80% de las partes del cuerpo).\nPASO 6. Repita 5 veces cada instrucción. Entre una y otra instrucción deje un tiempo de 10 segundos.\nPASO 7. Refuerce cada respuesta correcta.\n");
         Procedimiento.setViewportView(txtProcedimiento);
 
-        getContentPane().add(Procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 240, 830, 200));
+        getContentPane().add(Procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 240, 830, 210));
 
         iNSTRUCCIONES.setFont(new java.awt.Font("Dialog", 1, 23)); // NOI18N
         iNSTRUCCIONES.setForeground(new java.awt.Color(0, 0, 0));
@@ -142,7 +138,7 @@ public class ReconocimCorporal extends javax.swing.JFrame {
         txtListaInstrucciones.setText("1. Tócate la cabeza.\n2. Tócate las orejas.\n3. Tócate los cachetes.\n4. Tócate la nariz.\n5. Tócate los ojos.\n6. Tócate la boca.\n7. Tócate el cabello.\n8. Tócate el cuello.\n9. Tócate los hombros.\n10. Tócate los brazos.\n11. Tócate el pecho.\n12. Tócate la panza.\n13. Tócate las rodillas.\n14. Tócate los pies.\n15. Tócate las manos.\n\n");
         ListaInstrucciones.setViewportView(txtListaInstrucciones);
 
-        getContentPane().add(ListaInstrucciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 490, 830, 420));
+        getContentPane().add(ListaInstrucciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 490, 830, 430));
 
         jLabel1.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 204, 0));
