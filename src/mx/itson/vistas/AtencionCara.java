@@ -116,21 +116,21 @@ public class AtencionCara extends javax.swing.JFrame {
         txtProcedimiento.setColumns(20);
         txtProcedimiento.setFont(new java.awt.Font("Dialog", 0, 17)); // NOI18N
         txtProcedimiento.setRows(5);
-        txtProcedimiento.setText("PASO 1. Colóquese frente al niño y tenga a la mano la lista de instrucciones.\nPASO 2. Llame al niño por su nombre y dé la instrucción de la lista.\nPASO 3. Si el niño realiza la respuesta correcta de un reforzador.\nPASO 4. Si el niño no responde correctamente apoye físicamente.\nPASO 5. Disminuya el apoyo hasta alcanzar el criterio (reconocer el 80% de las partes del cuerpo).\nPASO 6. Repita 5 veces cada instrucción. Entre una y otra instrucción deje un tiempo de 10 segundos.\nPASO 7. Refuerce cada respuesta correcta.\n");
+        txtProcedimiento.setText("PASO 1. Sentarse frente a frente.\nPASO 2. Llamarlo por su nombre y dar la indicación “Mírame”.\nPASO 3. La respuesta correcta del niño debe ser mirar a los ojos del terapeuta.\nPASO 4. Si el niño no da la respuesta correcta, en dos ocasiones que haya intentado, \ncomience a ofrecer apoyos.\nPASO 5. Seleccione una golosina pequeña visible que pueda tomar entre sus dedos pulgar e índice, \nmuéstrelo al niño para que haga contacto visual con la golosina, luego llévela al inicio de su nariz entre sus \nojos, de tal manera que el niño al mirar la golosina lo estará viendo a usted a los ojos. Al mismo tiempo debe \nllamarlo por su nombre y decir “Mírame”.\nPASO 6. Refuerce cada conducta correcta.\nPASO 7. Repita el procedimiento hasta eliminar el apoyo y cumplir el criterio.\n\n");
         Procedimiento.setViewportView(txtProcedimiento);
 
-        getContentPane().add(Procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 300, 830, 210));
+        getContentPane().add(Procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 300, 830, 320));
 
         jLabel1.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 153, 0));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Cel: 44 22 64 55 32 ");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 570, 690, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 650, 690, -1));
 
         jLabel2.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(51, 153, 0));
         jLabel2.setText("Puente de Alvarado 305, Col. Carretas. Querétaro, Querétaro. ");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 540, -1, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 620, -1, -1));
 
         Mei.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/Mei.png"))); // NOI18N
         getContentPane().add(Mei, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
