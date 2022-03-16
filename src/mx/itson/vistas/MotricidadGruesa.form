@@ -18,7 +18,7 @@
     <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
     <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
     <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
-    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,2,-80,0,0,3,-107"/>
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,3,-125,0,0,3,-95"/>
   </AuxValues>
 
   <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
@@ -33,7 +33,7 @@
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="0" green="0" red="0" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="  Poner atenci&#xf3;n a la cara"/>
+        <Property name="text" type="java.lang.String" value="  Ejercicios de motricidad gruesa"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
             <BevelBorder/>
@@ -75,7 +75,7 @@
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="0" green="0" red="0" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="  7-05-2017"/>
+        <Property name="text" type="java.lang.String" value="  18-01-2016  "/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
             <BevelBorder/>
@@ -117,7 +117,7 @@
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="0" green="0" red="0" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="  7-06-2017"/>
+        <Property name="text" type="java.lang.String" value="  15-02-2016"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
             <BevelBorder/>
@@ -242,7 +242,7 @@
       </AuxValues>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="60" y="300" width="830" height="320"/>
+          <AbsoluteConstraints x="60" y="300" width="830" height="510"/>
         </Constraint>
       </Constraints>
 
@@ -256,41 +256,41 @@
               <Font name="Dialog" size="17" style="0"/>
             </Property>
             <Property name="rows" type="int" value="5"/>
-            <Property name="text" type="java.lang.String" value="PASO 1. Sentarse frente a frente.&#xa;PASO 2. Llamarlo por su nombre y dar la indicaci&#xf3;n &#x201c;M&#xed;rame&#x201d;.&#xa;PASO 3. La respuesta correcta del ni&#xf1;o debe ser mirar a los ojos del terapeuta.&#xa;PASO 4. Si el ni&#xf1;o no da la respuesta correcta, en dos ocasiones que haya intentado, &#xa;comience a ofrecer apoyos.&#xa;PASO 5. Seleccione una golosina peque&#xf1;a visible que pueda tomar entre sus dedos pulgar e &#xed;ndice, &#xa;mu&#xe9;strelo al ni&#xf1;o para que haga contacto visual con la golosina, luego ll&#xe9;vela al inicio de su nariz entre sus &#xa;ojos, de tal manera que el ni&#xf1;o al mirar la golosina lo estar&#xe1; viendo a usted a los ojos. Al mismo tiempo debe &#xa;llamarlo por su nombre y decir &#x201c;M&#xed;rame&#x201d;.&#xa;PASO 6. Refuerce cada conducta correcta.&#xa;PASO 7. Repita el procedimiento hasta eliminar el apoyo y cumplir el criterio.&#xa;&#xa;"/>
+            <Property name="text" type="java.lang.String" value="Para mejorar la motricidad gruesa se har&#xe1;n circuitos donde debe tratar de hacer equilibrio, correr, saltar, &#xa;rodar, escalar.&#xa;&#xa;Poner una l&#xed;nea en el suelo, o una tabla al aire, por donde el ni&#xf1;o debe pasar cada vez a mayor velocidad &#xa;manteniendo el equilibrio o cuidando de siempre pisar la l&#xed;nea que le trazaron. Recuerde, inicie lento y vaya &#xa;imprimiendo cada vez m&#xe1;s velocidad.&#xa;Colocar una hilera de 5 a 10 obst&#xe1;culos, los cuales el ni&#xf1;o debe pasar por ellos salt&#xe1;ndolos. &#xa;Los obst&#xe1;culos pueden ser cilindros peque&#xf1;os, o aros.&#xa;&#xa;Colocar un circuito, puede apoyarse con aros grandes, o con un gusano de estimulaci&#xf3;n motriz, &#xa;por donde el ni&#xf1;o debe pasar agachado o a gatas.&#xa;&#xa;Colocar un circuito donde el ni&#xf1;o deba ir y venir corriendo, por lo menos tres repeticiones en este circuito.&#xa;&#xa;Para el circuito de escalar puede apoyarse con el uso de una escalera.&#xa;&#xa;Colocar un circuito en donde se acueste y tenga que rodar.&#xa;&#xa;Lanzar una pelota.&#xa;&#xa;Cachar una pelota.&#xa;&#xa;Mantener el equilibrio.&#xa;&#xa;&#xa;"/>
           </Properties>
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JLabel" name="jLabel1">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Dialog" size="24" style="1"/>
-        </Property>
-        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="0" green="99" red="0" type="rgb"/>
-        </Property>
-        <Property name="horizontalAlignment" type="int" value="0"/>
-        <Property name="text" type="java.lang.String" value="Cel: 44 22 64 55 32 "/>
-      </Properties>
-      <Constraints>
-        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="110" y="650" width="690" height="-1"/>
-        </Constraint>
-      </Constraints>
-    </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Dialog" size="24" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="0" green="99" red="33" type="rgb"/>
+          <Color blue="0" green="cc" red="0" type="rgb"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
+        <Property name="text" type="java.lang.String" value="Cel: 44 22 64 55 32 "/>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="100" y="850" width="690" height="-1"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel3">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dialog" size="24" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="cc" red="0" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Puente de Alvarado 305, Col. Carretas. Quer&#xe9;taro, Quer&#xe9;taro. "/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="110" y="620" width="-1" height="-1"/>
+          <AbsoluteConstraints x="100" y="820" width="-1" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -314,7 +314,7 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="0" y="0" width="920" height="690"/>
+          <AbsoluteConstraints x="0" y="0" width="930" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>

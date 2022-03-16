@@ -9,12 +9,12 @@ package mx.itson.vistas;
  *
  * @author jotha
  */
-public class AtencionCara extends javax.swing.JFrame {
+public class NombramientoObj extends javax.swing.JFrame {
 
     /**
-     * Creates new form AtencionCara
+     * Creates new form NombramientoObj
      */
-    public AtencionCara() {
+    public NombramientoObj() {
         initComponents();
     }
 
@@ -49,7 +49,7 @@ public class AtencionCara extends javax.swing.JFrame {
 
         ReconocimientoCorporal.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         ReconocimientoCorporal.setForeground(new java.awt.Color(0, 0, 0));
-        ReconocimientoCorporal.setText("  Poner atención a la cara");
+        ReconocimientoCorporal.setText("  Nombramiento de objetos");
         ReconocimientoCorporal.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         getContentPane().add(ReconocimientoCorporal, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 110, 480, 40));
 
@@ -61,7 +61,7 @@ public class AtencionCara extends javax.swing.JFrame {
 
         FechaNumElab.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         FechaNumElab.setForeground(new java.awt.Color(0, 0, 0));
-        FechaNumElab.setText("  7-05-2017");
+        FechaNumElab.setText("  18-01-2016  ");
         FechaNumElab.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         getContentPane().add(FechaNumElab, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 150, 480, 40));
 
@@ -73,7 +73,7 @@ public class AtencionCara extends javax.swing.JFrame {
 
         FechaNumRetro.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         FechaNumRetro.setForeground(new java.awt.Color(0, 0, 0));
-        FechaNumRetro.setText("  7-06-2017");
+        FechaNumRetro.setText("  15-02-2016");
         FechaNumRetro.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         getContentPane().add(FechaNumRetro, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 190, 480, 40));
 
@@ -116,19 +116,19 @@ public class AtencionCara extends javax.swing.JFrame {
         txtProcedimiento.setColumns(20);
         txtProcedimiento.setFont(new java.awt.Font("Dialog", 0, 17)); // NOI18N
         txtProcedimiento.setRows(5);
-        txtProcedimiento.setText("PASO 1. Sentarse frente a frente.\nPASO 2. Llamarlo por su nombre y dar la indicación “Mírame”.\nPASO 3. La respuesta correcta del niño debe ser mirar a los ojos del terapeuta.\nPASO 4. Si el niño no da la respuesta correcta, en dos ocasiones que haya intentado, \ncomience a ofrecer apoyos.\nPASO 5. Seleccione una golosina pequeña visible que pueda tomar entre sus dedos pulgar e índice, \nmuéstrelo al niño para que haga contacto visual con la golosina, luego llévela al inicio de su nariz entre sus \nojos, de tal manera que el niño al mirar la golosina lo estará viendo a usted a los ojos. Al mismo tiempo debe \nllamarlo por su nombre y decir “Mírame”.\nPASO 6. Refuerce cada conducta correcta.\nPASO 7. Repita el procedimiento hasta eliminar el apoyo y cumplir el criterio.\n\n");
+        txtProcedimiento.setText("PASO 1. Colóquese frente al niño. Seleccione un cuaderno de imágenes comunes, por ejemplo, frutas, \nverduras, medios de transporte, objetos de la casa, etc…\nPASO 2. La imagen debe ser del tamaño aproximado a un cuarto de hoja de tamaño carta.\nPASO 3. Llame al niño por su nombre y diga: “¿Qué es esto?\nPASO 4. La respuesta correcta del niño es que nombre el objeto.\nPASO 5. Si el niño no nombra el objeto, vuelva a realizar la indicación y apoye físicamente moviendo la boca\ndel niño y los labios acorde al movimiento natural para decir la palabra.\nPASO 6. Disminuya el apoyo en forma gradual hasta lograr el criterio.\nPASO 7. Refuerce cada respuesta del niño.\n\n");
         Procedimiento.setViewportView(txtProcedimiento);
 
         getContentPane().add(Procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 300, 830, 320));
 
         jLabel1.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 153, 0));
+        jLabel1.setForeground(new java.awt.Color(0, 204, 0));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Cel: 44 22 64 55 32 ");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 650, 690, -1));
 
         jLabel2.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(51, 153, 0));
+        jLabel2.setForeground(new java.awt.Color(0, 204, 0));
         jLabel2.setText("Puente de Alvarado 305, Col. Carretas. Querétaro, Querétaro. ");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 620, -1, -1));
 
@@ -136,7 +136,7 @@ public class AtencionCara extends javax.swing.JFrame {
         getContentPane().add(Mei, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
 
         Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoAmarillo.jpg"))); // NOI18N
-        getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 920, 690));
+        getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 940, 690));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -145,7 +145,7 @@ public class AtencionCara extends javax.swing.JFrame {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
+        /* SFondoNimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
@@ -158,20 +158,20 @@ public class AtencionCara extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(AtencionCara.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(NombramientoObj.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(AtencionCara.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(NombramientoObj.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(AtencionCara.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(NombramientoObj.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(AtencionCara.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(NombramientoObj.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new AtencionCara().setVisible(true);
+                new NombramientoObj().setVisible(true);
             }
         });
     }
