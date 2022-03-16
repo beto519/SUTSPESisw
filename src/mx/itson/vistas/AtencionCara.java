@@ -27,18 +27,116 @@ public class AtencionCara extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        ReconocimientoCorporal = new javax.swing.JLabel();
+        NombreDelPrograma = new javax.swing.JLabel();
+        FechaNumElab = new javax.swing.JLabel();
+        FechaElab = new javax.swing.JLabel();
+        FechaNumRetro = new javax.swing.JLabel();
+        FechaRetro = new javax.swing.JLabel();
+        MtroManuel = new javax.swing.JLabel();
+        Elaboro = new javax.swing.JLabel();
+        Programa = new javax.swing.JLabel();
+        procedimiento = new javax.swing.JLabel();
+        Procedimiento = new javax.swing.JScrollPane();
+        txtProcedimiento = new javax.swing.JTextArea();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        Mei = new javax.swing.JLabel();
+        Fondo = new javax.swing.JLabel();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        ReconocimientoCorporal.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        ReconocimientoCorporal.setForeground(new java.awt.Color(0, 0, 0));
+        ReconocimientoCorporal.setText("  Poner atención a la cara");
+        ReconocimientoCorporal.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        getContentPane().add(ReconocimientoCorporal, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 110, 480, 40));
+
+        NombreDelPrograma.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        NombreDelPrograma.setForeground(new java.awt.Color(0, 0, 0));
+        NombreDelPrograma.setText(" Nombre del Programa:");
+        NombreDelPrograma.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        getContentPane().add(NombreDelPrograma, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 110, 350, 40));
+
+        FechaNumElab.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        FechaNumElab.setForeground(new java.awt.Color(0, 0, 0));
+        FechaNumElab.setText("  7-05-2017");
+        FechaNumElab.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        getContentPane().add(FechaNumElab, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 150, 480, 40));
+
+        FechaElab.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        FechaElab.setForeground(new java.awt.Color(0, 0, 0));
+        FechaElab.setText(" Fecha de Elaboración:");
+        FechaElab.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        getContentPane().add(FechaElab, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 150, 350, 40));
+
+        FechaNumRetro.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        FechaNumRetro.setForeground(new java.awt.Color(0, 0, 0));
+        FechaNumRetro.setText("  7-06-2017");
+        FechaNumRetro.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        getContentPane().add(FechaNumRetro, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 190, 480, 40));
+
+        FechaRetro.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        FechaRetro.setForeground(new java.awt.Color(0, 0, 0));
+        FechaRetro.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        FechaRetro.setText("Fecha de Retroalimentación:"); // NOI18N
+        FechaRetro.setToolTipText("");
+        FechaRetro.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        getContentPane().add(FechaRetro, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 190, 350, 40));
+
+        MtroManuel.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        MtroManuel.setForeground(new java.awt.Color(0, 0, 0));
+        MtroManuel.setText("  Mtro. Manuel Esquer Sumuano  ");
+        MtroManuel.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        getContentPane().add(MtroManuel, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 230, 480, 40));
+
+        Elaboro.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        Elaboro.setForeground(new java.awt.Color(0, 0, 0));
+        Elaboro.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        Elaboro.setText(" Elaboró:"); // NOI18N
+        Elaboro.setToolTipText("");
+        Elaboro.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        getContentPane().add(Elaboro, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 230, 350, 40));
+
+        Programa.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        Programa.setForeground(new java.awt.Color(0, 0, 0));
+        Programa.setText("Programa");
+        getContentPane().add(Programa, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 60, -1, -1));
+
+        procedimiento.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        procedimiento.setForeground(new java.awt.Color(0, 0, 0));
+        procedimiento.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        procedimiento.setText("PROCEDIMIENTO"); // NOI18N
+        procedimiento.setToolTipText("");
+        procedimiento.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        getContentPane().add(procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 270, 830, 30));
+
+        txtProcedimiento.setEditable(false);
+        txtProcedimiento.setColumns(20);
+        txtProcedimiento.setFont(new java.awt.Font("Dialog", 0, 17)); // NOI18N
+        txtProcedimiento.setRows(5);
+        txtProcedimiento.setText("PASO 1. Colóquese frente al niño y tenga a la mano la lista de instrucciones.\nPASO 2. Llame al niño por su nombre y dé la instrucción de la lista.\nPASO 3. Si el niño realiza la respuesta correcta de un reforzador.\nPASO 4. Si el niño no responde correctamente apoye físicamente.\nPASO 5. Disminuya el apoyo hasta alcanzar el criterio (reconocer el 80% de las partes del cuerpo).\nPASO 6. Repita 5 veces cada instrucción. Entre una y otra instrucción deje un tiempo de 10 segundos.\nPASO 7. Refuerce cada respuesta correcta.\n");
+        Procedimiento.setViewportView(txtProcedimiento);
+
+        getContentPane().add(Procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 300, 830, 210));
+
+        jLabel1.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 153, 0));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("Cel: 44 22 64 55 32 ");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 570, 690, -1));
+
+        jLabel2.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(51, 153, 0));
+        jLabel2.setText("Puente de Alvarado 305, Col. Carretas. Querétaro, Querétaro. ");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 540, -1, -1));
+
+        Mei.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/Mei.png"))); // NOI18N
+        getContentPane().add(Mei, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
+
+        Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoRosa.jpg"))); // NOI18N
+        getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 920, 690));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -79,5 +177,21 @@ public class AtencionCara extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Elaboro;
+    private javax.swing.JLabel FechaElab;
+    private javax.swing.JLabel FechaNumElab;
+    private javax.swing.JLabel FechaNumRetro;
+    private javax.swing.JLabel FechaRetro;
+    private javax.swing.JLabel Fondo;
+    private javax.swing.JLabel Mei;
+    private javax.swing.JLabel MtroManuel;
+    private javax.swing.JLabel NombreDelPrograma;
+    private javax.swing.JScrollPane Procedimiento;
+    private javax.swing.JLabel Programa;
+    private javax.swing.JLabel ReconocimientoCorporal;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel procedimiento;
+    private javax.swing.JTextArea txtProcedimiento;
     // End of variables declaration//GEN-END:variables
 }
