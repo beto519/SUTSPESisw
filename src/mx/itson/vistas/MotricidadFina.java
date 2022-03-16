@@ -9,12 +9,12 @@ package mx.itson.vistas;
  *
  * @author jotha
  */
-public class AtencionCara extends javax.swing.JFrame {
+public class MotricidadFina extends javax.swing.JFrame {
 
     /**
-     * Creates new form AtencionCara
+     * Creates new form MotricidadFina
      */
-    public AtencionCara() {
+    public MotricidadFina() {
         initComponents();
     }
 
@@ -49,7 +49,7 @@ public class AtencionCara extends javax.swing.JFrame {
 
         ReconocimientoCorporal.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         ReconocimientoCorporal.setForeground(new java.awt.Color(0, 0, 0));
-        ReconocimientoCorporal.setText("  Poner atención a la cara");
+        ReconocimientoCorporal.setText("  Ejercicios de motricidad fina  ");
         ReconocimientoCorporal.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         getContentPane().add(ReconocimientoCorporal, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 110, 480, 40));
 
@@ -61,7 +61,7 @@ public class AtencionCara extends javax.swing.JFrame {
 
         FechaNumElab.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         FechaNumElab.setForeground(new java.awt.Color(0, 0, 0));
-        FechaNumElab.setText("  7-05-2017");
+        FechaNumElab.setText("  18-01-2016  ");
         FechaNumElab.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         getContentPane().add(FechaNumElab, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 150, 480, 40));
 
@@ -73,7 +73,7 @@ public class AtencionCara extends javax.swing.JFrame {
 
         FechaNumRetro.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         FechaNumRetro.setForeground(new java.awt.Color(0, 0, 0));
-        FechaNumRetro.setText("  7-06-2017");
+        FechaNumRetro.setText("  15-02-2016");
         FechaNumRetro.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         getContentPane().add(FechaNumRetro, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 190, 480, 40));
 
@@ -116,27 +116,27 @@ public class AtencionCara extends javax.swing.JFrame {
         txtProcedimiento.setColumns(20);
         txtProcedimiento.setFont(new java.awt.Font("Dialog", 0, 17)); // NOI18N
         txtProcedimiento.setRows(5);
-        txtProcedimiento.setText("PASO 1. Sentarse frente a frente.\nPASO 2. Llamarlo por su nombre y dar la indicación “Mírame”.\nPASO 3. La respuesta correcta del niño debe ser mirar a los ojos del terapeuta.\nPASO 4. Si el niño no da la respuesta correcta, en dos ocasiones que haya intentado, \ncomience a ofrecer apoyos.\nPASO 5. Seleccione una golosina pequeña visible que pueda tomar entre sus dedos pulgar e índice, \nmuéstrelo al niño para que haga contacto visual con la golosina, luego llévela al inicio de su nariz entre sus \nojos, de tal manera que el niño al mirar la golosina lo estará viendo a usted a los ojos. Al mismo tiempo debe \nllamarlo por su nombre y decir “Mírame”.\nPASO 6. Refuerce cada conducta correcta.\nPASO 7. Repita el procedimiento hasta eliminar el apoyo y cumplir el criterio.\n\n");
+        txtProcedimiento.setText("Para mejorar la motricidad fina realice los siguientes ejercicios:\n1. Colocar pinzas de la ropa en la orilla de algún plástico.\n2. Ensartar un mecatito a través de los orificios de figuras o tablas.\n3. Colocar canicas dentro de un bote, una por una.\n4. Hacer círculos grandes con lápiz o crayolas.\n5. Pegar bolitas de papel.\n\n");
         Procedimiento.setViewportView(txtProcedimiento);
 
-        getContentPane().add(Procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 300, 830, 320));
+        getContentPane().add(Procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 300, 830, 210));
 
         jLabel1.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 153, 0));
+        jLabel1.setForeground(new java.awt.Color(0, 204, 0));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Cel: 44 22 64 55 32 ");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 650, 690, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 560, 690, -1));
 
         jLabel2.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(51, 153, 0));
+        jLabel2.setForeground(new java.awt.Color(0, 204, 0));
         jLabel2.setText("Puente de Alvarado 305, Col. Carretas. Querétaro, Querétaro. ");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 620, -1, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 530, -1, -1));
 
         Mei.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/Mei.png"))); // NOI18N
         getContentPane().add(Mei, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
 
         Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoAmarillo.jpg"))); // NOI18N
-        getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 920, 690));
+        getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 920, 610));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -158,20 +158,20 @@ public class AtencionCara extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(AtencionCara.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MotricidadFina.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(AtencionCara.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MotricidadFina.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(AtencionCara.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MotricidadFina.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(AtencionCara.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MotricidadFina.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new AtencionCara().setVisible(true);
+                new MotricidadFina().setVisible(true);
             }
         });
     }
