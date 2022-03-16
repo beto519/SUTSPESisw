@@ -53,6 +53,8 @@ public class Intraverbal extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
         jButton1 = new javax.swing.JButton();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTextArea2 = new javax.swing.JTextArea();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -150,6 +152,14 @@ public class Intraverbal extends javax.swing.JFrame {
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 480, 150, 40));
 
+        jTextArea2.setColumns(20);
+        jTextArea2.setFont(new java.awt.Font("Dialog", 0, 17)); // NOI18N
+        jTextArea2.setRows(5);
+        jTextArea2.setText("PASO 1. Colóquese frente al niño y realice las preguntas de la lista.\nPASO 2. Refuerce si el niño responde correctamente a las preguntas.\nPASO 3. Si el niño no responde correctamente a las preguntas de apoyo verbal.\nPASO 4. Disminuya gradualmente el apoyo, hasta cumplir el criterio.\n");
+        jScrollPane2.setViewportView(jTextArea2);
+
+        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 330, 810, 140));
+
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoAzul.jpg"))); // NOI18N
         jLabel1.setText("jLabel1");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 810, 660));
@@ -163,8 +173,9 @@ public class Intraverbal extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
 
-ListaPreguntas listapreguntas =  new ListaPreguntas();
-listapreguntas.setVisible(true);
+        ListaPreguntas listapreguntas =  new ListaPreguntas();
+        listapreguntas.setVisible(true);
+        dispose();
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -218,7 +229,9 @@ listapreguntas.setVisible(true);
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextArea jTextArea2;
     private javax.swing.JLabel procedimiento;
     private javax.swing.JTextField txtFecha;
     // End of variables declaration//GEN-END:variables
