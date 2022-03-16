@@ -1,6 +1,9 @@
 
 package mx.itson.vistas;
 
+import java.awt.BorderLayout;
+import javax.swing.JFrame;
+
 /**
  *
  * @author jotha
@@ -12,6 +15,11 @@ public class ReconocimCorporal extends javax.swing.JFrame {
      */
     public ReconocimCorporal() {
         initComponents();
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setVisible(true);
+        setResizable(false);
+        setLocationRelativeTo(null);
+     //   setLayout(new BorderLayout());
     }
 
     /**
@@ -44,6 +52,8 @@ public class ReconocimCorporal extends javax.swing.JFrame {
         Fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMinimumSize(new java.awt.Dimension(1200, 500));
+        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         Mei.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/Mei.png"))); // NOI18N
@@ -53,25 +63,25 @@ public class ReconocimCorporal extends javax.swing.JFrame {
         ReconocimientoCorporal.setForeground(new java.awt.Color(0, 0, 0));
         ReconocimientoCorporal.setText("  Reconocimiento Corporal");
         ReconocimientoCorporal.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(ReconocimientoCorporal, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 70, 480, 40));
+        getContentPane().add(ReconocimientoCorporal, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 50, 480, 40));
 
         NombreDelPrograma.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         NombreDelPrograma.setForeground(new java.awt.Color(0, 0, 0));
         NombreDelPrograma.setText(" Nombre del Programa:");
         NombreDelPrograma.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(NombreDelPrograma, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 70, 350, 40));
+        getContentPane().add(NombreDelPrograma, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 50, 350, 40));
 
         FechaNumElab.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         FechaNumElab.setForeground(new java.awt.Color(0, 0, 0));
         FechaNumElab.setText("  7-05-2017");
         FechaNumElab.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(FechaNumElab, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 106, 480, 30));
+        getContentPane().add(FechaNumElab, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 86, 480, 50));
 
         FechaElab.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         FechaElab.setForeground(new java.awt.Color(0, 0, 0));
         FechaElab.setText(" Fecha de Elaboración:");
         FechaElab.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(FechaElab, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 106, 350, 30));
+        getContentPane().add(FechaElab, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 86, 350, 50));
 
         FechaNumRetro.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         FechaNumRetro.setForeground(new java.awt.Color(0, 0, 0));
@@ -82,7 +92,7 @@ public class ReconocimCorporal extends javax.swing.JFrame {
         FechaRetro.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         FechaRetro.setForeground(new java.awt.Color(0, 0, 0));
         FechaRetro.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        FechaRetro.setText("Fecha de  Retroalimentación:"); // NOI18N
+        FechaRetro.setText("Fecha de Retroalimentación:"); // NOI18N
         FechaRetro.setToolTipText("");
         FechaRetro.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         getContentPane().add(FechaRetro, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 134, 350, -1));
@@ -104,7 +114,7 @@ public class ReconocimCorporal extends javax.swing.JFrame {
         Programa.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         Programa.setForeground(new java.awt.Color(0, 0, 0));
         Programa.setText("Programa");
-        getContentPane().add(Programa, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 10, -1, -1));
+        getContentPane().add(Programa, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 0, -1, -1));
 
         procedimiento.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         procedimiento.setForeground(new java.awt.Color(0, 0, 0));
@@ -152,7 +162,7 @@ public class ReconocimCorporal extends javax.swing.JFrame {
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 920, -1, -1));
 
         Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoAmarillo.jpg"))); // NOI18N
-        getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 1440, 1010));
+        getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 1540, 1000));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
