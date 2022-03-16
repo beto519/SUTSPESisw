@@ -1,27 +1,20 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package mx.itson.vistas;
 
-import javax.swing.JFrame;
-
 /**
  *
- * @author jotha
+ * @author vinko
  */
-public class InstruccPartesCuerpo extends javax.swing.JFrame {
+public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
 
     /**
-     * Creates new form InstruccPartesCuerpo
+     * Creates new form InstruccSeguimientoInstrucciones
      */
-    public InstruccPartesCuerpo() {
+    public InstruccSeguimientoInstrucciones() {
         initComponents();
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setVisible(true);
-        setResizable(false);
-        setLocationRelativeTo(null);
     }
 
     /**
@@ -43,15 +36,13 @@ public class InstruccPartesCuerpo extends javax.swing.JFrame {
         Fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMinimumSize(new java.awt.Dimension(200, 150));
-        setPreferredSize(new java.awt.Dimension(910, 680));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         txtListaInstrucciones.setEditable(false);
         txtListaInstrucciones.setColumns(20);
         txtListaInstrucciones.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         txtListaInstrucciones.setRows(5);
-        txtListaInstrucciones.setText("1. Tócate la cabeza.\n2. Tócate las orejas.\n3. Tócate los cachetes.\n4. Tócate la nariz.\n5. Tócate los ojos.\n6. Tócate la boca.\n7. Tócate el cabello.\n8. Tócate el cuello.\n9. Tócate los hombros.\n10. Tócate los brazos.\n11. Tócate el pecho.\n12. Tócate la panza.\n13. Tócate las rodillas.\n14. Tócate los pies.\n15. Tócate las manos.\n\n");
+        txtListaInstrucciones.setText("1. Ponte de pie.\n2. Ven.\n3. Toca el piso con las manos.\n4. Levanta los brazos.\n5. Baja los brazos.\n6. Aplaude.\n7. Cruza los brazos.\n8. Toma esto (cualquier objeto).\n9. Ponlo debajo de la silla.\n10. Dame eso.\n11. Abre la puerta.\n12. Cierra la puerta.\n13. Recoge eso. (algo que esté en el suelo)\n14. Abre el libro.\n15. Cierra el libro.\n16. Dame tu mano.\n17. Toma el dulce.\n18. Levántate.\n19. Vete para allá.\n20. Pon tus manos en el escritorio.\n21. Pon las manos sobre la cabeza.\n22. Tócate las rodillas con las manos.\n23. Abre y cierra las manos.\nJunta tus dedos.\nPonlo sobre la silla.\nAbre el frasco.\nCierra el frasco.\nAgáchate.\nAbre la caja.\nCierra la caja.\nDame el cuaderno.\nSaca la lengua.\nDame las manos.\n");
         ListaInstrucciones.setViewportView(txtListaInstrucciones);
 
         getContentPane().add(ListaInstrucciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, 830, 430));
@@ -87,14 +78,14 @@ public class InstruccPartesCuerpo extends javax.swing.JFrame {
         });
         getContentPane().add(btnVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 10, 70, -1));
 
-        Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoAmarillo.jpg"))); // NOI18N
+        Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoRosa.jpg"))); // NOI18N
         getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 910, 640));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnVolverMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnVolverMouseClicked
-        ReconocimCorporal corporal = new ReconocimCorporal();
+        SeguimientoInstrucciones corporal = new SeguimientoInstrucciones();
         corporal.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnVolverMouseClicked
@@ -116,20 +107,20 @@ public class InstruccPartesCuerpo extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(InstruccPartesCuerpo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(InstruccSeguimientoInstrucciones.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(InstruccPartesCuerpo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(InstruccSeguimientoInstrucciones.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(InstruccPartesCuerpo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(InstruccSeguimientoInstrucciones.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(InstruccPartesCuerpo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(InstruccSeguimientoInstrucciones.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new InstruccPartesCuerpo().setVisible(true);
+                new InstruccSeguimientoInstrucciones().setVisible(true);
             }
         });
     }
