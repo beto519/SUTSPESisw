@@ -8,12 +8,12 @@ package mx.itson.vistas;
  *
  * @author vinko
  */
-public class PonerAtencionObjectos extends javax.swing.JFrame {
+public class ReconocimientoFormas extends javax.swing.JFrame {
 
     /**
-     * Creates new form PonerAtencionObjectos
+     * Creates new form ReconocimientoFormas
      */
-    public PonerAtencionObjectos() {
+    public ReconocimientoFormas() {
         initComponents();
     }
 
@@ -26,18 +26,18 @@ public class PonerAtencionObjectos extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        FechaNumElab = new javax.swing.JLabel();
         MtroManuel = new javax.swing.JLabel();
         Elaboro = new javax.swing.JLabel();
         NombreDelPrograma = new javax.swing.JLabel();
         Programa = new javax.swing.JLabel();
         procedimiento = new javax.swing.JLabel();
-        FechaNumElab = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         Procedimiento = new javax.swing.JScrollPane();
         txtProcedimiento = new javax.swing.JTextArea();
         FechaNumRetro = new javax.swing.JLabel();
         FechaElab = new javax.swing.JLabel();
-        PonerAtencionObjectos = new javax.swing.JLabel();
+        ReconocimientoDeFormas = new javax.swing.JLabel();
         Mei = new javax.swing.JLabel();
         FechaRetro = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
@@ -45,6 +45,12 @@ public class PonerAtencionObjectos extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        FechaNumElab.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        FechaNumElab.setForeground(new java.awt.Color(0, 0, 0));
+        FechaNumElab.setText("18-01-2016");
+        FechaNumElab.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        getContentPane().add(FechaNumElab, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 150, 480, 40));
 
         MtroManuel.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         MtroManuel.setForeground(new java.awt.Color(0, 0, 0));
@@ -79,12 +85,6 @@ public class PonerAtencionObjectos extends javax.swing.JFrame {
         procedimiento.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         getContentPane().add(procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 270, 830, 30));
 
-        FechaNumElab.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        FechaNumElab.setForeground(new java.awt.Color(0, 0, 0));
-        FechaNumElab.setText("18-01-2016");
-        FechaNumElab.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(FechaNumElab, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 150, 480, 40));
-
         jLabel2.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 204, 0));
         jLabel2.setText("Puente de Alvarado 305, Col. Carretas. Querétaro, Querétaro. ");
@@ -94,10 +94,10 @@ public class PonerAtencionObjectos extends javax.swing.JFrame {
         txtProcedimiento.setColumns(20);
         txtProcedimiento.setFont(new java.awt.Font("Dialog", 0, 17)); // NOI18N
         txtProcedimiento.setRows(5);
-        txtProcedimiento.setText("PASO 1. Sentarse frente a frente.\nPASO 2. Llamarlo por su nombre y dar la indicación “Mira esto”, al mismo tiempo debe señalar con su dedo \nel objeto que quiere mostrar.\nPASO 3. La respuesta correcta del niño debe ser mirar el objeto que le muestra el terapeuta.\nPASO 4. Si el niño no da la respuesta correcta, en dos ocasiones que haya intentado, comience a ofrecer \napoyos.\nPASO 5. Seleccione una golosina pequeña visible que pueda tomar entre sus dedos pulgar e índice, \nmuéstrelo al niño para que haga contacto visual con la golosina, luego llévela junto al objeto que desea mostrar, \nal mismo tiempo debe llamarlo por su nombre y dar la instrucción “Mira esto”, de tal manera que el niño al mirar \nla golosina estará viendo al objeto.\nPASO 6. Refuerce cada conducta correcta.\nPASO 7. Repita el procedimiento hasta eliminar el apoyo y cumplir el criterio.\n");
+        txtProcedimiento.setText("PASO 1. Realice distintas figuras por pares (cuadrado, círculo, triángulo)\nPASO 2. Siente al niño frente a usted, en una mesa de trabajo.\nPASO 3. De un lado coloque una figura (por ejemplo el cuadrado).\nPASO 4. Del otro lado coloque una figura cuadrada, un triángulo y un círculo.\nPASO 5. Llame al niño por su nombre, señale el cuadrado (mostrándoselo al niño) y diga: “es un cuadrado”, \nhaga énfasis en la palabra cuadrado. \nPASO 6. Luego pregunte, al mismo tiempo que señala las otras figuras ¿Cuál de estos es un cuadrado?\nPASO 7. El niño debe señalar el cuadrado.\nPASO 8. Refuerce las respuestas correctas.\nPASO 9. Si no hay respuesta correcta dé apoyo físico, y refuerce.\nPASO 10. Repita el procedimiento con cada una de las figuras.\n");
         Procedimiento.setViewportView(txtProcedimiento);
 
-        getContentPane().add(Procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 300, 830, 330));
+        getContentPane().add(Procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 300, 830, 270));
 
         FechaNumRetro.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         FechaNumRetro.setForeground(new java.awt.Color(0, 0, 0));
@@ -111,11 +111,11 @@ public class PonerAtencionObjectos extends javax.swing.JFrame {
         FechaElab.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         getContentPane().add(FechaElab, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 150, 350, 40));
 
-        PonerAtencionObjectos.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        PonerAtencionObjectos.setForeground(new java.awt.Color(0, 0, 0));
-        PonerAtencionObjectos.setText("Poner atención a objetos");
-        PonerAtencionObjectos.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(PonerAtencionObjectos, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 110, 480, 40));
+        ReconocimientoDeFormas.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        ReconocimientoDeFormas.setForeground(new java.awt.Color(0, 0, 0));
+        ReconocimientoDeFormas.setText("Reconocimiento de formas ");
+        ReconocimientoDeFormas.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        getContentPane().add(ReconocimientoDeFormas, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 110, 480, 40));
 
         Mei.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/Mei.png"))); // NOI18N
         getContentPane().add(Mei, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
@@ -157,20 +157,20 @@ public class PonerAtencionObjectos extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(PonerAtencionObjectos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ReconocimientoFormas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(PonerAtencionObjectos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ReconocimientoFormas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(PonerAtencionObjectos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ReconocimientoFormas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(PonerAtencionObjectos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ReconocimientoFormas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new PonerAtencionObjectos().setVisible(true);
+                new ReconocimientoFormas().setVisible(true);
             }
         });
     }
@@ -184,9 +184,9 @@ public class PonerAtencionObjectos extends javax.swing.JFrame {
     private javax.swing.JLabel Mei;
     private javax.swing.JLabel MtroManuel;
     private javax.swing.JLabel NombreDelPrograma;
-    private javax.swing.JLabel PonerAtencionObjectos;
     private javax.swing.JScrollPane Procedimiento;
     private javax.swing.JLabel Programa;
+    private javax.swing.JLabel ReconocimientoDeFormas;
     private javax.swing.JLabel TxtFondo;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
