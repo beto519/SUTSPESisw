@@ -4,28 +4,19 @@
  */
 package mx.itson.vistas;
 
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-
 /**
  *
  * @author lopez
  */
-public class Imitacion extends javax.swing.JFrame {
+public class ImitacionVocales extends javax.swing.JFrame {
 
     /**
-     * Creates new form Imitacion
+     * Creates new form ImitacionVocales
      */
-    public Imitacion() {
+    public ImitacionVocales() {
         initComponents();
-        setLocationRelativeTo(null);
-        fecha();
     }
- private void fecha(){
-    DateTimeFormatter fechaRealizacion = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-    txtFecha.setText(fechaRealizacion.format(LocalDateTime.now()));
 
-    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -35,9 +26,6 @@ public class Imitacion extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
-        procedimiento = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTextArea2 = new javax.swing.JTextArea();
         procedimiento1 = new javax.swing.JLabel();
@@ -57,25 +45,10 @@ public class Imitacion extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setFont(new java.awt.Font("Dialog", 0, 17)); // NOI18N
-        jTextArea1.setRows(5);
-        jTextArea1.setText("Extender el brazo derecho al frente.\nExtender el brazo izquierdo al frente.\nExtender ambos brazos al frente.\nExtender el brazo derecho lateralmente.\nExtender el brazo izquierdo lateralmente.\nExtender ambos brazos lateralmente.\nMover negativamente la cabeza.\nAplaudir.\nTaparse el ojo derecho con la mano derecha.\nTaparse el ojo izquierdo con la mano izquierda.\nTaparse ambos ojos con ambas manos.\nPararse.\nAgacharse.\nFlexionar la pierna izquierda.\nFlexionar la pierna derecha.\nBrincar.\nAbrir y cerrar la puerta.\nSentarse.\nBotar una pelota.\nTocar la puerta.\nTirar un objeto.\nRecoger un objeto.\nAcomodar la silla.\nGuardar en una bolsa.\nTocarse las rodillas.\nTocarse las orejas.\n Tocarse la cabeza con ambas manos.\nAcostarse.\n");
-        jScrollPane1.setViewportView(jTextArea1);
-
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 540, 1010, 310));
-
-        procedimiento.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        procedimiento.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        procedimiento.setText("PROCEDIMIENTO"); // NOI18N
-        procedimiento.setToolTipText("");
-        procedimiento.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 510, 1010, 30));
-
         jTextArea2.setColumns(20);
         jTextArea2.setFont(new java.awt.Font("Dialog", 0, 17)); // NOI18N
         jTextArea2.setRows(5);
-        jTextArea2.setText("PASO 1. Colóquese frente al niño. Seleccione una lista de comportamientos a imitar.\nPASO 2. Llame por su nombre al niño y de la instrucción “Haz esto”. Inmediatamente que da la instrucción haga un movimiento grueso.\nPASO 3. Si el niño realiza la respuesta imitando al terapeuta dé un reforzador.\nPASO 4. Si no da la respuesta correcta, vuelva a dar la instrucción, luego inmediatamente ofrezca apoyo físico.\nPASO 5. Disminuya gradualmente el apoyo físico hasta alcanzar el criterio.\nPASO 6. Cada instrucción se repite 10 veces. Entre instrucciones debe haber por lo menos 10 segundos de separación.\n");
+        jTextArea2.setText("PASO 1. Colóquese sentado frente al niño. \nPASO 2. Llame al niño por su nombre y de la instrucción: “di A”.\nPASO 3. Si el niño responde A, refuerce inmediatamente.\nPASO 4. Si el niño no responde correctamente, de apoyo físico modelando el sonido de la vocal en su boca.\nPASO 5. Repita el procedimiento con cada una de las vocales.\nPASO 6. Disminuya el apoyo gradualmente hasta cumplir el criterio.\n");
         jScrollPane2.setViewportView(jTextArea2);
 
         getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 330, 1010, 180));
@@ -88,7 +61,7 @@ public class Imitacion extends javax.swing.JFrame {
         getContentPane().add(procedimiento1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 300, 1010, 30));
 
         Elaboro.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        Elaboro.setText("Mtra. Melissa Alejandra Rodriguez Ruiz");
+        Elaboro.setText("Mtro. Manuel Esquer Sumuano");
         Elaboro.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         getContentPane().add(Elaboro, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 260, 560, 40));
 
@@ -100,7 +73,7 @@ public class Imitacion extends javax.swing.JFrame {
         getContentPane().add(MtroManuel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 260, 450, 40));
 
         FechaRetro.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        FechaRetro.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        FechaRetro.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         FechaRetro.setText("Fecha de  Retroalimentación:"); // NOI18N
         FechaRetro.setToolTipText("");
         FechaRetro.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -127,7 +100,7 @@ public class Imitacion extends javax.swing.JFrame {
         getContentPane().add(NombreDelPrograma, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 150, 450, 40));
 
         ReconocimientoCorporal.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        ReconocimientoCorporal.setText("Programa intraverbal");
+        ReconocimientoCorporal.setText("Imitacion de vocales");
         ReconocimientoCorporal.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         getContentPane().add(ReconocimientoCorporal, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 150, 560, 40));
 
@@ -149,7 +122,7 @@ public class Imitacion extends javax.swing.JFrame {
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoAzul.jpg"))); // NOI18N
         jLabel3.setText("jLabel1");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, 1010, 960));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, 1010, 590));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -175,20 +148,20 @@ public class Imitacion extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Imitacion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ImitacionVocales.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Imitacion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ImitacionVocales.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Imitacion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ImitacionVocales.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Imitacion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ImitacionVocales.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Imitacion().setVisible(true);
+                new ImitacionVocales().setVisible(true);
             }
         });
     }
@@ -205,11 +178,8 @@ public class Imitacion extends javax.swing.JFrame {
     private javax.swing.JLabel ReconocimientoCorporal;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextArea jTextArea2;
-    private javax.swing.JLabel procedimiento;
     private javax.swing.JLabel procedimiento1;
     private javax.swing.JTextField txtFecha;
     // End of variables declaration//GEN-END:variables
