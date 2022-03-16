@@ -8,12 +8,12 @@ package mx.itson.vistas;
  *
  * @author vinko
  */
-public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
+public class InstruccUsoPenombres extends javax.swing.JFrame {
 
     /**
-     * Creates new form InstruccSeguimientoInstrucciones
+     * Creates new form InstruccUsoPenombres
      */
-    public InstruccSeguimientoInstrucciones() {
+    public InstruccUsoPenombres() {
         initComponents();
     }
 
@@ -42,7 +42,7 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
         txtListaInstrucciones.setColumns(20);
         txtListaInstrucciones.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         txtListaInstrucciones.setRows(5);
-        txtListaInstrucciones.setText("1. Ponte de pie.\n2. Ven.\n3. Toca el piso con las manos.\n4. Levanta los brazos.\n5. Baja los brazos.\n6. Aplaude.\n7. Cruza los brazos.\n8. Toma esto (cualquier objeto).\n9. Ponlo debajo de la silla.\n10. Dame eso.\n11. Abre la puerta.\n12. Cierra la puerta.\n13. Recoge eso. (algo que esté en el suelo)\n14. Abre el libro.\n15. Cierra el libro.\n16. Dame tu mano.\n17. Toma el dulce.\n18. Levántate.\n19. Vete para allá.\n20. Pon tus manos en el escritorio.\n21. Pon las manos sobre la cabeza.\n22. Tócate las rodillas con las manos.\n23. Abre y cierra las manos.\n24. Junta tus dedos.\n25. Ponlo sobre la silla.\n26. Abre el frasco.\n27. Cierra el frasco.\n28. Agáchate.\n29. Abre la caja.\n30. Cierra la caja.\n31. Dame el cuaderno.\n32. Saca la lengua.\n33. Dame las manos.\n");
+        txtListaInstrucciones.setText("1. ¿Cuál es tu brazo izquierdo?\n2. ¿Cuál es tu brazo derecho?\n3. ¿Cuál es tu mano izquierda?\n4. ¿Cuál es tu mano derecha?\n5. ¿Cuál es tu pierna izquierda?\n6. ¿Cuál es tu pierna derecha?\n7. ¿Cuál es tu ojo izquierdo?\n8. ¿Cuál es tu ojo derecho?\n9. ¿Cuál es tu pie izquierdo?\n10. ¿Cuál es tu pie derecho?\n11. ¿Cuál es tu oreja izquierda?\n12. ¿Cuál es tu oreja derecha?\n\nColoque un objeto (canica) dentro de una caja y sáquelo sucesivamente, alternativamente pregunte al niño:\n\n13. ¿Dónde está la canica?\nRepita 10 veces.\n\nColoque una figura arriba, y después abajo. Alterativamente pregunte:\n14. ¿Dónde está (la imagen)?\nColoque un auto de juguete cerca y lejos del niño, y pregunte:\n15. ¿Dónde está el (auto)?\nColoque un juguete (auto) detrás de un objeto y delante de un objeto; alternativamente pregunte:\n16. ¿Dónde está el (auto)?\nColoque varios objetos de una misma clase en cadena, por ejemplo varios autos. Y pregunte alternadamente al niño:\n17. ¿Cuál es el primero? ¿Cuál es el último?\nRepita 10 veces cada uno de estos ejercicios.\n");
         ListaInstrucciones.setViewportView(txtListaInstrucciones);
 
         getContentPane().add(ListaInstrucciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, 830, 430));
@@ -85,7 +85,7 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnVolverMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnVolverMouseClicked
-        SeguimientoInstrucciones corporal = new SeguimientoInstrucciones();
+        UsoPenombres corporal = new UsoPenombres();
         corporal.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnVolverMouseClicked
@@ -107,20 +107,20 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(InstruccSeguimientoInstrucciones.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(InstruccUsoPenombres.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(InstruccSeguimientoInstrucciones.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(InstruccUsoPenombres.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(InstruccSeguimientoInstrucciones.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(InstruccUsoPenombres.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(InstruccSeguimientoInstrucciones.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(InstruccUsoPenombres.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new InstruccSeguimientoInstrucciones().setVisible(true);
+                new InstruccUsoPenombres().setVisible(true);
             }
         });
     }
