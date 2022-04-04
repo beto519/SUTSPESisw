@@ -14,7 +14,7 @@ public class Terapeuta {
     private String codigoUsuario;
     private String contraseña;
     private String puesto;
-
+    private String correo;
     public Terapeuta() {
     }
 
@@ -86,6 +86,20 @@ public class Terapeuta {
      */
     public void setPuesto(String puesto) {
         this.puesto = puesto;
+    }
+
+    /**
+     * @return the correo
+     */
+    public String getCorreo() {
+        return correo;
+    }
+
+    /**
+     * @param correo the correo to set
+     */
+    public void setCorreo(String correo) {
+        this.correo = correo;
     }
     
 }
