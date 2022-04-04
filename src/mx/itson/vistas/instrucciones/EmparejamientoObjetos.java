@@ -44,7 +44,7 @@ public class EmparejamientoObjetos extends javax.swing.JFrame {
         jTextArea4 = new javax.swing.JTextArea();
         jLabel5 = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         FechaElab1.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N

@@ -36,7 +36,7 @@ public class InstruccManejoEspacial extends javax.swing.JFrame {
         btnVolver = new javax.swing.JButton();
         Fondo = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         txtListaInstrucciones.setEditable(false);
@@ -49,7 +49,6 @@ public class InstruccManejoEspacial extends javax.swing.JFrame {
         getContentPane().add(ListaInstrucciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, 830, 430));
 
         iNSTRUCCIONES.setFont(new java.awt.Font("Dialog", 1, 23)); // NOI18N
-        iNSTRUCCIONES.setForeground(new java.awt.Color(0, 0, 0));
         iNSTRUCCIONES.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         iNSTRUCCIONES.setText("LISTA DE INSTRUCCIONES DE LAS PARTES DEL CUERPO  "); // NOI18N
         iNSTRUCCIONES.setToolTipText("");
@@ -71,7 +70,7 @@ public class InstruccManejoEspacial extends javax.swing.JFrame {
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 570, -1, -1));
 
         btnVolver.setText("Volver");
-        btnVolver.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnVolver.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnVolver.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnVolverMouseClicked(evt);

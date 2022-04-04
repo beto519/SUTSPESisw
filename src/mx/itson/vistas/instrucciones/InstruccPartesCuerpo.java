@@ -42,7 +42,7 @@ public class InstruccPartesCuerpo extends javax.swing.JFrame {
         btnVolver = new javax.swing.JButton();
         Fondo = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(200, 150));
         setPreferredSize(new java.awt.Dimension(910, 680));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());

@@ -35,7 +35,7 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
         btnVolver = new javax.swing.JButton();
         Fondo = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         txtListaInstrucciones.setEditable(false);
@@ -48,7 +48,6 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
         getContentPane().add(ListaInstrucciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, 830, 430));
 
         iNSTRUCCIONES.setFont(new java.awt.Font("Dialog", 1, 23)); // NOI18N
-        iNSTRUCCIONES.setForeground(new java.awt.Color(0, 0, 0));
         iNSTRUCCIONES.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         iNSTRUCCIONES.setText("LISTA DE INSTRUCCIONES DE LAS PARTES DEL CUERPO  "); // NOI18N
         iNSTRUCCIONES.setToolTipText("");
