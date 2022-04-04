@@ -43,17 +43,15 @@ public class PonerAtencionObjectos extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         TxtFondo = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         MtroManuel.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        MtroManuel.setForeground(new java.awt.Color(0, 0, 0));
         MtroManuel.setText("  Mtro. Manuel Esquer Sumuano  ");
         MtroManuel.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         getContentPane().add(MtroManuel, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 230, 480, 40));
 
         Elaboro.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        Elaboro.setForeground(new java.awt.Color(0, 0, 0));
         Elaboro.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         Elaboro.setText(" Elaboró:"); // NOI18N
         Elaboro.setToolTipText("");
@@ -61,18 +59,15 @@ public class PonerAtencionObjectos extends javax.swing.JFrame {
         getContentPane().add(Elaboro, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 230, 350, 40));
 
         NombreDelPrograma.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        NombreDelPrograma.setForeground(new java.awt.Color(0, 0, 0));
         NombreDelPrograma.setText(" Nombre del Programa:");
         NombreDelPrograma.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         getContentPane().add(NombreDelPrograma, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 110, 350, 40));
 
         Programa.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
-        Programa.setForeground(new java.awt.Color(0, 0, 0));
         Programa.setText("Programa");
         getContentPane().add(Programa, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 60, -1, -1));
 
         procedimiento.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        procedimiento.setForeground(new java.awt.Color(0, 0, 0));
         procedimiento.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         procedimiento.setText("PROCEDIMIENTO"); // NOI18N
         procedimiento.setToolTipText("");
@@ -80,7 +75,6 @@ public class PonerAtencionObjectos extends javax.swing.JFrame {
         getContentPane().add(procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 270, 830, 30));
 
         FechaNumElab.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        FechaNumElab.setForeground(new java.awt.Color(0, 0, 0));
         FechaNumElab.setText("18-01-2016");
         FechaNumElab.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         getContentPane().add(FechaNumElab, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 150, 480, 40));
@@ -100,19 +94,16 @@ public class PonerAtencionObjectos extends javax.swing.JFrame {
         getContentPane().add(Procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 300, 830, 330));
 
         FechaNumRetro.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        FechaNumRetro.setForeground(new java.awt.Color(0, 0, 0));
         FechaNumRetro.setText("15-02-2016");
         FechaNumRetro.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         getContentPane().add(FechaNumRetro, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 190, 480, 40));
 
         FechaElab.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        FechaElab.setForeground(new java.awt.Color(0, 0, 0));
         FechaElab.setText(" Fecha de Elaboración:");
         FechaElab.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         getContentPane().add(FechaElab, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 150, 350, 40));
 
         PonerAtencionObjectos.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        PonerAtencionObjectos.setForeground(new java.awt.Color(0, 0, 0));
         PonerAtencionObjectos.setText("Poner atención a objetos");
         PonerAtencionObjectos.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         getContentPane().add(PonerAtencionObjectos, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 110, 480, 40));
@@ -121,7 +112,6 @@ public class PonerAtencionObjectos extends javax.swing.JFrame {
         getContentPane().add(Mei, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
 
         FechaRetro.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        FechaRetro.setForeground(new java.awt.Color(0, 0, 0));
         FechaRetro.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         FechaRetro.setText("Fecha de Retroalimentación:"); // NOI18N
         FechaRetro.setToolTipText("");
