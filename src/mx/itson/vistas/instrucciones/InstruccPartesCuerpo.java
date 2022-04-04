@@ -93,7 +93,7 @@ public class InstruccPartesCuerpo extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnVolverMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnVolverMouseClicked
-        ReconocimCorporal corporal = new ReconocimCorporal();
+        ReconocimientoCorporal corporal = new ReconocimientoCorporal();
         corporal.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnVolverMouseClicked
