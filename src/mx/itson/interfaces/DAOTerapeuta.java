@@ -4,10 +4,12 @@
  */
 package mx.itson.interfaces;
 
+import mx.itson.entidades.Terapeuta;
+
 /**
  *
  * @author vinko
  */
-public interface DAOTerapeuta {
+public interface DAOTerapeuta extends CRUD<Terapeuta>{
     
 }
