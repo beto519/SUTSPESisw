@@ -134,6 +134,10 @@ public class AgregarTerapeuta extends javax.swing.JFrame {
 
     private void lbl_VolverMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_VolverMouseClicked
 
+        VerTerapeutas abrir = new VerTerapeutas();
+        abrir.setVisible(true);
+        dispose();
+        
         // TODO add your handling code here:
     }//GEN-LAST:event_lbl_VolverMouseClicked
 

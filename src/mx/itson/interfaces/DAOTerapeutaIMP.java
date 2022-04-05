@@ -97,7 +97,7 @@ public class DAOTerapeutaIMP implements DAOTerapeuta {
 
         try {
             if (db.connect()) {
-                String query = "SELECT * FROM " + TABLA;
+                String query = "SELECT * FROM bxopxuzsnsc4au7ggfnf." + TABLA;
                 ResultSet rs = (ResultSet) db.execute(query, false);
                 while (rs.next()) {
                     Terapeuta terapeuta = new Terapeuta();

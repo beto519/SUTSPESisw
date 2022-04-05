@@ -5,17 +5,47 @@
  */
 package mx.itson.vistas;
 
+import java.util.List;
+import javax.swing.table.DefaultTableModel;
+import mx.itson.entidades.Terapeuta;
+import mx.itson.interfaces.DAOTerapeutaIMP;
+
 /**
  *
  * @author jotha
  */
 public class VerTerapeutas extends javax.swing.JFrame {
-
+DAOTerapeutaIMP dao = new DAOTerapeutaIMP();
     /**
      * Creates new form VerTerapeutas
      */
     public VerTerapeutas() {
         initComponents();
+        LlenarTabla();
+    }
+    
+     private void LlenarTabla() {
+       
+        List<Terapeuta> list = dao.obtenerTodos();
+        DefaultTableModel model = new DefaultTableModel();
+        
+        model.addColumn("Id");
+        model.addColumn("Nombre");
+        model.addColumn("Puesto");
+        model.addColumn("Correo");
+        model.addColumn("Usuario");
+
+        for (int i = 0; i < list.size(); i++) {
+
+            model.addRow(
+                    new Object[]{list.get(i).getId(), list.get(i).getNombre(),
+                        list.get(i).getPuesto(), list.get(i).getCorreo(), list.get(i).getCodigoUsuario()
+                    }
+            );
+
+            tblTerapeutas.setModel(model);
+        }
+
     }
 
     /**
@@ -28,7 +58,7 @@ public class VerTerapeutas extends javax.swing.JFrame {
     private void initComponents() {
 
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        tblTerapeutas = new javax.swing.JTable();
         lbl_AddTerapeuta = new javax.swing.JLabel();
         lbl_EliminarTerapeuta = new javax.swing.JLabel();
         lbl_ActualizarLista = new javax.swing.JLabel();
@@ -39,7 +69,7 @@ public class VerTerapeutas extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        tblTerapeutas.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
@@ -55,12 +85,12 @@ public class VerTerapeutas extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane1.setViewportView(jTable1);
-        if (jTable1.getColumnModel().getColumnCount() > 0) {
-            jTable1.getColumnModel().getColumn(0).setResizable(false);
-            jTable1.getColumnModel().getColumn(1).setResizable(false);
-            jTable1.getColumnModel().getColumn(2).setResizable(false);
-            jTable1.getColumnModel().getColumn(3).setResizable(false);
+        jScrollPane1.setViewportView(tblTerapeutas);
+        if (tblTerapeutas.getColumnModel().getColumnCount() > 0) {
+            tblTerapeutas.getColumnModel().getColumn(0).setResizable(false);
+            tblTerapeutas.getColumnModel().getColumn(1).setResizable(false);
+            tblTerapeutas.getColumnModel().getColumn(2).setResizable(false);
+            tblTerapeutas.getColumnModel().getColumn(3).setResizable(false);
         }
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 900, 540));
@@ -72,6 +102,11 @@ public class VerTerapeutas extends javax.swing.JFrame {
         lbl_AddTerapeuta.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lbl_AddTerapeuta.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         lbl_AddTerapeuta.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        lbl_AddTerapeuta.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lbl_AddTerapeutaMouseClicked(evt);
+            }
+        });
         getContentPane().add(lbl_AddTerapeuta, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 630, -1, -1));
 
         lbl_EliminarTerapeuta.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
@@ -122,6 +157,14 @@ public class VerTerapeutas extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_lbl_VolverMouseClicked
 
+    private void lbl_AddTerapeutaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_AddTerapeutaMouseClicked
+
+AgregarTerapeuta abrir = new AgregarTerapeuta();
+abrir.setVisible(true);
+dispose();
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lbl_AddTerapeutaMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -160,11 +203,11 @@ public class VerTerapeutas extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Fondo;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
     private javax.swing.JLabel lbl_ActualizarLista;
     private javax.swing.JLabel lbl_AddTerapeuta;
     private javax.swing.JLabel lbl_EliminarTerapeuta;
     private javax.swing.JLabel lbl_Volver;
     private javax.swing.JLabel lbl_editarTerapeuta;
+    private javax.swing.JTable tblTerapeutas;
     // End of variables declaration//GEN-END:variables
 }
