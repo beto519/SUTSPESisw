@@ -15,7 +15,7 @@ public class Terapeuta {
     private String contraseña;
     private String puesto;
     private String correo;
-    private String usuario;
+ 
     public Terapeuta() {
     }
 

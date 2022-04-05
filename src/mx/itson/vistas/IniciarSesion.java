@@ -117,7 +117,7 @@ public class IniciarSesion extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 360, 190, 40));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 360, 190, 40));
         getContentPane().add(txtContraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 300, 290, 40));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoLogin.jpg"))); // NOI18N

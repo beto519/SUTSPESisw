@@ -66,47 +66,48 @@ public class VerTerapeutas extends javax.swing.JFrame {
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 900, 540));
 
         lbl_AddTerapeuta.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        lbl_AddTerapeuta.setForeground(new java.awt.Color(0, 0, 0));
         lbl_AddTerapeuta.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_AddTerapeuta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/AgregarTerapeuta.png"))); // NOI18N
         lbl_AddTerapeuta.setText("Añadir Terapeuta");
-        lbl_AddTerapeuta.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lbl_AddTerapeuta.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lbl_AddTerapeuta.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         lbl_AddTerapeuta.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         getContentPane().add(lbl_AddTerapeuta, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 630, -1, -1));
 
         lbl_EliminarTerapeuta.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        lbl_EliminarTerapeuta.setForeground(new java.awt.Color(0, 0, 0));
         lbl_EliminarTerapeuta.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_EliminarTerapeuta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/EliminarTerapeuta.png"))); // NOI18N
         lbl_EliminarTerapeuta.setText("Eliminar Terapeuta");
-        lbl_EliminarTerapeuta.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lbl_EliminarTerapeuta.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lbl_EliminarTerapeuta.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         lbl_EliminarTerapeuta.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         getContentPane().add(lbl_EliminarTerapeuta, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 630, -1, -1));
 
         lbl_ActualizarLista.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        lbl_ActualizarLista.setForeground(new java.awt.Color(0, 0, 0));
         lbl_ActualizarLista.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_ActualizarLista.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/ActualizarTerapeuta.png"))); // NOI18N
         lbl_ActualizarLista.setText("Actualizar Lista");
-        lbl_ActualizarLista.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lbl_ActualizarLista.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lbl_ActualizarLista.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         lbl_ActualizarLista.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         getContentPane().add(lbl_ActualizarLista, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 630, -1, -1));
 
         lbl_editarTerapeuta.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        lbl_editarTerapeuta.setForeground(new java.awt.Color(0, 0, 0));
         lbl_editarTerapeuta.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_editarTerapeuta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/EditarTerapeuta.png"))); // NOI18N
         lbl_editarTerapeuta.setText("EditarTerapeuta");
-        lbl_editarTerapeuta.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lbl_editarTerapeuta.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lbl_editarTerapeuta.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         lbl_editarTerapeuta.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         getContentPane().add(lbl_editarTerapeuta, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 630, -1, -1));
 
         lbl_Volver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/volverazul.png"))); // NOI18N
-        lbl_Volver.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lbl_Volver.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        lbl_Volver.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lbl_VolverMouseClicked(evt);
+            }
+        });
         getContentPane().add(lbl_Volver, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, -1, -1));
 
         Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoAzul.jpg"))); // NOI18N
@@ -114,6 +115,12 @@ public class VerTerapeutas extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void lbl_VolverMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_VolverMouseClicked
+
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lbl_VolverMouseClicked
 
     /**
      * @param args the command line arguments
