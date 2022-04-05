@@ -125,7 +125,7 @@ public class DAOTerapeutaIMP implements DAOTerapeuta {
               Terapeuta empleado = new Terapeuta();
         try {
             if (db.connect()) {
-                String query = "SELECT * FROM " + TABLA + " WHERE IdTerap = " + id;
+                String query = "SELECT * FROM bxopxuzsnsc4au7ggfnf " + TABLA + " WHERE IdTerap = " + id;
                 ResultSet rs = (ResultSet) db.execute(query, false);
                 if (rs.next()) {
                     empleado.setId(rs.getInt("IdTerap"));
@@ -144,7 +144,28 @@ public class DAOTerapeutaIMP implements DAOTerapeuta {
     }
 
  
-
+ @Override
+    public Terapeuta obtenerPorUsuario(String user) {
+              Terapeuta empleado = new Terapeuta();
+        try {
+            if (db.connect()) {
+                String query = "SELECT * FROM bxopxuzsnsc4au7ggfnf." + TABLA + " WHERE usuario = " + user;
+                ResultSet rs = (ResultSet) db.execute(query, false);
+                if (rs.next()) {
+                    empleado.setId(rs.getInt("IdTerap"));
+                    empleado.setNombre(rs.getString("nombreCom"));
+                    empleado.setPuesto(rs.getString("Area"));
+                    empleado.setCorreo(rs.getString("email"));
+                    empleado.setCodigoUsuario(rs.getString("usuario"));
+                    empleado.setContraseña(rs.getString("contraseña"));
+                }
+            }
+        } catch (Exception e) {
+        } finally {
+            db.disconnect();
+        }
+        return empleado;  
+    }
    
 
   
