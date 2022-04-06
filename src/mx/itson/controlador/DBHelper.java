@@ -14,7 +14,7 @@ public class DBHelper {
 
     private Connection connection;
     private String error;
-    private String controller = "com.mysql.jdbc.Driver";
+    private String controller = "com.mysql.cj.jdbc.Driver";
     private String database = "jdbc:mysql://bxopxuzsnsc4au7ggfnf-mysql.services.clever-cloud.com?useSSL=false";
     private String user = "uaj8yfspoqzs7svr";
     private String password = "CW5AjYh1MM4kX6VgzOSz";

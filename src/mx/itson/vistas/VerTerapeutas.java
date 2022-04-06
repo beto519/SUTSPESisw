@@ -6,6 +6,8 @@
 package mx.itson.vistas;
 
 import java.util.List;
+import javax.swing.JOptionPane;
+import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 import mx.itson.entidades.Terapeuta;
 import mx.itson.interfaces.DAOTerapeutaIMP;
@@ -65,13 +67,26 @@ DAOTerapeutaIMP dao = new DAOTerapeutaIMP();
         lbl_editarTerapeuta = new javax.swing.JLabel();
         lbl_Volver = new javax.swing.JLabel();
         Fondo = new javax.swing.JLabel();
+        lbl_id = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        tblTerapeutas =new JTable(){
+
+            public boolean isCellEditable(int row, int column){
+                for (int i = 0; i<tblTerapeutas.getRowCount(); i++){
+
+                    if (row == i){
+                        return false;
+                    }
+                }
+                return true;
+            }
+        };
         tblTerapeutas.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-
+                {null, null, null, null}
             },
             new String [] {
                 "ID", "Nombre", "Area", "Email"
@@ -83,6 +98,11 @@ DAOTerapeutaIMP dao = new DAOTerapeutaIMP();
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
                 return canEdit [columnIndex];
+            }
+        });
+        tblTerapeutas.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tblTerapeutasMouseClicked(evt);
             }
         });
         jScrollPane1.setViewportView(tblTerapeutas);
@@ -116,6 +136,11 @@ DAOTerapeutaIMP dao = new DAOTerapeutaIMP();
         lbl_EliminarTerapeuta.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lbl_EliminarTerapeuta.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         lbl_EliminarTerapeuta.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        lbl_EliminarTerapeuta.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lbl_EliminarTerapeutaMouseClicked(evt);
+            }
+        });
         getContentPane().add(lbl_EliminarTerapeuta, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 630, -1, -1));
 
         lbl_ActualizarLista.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
@@ -125,12 +150,17 @@ DAOTerapeutaIMP dao = new DAOTerapeutaIMP();
         lbl_ActualizarLista.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lbl_ActualizarLista.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         lbl_ActualizarLista.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        lbl_ActualizarLista.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lbl_ActualizarListaMouseClicked(evt);
+            }
+        });
         getContentPane().add(lbl_ActualizarLista, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 630, -1, -1));
 
         lbl_editarTerapeuta.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         lbl_editarTerapeuta.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_editarTerapeuta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/EditarTerapeuta.png"))); // NOI18N
-        lbl_editarTerapeuta.setText("EditarTerapeuta");
+        lbl_editarTerapeuta.setText("Editar Terapeuta");
         lbl_editarTerapeuta.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lbl_editarTerapeuta.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         lbl_editarTerapeuta.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
@@ -147,6 +177,7 @@ DAOTerapeutaIMP dao = new DAOTerapeutaIMP();
 
         Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoAzul.jpg"))); // NOI18N
         getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 920, 760));
+        getContentPane().add(lbl_id, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 20, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -164,6 +195,36 @@ abrir.setVisible(true);
 dispose();
         // TODO add your handling code here:
     }//GEN-LAST:event_lbl_AddTerapeutaMouseClicked
+    
+    private void tblTerapeutasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblTerapeutasMouseClicked
+        int row = tblTerapeutas.getSelectedRow();
+        int id = (int) tblTerapeutas.getModel().getValueAt(row, 0);
+        lbl_id.setText(id + "");
+        
+        if(evt.getClickCount() == 2){
+            EditarTerapeuta ET = new EditarTerapeuta();
+            ET.setVisible(true);
+            
+        }
+        
+    }//GEN-LAST:event_tblTerapeutasMouseClicked
+
+    private void lbl_EliminarTerapeutaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_EliminarTerapeutaMouseClicked
+       int respuesta = JOptionPane.showConfirmDialog(this, "Seguro que quieres eliminar este/a terapeuta?", "Confirmar", 
+        JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+       
+       if(respuesta == JOptionPane.YES_OPTION){
+        dao.eliminar(Integer.parseInt(lbl_id.getText()));
+        LlenarTabla();
+       }
+       if(respuesta == JOptionPane.NO_OPTION){
+           JOptionPane.showMessageDialog(this, "¡¡Ten Cuidado!!");
+       }
+    }//GEN-LAST:event_lbl_EliminarTerapeutaMouseClicked
+
+    private void lbl_ActualizarListaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_ActualizarListaMouseClicked
+        LlenarTabla();
+    }//GEN-LAST:event_lbl_ActualizarListaMouseClicked
 
     /**
      * @param args the command line arguments
@@ -208,6 +269,7 @@ dispose();
     private javax.swing.JLabel lbl_EliminarTerapeuta;
     private javax.swing.JLabel lbl_Volver;
     private javax.swing.JLabel lbl_editarTerapeuta;
+    private javax.swing.JLabel lbl_id;
     private javax.swing.JTable tblTerapeutas;
     // End of variables declaration//GEN-END:variables
 }
