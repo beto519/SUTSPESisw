@@ -17,7 +17,6 @@ public class DAOAlumnoIMP implements DAOAlumno {
     DBHelper DB = new DBHelper();
     
     
-    @Override
     public boolean agregar(Alumno ga) {
         boolean rs = false;
         try{
@@ -39,22 +38,18 @@ public class DAOAlumnoIMP implements DAOAlumno {
     }
     
 
-    @Override
     public boolean editar(Alumno c) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    @Override
     public boolean eliminar(int id) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    @Override
     public List<Alumno> obtenerTodos() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    @Override
     public Alumno obtenerPorId(int id) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }

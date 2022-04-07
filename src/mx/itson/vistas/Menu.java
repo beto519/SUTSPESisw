@@ -111,7 +111,7 @@ public class Menu extends javax.swing.JFrame {
     }//GEN-LAST:event_btnAgregarTerapeutaMouseClicked
 
     private void btnEditarTerapeutaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEditarTerapeutaMouseClicked
-        EditarTerapeuta EdiTerapeuta = new EditarTerapeuta();
+        MostrarTerapeuta EdiTerapeuta = new MostrarTerapeuta();
         EdiTerapeuta.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnEditarTerapeutaMouseClicked

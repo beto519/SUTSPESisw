@@ -125,18 +125,20 @@ public class DAOTerapeutaIMP implements DAOTerapeuta {
               Terapeuta empleado = new Terapeuta();
         try {
             if (db.connect()) {
-                String query = "SELECT * FROM bxopxuzsnsc4au7ggfnf " + TABLA + " WHERE IdTerap = " + id;
+                String query = "SELECT * FROM bxopxuzsnsc4au7ggfnf." + TABLA + " WHERE IdTerap = " + id;
                 ResultSet rs = (ResultSet) db.execute(query, false);
                 if (rs.next()) {
                     empleado.setId(rs.getInt("IdTerap"));
                     empleado.setNombre(rs.getString("nombreCom"));
                     empleado.setPuesto(rs.getString("Area"));
                     empleado.setCorreo(rs.getString("email"));
-                    empleado.setContraseña(rs.getString("usuario"));
-                    empleado.setCodigoUsuario(rs.getString("contraseña"));
+                    empleado.setCodigoUsuario(rs.getString("usuario"));
+                    empleado.setContraseña(rs.getString("contraseña"));
+                   
                 }
             }
         } catch (Exception e) {
+            e.printStackTrace();
         } finally {
             db.disconnect();
         }

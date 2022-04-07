@@ -26,6 +26,8 @@ DAOTerapeutaIMP dao = new DAOTerapeutaIMP();
         LlenarTabla();
     }
     
+    public static int idEdit = 0;
+      
      private void LlenarTabla() {
        
         List<Terapeuta> list = dao.obtenerTodos();
@@ -47,7 +49,7 @@ DAOTerapeutaIMP dao = new DAOTerapeutaIMP();
 
             tblTerapeutas.setModel(model);
         }
-
+        
     }
 
     /**
@@ -66,8 +68,8 @@ DAOTerapeutaIMP dao = new DAOTerapeutaIMP();
         lbl_ActualizarLista = new javax.swing.JLabel();
         lbl_editarTerapeuta = new javax.swing.JLabel();
         lbl_Volver = new javax.swing.JLabel();
-        Fondo = new javax.swing.JLabel();
         lbl_id = new javax.swing.JLabel();
+        Fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -174,10 +176,10 @@ DAOTerapeutaIMP dao = new DAOTerapeutaIMP();
             }
         });
         getContentPane().add(lbl_Volver, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, -1, -1));
+        getContentPane().add(lbl_id, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 20, -1, -1));
 
         Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoAzul.jpg"))); // NOI18N
         getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 920, 760));
-        getContentPane().add(lbl_id, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 20, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -201,10 +203,13 @@ dispose();
         int id = (int) tblTerapeutas.getModel().getValueAt(row, 0);
         lbl_id.setText(id + "");
         
+        idEdit = id;
+        
+        
         if(evt.getClickCount() == 2){
-            EditarTerapeuta ET = new EditarTerapeuta();
+            MostrarTerapeuta ET = new MostrarTerapeuta();
             ET.setVisible(true);
-            
+            this.dispose();
         }
         
     }//GEN-LAST:event_tblTerapeutasMouseClicked
@@ -216,6 +221,7 @@ dispose();
        if(respuesta == JOptionPane.YES_OPTION){
         dao.eliminar(Integer.parseInt(lbl_id.getText()));
         LlenarTabla();
+        
        }
        if(respuesta == JOptionPane.NO_OPTION){
            JOptionPane.showMessageDialog(this, "¡¡Ten Cuidado!!");
