@@ -79,64 +79,65 @@ public class MostrarTerapeuta extends javax.swing.JFrame {
 
         lbl_imagen.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_imagen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/compapelochas.jpg"))); // NOI18N
+        lbl_imagen.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         lbl_imagen.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lbl_imagen.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        getContentPane().add(lbl_imagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 270, 280));
+        getContentPane().add(lbl_imagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 350, 360));
 
         lbl_id.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         lbl_id.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_id.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED)));
         lbl_id.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        getContentPane().add(lbl_id, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 380, 30, 30));
+        getContentPane().add(lbl_id, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 160, 30, 30));
 
         lbl_tID.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
         lbl_tID.setForeground(new java.awt.Color(0, 0, 0));
         lbl_tID.setText("Su id es:");
-        getContentPane().add(lbl_tID, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 380, -1, -1));
+        getContentPane().add(lbl_tID, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 160, -1, -1));
 
         lbl_tEmail.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
         lbl_tEmail.setForeground(new java.awt.Color(0, 0, 0));
         lbl_tEmail.setText("Email:");
-        getContentPane().add(lbl_tEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 240, -1, -1));
+        getContentPane().add(lbl_tEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 310, -1, -1));
 
         lbl_tUsuario.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
         lbl_tUsuario.setForeground(new java.awt.Color(0, 0, 0));
         lbl_tUsuario.setText("Usuario:");
-        getContentPane().add(lbl_tUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 290, -1, -1));
+        getContentPane().add(lbl_tUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 360, -1, 40));
 
         lbl_tArea.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
         lbl_tArea.setForeground(new java.awt.Color(0, 0, 0));
         lbl_tArea.setText("Area:");
-        getContentPane().add(lbl_tArea, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 190, -1, -1));
+        getContentPane().add(lbl_tArea, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 260, -1, -1));
 
         lbl_area.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         lbl_area.setForeground(new java.awt.Color(0, 0, 0));
         lbl_area.setText("jLabel1");
         lbl_area.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED)));
-        getContentPane().add(lbl_area, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 190, -1, 40));
+        getContentPane().add(lbl_area, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 260, -1, 40));
 
         lbl_email.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         lbl_email.setForeground(new java.awt.Color(0, 0, 0));
         lbl_email.setText("jLabel1");
         lbl_email.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED)));
-        getContentPane().add(lbl_email, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 240, -1, 40));
+        getContentPane().add(lbl_email, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 310, -1, 40));
 
         lbl_usuario.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         lbl_usuario.setForeground(new java.awt.Color(0, 0, 0));
         lbl_usuario.setText("jLabel1");
         lbl_usuario.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED)));
-        getContentPane().add(lbl_usuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 290, -1, 40));
+        getContentPane().add(lbl_usuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 360, -1, 40));
 
         lbl_nombre.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         lbl_nombre.setForeground(new java.awt.Color(0, 0, 0));
         lbl_nombre.setText("jLabel1");
         lbl_nombre.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED)));
-        getContentPane().add(lbl_nombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 140, -1, 40));
+        getContentPane().add(lbl_nombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 210, -1, 40));
 
         lbl_tNombre1.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
         lbl_tNombre1.setForeground(new java.awt.Color(0, 0, 0));
         lbl_tNombre1.setText("Nombre:");
-        getContentPane().add(lbl_tNombre1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 140, -1, -1));
+        getContentPane().add(lbl_tNombre1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 210, -1, -1));
 
         Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoAmarillo.jpg"))); // NOI18N
         getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 0, 910, 480));
