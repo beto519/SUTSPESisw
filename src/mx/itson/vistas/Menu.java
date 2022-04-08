@@ -27,6 +27,8 @@ public class Menu extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel2 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         btnAgregarTerapeuta = new javax.swing.JLabel();
         btnEditarTerapeuta = new javax.swing.JLabel();
@@ -34,11 +36,30 @@ public class Menu extends javax.swing.JFrame {
         btnIntrucciones = new javax.swing.JLabel();
         btnVerNinos = new javax.swing.JLabel();
         btnVerTerapeuta = new javax.swing.JLabel();
+        txtIniciarSesion = new javax.swing.JLabel();
+        txtAgregarTerapeuta = new javax.swing.JLabel();
+        txtEditarTerapeuta = new javax.swing.JLabel();
+        txtInstrucciones = new javax.swing.JLabel();
+        txtVerNiños = new javax.swing.JLabel();
+        txtVerTerapeutas = new javax.swing.JLabel();
         TxtTitulo = new javax.swing.JLabel();
         LabelFondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel2.setBackground(new java.awt.Color(0, 204, 153));
+        jLabel2.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(51, 255, 255));
+        jLabel2.setText("Puente de Alvarado 305, Col. Carretas. Querétaro, Querétaro. ");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 600, -1, -1));
+
+        jLabel1.setBackground(new java.awt.Color(0, 204, 153));
+        jLabel1.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(51, 255, 255));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("Cel: 44 22 64 55 32 ");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 630, 690, -1));
 
         jPanel1.setBackground(new java.awt.Color(155, 20, 136));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -49,7 +70,7 @@ public class Menu extends javax.swing.JFrame {
                 btnAgregarTerapeutaMouseClicked(evt);
             }
         });
-        jPanel1.add(btnAgregarTerapeuta, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, -1, -1));
+        jPanel1.add(btnAgregarTerapeuta, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, -1, -1));
 
         btnEditarTerapeuta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/EditarTerapeuta.png"))); // NOI18N
         btnEditarTerapeuta.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -57,7 +78,7 @@ public class Menu extends javax.swing.JFrame {
                 btnEditarTerapeutaMouseClicked(evt);
             }
         });
-        jPanel1.add(btnEditarTerapeuta, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 250, -1, -1));
+        jPanel1.add(btnEditarTerapeuta, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 250, -1, -1));
 
         btnIniciarSesion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/log-in_1.png"))); // NOI18N
         btnIniciarSesion.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -65,7 +86,7 @@ public class Menu extends javax.swing.JFrame {
                 btnIniciarSesionMouseClicked(evt);
             }
         });
-        jPanel1.add(btnIniciarSesion, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 10, 100, 100));
+        jPanel1.add(btnIniciarSesion, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 10, 100, 100));
 
         btnIntrucciones.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/IntruccionesBtn.png"))); // NOI18N
         btnIntrucciones.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -73,7 +94,7 @@ public class Menu extends javax.swing.JFrame {
                 btnIntruccionesMouseClicked(evt);
             }
         });
-        jPanel1.add(btnIntrucciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 370, -1, -1));
+        jPanel1.add(btnIntrucciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 380, -1, -1));
 
         btnVerNinos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/editarNiño.png"))); // NOI18N
         btnVerNinos.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -81,7 +102,7 @@ public class Menu extends javax.swing.JFrame {
                 btnVerNinosMouseClicked(evt);
             }
         });
-        jPanel1.add(btnVerNinos, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 470, -1, -1));
+        jPanel1.add(btnVerNinos, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 470, -1, -1));
 
         btnVerTerapeuta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/contrato.png"))); // NOI18N
         btnVerTerapeuta.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -91,7 +112,37 @@ public class Menu extends javax.swing.JFrame {
         });
         jPanel1.add(btnVerTerapeuta, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 560, -1, -1));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 240, 670));
+        txtIniciarSesion.setFont(new java.awt.Font("Snap ITC", 0, 14)); // NOI18N
+        txtIniciarSesion.setForeground(new java.awt.Color(102, 255, 102));
+        txtIniciarSesion.setText("INICIAR SESION");
+        jPanel1.add(txtIniciarSesion, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, -1, -1));
+
+        txtAgregarTerapeuta.setFont(new java.awt.Font("Snap ITC", 0, 14)); // NOI18N
+        txtAgregarTerapeuta.setForeground(new java.awt.Color(102, 255, 102));
+        txtAgregarTerapeuta.setText("AGREGAR TERAPEUTAS");
+        jPanel1.add(txtAgregarTerapeuta, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 170, -1, -1));
+
+        txtEditarTerapeuta.setFont(new java.awt.Font("Snap ITC", 0, 14)); // NOI18N
+        txtEditarTerapeuta.setForeground(new java.awt.Color(102, 255, 102));
+        txtEditarTerapeuta.setText("EDITAR TERAPEUTAS");
+        jPanel1.add(txtEditarTerapeuta, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, -1, -1));
+
+        txtInstrucciones.setFont(new java.awt.Font("Snap ITC", 0, 14)); // NOI18N
+        txtInstrucciones.setForeground(new java.awt.Color(102, 255, 102));
+        txtInstrucciones.setText("INSTRUCCIONES");
+        jPanel1.add(txtInstrucciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 420, -1, -1));
+
+        txtVerNiños.setFont(new java.awt.Font("Snap ITC", 0, 14)); // NOI18N
+        txtVerNiños.setForeground(new java.awt.Color(102, 255, 102));
+        txtVerNiños.setText("VER NIÑOS");
+        jPanel1.add(txtVerNiños, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 500, -1, -1));
+
+        txtVerTerapeutas.setFont(new java.awt.Font("Snap ITC", 0, 14)); // NOI18N
+        txtVerTerapeutas.setForeground(new java.awt.Color(102, 255, 102));
+        txtVerTerapeutas.setText("VER TERAPEUTAS");
+        jPanel1.add(txtVerTerapeutas, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 610, -1, -1));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 280, 670));
 
         TxtTitulo.setFont(new java.awt.Font("Tempus Sans ITC", 3, 48)); // NOI18N
         TxtTitulo.setForeground(new java.awt.Color(0, 0, 0));
@@ -184,6 +235,14 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JLabel btnIntrucciones;
     private javax.swing.JLabel btnVerNinos;
     private javax.swing.JLabel btnVerTerapeuta;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel txtAgregarTerapeuta;
+    private javax.swing.JLabel txtEditarTerapeuta;
+    private javax.swing.JLabel txtIniciarSesion;
+    private javax.swing.JLabel txtInstrucciones;
+    private javax.swing.JLabel txtVerNiños;
+    private javax.swing.JLabel txtVerTerapeutas;
     // End of variables declaration//GEN-END:variables
 }
