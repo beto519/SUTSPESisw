@@ -4,7 +4,14 @@
  */
 package mx.itson.vistas;
 
+import java.awt.Image;
+import java.io.File;
+import java.io.FileInputStream;
+import java.sql.Blob;
+import javax.swing.ImageIcon;
+import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
+import javax.swing.filechooser.FileNameExtensionFilter;
 import mx.itson.entidades.Terapeuta;
 import mx.itson.interfaces.DAOTerapeutaIMP;
 
@@ -29,7 +36,8 @@ public class AgregarTerapeuta extends javax.swing.JFrame {
     }
     
   private void RegistrarUser() {
-  
+        FileInputStream foto;
+        File NombreFoto;
         DAOTerapeutaIMP dao = new DAOTerapeutaIMP();
         Terapeuta terapeuta = new Terapeuta();
         try {
@@ -40,11 +48,16 @@ public class AgregarTerapeuta extends javax.swing.JFrame {
            String correo = txtCorreo.getText();
             String puesto = txtPuesto.getText();
             
+            
+           NombreFoto = new File(txt_NombreImagen.getText());
+           foto = new FileInputStream(NombreFoto);
            terapeuta.setCodigoUsuario(codigoEmpleado+"");
            terapeuta.setNombre(nombre);
            terapeuta.setCorreo(correo);
            terapeuta.setContraseña(contraseña);
            terapeuta.setPuesto(puesto);
+           terapeuta.setNomImagen(txt_NombreImagen.getText());
+           terapeuta.setImagen(foto.available());
        
             
                 dao.agregar(terapeuta);
@@ -78,7 +91,10 @@ public class AgregarTerapeuta extends javax.swing.JFrame {
         lblContraseña = new javax.swing.JLabel();
         lblUsuario1 = new javax.swing.JLabel();
         txtContraseña = new javax.swing.JPasswordField();
-        jLabel1 = new javax.swing.JLabel();
+        lbl_imagen = new javax.swing.JLabel();
+        lbl_subirImagen = new javax.swing.JLabel();
+        txt_NombreImagen = new javax.swing.JTextField();
+        Fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -104,30 +120,50 @@ public class AgregarTerapeuta extends javax.swing.JFrame {
                 lbl_AddTerapeutaMouseClicked(evt);
             }
         });
-        getContentPane().add(lbl_AddTerapeuta, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 500, -1, -1));
+        getContentPane().add(lbl_AddTerapeuta, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 550, -1, -1));
 
         lblNombre.setText("Nombre");
-        getContentPane().add(lblNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 90, 220, 50));
-        getContentPane().add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 130, 380, 50));
+        getContentPane().add(lblNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, 220, 50));
+        getContentPane().add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 170, 380, 50));
 
         lblPuesto.setText("Puesto");
-        getContentPane().add(lblPuesto, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 190, 220, 50));
-        getContentPane().add(txtPuesto, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 230, 380, 50));
+        getContentPane().add(lblPuesto, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 230, 220, 50));
+        getContentPane().add(txtPuesto, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 270, 380, 50));
 
         lblCorreo.setText("Correo");
-        getContentPane().add(lblCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 300, 220, 50));
-        getContentPane().add(txtCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 340, 380, 50));
-        getContentPane().add(txtUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 450, 380, 50));
+        getContentPane().add(lblCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 340, 220, 50));
+        getContentPane().add(txtCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 380, 380, 50));
+        getContentPane().add(txtUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 490, 380, 50));
 
         lblContraseña.setText("Contraseña");
-        getContentPane().add(lblContraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 510, 220, 50));
+        getContentPane().add(lblContraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 550, 220, 50));
 
         lblUsuario1.setText("Usuario");
-        getContentPane().add(lblUsuario1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 410, 220, 50));
-        getContentPane().add(txtContraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 550, 380, 50));
+        getContentPane().add(lblUsuario1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 450, 220, 50));
+        getContentPane().add(txtContraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 590, 380, 50));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoRosa.jpg"))); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1010, 720));
+        lbl_imagen.setText("jLabel2");
+        getContentPane().add(lbl_imagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 70, 360, 340));
+
+        lbl_subirImagen.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        lbl_subirImagen.setForeground(new java.awt.Color(0, 0, 0));
+        lbl_subirImagen.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbl_subirImagen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/subirimagen.png"))); // NOI18N
+        lbl_subirImagen.setText("Subir Foto");
+        lbl_subirImagen.setToolTipText("");
+        lbl_subirImagen.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lbl_subirImagen.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        lbl_subirImagen.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        lbl_subirImagen.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lbl_subirImagenMouseClicked(evt);
+            }
+        });
+        getContentPane().add(lbl_subirImagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 560, -1, -1));
+        getContentPane().add(txt_NombreImagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 470, 380, 50));
+
+        Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoRosa.jpg"))); // NOI18N
+        getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1010, 720));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -147,6 +183,21 @@ RegistrarUser();
 
         // TODO add your handling code here:
     }//GEN-LAST:event_lbl_AddTerapeutaMouseClicked
+
+    private void lbl_subirImagenMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_subirImagenMouseClicked
+        JFileChooser archivo = new JFileChooser();
+        archivo.setFileFilter(new FileNameExtensionFilter("Archivo de imagenes", "jpg","jpeg","png"));
+        int ventana = archivo.showOpenDialog(this);
+        if(ventana == JFileChooser.APPROVE_OPTION){
+            
+            File file =archivo.getSelectedFile();
+            txt_NombreImagen.setText(file.getAbsolutePath());
+            Image foto = getToolkit().getImage(txt_NombreImagen.getText());
+            foto = foto.getScaledInstance(320, 320, 1);
+            lbl_imagen.setIcon((new ImageIcon(foto)));
+        }
+
+    }//GEN-LAST:event_lbl_subirImagenMouseClicked
 
     /**
      * @param args the command line arguments
@@ -184,7 +235,7 @@ RegistrarUser();
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel Fondo;
     private javax.swing.JLabel lblContraseña;
     private javax.swing.JLabel lblCorreo;
     private javax.swing.JLabel lblNombre;
@@ -192,10 +243,13 @@ RegistrarUser();
     private javax.swing.JLabel lblUsuario1;
     private javax.swing.JLabel lbl_AddTerapeuta;
     private javax.swing.JLabel lbl_Volver;
+    private javax.swing.JLabel lbl_imagen;
+    private javax.swing.JLabel lbl_subirImagen;
     private javax.swing.JPasswordField txtContraseña;
     private javax.swing.JTextField txtCorreo;
     private javax.swing.JTextField txtNombre;
     private javax.swing.JTextField txtPuesto;
     private javax.swing.JTextField txtUsuario;
+    private javax.swing.JTextField txt_NombreImagen;
     // End of variables declaration//GEN-END:variables
 }

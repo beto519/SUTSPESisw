@@ -36,12 +36,14 @@ public class DAOTerapeutaIMP implements DAOTerapeuta {
         boolean resultado = false;
         try {
             if (db.connect()) {
-                String query = "INSERT INTO `bxopxuzsnsc4au7ggfnf`.`terapeuta` (`nombreCom`, `Area`, `email`, `usuario`, `contraseña`) "
+                String query = "INSERT INTO `bxopxuzsnsc4au7ggfnf`.`terapeuta` (`nombreCom`, `Area`, `email`, `usuario`, `contraseña`, `nomImagen`, `imagen`) "
                         + " VALUES ('" + terapeuta.getNombre() + "', "
                         + " '" + terapeuta.getPuesto()+ "', "
                         + " '" + terapeuta.getCorreo()+ "', "
                         + " '" + terapeuta.getCodigoUsuario()+ "', "
-                        + " '" + terapeuta.getContraseña()+ "') ";
+                        + " '" + terapeuta.getContraseña()+ "', "
+                        + " '" + terapeuta.getNomImagen()+ "', "
+                        + " '" + terapeuta.getImagen()+ "') ";
                 resultado = (boolean) db.execute(query, true);
             }
         } catch (Exception e) {
@@ -57,11 +59,13 @@ public class DAOTerapeutaIMP implements DAOTerapeuta {
         try {
             if (db.connect()) {
                 String query = "UPDATE `bxopxuzsnsc4au7ggfnf`.`terapeuta` SET  "
-                        + "`nombreCom` = '" + terapeuta.getNombre() + "',  "
-                        + "`Area` = '" + terapeuta.getPuesto()+ "',  "
-                        + "`email` = '" + terapeuta.getCorreo()+ "',  "
+                        + "`nombreCom` = '" + terapeuta.getNombre() + "', "
+                        + "`Area` = '" + terapeuta.getPuesto()+ "', "
+                        + "`email` = '" + terapeuta.getCorreo()+ "', "
                         + "`usuario` = '" + terapeuta.getCodigoUsuario()+ "', "
-                        + " `contraseña` = '" + terapeuta.getContraseña()+ "' "
+                        + "`contraseña` = '" + terapeuta.getContraseña()+ "', "
+                        + "`nomImagen` = '" + terapeuta.getNomImagen()+ "', "
+                        + "`imagen` = '" + terapeuta.getImagen()+ "' "
                         + " WHERE (`IdTerap` = '" + terapeuta.getId() + "') ";
                 resultado = (boolean) db.execute(query, true);
             }
@@ -107,6 +111,8 @@ public class DAOTerapeutaIMP implements DAOTerapeuta {
                     terapeuta.setCorreo(rs.getString("email"));
                     terapeuta.setCodigoUsuario(rs.getString("usuario"));
                     terapeuta.setContraseña(rs.getString("contraseña"));
+                    terapeuta.setNomImagen(rs.getString("nomImagen"));
+                    terapeuta.setImagen(rs.getDouble("imagen"));
                     terapeutas.add(terapeuta);
                 }
             }
@@ -134,6 +140,8 @@ public class DAOTerapeutaIMP implements DAOTerapeuta {
                     empleado.setCorreo(rs.getString("email"));
                     empleado.setCodigoUsuario(rs.getString("usuario"));
                     empleado.setContraseña(rs.getString("contraseña"));
+                    empleado.setNomImagen(rs.getString("nomImagen"));
+                    empleado.setImagen(rs.getDouble("imagen"));
                    
                 }
             }
