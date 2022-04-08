@@ -4,6 +4,8 @@
  */
 package mx.itson.entidades;
 
+import java.sql.Blob;
+
 /**
  *
  * @author vinko
@@ -15,6 +17,8 @@ public class Terapeuta {
     private String contraseña;
     private String puesto;
     private String correo;
+    private String nomImagen;
+    private double imagen;
  
     public Terapeuta() {
     }
@@ -103,6 +107,23 @@ public class Terapeuta {
         this.correo = correo;
     }
 
+    public String getNomImagen() {
+        return nomImagen;
+    }
+
+    public void setNomImagen(String nomImagen) {
+        this.nomImagen = nomImagen;
+    }
+
+    public double getImagen() {
+        return imagen;
+    }
+
+    public void setImagen(double imagen) {
+        this.imagen = imagen;
+    }
+
+   
 
     
 }
