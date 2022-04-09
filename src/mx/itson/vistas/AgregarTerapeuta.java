@@ -7,10 +7,7 @@ package mx.itson.vistas;
 import java.awt.Image;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.sql.Blob;
-import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
@@ -30,10 +27,6 @@ public class AgregarTerapeuta extends javax.swing.JFrame {
     public AgregarTerapeuta() {
         initComponents();
     }
-    
-    private FileInputStream fis;
-    private int longitudBytes;
-    
     private void limpiarCampos(){
     txtNombre.setText("");
     txtUsuario.setText("");
@@ -65,7 +58,7 @@ public class AgregarTerapeuta extends javax.swing.JFrame {
            terapeuta.setContraseña(contraseña);
            terapeuta.setPuesto(puesto);
            terapeuta.setNomImagen(txt_NombreImagen.getText());
-           terapeuta.setImagen(foto.available());
+           terapeuta.setImagen((byte)foto.available());
        
             
                 dao.agregar(terapeuta);
@@ -201,25 +194,16 @@ public class AgregarTerapeuta extends javax.swing.JFrame {
     }//GEN-LAST:event_lbl_AddTerapeutaMouseClicked
 
     private void lbl_subirImagenMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_subirImagenMouseClicked
-        JFileChooser se = new JFileChooser();
-        se.setFileSelectionMode(JFileChooser.FILES_ONLY);
-        int estado = se.showOpenDialog(null);
-        if (estado == JFileChooser.APPROVE_OPTION) {
-            try {
-
-                fis = new FileInputStream(se.getSelectedFile());
-                this.longitudBytes = (int) se.getSelectedFile().length();
-                Image icono = ImageIO.read(se.getSelectedFile()).getScaledInstance(lbl_imagen.getWidth(), lbl_imagen.getHeight(), Image.SCALE_DEFAULT);
-                lbl_imagen.setIcon(new ImageIcon(icono));
-                lbl_imagen.updateUI();
-
-            } catch (FileNotFoundException e) {
-                e.printStackTrace();
-                System.out.println("Error en el primer catch");
-            } catch (IOException e) {
-                e.printStackTrace();
-                System.out.println("Error en el segundo catch");
-            }
+        JFileChooser archivo = new JFileChooser();
+        archivo.setFileFilter(new FileNameExtensionFilter("Archivo de imagenes", "jpg","jpeg","png"));
+        int ventana = archivo.showOpenDialog(this);
+        if(ventana == JFileChooser.APPROVE_OPTION){
+            
+            File file =archivo.getSelectedFile();
+            txt_NombreImagen.setText(file.getAbsolutePath());
+            Image foto = getToolkit().getImage(txt_NombreImagen.getText());
+            foto = foto.getScaledInstance(320, 320, 1);
+            lbl_imagen.setIcon((new ImageIcon(foto)));
         }
 
     }//GEN-LAST:event_lbl_subirImagenMouseClicked
