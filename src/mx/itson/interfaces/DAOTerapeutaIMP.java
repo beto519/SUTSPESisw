@@ -196,7 +196,7 @@ public class DAOTerapeutaIMP implements DAOTerapeuta {
             if (db.connect()) {
                 String query = "SELECT * FROM bxopxuzsnsc4au7ggfnf.terapeuta WHERE IdTerap = " + id;
                 ResultSet rs = (ResultSet) db.execute(query, false);
-                if (rs.next() == true) {
+                if (rs.next()) {
                     //leer Binario
                     Blob blob = rs.getBlob(8);
                     //pasar el binario a imagen
@@ -214,7 +214,6 @@ public class DAOTerapeutaIMP implements DAOTerapeuta {
                 }
             }
         } catch (Exception e) {
-            e.printStackTrace();
         } finally {
             db.disconnect();
         }
