@@ -87,6 +87,7 @@ public class AgregarTerapeuta extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        btnVolverMenu = new javax.swing.JLabel();
         lbl_Volver = new javax.swing.JLabel();
         lbl_AddTerapeuta = new javax.swing.JLabel();
         lblNombre = new javax.swing.JLabel();
@@ -106,6 +107,14 @@ public class AgregarTerapeuta extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        btnVolverMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/atras.png"))); // NOI18N
+        btnVolverMenu.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnVolverMenuMouseClicked(evt);
+            }
+        });
+        getContentPane().add(btnVolverMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 10, -1, -1));
 
         lbl_Volver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/volverazul.png"))); // NOI18N
         lbl_Volver.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -159,7 +168,7 @@ public class AgregarTerapeuta extends javax.swing.JFrame {
         lbl_subirImagen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/subirimagen.png"))); // NOI18N
         lbl_subirImagen.setText("Subir Foto");
         lbl_subirImagen.setToolTipText("");
-        lbl_subirImagen.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lbl_subirImagen.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lbl_subirImagen.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         lbl_subirImagen.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         lbl_subirImagen.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -215,6 +224,12 @@ public class AgregarTerapeuta extends javax.swing.JFrame {
 
     }//GEN-LAST:event_lbl_subirImagenMouseClicked
 
+    private void btnVolverMenuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnVolverMenuMouseClicked
+        Menu VolverMenu = new Menu();
+        VolverMenu.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnVolverMenuMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -252,6 +267,7 @@ public class AgregarTerapeuta extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Fondo;
+    private javax.swing.JLabel btnVolverMenu;
     private javax.swing.JLabel lblContraseña;
     private javax.swing.JLabel lblCorreo;
     private javax.swing.JLabel lblNombre;
