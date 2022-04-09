@@ -31,6 +31,7 @@ public class VerNiños extends javax.swing.JFrame {
         jList1 = new javax.swing.JList<>();
         jScrollPane2 = new javax.swing.JScrollPane();
         tbl_Niños = new javax.swing.JTable();
+        btnVolverMenu = new javax.swing.JLabel();
         lbl_volver = new javax.swing.JLabel();
         lbl_actualizarNiño = new javax.swing.JLabel();
         lbl_edita = new javax.swing.JLabel();
@@ -78,6 +79,14 @@ public class VerNiños extends javax.swing.JFrame {
 
         getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 840, 560));
 
+        btnVolverMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/atras 60.png"))); // NOI18N
+        btnVolverMenu.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnVolverMenuMouseClicked(evt);
+            }
+        });
+        getContentPane().add(btnVolverMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 0, -1, -1));
+
         lbl_volver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/regresar.png"))); // NOI18N
         lbl_volver.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         getContentPane().add(lbl_volver, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 0, 110, 70));
@@ -122,6 +131,12 @@ public class VerNiños extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void btnVolverMenuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnVolverMenuMouseClicked
+        Menu VolverMenu = new Menu();
+        VolverMenu.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnVolverMenuMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -159,6 +174,7 @@ public class VerNiños extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Fondo;
+    private javax.swing.JLabel btnVolverMenu;
     private javax.swing.JList<String> jList1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;

@@ -63,6 +63,7 @@ DAOTerapeutaIMP dao = new DAOTerapeutaIMP();
 
         jScrollPane1 = new javax.swing.JScrollPane();
         tblTerapeutas = new javax.swing.JTable();
+        btnMenuVolver = new javax.swing.JLabel();
         lbl_AddTerapeuta = new javax.swing.JLabel();
         lbl_EliminarTerapeuta = new javax.swing.JLabel();
         lbl_ActualizarLista = new javax.swing.JLabel();
@@ -116,6 +117,14 @@ DAOTerapeutaIMP dao = new DAOTerapeutaIMP();
         }
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 900, 540));
+
+        btnMenuVolver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/atras 60.png"))); // NOI18N
+        btnMenuVolver.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnMenuVolverMouseClicked(evt);
+            }
+        });
+        getContentPane().add(btnMenuVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 10, -1, -1));
 
         lbl_AddTerapeuta.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         lbl_AddTerapeuta.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -232,6 +241,12 @@ dispose();
         LlenarTabla();
     }//GEN-LAST:event_lbl_ActualizarListaMouseClicked
 
+    private void btnMenuVolverMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnMenuVolverMouseClicked
+        Menu VolverMenu = new Menu();
+        VolverMenu.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnMenuVolverMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -269,6 +284,10 @@ dispose();
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Fondo;
+    private javax.swing.JLabel btnMenuVolver;
+    private javax.swing.JLabel btnVolverMenu;
+    private javax.swing.JLabel btnVolverMenu1;
+    private javax.swing.JLabel btnVolverMenu2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lbl_ActualizarLista;
     private javax.swing.JLabel lbl_AddTerapeuta;
