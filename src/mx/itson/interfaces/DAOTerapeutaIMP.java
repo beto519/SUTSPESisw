@@ -4,11 +4,22 @@
  */
 package mx.itson.interfaces;
 
+import java.awt.Image;
+import java.awt.image.BufferedImage;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.sql.Blob;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.imageio.ImageIO;
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
 import mx.itson.controlador.DBHelper;
 import mx.itson.entidades.Terapeuta;
+import mx.itson.vistas.MostrarTerapeuta;
 /**
  *
  * @author lopez
@@ -112,7 +123,7 @@ public class DAOTerapeutaIMP implements DAOTerapeuta {
                     terapeuta.setCodigoUsuario(rs.getString("usuario"));
                     terapeuta.setContraseña(rs.getString("contraseña"));
                     terapeuta.setNomImagen(rs.getString("nomImagen"));
-                    terapeuta.setImagen(rs.getDouble("imagen"));
+                    terapeuta.setImagen(rs.getInt("imagen"));
                     terapeutas.add(terapeuta);
                 }
             }
@@ -141,7 +152,7 @@ public class DAOTerapeutaIMP implements DAOTerapeuta {
                     empleado.setCodigoUsuario(rs.getString("usuario"));
                     empleado.setContraseña(rs.getString("contraseña"));
                     empleado.setNomImagen(rs.getString("nomImagen"));
-                    empleado.setImagen(rs.getDouble("imagen"));
+                    empleado.setImagen(rs.getInt("imagen"));
                    
                 }
             }
@@ -168,6 +179,38 @@ public class DAOTerapeutaIMP implements DAOTerapeuta {
                     empleado.setCorreo(rs.getString("email"));
                     empleado.setCodigoUsuario(rs.getString("usuario"));
                     empleado.setContraseña(rs.getString("contraseña"));
+                }
+            }
+        } catch (Exception e) {
+        } finally {
+            db.disconnect();
+        }
+        return empleado;  
+    }
+
+    @Override
+    public Terapeuta obtenerFoto(int id) {
+         Terapeuta empleado = new Terapeuta();
+         MostrarTerapeuta mt = new MostrarTerapeuta();
+        try {
+            if (db.connect()) {
+                String query = "SELECT * FROM bxopxuzsnsc4au7ggfnf.terapeuta WHERE IdTerap = " + id;
+                ResultSet rs = (ResultSet) db.execute(query, false);
+                if (rs.next()) {
+                    //leer Binario
+                    Blob blob = rs.getBlob(8);
+                    //pasar el binario a imagen
+                    byte[] data = blob.getBytes(1, (int) blob.length());
+                    //lee la imagen
+                    BufferedImage img = null;
+                    try {
+                        img = ImageIO.read(new ByteArrayInputStream(data));
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    ImageIcon icono = new ImageIcon(img);
+                    Icon imagen = new ImageIcon(icono.getImage().getScaledInstance(mt.lbl_imagen.getWidth(), mt.lbl_imagen.getHeight(), Image.SCALE_DEFAULT));
+                    mt.lbl_imagen.setIcon(imagen);
                 }
             }
         } catch (Exception e) {

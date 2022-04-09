@@ -122,5 +122,16 @@ public class DBHelper {
     public void setConnection(Connection connection) {
         this.connection = connection;
     }
+    
+    public static Connection conectar() {
+        try {
 
+            Connection cn = DriverManager.getConnection("jdbc:mysql://bxopxuzsnsc4au7ggfnf-mysql.services.clever-cloud.com?useSSL=false", "uaj8yfspoqzs7svr", "CW5AjYh1MM4kX6VgzOSz");
+            return cn;
+
+        } catch (SQLException e) {
+            System.out.println("Error en la conexion local " + e);
+        }
+        return (null);
+    }
 }

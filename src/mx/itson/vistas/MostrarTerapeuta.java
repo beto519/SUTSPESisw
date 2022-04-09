@@ -1,6 +1,26 @@
 
 package mx.itson.vistas;
 
+import java.awt.Image;
+import java.awt.image.BufferedImage;
+import java.io.ByteArrayInputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.sql.Blob;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.imageio.ImageIO;
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import mx.itson.controlador.DBHelper;
 import mx.itson.entidades.*;
 import mx.itson.interfaces.*;
 
@@ -15,14 +35,17 @@ public class MostrarTerapeuta extends javax.swing.JFrame {
      */
     public MostrarTerapeuta() {
         initComponents();
+        DAOTerapeutaIMP dao = new DAOTerapeutaIMP();
         VerTerapeutas vt = new VerTerapeutas();
         lbl_id.setText(vt.idEdit + "");
         RefrescarTerapeutas();
+        
         
     }
     
     private void RefrescarTerapeutas(){
         
+        AgregarTerapeuta at = new AgregarTerapeuta();
         VerTerapeutas vt = new VerTerapeutas();
         DAOTerapeutaIMP dao = new DAOTerapeutaIMP();
         
@@ -33,8 +56,34 @@ public class MostrarTerapeuta extends javax.swing.JFrame {
             lbl_email.setText(terapeuta.getCorreo());
             lbl_usuario.setText(terapeuta.getCodigoUsuario());
             
-            
-            
+            try {
+                
+                Connection cn = DBHelper.conectar() ;
+                PreparedStatement pst = cn.prepareStatement("SELECT * FROM bxopxuzsnsc4au7ggfnf.terapeuta WHERE IdTerap = " + 10);
+                ResultSet rs = pst.executeQuery();
+                
+                if(rs.next()){
+                    //leer Binario
+                    Blob blob = rs.getBlob(8);
+                    //pasar el binario a imagen
+                    byte[] data = blob.getBytes(1, (int) blob.length());
+                    //lee la imagen
+                    BufferedImage img = null;
+                    try {
+                        img = ImageIO.read(new ByteArrayInputStream(data));
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    
+                    ImageIcon icono = new ImageIcon(img);
+                    Icon imagen = new ImageIcon(icono.getImage().getScaledInstance(lbl_imagen.getWidth(), lbl_imagen.getHeight(), Image.SCALE_DEFAULT));
+                    lbl_imagen.setIcon(imagen);
+                }
+                
+            } catch (SQLException e) {
+                JOptionPane.showMessageDialog(null, "¡Error al cargar!");
+                System.out.println("Error al cargar foto: " + e);
+            }
             
         } catch (Exception ex) {
             ex.printStackTrace();
@@ -78,7 +127,6 @@ public class MostrarTerapeuta extends javax.swing.JFrame {
         getContentPane().add(lbl_volver, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 70, 70));
 
         lbl_imagen.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lbl_imagen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/compapelochas.jpg"))); // NOI18N
         lbl_imagen.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         lbl_imagen.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lbl_imagen.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -192,8 +240,8 @@ public class MostrarTerapeuta extends javax.swing.JFrame {
     private javax.swing.JLabel lbl_area;
     private javax.swing.JLabel lbl_email;
     private javax.swing.JLabel lbl_id;
-    private javax.swing.JLabel lbl_imagen;
-    private javax.swing.JLabel lbl_nombre;
+    public javax.swing.JLabel lbl_imagen;
+    public javax.swing.JLabel lbl_nombre;
     private javax.swing.JLabel lbl_tArea;
     private javax.swing.JLabel lbl_tEmail;
     private javax.swing.JLabel lbl_tID;

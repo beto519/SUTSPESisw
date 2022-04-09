@@ -18,7 +18,7 @@ public class Terapeuta {
     private String puesto;
     private String correo;
     private String nomImagen;
-    private double imagen;
+    private int imagen;
  
     public Terapeuta() {
     }
@@ -115,13 +115,14 @@ public class Terapeuta {
         this.nomImagen = nomImagen;
     }
 
-    public double getImagen() {
+    public int getImagen() {
         return imagen;
     }
 
-    public void setImagen(double imagen) {
+    public void setImagen(int imagen) {
         this.imagen = imagen;
     }
+
 
    
 

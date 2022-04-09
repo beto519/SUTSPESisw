@@ -35,6 +35,7 @@ public class AgregarTerapeuta extends javax.swing.JFrame {
     txtContraseña.setText("");
     }
     
+    
   private void RegistrarUser() {
         FileInputStream foto;
         File NombreFoto;
@@ -57,7 +58,7 @@ public class AgregarTerapeuta extends javax.swing.JFrame {
            terapeuta.setContraseña(contraseña);
            terapeuta.setPuesto(puesto);
            terapeuta.setNomImagen(txt_NombreImagen.getText());
-           terapeuta.setImagen(foto.available());
+           terapeuta.setImagen((byte)foto.available());
        
             
                 dao.agregar(terapeuta);
@@ -178,10 +179,9 @@ public class AgregarTerapeuta extends javax.swing.JFrame {
     }//GEN-LAST:event_lbl_VolverMouseClicked
 
     private void lbl_AddTerapeutaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_AddTerapeutaMouseClicked
-RegistrarUser();
+        RegistrarUser();
 
-
-        // TODO add your handling code here:
+// TODO add your handling code here:
     }//GEN-LAST:event_lbl_AddTerapeutaMouseClicked
 
     private void lbl_subirImagenMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_subirImagenMouseClicked
