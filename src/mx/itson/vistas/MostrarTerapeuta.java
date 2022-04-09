@@ -59,10 +59,10 @@ public class MostrarTerapeuta extends javax.swing.JFrame {
             try {
                 
                 Connection cn = DBHelper.conectar() ;
-                PreparedStatement pst = cn.prepareStatement("SELECT * FROM bxopxuzsnsc4au7ggfnf.terapeuta WHERE IdTerap = " + 10);
+                PreparedStatement pst = cn.prepareStatement("SELECT * FROM bxopxuzsnsc4au7ggfnf.terapeuta WHERE IdTerap = '" + vt.idEdit + "'");
                 ResultSet rs = pst.executeQuery();
                 
-                if(rs.next()){
+                if(rs.next() == true){
                     //leer Binario
                     Blob blob = rs.getBlob(8);
                     //pasar el binario a imagen
