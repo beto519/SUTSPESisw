@@ -123,7 +123,7 @@ public class DAOTerapeutaIMP implements DAOTerapeuta {
                     terapeuta.setCodigoUsuario(rs.getString("usuario"));
                     terapeuta.setContraseña(rs.getString("contraseña"));
                     terapeuta.setNomImagen(rs.getString("nomImagen"));
-                    terapeuta.setImagen(rs.getInt("imagen"));
+                    terapeuta.setImagen(rs.getString("imagen"));
                     terapeutas.add(terapeuta);
                 }
             }
@@ -152,7 +152,7 @@ public class DAOTerapeutaIMP implements DAOTerapeuta {
                     empleado.setCodigoUsuario(rs.getString("usuario"));
                     empleado.setContraseña(rs.getString("contraseña"));
                     empleado.setNomImagen(rs.getString("nomImagen"));
-                    empleado.setImagen(rs.getInt("imagen"));
+                    empleado.setImagen(rs.getString("imagen"));
                    
                 }
             }

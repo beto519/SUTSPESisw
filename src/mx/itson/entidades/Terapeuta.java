@@ -18,7 +18,7 @@ public class Terapeuta {
     private String puesto;
     private String correo;
     private String nomImagen;
-    private int imagen;
+    private String imagen;
  
     public Terapeuta() {
     }
@@ -115,11 +115,11 @@ public class Terapeuta {
         this.nomImagen = nomImagen;
     }
 
-    public int getImagen() {
+    public String getImagen() {
         return imagen;
     }
 
-    public void setImagen(int imagen) {
+    public void setImagen(String imagen) {
         this.imagen = imagen;
     }
 

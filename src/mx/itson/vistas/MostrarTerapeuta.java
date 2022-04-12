@@ -59,7 +59,7 @@ public class MostrarTerapeuta extends javax.swing.JFrame {
             try {
                 
                 Connection cn = DBHelper.conectar() ;
-                PreparedStatement pst = cn.prepareStatement("SELECT * FROM bxopxuzsnsc4au7ggfnf.terapeuta WHERE IdTerap = " + 10);
+                PreparedStatement pst = cn.prepareStatement("SELECT * FROM bxopxuzsnsc4au7ggfnf.terapeuta WHERE IdTerap = " + vt.idEdit);
                 ResultSet rs = pst.executeQuery();
                 
                 if(rs.next()){
@@ -100,7 +100,6 @@ public class MostrarTerapeuta extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        btnVolverMenu = new javax.swing.JLabel();
         lbl_volver = new javax.swing.JLabel();
         lbl_imagen = new javax.swing.JLabel();
         lbl_id = new javax.swing.JLabel();
@@ -117,14 +116,6 @@ public class MostrarTerapeuta extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        btnVolverMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/atras.png"))); // NOI18N
-        btnVolverMenu.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnVolverMenuMouseClicked(evt);
-            }
-        });
-        getContentPane().add(btnVolverMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 10, -1, -1));
 
         lbl_volver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/atras amarillo.png"))); // NOI18N
         lbl_volver.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -208,12 +199,6 @@ public class MostrarTerapeuta extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_lbl_volverMouseClicked
 
-    private void btnVolverMenuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnVolverMenuMouseClicked
-        Menu VolverMenu = new Menu();
-        VolverMenu.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_btnVolverMenuMouseClicked
-
     /**
      * @param args the command line arguments
      */
@@ -252,7 +237,6 @@ public class MostrarTerapeuta extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Fondo;
-    private javax.swing.JLabel btnVolverMenu;
     private javax.swing.JLabel lbl_area;
     private javax.swing.JLabel lbl_email;
     private javax.swing.JLabel lbl_id;

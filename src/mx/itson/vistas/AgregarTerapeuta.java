@@ -4,14 +4,22 @@
  */
 package mx.itson.vistas;
 
+import java.awt.Color;
 import java.awt.Image;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.sql.Blob;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import javax.swing.filechooser.FileNameExtensionFilter;
+import mx.itson.controlador.DBHelper;
 import mx.itson.entidades.Terapeuta;
 import mx.itson.interfaces.DAOTerapeutaIMP;
 
@@ -21,9 +29,9 @@ import mx.itson.interfaces.DAOTerapeutaIMP;
  */
 public class AgregarTerapeuta extends javax.swing.JFrame {
 
-    /**
-     * Creates new form AgregarTerapeuta
-     */
+    private FileInputStream fis;
+    private int longitudBytes;
+    
     public AgregarTerapeuta() {
         initComponents();
     }
@@ -35,42 +43,91 @@ public class AgregarTerapeuta extends javax.swing.JFrame {
     txtContraseña.setText("");
     }
     
-    
-  private void RegistrarUser() {
-        FileInputStream foto;
-        File NombreFoto;
-        DAOTerapeutaIMP dao = new DAOTerapeutaIMP();
-        Terapeuta terapeuta = new Terapeuta();
-        try {
-            String nombre = txtNombre.getText();
+    public void GuardarImagen() {
 
-            long codigoEmpleado = Long.valueOf(txtUsuario.getText());
-            String contraseña = String.valueOf(txtContraseña.getPassword());
-           String correo = txtCorreo.getText();
-            String puesto = txtPuesto.getText();
-            
-            
-           NombreFoto = new File(txt_NombreImagen.getText());
-           foto = new FileInputStream(NombreFoto);
-           terapeuta.setCodigoUsuario(codigoEmpleado+"");
-           terapeuta.setNombre(nombre);
-           terapeuta.setCorreo(correo);
-           terapeuta.setContraseña(contraseña);
-           terapeuta.setPuesto(puesto);
-           terapeuta.setNomImagen(txt_NombreImagen.getText());
-           terapeuta.setImagen((byte)foto.available());
-       
-            
-                dao.agregar(terapeuta);
+        if (txt_NombreImagen.getText().equals("")) {
+            txt_NombreImagen.setBackground(Color.red);
+            JOptionPane.showMessageDialog(null, "Debes llenar todos los campos");
+        } else {
 
-                JOptionPane.showMessageDialog(null, "Registro exitoso", "Mensaje",
-                        JOptionPane.DEFAULT_OPTION);
+            String NombreCompleto;
+            NombreCompleto = txt_NombreImagen.getText().trim();
+            String Puesto;
+            Puesto = txtPuesto.getText().trim();
+            String Email;
+            Email = txtCorreo.getText().trim();
+            long CodigoUsuario;
+            CodigoUsuario = Long.valueOf(txtUsuario.getText());
+            String Contraseña;
+            Contraseña = String.valueOf(txtContraseña.getPassword());
+            String nombreImg;
+            nombreImg = txt_NombreImagen.getText().trim();
+
+            try {
+
+                Connection cn = DBHelper.conectar();
+                PreparedStatement pst = cn.prepareStatement("insert into `bxopxuzsnsc4au7ggfnf`.`terapeuta` values (?,?,?,?,?,?,?,?)");
                 
-         limpiarCampos();
-        } catch (Exception e) {
-            e.printStackTrace();
+                pst.setInt(1, 0);
+                pst.setString(2, NombreCompleto);
+                pst.setString(3, Puesto);
+                pst.setString(4, Email);
+                pst.setString(5, CodigoUsuario+"");
+                pst.setString(6, Contraseña);
+                pst.setString(7, nombreImg);
+                pst.setBlob(8, fis, longitudBytes);
+                
+                pst.executeUpdate();
+                cn.close();
+                limpiarCampos();
+                txt_NombreImagen.setBackground(Color.green);
+                lbl_imagen.setText("Foto");
+                JOptionPane.showMessageDialog(null, "Registro Exitoso");
+                
+            } catch (SQLException e) {
+                System.out.println("Error al guardar foto " + e);
+                JOptionPane.showMessageDialog(null, "¡¡Error al guardar foto!!");
+            }
+
         }
     }
+    
+    
+//  private void RegistrarUser() {
+//        FileInputStream foto;
+//        File NombreFoto;
+//        DAOTerapeutaIMP dao = new DAOTerapeutaIMP();
+//        Terapeuta terapeuta = new Terapeuta();
+//        try {
+//            String nombre = txtNombre.getText();
+//
+//            long codigoEmpleado = Long.valueOf(txtUsuario.getText());
+//            String contraseña = String.valueOf(txtContraseña.getPassword());
+//           String correo = txtCorreo.getText();
+//            String puesto = txtPuesto.getText();
+//            
+//            
+//           NombreFoto = new File(txt_NombreImagen.getText());
+//           foto = new FileInputStream(NombreFoto);
+//           terapeuta.setCodigoUsuario(codigoEmpleado+"");
+//           terapeuta.setNombre(nombre);
+//           terapeuta.setCorreo(correo);
+//           terapeuta.setContraseña(contraseña);
+//           terapeuta.setPuesto(puesto);
+//           terapeuta.setNomImagen(txt_NombreImagen.getText());
+//           terapeuta.setImagen((byte)foto.available());
+//       
+//            
+//                dao.agregar(terapeuta);
+//
+//                JOptionPane.showMessageDialog(null, "Registro exitoso", "Mensaje",
+//                        JOptionPane.DEFAULT_OPTION);
+//                
+//         limpiarCampos();
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -80,7 +137,6 @@ public class AgregarTerapeuta extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        btnVolverMenu = new javax.swing.JLabel();
         lbl_Volver = new javax.swing.JLabel();
         lbl_AddTerapeuta = new javax.swing.JLabel();
         lblNombre = new javax.swing.JLabel();
@@ -100,14 +156,6 @@ public class AgregarTerapeuta extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        btnVolverMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/atras.png"))); // NOI18N
-        btnVolverMenu.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnVolverMenuMouseClicked(evt);
-            }
-        });
-        getContentPane().add(btnVolverMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 10, -1, -1));
 
         lbl_Volver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/volverazul.png"))); // NOI18N
         lbl_Volver.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -151,9 +199,7 @@ public class AgregarTerapeuta extends javax.swing.JFrame {
         lblUsuario1.setText("Usuario");
         getContentPane().add(lblUsuario1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 450, 220, 50));
         getContentPane().add(txtContraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 590, 380, 50));
-
-        lbl_imagen.setText("jLabel2");
-        getContentPane().add(lbl_imagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 70, 360, 340));
+        getContentPane().add(lbl_imagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 10, 450, 440));
 
         lbl_subirImagen.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         lbl_subirImagen.setForeground(new java.awt.Color(0, 0, 0));
@@ -188,31 +234,33 @@ public class AgregarTerapeuta extends javax.swing.JFrame {
     }//GEN-LAST:event_lbl_VolverMouseClicked
 
     private void lbl_AddTerapeutaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_AddTerapeutaMouseClicked
-        RegistrarUser();
-
+        GuardarImagen();
 // TODO add your handling code here:
     }//GEN-LAST:event_lbl_AddTerapeutaMouseClicked
 
     private void lbl_subirImagenMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_subirImagenMouseClicked
-        JFileChooser archivo = new JFileChooser();
-        archivo.setFileFilter(new FileNameExtensionFilter("Archivo de imagenes", "jpg","jpeg","png"));
-        int ventana = archivo.showOpenDialog(this);
-        if(ventana == JFileChooser.APPROVE_OPTION){
-            
-            File file =archivo.getSelectedFile();
-            txt_NombreImagen.setText(file.getAbsolutePath());
-            Image foto = getToolkit().getImage(txt_NombreImagen.getText());
-            foto = foto.getScaledInstance(320, 320, 1);
-            lbl_imagen.setIcon((new ImageIcon(foto)));
+        JFileChooser se = new JFileChooser();
+        se.setFileSelectionMode(JFileChooser.FILES_ONLY);
+        int estado = se.showOpenDialog(null);
+        if (estado == JFileChooser.APPROVE_OPTION) {
+            try {
+
+                fis = new FileInputStream(se.getSelectedFile());
+                this.longitudBytes = (int) se.getSelectedFile().length();
+                Image icono = ImageIO.read(se.getSelectedFile()).getScaledInstance(lbl_imagen.getWidth(), lbl_imagen.getHeight(), Image.SCALE_DEFAULT);
+                lbl_imagen.setIcon(new ImageIcon(icono));
+                lbl_imagen.updateUI();
+
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+                System.out.println("Error en el primer catch");
+            } catch (IOException e) {
+                e.printStackTrace();
+                System.out.println("Error en el segundo catch");
+            }
         }
 
     }//GEN-LAST:event_lbl_subirImagenMouseClicked
-
-    private void btnVolverMenuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnVolverMenuMouseClicked
-        Menu VolverMenu = new Menu();
-        VolverMenu.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_btnVolverMenuMouseClicked
 
     /**
      * @param args the command line arguments
@@ -251,7 +299,6 @@ public class AgregarTerapeuta extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Fondo;
-    private javax.swing.JLabel btnVolverMenu;
     private javax.swing.JLabel lblContraseña;
     private javax.swing.JLabel lblCorreo;
     private javax.swing.JLabel lblNombre;
