@@ -167,6 +167,11 @@ DAOTerapeutaIMP dao = new DAOTerapeutaIMP();
         lbl_editarTerapeuta.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lbl_editarTerapeuta.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         lbl_editarTerapeuta.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        lbl_editarTerapeuta.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lbl_editarTerapeutaMouseClicked(evt);
+            }
+        });
         getContentPane().add(lbl_editarTerapeuta, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 630, -1, -1));
 
         lbl_Volver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/volverazul.png"))); // NOI18N
@@ -208,8 +213,8 @@ dispose();
         
         
         if(evt.getClickCount() == 2){
-            MostrarTerapeuta ET = new MostrarTerapeuta();
-            ET.setVisible(true);
+            MostrarTerapeuta MT = new MostrarTerapeuta();
+            MT.setVisible(true);
             this.dispose();
         }
         
@@ -232,6 +237,14 @@ dispose();
     private void lbl_ActualizarListaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_ActualizarListaMouseClicked
         LlenarTabla();
     }//GEN-LAST:event_lbl_ActualizarListaMouseClicked
+
+    private void lbl_editarTerapeutaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_editarTerapeutaMouseClicked
+    EditarTerapeuta ET = new EditarTerapeuta();
+    ET.setVisible(true);
+    this.dispose();
+    
+        
+    }//GEN-LAST:event_lbl_editarTerapeutaMouseClicked
 
     /**
      * @param args the command line arguments

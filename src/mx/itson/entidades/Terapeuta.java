@@ -4,6 +4,7 @@
  */
 package mx.itson.entidades;
 
+import java.io.FileInputStream;
 import java.sql.Blob;
 
 /**
@@ -19,6 +20,8 @@ public class Terapeuta {
     private String correo;
     private String nomImagen;
     private String imagen;
+    private FileInputStream fis;
+    private int longitudBytes;
  
     public Terapeuta() {
     }
@@ -121,6 +124,22 @@ public class Terapeuta {
 
     public void setImagen(String imagen) {
         this.imagen = imagen;
+    }
+
+    public FileInputStream getFis() {
+        return fis;
+    }
+
+    public void setFis(FileInputStream fis) {
+        this.fis = fis;
+    }
+
+    public int getLongitudBytes() {
+        return longitudBytes;
+    }
+
+    public void setLongitudBytes(int longitudBytes) {
+        this.longitudBytes = longitudBytes;
     }
 
 
