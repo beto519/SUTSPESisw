@@ -20,6 +20,7 @@ public class Instrucciones extends javax.swing.JFrame {
         initComponents();
         setLocationRelativeTo(null);
         
+        
     }
 
     /**

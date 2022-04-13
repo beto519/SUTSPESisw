@@ -22,6 +22,7 @@ public class IniciarSesion extends javax.swing.JFrame {
      */
     public IniciarSesion() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     private void validarDatos() {

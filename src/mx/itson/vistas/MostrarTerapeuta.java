@@ -32,6 +32,7 @@ public class MostrarTerapeuta extends javax.swing.JFrame {
         VerTerapeutas vt = new VerTerapeutas();
         lbl_id.setText(vt.idEdit + "");
         RefrescarTerapeutas();
+        setLocationRelativeTo(null);
         
         
     }
