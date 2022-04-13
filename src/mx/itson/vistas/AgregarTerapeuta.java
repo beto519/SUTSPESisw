@@ -34,6 +34,7 @@ public class AgregarTerapeuta extends javax.swing.JFrame {
     
     public AgregarTerapeuta() {
         initComponents();
+        setLocationRelativeTo(null);
     }
     private void limpiarCampos(){
     txtNombre.setText("");
@@ -51,7 +52,7 @@ public class AgregarTerapeuta extends javax.swing.JFrame {
         } else {
 
             String NombreCompleto;
-            NombreCompleto = txt_NombreImagen.getText().trim();
+            NombreCompleto = txtNombre.getText().trim();
             String Puesto;
             Puesto = txtPuesto.getText().trim();
             String Email;

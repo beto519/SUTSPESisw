@@ -24,6 +24,7 @@ DAOTerapeutaIMP dao = new DAOTerapeutaIMP();
     public VerTerapeutas() {
         initComponents();
         LlenarTabla();
+        setLocationRelativeTo(null);
     }
     
     public static int idEdit = 0;
