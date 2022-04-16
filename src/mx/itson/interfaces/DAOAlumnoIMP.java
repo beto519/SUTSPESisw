@@ -76,9 +76,11 @@ public class DAOAlumnoIMP implements DAOAlumno {
         boolean rs = false;
         
         try {
+            if(DB.connect()){
             String query = "DELETE FROM `bxopxuzsnsc4au7ggfnf`.`niños` WHERE idNiño ="+id;
             
             rs = (boolean) DB.execute(query, true);
+            }
         } catch (Exception ex) {
             ex.printStackTrace();
         }finally{
@@ -100,7 +102,7 @@ public class DAOAlumnoIMP implements DAOAlumno {
                 alumno.setIdAlumno(rs.getInt("idNiño"));
                 alumno.setNombre(rs.getString("nombreCom"));
                 alumno.setEdad(rs.getInt("edad"));
-                alumno.setNivel(rs.getInt("nivelActual"));
+                alumno.setNivel(rs.getString("nivelActual"));
                 alumno.setNombreTutor(rs.getString("nombreTutor"));
                 alumno.setTelefono(rs.getString("telefono"));
                 alumno.setNomImagen(rs.getString("nomImagen"));
@@ -127,7 +129,7 @@ public class DAOAlumnoIMP implements DAOAlumno {
                 alumno.setIdAlumno(rs.getInt("idNiño"));
                 alumno.setNombre(rs.getString("nombreCom"));
                 alumno.setEdad(rs.getInt("edad"));
-                alumno.setNivel(rs.getInt("nivelActual"));
+                alumno.setNivel(rs.getString("nivelActual"));
                 alumno.setNombreTutor(rs.getString("nombreTutor"));
                 alumno.setTelefono(rs.getString("telefono"));
                 alumno.setNomImagen(rs.getString("nomImagen"));

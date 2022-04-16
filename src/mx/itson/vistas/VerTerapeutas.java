@@ -87,34 +87,12 @@ DAOTerapeutaIMP dao = new DAOTerapeutaIMP();
                 return true;
             }
         };
-        tblTerapeutas.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null}
-            },
-            new String [] {
-                "ID", "Nombre", "Area", "Email"
-            }
-        ) {
-            boolean[] canEdit = new boolean [] {
-                false, false, false, false
-            };
-
-            public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit [columnIndex];
-            }
-        });
         tblTerapeutas.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 tblTerapeutasMouseClicked(evt);
             }
         });
         jScrollPane1.setViewportView(tblTerapeutas);
-        if (tblTerapeutas.getColumnModel().getColumnCount() > 0) {
-            tblTerapeutas.getColumnModel().getColumn(0).setResizable(false);
-            tblTerapeutas.getColumnModel().getColumn(1).setResizable(false);
-            tblTerapeutas.getColumnModel().getColumn(2).setResizable(false);
-            tblTerapeutas.getColumnModel().getColumn(3).setResizable(false);
-        }
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 900, 540));
 
