@@ -107,7 +107,7 @@ public class VerNiños extends javax.swing.JFrame {
         lbl_actualizarNiño.setForeground(new java.awt.Color(0, 0, 0));
         lbl_actualizarNiño.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/actualizarNiño.png"))); // NOI18N
         lbl_actualizarNiño.setText("Actualizar Lista ");
-        lbl_actualizarNiño.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lbl_actualizarNiño.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lbl_actualizarNiño.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         lbl_actualizarNiño.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         getContentPane().add(lbl_actualizarNiño, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 640, -1, -1));
@@ -116,7 +116,7 @@ public class VerNiños extends javax.swing.JFrame {
         lbl_edita.setForeground(new java.awt.Color(0, 0, 0));
         lbl_edita.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/editarNiño.png"))); // NOI18N
         lbl_edita.setText("Editar Niño");
-        lbl_edita.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lbl_edita.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lbl_edita.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         lbl_edita.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         getContentPane().add(lbl_edita, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 640, -1, -1));
@@ -126,9 +126,14 @@ public class VerNiños extends javax.swing.JFrame {
         lbl_borrarNiño.setForeground(new java.awt.Color(0, 0, 0));
         lbl_borrarNiño.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/BorrarNiño.png"))); // NOI18N
         lbl_borrarNiño.setText("Eliminar Niño");
-        lbl_borrarNiño.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lbl_borrarNiño.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lbl_borrarNiño.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         lbl_borrarNiño.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        lbl_borrarNiño.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lbl_borrarNiñoMouseClicked(evt);
+            }
+        });
         getContentPane().add(lbl_borrarNiño, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 640, -1, -1));
 
         lbl_agregarNiño.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
@@ -136,7 +141,7 @@ public class VerNiños extends javax.swing.JFrame {
         lbl_agregarNiño.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_agregarNiño.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/agregarNiño.png"))); // NOI18N
         lbl_agregarNiño.setText("Agregar Niño");
-        lbl_agregarNiño.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lbl_agregarNiño.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lbl_agregarNiño.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         lbl_agregarNiño.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         lbl_agregarNiño.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -177,6 +182,11 @@ public class VerNiños extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_tbl_NiñosMouseClicked
 
+    private void lbl_borrarNiñoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_borrarNiñoMouseClicked
+        // boton eliminar nino 
+    }//GEN-LAST:event_lbl_borrarNiñoMouseClicked
+    public static int idEdit = 0;
+   
     private void LlenarTabla(){
     List<Alumno> alumno = dao.obtenerTodos();
     DefaultTableModel model = new DefaultTableModel();

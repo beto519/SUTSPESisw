@@ -6,96 +6,168 @@ package mx.itson.vistas;
 
 import java.awt.Color;
 import java.awt.Image;
-import java.io.File;
+import java.awt.image.BufferedImage;
+import java.io.ByteArrayInputStream;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.sql.Blob;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import javax.imageio.ImageIO;
+import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
-import javax.swing.filechooser.FileNameExtensionFilter;
 import mx.itson.controlador.DBHelper;
+import mx.itson.entidades.Alumno;
 import mx.itson.entidades.Terapeuta;
+import mx.itson.interfaces.DAOAlumnoIMP;
 import mx.itson.interfaces.DAOTerapeutaIMP;
 
 /**
  *
- * @author lopez
+ * @author vinko
  */
-public class AgregarNiños extends javax.swing.JFrame {
+public class EditarNiños extends javax.swing.JFrame {
 
+    VerNiños VN = new VerNiños();
+    DAOAlumnoIMP dao = new DAOAlumnoIMP();
+    Alumno alumno = dao.obtenerPorId(VN.idEdit);
     private FileInputStream fis;
-    private int longitudBytes;
+    private int longitudBytes = 0;
     
-    public AgregarNiños() {
+    
+    
+    public EditarNiños() {
+        
         initComponents();
         setLocationRelativeTo(null);
-    }
-    private void limpiarCampos(){
-    txtNombre.setText("");
-    txtTelefono.setText("");
-    txtTutor.setText("");
-    txtTelefono.setText("");
-    txt_NombreImagen.setText("");
+        RefrescarAlumnos();
+        lbl_id.setText(VN.idEdit+"");
     }
     
-    public void GuardarImagen() {
-
-        if (txt_NombreImagen.getText().equals("")) {
-            txt_NombreImagen.setBackground(Color.red);
-            JOptionPane.showMessageDialog(null, "Debes llenar todos los campos");
-        } else {
-
+    
+    
+    public void EditarNino() {
+            
             String NombreCompleto;
-            NombreCompleto = txt_NombreImagen.getText().trim();
+            NombreCompleto = txtNombre.getText().trim();
             String Edad;
             Edad = txtEdad.getText().trim();
-            int Nivel;
-            Nivel = 1;
-            String NombreTutor;
-            NombreTutor = txtTutor.getText().trim();
-            long Telefono;
-            Telefono = Long.valueOf(txtTelefono.getText().trim());
+            String Tutor;
+            Tutor = txtTutor.getText().trim();
+            long CodigoUsuario;
+            CodigoUsuario = Long.valueOf(txtTelefono.getText());
             String nombreImg;
             nombreImg = txt_NombreImagen.getText().trim();
-
+            
+            
             try {
-                Connection cn = DBHelper.conectar();
-                PreparedStatement pst = cn.prepareStatement("insert into `bxopxuzsnsc4au7ggfnf`.`niños` values (?,?,?,?,?,?,?,?)");
+                if(longitudBytes != 0){
+                 Connection cn = DBHelper.conectar();
+                PreparedStatement pst = cn.prepareStatement("UPDATE `bxopxuzsnsc4au7ggfnf`.`terapeuta` SET nombreCom = ?, Area = ?, email = ?, "
+                        + "usuario = ?, contraseña = ?, nomImagen = ?, imagen = ? WHERE IdTerap = ?");
                 
-                pst.setInt(1, 0);
-                pst.setString(2, NombreCompleto);
-                pst.setString(3, Edad);
-                pst.setString(4, Nivel+"");
-                pst.setString(5, NombreTutor);
-                pst.setString(6, Telefono+"");
-                pst.setString(7, nombreImg);
-                pst.setBlob(8, fis, longitudBytes);
+                pst.setString(1, NombreCompleto);
+                pst.setString(2, Edad);
+                pst.setString(3, Tutor);
+                pst.setString(4, CodigoUsuario+"");
+                pst.setString(5, nombreImg);
+                pst.setBlob(6, fis, longitudBytes);
+                pst.setInt(7, VN.idEdit);
+                
                 
                 pst.executeUpdate();
                 cn.close();
-                limpiarCampos();
                 txt_NombreImagen.setBackground(Color.green);
                 lbl_imagen.setText("Foto");
                 JOptionPane.showMessageDialog(null, "Registro Exitoso");
-
+            }else{
+                Connection cn = DBHelper.conectar();
+                PreparedStatement pst = cn.prepareStatement("UPDATE `bxopxuzsnsc4au7ggfnf`.`alumno` SET nombreCom = ?, Area = ?, edad = ?, "
+                        + "tutor = ?, contraseña = ?, nomImagen = ? WHERE IdTerap = ?");
+                
+                pst.setString(1, NombreCompleto);
+                pst.setString(2, Edad);
+                pst.setString(3, Tutor);
+                pst.setString(4, CodigoUsuario+"");
+                pst.setString(5, nombreImg);
+                pst.setBlob(6, fis, longitudBytes);
+                pst.setInt(7, VN.idEdit);
+                
+                
+                pst.executeUpdate();
+                cn.close();
+                txt_NombreImagen.setBackground(Color.green);
+                lbl_imagen.setText("Foto");
+                JOptionPane.showMessageDialog(null, "Registro Exitoso");
+                }
                 
             } catch (SQLException e) {
                 System.out.println("Error al guardar foto " + e);
                 JOptionPane.showMessageDialog(null, "¡¡Error al guardar foto!!");
             }
-
-        }
+        
     }
     
     
-
     
+    private void RefrescarAlumnos(){
+        
+        VerNiños vn = new VerNiños();
+        DAOAlumnoIMP dao = new DAOAlumnoIMP();
+        
+        try {
+            Alumno nino = dao.obtenerPorId(vn.idEdit);
+            txtNombre.setText(nino.getNombre());
+            txtEdad.setText.textArea(nino.getEdad());
+            txtTutor.setText(nino.getNombreTutor());
+            txtTelefono.setText(nino.getTelefono());
+            nino.getNomImagen();
+            nino.getImagen();
+            
+            try {
+                
+                Connection cn = DBHelper.conectar() ;
+                PreparedStatement pst = cn.prepareStatement("SELECT * FROM bxopxuzsnsc4au7ggfnf.terapeuta WHERE IdTerap = " + vn.idEdit);
+                ResultSet rs = pst.executeQuery();
+                
+                if(rs.next()){
+                    //leer Binario
+                    Blob blob = rs.getBlob(8);
+                    //pasar el binario a imagen
+                    byte[] data = blob.getBytes(1, (int) blob.length());
+                    //lee la imagen
+                    BufferedImage img = null;
+                    try {
+                        img = ImageIO.read(new ByteArrayInputStream(data));
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    
+                    ImageIcon icono = new ImageIcon(img);
+                    Icon imagen = new ImageIcon(icono.getImage().getScaledInstance(lbl_imagen.getWidth(), lbl_imagen.getHeight(), Image.SCALE_DEFAULT));
+                    lbl_imagen.setIcon(imagen);
+                }
+                
+            } catch (SQLException e) {
+                JOptionPane.showMessageDialog(null, "¡Error al cargar!");
+                System.out.println("Error al cargar foto: " + e);
+            }
+            
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+}
+
+    /**
+     * This method is called from within the constructor to initialize the form.
+     * WARNING: Do NOT modify this code. The content of this method is always
+     * regenerated by the Form Editor.
+     */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -110,11 +182,12 @@ public class AgregarNiños extends javax.swing.JFrame {
         txtTelefono = new javax.swing.JTextField();
         lblContraseña = new javax.swing.JLabel();
         lblUsuario1 = new javax.swing.JLabel();
-        lbl_imagen = new javax.swing.JLabel();
         lbl_subirImagen = new javax.swing.JLabel();
+        lbl_imagen = new javax.swing.JLabel();
         lbl_AddTerapeuta = new javax.swing.JLabel();
         txt_NombreImagen = new javax.swing.JTextField();
         Fondo = new javax.swing.JLabel();
+        lbl_id = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -156,7 +229,6 @@ public class AgregarNiños extends javax.swing.JFrame {
         lblUsuario1.setForeground(new java.awt.Color(0, 0, 0));
         lblUsuario1.setText("Telefono");
         getContentPane().add(lblUsuario1, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 450, 220, 50));
-        getContentPane().add(lbl_imagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, 450, 530));
 
         lbl_subirImagen.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         lbl_subirImagen.setForeground(new java.awt.Color(0, 0, 0));
@@ -173,25 +245,29 @@ public class AgregarNiños extends javax.swing.JFrame {
             }
         });
         getContentPane().add(lbl_subirImagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 580, -1, -1));
+        getContentPane().add(lbl_imagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, 450, 530));
 
         lbl_AddTerapeuta.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         lbl_AddTerapeuta.setForeground(new java.awt.Color(0, 0, 0));
         lbl_AddTerapeuta.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lbl_AddTerapeuta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/agregarNiño.png"))); // NOI18N
-        lbl_AddTerapeuta.setText("Añadir Niño");
+        lbl_AddTerapeuta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/editarNiño.png"))); // NOI18N
+        lbl_AddTerapeuta.setText("Editar Niño");
         lbl_AddTerapeuta.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lbl_AddTerapeuta.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         lbl_AddTerapeuta.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         lbl_AddTerapeuta.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                lbl_AddTerapeutaMouseClicked(evt);
+                lbl_AddNinoMouseClicked(evt);
             }
         });
         getContentPane().add(lbl_AddTerapeuta, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 580, -1, -1));
         getContentPane().add(txt_NombreImagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 600, 380, 50));
 
-        Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoAmarillo.jpg"))); // NOI18N
+        Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoRosa.jpg"))); // NOI18N
         getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1010, 720));
+
+        lbl_id.setText("jLabel1");
+        getContentPane().add(lbl_id, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 10, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -201,14 +277,9 @@ public class AgregarNiños extends javax.swing.JFrame {
         VerNiños abrir = new VerNiños();
         abrir.setVisible(true);
         dispose();
-        
+
         // TODO add your handling code here:
     }//GEN-LAST:event_lbl_VolverMouseClicked
-
-    private void lbl_AddTerapeutaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_AddTerapeutaMouseClicked
-        GuardarImagen();
-// TODO add your handling code here:
-    }//GEN-LAST:event_lbl_AddTerapeutaMouseClicked
 
     private void lbl_subirImagenMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_subirImagenMouseClicked
         JFileChooser se = new JFileChooser();
@@ -231,8 +302,12 @@ public class AgregarNiños extends javax.swing.JFrame {
                 System.out.println("Error en el segundo catch");
             }
         }
-
     }//GEN-LAST:event_lbl_subirImagenMouseClicked
+
+    private void lbl_AddNinoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_AddNinoMouseClicked
+        EditarNino();
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lbl_AddNinoMouseClicked
 
     /**
      * @param args the command line arguments
@@ -251,21 +326,20 @@ public class AgregarNiños extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(AgregarNiños.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(EditarNiños.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(AgregarNiños.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(EditarNiños.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(AgregarNiños.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(EditarNiños.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(AgregarNiños.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(EditarNiños.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new AgregarNiños().setVisible(true);
+                new EditarNiños().setVisible(true);
             }
         });
     }
@@ -279,6 +353,7 @@ public class AgregarNiños extends javax.swing.JFrame {
     private javax.swing.JLabel lblUsuario1;
     private javax.swing.JLabel lbl_AddTerapeuta;
     private javax.swing.JLabel lbl_Volver;
+    private javax.swing.JLabel lbl_id;
     private javax.swing.JLabel lbl_imagen;
     private javax.swing.JLabel lbl_subirImagen;
     private javax.swing.JTextField txtEdad;
