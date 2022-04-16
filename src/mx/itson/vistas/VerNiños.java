@@ -7,6 +7,7 @@ package mx.itson.vistas;
 
 import java.util.ArrayList;
 import java.util.List;
+import javax.swing.JOptionPane;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 import mx.itson.entidades.Alumno;
@@ -110,6 +111,11 @@ public class VerNiños extends javax.swing.JFrame {
         lbl_actualizarNiño.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lbl_actualizarNiño.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         lbl_actualizarNiño.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        lbl_actualizarNiño.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lbl_actualizarNiñoMouseClicked(evt);
+            }
+        });
         getContentPane().add(lbl_actualizarNiño, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 640, -1, -1));
 
         lbl_edita.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
@@ -119,6 +125,11 @@ public class VerNiños extends javax.swing.JFrame {
         lbl_edita.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lbl_edita.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         lbl_edita.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        lbl_edita.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lbl_editaMouseClicked(evt);
+            }
+        });
         getContentPane().add(lbl_edita, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 640, -1, -1));
 
         lbl_borrarNiño.setBackground(new java.awt.Color(0, 0, 0));
@@ -183,8 +194,29 @@ public class VerNiños extends javax.swing.JFrame {
     }//GEN-LAST:event_tbl_NiñosMouseClicked
 
     private void lbl_borrarNiñoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_borrarNiñoMouseClicked
-        // boton eliminar nino 
+       int respuesta = JOptionPane.showConfirmDialog(this, "Seguro que quieres eliminar este/a Niño?", "Confirmar", 
+        JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+       
+       if(respuesta == JOptionPane.YES_OPTION){
+        dao.eliminar(Integer.parseInt(lbl_id.getText()));
+        LlenarTabla();
+        
+       }
+       if(respuesta == JOptionPane.NO_OPTION){
+           JOptionPane.showMessageDialog(this, "¡¡Ten Cuidado!!");
+       }
     }//GEN-LAST:event_lbl_borrarNiñoMouseClicked
+
+    private void lbl_editaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_editaMouseClicked
+        EditarNiños EditNino = new EditarNiños();
+        EditNino.setVisible(true);
+        this.dispose();
+        
+    }//GEN-LAST:event_lbl_editaMouseClicked
+
+    private void lbl_actualizarNiñoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_actualizarNiñoMouseClicked
+        LlenarTabla();
+    }//GEN-LAST:event_lbl_actualizarNiñoMouseClicked
     public static int idEdit = 0;
    
     private void LlenarTabla(){
