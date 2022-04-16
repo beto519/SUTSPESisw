@@ -11,8 +11,12 @@ package mx.itson.entidades;
 public class Alumno {
     private int idAlumno;
     private String Nombre;
-    private String Nivel;
+    private int Nivel;
     private int Edad;
+    private String Imagen;
+    private String NomImagen;
+    private String NombreTutor;
+    private String Telefono;
 
     public int getIdAlumno() {
         return idAlumno;
@@ -30,11 +34,11 @@ public class Alumno {
         this.Nombre = Nombre;
     }
 
-    public String getNivel() {
+    public int getNivel() {
         return Nivel;
     }
 
-    public void setNivel(String Nivel) {
+    public void setNivel(int Nivel) {
         this.Nivel = Nivel;
     }
 
@@ -44,6 +48,38 @@ public class Alumno {
 
     public void setEdad(int Edad) {
         this.Edad = Edad;
+    }
+
+    public String getImagen() {
+        return Imagen;
+    }
+
+    public void setImagen(String Imagen) {
+        this.Imagen = Imagen;
+    }
+
+    public String getNomImagen() {
+        return NomImagen;
+    }
+
+    public void setNomImagen(String NomImagen) {
+        this.NomImagen = NomImagen;
+    }
+
+    public String getNombreTutor() {
+        return NombreTutor;
+    }
+
+    public void setNombreTutor(String NombreTutor) {
+        this.NombreTutor = NombreTutor;
+    }
+
+    public String getTelefono() {
+        return Telefono;
+    }
+
+    public void setTelefono(String Telefono) {
+        this.Telefono = Telefono;
     }
     
 }

@@ -37,8 +37,7 @@ public class EditarTerapeuta extends javax.swing.JFrame {
     DAOTerapeutaIMP dao = new DAOTerapeutaIMP();
     Terapeuta terapeuta = dao.obtenerPorId(vt.idEdit);
     private FileInputStream fis;
-    private int longitudBytes;
-    private boolean validacion = false;
+    private int longitudBytes = 0;
     
     public EditarTerapeuta() {
         initComponents();
@@ -64,7 +63,7 @@ public class EditarTerapeuta extends javax.swing.JFrame {
             
             
             try {
-                if(validacion == true){
+                if(longitudBytes != 0){
                  Connection cn = DBHelper.conectar();
                 PreparedStatement pst = cn.prepareStatement("UPDATE `bxopxuzsnsc4au7ggfnf`.`terapeuta` SET nombreCom = ?, Area = ?, email = ?, "
                         + "usuario = ?, contraseña = ?, nomImagen = ?, imagen = ? WHERE IdTerap = ?");
@@ -297,7 +296,6 @@ public class EditarTerapeuta extends javax.swing.JFrame {
                 Image icono = ImageIO.read(se.getSelectedFile()).getScaledInstance(lbl_imagen.getWidth(), lbl_imagen.getHeight(), Image.SCALE_DEFAULT);
                 lbl_imagen.setIcon(new ImageIcon(icono));
                 lbl_imagen.updateUI();
-                validacion = true;
 
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
