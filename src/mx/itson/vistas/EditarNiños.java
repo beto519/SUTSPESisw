@@ -33,7 +33,7 @@ public class EditarNiños extends javax.swing.JFrame {
 
     VerNiños VN = new VerNiños();
     DAOAlumnoIMP dao = new DAOAlumnoIMP();
-    Alumno alumno = dao.obtenerPorId(VN.idEdit);
+    Alumno alumno = dao.obtenerPorId(VN.idNiño);
     private FileInputStream fis;
     private int longitudBytes = 0;
     
@@ -44,7 +44,7 @@ public class EditarNiños extends javax.swing.JFrame {
         initComponents();
         setLocationRelativeTo(null);
         RefrescarAlumnos();
-        lbl_id.setText(VN.idEdit+"");
+        lbl_id.setText(VN.idNiño+"");
     }
     
     
@@ -53,7 +53,7 @@ public class EditarNiños extends javax.swing.JFrame {
             
             
             String NombreCompleto;
-            NombreCompleto = txt_NombreImagen.getText().trim();
+            NombreCompleto = txtNombre.getText().trim();
             String Edad;
             Edad = txtEdad.getText().trim();
             int Nivel;
@@ -81,7 +81,7 @@ public class EditarNiños extends javax.swing.JFrame {
                 pst.setString(5, Telefono+"");
                 pst.setString(6, nombreImg);
                 pst.setBlob(7, fis, longitudBytes);
-                pst.setInt(8, VN.idEdit);
+                pst.setInt(8, VN.idNiño);
                 
                 
                 pst.executeUpdate();
@@ -92,7 +92,7 @@ public class EditarNiños extends javax.swing.JFrame {
             }else{
                 Connection cn = DBHelper.conectar();
                 PreparedStatement pst = cn.prepareStatement("UPDATE `bxopxuzsnsc4au7ggfnf`.`niños` SET nombreCom = ?, edad = ?, nivelActual = ?, "
-                        + "nombreTutor = ?, telefono = ?, nomImagen = ?, imagen = ? WHERE idNiño = ?");
+                        + "nombreTutor = ?, telefono = ?, nomImagen = ? WHERE idNiño = ?");
                 
               
                 pst.setString(1, NombreCompleto);
@@ -101,8 +101,7 @@ public class EditarNiños extends javax.swing.JFrame {
                 pst.setString(4, NombreTutor);
                 pst.setString(5, Telefono+"");
                 pst.setString(6, nombreImg);
-                pst.setBlob(7, fis, longitudBytes);
-                pst.setInt(8, VN.idEdit);
+                pst.setInt(7, VN.idNiño);
                 
                 
                 
@@ -128,7 +127,7 @@ public class EditarNiños extends javax.swing.JFrame {
         DAOAlumnoIMP dao = new DAOAlumnoIMP();
         
         try {
-            Alumno nino = dao.obtenerPorId(vn.idEdit);
+            Alumno nino = dao.obtenerPorId(vn.idNiño);
             txtNombre.setText(nino.getNombre());
             txtEdad.setText(nino.getEdad()+"");
             txtTutor.setText(nino.getNombreTutor());
@@ -139,7 +138,7 @@ public class EditarNiños extends javax.swing.JFrame {
             try {
                 
                 Connection cn = DBHelper.conectar() ;
-                PreparedStatement pst = cn.prepareStatement("SELECT * FROM bxopxuzsnsc4au7ggfnf.niños WHERE idNiño = " + vn.idEdit);
+                PreparedStatement pst = cn.prepareStatement("SELECT * FROM bxopxuzsnsc4au7ggfnf.niños WHERE idNiño = " + vn.idNiño);
                 ResultSet rs = pst.executeQuery();
                 
                 if(rs.next()){
