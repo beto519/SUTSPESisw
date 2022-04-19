@@ -72,7 +72,6 @@ public class EditarNiños extends javax.swing.JFrame {
                 PreparedStatement pst = cn.prepareStatement("UPDATE `bxopxuzsnsc4au7ggfnf`.`niños` SET nombreCom = ?, edad = ?, nivelActual = ?, "
                         + "nombreTutor = ?, telefono = ?, nomImagen = ?, imagen = ? WHERE idNiño = ?");
                 
-                 
                 
                 pst.setString(1, NombreCompleto);
                 pst.setString(2, Edad);
@@ -88,7 +87,7 @@ public class EditarNiños extends javax.swing.JFrame {
                 cn.close();
                 txt_NombreImagen.setBackground(Color.green);
                 lbl_imagen.setText("Foto");
-                JOptionPane.showMessageDialog(null, "Registro Exitoso");
+                JOptionPane.showMessageDialog(null, "Editado Exitoso");
             }else{
                 Connection cn = DBHelper.conectar();
                 PreparedStatement pst = cn.prepareStatement("UPDATE `bxopxuzsnsc4au7ggfnf`.`niños` SET nombreCom = ?, edad = ?, nivelActual = ?, "
@@ -109,7 +108,7 @@ public class EditarNiños extends javax.swing.JFrame {
                 cn.close();
                 txt_NombreImagen.setBackground(Color.green);
                 lbl_imagen.setText("Foto");
-                JOptionPane.showMessageDialog(null, "Registro Exitoso");
+                JOptionPane.showMessageDialog(null, "Editado Exitoso");
                 }
                 
             } catch (SQLException e) {
@@ -181,16 +180,16 @@ public class EditarNiños extends javax.swing.JFrame {
         lbl_Volver = new javax.swing.JLabel();
         lblNombre = new javax.swing.JLabel();
         txtNombre = new javax.swing.JTextField();
-        lblPuesto = new javax.swing.JLabel();
+        lblEdad = new javax.swing.JLabel();
         txtEdad = new javax.swing.JTextField();
-        lblCorreo = new javax.swing.JLabel();
+        lblTutor = new javax.swing.JLabel();
         txtTutor = new javax.swing.JTextField();
         txtTelefono = new javax.swing.JTextField();
-        lblContraseña = new javax.swing.JLabel();
-        lblUsuario1 = new javax.swing.JLabel();
+        lblNombreDeLaImagen = new javax.swing.JLabel();
+        lblTelefono = new javax.swing.JLabel();
         lbl_subirImagen = new javax.swing.JLabel();
         lbl_imagen = new javax.swing.JLabel();
-        lbl_AddTerapeuta = new javax.swing.JLabel();
+        lbl_AddNiño = new javax.swing.JLabel();
         txt_NombreImagen = new javax.swing.JTextField();
         Fondo = new javax.swing.JLabel();
         lbl_id = new javax.swing.JLabel();
@@ -213,28 +212,28 @@ public class EditarNiños extends javax.swing.JFrame {
         getContentPane().add(lblNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 130, 220, 50));
         getContentPane().add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 170, 380, 50));
 
-        lblPuesto.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        lblPuesto.setForeground(new java.awt.Color(0, 0, 0));
-        lblPuesto.setText("Edad");
-        getContentPane().add(lblPuesto, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 230, 220, 50));
+        lblEdad.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        lblEdad.setForeground(new java.awt.Color(0, 0, 0));
+        lblEdad.setText("Edad");
+        getContentPane().add(lblEdad, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 230, 220, 50));
         getContentPane().add(txtEdad, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 270, 380, 50));
 
-        lblCorreo.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        lblCorreo.setForeground(new java.awt.Color(0, 0, 0));
-        lblCorreo.setText("Nombre de Padre/Madre/Tutor");
-        getContentPane().add(lblCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 340, 310, 50));
+        lblTutor.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        lblTutor.setForeground(new java.awt.Color(0, 0, 0));
+        lblTutor.setText("Nombre de Padre/Madre/Tutor");
+        getContentPane().add(lblTutor, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 340, 310, 50));
         getContentPane().add(txtTutor, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 380, 380, 50));
         getContentPane().add(txtTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 490, 380, 50));
 
-        lblContraseña.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        lblContraseña.setForeground(new java.awt.Color(0, 0, 0));
-        lblContraseña.setText("Nombre de la Imagen");
-        getContentPane().add(lblContraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 550, 220, 50));
+        lblNombreDeLaImagen.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        lblNombreDeLaImagen.setForeground(new java.awt.Color(0, 0, 0));
+        lblNombreDeLaImagen.setText("Nombre de la Imagen");
+        getContentPane().add(lblNombreDeLaImagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 550, 220, 50));
 
-        lblUsuario1.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        lblUsuario1.setForeground(new java.awt.Color(0, 0, 0));
-        lblUsuario1.setText("Telefono");
-        getContentPane().add(lblUsuario1, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 450, 220, 50));
+        lblTelefono.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        lblTelefono.setForeground(new java.awt.Color(0, 0, 0));
+        lblTelefono.setText("Telefono");
+        getContentPane().add(lblTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 450, 220, 50));
 
         lbl_subirImagen.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         lbl_subirImagen.setForeground(new java.awt.Color(0, 0, 0));
@@ -253,20 +252,20 @@ public class EditarNiños extends javax.swing.JFrame {
         getContentPane().add(lbl_subirImagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 580, -1, -1));
         getContentPane().add(lbl_imagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, 450, 530));
 
-        lbl_AddTerapeuta.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        lbl_AddTerapeuta.setForeground(new java.awt.Color(0, 0, 0));
-        lbl_AddTerapeuta.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lbl_AddTerapeuta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/editarNiño.png"))); // NOI18N
-        lbl_AddTerapeuta.setText("Editar Niño");
-        lbl_AddTerapeuta.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        lbl_AddTerapeuta.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        lbl_AddTerapeuta.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        lbl_AddTerapeuta.addMouseListener(new java.awt.event.MouseAdapter() {
+        lbl_AddNiño.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        lbl_AddNiño.setForeground(new java.awt.Color(0, 0, 0));
+        lbl_AddNiño.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbl_AddNiño.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/editarNiño.png"))); // NOI18N
+        lbl_AddNiño.setText("Editar Niño");
+        lbl_AddNiño.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        lbl_AddNiño.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        lbl_AddNiño.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        lbl_AddNiño.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lbl_AddNinoMouseClicked(evt);
             }
         });
-        getContentPane().add(lbl_AddTerapeuta, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 580, -1, -1));
+        getContentPane().add(lbl_AddNiño, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 580, -1, -1));
         getContentPane().add(txt_NombreImagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 600, 380, 50));
 
         Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoRosa.jpg"))); // NOI18N
@@ -352,12 +351,12 @@ public class EditarNiños extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Fondo;
-    private javax.swing.JLabel lblContraseña;
-    private javax.swing.JLabel lblCorreo;
+    private javax.swing.JLabel lblEdad;
     private javax.swing.JLabel lblNombre;
-    private javax.swing.JLabel lblPuesto;
-    private javax.swing.JLabel lblUsuario1;
-    private javax.swing.JLabel lbl_AddTerapeuta;
+    private javax.swing.JLabel lblNombreDeLaImagen;
+    private javax.swing.JLabel lblTelefono;
+    private javax.swing.JLabel lblTutor;
+    private javax.swing.JLabel lbl_AddNiño;
     private javax.swing.JLabel lbl_Volver;
     private javax.swing.JLabel lbl_id;
     private javax.swing.JLabel lbl_imagen;
