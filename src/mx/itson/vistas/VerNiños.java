@@ -102,6 +102,11 @@ public class VerNiños extends javax.swing.JFrame {
 
         lbl_volver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/regresar.png"))); // NOI18N
         lbl_volver.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        lbl_volver.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lbl_volverMouseClicked(evt);
+            }
+        });
         getContentPane().add(lbl_volver, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 0, 110, 70));
 
         lbl_actualizarNiño.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
@@ -217,6 +222,12 @@ public class VerNiños extends javax.swing.JFrame {
     private void lbl_actualizarNiñoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_actualizarNiñoMouseClicked
         LlenarTabla();
     }//GEN-LAST:event_lbl_actualizarNiñoMouseClicked
+
+    private void lbl_volverMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_volverMouseClicked
+        Menu abrir = new Menu();
+        abrir.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_lbl_volverMouseClicked
     public static int idEdit = 0;
    
     private void LlenarTabla(){

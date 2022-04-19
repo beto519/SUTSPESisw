@@ -19,8 +19,7 @@ public class Instrucciones extends javax.swing.JFrame {
     public Instrucciones() {
         initComponents();
         setLocationRelativeTo(null);
-        
-        
+
     }
 
     /**
@@ -1454,38 +1453,38 @@ public class Instrucciones extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
 
-AtencionCara abrir = new AtencionCara();
-abrir.setVisible(true);
+        AtencionCara abrir = new AtencionCara();
+        abrir.setVisible(true);
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-    ImitacionGruesa abrir = new ImitacionGruesa();
-abrir.setVisible(true);
+        ImitacionGruesa abrir = new ImitacionGruesa();
+        abrir.setVisible(true);
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
-ImitacionFina abrir = new ImitacionFina();
-abrir.setVisible(true);
+        ImitacionFina abrir = new ImitacionFina();
+        abrir.setVisible(true);
 
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-   ManejoEspacial abrir = new ManejoEspacial();
-abrir.setVisible(true);
+        ManejoEspacial abrir = new ManejoEspacial();
+        abrir.setVisible(true);
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
-ManejoEspacial abrir = new ManejoEspacial();
-abrir.setVisible(true);// TODO add your handling code here:
+        ManejoEspacial abrir = new ManejoEspacial();
+        abrir.setVisible(true);// TODO add your handling code here:
     }//GEN-LAST:event_jButton10ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-EmparejamientoImagenes abrir = new EmparejamientoImagenes();
-abrir.setVisible(true);
+        EmparejamientoImagenes abrir = new EmparejamientoImagenes();
+        abrir.setVisible(true);
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton4ActionPerformed
 
@@ -1498,74 +1497,77 @@ abrir.setVisible(true);
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
 
- EmparejamientoObjetos abrir = new EmparejamientoObjetos();
+        EmparejamientoObjetos abrir = new EmparejamientoObjetos();
         abrir.setVisible(true);
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
- EmparejamientoObjetos abrir = new EmparejamientoObjetos();
+        EmparejamientoObjetos abrir = new EmparejamientoObjetos();
         abrir.setVisible(true);
 
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton12ActionPerformed
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
-ReconocimientoCorporal a = new ReconocimientoCorporal();
-a.setVisible(true);
+        ReconocimientoCorporal a = new ReconocimientoCorporal();
+        a.setVisible(true);
 
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton13ActionPerformed
 
     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
-     UsoPenombres a = new UsoPenombres();
-a.setVisible(true);   // TODO add your handling code here:
+        UsoPenombres a = new UsoPenombres();
+        a.setVisible(true);   // TODO add your handling code here:
     }//GEN-LAST:event_jButton14ActionPerformed
 
     private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
-  Intraverbal a = new Intraverbal();
-a.setVisible(true);         // TODO add your handling code here:
+        Intraverbal a = new Intraverbal();
+        a.setVisible(true);         // TODO add your handling code here:
     }//GEN-LAST:event_jButton15ActionPerformed
 
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
- MotricidadFina a = new MotricidadFina();
-a.setVisible(true);
+        MotricidadFina a = new MotricidadFina();
+        a.setVisible(true);
 
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton17ActionPerformed
 
     private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
- SenalamientoObjetos a = new SenalamientoObjetos();
-a.setVisible(true);
+        SenalamientoObjetos a = new SenalamientoObjetos();
+        a.setVisible(true);
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton18ActionPerformed
 
     private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
-     ReconocimientoColores a = new ReconocimientoColores();
-a.setVisible(true);
+        ReconocimientoColores a = new ReconocimientoColores();
+        a.setVisible(true);
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton19ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
 
-   ReconocimientoVocales a = new ReconocimientoVocales();
-a.setVisible(true);
+        ReconocimientoVocales a = new ReconocimientoVocales();
+        a.setVisible(true);
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
 
-ReconocimientoFormas a = new ReconocimientoFormas();
-a.setVisible(true);
+        ReconocimientoFormas a = new ReconocimientoFormas();
+        a.setVisible(true);
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton11ActionPerformed
 
     private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
-        // TODO add your handling code here:
+        Menu mn = new Menu();
+        mn.setVisible(true);
+        dispose();
+
     }//GEN-LAST:event_jButton20ActionPerformed
 
     private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
-System.exit(0);
+        System.exit(0);
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton21ActionPerformed
 

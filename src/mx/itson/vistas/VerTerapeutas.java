@@ -169,9 +169,9 @@ DAOTerapeutaIMP dao = new DAOTerapeutaIMP();
     }// </editor-fold>//GEN-END:initComponents
 
     private void lbl_VolverMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_VolverMouseClicked
-
-
-        // TODO add your handling code here:
+        Menu abrir = new Menu();
+        abrir.setVisible(true);
+        dispose();
     }//GEN-LAST:event_lbl_VolverMouseClicked
 
     private void lbl_AddTerapeutaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_AddTerapeutaMouseClicked
