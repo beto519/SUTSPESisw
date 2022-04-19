@@ -52,7 +52,7 @@ public class AgregarNiños extends javax.swing.JFrame {
         } else {
 
             String NombreCompleto;
-            NombreCompleto = txt_NombreImagen.getText().trim();
+            NombreCompleto = txtNombre.getText().trim();
             String Edad;
             Edad = txtEdad.getText().trim();
             int Nivel;
