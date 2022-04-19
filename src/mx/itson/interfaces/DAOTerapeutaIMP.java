@@ -52,7 +52,8 @@ public class DAOTerapeutaIMP implements DAOTerapeuta {
                         + " '" + terapeuta.getPuesto()+ "', "
                         + " '" + terapeuta.getCorreo()+ "', "
                         + " '" + terapeuta.getCodigoUsuario()+ "', "
-                        + " '" + terapeuta.getContraseña()+ "', "
+                     
+                        +("MD5('")+(terapeuta.getContraseña())+("'),")
                         + " '" + terapeuta.getNomImagen()+ "', "
                         + " '" + terapeuta.getImagen()+ "') ";
                 resultado = (boolean) db.execute(query, true);

@@ -103,7 +103,7 @@ public class IniciarSesion extends javax.swing.JFrame {
         jLabel3.setText("Usuario");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 80, 140, 40));
 
-        txtUsuario.setText("Mañana lo hago bonito");
+        txtUsuario.setText("Ingrese su usuario");
         txtUsuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtUsuarioActionPerformed(evt);
@@ -130,7 +130,10 @@ public class IniciarSesion extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
 validarDatos();
-        // TODO add your handling code here:
+
+Menu abrir = new Menu();
+abrir.setVisible(true);
+// TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void txtUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtUsuarioActionPerformed
