@@ -98,7 +98,7 @@ public class VerNiños extends javax.swing.JFrame {
             tbl_Niños.getColumnModel().getColumn(3).setResizable(false);
         }
 
-        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 840, 560));
+        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 30, 1110, 560));
 
         lbl_volver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/regresar.png"))); // NOI18N
         lbl_volver.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -110,7 +110,6 @@ public class VerNiños extends javax.swing.JFrame {
         getContentPane().add(lbl_volver, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 0, 110, 70));
 
         lbl_actualizarNiño.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        lbl_actualizarNiño.setForeground(new java.awt.Color(0, 0, 0));
         lbl_actualizarNiño.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/actualizarNiño.png"))); // NOI18N
         lbl_actualizarNiño.setText("Actualizar Lista ");
         lbl_actualizarNiño.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -121,10 +120,9 @@ public class VerNiños extends javax.swing.JFrame {
                 lbl_actualizarNiñoMouseClicked(evt);
             }
         });
-        getContentPane().add(lbl_actualizarNiño, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 640, -1, -1));
+        getContentPane().add(lbl_actualizarNiño, new org.netbeans.lib.awtextra.AbsoluteConstraints(1080, 600, -1, -1));
 
         lbl_edita.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        lbl_edita.setForeground(new java.awt.Color(0, 0, 0));
         lbl_edita.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/editarNiño.png"))); // NOI18N
         lbl_edita.setText("Editar Niño");
         lbl_edita.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -135,11 +133,10 @@ public class VerNiños extends javax.swing.JFrame {
                 lbl_editaMouseClicked(evt);
             }
         });
-        getContentPane().add(lbl_edita, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 640, -1, -1));
+        getContentPane().add(lbl_edita, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 600, -1, -1));
 
         lbl_borrarNiño.setBackground(new java.awt.Color(0, 0, 0));
         lbl_borrarNiño.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        lbl_borrarNiño.setForeground(new java.awt.Color(0, 0, 0));
         lbl_borrarNiño.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/BorrarNiño.png"))); // NOI18N
         lbl_borrarNiño.setText("Eliminar Niño");
         lbl_borrarNiño.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -150,10 +147,9 @@ public class VerNiños extends javax.swing.JFrame {
                 lbl_borrarNiñoMouseClicked(evt);
             }
         });
-        getContentPane().add(lbl_borrarNiño, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 640, -1, -1));
+        getContentPane().add(lbl_borrarNiño, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 600, -1, -1));
 
         lbl_agregarNiño.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        lbl_agregarNiño.setForeground(new java.awt.Color(0, 0, 0));
         lbl_agregarNiño.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_agregarNiño.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/agregarNiño.png"))); // NOI18N
         lbl_agregarNiño.setText("Agregar Niño");
@@ -165,10 +161,10 @@ public class VerNiños extends javax.swing.JFrame {
                 lbl_agregarNiñoMouseClicked(evt);
             }
         });
-        getContentPane().add(lbl_agregarNiño, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 640, -1, -1));
+        getContentPane().add(lbl_agregarNiño, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 600, -1, -1));
 
         Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoRosa.jpg"))); // NOI18N
-        getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 870, 760));
+        getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
 
         lbl_id.setText("jLabel1");
         getContentPane().add(lbl_id, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 20, -1, -1));

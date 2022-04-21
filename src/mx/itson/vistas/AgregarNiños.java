@@ -126,40 +126,34 @@ public class AgregarNiños extends javax.swing.JFrame {
                 lbl_VolverMouseClicked(evt);
             }
         });
-        getContentPane().add(lbl_Volver, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 0, -1, -1));
+        getContentPane().add(lbl_Volver, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 0, -1, -1));
 
         lblNombre.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        lblNombre.setForeground(new java.awt.Color(0, 0, 0));
         lblNombre.setText("Nombre");
-        getContentPane().add(lblNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 130, 220, 50));
-        getContentPane().add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 170, 380, 50));
+        getContentPane().add(lblNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 80, 220, 50));
+        getContentPane().add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 120, 380, 50));
 
         lblPuesto.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        lblPuesto.setForeground(new java.awt.Color(0, 0, 0));
         lblPuesto.setText("Edad");
-        getContentPane().add(lblPuesto, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 230, 220, 50));
-        getContentPane().add(txtEdad, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 270, 380, 50));
+        getContentPane().add(lblPuesto, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 180, 220, 50));
+        getContentPane().add(txtEdad, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 220, 380, 50));
 
         lblCorreo.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        lblCorreo.setForeground(new java.awt.Color(0, 0, 0));
         lblCorreo.setText("Nombre de Padre/Madre/Tutor");
-        getContentPane().add(lblCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 340, 310, 50));
-        getContentPane().add(txtTutor, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 380, 380, 50));
-        getContentPane().add(txtTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 490, 380, 50));
+        getContentPane().add(lblCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 290, 310, 50));
+        getContentPane().add(txtTutor, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 330, 380, 50));
+        getContentPane().add(txtTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 440, 380, 50));
 
         lblContraseña.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        lblContraseña.setForeground(new java.awt.Color(0, 0, 0));
         lblContraseña.setText("Nombre de la Imagen");
-        getContentPane().add(lblContraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 550, 220, 50));
+        getContentPane().add(lblContraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 500, 220, 50));
 
         lblUsuario1.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        lblUsuario1.setForeground(new java.awt.Color(0, 0, 0));
         lblUsuario1.setText("Telefono");
-        getContentPane().add(lblUsuario1, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 450, 220, 50));
+        getContentPane().add(lblUsuario1, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 400, 220, 50));
         getContentPane().add(lbl_imagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, 450, 530));
 
         lbl_subirImagen.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        lbl_subirImagen.setForeground(new java.awt.Color(0, 0, 0));
         lbl_subirImagen.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_subirImagen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/subirimagen.png"))); // NOI18N
         lbl_subirImagen.setText("Subir Foto");
@@ -172,10 +166,9 @@ public class AgregarNiños extends javax.swing.JFrame {
                 lbl_subirImagenMouseClicked(evt);
             }
         });
-        getContentPane().add(lbl_subirImagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 580, -1, -1));
+        getContentPane().add(lbl_subirImagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 500, -1, -1));
 
         lbl_AddTerapeuta.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        lbl_AddTerapeuta.setForeground(new java.awt.Color(0, 0, 0));
         lbl_AddTerapeuta.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_AddTerapeuta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/agregarNiño.png"))); // NOI18N
         lbl_AddTerapeuta.setText("Añadir Niño");
@@ -187,11 +180,11 @@ public class AgregarNiños extends javax.swing.JFrame {
                 lbl_AddTerapeutaMouseClicked(evt);
             }
         });
-        getContentPane().add(lbl_AddTerapeuta, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 580, -1, -1));
-        getContentPane().add(txt_NombreImagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 600, 380, 50));
+        getContentPane().add(lbl_AddTerapeuta, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 500, -1, -1));
+        getContentPane().add(txt_NombreImagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 550, 380, 50));
 
         Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoAmarillo.jpg"))); // NOI18N
-        getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1010, 720));
+        getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

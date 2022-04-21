@@ -43,12 +43,10 @@ public class AdiosConMano extends javax.swing.JFrame {
         NombreDelPrograma1 = new javax.swing.JLabel();
         txtFecha1 = new javax.swing.JTextField();
         MtroManuel2 = new javax.swing.JLabel();
-        Mei1 = new javax.swing.JLabel();
         jScrollPane3 = new javax.swing.JScrollPane();
         jTextArea3 = new javax.swing.JTextArea();
         jLabel4 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(1280, 720));
@@ -94,16 +92,14 @@ public class AdiosConMano extends javax.swing.JFrame {
         MtroManuel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         getContentPane().add(MtroManuel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 170, 450, 40));
 
-        Mei1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/Mei.png"))); // NOI18N
-        getContentPane().add(Mei1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
-
+        jTextArea3.setEditable(false);
         jTextArea3.setColumns(20);
         jTextArea3.setFont(new java.awt.Font("Dialog", 0, 20)); // NOI18N
         jTextArea3.setRows(5);
         jTextArea3.setText("PASO 1. Cuando vaya a despedirse de las personas.\n\nPASO 2. Llámelo por su nombre y dé la instrucción: “di adiós”.\n\nPASO 3. La respuesta correcta es mover la mano diciendo adiós.\n\nPASO 4. Si da la respuesta correcta refuerce.\n\nPASO 5. Si no se da la respuesta correcta ofrezca apoyo físico.\n\nPASO 6. Disminuya el apoyo gradualmente hasta cumplir el criterio.");
         jScrollPane3.setViewportView(jTextArea3);
 
-        getContentPane().add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 260, 1010, 380));
+        getContentPane().add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 240, 1010, 420));
 
         jLabel4.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         jLabel4.setText("Programa ");
@@ -112,12 +108,7 @@ public class AdiosConMano extends javax.swing.JFrame {
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoAzul.jpg"))); // NOI18N
         jLabel6.setMaximumSize(new java.awt.Dimension(1280, 720));
         jLabel6.setMinimumSize(new java.awt.Dimension(1280, 720));
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 0, 1200, 720));
-
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoAzul.jpg"))); // NOI18N
-        jLabel5.setMaximumSize(new java.awt.Dimension(1280, 720));
-        jLabel5.setMinimumSize(new java.awt.Dimension(1280, 720));
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1200, 720));
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1290, 720));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -165,12 +156,10 @@ public class AdiosConMano extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Elaboro1;
-    private javax.swing.JLabel Mei1;
     private javax.swing.JLabel MtroManuel2;
     private javax.swing.JLabel NombreDelPrograma1;
     private javax.swing.JLabel ReconocimientoCorporal1;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTextArea jTextArea3;

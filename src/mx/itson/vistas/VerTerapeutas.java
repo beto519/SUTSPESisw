@@ -94,7 +94,7 @@ DAOTerapeutaIMP dao = new DAOTerapeutaIMP();
         });
         jScrollPane1.setViewportView(tblTerapeutas);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 900, 540));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 30, 900, 540));
 
         lbl_AddTerapeuta.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         lbl_AddTerapeuta.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -108,7 +108,7 @@ DAOTerapeutaIMP dao = new DAOTerapeutaIMP();
                 lbl_AddTerapeutaMouseClicked(evt);
             }
         });
-        getContentPane().add(lbl_AddTerapeuta, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 630, -1, -1));
+        getContentPane().add(lbl_AddTerapeuta, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 590, -1, -1));
 
         lbl_EliminarTerapeuta.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         lbl_EliminarTerapeuta.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -122,7 +122,7 @@ DAOTerapeutaIMP dao = new DAOTerapeutaIMP();
                 lbl_EliminarTerapeutaMouseClicked(evt);
             }
         });
-        getContentPane().add(lbl_EliminarTerapeuta, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 630, -1, -1));
+        getContentPane().add(lbl_EliminarTerapeuta, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 590, -1, -1));
 
         lbl_ActualizarLista.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         lbl_ActualizarLista.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -136,7 +136,7 @@ DAOTerapeutaIMP dao = new DAOTerapeutaIMP();
                 lbl_ActualizarListaMouseClicked(evt);
             }
         });
-        getContentPane().add(lbl_ActualizarLista, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 630, -1, -1));
+        getContentPane().add(lbl_ActualizarLista, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 590, -1, -1));
 
         lbl_editarTerapeuta.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         lbl_editarTerapeuta.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -150,7 +150,7 @@ DAOTerapeutaIMP dao = new DAOTerapeutaIMP();
                 lbl_editarTerapeutaMouseClicked(evt);
             }
         });
-        getContentPane().add(lbl_editarTerapeuta, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 630, -1, -1));
+        getContentPane().add(lbl_editarTerapeuta, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 590, -1, -1));
 
         lbl_Volver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/volverazul.png"))); // NOI18N
         lbl_Volver.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -159,11 +159,11 @@ DAOTerapeutaIMP dao = new DAOTerapeutaIMP();
                 lbl_VolverMouseClicked(evt);
             }
         });
-        getContentPane().add(lbl_Volver, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, -1, -1));
+        getContentPane().add(lbl_Volver, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -20, -1, -1));
         getContentPane().add(lbl_id, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 20, -1, -1));
 
         Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoAzul.jpg"))); // NOI18N
-        getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 920, 760));
+        getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

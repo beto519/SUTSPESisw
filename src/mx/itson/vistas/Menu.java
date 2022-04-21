@@ -28,8 +28,6 @@ public class Menu extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel2 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         btnAgregarTerapeuta = new javax.swing.JLabel();
         btnEditarTerapeuta = new javax.swing.JLabel();
@@ -46,19 +44,6 @@ public class Menu extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel2.setBackground(new java.awt.Color(0, 204, 153));
-        jLabel2.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(51, 255, 255));
-        jLabel2.setText("Puente de Alvarado 305, Col. Carretas. Querétaro, Querétaro. ");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 600, -1, -1));
-
-        jLabel1.setBackground(new java.awt.Color(0, 204, 153));
-        jLabel1.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(51, 255, 255));
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Cel: 44 22 64 55 32 ");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 630, 690, -1));
 
         jPanel1.setBackground(new java.awt.Color(155, 20, 136));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -128,15 +113,14 @@ public class Menu extends javax.swing.JFrame {
         txtVerTerapeutas.setText("VER TERAPEUTAS");
         jPanel1.add(txtVerTerapeutas, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 550, -1, -1));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 280, 670));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 280, 720));
 
         TxtTitulo.setFont(new java.awt.Font("Tempus Sans ITC", 3, 48)); // NOI18N
-        TxtTitulo.setForeground(new java.awt.Color(0, 0, 0));
         TxtTitulo.setText("SUTSPESISW");
-        getContentPane().add(TxtTitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 10, 290, -1));
+        getContentPane().add(TxtTitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 20, 290, -1));
 
         LabelFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoLogin.jpg"))); // NOI18N
-        getContentPane().add(LabelFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 950, 670));
+        getContentPane().add(LabelFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -214,8 +198,6 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JLabel btnIntrucciones;
     private javax.swing.JLabel btnVerNinos;
     private javax.swing.JLabel btnVerTerapeuta;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel txtAgregarTerapeuta;
     private javax.swing.JLabel txtEditarTerapeuta;

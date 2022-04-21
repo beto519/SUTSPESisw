@@ -31,13 +31,11 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
         ListaInstrucciones = new javax.swing.JScrollPane();
         txtListaInstrucciones = new javax.swing.JTextArea();
         iNSTRUCCIONES = new javax.swing.JLabel();
-        Mei = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         btnVolver = new javax.swing.JButton();
         Fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(1280, 720));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         txtListaInstrucciones.setEditable(false);
@@ -47,28 +45,14 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
         txtListaInstrucciones.setText("1. Ponte de pie.\n2. Ven.\n3. Toca el piso con las manos.\n4. Levanta los brazos.\n5. Baja los brazos.\n6. Aplaude.\n7. Cruza los brazos.\n8. Toma esto (cualquier objeto).\n9. Ponlo debajo de la silla.\n10. Dame eso.\n11. Abre la puerta.\n12. Cierra la puerta.\n13. Recoge eso. (algo que esté en el suelo)\n14. Abre el libro.\n15. Cierra el libro.\n16. Dame tu mano.\n17. Toma el dulce.\n18. Levántate.\n19. Vete para allá.\n20. Pon tus manos en el escritorio.\n21. Pon las manos sobre la cabeza.\n22. Tócate las rodillas con las manos.\n23. Abre y cierra las manos.\n24. Junta tus dedos.\n25. Ponlo sobre la silla.\n26. Abre el frasco.\n27. Cierra el frasco.\n28. Agáchate.\n29. Abre la caja.\n30. Cierra la caja.\n31. Dame el cuaderno.\n32. Saca la lengua.\n33. Dame las manos.\n");
         ListaInstrucciones.setViewportView(txtListaInstrucciones);
 
-        getContentPane().add(ListaInstrucciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, 830, 430));
+        getContentPane().add(ListaInstrucciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 70, 1100, 640));
 
         iNSTRUCCIONES.setFont(new java.awt.Font("Dialog", 1, 23)); // NOI18N
         iNSTRUCCIONES.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         iNSTRUCCIONES.setText("LISTA DE INSTRUCCIONES DE LAS PARTES DEL CUERPO  "); // NOI18N
         iNSTRUCCIONES.setToolTipText("");
         iNSTRUCCIONES.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(iNSTRUCCIONES, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 100, 830, 30));
-
-        Mei.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/Mei.png"))); // NOI18N
-        getContentPane().add(Mei, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, -1, -1));
-
-        jLabel1.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 204, 0));
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Cel: 44 22 64 55 32 ");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 600, 690, -1));
-
-        jLabel2.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 204, 0));
-        jLabel2.setText("Puente de Alvarado 305, Col. Carretas. Querétaro, Querétaro. ");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 570, -1, -1));
+        getContentPane().add(iNSTRUCCIONES, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 40, 1100, 30));
 
         btnVolver.setText("Volver");
         btnVolver.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -77,10 +61,10 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
                 btnVolverMouseClicked(evt);
             }
         });
-        getContentPane().add(btnVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 10, 70, -1));
+        getContentPane().add(btnVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 10, 70, -1));
 
         Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoRosa.jpg"))); // NOI18N
-        getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 910, 640));
+        getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -129,11 +113,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Fondo;
     private javax.swing.JScrollPane ListaInstrucciones;
-    private javax.swing.JLabel Mei;
     private javax.swing.JButton btnVolver;
     private javax.swing.JLabel iNSTRUCCIONES;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JTextArea txtListaInstrucciones;
     // End of variables declaration//GEN-END:variables
 }

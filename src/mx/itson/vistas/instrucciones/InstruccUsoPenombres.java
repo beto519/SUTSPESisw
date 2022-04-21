@@ -31,9 +31,6 @@ public class InstruccUsoPenombres extends javax.swing.JFrame {
         ListaInstrucciones = new javax.swing.JScrollPane();
         txtListaInstrucciones = new javax.swing.JTextArea();
         iNSTRUCCIONES = new javax.swing.JLabel();
-        Mei = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         btnVolver = new javax.swing.JButton();
         Fondo = new javax.swing.JLabel();
 
@@ -47,28 +44,14 @@ public class InstruccUsoPenombres extends javax.swing.JFrame {
         txtListaInstrucciones.setText("1. ¿Cuál es tu brazo izquierdo?\n2. ¿Cuál es tu brazo derecho?\n3. ¿Cuál es tu mano izquierda?\n4. ¿Cuál es tu mano derecha?\n5. ¿Cuál es tu pierna izquierda?\n6. ¿Cuál es tu pierna derecha?\n7. ¿Cuál es tu ojo izquierdo?\n8. ¿Cuál es tu ojo derecho?\n9. ¿Cuál es tu pie izquierdo?\n10. ¿Cuál es tu pie derecho?\n11. ¿Cuál es tu oreja izquierda?\n12. ¿Cuál es tu oreja derecha?\n\nColoque un objeto (canica) dentro de una caja y sáquelo sucesivamente, alternativamente pregunte al niño:\n\n13. ¿Dónde está la canica?\nRepita 10 veces.\n\nColoque una figura arriba, y después abajo. Alterativamente pregunte:\n14. ¿Dónde está (la imagen)?\nColoque un auto de juguete cerca y lejos del niño, y pregunte:\n15. ¿Dónde está el (auto)?\nColoque un juguete (auto) detrás de un objeto y delante de un objeto; alternativamente pregunte:\n16. ¿Dónde está el (auto)?\nColoque varios objetos de una misma clase en cadena, por ejemplo varios autos. Y pregunte alternadamente al niño:\n17. ¿Cuál es el primero? ¿Cuál es el último?\nRepita 10 veces cada uno de estos ejercicios.\n");
         ListaInstrucciones.setViewportView(txtListaInstrucciones);
 
-        getContentPane().add(ListaInstrucciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, 830, 430));
+        getContentPane().add(ListaInstrucciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 70, 1130, 640));
 
         iNSTRUCCIONES.setFont(new java.awt.Font("Dialog", 1, 23)); // NOI18N
         iNSTRUCCIONES.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         iNSTRUCCIONES.setText("LISTA DE INSTRUCCIONES DE LAS PARTES DEL CUERPO  "); // NOI18N
         iNSTRUCCIONES.setToolTipText("");
         iNSTRUCCIONES.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(iNSTRUCCIONES, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 100, 830, 30));
-
-        Mei.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/Mei.png"))); // NOI18N
-        getContentPane().add(Mei, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, -1, -1));
-
-        jLabel1.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 204, 0));
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Cel: 44 22 64 55 32 ");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 600, 690, -1));
-
-        jLabel2.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 204, 0));
-        jLabel2.setText("Puente de Alvarado 305, Col. Carretas. Querétaro, Querétaro. ");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 570, -1, -1));
+        getContentPane().add(iNSTRUCCIONES, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 40, 1130, 30));
 
         btnVolver.setText("Volver");
         btnVolver.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -77,10 +60,10 @@ public class InstruccUsoPenombres extends javax.swing.JFrame {
                 btnVolverMouseClicked(evt);
             }
         });
-        getContentPane().add(btnVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 10, 70, -1));
+        getContentPane().add(btnVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 10, 70, -1));
 
         Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoRosa.jpg"))); // NOI18N
-        getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 910, 640));
+        getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -129,11 +112,8 @@ public class InstruccUsoPenombres extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Fondo;
     private javax.swing.JScrollPane ListaInstrucciones;
-    private javax.swing.JLabel Mei;
     private javax.swing.JButton btnVolver;
     private javax.swing.JLabel iNSTRUCCIONES;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JTextArea txtListaInstrucciones;
     // End of variables declaration//GEN-END:variables
 }

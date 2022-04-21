@@ -204,39 +204,33 @@ public class EditarNiños extends javax.swing.JFrame {
                 lbl_VolverMouseClicked(evt);
             }
         });
-        getContentPane().add(lbl_Volver, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 0, -1, -1));
+        getContentPane().add(lbl_Volver, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 0, -1, -1));
 
         lblNombre.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        lblNombre.setForeground(new java.awt.Color(0, 0, 0));
         lblNombre.setText("Nombre");
-        getContentPane().add(lblNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 130, 220, 50));
-        getContentPane().add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 170, 380, 50));
+        getContentPane().add(lblNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 90, 220, 50));
+        getContentPane().add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 130, 380, 50));
 
         lblEdad.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        lblEdad.setForeground(new java.awt.Color(0, 0, 0));
         lblEdad.setText("Edad");
-        getContentPane().add(lblEdad, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 230, 220, 50));
-        getContentPane().add(txtEdad, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 270, 380, 50));
+        getContentPane().add(lblEdad, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 190, 220, 50));
+        getContentPane().add(txtEdad, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 230, 380, 50));
 
         lblTutor.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        lblTutor.setForeground(new java.awt.Color(0, 0, 0));
         lblTutor.setText("Nombre de Padre/Madre/Tutor");
-        getContentPane().add(lblTutor, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 340, 310, 50));
-        getContentPane().add(txtTutor, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 380, 380, 50));
-        getContentPane().add(txtTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 490, 380, 50));
+        getContentPane().add(lblTutor, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 300, 310, 50));
+        getContentPane().add(txtTutor, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 340, 380, 50));
+        getContentPane().add(txtTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 450, 380, 50));
 
         lblNombreDeLaImagen.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        lblNombreDeLaImagen.setForeground(new java.awt.Color(0, 0, 0));
         lblNombreDeLaImagen.setText("Nombre de la Imagen");
-        getContentPane().add(lblNombreDeLaImagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 550, 220, 50));
+        getContentPane().add(lblNombreDeLaImagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 510, 220, 50));
 
         lblTelefono.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        lblTelefono.setForeground(new java.awt.Color(0, 0, 0));
         lblTelefono.setText("Telefono");
-        getContentPane().add(lblTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 450, 220, 50));
+        getContentPane().add(lblTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 410, 220, 50));
 
         lbl_subirImagen.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        lbl_subirImagen.setForeground(new java.awt.Color(0, 0, 0));
         lbl_subirImagen.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_subirImagen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/subirimagen.png"))); // NOI18N
         lbl_subirImagen.setText("Subir Foto");
@@ -249,11 +243,10 @@ public class EditarNiños extends javax.swing.JFrame {
                 lbl_subirImagenMouseClicked(evt);
             }
         });
-        getContentPane().add(lbl_subirImagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 580, -1, -1));
+        getContentPane().add(lbl_subirImagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 500, -1, -1));
         getContentPane().add(lbl_imagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, 450, 530));
 
         lbl_AddNiño.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        lbl_AddNiño.setForeground(new java.awt.Color(0, 0, 0));
         lbl_AddNiño.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_AddNiño.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/editarNiño.png"))); // NOI18N
         lbl_AddNiño.setText("Editar Niño");
@@ -265,11 +258,11 @@ public class EditarNiños extends javax.swing.JFrame {
                 lbl_AddNinoMouseClicked(evt);
             }
         });
-        getContentPane().add(lbl_AddNiño, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 580, -1, -1));
-        getContentPane().add(txt_NombreImagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 600, 380, 50));
+        getContentPane().add(lbl_AddNiño, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 490, -1, -1));
+        getContentPane().add(txt_NombreImagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 560, 380, 50));
 
         Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoRosa.jpg"))); // NOI18N
-        getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1010, 720));
+        getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
 
         lbl_id.setText("jLabel1");
         getContentPane().add(lbl_id, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 10, -1, -1));
