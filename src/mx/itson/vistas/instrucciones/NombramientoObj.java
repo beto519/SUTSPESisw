@@ -16,6 +16,8 @@ public class NombramientoObj extends javax.swing.JFrame {
      */
     public NombramientoObj() {
         initComponents();
+                 setLocationRelativeTo(null);
+         this.setExtendedState(MAXIMIZED_BOTH);
     }
 
     /**

@@ -16,6 +16,8 @@ public class ManejoEspacial extends javax.swing.JFrame {
      */
     public ManejoEspacial() {
         initComponents();
+                 setLocationRelativeTo(null);
+         this.setExtendedState(MAXIMIZED_BOTH);
     }
 
     /**

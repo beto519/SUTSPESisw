@@ -4,6 +4,9 @@
  */
 package mx.itson.vistas.instrucciones;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
 /**
  *
  * @author lopez
@@ -15,6 +18,10 @@ public class EmparejamientoImagenes extends javax.swing.JFrame {
      */
     public EmparejamientoImagenes() {
         initComponents();
+        fecha();
+         setLocationRelativeTo(null);
+         this.setExtendedState(MAXIMIZED_BOTH);
+
     }
 
     /**
@@ -29,100 +36,74 @@ public class EmparejamientoImagenes extends javax.swing.JFrame {
         txtFecha1 = new javax.swing.JTextField();
         ReconocimientoCorporal1 = new javax.swing.JLabel();
         procedimiento2 = new javax.swing.JLabel();
-        FechaElab1 = new javax.swing.JLabel();
         NombreDelPrograma1 = new javax.swing.JLabel();
         Elaboro1 = new javax.swing.JLabel();
-        FechaNumRetro1 = new javax.swing.JLabel();
         MtroManuel2 = new javax.swing.JLabel();
-        Mei1 = new javax.swing.JLabel();
-        FechaRetro1 = new javax.swing.JLabel();
-        FechaNumElab1 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jScrollPane4 = new javax.swing.JScrollPane();
         jTextArea4 = new javax.swing.JTextArea();
         jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        txtFecha1.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        txtFecha1.setFont(new java.awt.Font("Dialog", 0, 20)); // NOI18N
         txtFecha1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtFecha1.setEnabled(false);
         txtFecha1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtFecha1ActionPerformed(evt);
             }
         });
-        getContentPane().add(txtFecha1, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 10, 90, 40));
+        getContentPane().add(txtFecha1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 10, 140, 40));
 
         ReconocimientoCorporal1.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         ReconocimientoCorporal1.setText("Emparejamiento de Imagenes");
         ReconocimientoCorporal1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(ReconocimientoCorporal1, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 150, 560, 40));
+        getContentPane().add(ReconocimientoCorporal1, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 90, 560, 40));
 
         procedimiento2.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         procedimiento2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         procedimiento2.setText("PROCEDIMIENTO"); // NOI18N
         procedimiento2.setToolTipText("");
         procedimiento2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(procedimiento2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 300, 1010, 30));
-
-        FechaElab1.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        FechaElab1.setText(" Fecha de Elaboración:");
-        FechaElab1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(FechaElab1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 190, 450, 30));
+        getContentPane().add(procedimiento2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 170, 1010, 30));
 
         NombreDelPrograma1.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         NombreDelPrograma1.setText(" Nombre del Programa:");
         NombreDelPrograma1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(NombreDelPrograma1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 150, 450, 40));
+        getContentPane().add(NombreDelPrograma1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 90, 450, 40));
 
         Elaboro1.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         Elaboro1.setText("Mtro. Manuel Esquer Sumuano");
         Elaboro1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(Elaboro1, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 260, 560, 40));
-
-        FechaNumRetro1.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        FechaNumRetro1.setText("15-02-2016");
-        FechaNumRetro1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(FechaNumRetro1, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 220, 560, -1));
+        getContentPane().add(Elaboro1, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 130, 560, 40));
 
         MtroManuel2.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         MtroManuel2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MtroManuel2.setText(" Elaboró:"); // NOI18N
         MtroManuel2.setToolTipText("");
         MtroManuel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(MtroManuel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 260, 450, 40));
-
-        Mei1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/Mei.png"))); // NOI18N
-        getContentPane().add(Mei1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
-
-        FechaRetro1.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        FechaRetro1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        FechaRetro1.setText("Fecha de  Retroalimentación:"); // NOI18N
-        FechaRetro1.setToolTipText("");
-        FechaRetro1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(FechaRetro1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 220, 450, -1));
-
-        FechaNumElab1.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        FechaNumElab1.setText("18-01-2016");
-        FechaNumElab1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(FechaNumElab1, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 190, 560, 30));
+        getContentPane().add(MtroManuel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 130, 450, 40));
 
         jLabel4.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         jLabel4.setText("Programa ");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 90, 190, 60));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 30, 190, 60));
 
         jTextArea4.setColumns(20);
-        jTextArea4.setFont(new java.awt.Font("Dialog", 0, 17)); // NOI18N
+        jTextArea4.setFont(new java.awt.Font("Dialog", 0, 20)); // NOI18N
         jTextArea4.setRows(5);
-        jTextArea4.setText("PASO 1. Seleccione tarjetas con imágenes de objetos comunes. El criterio de selección de imágenes es que deben tener 2 iguales, por ejemplo, dos tarjetas completamente idénticas de una naranja.\nPASO 2. Siéntese frente al niño en una mesa de trabajo.\nPASO 3. Coloque sobre la mesa  dos tarjetas distintas (por ejemplo, la imagen de una naranja y la imagen de una bicicleta). Las tarjetas deben estar separadas entre sí por una distancia de aproximadamente 40 centímetros.\nPASO 4. Llame al niño por su nombre y diga “Junta las cosas iguales” al mismo tiempo que le muestra la tarjeta y se la entrega en la mano, siempre cuidando que ponga atención a la tarjeta que entregamos.\nPASO 5. La respuesta correcta del niño es la de juntar las tarjetas iguales. Si no da la respuesta correcta dé apoyo tomando la mano del niño y dirigiendo su mano hacia la tarjeta igual, apóyelo para que suelte la tarjeta.\nPASO 6. Disminuya gradualmente el apoyo hasta cumplir el criterio.\nPASO 7. Refuerce cada respuesta correcta, sin importar si lo hizo o no con apoyo.\n");
+        jTextArea4.setText("PASO 1. Seleccione tarjetas con imágenes de objetos comunes. El criterio de selección de imágenes es que\ndeben tener 2 iguales, por ejemplo,dos tarjetas completamente idénticas de una naranja.\n\nPASO 2. Siéntese frente al niño en una mesa de trabajo.\n\nPASO 3. Coloque sobre la mesa  dos tarjetas distintas (por ejemplo, la imagen de una naranja y la imagen de\nuna bicicleta).Las tarjetas deben estar separadas entre sí por una distancia de aproximadamente 40 centímetros.\n\nPASO 4. Llame al niño por su nombre y diga “Junta las cosas iguales” al mismo tiempo que le muestra la tarjeta\ny se la entrega en la mano, siempre cuidando que ponga atención a la tarjeta que entregamos.\n\nPASO 5. La respuesta correcta del niño es la de juntar las tarjetas iguales. Si no da la respuesta correcta dé\napoyo tomando la mano del niño y dirigiendo su mano hacia la tarjeta igual, apóyelo para que suelte la tarjeta.\n\nPASO 6. Disminuya gradualmente el apoyo hasta cumplir el criterio.\n\nPASO 7. Refuerce cada respuesta correcta, sin importar si lo hizo o no con apoyo.\n");
         jScrollPane4.setViewportView(jTextArea4);
 
-        getContentPane().add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 330, 1020, 230));
+        getContentPane().add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 200, 1010, 510));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoAzul.jpg"))); // NOI18N
-        jLabel5.setText("jLabel1");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1020, 630));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 0, 1200, 720));
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoAzul.jpg"))); // NOI18N
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1200, 720));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -130,7 +111,11 @@ public class EmparejamientoImagenes extends javax.swing.JFrame {
     private void txtFecha1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFecha1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtFecha1ActionPerformed
+ private void fecha(){
+    DateTimeFormatter fechaRealizacion = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+    txtFecha1.setText(fechaRealizacion.format(LocalDateTime.now()));
 
+    }
     /**
      * @param args the command line arguments
      */
@@ -168,16 +153,12 @@ public class EmparejamientoImagenes extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Elaboro1;
-    private javax.swing.JLabel FechaElab1;
-    private javax.swing.JLabel FechaNumElab1;
-    private javax.swing.JLabel FechaNumRetro1;
-    private javax.swing.JLabel FechaRetro1;
-    private javax.swing.JLabel Mei1;
     private javax.swing.JLabel MtroManuel2;
     private javax.swing.JLabel NombreDelPrograma1;
     private javax.swing.JLabel ReconocimientoCorporal1;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JTextArea jTextArea4;
     private javax.swing.JLabel procedimiento2;

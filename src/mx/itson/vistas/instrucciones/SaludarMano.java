@@ -15,6 +15,8 @@ public class SaludarMano extends javax.swing.JFrame {
      */
     public SaludarMano() {
         initComponents();
+                 setLocationRelativeTo(null);
+         this.setExtendedState(MAXIMIZED_BOTH);
     }
 
     /**

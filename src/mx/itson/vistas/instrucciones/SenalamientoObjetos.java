@@ -15,6 +15,8 @@ public class SenalamientoObjetos extends javax.swing.JFrame {
      */
     public SenalamientoObjetos() {
         initComponents();
+                 setLocationRelativeTo(null);
+         this.setExtendedState(MAXIMIZED_BOTH);
     }
 
     /**

@@ -15,6 +15,8 @@ public class SeguimientoInstrucciones extends javax.swing.JFrame {
      */
     public SeguimientoInstrucciones() {
         initComponents();
+                 setLocationRelativeTo(null);
+         this.setExtendedState(MAXIMIZED_BOTH);
     }
 
     /**

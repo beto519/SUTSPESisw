@@ -15,6 +15,8 @@ public class InstruccUsoPenombres extends javax.swing.JFrame {
      */
     public InstruccUsoPenombres() {
         initComponents();
+                 setLocationRelativeTo(null);
+         this.setExtendedState(MAXIMIZED_BOTH);
     }
 
     /**

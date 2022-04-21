@@ -15,6 +15,9 @@ public class EmparejamientoObjetos extends javax.swing.JFrame {
      */
     public EmparejamientoObjetos() {
         initComponents();
+         setLocationRelativeTo(null);
+         this.setExtendedState(MAXIMIZED_BOTH);
+
     }
 
     /**
@@ -131,8 +134,7 @@ public class EmparejamientoObjetos extends javax.swing.JFrame {
         getContentPane().add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 330, 1010, 200));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoAzul.jpg"))); // NOI18N
-        jLabel5.setText("jLabel1");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1020, 730));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1320, 760));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

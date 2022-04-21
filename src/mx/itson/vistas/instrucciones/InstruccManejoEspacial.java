@@ -16,6 +16,8 @@ public class InstruccManejoEspacial extends javax.swing.JFrame {
      */
     public InstruccManejoEspacial() {
         initComponents();
+       setLocationRelativeTo(null);
+         this.setExtendedState(MAXIMIZED_BOTH);
     }
 
     /**

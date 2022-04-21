@@ -15,6 +15,8 @@ public class ReconocimientoVocales extends javax.swing.JFrame {
      */
     public ReconocimientoVocales() {
         initComponents();
+                 setLocationRelativeTo(null);
+         this.setExtendedState(MAXIMIZED_BOTH);
     }
 
     /**

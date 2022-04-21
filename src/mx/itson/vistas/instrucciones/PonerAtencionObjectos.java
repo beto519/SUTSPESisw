@@ -15,6 +15,8 @@ public class PonerAtencionObjectos extends javax.swing.JFrame {
      */
     public PonerAtencionObjectos() {
         initComponents();
+                 setLocationRelativeTo(null);
+         this.setExtendedState(MAXIMIZED_BOTH);
     }
 
     /**

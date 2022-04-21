@@ -15,7 +15,8 @@ public class ListaPreguntas extends javax.swing.JFrame {
      */
     public ListaPreguntas() {
         initComponents();
-        setLocationRelativeTo(null);
+         setLocationRelativeTo(null);
+         this.setExtendedState(MAXIMIZED_BOTH);
     }
 
     /**

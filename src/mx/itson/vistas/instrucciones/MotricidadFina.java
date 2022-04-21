@@ -16,6 +16,8 @@ public class MotricidadFina extends javax.swing.JFrame {
      */
     public MotricidadFina() {
         initComponents();
+                 setLocationRelativeTo(null);
+         this.setExtendedState(MAXIMIZED_BOTH);
     }
 
     /**

@@ -18,7 +18,7 @@
     <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
     <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
     <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
-    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,2,115,0,0,3,-4"/>
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,2,-47,0,0,5,0"/>
   </AuxValues>
 
   <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
@@ -28,16 +28,17 @@
     <Component class="javax.swing.JTextField" name="txtFecha1">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Dialog" size="14" style="0"/>
+          <Font name="Dialog" size="20" style="0"/>
         </Property>
         <Property name="horizontalAlignment" type="int" value="0"/>
+        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtFecha1ActionPerformed"/>
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="900" y="10" width="90" height="40"/>
+          <AbsoluteConstraints x="1130" y="10" width="140" height="40"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -55,7 +56,7 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="450" y="150" width="560" height="40"/>
+          <AbsoluteConstraints x="580" y="90" width="560" height="40"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -75,25 +76,7 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="0" y="300" width="1010" height="30"/>
-        </Constraint>
-      </Constraints>
-    </Component>
-    <Component class="javax.swing.JLabel" name="FechaElab1">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Dialog" size="24" style="1"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value=" Fecha de Elaboraci&#xf3;n:"/>
-        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-          <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
-            <BevelBorder/>
-          </Border>
-        </Property>
-      </Properties>
-      <Constraints>
-        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="0" y="190" width="450" height="30"/>
+          <AbsoluteConstraints x="130" y="170" width="1010" height="30"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -111,7 +94,7 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="0" y="150" width="450" height="40"/>
+          <AbsoluteConstraints x="130" y="90" width="450" height="40"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -129,25 +112,7 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="450" y="260" width="560" height="40"/>
-        </Constraint>
-      </Constraints>
-    </Component>
-    <Component class="javax.swing.JLabel" name="FechaNumRetro1">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Dialog" size="24" style="1"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="15-02-2016"/>
-        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-          <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
-            <BevelBorder/>
-          </Border>
-        </Property>
-      </Properties>
-      <Constraints>
-        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="450" y="220" width="560" height="-1"/>
+          <AbsoluteConstraints x="580" y="130" width="560" height="40"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -167,57 +132,7 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="0" y="260" width="450" height="40"/>
-        </Constraint>
-      </Constraints>
-    </Component>
-    <Component class="javax.swing.JLabel" name="Mei1">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/mx/itson/imagenes/Mei.png"/>
-        </Property>
-      </Properties>
-      <Constraints>
-        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="0" y="0" width="-1" height="-1"/>
-        </Constraint>
-      </Constraints>
-    </Component>
-    <Component class="javax.swing.JLabel" name="FechaRetro1">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Dialog" size="24" style="1"/>
-        </Property>
-        <Property name="horizontalAlignment" type="int" value="2"/>
-        <Property name="text" type="java.lang.String" value="Fecha de  Retroalimentaci&#xf3;n:" noResource="true"/>
-        <Property name="toolTipText" type="java.lang.String" value=""/>
-        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-          <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
-            <BevelBorder/>
-          </Border>
-        </Property>
-      </Properties>
-      <Constraints>
-        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="0" y="220" width="450" height="-1"/>
-        </Constraint>
-      </Constraints>
-    </Component>
-    <Component class="javax.swing.JLabel" name="FechaNumElab1">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Dialog" size="24" style="1"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="18-01-2016"/>
-        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-          <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
-            <BevelBorder/>
-          </Border>
-        </Property>
-      </Properties>
-      <Constraints>
-        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="450" y="190" width="560" height="30"/>
+          <AbsoluteConstraints x="130" y="130" width="450" height="40"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -230,7 +145,7 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="360" y="90" width="190" height="60"/>
+          <AbsoluteConstraints x="490" y="30" width="190" height="60"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -240,7 +155,7 @@
       </AuxValues>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="0" y="330" width="1020" height="230"/>
+          <AbsoluteConstraints x="130" y="200" width="1010" height="510"/>
         </Constraint>
       </Constraints>
 
@@ -250,10 +165,10 @@
           <Properties>
             <Property name="columns" type="int" value="20"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Dialog" size="17" style="0"/>
+              <Font name="Dialog" size="20" style="0"/>
             </Property>
             <Property name="rows" type="int" value="5"/>
-            <Property name="text" type="java.lang.String" value="PASO 1. Seleccione tarjetas con im&#xe1;genes de objetos comunes. El criterio de selecci&#xf3;n de im&#xe1;genes es que deben tener 2 iguales, por ejemplo, dos tarjetas completamente id&#xe9;nticas de una naranja.&#xa;PASO 2. Si&#xe9;ntese frente al ni&#xf1;o en una mesa de trabajo.&#xa;PASO 3. Coloque sobre la mesa  dos tarjetas distintas (por ejemplo, la imagen de una naranja y la imagen de una bicicleta). Las tarjetas deben estar separadas entre s&#xed; por una distancia de aproximadamente 40 cent&#xed;metros.&#xa;PASO 4. Llame al ni&#xf1;o por su nombre y diga &#x201c;Junta las cosas iguales&#x201d; al mismo tiempo que le muestra la tarjeta y se la entrega en la mano, siempre cuidando que ponga atenci&#xf3;n a la tarjeta que entregamos.&#xa;PASO 5. La respuesta correcta del ni&#xf1;o es la de juntar las tarjetas iguales. Si no da la respuesta correcta d&#xe9; apoyo tomando la mano del ni&#xf1;o y dirigiendo su mano hacia la tarjeta igual, ap&#xf3;yelo para que suelte la tarjeta.&#xa;PASO 6. Disminuya gradualmente el apoyo hasta cumplir el criterio.&#xa;PASO 7. Refuerce cada respuesta correcta, sin importar si lo hizo o no con apoyo.&#xa;"/>
+            <Property name="text" type="java.lang.String" value="PASO 1. Seleccione tarjetas con im&#xe1;genes de objetos comunes. El criterio de selecci&#xf3;n de im&#xe1;genes es que&#xa;deben tener 2 iguales, por ejemplo,dos tarjetas completamente id&#xe9;nticas de una naranja.&#xa;&#xa;PASO 2. Si&#xe9;ntese frente al ni&#xf1;o en una mesa de trabajo.&#xa;&#xa;PASO 3. Coloque sobre la mesa  dos tarjetas distintas (por ejemplo, la imagen de una naranja y la imagen de&#xa;una bicicleta).Las tarjetas deben estar separadas entre s&#xed; por una distancia de aproximadamente 40 cent&#xed;metros.&#xa;&#xa;PASO 4. Llame al ni&#xf1;o por su nombre y diga &#x201c;Junta las cosas iguales&#x201d; al mismo tiempo que le muestra la tarjeta&#xa;y se la entrega en la mano, siempre cuidando que ponga atenci&#xf3;n a la tarjeta que entregamos.&#xa;&#xa;PASO 5. La respuesta correcta del ni&#xf1;o es la de juntar las tarjetas iguales. Si no da la respuesta correcta d&#xe9;&#xa;apoyo tomando la mano del ni&#xf1;o y dirigiendo su mano hacia la tarjeta igual, ap&#xf3;yelo para que suelte la tarjeta.&#xa;&#xa;PASO 6. Disminuya gradualmente el apoyo hasta cumplir el criterio.&#xa;&#xa;PASO 7. Refuerce cada respuesta correcta, sin importar si lo hizo o no con apoyo.&#xa;"/>
           </Properties>
         </Component>
       </SubComponents>
@@ -263,11 +178,22 @@
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/mx/itson/imagenes/FondoAzul.jpg"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="jLabel1"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="0" y="0" width="1020" height="630"/>
+          <AbsoluteConstraints x="80" y="0" width="1200" height="720"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel6">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/mx/itson/imagenes/FondoAzul.jpg"/>
+        </Property>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="0" y="0" width="1200" height="720"/>
         </Constraint>
       </Constraints>
     </Component>

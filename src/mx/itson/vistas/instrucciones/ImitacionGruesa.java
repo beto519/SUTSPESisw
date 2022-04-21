@@ -18,7 +18,8 @@ public class ImitacionGruesa extends javax.swing.JFrame {
      */
     public ImitacionGruesa() {
         initComponents();
-        setLocationRelativeTo(null);
+         setLocationRelativeTo(null);
+         this.setExtendedState(MAXIMIZED_BOTH);
         fecha();
     }
  private void fecha(){

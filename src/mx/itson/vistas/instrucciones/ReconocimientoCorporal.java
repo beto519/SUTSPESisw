@@ -18,7 +18,8 @@ public class ReconocimientoCorporal extends javax.swing.JFrame {
     
         setVisible(true);
         setResizable(false);
-        setLocationRelativeTo(null);
+         setLocationRelativeTo(null);
+         this.setExtendedState(MAXIMIZED_BOTH);
      //   setLayout(new BorderLayout());
     }
 

@@ -15,6 +15,8 @@ public class UsoPenombres extends javax.swing.JFrame {
      */
     public UsoPenombres() {
         initComponents();
+                 setLocationRelativeTo(null);
+         this.setExtendedState(MAXIMIZED_BOTH);
     }
 
     /**

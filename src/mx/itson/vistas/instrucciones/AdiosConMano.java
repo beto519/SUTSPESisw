@@ -4,6 +4,9 @@
  */
 package mx.itson.vistas.instrucciones;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
 /**
  *
  * @author lopez
@@ -15,8 +18,16 @@ public class AdiosConMano extends javax.swing.JFrame {
      */
     public AdiosConMano() {
         initComponents();
-    }
+        setLocationRelativeTo(null);
+        fecha();
+   this.setExtendedState(MAXIMIZED_BOTH);
 
+    }
+  private void fecha(){
+    DateTimeFormatter fechaRealizacion = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+    txtFecha1.setText(fechaRealizacion.format(LocalDateTime.now()));
+
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -26,108 +37,94 @@ public class AdiosConMano extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        FechaElab1 = new javax.swing.JLabel();
         Elaboro1 = new javax.swing.JLabel();
         ReconocimientoCorporal1 = new javax.swing.JLabel();
         procedimiento2 = new javax.swing.JLabel();
         NombreDelPrograma1 = new javax.swing.JLabel();
         txtFecha1 = new javax.swing.JTextField();
         MtroManuel2 = new javax.swing.JLabel();
-        FechaNumRetro1 = new javax.swing.JLabel();
         Mei1 = new javax.swing.JLabel();
         jScrollPane3 = new javax.swing.JScrollPane();
         jTextArea3 = new javax.swing.JTextArea();
-        FechaRetro1 = new javax.swing.JLabel();
-        FechaNumElab1 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setMaximumSize(new java.awt.Dimension(1280, 720));
+        setMinimumSize(new java.awt.Dimension(1280, 720));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        FechaElab1.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        FechaElab1.setText(" Fecha de Elaboración:");
-        FechaElab1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(FechaElab1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 190, 450, 30));
 
         Elaboro1.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         Elaboro1.setText("Mtro. Manuel Esquer Sumuano");
         Elaboro1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(Elaboro1, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 260, 560, 40));
+        getContentPane().add(Elaboro1, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 170, 560, 40));
 
         ReconocimientoCorporal1.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         ReconocimientoCorporal1.setText("Enseñar a decir adiós con la mano");
         ReconocimientoCorporal1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(ReconocimientoCorporal1, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 150, 560, 40));
+        getContentPane().add(ReconocimientoCorporal1, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 130, 560, 40));
 
         procedimiento2.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         procedimiento2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         procedimiento2.setText("PROCEDIMIENTO"); // NOI18N
         procedimiento2.setToolTipText("");
         procedimiento2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(procedimiento2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 300, 1010, 30));
+        getContentPane().add(procedimiento2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 210, 1010, 30));
 
         NombreDelPrograma1.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         NombreDelPrograma1.setText(" Nombre del Programa:");
         NombreDelPrograma1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(NombreDelPrograma1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 150, 450, 40));
+        getContentPane().add(NombreDelPrograma1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 130, 450, 40));
 
         txtFecha1.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         txtFecha1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtFecha1.setEnabled(false);
         txtFecha1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtFecha1ActionPerformed(evt);
             }
         });
-        getContentPane().add(txtFecha1, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 10, 90, 40));
+        getContentPane().add(txtFecha1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 10, 90, 40));
 
         MtroManuel2.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         MtroManuel2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MtroManuel2.setText(" Elaboró:"); // NOI18N
         MtroManuel2.setToolTipText("");
         MtroManuel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(MtroManuel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 260, 450, 40));
-
-        FechaNumRetro1.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        FechaNumRetro1.setText("15-02-2016");
-        FechaNumRetro1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(FechaNumRetro1, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 220, 560, -1));
+        getContentPane().add(MtroManuel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 170, 450, 40));
 
         Mei1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/Mei.png"))); // NOI18N
         getContentPane().add(Mei1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         jTextArea3.setColumns(20);
-        jTextArea3.setFont(new java.awt.Font("Dialog", 0, 17)); // NOI18N
+        jTextArea3.setFont(new java.awt.Font("Dialog", 0, 20)); // NOI18N
         jTextArea3.setRows(5);
-        jTextArea3.setText("PASO 1. Cuando vaya a despedirse de las personas.\nPASO 2. Llámelo por su nombre y dé la instrucción: “di adiós”.\nPASO 3. La respuesta correcta es mover la mano diciendo adiós.\nPASO 4. Si da la respuesta correcta refuerce.\nPASO 5. Si no se da la respuesta correcta ofrezca apoyo físico.\nPASO 6. Disminuya el apoyo gradualmente hasta cumplir el criterio.\n");
+        jTextArea3.setText("PASO 1. Cuando vaya a despedirse de las personas.\n\nPASO 2. Llámelo por su nombre y dé la instrucción: “di adiós”.\n\nPASO 3. La respuesta correcta es mover la mano diciendo adiós.\n\nPASO 4. Si da la respuesta correcta refuerce.\n\nPASO 5. Si no se da la respuesta correcta ofrezca apoyo físico.\n\nPASO 6. Disminuya el apoyo gradualmente hasta cumplir el criterio.");
         jScrollPane3.setViewportView(jTextArea3);
 
-        getContentPane().add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 330, 1010, 180));
-
-        FechaRetro1.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        FechaRetro1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        FechaRetro1.setText("Fecha de  Retroalimentación:"); // NOI18N
-        FechaRetro1.setToolTipText("");
-        FechaRetro1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(FechaRetro1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 220, 450, -1));
-
-        FechaNumElab1.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        FechaNumElab1.setText("18-01-2016");
-        FechaNumElab1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(FechaNumElab1, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 190, 560, 30));
+        getContentPane().add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 260, 1010, 380));
 
         jLabel4.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         jLabel4.setText("Programa ");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 90, 190, 60));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 70, 190, 60));
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoAzul.jpg"))); // NOI18N
+        jLabel6.setMaximumSize(new java.awt.Dimension(1280, 720));
+        jLabel6.setMinimumSize(new java.awt.Dimension(1280, 720));
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 0, 1200, 720));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoAzul.jpg"))); // NOI18N
-        jLabel5.setText("jLabel1");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1010, 590));
+        jLabel5.setMaximumSize(new java.awt.Dimension(1280, 720));
+        jLabel5.setMinimumSize(new java.awt.Dimension(1280, 720));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1200, 720));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void txtFecha1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFecha1ActionPerformed
+
+
         // TODO add your handling code here:
     }//GEN-LAST:event_txtFecha1ActionPerformed
 
@@ -168,16 +165,13 @@ public class AdiosConMano extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Elaboro1;
-    private javax.swing.JLabel FechaElab1;
-    private javax.swing.JLabel FechaNumElab1;
-    private javax.swing.JLabel FechaNumRetro1;
-    private javax.swing.JLabel FechaRetro1;
     private javax.swing.JLabel Mei1;
     private javax.swing.JLabel MtroManuel2;
     private javax.swing.JLabel NombreDelPrograma1;
     private javax.swing.JLabel ReconocimientoCorporal1;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTextArea jTextArea3;
     private javax.swing.JLabel procedimiento2;

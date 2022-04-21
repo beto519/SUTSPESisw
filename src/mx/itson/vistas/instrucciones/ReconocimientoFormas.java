@@ -15,6 +15,8 @@ public class ReconocimientoFormas extends javax.swing.JFrame {
      */
     public ReconocimientoFormas() {
         initComponents();
+                 setLocationRelativeTo(null);
+         this.setExtendedState(MAXIMIZED_BOTH);
     }
 
     /**

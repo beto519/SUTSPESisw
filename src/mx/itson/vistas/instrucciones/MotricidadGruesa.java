@@ -16,6 +16,8 @@ public class MotricidadGruesa extends javax.swing.JFrame {
      */
     public MotricidadGruesa() {
         initComponents();
+                 setLocationRelativeTo(null);
+         this.setExtendedState(MAXIMIZED_BOTH);
     }
 
     /**

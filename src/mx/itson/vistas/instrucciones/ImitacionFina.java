@@ -15,7 +15,9 @@ public class ImitacionFina extends javax.swing.JFrame {
      */
     public ImitacionFina() {
         initComponents();
-        setLocationRelativeTo(null);
+              setLocationRelativeTo(null);
+         this.setExtendedState(MAXIMIZED_BOTH);
+
     }
 
     /**

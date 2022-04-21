@@ -18,7 +18,8 @@ public class Intraverbal extends javax.swing.JFrame {
      */
     public Intraverbal() {
         initComponents();
-        setLocationRelativeTo(null);
+         setLocationRelativeTo(null);
+         this.setExtendedState(MAXIMIZED_BOTH);
         fecha();
         
     }

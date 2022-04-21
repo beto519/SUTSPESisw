@@ -15,6 +15,8 @@ public class ReconocimientoColores extends javax.swing.JFrame {
      */
     public ReconocimientoColores() {
         initComponents();
+                 setLocationRelativeTo(null);
+         this.setExtendedState(MAXIMIZED_BOTH);
     }
 
     /**

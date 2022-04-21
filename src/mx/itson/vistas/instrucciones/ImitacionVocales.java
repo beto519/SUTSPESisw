@@ -15,6 +15,8 @@ public class ImitacionVocales extends javax.swing.JFrame {
      */
     public ImitacionVocales() {
         initComponents();
+                 setLocationRelativeTo(null);
+         this.setExtendedState(MAXIMIZED_BOTH);
     }
 
     /**
