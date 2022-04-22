@@ -18,7 +18,7 @@ public class EmparejamientoImagenes extends javax.swing.JFrame {
      */
     public EmparejamientoImagenes() {
         initComponents();
-        fecha();
+  
          setLocationRelativeTo(null);
          this.setExtendedState(MAXIMIZED_BOTH);
 
@@ -33,7 +33,8 @@ public class EmparejamientoImagenes extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        txtFecha1 = new javax.swing.JTextField();
+        LabelLogo2 = new javax.swing.JLabel();
+        LabelLogo1 = new javax.swing.JLabel();
         ReconocimientoCorporal1 = new javax.swing.JLabel();
         procedimiento2 = new javax.swing.JLabel();
         NombreDelPrograma1 = new javax.swing.JLabel();
@@ -47,15 +48,11 @@ public class EmparejamientoImagenes extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        txtFecha1.setFont(new java.awt.Font("Dialog", 0, 20)); // NOI18N
-        txtFecha1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        txtFecha1.setEnabled(false);
-        txtFecha1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtFecha1ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(txtFecha1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 10, 140, 40));
+        LabelLogo2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/sutspes  en png.png"))); // NOI18N
+        getContentPane().add(LabelLogo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 0, -1, -1));
+
+        LabelLogo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/CENTRO DE APOYO EDUCATIVO INFANTIL EN PNG.png"))); // NOI18N
+        getContentPane().add(LabelLogo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         ReconocimientoCorporal1.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         ReconocimientoCorporal1.setText("Emparejamiento de Imagenes");
@@ -99,19 +96,12 @@ public class EmparejamientoImagenes extends javax.swing.JFrame {
         getContentPane().add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 200, 1010, 510));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoAzul.jpg"))); // NOI18N
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1540, 890));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+ 
 
-    private void txtFecha1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFecha1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtFecha1ActionPerformed
- private void fecha(){
-    DateTimeFormatter fechaRealizacion = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-    txtFecha1.setText(fechaRealizacion.format(LocalDateTime.now()));
-
-    }
     /**
      * @param args the command line arguments
      */
@@ -149,6 +139,8 @@ public class EmparejamientoImagenes extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Elaboro1;
+    private javax.swing.JLabel LabelLogo1;
+    private javax.swing.JLabel LabelLogo2;
     private javax.swing.JLabel MtroManuel2;
     private javax.swing.JLabel NombreDelPrograma1;
     private javax.swing.JLabel ReconocimientoCorporal1;
@@ -157,6 +149,5 @@ public class EmparejamientoImagenes extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JTextArea jTextArea4;
     private javax.swing.JLabel procedimiento2;
-    private javax.swing.JTextField txtFecha1;
     // End of variables declaration//GEN-END:variables
 }

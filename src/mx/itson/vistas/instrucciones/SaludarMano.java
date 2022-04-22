@@ -28,7 +28,8 @@ public class SaludarMano extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        txtFecha = new javax.swing.JTextField();
+        LabelLogo2 = new javax.swing.JLabel();
+        LabelLogo1 = new javax.swing.JLabel();
         Elaboro1 = new javax.swing.JLabel();
         jScrollPane3 = new javax.swing.JScrollPane();
         jTextArea3 = new javax.swing.JTextArea();
@@ -42,14 +43,11 @@ public class SaludarMano extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        txtFecha.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        txtFecha.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        txtFecha.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtFechaActionPerformed(evt);
-            }
-        });
-        getContentPane().add(txtFecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 10, 90, 40));
+        LabelLogo2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/sutspes  en png.png"))); // NOI18N
+        getContentPane().add(LabelLogo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 0, -1, -1));
+
+        LabelLogo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/CENTRO DE APOYO EDUCATIVO INFANTIL EN PNG.png"))); // NOI18N
+        getContentPane().add(LabelLogo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         Elaboro1.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         Elaboro1.setText("Mtro. Manuel Esquer Sumuano");
@@ -99,10 +97,6 @@ public class SaludarMano extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtFechaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFechaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtFechaActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -140,6 +134,8 @@ public class SaludarMano extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Elaboro1;
+    private javax.swing.JLabel LabelLogo1;
+    private javax.swing.JLabel LabelLogo2;
     private javax.swing.JLabel MtroManuel2;
     private javax.swing.JLabel NombreDelPrograma1;
     private javax.swing.JLabel ReconocimientoCorporal1;
@@ -148,6 +144,5 @@ public class SaludarMano extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTextArea jTextArea3;
     private javax.swing.JLabel procedimiento2;
-    private javax.swing.JTextField txtFecha;
     // End of variables declaration//GEN-END:variables
 }

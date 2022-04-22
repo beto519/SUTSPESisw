@@ -28,6 +28,8 @@ public class UsoPenombres extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        LabelLogo2 = new javax.swing.JLabel();
+        LabelLogo1 = new javax.swing.JLabel();
         UsoDePronombres = new javax.swing.JLabel();
         NombreDelPrograma = new javax.swing.JLabel();
         MtroManuel = new javax.swing.JLabel();
@@ -42,34 +44,40 @@ public class UsoPenombres extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        LabelLogo2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/sutspes  en png.png"))); // NOI18N
+        getContentPane().add(LabelLogo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 0, -1, -1));
+
+        LabelLogo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/CENTRO DE APOYO EDUCATIVO INFANTIL EN PNG.png"))); // NOI18N
+        getContentPane().add(LabelLogo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
         UsoDePronombres.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         UsoDePronombres.setText("Uso de pronombres");
         UsoDePronombres.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(UsoDePronombres, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 60, 620, 40));
+        getContentPane().add(UsoDePronombres, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 120, 620, 40));
 
         NombreDelPrograma.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         NombreDelPrograma.setText(" Nombre del Programa:");
         NombreDelPrograma.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(NombreDelPrograma, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 60, 500, 40));
+        getContentPane().add(NombreDelPrograma, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 120, 500, 40));
 
         MtroManuel.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         MtroManuel.setText("  Mtro. Manuel Esquer Sumuano  ");
         MtroManuel.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(MtroManuel, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 100, 620, 40));
+        getContentPane().add(MtroManuel, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 160, 620, 40));
 
         Elaboro.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         Elaboro.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         Elaboro.setText(" Elaboró:"); // NOI18N
         Elaboro.setToolTipText("");
         Elaboro.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(Elaboro, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 100, 500, 40));
+        getContentPane().add(Elaboro, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 160, 500, 40));
 
         procedimiento.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         procedimiento.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         procedimiento.setText("PROCEDIMIENTO"); // NOI18N
         procedimiento.setToolTipText("");
         procedimiento.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 140, 1120, 30));
+        getContentPane().add(procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 200, 1120, 30));
 
         Programa.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         Programa.setText("Programa");
@@ -82,7 +90,7 @@ public class UsoPenombres extends javax.swing.JFrame {
         txtProcedimiento.setText("PASO 1. Seleccione 1 mujer y un hombre de apoyo.\nPASO 2. Hagan un círculo junto con el niño.\nPASO 3. Dé al niño un objeto (Auto) y pregunte: ¿Quién tiene el auto?\nPASO 4. La respuesta del niño debe ser “yo”. Si da la respuesta correctamente refuerce. Si no da la \nrespuesta correctamente de apoyo susurrando a su oído diciendo “yo”.\nPASO 5. Dé el auto a el hombre, llame al niño por su nombre y pregunte: ¿Quién tiene el auto? \nPASO 6. La respuesta debe ser él. Si el niño responde correctamente refuerce. Si no da la respuesta \ncorrecta dé apoyo susurrando la respuesta correcta al oído del niño.\nPASO 7. Dé el auto a la mujer, llame al niño por su nombre y pregunte: ¿Quién tiene el auto? \nPASO 8. El niño debe responder ella, si da la respuesta correcta refuerce, si no la da apoye susurrando al \noído.\nPASO 9. Tome el auto, llame al niño por su nombre y diga: ¿Quién tiene el auto?\nPASO 10. El niño debe responder tú. Si da la respuesta correcta refuerce, si no da la respuesta correcta \napoye susurrando al oído.\n");
         Procedimiento.setViewportView(txtProcedimiento);
 
-        getContentPane().add(Procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 170, 1120, 400));
+        getContentPane().add(Procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 230, 1120, 400));
 
         Btn_Instrucciones.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         Btn_Instrucciones.setText("Ver Instrucciones");
@@ -97,7 +105,7 @@ public class UsoPenombres extends javax.swing.JFrame {
                 Btn_InstruccionesActionPerformed(evt);
             }
         });
-        getContentPane().add(Btn_Instrucciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 600, 200, 50));
+        getContentPane().add(Btn_Instrucciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 640, 200, 50));
 
         Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoRosa.jpg"))); // NOI18N
         getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 710));
@@ -154,6 +162,8 @@ public class UsoPenombres extends javax.swing.JFrame {
     private javax.swing.JButton Btn_Instrucciones;
     private javax.swing.JLabel Elaboro;
     private javax.swing.JLabel Fondo;
+    private javax.swing.JLabel LabelLogo1;
+    private javax.swing.JLabel LabelLogo2;
     private javax.swing.JLabel MtroManuel;
     private javax.swing.JLabel NombreDelPrograma;
     private javax.swing.JScrollPane Procedimiento;

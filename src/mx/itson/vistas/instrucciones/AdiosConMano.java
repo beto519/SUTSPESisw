@@ -37,6 +37,8 @@ public class AdiosConMano extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        LabelLogo2 = new javax.swing.JLabel();
+        LabelLogo1 = new javax.swing.JLabel();
         Elaboro1 = new javax.swing.JLabel();
         ReconocimientoCorporal1 = new javax.swing.JLabel();
         procedimiento2 = new javax.swing.JLabel();
@@ -52,6 +54,12 @@ public class AdiosConMano extends javax.swing.JFrame {
         setMaximumSize(new java.awt.Dimension(1280, 720));
         setMinimumSize(new java.awt.Dimension(1280, 720));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        LabelLogo2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/sutspes  en png.png"))); // NOI18N
+        getContentPane().add(LabelLogo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 10, -1, -1));
+
+        LabelLogo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/CENTRO DE APOYO EDUCATIVO INFANTIL EN PNG.png"))); // NOI18N
+        getContentPane().add(LabelLogo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         Elaboro1.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         Elaboro1.setText("Mtro. Manuel Esquer Sumuano");
@@ -156,6 +164,8 @@ public class AdiosConMano extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Elaboro1;
+    private javax.swing.JLabel LabelLogo1;
+    private javax.swing.JLabel LabelLogo2;
     private javax.swing.JLabel MtroManuel2;
     private javax.swing.JLabel NombreDelPrograma1;
     private javax.swing.JLabel ReconocimientoCorporal1;

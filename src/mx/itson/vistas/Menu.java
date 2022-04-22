@@ -39,7 +39,8 @@ public class Menu extends javax.swing.JFrame {
         txtInstrucciones = new javax.swing.JLabel();
         txtVerNiños = new javax.swing.JLabel();
         txtVerTerapeutas = new javax.swing.JLabel();
-        TxtTitulo = new javax.swing.JLabel();
+        LabelLogo1 = new javax.swing.JLabel();
+        LabelLogo2 = new javax.swing.JLabel();
         LabelFondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -115,9 +116,11 @@ public class Menu extends javax.swing.JFrame {
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 280, 720));
 
-        TxtTitulo.setFont(new java.awt.Font("Tempus Sans ITC", 3, 48)); // NOI18N
-        TxtTitulo.setText("SUTSPESISW");
-        getContentPane().add(TxtTitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 20, 290, -1));
+        LabelLogo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/CENTRO DE APOYO EDUCATIVO INFANTIL EN PNG.png"))); // NOI18N
+        getContentPane().add(LabelLogo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 10, -1, -1));
+
+        LabelLogo2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/sutspes  en png.png"))); // NOI18N
+        getContentPane().add(LabelLogo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 10, -1, -1));
 
         LabelFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoLogin.jpg"))); // NOI18N
         getContentPane().add(LabelFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
@@ -192,7 +195,8 @@ public class Menu extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel LabelFondo;
-    private javax.swing.JLabel TxtTitulo;
+    private javax.swing.JLabel LabelLogo1;
+    private javax.swing.JLabel LabelLogo2;
     private javax.swing.JLabel btnAgregarTerapeuta;
     private javax.swing.JLabel btnEditarTerapeuta;
     private javax.swing.JLabel btnIntrucciones;

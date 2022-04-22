@@ -38,6 +38,8 @@ public class Intraverbal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        LabelLogo2 = new javax.swing.JLabel();
+        LabelLogo1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         txtFecha = new javax.swing.JTextField();
         NombreDelPrograma = new javax.swing.JLabel();
@@ -54,6 +56,12 @@ public class Intraverbal extends javax.swing.JFrame {
         setFocusableWindowState(false);
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        LabelLogo2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/sutspes  en png.png"))); // NOI18N
+        getContentPane().add(LabelLogo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 60, -1, -1));
+
+        LabelLogo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/CENTRO DE APOYO EDUCATIVO INFANTIL EN PNG.png"))); // NOI18N
+        getContentPane().add(LabelLogo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         jLabel2.setText("Programa ");
@@ -171,6 +179,8 @@ public class Intraverbal extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Elaboro;
+    private javax.swing.JLabel LabelLogo1;
+    private javax.swing.JLabel LabelLogo2;
     private javax.swing.JLabel MtroManuel1;
     private javax.swing.JLabel NombreDelPrograma;
     private javax.swing.JLabel ReconocimientoCorporal;

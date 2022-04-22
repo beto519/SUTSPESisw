@@ -28,12 +28,10 @@ public class SeguimientoInstrucciones extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        LabelLogo2 = new javax.swing.JLabel();
+        LabelLogo1 = new javax.swing.JLabel();
         SeguimientoDeInstrucciones = new javax.swing.JLabel();
         NombreDelPrograma = new javax.swing.JLabel();
-        FechaNumElab = new javax.swing.JLabel();
-        FechaElab = new javax.swing.JLabel();
-        FechaNumRetro = new javax.swing.JLabel();
-        FechaRetro = new javax.swing.JLabel();
         MtroManuel = new javax.swing.JLabel();
         Elaboro = new javax.swing.JLabel();
         procedimiento = new javax.swing.JLabel();
@@ -46,37 +44,21 @@ public class SeguimientoInstrucciones extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        LabelLogo2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/sutspes  en png.png"))); // NOI18N
+        getContentPane().add(LabelLogo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 0, -1, -1));
+
+        LabelLogo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/CENTRO DE APOYO EDUCATIVO INFANTIL EN PNG.png"))); // NOI18N
+        getContentPane().add(LabelLogo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
         SeguimientoDeInstrucciones.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         SeguimientoDeInstrucciones.setText("Seguimiento de instrucciones");
         SeguimientoDeInstrucciones.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(SeguimientoDeInstrucciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 70, 680, 40));
+        getContentPane().add(SeguimientoDeInstrucciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 150, 680, 40));
 
         NombreDelPrograma.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         NombreDelPrograma.setText(" Nombre del Programa:");
         NombreDelPrograma.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(NombreDelPrograma, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 70, 450, 40));
-
-        FechaNumElab.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        FechaNumElab.setText("  7-05-2017");
-        FechaNumElab.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(FechaNumElab, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 110, 680, 40));
-
-        FechaElab.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        FechaElab.setText(" Fecha de Elaboración:");
-        FechaElab.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(FechaElab, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 110, 450, 40));
-
-        FechaNumRetro.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        FechaNumRetro.setText("  7-06-2017");
-        FechaNumRetro.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(FechaNumRetro, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 150, 680, 40));
-
-        FechaRetro.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        FechaRetro.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        FechaRetro.setText("Fecha de Retroalimentación:"); // NOI18N
-        FechaRetro.setToolTipText("");
-        FechaRetro.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(FechaRetro, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 150, 450, 40));
+        getContentPane().add(NombreDelPrograma, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 150, 450, 40));
 
         MtroManuel.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         MtroManuel.setText("  Mtro. Manuel Esquer Sumuano  ");
@@ -170,11 +152,9 @@ public class SeguimientoInstrucciones extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Btn_Instrucciones;
     private javax.swing.JLabel Elaboro;
-    private javax.swing.JLabel FechaElab;
-    private javax.swing.JLabel FechaNumElab;
-    private javax.swing.JLabel FechaNumRetro;
-    private javax.swing.JLabel FechaRetro;
     private javax.swing.JLabel Fondo;
+    private javax.swing.JLabel LabelLogo1;
+    private javax.swing.JLabel LabelLogo2;
     private javax.swing.JLabel MtroManuel;
     private javax.swing.JLabel NombreDelPrograma;
     private javax.swing.JScrollPane Procedimiento;

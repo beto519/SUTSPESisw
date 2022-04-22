@@ -28,6 +28,8 @@ public class SenalamientoObjetos extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        LabelLogo2 = new javax.swing.JLabel();
+        LabelLogo1 = new javax.swing.JLabel();
         MtroManuel = new javax.swing.JLabel();
         Elaboro = new javax.swing.JLabel();
         NombreDelPrograma = new javax.swing.JLabel();
@@ -41,22 +43,28 @@ public class SenalamientoObjetos extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        LabelLogo2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/sutspes  en png.png"))); // NOI18N
+        getContentPane().add(LabelLogo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 0, -1, -1));
+
+        LabelLogo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/CENTRO DE APOYO EDUCATIVO INFANTIL EN PNG.png"))); // NOI18N
+        getContentPane().add(LabelLogo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
         MtroManuel.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         MtroManuel.setText("  Mtro. Manuel Esquer Sumuano  ");
         MtroManuel.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(MtroManuel, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 120, 600, 40));
+        getContentPane().add(MtroManuel, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 160, 600, 40));
 
         Elaboro.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         Elaboro.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         Elaboro.setText(" Elaboró:"); // NOI18N
         Elaboro.setToolTipText("");
         Elaboro.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(Elaboro, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 120, 490, 40));
+        getContentPane().add(Elaboro, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 160, 490, 40));
 
         NombreDelPrograma.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         NombreDelPrograma.setText(" Nombre del Programa:");
         NombreDelPrograma.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(NombreDelPrograma, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 80, 490, 40));
+        getContentPane().add(NombreDelPrograma, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 120, 490, 40));
 
         Programa.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         Programa.setText("Programa");
@@ -67,7 +75,7 @@ public class SenalamientoObjetos extends javax.swing.JFrame {
         procedimiento.setText("PROCEDIMIENTO"); // NOI18N
         procedimiento.setToolTipText("");
         procedimiento.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 160, 1090, 30));
+        getContentPane().add(procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 200, 1090, 30));
 
         txtProcedimiento.setEditable(false);
         txtProcedimiento.setColumns(20);
@@ -76,12 +84,12 @@ public class SenalamientoObjetos extends javax.swing.JFrame {
         txtProcedimiento.setText("PASO 1. Colóquese frente al niño. Seleccione un cuaderno de imágenes comunes, por ejemplo, de frutas, \nverduras, medios de transporte, objetos de la casa, etc…\nPASO 2. La imagen debe ser del tamaño aproximado a un cuarto de hoja de tamaño carta.\nPASO 3. Llame al niño por su nombre y diga: “Dónde está (el perro, el gato, etc…)\nPASO 4. La respuesta correcta del niño es que señale con el dedo la imagen.\nPASO 5. Si el niño no señala la imagen, vuelva a realizar la indicación y apoye físicamente.\nPASO 6. Disminuya el apoyo en forma gradual hasta lograr el criterio.\n");
         Procedimiento.setViewportView(txtProcedimiento);
 
-        getContentPane().add(Procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 190, 1090, 430));
+        getContentPane().add(Procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 230, 1090, 430));
 
         SenalamientoDeObjetos.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         SenalamientoDeObjetos.setText("Señalamiento de objetos");
         SenalamientoDeObjetos.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(SenalamientoDeObjetos, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 80, 600, 40));
+        getContentPane().add(SenalamientoDeObjetos, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 120, 600, 40));
 
         TxtFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoRosa.jpg"))); // NOI18N
         getContentPane().add(TxtFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
@@ -126,6 +134,8 @@ public class SenalamientoObjetos extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Elaboro;
+    private javax.swing.JLabel LabelLogo1;
+    private javax.swing.JLabel LabelLogo2;
     private javax.swing.JLabel MtroManuel;
     private javax.swing.JLabel NombreDelPrograma;
     private javax.swing.JScrollPane Procedimiento;

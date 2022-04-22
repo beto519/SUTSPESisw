@@ -28,6 +28,8 @@ public class ReconocimientoFormas extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        LabelLogo2 = new javax.swing.JLabel();
+        LabelLogo1 = new javax.swing.JLabel();
         MtroManuel = new javax.swing.JLabel();
         Elaboro = new javax.swing.JLabel();
         NombreDelPrograma = new javax.swing.JLabel();
@@ -41,22 +43,28 @@ public class ReconocimientoFormas extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        LabelLogo2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/sutspes  en png.png"))); // NOI18N
+        getContentPane().add(LabelLogo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 0, -1, -1));
+
+        LabelLogo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/CENTRO DE APOYO EDUCATIVO INFANTIL EN PNG.png"))); // NOI18N
+        getContentPane().add(LabelLogo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
         MtroManuel.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         MtroManuel.setText("  Mtro. Manuel Esquer Sumuano  ");
         MtroManuel.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(MtroManuel, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 110, 650, 40));
+        getContentPane().add(MtroManuel, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 150, 650, 40));
 
         Elaboro.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         Elaboro.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         Elaboro.setText(" Elaboró:"); // NOI18N
         Elaboro.setToolTipText("");
         Elaboro.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(Elaboro, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 110, 480, 40));
+        getContentPane().add(Elaboro, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 150, 480, 40));
 
         NombreDelPrograma.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         NombreDelPrograma.setText(" Nombre del Programa:");
         NombreDelPrograma.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(NombreDelPrograma, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 70, 480, 40));
+        getContentPane().add(NombreDelPrograma, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 110, 480, 40));
 
         Programa.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         Programa.setText("Programa");
@@ -67,7 +75,7 @@ public class ReconocimientoFormas extends javax.swing.JFrame {
         procedimiento.setText("PROCEDIMIENTO"); // NOI18N
         procedimiento.setToolTipText("");
         procedimiento.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 150, 1130, 30));
+        getContentPane().add(procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 190, 1130, 30));
 
         txtProcedimiento.setEditable(false);
         txtProcedimiento.setColumns(20);
@@ -76,12 +84,12 @@ public class ReconocimientoFormas extends javax.swing.JFrame {
         txtProcedimiento.setText("PASO 1. Realice distintas figuras por pares (cuadrado, círculo, triángulo)\nPASO 2. Siente al niño frente a usted, en una mesa de trabajo.\nPASO 3. De un lado coloque una figura (por ejemplo el cuadrado).\nPASO 4. Del otro lado coloque una figura cuadrada, un triángulo y un círculo.\nPASO 5. Llame al niño por su nombre, señale el cuadrado (mostrándoselo al niño) y diga: “es un cuadrado”, \nhaga énfasis en la palabra cuadrado. \nPASO 6. Luego pregunte, al mismo tiempo que señala las otras figuras ¿Cuál de estos es un cuadrado?\nPASO 7. El niño debe señalar el cuadrado.\nPASO 8. Refuerce las respuestas correctas.\nPASO 9. Si no hay respuesta correcta dé apoyo físico, y refuerce.\nPASO 10. Repita el procedimiento con cada una de las figuras.\n");
         Procedimiento.setViewportView(txtProcedimiento);
 
-        getContentPane().add(Procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 180, 1130, 400));
+        getContentPane().add(Procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 220, 1130, 400));
 
         ReconocimientoDeFormas.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         ReconocimientoDeFormas.setText("Reconocimiento de formas ");
         ReconocimientoDeFormas.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(ReconocimientoDeFormas, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 70, 650, 40));
+        getContentPane().add(ReconocimientoDeFormas, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 110, 650, 40));
 
         TxtFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoRosa.jpg"))); // NOI18N
         getContentPane().add(TxtFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
@@ -126,6 +134,8 @@ public class ReconocimientoFormas extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Elaboro;
+    private javax.swing.JLabel LabelLogo1;
+    private javax.swing.JLabel LabelLogo2;
     private javax.swing.JLabel MtroManuel;
     private javax.swing.JLabel NombreDelPrograma;
     private javax.swing.JScrollPane Procedimiento;

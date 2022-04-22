@@ -28,6 +28,8 @@ public class ReconocimientoColores extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        LabelLogo1 = new javax.swing.JLabel();
+        LabelLogo2 = new javax.swing.JLabel();
         MtroManuel = new javax.swing.JLabel();
         Elaboro = new javax.swing.JLabel();
         NombreDelPrograma = new javax.swing.JLabel();
@@ -41,22 +43,28 @@ public class ReconocimientoColores extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        LabelLogo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/CENTRO DE APOYO EDUCATIVO INFANTIL EN PNG.png"))); // NOI18N
+        getContentPane().add(LabelLogo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        LabelLogo2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/sutspes  en png.png"))); // NOI18N
+        getContentPane().add(LabelLogo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 0, -1, -1));
+
         MtroManuel.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         MtroManuel.setText("  Mtro. Manuel Esquer Sumuano  ");
         MtroManuel.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(MtroManuel, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 130, 630, 40));
+        getContentPane().add(MtroManuel, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 160, 630, 40));
 
         Elaboro.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         Elaboro.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         Elaboro.setText(" Elaboró:"); // NOI18N
         Elaboro.setToolTipText("");
         Elaboro.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(Elaboro, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 130, 510, 40));
+        getContentPane().add(Elaboro, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 160, 510, 40));
 
         NombreDelPrograma.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         NombreDelPrograma.setText(" Nombre del Programa:");
         NombreDelPrograma.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(NombreDelPrograma, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 90, 510, 40));
+        getContentPane().add(NombreDelPrograma, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 120, 510, 40));
 
         Programa.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         Programa.setText("Programa");
@@ -67,7 +75,7 @@ public class ReconocimientoColores extends javax.swing.JFrame {
         procedimiento.setText("PROCEDIMIENTO"); // NOI18N
         procedimiento.setToolTipText("");
         procedimiento.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 170, 1140, 30));
+        getContentPane().add(procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 200, 1140, 30));
 
         txtProcedimiento.setEditable(false);
         txtProcedimiento.setColumns(20);
@@ -76,12 +84,12 @@ public class ReconocimientoColores extends javax.swing.JFrame {
         txtProcedimiento.setText("PASO 1. Realice círculos de distintos colores (Rojo, amarillo, verde, blanco, negro, azul, morado, gris)\nPASO 2. Siente al niño frente a usted, en una mesa de trabajo.\nPASO 3. De un lado coloque un círculo de color (por ejemplo el rojo).\nPASO 4. Del otro lado coloque un círculo de color rojo y otros dos diferentes.\nPASO 5. Llame al niño por su nombre, señale círculo rojo (mostrándoselo al niño) y diga: “es rojo”, \nhaga énfasis en la palabra rojo. \nPASO 6. Luego pregunte, al mismo tiempo que señala los otros círculos ¿Cuál de estos es rojo?\nPASO 7. El niño debe señalar el círculo de color rojo.\nPASO 8. Refuerce las respuestas correctas.\nPASO 9. Si no hay respuesta correcta dé apoyo físico, y refuerce.\nPASO 10. Repita el procedimiento con cada uno de los colores.\n");
         Procedimiento.setViewportView(txtProcedimiento);
 
-        getContentPane().add(Procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 200, 1140, 460));
+        getContentPane().add(Procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 230, 1140, 460));
 
         ReconocimientoDeColores.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         ReconocimientoDeColores.setText("Reconocimiento de colores  ");
         ReconocimientoDeColores.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(ReconocimientoDeColores, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 90, 630, 40));
+        getContentPane().add(ReconocimientoDeColores, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 120, 630, 40));
 
         TxtFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoRosa.jpg"))); // NOI18N
         getContentPane().add(TxtFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
@@ -126,6 +134,8 @@ public class ReconocimientoColores extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Elaboro;
+    private javax.swing.JLabel LabelLogo1;
+    private javax.swing.JLabel LabelLogo2;
     private javax.swing.JLabel MtroManuel;
     private javax.swing.JLabel NombreDelPrograma;
     private javax.swing.JScrollPane Procedimiento;

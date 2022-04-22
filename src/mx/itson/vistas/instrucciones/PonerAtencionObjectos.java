@@ -28,22 +28,26 @@ public class PonerAtencionObjectos extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        LabelLogo1 = new javax.swing.JLabel();
+        LabelLogo2 = new javax.swing.JLabel();
         MtroManuel = new javax.swing.JLabel();
         Elaboro = new javax.swing.JLabel();
         NombreDelPrograma = new javax.swing.JLabel();
         Programa = new javax.swing.JLabel();
         procedimiento = new javax.swing.JLabel();
-        FechaNumElab = new javax.swing.JLabel();
         Procedimiento = new javax.swing.JScrollPane();
         txtProcedimiento = new javax.swing.JTextArea();
-        FechaNumRetro = new javax.swing.JLabel();
-        FechaElab = new javax.swing.JLabel();
         PonerAtencionObjectos = new javax.swing.JLabel();
-        FechaRetro = new javax.swing.JLabel();
         TxtFondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        LabelLogo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/CENTRO DE APOYO EDUCATIVO INFANTIL EN PNG.png"))); // NOI18N
+        getContentPane().add(LabelLogo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        LabelLogo2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/sutspes  en png.png"))); // NOI18N
+        getContentPane().add(LabelLogo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 0, -1, -1));
 
         MtroManuel.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         MtroManuel.setText("  Mtro. Manuel Esquer Sumuano  ");
@@ -60,7 +64,7 @@ public class PonerAtencionObjectos extends javax.swing.JFrame {
         NombreDelPrograma.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         NombreDelPrograma.setText(" Nombre del Programa:");
         NombreDelPrograma.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(NombreDelPrograma, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 70, 490, 40));
+        getContentPane().add(NombreDelPrograma, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 150, 490, 40));
 
         Programa.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         Programa.setText("Programa");
@@ -73,11 +77,6 @@ public class PonerAtencionObjectos extends javax.swing.JFrame {
         procedimiento.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         getContentPane().add(procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 230, 1090, 30));
 
-        FechaNumElab.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        FechaNumElab.setText("18-01-2016");
-        FechaNumElab.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(FechaNumElab, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 110, 600, 40));
-
         txtProcedimiento.setEditable(false);
         txtProcedimiento.setColumns(20);
         txtProcedimiento.setFont(new java.awt.Font("Dialog", 0, 17)); // NOI18N
@@ -87,30 +86,13 @@ public class PonerAtencionObjectos extends javax.swing.JFrame {
 
         getContentPane().add(Procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 260, 1090, 410));
 
-        FechaNumRetro.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        FechaNumRetro.setText("15-02-2016");
-        FechaNumRetro.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(FechaNumRetro, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 150, 600, 40));
-
-        FechaElab.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        FechaElab.setText(" Fecha de Elaboración:");
-        FechaElab.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(FechaElab, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 110, 490, 40));
-
         PonerAtencionObjectos.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         PonerAtencionObjectos.setText("Poner atención a objetos");
         PonerAtencionObjectos.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(PonerAtencionObjectos, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 70, 600, 40));
-
-        FechaRetro.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        FechaRetro.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        FechaRetro.setText("Fecha de Retroalimentación:"); // NOI18N
-        FechaRetro.setToolTipText("");
-        FechaRetro.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(FechaRetro, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 150, 490, 40));
+        getContentPane().add(PonerAtencionObjectos, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 150, 600, 40));
 
         TxtFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoRosa.jpg"))); // NOI18N
-        getContentPane().add(TxtFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
+        getContentPane().add(TxtFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 750));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -152,10 +134,8 @@ public class PonerAtencionObjectos extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Elaboro;
-    private javax.swing.JLabel FechaElab;
-    private javax.swing.JLabel FechaNumElab;
-    private javax.swing.JLabel FechaNumRetro;
-    private javax.swing.JLabel FechaRetro;
+    private javax.swing.JLabel LabelLogo1;
+    private javax.swing.JLabel LabelLogo2;
     private javax.swing.JLabel MtroManuel;
     private javax.swing.JLabel NombreDelPrograma;
     private javax.swing.JLabel PonerAtencionObjectos;

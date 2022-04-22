@@ -32,6 +32,8 @@ public class ReconocimientoCorporal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        LabelLogo1 = new javax.swing.JLabel();
+        LabelLogo2 = new javax.swing.JLabel();
         ReconocimientoCorporal = new javax.swing.JLabel();
         NombreDelPrograma = new javax.swing.JLabel();
         MtroManuel = new javax.swing.JLabel();
@@ -48,27 +50,33 @@ public class ReconocimientoCorporal extends javax.swing.JFrame {
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        LabelLogo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/CENTRO DE APOYO EDUCATIVO INFANTIL EN PNG.png"))); // NOI18N
+        getContentPane().add(LabelLogo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        LabelLogo2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/sutspes  en png.png"))); // NOI18N
+        getContentPane().add(LabelLogo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 0, -1, -1));
+
         ReconocimientoCorporal.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         ReconocimientoCorporal.setText("  Reconocimiento Corporal");
         ReconocimientoCorporal.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(ReconocimientoCorporal, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 80, 620, 40));
+        getContentPane().add(ReconocimientoCorporal, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 130, 620, 40));
 
         NombreDelPrograma.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         NombreDelPrograma.setText(" Nombre del Programa:");
         NombreDelPrograma.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(NombreDelPrograma, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 80, 480, 40));
+        getContentPane().add(NombreDelPrograma, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 130, 480, 40));
 
         MtroManuel.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         MtroManuel.setText("  Mtro. Manuel Esquer Sumuano  ");
         MtroManuel.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(MtroManuel, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 120, 620, 40));
+        getContentPane().add(MtroManuel, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 170, 620, 40));
 
         Elaboro.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         Elaboro.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         Elaboro.setText(" Elaboró:"); // NOI18N
         Elaboro.setToolTipText("");
         Elaboro.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(Elaboro, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 120, 480, 40));
+        getContentPane().add(Elaboro, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 170, 480, 40));
 
         Programa.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         Programa.setText("Programa");
@@ -79,7 +87,7 @@ public class ReconocimientoCorporal extends javax.swing.JFrame {
         procedimiento.setText("PROCEDIMIENTO"); // NOI18N
         procedimiento.setToolTipText("");
         procedimiento.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 160, 1100, 30));
+        getContentPane().add(procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 210, 1100, 30));
 
         txtProcedimiento.setEditable(false);
         txtProcedimiento.setColumns(20);
@@ -88,7 +96,7 @@ public class ReconocimientoCorporal extends javax.swing.JFrame {
         txtProcedimiento.setText("PASO 1. Colóquese frente al niño y tenga a la mano la lista de instrucciones.\nPASO 2. Llame al niño por su nombre y dé la instrucción de la lista.\nPASO 3. Si el niño realiza la respuesta correcta de un reforzador.\nPASO 4. Si el niño no responde correctamente apoye físicamente.\nPASO 5. Disminuya el apoyo hasta alcanzar el criterio (reconocer el 80% de las partes del cuerpo).\nPASO 6. Repita 5 veces cada instrucción. Entre una y otra instrucción deje un tiempo de 10 segundos.\nPASO 7. Refuerce cada respuesta correcta.\n");
         Procedimiento.setViewportView(txtProcedimiento);
 
-        getContentPane().add(Procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 190, 1100, 310));
+        getContentPane().add(Procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 240, 1100, 310));
 
         Btn_Instrucciones.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         Btn_Instrucciones.setText("Ver Instrucciones");
@@ -152,6 +160,8 @@ public class ReconocimientoCorporal extends javax.swing.JFrame {
     private javax.swing.JButton Btn_Instrucciones;
     private javax.swing.JLabel Elaboro;
     private javax.swing.JLabel Fondo;
+    private javax.swing.JLabel LabelLogo1;
+    private javax.swing.JLabel LabelLogo2;
     private javax.swing.JLabel MtroManuel;
     private javax.swing.JLabel NombreDelPrograma;
     private javax.swing.JScrollPane Procedimiento;

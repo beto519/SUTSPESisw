@@ -29,6 +29,8 @@ public class MotricidadGruesa extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        LabelLogo1 = new javax.swing.JLabel();
+        LabelLogo2 = new javax.swing.JLabel();
         ReconocimientoCorporal = new javax.swing.JLabel();
         NombreDelPrograma = new javax.swing.JLabel();
         MtroManuel = new javax.swing.JLabel();
@@ -37,12 +39,16 @@ public class MotricidadGruesa extends javax.swing.JFrame {
         procedimiento = new javax.swing.JLabel();
         Procedimiento = new javax.swing.JScrollPane();
         txtProcedimiento = new javax.swing.JTextArea();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
         Fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        LabelLogo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/CENTRO DE APOYO EDUCATIVO INFANTIL EN PNG.png"))); // NOI18N
+        getContentPane().add(LabelLogo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        LabelLogo2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/sutspes  en png.png"))); // NOI18N
+        getContentPane().add(LabelLogo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 0, -1, -1));
 
         ReconocimientoCorporal.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         ReconocimientoCorporal.setText("  Ejercicios de motricidad gruesa");
@@ -86,19 +92,8 @@ public class MotricidadGruesa extends javax.swing.JFrame {
 
         getContentPane().add(Procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 170, 1020, 540));
 
-        jLabel2.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 204, 0));
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("Cel: 44 22 64 55 32 ");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 850, 690, -1));
-
-        jLabel3.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 204, 0));
-        jLabel3.setText("Puente de Alvarado 305, Col. Carretas. Querétaro, Querétaro. ");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 820, -1, -1));
-
         Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoAmarillo.jpg"))); // NOI18N
-        getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, -200, 1280, 1080));
+        getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -180, 1280, 1080));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -141,13 +136,13 @@ public class MotricidadGruesa extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Elaboro;
     private javax.swing.JLabel Fondo;
+    private javax.swing.JLabel LabelLogo1;
+    private javax.swing.JLabel LabelLogo2;
     private javax.swing.JLabel MtroManuel;
     private javax.swing.JLabel NombreDelPrograma;
     private javax.swing.JScrollPane Procedimiento;
     private javax.swing.JLabel Programa;
     private javax.swing.JLabel ReconocimientoCorporal;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel procedimiento;
     private javax.swing.JTextArea txtProcedimiento;
     // End of variables declaration//GEN-END:variables
