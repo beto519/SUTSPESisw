@@ -9,6 +9,8 @@ package mx.itson.vistas.instrucciones;
  * @author lopez
  */
 public class ListaPreguntas extends javax.swing.JFrame {
+private double estadoPorcentaje;
+private double pregunta1;
 
     /**
      * Creates new form ListaPreguntas
@@ -30,80 +32,1123 @@ public class ListaPreguntas extends javax.swing.JFrame {
 
         LabelLogo2 = new javax.swing.JLabel();
         LabelLogo1 = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
-        jButton1 = new javax.swing.JButton();
+        txtPregunta27 = new javax.swing.JTextField();
+        txtPregunta26 = new javax.swing.JTextField();
+        txtPregunta25 = new javax.swing.JTextField();
+        txtPregunta24 = new javax.swing.JTextField();
+        txtPregunta23 = new javax.swing.JTextField();
+        txtPregunta22 = new javax.swing.JTextField();
+        txtPregunta21 = new javax.swing.JTextField();
+        txtPregunta20 = new javax.swing.JTextField();
+        txtPregunta19 = new javax.swing.JTextField();
+        txtPregunta18 = new javax.swing.JTextField();
+        txtPregunta17 = new javax.swing.JTextField();
+        txtPregunta16 = new javax.swing.JTextField();
+        txtPregunta15 = new javax.swing.JTextField();
+        txtPregunta14 = new javax.swing.JTextField();
+        txtPregunta13 = new javax.swing.JTextField();
+        txtPregunta12 = new javax.swing.JTextField();
+        txtPregunta11 = new javax.swing.JTextField();
+        txtPregunta10 = new javax.swing.JTextField();
+        txtPregunta9 = new javax.swing.JTextField();
+        txtPregunta8 = new javax.swing.JTextField();
+        txtPregunta7 = new javax.swing.JTextField();
+        txtPregunta6 = new javax.swing.JTextField();
+        txtPregunta5 = new javax.swing.JTextField();
+        txtPregunta4 = new javax.swing.JTextField();
+        txtPregunta3 = new javax.swing.JTextField();
+        txtPregunta2 = new javax.swing.JTextField();
+        txtPregunta1 = new javax.swing.JTextField();
+        btnRequiereApoyo = new javax.swing.JButton();
+        btnCasiLogra = new javax.swing.JButton();
+        btnCumplioObjetivo = new javax.swing.JButton();
+        btnRequiereApoyo1 = new javax.swing.JButton();
+        btnCasiLogra1 = new javax.swing.JButton();
+        btnCumplioObjetivo1 = new javax.swing.JButton();
+        btnCumplioObjetivo2 = new javax.swing.JButton();
+        btnCasiLogra2 = new javax.swing.JButton();
+        btnRequiereApoyo2 = new javax.swing.JButton();
+        btnRequiereApoyo3 = new javax.swing.JButton();
+        btnCasiLogra3 = new javax.swing.JButton();
+        btnCumplioObjetivo3 = new javax.swing.JButton();
+        btnRequiereApoyo4 = new javax.swing.JButton();
+        btnCasiLogra4 = new javax.swing.JButton();
+        btnCumplioObjetivo4 = new javax.swing.JButton();
+        btnCumplioObjetivo5 = new javax.swing.JButton();
+        btnRequiereApoyo5 = new javax.swing.JButton();
+        btnCasiLogra5 = new javax.swing.JButton();
+        btnRequiereApoyo6 = new javax.swing.JButton();
+        btnCasiLogra6 = new javax.swing.JButton();
+        btnCumplioObjetivo6 = new javax.swing.JButton();
+        btnCasiLogra7 = new javax.swing.JButton();
+        btnRequiereApoyo7 = new javax.swing.JButton();
+        btnCumplioObjetivo7 = new javax.swing.JButton();
+        btnCasiLogra8 = new javax.swing.JButton();
+        btnRequiereApoyo8 = new javax.swing.JButton();
+        btnCumplioObjetivo8 = new javax.swing.JButton();
+        btnRequiereApoyo9 = new javax.swing.JButton();
+        btnCasiLogra9 = new javax.swing.JButton();
+        btnCumplioObjetivo9 = new javax.swing.JButton();
+        btnRequiereApoyo10 = new javax.swing.JButton();
+        btnCasiLogra10 = new javax.swing.JButton();
+        btnCumplioObjetivo10 = new javax.swing.JButton();
+        btnCumplioObjetivo11 = new javax.swing.JButton();
+        btnCasiLogra11 = new javax.swing.JButton();
+        btnRequiereApoyo11 = new javax.swing.JButton();
+        btnCumplioObjetivo12 = new javax.swing.JButton();
+        btnCasiLogra12 = new javax.swing.JButton();
+        btnRequiereApoyo12 = new javax.swing.JButton();
+        btnRequiereApoyo13 = new javax.swing.JButton();
+        btnCasiLogra13 = new javax.swing.JButton();
+        btnCumplioObjetivo13 = new javax.swing.JButton();
+        btnCumplioObjetivo14 = new javax.swing.JButton();
+        btnCasiLogra14 = new javax.swing.JButton();
+        btnRequiereApoyo14 = new javax.swing.JButton();
+        btnRequiereApoyo15 = new javax.swing.JButton();
+        btnCumplioObjetivo15 = new javax.swing.JButton();
+        btnCasiLogra15 = new javax.swing.JButton();
+        btnRequiereApoyo16 = new javax.swing.JButton();
+        btnCumplioObjetivo16 = new javax.swing.JButton();
+        btnCasiLogra16 = new javax.swing.JButton();
+        btnRequiereApoyo17 = new javax.swing.JButton();
+        btnCasiLogra17 = new javax.swing.JButton();
+        btnCumplioObjetivo17 = new javax.swing.JButton();
+        btnCumplioObjetivo18 = new javax.swing.JButton();
+        btnCasiLogra18 = new javax.swing.JButton();
+        btnRequiereApoyo18 = new javax.swing.JButton();
+        btnCasiLogra19 = new javax.swing.JButton();
+        btnCumplioObjetivo19 = new javax.swing.JButton();
+        btnRequiereApoyo19 = new javax.swing.JButton();
+        btnRequiereApoyo20 = new javax.swing.JButton();
+        btnCasiLogra20 = new javax.swing.JButton();
+        btnCumplioObjetivo20 = new javax.swing.JButton();
+        btnRequiereApoyo21 = new javax.swing.JButton();
+        btnCasiLogra21 = new javax.swing.JButton();
+        btnCumplioObjetivo21 = new javax.swing.JButton();
+        btnCasiLogra22 = new javax.swing.JButton();
+        btnRequiereApoyo22 = new javax.swing.JButton();
+        btnCumplioObjetivo22 = new javax.swing.JButton();
+        btnRequiereApoyo23 = new javax.swing.JButton();
+        btnCumplioObjetivo23 = new javax.swing.JButton();
+        btnCasiLogra23 = new javax.swing.JButton();
+        btnRequiereApoyo24 = new javax.swing.JButton();
+        btnCumplioObjetivo24 = new javax.swing.JButton();
+        btnCasiLogra24 = new javax.swing.JButton();
+        btnRequiereApoyo25 = new javax.swing.JButton();
+        btnCasiLogra25 = new javax.swing.JButton();
+        btnCumplioObjetivo25 = new javax.swing.JButton();
+        btnCasiLogra26 = new javax.swing.JButton();
+        btnCumplioObjetivo26 = new javax.swing.JButton();
+        btnRequiereApoyo26 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         LabelLogo2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/sutspes  en png.png"))); // NOI18N
-        getContentPane().add(LabelLogo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 40, -1, -1));
+        getContentPane().add(LabelLogo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 0, -1, -1));
 
         LabelLogo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/CENTRO DE APOYO EDUCATIVO INFANTIL EN PNG.png"))); // NOI18N
         getContentPane().add(LabelLogo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        jTable1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jTable1.setFont(new java.awt.Font("Dialog", 0, 20)); // NOI18N
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {"1.- ¿Cómo has estado?", null},
-                {"2.- ¿Cómo está tu familia?", null},
-                {"3.- ¿Cómo está tu mamá?", null},
-                {"4.- ¿Cómo está tu papá?", null},
-                {"5.- ¿Cómo están tus hermanos?", null},
-                {"6.- ¿A qué hora te levantaste hoy?", null},
-                {"7.- ¿Desayunaste?", null},
-                {"8.- ¿Qué desayunaste?", null},
-                {"9.- ¿Qué hiciste ayer en la tarde?", null},
-                {"10.- ¿Cómo te llamas?", null},
-                {"11.-¿Cómo se llama tu mamá?", null},
-                {"12.- ¿Cómo se llama tu papá?", null},
-                {"13.- ¿Dónde vives?", null},
-                {"14.- ¿Cuál es tu dirección?", null},
-                {"15.- ¿Tienes hermanos?", null},
-                {"16.- ¿Son más grandes o más chicos?", null},
-                {"17.- ¿Cómo se llaman?", null},
-                {"18.- ¿Te gustan los animales?", null},
-                {"19.- ¿Tienes televisión en tu casa?", null},
-                {"20.- ¿Qué te gusta ver en la tv?", null},
-                {"21.- ¿Tienes juguetes?", null},
-                {"22.-  ¿Con cuáles juegas más?", null},
-                {"23.- ¿Tienes amigos?", null},
-                {"24.- ¿Cuántos?", null},
-                {"25.- ¿Cómo se llaman? ", null},
-                {"26.- ¿Juegas con tus amigos?", null},
-                {"27.- ¿A qué juegas?", null}
-            },
-            new String [] {
-                "Pregunta", "Respuesta"
-            }
-        ) {
-            Class[] types = new Class [] {
-                java.lang.String.class, java.lang.String.class
-            };
-            boolean[] canEdit = new boolean [] {
-                false, true
-            };
-
-            public Class getColumnClass(int columnIndex) {
-                return types [columnIndex];
-            }
-
-            public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit [columnIndex];
+        txtPregunta27.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
+        txtPregunta27.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        txtPregunta27.setText("27.- ¿A que juegas?");
+        txtPregunta27.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPregunta27ActionPerformed(evt);
             }
         });
-        jScrollPane1.setViewportView(jTable1);
-        if (jTable1.getColumnModel().getColumnCount() > 0) {
-            jTable1.getColumnModel().getColumn(0).setResizable(false);
-        }
+        getContentPane().add(txtPregunta27, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 530, 310, 40));
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 90, 960, 570));
+        txtPregunta26.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
+        txtPregunta26.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        txtPregunta26.setText("26.- ¿Juegas con tus amigos?");
+        txtPregunta26.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPregunta26ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtPregunta26, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 480, 310, 40));
 
-        jButton1.setText("Guardar");
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 10, -1, -1));
+        txtPregunta25.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
+        txtPregunta25.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        txtPregunta25.setText("25.- ¿Como se llaman?");
+        txtPregunta25.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPregunta25ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtPregunta25, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 430, 310, 40));
+
+        txtPregunta24.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
+        txtPregunta24.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        txtPregunta24.setText("24.- ¿Cuantos?");
+        txtPregunta24.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPregunta24ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtPregunta24, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 380, 310, 40));
+
+        txtPregunta23.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
+        txtPregunta23.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        txtPregunta23.setText("23.- ¿Tienes amigos?");
+        txtPregunta23.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPregunta23ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtPregunta23, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 330, 310, 40));
+
+        txtPregunta22.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
+        txtPregunta22.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        txtPregunta22.setText("22.- ¿Con cuáles juegas más?");
+        txtPregunta22.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPregunta22ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtPregunta22, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 280, 310, 40));
+
+        txtPregunta21.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
+        txtPregunta21.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        txtPregunta21.setText("21.- ¿Tienes juguetes?");
+        txtPregunta21.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPregunta21ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtPregunta21, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 230, 310, 40));
+
+        txtPregunta20.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
+        txtPregunta20.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        txtPregunta20.setText("20.- ¿Qué te gusta ver en la tv?");
+        txtPregunta20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPregunta20ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtPregunta20, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 180, 310, 40));
+
+        txtPregunta19.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
+        txtPregunta19.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        txtPregunta19.setText("19.- ¿Tienes televisión en tu casa?");
+        txtPregunta19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPregunta19ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtPregunta19, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 130, 310, 40));
+
+        txtPregunta18.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
+        txtPregunta18.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        txtPregunta18.setText("18.- ¿Te gustan los animales?");
+        txtPregunta18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPregunta18ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtPregunta18, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 530, 310, 40));
+
+        txtPregunta17.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
+        txtPregunta17.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        txtPregunta17.setText("17.- ¿Cómo se llaman?");
+        txtPregunta17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPregunta17ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtPregunta17, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 480, 310, 40));
+
+        txtPregunta16.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
+        txtPregunta16.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        txtPregunta16.setText("16.- ¿Son más grades o más pequeños?");
+        txtPregunta16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPregunta16ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtPregunta16, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 430, -1, 40));
+
+        txtPregunta15.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
+        txtPregunta15.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        txtPregunta15.setText("15.- ¿Tienes hermanos?");
+        txtPregunta15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPregunta15ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtPregunta15, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 380, 310, 40));
+
+        txtPregunta14.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
+        txtPregunta14.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        txtPregunta14.setText("14.- ¿Cuál es tu dirección?");
+        txtPregunta14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPregunta14ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtPregunta14, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 330, 310, 40));
+
+        txtPregunta13.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
+        txtPregunta13.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        txtPregunta13.setText("13.- ¿Donde vives?");
+        txtPregunta13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPregunta13ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtPregunta13, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 280, 310, 40));
+
+        txtPregunta12.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
+        txtPregunta12.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        txtPregunta12.setText("12.- ¿Cómo se llama tu papá?");
+        txtPregunta12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPregunta12ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtPregunta12, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 230, 310, 40));
+
+        txtPregunta11.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
+        txtPregunta11.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        txtPregunta11.setText("11.- ¿Cómo se llama tu mamá?");
+        txtPregunta11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPregunta11ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtPregunta11, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 180, 310, 40));
+
+        txtPregunta10.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
+        txtPregunta10.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        txtPregunta10.setText("10.- ¿Cómo te llamas?");
+        txtPregunta10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPregunta10ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtPregunta10, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 130, 310, 40));
+
+        txtPregunta9.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
+        txtPregunta9.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        txtPregunta9.setText("9.- ¿Qué hiciste ayer en la tarde?");
+        txtPregunta9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPregunta9ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtPregunta9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 530, 310, 40));
+
+        txtPregunta8.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
+        txtPregunta8.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        txtPregunta8.setText("8.- ¿Qué desayunaste?");
+        txtPregunta8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPregunta8ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtPregunta8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 480, 310, 40));
+
+        txtPregunta7.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
+        txtPregunta7.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        txtPregunta7.setText("7.- ¿Desayunaste?");
+        txtPregunta7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPregunta7ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtPregunta7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 430, 310, 40));
+
+        txtPregunta6.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
+        txtPregunta6.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        txtPregunta6.setText("6.- ¿A qué hora te levantaste hoy?");
+        txtPregunta6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPregunta6ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtPregunta6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 380, 310, 40));
+
+        txtPregunta5.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
+        txtPregunta5.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        txtPregunta5.setText("5.- ¿Cómo están tus hermanos?");
+        txtPregunta5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPregunta5ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtPregunta5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 330, 310, 40));
+
+        txtPregunta4.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
+        txtPregunta4.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        txtPregunta4.setText("4.- ¿Cómo está tu papá?");
+        txtPregunta4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPregunta4ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtPregunta4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 280, 310, 40));
+
+        txtPregunta3.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
+        txtPregunta3.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        txtPregunta3.setText("3.- ¿Cómo está tu mamá?");
+        txtPregunta3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPregunta3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtPregunta3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, 310, 40));
+
+        txtPregunta2.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
+        txtPregunta2.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        txtPregunta2.setText("2.- ¿Cómo está tu familia?");
+        txtPregunta2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPregunta2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtPregunta2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 310, 40));
+
+        txtPregunta1.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
+        txtPregunta1.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        txtPregunta1.setText("1.- ¿Cómo has estado?");
+        txtPregunta1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPregunta1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtPregunta1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, 310, 40));
+
+        btnRequiereApoyo.setBackground(new java.awt.Color(255, 51, 51));
+        btnRequiereApoyo.setBorderPainted(false);
+        btnRequiereApoyo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRequiereApoyoActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnRequiereApoyo, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 140, 20, 20));
+
+        btnCasiLogra.setBackground(new java.awt.Color(255, 255, 102));
+        btnCasiLogra.setBorderPainted(false);
+        btnCasiLogra.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCasiLograActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCasiLogra, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 140, 20, 20));
+
+        btnCumplioObjetivo.setBackground(new java.awt.Color(51, 204, 0));
+        btnCumplioObjetivo.setBorderPainted(false);
+        btnCumplioObjetivo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCumplioObjetivoActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCumplioObjetivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 140, 20, 20));
+
+        btnRequiereApoyo1.setBackground(new java.awt.Color(255, 51, 51));
+        btnRequiereApoyo1.setBorderPainted(false);
+        btnRequiereApoyo1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRequiereApoyo1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnRequiereApoyo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 190, 20, 20));
+
+        btnCasiLogra1.setBackground(new java.awt.Color(255, 255, 102));
+        btnCasiLogra1.setBorderPainted(false);
+        btnCasiLogra1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCasiLogra1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCasiLogra1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 190, 20, 20));
+
+        btnCumplioObjetivo1.setBackground(new java.awt.Color(51, 204, 0));
+        btnCumplioObjetivo1.setBorderPainted(false);
+        btnCumplioObjetivo1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCumplioObjetivo1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCumplioObjetivo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 190, 20, 20));
+
+        btnCumplioObjetivo2.setBackground(new java.awt.Color(51, 204, 0));
+        btnCumplioObjetivo2.setBorderPainted(false);
+        btnCumplioObjetivo2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCumplioObjetivo2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCumplioObjetivo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 240, 20, 20));
+
+        btnCasiLogra2.setBackground(new java.awt.Color(255, 255, 102));
+        btnCasiLogra2.setBorderPainted(false);
+        btnCasiLogra2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCasiLogra2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCasiLogra2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 240, 20, 20));
+
+        btnRequiereApoyo2.setBackground(new java.awt.Color(255, 51, 51));
+        btnRequiereApoyo2.setBorderPainted(false);
+        btnRequiereApoyo2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRequiereApoyo2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnRequiereApoyo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 240, 20, 20));
+
+        btnRequiereApoyo3.setBackground(new java.awt.Color(255, 51, 51));
+        btnRequiereApoyo3.setBorderPainted(false);
+        btnRequiereApoyo3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRequiereApoyo3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnRequiereApoyo3, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 290, 20, 20));
+
+        btnCasiLogra3.setBackground(new java.awt.Color(255, 255, 102));
+        btnCasiLogra3.setBorderPainted(false);
+        btnCasiLogra3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCasiLogra3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCasiLogra3, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 290, 20, 20));
+
+        btnCumplioObjetivo3.setBackground(new java.awt.Color(51, 204, 0));
+        btnCumplioObjetivo3.setBorderPainted(false);
+        btnCumplioObjetivo3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCumplioObjetivo3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCumplioObjetivo3, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 290, 20, 20));
+
+        btnRequiereApoyo4.setBackground(new java.awt.Color(255, 51, 51));
+        btnRequiereApoyo4.setBorderPainted(false);
+        btnRequiereApoyo4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRequiereApoyo4ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnRequiereApoyo4, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 340, 20, 20));
+
+        btnCasiLogra4.setBackground(new java.awt.Color(255, 255, 102));
+        btnCasiLogra4.setBorderPainted(false);
+        btnCasiLogra4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCasiLogra4ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCasiLogra4, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 340, 20, 20));
+
+        btnCumplioObjetivo4.setBackground(new java.awt.Color(51, 204, 0));
+        btnCumplioObjetivo4.setBorderPainted(false);
+        btnCumplioObjetivo4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCumplioObjetivo4ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCumplioObjetivo4, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 340, 20, 20));
+
+        btnCumplioObjetivo5.setBackground(new java.awt.Color(51, 204, 0));
+        btnCumplioObjetivo5.setBorderPainted(false);
+        btnCumplioObjetivo5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCumplioObjetivo5ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCumplioObjetivo5, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 390, 20, 20));
+
+        btnRequiereApoyo5.setBackground(new java.awt.Color(255, 51, 51));
+        btnRequiereApoyo5.setBorderPainted(false);
+        btnRequiereApoyo5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRequiereApoyo5ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnRequiereApoyo5, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 390, 20, 20));
+
+        btnCasiLogra5.setBackground(new java.awt.Color(255, 255, 102));
+        btnCasiLogra5.setBorderPainted(false);
+        btnCasiLogra5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCasiLogra5ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCasiLogra5, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 390, 20, 20));
+
+        btnRequiereApoyo6.setBackground(new java.awt.Color(255, 51, 51));
+        btnRequiereApoyo6.setBorderPainted(false);
+        btnRequiereApoyo6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRequiereApoyo6ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnRequiereApoyo6, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 440, 20, 20));
+
+        btnCasiLogra6.setBackground(new java.awt.Color(255, 255, 102));
+        btnCasiLogra6.setBorderPainted(false);
+        btnCasiLogra6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCasiLogra6ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCasiLogra6, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 440, 20, 20));
+
+        btnCumplioObjetivo6.setBackground(new java.awt.Color(51, 204, 0));
+        btnCumplioObjetivo6.setBorderPainted(false);
+        btnCumplioObjetivo6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCumplioObjetivo6ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCumplioObjetivo6, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 440, 20, 20));
+
+        btnCasiLogra7.setBackground(new java.awt.Color(255, 255, 102));
+        btnCasiLogra7.setBorderPainted(false);
+        btnCasiLogra7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCasiLogra7ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCasiLogra7, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 490, 20, 20));
+
+        btnRequiereApoyo7.setBackground(new java.awt.Color(255, 51, 51));
+        btnRequiereApoyo7.setBorderPainted(false);
+        btnRequiereApoyo7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRequiereApoyo7ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnRequiereApoyo7, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 490, 20, 20));
+
+        btnCumplioObjetivo7.setBackground(new java.awt.Color(51, 204, 0));
+        btnCumplioObjetivo7.setBorderPainted(false);
+        btnCumplioObjetivo7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCumplioObjetivo7ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCumplioObjetivo7, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 490, 20, 20));
+
+        btnCasiLogra8.setBackground(new java.awt.Color(255, 255, 102));
+        btnCasiLogra8.setBorderPainted(false);
+        btnCasiLogra8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCasiLogra8ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCasiLogra8, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 540, 20, 20));
+
+        btnRequiereApoyo8.setBackground(new java.awt.Color(255, 51, 51));
+        btnRequiereApoyo8.setBorderPainted(false);
+        btnRequiereApoyo8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRequiereApoyo8ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnRequiereApoyo8, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 540, 20, 20));
+
+        btnCumplioObjetivo8.setBackground(new java.awt.Color(51, 204, 0));
+        btnCumplioObjetivo8.setBorderPainted(false);
+        btnCumplioObjetivo8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCumplioObjetivo8ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCumplioObjetivo8, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 540, 20, 20));
+
+        btnRequiereApoyo9.setBackground(new java.awt.Color(255, 51, 51));
+        btnRequiereApoyo9.setBorderPainted(false);
+        btnRequiereApoyo9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRequiereApoyo9ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnRequiereApoyo9, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 140, 20, 20));
+
+        btnCasiLogra9.setBackground(new java.awt.Color(255, 255, 102));
+        btnCasiLogra9.setBorderPainted(false);
+        btnCasiLogra9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCasiLogra9ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCasiLogra9, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 140, 20, 20));
+
+        btnCumplioObjetivo9.setBackground(new java.awt.Color(51, 204, 0));
+        btnCumplioObjetivo9.setBorderPainted(false);
+        btnCumplioObjetivo9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCumplioObjetivo9ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCumplioObjetivo9, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 140, 20, 20));
+
+        btnRequiereApoyo10.setBackground(new java.awt.Color(255, 51, 51));
+        btnRequiereApoyo10.setBorderPainted(false);
+        btnRequiereApoyo10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRequiereApoyo10ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnRequiereApoyo10, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 190, 20, 20));
+
+        btnCasiLogra10.setBackground(new java.awt.Color(255, 255, 102));
+        btnCasiLogra10.setBorderPainted(false);
+        btnCasiLogra10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCasiLogra10ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCasiLogra10, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 190, 20, 20));
+
+        btnCumplioObjetivo10.setBackground(new java.awt.Color(51, 204, 0));
+        btnCumplioObjetivo10.setBorderPainted(false);
+        btnCumplioObjetivo10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCumplioObjetivo10ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCumplioObjetivo10, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 190, 20, 20));
+
+        btnCumplioObjetivo11.setBackground(new java.awt.Color(51, 204, 0));
+        btnCumplioObjetivo11.setBorderPainted(false);
+        btnCumplioObjetivo11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCumplioObjetivo11ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCumplioObjetivo11, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 240, 20, 20));
+
+        btnCasiLogra11.setBackground(new java.awt.Color(255, 255, 102));
+        btnCasiLogra11.setBorderPainted(false);
+        btnCasiLogra11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCasiLogra11ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCasiLogra11, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 240, 20, 20));
+
+        btnRequiereApoyo11.setBackground(new java.awt.Color(255, 51, 51));
+        btnRequiereApoyo11.setBorderPainted(false);
+        btnRequiereApoyo11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRequiereApoyo11ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnRequiereApoyo11, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 240, 20, 20));
+
+        btnCumplioObjetivo12.setBackground(new java.awt.Color(51, 204, 0));
+        btnCumplioObjetivo12.setBorderPainted(false);
+        btnCumplioObjetivo12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCumplioObjetivo12ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCumplioObjetivo12, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 290, 20, 20));
+
+        btnCasiLogra12.setBackground(new java.awt.Color(255, 255, 102));
+        btnCasiLogra12.setBorderPainted(false);
+        btnCasiLogra12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCasiLogra12ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCasiLogra12, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 290, 20, 20));
+
+        btnRequiereApoyo12.setBackground(new java.awt.Color(255, 51, 51));
+        btnRequiereApoyo12.setBorderPainted(false);
+        btnRequiereApoyo12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRequiereApoyo12ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnRequiereApoyo12, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 290, 20, 20));
+
+        btnRequiereApoyo13.setBackground(new java.awt.Color(255, 51, 51));
+        btnRequiereApoyo13.setBorderPainted(false);
+        btnRequiereApoyo13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRequiereApoyo13ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnRequiereApoyo13, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 340, 20, 20));
+
+        btnCasiLogra13.setBackground(new java.awt.Color(255, 255, 102));
+        btnCasiLogra13.setBorderPainted(false);
+        btnCasiLogra13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCasiLogra13ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCasiLogra13, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 340, 20, 20));
+
+        btnCumplioObjetivo13.setBackground(new java.awt.Color(51, 204, 0));
+        btnCumplioObjetivo13.setBorderPainted(false);
+        btnCumplioObjetivo13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCumplioObjetivo13ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCumplioObjetivo13, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 340, 20, 20));
+
+        btnCumplioObjetivo14.setBackground(new java.awt.Color(51, 204, 0));
+        btnCumplioObjetivo14.setBorderPainted(false);
+        btnCumplioObjetivo14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCumplioObjetivo14ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCumplioObjetivo14, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 390, 20, 20));
+
+        btnCasiLogra14.setBackground(new java.awt.Color(255, 255, 102));
+        btnCasiLogra14.setBorderPainted(false);
+        btnCasiLogra14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCasiLogra14ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCasiLogra14, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 390, 20, 20));
+
+        btnRequiereApoyo14.setBackground(new java.awt.Color(255, 51, 51));
+        btnRequiereApoyo14.setBorderPainted(false);
+        btnRequiereApoyo14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRequiereApoyo14ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnRequiereApoyo14, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 390, 20, 20));
+
+        btnRequiereApoyo15.setBackground(new java.awt.Color(255, 51, 51));
+        btnRequiereApoyo15.setBorderPainted(false);
+        btnRequiereApoyo15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRequiereApoyo15ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnRequiereApoyo15, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 440, 20, 20));
+
+        btnCumplioObjetivo15.setBackground(new java.awt.Color(51, 204, 0));
+        btnCumplioObjetivo15.setBorderPainted(false);
+        btnCumplioObjetivo15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCumplioObjetivo15ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCumplioObjetivo15, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 440, 20, 20));
+
+        btnCasiLogra15.setBackground(new java.awt.Color(255, 255, 102));
+        btnCasiLogra15.setBorderPainted(false);
+        btnCasiLogra15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCasiLogra15ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCasiLogra15, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 440, 20, 20));
+
+        btnRequiereApoyo16.setBackground(new java.awt.Color(255, 51, 51));
+        btnRequiereApoyo16.setBorderPainted(false);
+        btnRequiereApoyo16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRequiereApoyo16ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnRequiereApoyo16, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 490, 20, 20));
+
+        btnCumplioObjetivo16.setBackground(new java.awt.Color(51, 204, 0));
+        btnCumplioObjetivo16.setBorderPainted(false);
+        btnCumplioObjetivo16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCumplioObjetivo16ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCumplioObjetivo16, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 490, 20, 20));
+
+        btnCasiLogra16.setBackground(new java.awt.Color(255, 255, 102));
+        btnCasiLogra16.setBorderPainted(false);
+        btnCasiLogra16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCasiLogra16ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCasiLogra16, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 490, 20, 20));
+
+        btnRequiereApoyo17.setBackground(new java.awt.Color(255, 51, 51));
+        btnRequiereApoyo17.setBorderPainted(false);
+        btnRequiereApoyo17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRequiereApoyo17ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnRequiereApoyo17, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 540, 20, 20));
+
+        btnCasiLogra17.setBackground(new java.awt.Color(255, 255, 102));
+        btnCasiLogra17.setBorderPainted(false);
+        btnCasiLogra17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCasiLogra17ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCasiLogra17, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 540, 20, 20));
+
+        btnCumplioObjetivo17.setBackground(new java.awt.Color(51, 204, 0));
+        btnCumplioObjetivo17.setBorderPainted(false);
+        btnCumplioObjetivo17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCumplioObjetivo17ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCumplioObjetivo17, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 540, 20, 20));
+
+        btnCumplioObjetivo18.setBackground(new java.awt.Color(51, 204, 0));
+        btnCumplioObjetivo18.setBorderPainted(false);
+        btnCumplioObjetivo18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCumplioObjetivo18ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCumplioObjetivo18, new org.netbeans.lib.awtextra.AbsoluteConstraints(1230, 190, 20, 20));
+
+        btnCasiLogra18.setBackground(new java.awt.Color(255, 255, 102));
+        btnCasiLogra18.setBorderPainted(false);
+        btnCasiLogra18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCasiLogra18ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCasiLogra18, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 190, 20, 20));
+
+        btnRequiereApoyo18.setBackground(new java.awt.Color(255, 51, 51));
+        btnRequiereApoyo18.setBorderPainted(false);
+        btnRequiereApoyo18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRequiereApoyo18ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnRequiereApoyo18, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 190, 20, 20));
+
+        btnCasiLogra19.setBackground(new java.awt.Color(255, 255, 102));
+        btnCasiLogra19.setBorderPainted(false);
+        btnCasiLogra19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCasiLogra19ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCasiLogra19, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 140, 20, 20));
+
+        btnCumplioObjetivo19.setBackground(new java.awt.Color(51, 204, 0));
+        btnCumplioObjetivo19.setBorderPainted(false);
+        btnCumplioObjetivo19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCumplioObjetivo19ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCumplioObjetivo19, new org.netbeans.lib.awtextra.AbsoluteConstraints(1230, 140, 20, 20));
+
+        btnRequiereApoyo19.setBackground(new java.awt.Color(255, 51, 51));
+        btnRequiereApoyo19.setBorderPainted(false);
+        btnRequiereApoyo19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRequiereApoyo19ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnRequiereApoyo19, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 140, 20, 20));
+
+        btnRequiereApoyo20.setBackground(new java.awt.Color(255, 51, 51));
+        btnRequiereApoyo20.setBorderPainted(false);
+        btnRequiereApoyo20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRequiereApoyo20ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnRequiereApoyo20, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 240, 20, 20));
+
+        btnCasiLogra20.setBackground(new java.awt.Color(255, 255, 102));
+        btnCasiLogra20.setBorderPainted(false);
+        btnCasiLogra20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCasiLogra20ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCasiLogra20, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 240, 20, 20));
+
+        btnCumplioObjetivo20.setBackground(new java.awt.Color(51, 204, 0));
+        btnCumplioObjetivo20.setBorderPainted(false);
+        btnCumplioObjetivo20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCumplioObjetivo20ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCumplioObjetivo20, new org.netbeans.lib.awtextra.AbsoluteConstraints(1230, 240, 20, 20));
+
+        btnRequiereApoyo21.setBackground(new java.awt.Color(255, 51, 51));
+        btnRequiereApoyo21.setBorderPainted(false);
+        btnRequiereApoyo21.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRequiereApoyo21ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnRequiereApoyo21, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 290, 20, 20));
+
+        btnCasiLogra21.setBackground(new java.awt.Color(255, 255, 102));
+        btnCasiLogra21.setBorderPainted(false);
+        btnCasiLogra21.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCasiLogra21ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCasiLogra21, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 290, 20, 20));
+
+        btnCumplioObjetivo21.setBackground(new java.awt.Color(51, 204, 0));
+        btnCumplioObjetivo21.setBorderPainted(false);
+        btnCumplioObjetivo21.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCumplioObjetivo21ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCumplioObjetivo21, new org.netbeans.lib.awtextra.AbsoluteConstraints(1230, 290, 20, 20));
+
+        btnCasiLogra22.setBackground(new java.awt.Color(255, 255, 102));
+        btnCasiLogra22.setBorderPainted(false);
+        btnCasiLogra22.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCasiLogra22ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCasiLogra22, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 340, 20, 20));
+
+        btnRequiereApoyo22.setBackground(new java.awt.Color(255, 51, 51));
+        btnRequiereApoyo22.setBorderPainted(false);
+        btnRequiereApoyo22.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRequiereApoyo22ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnRequiereApoyo22, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 340, 20, 20));
+
+        btnCumplioObjetivo22.setBackground(new java.awt.Color(51, 204, 0));
+        btnCumplioObjetivo22.setBorderPainted(false);
+        btnCumplioObjetivo22.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCumplioObjetivo22ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCumplioObjetivo22, new org.netbeans.lib.awtextra.AbsoluteConstraints(1230, 340, 20, 20));
+
+        btnRequiereApoyo23.setBackground(new java.awt.Color(255, 51, 51));
+        btnRequiereApoyo23.setBorderPainted(false);
+        btnRequiereApoyo23.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRequiereApoyo23ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnRequiereApoyo23, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 390, 20, 20));
+
+        btnCumplioObjetivo23.setBackground(new java.awt.Color(51, 204, 0));
+        btnCumplioObjetivo23.setBorderPainted(false);
+        btnCumplioObjetivo23.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCumplioObjetivo23ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCumplioObjetivo23, new org.netbeans.lib.awtextra.AbsoluteConstraints(1230, 390, 20, 20));
+
+        btnCasiLogra23.setBackground(new java.awt.Color(255, 255, 102));
+        btnCasiLogra23.setBorderPainted(false);
+        btnCasiLogra23.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCasiLogra23ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCasiLogra23, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 390, 20, 20));
+
+        btnRequiereApoyo24.setBackground(new java.awt.Color(255, 51, 51));
+        btnRequiereApoyo24.setBorderPainted(false);
+        btnRequiereApoyo24.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRequiereApoyo24ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnRequiereApoyo24, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 440, 20, 20));
+
+        btnCumplioObjetivo24.setBackground(new java.awt.Color(51, 204, 0));
+        btnCumplioObjetivo24.setBorderPainted(false);
+        btnCumplioObjetivo24.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCumplioObjetivo24ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCumplioObjetivo24, new org.netbeans.lib.awtextra.AbsoluteConstraints(1230, 440, 20, 20));
+
+        btnCasiLogra24.setBackground(new java.awt.Color(255, 255, 102));
+        btnCasiLogra24.setBorderPainted(false);
+        btnCasiLogra24.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCasiLogra24ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCasiLogra24, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 440, 20, 20));
+
+        btnRequiereApoyo25.setBackground(new java.awt.Color(255, 51, 51));
+        btnRequiereApoyo25.setBorderPainted(false);
+        btnRequiereApoyo25.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRequiereApoyo25ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnRequiereApoyo25, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 490, 20, 20));
+
+        btnCasiLogra25.setBackground(new java.awt.Color(255, 255, 102));
+        btnCasiLogra25.setBorderPainted(false);
+        btnCasiLogra25.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCasiLogra25ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCasiLogra25, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 490, 20, 20));
+
+        btnCumplioObjetivo25.setBackground(new java.awt.Color(51, 204, 0));
+        btnCumplioObjetivo25.setBorderPainted(false);
+        btnCumplioObjetivo25.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCumplioObjetivo25ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCumplioObjetivo25, new org.netbeans.lib.awtextra.AbsoluteConstraints(1230, 490, 20, 20));
+
+        btnCasiLogra26.setBackground(new java.awt.Color(255, 255, 102));
+        btnCasiLogra26.setBorderPainted(false);
+        btnCasiLogra26.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCasiLogra26ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCasiLogra26, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 540, 20, 20));
+
+        btnCumplioObjetivo26.setBackground(new java.awt.Color(51, 204, 0));
+        btnCumplioObjetivo26.setBorderPainted(false);
+        btnCumplioObjetivo26.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCumplioObjetivo26ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCumplioObjetivo26, new org.netbeans.lib.awtextra.AbsoluteConstraints(1230, 540, 20, 20));
+
+        btnRequiereApoyo26.setBackground(new java.awt.Color(255, 51, 51));
+        btnRequiereApoyo26.setBorderPainted(false);
+        btnRequiereApoyo26.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRequiereApoyo26ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnRequiereApoyo26, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 540, 20, 20));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoAzul.jpg"))); // NOI18N
         jLabel1.setText("jLabel1");
@@ -111,6 +1156,452 @@ public class ListaPreguntas extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+private void ConcentradoPreguntas(){
+    for (int i = 0; i <= 27; i++) {
+        
+        pregunta1=+pregunta1;
+    }
+       
+    
+}
+    private void txtPregunta1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPregunta1ActionPerformed
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_txtPregunta1ActionPerformed
+
+    private void txtPregunta2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPregunta2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPregunta2ActionPerformed
+
+    private void txtPregunta3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPregunta3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPregunta3ActionPerformed
+
+    private void txtPregunta4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPregunta4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPregunta4ActionPerformed
+
+    private void txtPregunta5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPregunta5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPregunta5ActionPerformed
+
+    private void txtPregunta6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPregunta6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPregunta6ActionPerformed
+
+    private void txtPregunta7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPregunta7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPregunta7ActionPerformed
+
+    private void txtPregunta8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPregunta8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPregunta8ActionPerformed
+
+    private void txtPregunta9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPregunta9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPregunta9ActionPerformed
+
+    private void txtPregunta10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPregunta10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPregunta10ActionPerformed
+
+    private void txtPregunta11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPregunta11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPregunta11ActionPerformed
+
+    private void txtPregunta12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPregunta12ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPregunta12ActionPerformed
+
+    private void txtPregunta13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPregunta13ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPregunta13ActionPerformed
+
+    private void txtPregunta14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPregunta14ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPregunta14ActionPerformed
+
+    private void txtPregunta15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPregunta15ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPregunta15ActionPerformed
+
+    private void txtPregunta16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPregunta16ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPregunta16ActionPerformed
+
+    private void txtPregunta17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPregunta17ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPregunta17ActionPerformed
+
+    private void txtPregunta18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPregunta18ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPregunta18ActionPerformed
+
+    private void txtPregunta19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPregunta19ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPregunta19ActionPerformed
+
+    private void txtPregunta20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPregunta20ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPregunta20ActionPerformed
+
+    private void txtPregunta21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPregunta21ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPregunta21ActionPerformed
+
+    private void txtPregunta22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPregunta22ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPregunta22ActionPerformed
+
+    private void txtPregunta23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPregunta23ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPregunta23ActionPerformed
+
+    private void txtPregunta24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPregunta24ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPregunta24ActionPerformed
+
+    private void txtPregunta25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPregunta25ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPregunta25ActionPerformed
+
+    private void txtPregunta26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPregunta26ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPregunta26ActionPerformed
+
+    private void txtPregunta27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPregunta27ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPregunta27ActionPerformed
+
+    private void btnRequiereApoyoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyoActionPerformed
+        pregunta1 = 0;
+   
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRequiereApoyoActionPerformed
+
+    private void btnCasiLograActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLograActionPerformed
+        pregunta1 = 1.851851851851852;
+        
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCasiLograActionPerformed
+
+    private void btnCumplioObjetivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivoActionPerformed
+        pregunta1 = 3.703703703703704;
+        
+    }//GEN-LAST:event_btnCumplioObjetivoActionPerformed
+
+    private void btnRequiereApoyo1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo1ActionPerformed
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRequiereApoyo1ActionPerformed
+
+    private void btnCasiLogra1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCasiLogra1ActionPerformed
+
+    private void btnCumplioObjetivo1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCumplioObjetivo1ActionPerformed
+
+    private void btnCumplioObjetivo2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCumplioObjetivo2ActionPerformed
+
+    private void btnCasiLogra2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCasiLogra2ActionPerformed
+
+    private void btnRequiereApoyo2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRequiereApoyo2ActionPerformed
+
+    private void btnRequiereApoyo3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRequiereApoyo3ActionPerformed
+
+    private void btnCasiLogra3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCasiLogra3ActionPerformed
+
+    private void btnCumplioObjetivo3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCumplioObjetivo3ActionPerformed
+
+    private void btnRequiereApoyo4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRequiereApoyo4ActionPerformed
+
+    private void btnCasiLogra4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCasiLogra4ActionPerformed
+
+    private void btnCumplioObjetivo4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCumplioObjetivo4ActionPerformed
+
+    private void btnCumplioObjetivo5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCumplioObjetivo5ActionPerformed
+
+    private void btnRequiereApoyo5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRequiereApoyo5ActionPerformed
+
+    private void btnCasiLogra5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCasiLogra5ActionPerformed
+
+    private void btnRequiereApoyo6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRequiereApoyo6ActionPerformed
+
+    private void btnCasiLogra6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCasiLogra6ActionPerformed
+
+    private void btnCumplioObjetivo6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCumplioObjetivo6ActionPerformed
+
+    private void btnCasiLogra7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCasiLogra7ActionPerformed
+
+    private void btnRequiereApoyo7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRequiereApoyo7ActionPerformed
+
+    private void btnCumplioObjetivo7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCumplioObjetivo7ActionPerformed
+
+    private void btnCasiLogra8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCasiLogra8ActionPerformed
+
+    private void btnRequiereApoyo8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRequiereApoyo8ActionPerformed
+
+    private void btnCumplioObjetivo8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCumplioObjetivo8ActionPerformed
+
+    private void btnRequiereApoyo9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRequiereApoyo9ActionPerformed
+
+    private void btnCasiLogra9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCasiLogra9ActionPerformed
+
+    private void btnCumplioObjetivo9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCumplioObjetivo9ActionPerformed
+
+    private void btnRequiereApoyo10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRequiereApoyo10ActionPerformed
+
+    private void btnCasiLogra10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCasiLogra10ActionPerformed
+
+    private void btnCumplioObjetivo10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCumplioObjetivo10ActionPerformed
+
+    private void btnCumplioObjetivo11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCumplioObjetivo11ActionPerformed
+
+    private void btnCasiLogra11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCasiLogra11ActionPerformed
+
+    private void btnRequiereApoyo11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRequiereApoyo11ActionPerformed
+
+    private void btnCumplioObjetivo12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo12ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCumplioObjetivo12ActionPerformed
+
+    private void btnCasiLogra12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra12ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCasiLogra12ActionPerformed
+
+    private void btnRequiereApoyo12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo12ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRequiereApoyo12ActionPerformed
+
+    private void btnRequiereApoyo13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo13ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRequiereApoyo13ActionPerformed
+
+    private void btnCasiLogra13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra13ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCasiLogra13ActionPerformed
+
+    private void btnCumplioObjetivo13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo13ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCumplioObjetivo13ActionPerformed
+
+    private void btnCumplioObjetivo14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo14ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCumplioObjetivo14ActionPerformed
+
+    private void btnCasiLogra14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra14ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCasiLogra14ActionPerformed
+
+    private void btnRequiereApoyo14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo14ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRequiereApoyo14ActionPerformed
+
+    private void btnRequiereApoyo15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo15ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRequiereApoyo15ActionPerformed
+
+    private void btnCumplioObjetivo15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo15ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCumplioObjetivo15ActionPerformed
+
+    private void btnCasiLogra15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra15ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCasiLogra15ActionPerformed
+
+    private void btnRequiereApoyo16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo16ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRequiereApoyo16ActionPerformed
+
+    private void btnCumplioObjetivo16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo16ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCumplioObjetivo16ActionPerformed
+
+    private void btnCasiLogra16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra16ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCasiLogra16ActionPerformed
+
+    private void btnRequiereApoyo17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo17ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRequiereApoyo17ActionPerformed
+
+    private void btnCasiLogra17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra17ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCasiLogra17ActionPerformed
+
+    private void btnCumplioObjetivo17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo17ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCumplioObjetivo17ActionPerformed
+
+    private void btnCumplioObjetivo18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo18ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCumplioObjetivo18ActionPerformed
+
+    private void btnCasiLogra18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra18ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCasiLogra18ActionPerformed
+
+    private void btnRequiereApoyo18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo18ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRequiereApoyo18ActionPerformed
+
+    private void btnCasiLogra19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra19ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCasiLogra19ActionPerformed
+
+    private void btnCumplioObjetivo19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo19ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCumplioObjetivo19ActionPerformed
+
+    private void btnRequiereApoyo19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo19ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRequiereApoyo19ActionPerformed
+
+    private void btnRequiereApoyo20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo20ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRequiereApoyo20ActionPerformed
+
+    private void btnCasiLogra20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra20ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCasiLogra20ActionPerformed
+
+    private void btnCumplioObjetivo20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo20ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCumplioObjetivo20ActionPerformed
+
+    private void btnRequiereApoyo21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo21ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRequiereApoyo21ActionPerformed
+
+    private void btnCasiLogra21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra21ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCasiLogra21ActionPerformed
+
+    private void btnCumplioObjetivo21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo21ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCumplioObjetivo21ActionPerformed
+
+    private void btnCasiLogra22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra22ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCasiLogra22ActionPerformed
+
+    private void btnRequiereApoyo22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo22ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRequiereApoyo22ActionPerformed
+
+    private void btnCumplioObjetivo22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo22ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCumplioObjetivo22ActionPerformed
+
+    private void btnRequiereApoyo23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo23ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRequiereApoyo23ActionPerformed
+
+    private void btnCumplioObjetivo23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo23ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCumplioObjetivo23ActionPerformed
+
+    private void btnCasiLogra23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra23ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCasiLogra23ActionPerformed
+
+    private void btnRequiereApoyo24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo24ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRequiereApoyo24ActionPerformed
+
+    private void btnCumplioObjetivo24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo24ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCumplioObjetivo24ActionPerformed
+
+    private void btnCasiLogra24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra24ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCasiLogra24ActionPerformed
+
+    private void btnRequiereApoyo25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo25ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRequiereApoyo25ActionPerformed
+
+    private void btnCasiLogra25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra25ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCasiLogra25ActionPerformed
+
+    private void btnCumplioObjetivo25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo25ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCumplioObjetivo25ActionPerformed
+
+    private void btnCasiLogra26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra26ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCasiLogra26ActionPerformed
+
+    private void btnCumplioObjetivo26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo26ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCumplioObjetivo26ActionPerformed
+
+    private void btnRequiereApoyo26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo26ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRequiereApoyo26ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -150,9 +1641,114 @@ public class ListaPreguntas extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel LabelLogo1;
     private javax.swing.JLabel LabelLogo2;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btnCasiLogra;
+    private javax.swing.JButton btnCasiLogra1;
+    private javax.swing.JButton btnCasiLogra10;
+    private javax.swing.JButton btnCasiLogra11;
+    private javax.swing.JButton btnCasiLogra12;
+    private javax.swing.JButton btnCasiLogra13;
+    private javax.swing.JButton btnCasiLogra14;
+    private javax.swing.JButton btnCasiLogra15;
+    private javax.swing.JButton btnCasiLogra16;
+    private javax.swing.JButton btnCasiLogra17;
+    private javax.swing.JButton btnCasiLogra18;
+    private javax.swing.JButton btnCasiLogra19;
+    private javax.swing.JButton btnCasiLogra2;
+    private javax.swing.JButton btnCasiLogra20;
+    private javax.swing.JButton btnCasiLogra21;
+    private javax.swing.JButton btnCasiLogra22;
+    private javax.swing.JButton btnCasiLogra23;
+    private javax.swing.JButton btnCasiLogra24;
+    private javax.swing.JButton btnCasiLogra25;
+    private javax.swing.JButton btnCasiLogra26;
+    private javax.swing.JButton btnCasiLogra3;
+    private javax.swing.JButton btnCasiLogra4;
+    private javax.swing.JButton btnCasiLogra5;
+    private javax.swing.JButton btnCasiLogra6;
+    private javax.swing.JButton btnCasiLogra7;
+    private javax.swing.JButton btnCasiLogra8;
+    private javax.swing.JButton btnCasiLogra9;
+    private javax.swing.JButton btnCumplioObjetivo;
+    private javax.swing.JButton btnCumplioObjetivo1;
+    private javax.swing.JButton btnCumplioObjetivo10;
+    private javax.swing.JButton btnCumplioObjetivo11;
+    private javax.swing.JButton btnCumplioObjetivo12;
+    private javax.swing.JButton btnCumplioObjetivo13;
+    private javax.swing.JButton btnCumplioObjetivo14;
+    private javax.swing.JButton btnCumplioObjetivo15;
+    private javax.swing.JButton btnCumplioObjetivo16;
+    private javax.swing.JButton btnCumplioObjetivo17;
+    private javax.swing.JButton btnCumplioObjetivo18;
+    private javax.swing.JButton btnCumplioObjetivo19;
+    private javax.swing.JButton btnCumplioObjetivo2;
+    private javax.swing.JButton btnCumplioObjetivo20;
+    private javax.swing.JButton btnCumplioObjetivo21;
+    private javax.swing.JButton btnCumplioObjetivo22;
+    private javax.swing.JButton btnCumplioObjetivo23;
+    private javax.swing.JButton btnCumplioObjetivo24;
+    private javax.swing.JButton btnCumplioObjetivo25;
+    private javax.swing.JButton btnCumplioObjetivo26;
+    private javax.swing.JButton btnCumplioObjetivo3;
+    private javax.swing.JButton btnCumplioObjetivo4;
+    private javax.swing.JButton btnCumplioObjetivo5;
+    private javax.swing.JButton btnCumplioObjetivo6;
+    private javax.swing.JButton btnCumplioObjetivo7;
+    private javax.swing.JButton btnCumplioObjetivo8;
+    private javax.swing.JButton btnCumplioObjetivo9;
+    private javax.swing.JButton btnRequiereApoyo;
+    private javax.swing.JButton btnRequiereApoyo1;
+    private javax.swing.JButton btnRequiereApoyo10;
+    private javax.swing.JButton btnRequiereApoyo11;
+    private javax.swing.JButton btnRequiereApoyo12;
+    private javax.swing.JButton btnRequiereApoyo13;
+    private javax.swing.JButton btnRequiereApoyo14;
+    private javax.swing.JButton btnRequiereApoyo15;
+    private javax.swing.JButton btnRequiereApoyo16;
+    private javax.swing.JButton btnRequiereApoyo17;
+    private javax.swing.JButton btnRequiereApoyo18;
+    private javax.swing.JButton btnRequiereApoyo19;
+    private javax.swing.JButton btnRequiereApoyo2;
+    private javax.swing.JButton btnRequiereApoyo20;
+    private javax.swing.JButton btnRequiereApoyo21;
+    private javax.swing.JButton btnRequiereApoyo22;
+    private javax.swing.JButton btnRequiereApoyo23;
+    private javax.swing.JButton btnRequiereApoyo24;
+    private javax.swing.JButton btnRequiereApoyo25;
+    private javax.swing.JButton btnRequiereApoyo26;
+    private javax.swing.JButton btnRequiereApoyo3;
+    private javax.swing.JButton btnRequiereApoyo4;
+    private javax.swing.JButton btnRequiereApoyo5;
+    private javax.swing.JButton btnRequiereApoyo6;
+    private javax.swing.JButton btnRequiereApoyo7;
+    private javax.swing.JButton btnRequiereApoyo8;
+    private javax.swing.JButton btnRequiereApoyo9;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
+    private javax.swing.JTextField txtPregunta1;
+    private javax.swing.JTextField txtPregunta10;
+    private javax.swing.JTextField txtPregunta11;
+    private javax.swing.JTextField txtPregunta12;
+    private javax.swing.JTextField txtPregunta13;
+    private javax.swing.JTextField txtPregunta14;
+    private javax.swing.JTextField txtPregunta15;
+    private javax.swing.JTextField txtPregunta16;
+    private javax.swing.JTextField txtPregunta17;
+    private javax.swing.JTextField txtPregunta18;
+    private javax.swing.JTextField txtPregunta19;
+    private javax.swing.JTextField txtPregunta2;
+    private javax.swing.JTextField txtPregunta20;
+    private javax.swing.JTextField txtPregunta21;
+    private javax.swing.JTextField txtPregunta22;
+    private javax.swing.JTextField txtPregunta23;
+    private javax.swing.JTextField txtPregunta24;
+    private javax.swing.JTextField txtPregunta25;
+    private javax.swing.JTextField txtPregunta26;
+    private javax.swing.JTextField txtPregunta27;
+    private javax.swing.JTextField txtPregunta3;
+    private javax.swing.JTextField txtPregunta4;
+    private javax.swing.JTextField txtPregunta5;
+    private javax.swing.JTextField txtPregunta6;
+    private javax.swing.JTextField txtPregunta7;
+    private javax.swing.JTextField txtPregunta8;
+    private javax.swing.JTextField txtPregunta9;
     // End of variables declaration//GEN-END:variables
 }
