@@ -25,6 +25,7 @@ private int  estadoPorcentaje;
     }
 private void CargarBarra(){
 jProgressBar1.setValue(estadoPorcentaje);
+
 }
     /**
      * This method is called from within the constructor to initialize the form.
@@ -126,6 +127,8 @@ jProgressBar1.setValue(estadoPorcentaje);
             }
         });
         getContentPane().add(btnCasiLogra, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 610, 100, 40));
+
+        jProgressBar1.setStringPainted(true);
         getContentPane().add(jProgressBar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 670, 500, 40));
 
         jLabel4.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
