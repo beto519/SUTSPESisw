@@ -12,22 +12,20 @@ import java.time.format.DateTimeFormatter;
  * @author lopez
  */
 public class AdiosConMano extends javax.swing.JFrame {
-
+private int  estadoPorcentaje;
     /**
      * Creates new form AdiosConMano
      */
     public AdiosConMano() {
         initComponents();
         setLocationRelativeTo(null);
-        fecha();
+
    this.setExtendedState(MAXIMIZED_BOTH);
 
     }
-  private void fecha(){
-    DateTimeFormatter fechaRealizacion = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-    txtFecha1.setText(fechaRealizacion.format(LocalDateTime.now()));
-
-    }
+private void CargarBarra(){
+jProgressBar1.setValue(estadoPorcentaje);
+}
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -43,10 +41,13 @@ public class AdiosConMano extends javax.swing.JFrame {
         ReconocimientoCorporal1 = new javax.swing.JLabel();
         procedimiento2 = new javax.swing.JLabel();
         NombreDelPrograma1 = new javax.swing.JLabel();
-        txtFecha1 = new javax.swing.JTextField();
         MtroManuel2 = new javax.swing.JLabel();
         jScrollPane3 = new javax.swing.JScrollPane();
         jTextArea3 = new javax.swing.JTextArea();
+        btnRequiereApoyo = new javax.swing.JButton();
+        btnCumplioObjetivo = new javax.swing.JButton();
+        btnCasiLogra = new javax.swing.JButton();
+        jProgressBar1 = new javax.swing.JProgressBar();
         jLabel4 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
 
@@ -83,16 +84,6 @@ public class AdiosConMano extends javax.swing.JFrame {
         NombreDelPrograma1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         getContentPane().add(NombreDelPrograma1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 130, 450, 40));
 
-        txtFecha1.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        txtFecha1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        txtFecha1.setEnabled(false);
-        txtFecha1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtFecha1ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(txtFecha1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 10, 90, 40));
-
         MtroManuel2.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         MtroManuel2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MtroManuel2.setText(" Elaboró:"); // NOI18N
@@ -107,7 +98,35 @@ public class AdiosConMano extends javax.swing.JFrame {
         jTextArea3.setText("PASO 1. Cuando vaya a despedirse de las personas.\n\nPASO 2. Llámelo por su nombre y dé la instrucción: “di adiós”.\n\nPASO 3. La respuesta correcta es mover la mano diciendo adiós.\n\nPASO 4. Si da la respuesta correcta refuerce.\n\nPASO 5. Si no se da la respuesta correcta ofrezca apoyo físico.\n\nPASO 6. Disminuya el apoyo gradualmente hasta cumplir el criterio.");
         jScrollPane3.setViewportView(jTextArea3);
 
-        getContentPane().add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 240, 1010, 420));
+        getContentPane().add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 240, 1010, 340));
+
+        btnRequiereApoyo.setBackground(new java.awt.Color(255, 51, 51));
+        btnRequiereApoyo.setBorderPainted(false);
+        btnRequiereApoyo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRequiereApoyoActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnRequiereApoyo, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 610, 100, 40));
+
+        btnCumplioObjetivo.setBackground(new java.awt.Color(51, 204, 0));
+        btnCumplioObjetivo.setBorderPainted(false);
+        btnCumplioObjetivo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCumplioObjetivoActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCumplioObjetivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 610, 100, 40));
+
+        btnCasiLogra.setBackground(new java.awt.Color(255, 255, 102));
+        btnCasiLogra.setBorderPainted(false);
+        btnCasiLogra.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCasiLograActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCasiLogra, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 610, 100, 40));
+        getContentPane().add(jProgressBar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 670, 500, 40));
 
         jLabel4.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         jLabel4.setText("Programa ");
@@ -121,11 +140,22 @@ public class AdiosConMano extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtFecha1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFecha1ActionPerformed
+    private void btnCasiLograActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLograActionPerformed
+estadoPorcentaje = 50;    
+CargarBarra();
+// TODO add your handling code here:
+    }//GEN-LAST:event_btnCasiLograActionPerformed
 
-
+    private void btnRequiereApoyoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyoActionPerformed
+estadoPorcentaje = 0;
+CargarBarra();
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtFecha1ActionPerformed
+    }//GEN-LAST:event_btnRequiereApoyoActionPerformed
+
+    private void btnCumplioObjetivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivoActionPerformed
+estadoPorcentaje = 100;  
+CargarBarra();// TODO add your handling code here:
+    }//GEN-LAST:event_btnCumplioObjetivoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -169,11 +199,14 @@ public class AdiosConMano extends javax.swing.JFrame {
     private javax.swing.JLabel MtroManuel2;
     private javax.swing.JLabel NombreDelPrograma1;
     private javax.swing.JLabel ReconocimientoCorporal1;
+    private javax.swing.JButton btnCasiLogra;
+    private javax.swing.JButton btnCumplioObjetivo;
+    private javax.swing.JButton btnRequiereApoyo;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JProgressBar jProgressBar1;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTextArea jTextArea3;
     private javax.swing.JLabel procedimiento2;
-    private javax.swing.JTextField txtFecha1;
     // End of variables declaration//GEN-END:variables
 }
