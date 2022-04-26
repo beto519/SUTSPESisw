@@ -53,12 +53,6 @@ public class Instrucciones1 extends javax.swing.JFrame {
         jLabel26 = new javax.swing.JLabel();
         jLabel27 = new javax.swing.JLabel();
         jButton14 = new javax.swing.JButton();
-        rSPanelShadow14 = new rojeru_san.rspanel.RSPanelShadow();
-        jPanel29 = new javax.swing.JPanel();
-        jPanel30 = new javax.swing.JPanel();
-        jLabel28 = new javax.swing.JLabel();
-        jLabel29 = new javax.swing.JLabel();
-        jButton15 = new javax.swing.JButton();
         rSPanelShadow15 = new rojeru_san.rspanel.RSPanelShadow();
         rSPanelShadow16 = new rojeru_san.rspanel.RSPanelShadow();
         jPanel33 = new javax.swing.JPanel();
@@ -355,72 +349,6 @@ public class Instrucciones1 extends javax.swing.JFrame {
         );
 
         rSPanelShadow13.add(jPanel27, java.awt.BorderLayout.CENTER);
-
-        jPanel29.setBackground(new java.awt.Color(255, 255, 255));
-
-        jPanel30.setBackground(new java.awt.Color(255, 255, 255));
-
-        jLabel28.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel28.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel28.setText("Intraverbal");
-
-        jLabel29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/icons8-pregunta-60.png"))); // NOI18N
-
-        javax.swing.GroupLayout jPanel30Layout = new javax.swing.GroupLayout(jPanel30);
-        jPanel30.setLayout(jPanel30Layout);
-        jPanel30Layout.setHorizontalGroup(
-            jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel30Layout.createSequentialGroup()
-                .addGroup(jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel30Layout.createSequentialGroup()
-                        .addGap(74, 74, 74)
-                        .addComponent(jLabel29))
-                    .addGroup(jPanel30Layout.createSequentialGroup()
-                        .addGap(27, 27, 27)
-                        .addComponent(jLabel28, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(41, Short.MAX_VALUE))
-        );
-        jPanel30Layout.setVerticalGroup(
-            jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel30Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel29)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel28, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(11, 11, 11))
-        );
-
-        jButton15.setBackground(new java.awt.Color(0, 153, 255));
-        jButton15.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton15.setText("Seleccionar");
-        jButton15.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 0, 0), new java.awt.Color(0, 0, 0), new java.awt.Color(0, 0, 0), new java.awt.Color(0, 0, 0)));
-        jButton15.setBorderPainted(false);
-        jButton15.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton15ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel29Layout = new javax.swing.GroupLayout(jPanel29);
-        jPanel29.setLayout(jPanel29Layout);
-        jPanel29Layout.setHorizontalGroup(
-            jPanel29Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jButton15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jPanel30, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        jPanel29Layout.setVerticalGroup(
-            jPanel29Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel29Layout.createSequentialGroup()
-                .addGap(0, 0, 0)
-                .addComponent(jButton15, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(jPanel30, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0))
-        );
-
-        rSPanelShadow14.add(jPanel29, java.awt.BorderLayout.CENTER);
-
-        rSPanelShadow13.add(rSPanelShadow14, java.awt.BorderLayout.PAGE_END);
 
         rSPanelShadow11.add(rSPanelShadow13, java.awt.BorderLayout.PAGE_END);
 
@@ -770,7 +698,7 @@ public class Instrucciones1 extends javax.swing.JFrame {
                     .addComponent(rSPanelShadow11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(rSPanelShadow15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(rSPanelShadow4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(92, Short.MAX_VALUE))
+                .addContainerGap(96, Short.MAX_VALUE))
         );
 
         jPanel1.setBackground(new java.awt.Color(51, 153, 255));
@@ -852,11 +780,6 @@ public class Instrucciones1 extends javax.swing.JFrame {
         a.setVisible(true);   // TODO add your handling code here:
     }//GEN-LAST:event_jButton14ActionPerformed
 
-    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
-        Intraverbal a = new Intraverbal();
-        a.setVisible(true);         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton15ActionPerformed
-
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
         MotricidadFina a = new MotricidadFina();
         a.setVisible(true);
@@ -927,7 +850,6 @@ public class Instrucciones1 extends javax.swing.JFrame {
     private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton14;
-    private javax.swing.JButton jButton15;
     private javax.swing.JButton jButton17;
     private javax.swing.JButton jButton18;
     private javax.swing.JButton jButton2;
@@ -942,8 +864,6 @@ public class Instrucciones1 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
-    private javax.swing.JLabel jLabel28;
-    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel33;
@@ -964,9 +884,7 @@ public class Instrucciones1 extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel24;
     private javax.swing.JPanel jPanel27;
     private javax.swing.JPanel jPanel28;
-    private javax.swing.JPanel jPanel29;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel30;
     private javax.swing.JPanel jPanel33;
     private javax.swing.JPanel jPanel34;
     private javax.swing.JPanel jPanel35;
@@ -982,7 +900,6 @@ public class Instrucciones1 extends javax.swing.JFrame {
     private rojeru_san.rspanel.RSPanelShadow rSPanelShadow10;
     private rojeru_san.rspanel.RSPanelShadow rSPanelShadow11;
     private rojeru_san.rspanel.RSPanelShadow rSPanelShadow13;
-    private rojeru_san.rspanel.RSPanelShadow rSPanelShadow14;
     private rojeru_san.rspanel.RSPanelShadow rSPanelShadow15;
     private rojeru_san.rspanel.RSPanelShadow rSPanelShadow16;
     private rojeru_san.rspanel.RSPanelShadow rSPanelShadow17;
