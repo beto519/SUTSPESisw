@@ -4,10 +4,14 @@
  */
 package mx.itson.interfaces;
 
+import mx.itson.entidades.Programa;
+import mx.itson.entidades.Terapeuta;
+
 /**
  *
  * @author vinko
  */
-public interface DAOPrograma {
+public interface DAOPrograma  extends CRUD<Programa>{    
+    
     
 }
