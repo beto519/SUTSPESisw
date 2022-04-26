@@ -117,7 +117,7 @@ public class Menu extends javax.swing.JFrame {
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 280, 720));
 
         LabelLogo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/CENTRO DE APOYO EDUCATIVO INFANTIL EN PNG.png"))); // NOI18N
-        getContentPane().add(LabelLogo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 10, -1, -1));
+        getContentPane().add(LabelLogo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, -10, -1, -1));
 
         LabelLogo2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/sutspes  en png.png"))); // NOI18N
         getContentPane().add(LabelLogo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 10, -1, -1));

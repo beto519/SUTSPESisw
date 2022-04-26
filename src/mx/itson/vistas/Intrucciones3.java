@@ -3,6 +3,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package mx.itson.vistas;
+import mx.itson.vistas.instrucciones.*;
+
 
 /**
  *
