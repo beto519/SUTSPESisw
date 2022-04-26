@@ -9,7 +9,7 @@ package mx.itson.vistas.instrucciones;
  * @author lopez
  */
 public class EmparejamientoObjetos extends javax.swing.JFrame {
-
+private int estadoPorcentaje;
     /**
      * Creates new form EmparejamientoObjetos
      */
@@ -19,7 +19,10 @@ public class EmparejamientoObjetos extends javax.swing.JFrame {
          this.setExtendedState(MAXIMIZED_BOTH);
 
     }
-
+    
+    private void CargarBarra(){
+        PB_ProgresoNiño.setValue(estadoPorcentaje);
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -35,13 +38,16 @@ public class EmparejamientoObjetos extends javax.swing.JFrame {
         NombreDelPrograma1 = new javax.swing.JLabel();
         ReconocimientoCorporal1 = new javax.swing.JLabel();
         procedimiento2 = new javax.swing.JLabel();
-        txtFecha1 = new javax.swing.JTextField();
         MtroManuel2 = new javax.swing.JLabel();
         jScrollPane3 = new javax.swing.JScrollPane();
         jTextArea3 = new javax.swing.JTextArea();
         jLabel4 = new javax.swing.JLabel();
         jScrollPane4 = new javax.swing.JScrollPane();
         jTextArea4 = new javax.swing.JTextArea();
+        btn_LoHace = new javax.swing.JButton();
+        btn_NoLoHace = new javax.swing.JButton();
+        btn_LoHaceConAyuda = new javax.swing.JButton();
+        PB_ProgresoNiño = new javax.swing.JProgressBar();
         jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -75,15 +81,6 @@ public class EmparejamientoObjetos extends javax.swing.JFrame {
         procedimiento2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         getContentPane().add(procedimiento2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 160, 1010, 30));
 
-        txtFecha1.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        txtFecha1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        txtFecha1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtFecha1ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(txtFecha1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 10, 110, 40));
-
         MtroManuel2.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         MtroManuel2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MtroManuel2.setText(" Elaboró:"); // NOI18N
@@ -113,15 +110,66 @@ public class EmparejamientoObjetos extends javax.swing.JFrame {
 
         getContentPane().add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 190, 1010, 340));
 
+        btn_LoHace.setBackground(new java.awt.Color(0, 255, 51));
+        btn_LoHace.setText("Lo hace");
+        btn_LoHace.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_LoHaceMouseClicked(evt);
+            }
+        });
+        getContentPane().add(btn_LoHace, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 740, -1, -1));
+
+        btn_NoLoHace.setBackground(new java.awt.Color(255, 0, 0));
+        btn_NoLoHace.setForeground(new java.awt.Color(255, 255, 255));
+        btn_NoLoHace.setText("No Lo Hace");
+        btn_NoLoHace.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_NoLoHaceMouseClicked(evt);
+            }
+        });
+        getContentPane().add(btn_NoLoHace, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 740, -1, -1));
+
+        btn_LoHaceConAyuda.setBackground(new java.awt.Color(255, 255, 0));
+        btn_LoHaceConAyuda.setText("Lo Hace Con Ayuda");
+        btn_LoHaceConAyuda.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_LoHaceConAyudaMouseClicked(evt);
+            }
+        });
+        btn_LoHaceConAyuda.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_LoHaceConAyudaActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btn_LoHaceConAyuda, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 740, -1, -1));
+
+        PB_ProgresoNiño.setStringPainted(true);
+        getContentPane().add(PB_ProgresoNiño, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 800, 1010, 30));
+
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoAzul.jpg"))); // NOI18N
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 730));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 870));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtFecha1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFecha1ActionPerformed
+    private void btn_LoHaceMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_LoHaceMouseClicked
+        estadoPorcentaje = 100;
+        CargarBarra();
+    }//GEN-LAST:event_btn_LoHaceMouseClicked
+
+    private void btn_NoLoHaceMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_NoLoHaceMouseClicked
+        estadoPorcentaje = 0;
+        CargarBarra();
+    }//GEN-LAST:event_btn_NoLoHaceMouseClicked
+
+    private void btn_LoHaceConAyudaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_LoHaceConAyudaMouseClicked
+        estadoPorcentaje = 50;
+        CargarBarra();
+    }//GEN-LAST:event_btn_LoHaceConAyudaMouseClicked
+
+    private void btn_LoHaceConAyudaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_LoHaceConAyudaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtFecha1ActionPerformed
+    }//GEN-LAST:event_btn_LoHaceConAyudaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -164,7 +212,11 @@ public class EmparejamientoObjetos extends javax.swing.JFrame {
     private javax.swing.JLabel LabelLogo2;
     private javax.swing.JLabel MtroManuel2;
     private javax.swing.JLabel NombreDelPrograma1;
+    private javax.swing.JProgressBar PB_ProgresoNiño;
     private javax.swing.JLabel ReconocimientoCorporal1;
+    private javax.swing.JButton btn_LoHace;
+    private javax.swing.JButton btn_LoHaceConAyuda;
+    private javax.swing.JButton btn_NoLoHace;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JScrollPane jScrollPane3;
@@ -172,6 +224,5 @@ public class EmparejamientoObjetos extends javax.swing.JFrame {
     private javax.swing.JTextArea jTextArea3;
     private javax.swing.JTextArea jTextArea4;
     private javax.swing.JLabel procedimiento2;
-    private javax.swing.JTextField txtFecha1;
     // End of variables declaration//GEN-END:variables
 }

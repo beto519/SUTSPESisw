@@ -4,15 +4,13 @@
  */
 package mx.itson.vistas.instrucciones;
 
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 
 /**
  *
  * @author lopez
  */
 public class ImitacionGruesa extends javax.swing.JFrame {
-
+private int estadoPorcentaje;
     /**
      * Creates new form Imitacion
      */
@@ -20,12 +18,9 @@ public class ImitacionGruesa extends javax.swing.JFrame {
         initComponents();
          setLocationRelativeTo(null);
          this.setExtendedState(MAXIMIZED_BOTH);
-        fecha();
     }
- private void fecha(){
-    DateTimeFormatter fechaRealizacion = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-    txtFecha.setText(fechaRealizacion.format(LocalDateTime.now()));
-
+    private void CargarBarra(){
+        PB_ProgresoNiño.setValue(estadoPorcentaje);
     }
     /**
      * This method is called from within the constructor to initialize the form.
@@ -49,7 +44,10 @@ public class ImitacionGruesa extends javax.swing.JFrame {
         NombreDelPrograma = new javax.swing.JLabel();
         ReconocimientoCorporal = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        txtFecha = new javax.swing.JTextField();
+        btn_LoHace = new javax.swing.JButton();
+        btn_NoLoHace = new javax.swing.JButton();
+        btn_LoHaceConAyuda = new javax.swing.JButton();
+        PB_ProgresoNiño = new javax.swing.JProgressBar();
         jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -119,26 +117,67 @@ public class ImitacionGruesa extends javax.swing.JFrame {
         jLabel2.setText("Programa ");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 0, 190, 60));
 
-        txtFecha.setEditable(false);
-        txtFecha.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        txtFecha.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        txtFecha.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtFechaActionPerformed(evt);
+        btn_LoHace.setBackground(new java.awt.Color(0, 255, 51));
+        btn_LoHace.setText("Lo hace");
+        btn_LoHace.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_LoHaceMouseClicked(evt);
             }
         });
-        getContentPane().add(txtFecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 10, 90, 40));
+        getContentPane().add(btn_LoHace, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 740, -1, -1));
+
+        btn_NoLoHace.setBackground(new java.awt.Color(255, 0, 0));
+        btn_NoLoHace.setForeground(new java.awt.Color(255, 255, 255));
+        btn_NoLoHace.setText("No Lo Hace");
+        btn_NoLoHace.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_NoLoHaceMouseClicked(evt);
+            }
+        });
+        getContentPane().add(btn_NoLoHace, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 740, -1, -1));
+
+        btn_LoHaceConAyuda.setBackground(new java.awt.Color(255, 255, 0));
+        btn_LoHaceConAyuda.setText("Lo Hace Con Ayuda");
+        btn_LoHaceConAyuda.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_LoHaceConAyudaMouseClicked(evt);
+            }
+        });
+        btn_LoHaceConAyuda.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_LoHaceConAyudaActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btn_LoHaceConAyuda, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 740, -1, -1));
+
+        PB_ProgresoNiño.setStringPainted(true);
+        getContentPane().add(PB_ProgresoNiño, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 800, 1010, 30));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoAzul.jpg"))); // NOI18N
         jLabel3.setText("jLabel1");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 890));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtFechaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFechaActionPerformed
+    private void btn_LoHaceMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_LoHaceMouseClicked
+        estadoPorcentaje = 100;
+        CargarBarra();
+    }//GEN-LAST:event_btn_LoHaceMouseClicked
+
+    private void btn_NoLoHaceMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_NoLoHaceMouseClicked
+        estadoPorcentaje = 0;
+        CargarBarra();
+    }//GEN-LAST:event_btn_NoLoHaceMouseClicked
+
+    private void btn_LoHaceConAyudaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_LoHaceConAyudaMouseClicked
+        estadoPorcentaje = 50;
+        CargarBarra();
+    }//GEN-LAST:event_btn_LoHaceConAyudaMouseClicked
+
+    private void btn_LoHaceConAyudaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_LoHaceConAyudaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtFechaActionPerformed
+    }//GEN-LAST:event_btn_LoHaceConAyudaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -182,7 +221,11 @@ public class ImitacionGruesa extends javax.swing.JFrame {
     private javax.swing.JLabel LabelLogo2;
     private javax.swing.JLabel MtroManuel1;
     private javax.swing.JLabel NombreDelPrograma;
+    private javax.swing.JProgressBar PB_ProgresoNiño;
     private javax.swing.JLabel ReconocimientoCorporal;
+    private javax.swing.JButton btn_LoHace;
+    private javax.swing.JButton btn_LoHaceConAyuda;
+    private javax.swing.JButton btn_NoLoHace;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane1;
@@ -191,6 +234,5 @@ public class ImitacionGruesa extends javax.swing.JFrame {
     private javax.swing.JTextArea jTextArea2;
     private javax.swing.JLabel procedimiento;
     private javax.swing.JLabel procedimiento1;
-    private javax.swing.JTextField txtFecha;
     // End of variables declaration//GEN-END:variables
 }

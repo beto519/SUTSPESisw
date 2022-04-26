@@ -10,7 +10,7 @@ package mx.itson.vistas.instrucciones;
  * @author jotha
  */
 public class AtencionCara extends javax.swing.JFrame {
-
+private int estadoPorcentaje;   
     /**
      * Creates new form AtencionCara
      */
@@ -19,6 +19,11 @@ public class AtencionCara extends javax.swing.JFrame {
          setLocationRelativeTo(null);
          this.setExtendedState(MAXIMIZED_BOTH);
 
+    }
+    
+    
+    private void CargarBarra(){
+    PB_ProgresoNiño.setValue(estadoPorcentaje);  
     }
 
     /**
@@ -40,6 +45,10 @@ public class AtencionCara extends javax.swing.JFrame {
         procedimiento = new javax.swing.JLabel();
         Procedimiento = new javax.swing.JScrollPane();
         txtProcedimiento = new javax.swing.JTextArea();
+        btn_LoHace = new javax.swing.JButton();
+        btn_NoLoHace = new javax.swing.JButton();
+        btn_LoHaceConAyuda = new javax.swing.JButton();
+        PB_ProgresoNiño = new javax.swing.JProgressBar();
         Fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -95,11 +104,66 @@ public class AtencionCara extends javax.swing.JFrame {
 
         getContentPane().add(Procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 170, 1000, 500));
 
+        btn_LoHace.setBackground(new java.awt.Color(0, 255, 51));
+        btn_LoHace.setText("Lo hace");
+        btn_LoHace.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_LoHaceMouseClicked(evt);
+            }
+        });
+        getContentPane().add(btn_LoHace, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 690, -1, -1));
+
+        btn_NoLoHace.setBackground(new java.awt.Color(255, 0, 0));
+        btn_NoLoHace.setForeground(new java.awt.Color(255, 255, 255));
+        btn_NoLoHace.setText("No Lo Hace");
+        btn_NoLoHace.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_NoLoHaceMouseClicked(evt);
+            }
+        });
+        getContentPane().add(btn_NoLoHace, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 690, -1, -1));
+
+        btn_LoHaceConAyuda.setBackground(new java.awt.Color(255, 255, 0));
+        btn_LoHaceConAyuda.setText("Lo Hace Con Ayuda");
+        btn_LoHaceConAyuda.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_LoHaceConAyudaMouseClicked(evt);
+            }
+        });
+        btn_LoHaceConAyuda.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_LoHaceConAyudaActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btn_LoHaceConAyuda, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 690, -1, -1));
+
+        PB_ProgresoNiño.setStringPainted(true);
+        getContentPane().add(PB_ProgresoNiño, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 750, 1010, 30));
+
         Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoAmarillo.jpg"))); // NOI18N
-        getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
+        getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 830));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btn_LoHaceConAyudaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_LoHaceConAyudaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_LoHaceConAyudaActionPerformed
+
+    private void btn_LoHaceMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_LoHaceMouseClicked
+        estadoPorcentaje = 100;
+        CargarBarra();
+    }//GEN-LAST:event_btn_LoHaceMouseClicked
+
+    private void btn_NoLoHaceMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_NoLoHaceMouseClicked
+        estadoPorcentaje = 0;
+        CargarBarra();
+    }//GEN-LAST:event_btn_NoLoHaceMouseClicked
+
+    private void btn_LoHaceConAyudaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_LoHaceConAyudaMouseClicked
+        estadoPorcentaje = 50;
+        CargarBarra();
+    }//GEN-LAST:event_btn_LoHaceConAyudaMouseClicked
 
     /**
      * @param args the command line arguments
@@ -143,9 +207,13 @@ public class AtencionCara extends javax.swing.JFrame {
     private javax.swing.JLabel LabelLogo2;
     private javax.swing.JLabel MtroManuel;
     private javax.swing.JLabel NombreDelPrograma;
+    private javax.swing.JProgressBar PB_ProgresoNiño;
     private javax.swing.JScrollPane Procedimiento;
     private javax.swing.JLabel Programa;
     private javax.swing.JLabel ReconocimientoCorporal;
+    private javax.swing.JButton btn_LoHace;
+    private javax.swing.JButton btn_LoHaceConAyuda;
+    private javax.swing.JButton btn_NoLoHace;
     private javax.swing.JLabel procedimiento;
     private javax.swing.JTextArea txtProcedimiento;
     // End of variables declaration//GEN-END:variables
