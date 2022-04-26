@@ -39,6 +39,7 @@ public class SeguimientoInstrucciones extends javax.swing.JFrame {
         Procedimiento = new javax.swing.JScrollPane();
         txtProcedimiento = new javax.swing.JTextArea();
         Btn_Instrucciones = new javax.swing.JButton();
+        jProgressBar1 = new javax.swing.JProgressBar();
         Fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -100,7 +101,10 @@ public class SeguimientoInstrucciones extends javax.swing.JFrame {
                 Btn_InstruccionesMouseClicked(evt);
             }
         });
-        getContentPane().add(Btn_Instrucciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 610, 200, 50));
+        getContentPane().add(Btn_Instrucciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 660, 200, 50));
+
+        jProgressBar1.setStringPainted(true);
+        getContentPane().add(jProgressBar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 610, 500, 40));
 
         Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoRosa.jpg"))); // NOI18N
         getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
@@ -160,6 +164,7 @@ public class SeguimientoInstrucciones extends javax.swing.JFrame {
     private javax.swing.JScrollPane Procedimiento;
     private javax.swing.JLabel Programa;
     private javax.swing.JLabel SeguimientoDeInstrucciones;
+    private javax.swing.JProgressBar jProgressBar1;
     private javax.swing.JLabel procedimiento;
     private javax.swing.JTextArea txtProcedimiento;
     // End of variables declaration//GEN-END:variables

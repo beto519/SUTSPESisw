@@ -39,6 +39,7 @@ public class UsoPenombres extends javax.swing.JFrame {
         Procedimiento = new javax.swing.JScrollPane();
         txtProcedimiento = new javax.swing.JTextArea();
         Btn_Instrucciones = new javax.swing.JButton();
+        jProgressBar1 = new javax.swing.JProgressBar();
         Fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -90,7 +91,7 @@ public class UsoPenombres extends javax.swing.JFrame {
         txtProcedimiento.setText("PASO 1. Seleccione 1 mujer y un hombre de apoyo.\nPASO 2. Hagan un círculo junto con el niño.\nPASO 3. Dé al niño un objeto (Auto) y pregunte: ¿Quién tiene el auto?\nPASO 4. La respuesta del niño debe ser “yo”. Si da la respuesta correctamente refuerce. Si no da la \nrespuesta correctamente de apoyo susurrando a su oído diciendo “yo”.\nPASO 5. Dé el auto a el hombre, llame al niño por su nombre y pregunte: ¿Quién tiene el auto? \nPASO 6. La respuesta debe ser él. Si el niño responde correctamente refuerce. Si no da la respuesta \ncorrecta dé apoyo susurrando la respuesta correcta al oído del niño.\nPASO 7. Dé el auto a la mujer, llame al niño por su nombre y pregunte: ¿Quién tiene el auto? \nPASO 8. El niño debe responder ella, si da la respuesta correcta refuerce, si no la da apoye susurrando al \noído.\nPASO 9. Tome el auto, llame al niño por su nombre y diga: ¿Quién tiene el auto?\nPASO 10. El niño debe responder tú. Si da la respuesta correcta refuerce, si no da la respuesta correcta \napoye susurrando al oído.\n");
         Procedimiento.setViewportView(txtProcedimiento);
 
-        getContentPane().add(Procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 230, 1120, 400));
+        getContentPane().add(Procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 230, 1120, 350));
 
         Btn_Instrucciones.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         Btn_Instrucciones.setText("Ver Instrucciones");
@@ -105,7 +106,10 @@ public class UsoPenombres extends javax.swing.JFrame {
                 Btn_InstruccionesActionPerformed(evt);
             }
         });
-        getContentPane().add(Btn_Instrucciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 640, 200, 50));
+        getContentPane().add(Btn_Instrucciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 650, 200, 50));
+
+        jProgressBar1.setStringPainted(true);
+        getContentPane().add(jProgressBar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 610, 500, 40));
 
         Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoRosa.jpg"))); // NOI18N
         getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 710));
@@ -169,6 +173,7 @@ public class UsoPenombres extends javax.swing.JFrame {
     private javax.swing.JScrollPane Procedimiento;
     private javax.swing.JLabel Programa;
     private javax.swing.JLabel UsoDePronombres;
+    private javax.swing.JProgressBar jProgressBar1;
     private javax.swing.JLabel procedimiento;
     private javax.swing.JTextArea txtProcedimiento;
     // End of variables declaration//GEN-END:variables

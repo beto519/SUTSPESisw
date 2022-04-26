@@ -9,7 +9,7 @@ package mx.itson.vistas.instrucciones;
  * @author vinko
  */
 public class ReconocimientoVocales extends javax.swing.JFrame {
-
+private int estadoPorcentaje;
     /**
      * Creates new form ReconocimientoVocales
      */
@@ -38,6 +38,10 @@ public class ReconocimientoVocales extends javax.swing.JFrame {
         Procedimiento = new javax.swing.JScrollPane();
         txtProcedimiento = new javax.swing.JTextArea();
         ReconocimientoDeVocales = new javax.swing.JLabel();
+        btnRequiereApoyo = new javax.swing.JButton();
+        btnCasiLogra = new javax.swing.JButton();
+        jProgressBar1 = new javax.swing.JProgressBar();
+        btnCumplioObjetivo = new javax.swing.JButton();
         TxtFondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -84,18 +88,68 @@ public class ReconocimientoVocales extends javax.swing.JFrame {
         txtProcedimiento.setText("PASO 1. Realice imágenes de las vocales por pares (a,e,i,o,u)\nPASO 2. Siente al niño frente a usted, en una mesa de trabajo.\nPASO 3. De un lado coloque una imagen (por ejemplo la a).\nPASO 4. Del otro lado coloque las vocales, incluyendo la misma que está a un lado (a).\nPASO 5. Llame al niño por su nombre, señale la a (que está sola) y diga: “es la a”, haga énfasis en la \npalabra a. \nPASO 6. Luego pregunte, al mismo tiempo que señala las imágenes¿Cuál de estos es la a?\nPASO 7. El niño debe señalar la a.\nPASO 8. Refuerce las respuestas correctas.\nPASO 9. Si no hay respuesta correcta dé apoyo físico, y refuerce.\nPASO 10. Repita el procedimiento con cada una de las vocales.\n");
         Procedimiento.setViewportView(txtProcedimiento);
 
-        getContentPane().add(Procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 220, 1090, 450));
+        getContentPane().add(Procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 220, 1090, 300));
 
         ReconocimientoDeVocales.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         ReconocimientoDeVocales.setText("Reconocimiento de Vocales");
         ReconocimientoDeVocales.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         getContentPane().add(ReconocimientoDeVocales, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 110, 600, 40));
 
+        btnRequiereApoyo.setBackground(new java.awt.Color(255, 51, 51));
+        btnRequiereApoyo.setBorderPainted(false);
+        btnRequiereApoyo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRequiereApoyoActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnRequiereApoyo, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 590, 100, 40));
+
+        btnCasiLogra.setBackground(new java.awt.Color(255, 255, 102));
+        btnCasiLogra.setBorderPainted(false);
+        btnCasiLogra.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCasiLograActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCasiLogra, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 590, 100, 40));
+
+        jProgressBar1.setStringPainted(true);
+        getContentPane().add(jProgressBar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 650, 500, 40));
+
+        btnCumplioObjetivo.setBackground(new java.awt.Color(51, 204, 0));
+        btnCumplioObjetivo.setBorderPainted(false);
+        btnCumplioObjetivo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCumplioObjetivoActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCumplioObjetivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 590, 100, 40));
+
         TxtFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoRosa.jpg"))); // NOI18N
         getContentPane().add(TxtFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 710));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+private void CargarBarra(){
+jProgressBar1.setValue(estadoPorcentaje);
+
+}
+    private void btnRequiereApoyoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyoActionPerformed
+        estadoPorcentaje = 0;
+        CargarBarra();
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRequiereApoyoActionPerformed
+
+    private void btnCasiLograActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLograActionPerformed
+        estadoPorcentaje = 50;
+        CargarBarra();
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCasiLograActionPerformed
+
+    private void btnCumplioObjetivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivoActionPerformed
+        estadoPorcentaje = 100;
+        CargarBarra();// TODO add your handling code here:
+    }//GEN-LAST:event_btnCumplioObjetivoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -142,6 +196,10 @@ public class ReconocimientoVocales extends javax.swing.JFrame {
     private javax.swing.JLabel Programa;
     private javax.swing.JLabel ReconocimientoDeVocales;
     private javax.swing.JLabel TxtFondo;
+    private javax.swing.JButton btnCasiLogra;
+    private javax.swing.JButton btnCumplioObjetivo;
+    private javax.swing.JButton btnRequiereApoyo;
+    private javax.swing.JProgressBar jProgressBar1;
     private javax.swing.JLabel procedimiento;
     private javax.swing.JTextArea txtProcedimiento;
     // End of variables declaration//GEN-END:variables

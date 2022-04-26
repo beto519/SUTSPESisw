@@ -10,7 +10,7 @@ package mx.itson.vistas.instrucciones;
  * @author jotha
  */
 public class MotricidadGruesa extends javax.swing.JFrame {
-
+private int estadoPorcentaje;
     /**
      * Creates new form MotricidadGruesa
      */
@@ -39,6 +39,10 @@ public class MotricidadGruesa extends javax.swing.JFrame {
         procedimiento = new javax.swing.JLabel();
         Procedimiento = new javax.swing.JScrollPane();
         txtProcedimiento = new javax.swing.JTextArea();
+        btnRequiereApoyo = new javax.swing.JButton();
+        btnCasiLogra = new javax.swing.JButton();
+        btnCumplioObjetivo = new javax.swing.JButton();
+        jProgressBar1 = new javax.swing.JProgressBar();
         Fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -87,16 +91,66 @@ public class MotricidadGruesa extends javax.swing.JFrame {
         txtProcedimiento.setColumns(20);
         txtProcedimiento.setFont(new java.awt.Font("Dialog", 0, 17)); // NOI18N
         txtProcedimiento.setRows(5);
-        txtProcedimiento.setText("Para mejorar la motricidad gruesa se harán circuitos donde debe tratar de hacer equilibrio, correr, saltar, \nrodar, escalar.\n\nPoner una línea en el suelo, o una tabla al aire, por donde el niño debe pasar cada vez a mayor velocidad \nmanteniendo el equilibrio o cuidando de siempre pisar la línea que le trazaron. Recuerde, inicie lento y vaya \nimprimiendo cada vez más velocidad.\nColocar una hilera de 5 a 10 obstáculos, los cuales el niño debe pasar por ellos saltándolos. \nLos obstáculos pueden ser cilindros pequeños, o aros.\n\nColocar un circuito, puede apoyarse con aros grandes, o con un gusano de estimulación motriz, \npor donde el niño debe pasar agachado o a gatas.\n\nColocar un circuito donde el niño deba ir y venir corriendo, por lo menos tres repeticiones en este circuito.\n\nPara el circuito de escalar puede apoyarse con el uso de una escalera.\n\nColocar un circuito en donde se acueste y tenga que rodar.\n\nLanzar una pelota.\n\nCachar una pelota.\n\nMantener el equilibrio.\n\n\n");
+        txtProcedimiento.setText("Para mejorar la motricidad gruesa se harán circuitos donde debe tratar de hacer equilibrio, correr, saltar, \nrodar, escalar.\nPoner una línea en el suelo, o una tabla al aire, por donde el niño debe pasar cada vez a mayor velocidad \nmanteniendo el equilibrio o cuidando de siempre pisar la línea que le trazaron. Recuerde, inicie lento y vaya \nimprimiendo cada vez más velocidad.\nColocar una hilera de 5 a 10 obstáculos, los cuales el niño debe pasar por ellos saltándolos. \nLos obstáculos pueden ser cilindros pequeños, o aros.\nColocar un circuito, puede apoyarse con aros grandes, o con un gusano de estimulación motriz, \npor donde el niño debe pasar agachado o a gatas.\nColocar un circuito donde el niño deba ir y venir corriendo, por lo menos tres repeticiones en este circuito.\nPara el circuito de escalar puede apoyarse con el uso de una escalera.\nColocar un circuito en donde se acueste y tenga que rodar.\nLanzar una pelota.\nCachar una pelota.\nMantener el equilibrio.\n\n\n");
         Procedimiento.setViewportView(txtProcedimiento);
 
-        getContentPane().add(Procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 170, 1020, 540));
+        getContentPane().add(Procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 170, 1020, 420));
+
+        btnRequiereApoyo.setBackground(new java.awt.Color(255, 51, 51));
+        btnRequiereApoyo.setBorderPainted(false);
+        btnRequiereApoyo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRequiereApoyoActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnRequiereApoyo, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 610, 100, 40));
+
+        btnCasiLogra.setBackground(new java.awt.Color(255, 255, 102));
+        btnCasiLogra.setBorderPainted(false);
+        btnCasiLogra.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCasiLograActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCasiLogra, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 610, 100, 40));
+
+        btnCumplioObjetivo.setBackground(new java.awt.Color(51, 204, 0));
+        btnCumplioObjetivo.setBorderPainted(false);
+        btnCumplioObjetivo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCumplioObjetivoActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCumplioObjetivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 610, 100, 40));
+
+        jProgressBar1.setStringPainted(true);
+        getContentPane().add(jProgressBar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 670, 500, 40));
 
         Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoAmarillo.jpg"))); // NOI18N
         getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -180, 1280, 1080));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+private void CargarBarra(){
+jProgressBar1.setValue(estadoPorcentaje);
+
+}
+    private void btnRequiereApoyoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyoActionPerformed
+        estadoPorcentaje = 0;
+        CargarBarra();
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRequiereApoyoActionPerformed
+
+    private void btnCasiLograActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLograActionPerformed
+        estadoPorcentaje = 50;
+        CargarBarra();
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCasiLograActionPerformed
+
+    private void btnCumplioObjetivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivoActionPerformed
+        estadoPorcentaje = 100;
+        CargarBarra();// TODO add your handling code here:
+    }//GEN-LAST:event_btnCumplioObjetivoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -143,6 +197,10 @@ public class MotricidadGruesa extends javax.swing.JFrame {
     private javax.swing.JScrollPane Procedimiento;
     private javax.swing.JLabel Programa;
     private javax.swing.JLabel ReconocimientoCorporal;
+    private javax.swing.JButton btnCasiLogra;
+    private javax.swing.JButton btnCumplioObjetivo;
+    private javax.swing.JButton btnRequiereApoyo;
+    private javax.swing.JProgressBar jProgressBar1;
     private javax.swing.JLabel procedimiento;
     private javax.swing.JTextArea txtProcedimiento;
     // End of variables declaration//GEN-END:variables

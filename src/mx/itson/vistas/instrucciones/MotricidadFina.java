@@ -10,6 +10,7 @@ package mx.itson.vistas.instrucciones;
  * @author jotha
  */
 public class MotricidadFina extends javax.swing.JFrame {
+private int estadoPorcentaje;
 
     /**
      * Creates new form MotricidadFina
@@ -39,6 +40,10 @@ public class MotricidadFina extends javax.swing.JFrame {
         procedimiento = new javax.swing.JLabel();
         Procedimiento = new javax.swing.JScrollPane();
         txtProcedimiento = new javax.swing.JTextArea();
+        btnRequiereApoyo = new javax.swing.JButton();
+        btnCasiLogra = new javax.swing.JButton();
+        btnCumplioObjetivo = new javax.swing.JButton();
+        jProgressBar1 = new javax.swing.JProgressBar();
         Fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -90,13 +95,63 @@ public class MotricidadFina extends javax.swing.JFrame {
         txtProcedimiento.setText("Para mejorar la motricidad fina realice los siguientes ejercicios:\n\n1. Colocar pinzas de la ropa en la orilla de algún plástico.\n\n2. Ensartar un mecatito a través de los orificios de figuras o tablas.\n\n3. Colocar canicas dentro de un bote, una por una.\n\n4. Hacer círculos grandes con lápiz o crayolas.\n\n5. Pegar bolitas de papel.\n\n");
         Procedimiento.setViewportView(txtProcedimiento);
 
-        getContentPane().add(Procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 200, 910, 440));
+        getContentPane().add(Procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 200, 910, 390));
+
+        btnRequiereApoyo.setBackground(new java.awt.Color(255, 51, 51));
+        btnRequiereApoyo.setBorderPainted(false);
+        btnRequiereApoyo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRequiereApoyoActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnRequiereApoyo, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 610, 100, 40));
+
+        btnCasiLogra.setBackground(new java.awt.Color(255, 255, 102));
+        btnCasiLogra.setBorderPainted(false);
+        btnCasiLogra.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCasiLograActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCasiLogra, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 610, 100, 40));
+
+        btnCumplioObjetivo.setBackground(new java.awt.Color(51, 204, 0));
+        btnCumplioObjetivo.setBorderPainted(false);
+        btnCumplioObjetivo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCumplioObjetivoActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCumplioObjetivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 610, 100, 40));
+
+        jProgressBar1.setStringPainted(true);
+        getContentPane().add(jProgressBar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 670, 500, 40));
 
         Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoAmarillo.jpg"))); // NOI18N
         getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+private void CargarBarra(){
+jProgressBar1.setValue(estadoPorcentaje);
+
+}
+    private void btnRequiereApoyoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyoActionPerformed
+        estadoPorcentaje = 0;
+        CargarBarra();
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRequiereApoyoActionPerformed
+
+    private void btnCasiLograActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLograActionPerformed
+        estadoPorcentaje = 50;
+        CargarBarra();
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCasiLograActionPerformed
+
+    private void btnCumplioObjetivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivoActionPerformed
+        estadoPorcentaje = 100;
+        CargarBarra();// TODO add your handling code here:
+    }//GEN-LAST:event_btnCumplioObjetivoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -143,6 +198,10 @@ public class MotricidadFina extends javax.swing.JFrame {
     private javax.swing.JScrollPane Procedimiento;
     private javax.swing.JLabel Programa;
     private javax.swing.JLabel ReconocimientoCorporal;
+    private javax.swing.JButton btnCasiLogra;
+    private javax.swing.JButton btnCumplioObjetivo;
+    private javax.swing.JButton btnRequiereApoyo;
+    private javax.swing.JProgressBar jProgressBar1;
     private javax.swing.JLabel procedimiento;
     private javax.swing.JTextArea txtProcedimiento;
     // End of variables declaration//GEN-END:variables

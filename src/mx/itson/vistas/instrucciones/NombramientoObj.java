@@ -10,7 +10,7 @@ package mx.itson.vistas.instrucciones;
  * @author jotha
  */
 public class NombramientoObj extends javax.swing.JFrame {
-
+private int estadoPorcentaje;
     /**
      * Creates new form NombramientoObj
      */
@@ -39,6 +39,10 @@ public class NombramientoObj extends javax.swing.JFrame {
         procedimiento = new javax.swing.JLabel();
         Procedimiento = new javax.swing.JScrollPane();
         txtProcedimiento = new javax.swing.JTextArea();
+        btnRequiereApoyo = new javax.swing.JButton();
+        btnCasiLogra = new javax.swing.JButton();
+        btnCumplioObjetivo = new javax.swing.JButton();
+        jProgressBar1 = new javax.swing.JProgressBar();
         Fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -90,13 +94,63 @@ public class NombramientoObj extends javax.swing.JFrame {
         txtProcedimiento.setText("PASO 1. Colóquese frente al niño. Seleccione un cuaderno de imágenes comunes, por ejemplo, frutas, \nverduras, medios de transporte, objetos de la casa, etc…\nPASO 2. La imagen debe ser del tamaño aproximado a un cuarto de hoja de tamaño carta.\nPASO 3. Llame al niño por su nombre y diga: “¿Qué es esto?\nPASO 4. La respuesta correcta del niño es que nombre el objeto.\nPASO 5. Si el niño no nombra el objeto, vuelva a realizar la indicación y apoye físicamente moviendo la boca\ndel niño y los labios acorde al movimiento natural para decir la palabra.\nPASO 6. Disminuya el apoyo en forma gradual hasta lograr el criterio.\nPASO 7. Refuerce cada respuesta del niño.\n\n");
         Procedimiento.setViewportView(txtProcedimiento);
 
-        getContentPane().add(Procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 220, 1130, 420));
+        getContentPane().add(Procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 220, 1130, 270));
+
+        btnRequiereApoyo.setBackground(new java.awt.Color(255, 51, 51));
+        btnRequiereApoyo.setBorderPainted(false);
+        btnRequiereApoyo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRequiereApoyoActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnRequiereApoyo, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 560, 100, 40));
+
+        btnCasiLogra.setBackground(new java.awt.Color(255, 255, 102));
+        btnCasiLogra.setBorderPainted(false);
+        btnCasiLogra.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCasiLograActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCasiLogra, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 560, 100, 40));
+
+        btnCumplioObjetivo.setBackground(new java.awt.Color(51, 204, 0));
+        btnCumplioObjetivo.setBorderPainted(false);
+        btnCumplioObjetivo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCumplioObjetivoActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCumplioObjetivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 560, 100, 40));
+
+        jProgressBar1.setStringPainted(true);
+        getContentPane().add(jProgressBar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 620, 500, 40));
 
         Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoAmarillo.jpg"))); // NOI18N
         getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+private void CargarBarra(){
+jProgressBar1.setValue(estadoPorcentaje);
+
+}
+    private void btnRequiereApoyoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyoActionPerformed
+        estadoPorcentaje = 0;
+        CargarBarra();
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRequiereApoyoActionPerformed
+
+    private void btnCasiLograActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLograActionPerformed
+        estadoPorcentaje = 50;
+        CargarBarra();
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCasiLograActionPerformed
+
+    private void btnCumplioObjetivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivoActionPerformed
+        estadoPorcentaje = 100;
+        CargarBarra();// TODO add your handling code here:
+    }//GEN-LAST:event_btnCumplioObjetivoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -143,6 +197,10 @@ public class NombramientoObj extends javax.swing.JFrame {
     private javax.swing.JScrollPane Procedimiento;
     private javax.swing.JLabel Programa;
     private javax.swing.JLabel ReconocimientoCorporal;
+    private javax.swing.JButton btnCasiLogra;
+    private javax.swing.JButton btnCumplioObjetivo;
+    private javax.swing.JButton btnRequiereApoyo;
+    private javax.swing.JProgressBar jProgressBar1;
     private javax.swing.JLabel procedimiento;
     private javax.swing.JTextArea txtProcedimiento;
     // End of variables declaration//GEN-END:variables

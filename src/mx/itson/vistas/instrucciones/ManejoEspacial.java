@@ -40,6 +40,7 @@ public class ManejoEspacial extends javax.swing.JFrame {
         Procedimiento = new javax.swing.JScrollPane();
         txtProcedimiento = new javax.swing.JTextArea();
         Btn_Instrucciones = new javax.swing.JButton();
+        jProgressBar1 = new javax.swing.JProgressBar();
         Fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -106,7 +107,10 @@ public class ManejoEspacial extends javax.swing.JFrame {
                 Btn_InstruccionesActionPerformed(evt);
             }
         });
-        getContentPane().add(Btn_Instrucciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 550, 200, 50));
+        getContentPane().add(Btn_Instrucciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 610, 200, 50));
+
+        jProgressBar1.setStringPainted(true);
+        getContentPane().add(jProgressBar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 560, 500, 40));
 
         Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoAmarillo.jpg"))); // NOI18N
         getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1290, 720));
@@ -114,15 +118,18 @@ public class ManejoEspacial extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void Btn_InstruccionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_InstruccionesActionPerformed
+InstruccManejoEspacial abrir = new  InstruccManejoEspacial();
+abrir.setVisible(true);
+dispose();
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Btn_InstruccionesActionPerformed
+
     private void Btn_InstruccionesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Btn_InstruccionesMouseClicked
         InstruccManejoEspacial instrucciones = new InstruccManejoEspacial();
         instrucciones.setVisible(true);
         dispose();
     }//GEN-LAST:event_Btn_InstruccionesMouseClicked
-
-    private void Btn_InstruccionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_InstruccionesActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Btn_InstruccionesActionPerformed
 
     /**
      * @param args the command line arguments
@@ -170,6 +177,7 @@ public class ManejoEspacial extends javax.swing.JFrame {
     private javax.swing.JScrollPane Procedimiento;
     private javax.swing.JLabel Programa;
     private javax.swing.JLabel ReconocimientoCorporal;
+    private javax.swing.JProgressBar jProgressBar1;
     private javax.swing.JLabel procedimiento;
     private javax.swing.JTextArea txtProcedimiento;
     // End of variables declaration//GEN-END:variables

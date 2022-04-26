@@ -9,7 +9,7 @@ package mx.itson.vistas.instrucciones;
  * @author lopez
  */
 public class SaludarMano extends javax.swing.JFrame {
-
+private int estadoPorcentaje;
     /**
      * Creates new form SaludarMano
      */
@@ -38,6 +38,10 @@ public class SaludarMano extends javax.swing.JFrame {
         NombreDelPrograma1 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         ReconocimientoCorporal1 = new javax.swing.JLabel();
+        btnRequiereApoyo = new javax.swing.JButton();
+        btnCasiLogra = new javax.swing.JButton();
+        btnCumplioObjetivo = new javax.swing.JButton();
+        jProgressBar1 = new javax.swing.JProgressBar();
         jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -60,7 +64,7 @@ public class SaludarMano extends javax.swing.JFrame {
         jTextArea3.setText("PASO 1. Cuando se encuentre por primera vez con una persona.\nPASO 2. Llámelo por su nombre y dé la instrucción: “Saluda”.\nPASO 3. La respuesta correcta es acercarse a las personas y extender la mano para saludar.\nPASO 4. Si da la respuesta correcta refuerce.\nPASO 5. Si no se da la respuesta correcta ofrezca apoyo físico.\nPASO 6. Disminuya el apoyo gradualmente hasta cumplir el criterio.\n");
         jScrollPane3.setViewportView(jTextArea3);
 
-        getContentPane().add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 190, 1010, 440));
+        getContentPane().add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 190, 1010, 280));
 
         MtroManuel2.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         MtroManuel2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -90,12 +94,62 @@ public class SaludarMano extends javax.swing.JFrame {
         ReconocimientoCorporal1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         getContentPane().add(ReconocimientoCorporal1, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 80, 560, 40));
 
+        btnRequiereApoyo.setBackground(new java.awt.Color(255, 51, 51));
+        btnRequiereApoyo.setBorderPainted(false);
+        btnRequiereApoyo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRequiereApoyoActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnRequiereApoyo, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 590, 100, 40));
+
+        btnCasiLogra.setBackground(new java.awt.Color(255, 255, 102));
+        btnCasiLogra.setBorderPainted(false);
+        btnCasiLogra.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCasiLograActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCasiLogra, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 590, 100, 40));
+
+        btnCumplioObjetivo.setBackground(new java.awt.Color(51, 204, 0));
+        btnCumplioObjetivo.setBorderPainted(false);
+        btnCumplioObjetivo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCumplioObjetivoActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCumplioObjetivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 590, 100, 40));
+
+        jProgressBar1.setStringPainted(true);
+        getContentPane().add(jProgressBar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 650, 500, 40));
+
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoAzul.jpg"))); // NOI18N
         jLabel5.setText("jLabel1");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, 1280, 750));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+private void CargarBarra(){
+jProgressBar1.setValue(estadoPorcentaje);
+
+}
+    private void btnRequiereApoyoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyoActionPerformed
+        estadoPorcentaje = 0;
+        CargarBarra();
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRequiereApoyoActionPerformed
+
+    private void btnCasiLograActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLograActionPerformed
+        estadoPorcentaje = 50;
+        CargarBarra();
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCasiLograActionPerformed
+
+    private void btnCumplioObjetivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivoActionPerformed
+        estadoPorcentaje = 100;
+        CargarBarra();// TODO add your handling code here:
+    }//GEN-LAST:event_btnCumplioObjetivoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -139,8 +193,12 @@ public class SaludarMano extends javax.swing.JFrame {
     private javax.swing.JLabel MtroManuel2;
     private javax.swing.JLabel NombreDelPrograma1;
     private javax.swing.JLabel ReconocimientoCorporal1;
+    private javax.swing.JButton btnCasiLogra;
+    private javax.swing.JButton btnCumplioObjetivo;
+    private javax.swing.JButton btnRequiereApoyo;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JProgressBar jProgressBar1;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTextArea jTextArea3;
     private javax.swing.JLabel procedimiento2;
