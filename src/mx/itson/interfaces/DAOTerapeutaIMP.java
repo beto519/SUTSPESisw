@@ -52,7 +52,6 @@ public class DAOTerapeutaIMP implements DAOTerapeuta {
                         + " '" + terapeuta.getPuesto()+ "', "
                         + " '" + terapeuta.getCorreo()+ "', "
                         + " '" + terapeuta.getCodigoUsuario()+ "', "
-                     
                         +("MD5('")+(terapeuta.getContraseña())+("'),")
                         + " '" + terapeuta.getNomImagen()+ "', "
                         + " '" + terapeuta.getImagen()+ "') ";
@@ -123,7 +122,6 @@ public class DAOTerapeutaIMP implements DAOTerapeuta {
                     terapeuta.setCorreo(rs.getString("email"));
                     terapeuta.setCodigoUsuario(rs.getString("usuario"));
                     terapeuta.setContraseña(rs.getString("contraseña"));
-                    terapeuta.setNomImagen(rs.getString("nomImagen"));
                     terapeuta.setImagen(rs.getString("imagen"));
                     terapeutas.add(terapeuta);
                 }
@@ -152,7 +150,6 @@ public class DAOTerapeutaIMP implements DAOTerapeuta {
                     empleado.setCorreo(rs.getString("email"));
                     empleado.setCodigoUsuario(rs.getString("usuario"));
                     empleado.setContraseña(rs.getString("contraseña"));
-                    empleado.setNomImagen(rs.getString("nomImagen"));
                     empleado.setImagen(rs.getString("imagen"));
                    
                 }

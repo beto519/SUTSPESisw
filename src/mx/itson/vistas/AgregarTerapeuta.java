@@ -46,13 +46,8 @@ public class AgregarTerapeuta extends javax.swing.JFrame {
     
     public void GuardarImagen() {
 
-        if (txt_NombreImagen.getText().equals("")) {
-            txt_NombreImagen.setBackground(Color.red);
-            JOptionPane.showMessageDialog(null, "Debes llenar todos los campos");
-        } else {
-
             String NombreCompleto;
-            NombreCompleto = txt_NombreImagen.getText().trim();
+            NombreCompleto = txtNombre.getText().trim();
             String Puesto;
             Puesto = txtPuesto.getText().trim();
             String Email;
@@ -61,13 +56,11 @@ public class AgregarTerapeuta extends javax.swing.JFrame {
             CodigoUsuario = txtUsuario.getText();
             String Contraseña;
             Contraseña = String.valueOf(txtContraseña.getPassword());
-            String nombreImg;
-            nombreImg = txt_NombreImagen.getText().trim();
 
             try {
 
                 Connection cn = DBHelper.conectar();
-                PreparedStatement pst = cn.prepareStatement("insert into `bxopxuzsnsc4au7ggfnf`.`terapeuta` values (?,?,?,?,?,MD5(?),?,?)");
+                PreparedStatement pst = cn.prepareStatement("insert into `bxopxuzsnsc4au7ggfnf`.`terapeuta` values (?,?,?,?,?,MD5(?),?)");
                 
                 pst.setInt(1, 0);
                 pst.setString(2, NombreCompleto);
@@ -75,13 +68,11 @@ public class AgregarTerapeuta extends javax.swing.JFrame {
                 pst.setString(4, Email);
                 pst.setString(5, CodigoUsuario+"");
                 pst.setString(6, Contraseña);
-                pst.setString(7, nombreImg);
-                pst.setBlob(8, fis, longitudBytes);
+                pst.setBlob(7, fis, longitudBytes);
                 
                 pst.executeUpdate();
                 cn.close();
                 limpiarCampos();
-                txt_NombreImagen.setBackground(Color.green);
                 lbl_imagen.setText("Foto");
                 JOptionPane.showMessageDialog(null, "Registro Exitoso");
                 
@@ -90,7 +81,6 @@ public class AgregarTerapeuta extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, "¡¡Error al guardar foto!!");
             }
 
-        }
     }
     
     
@@ -114,7 +104,6 @@ public class AgregarTerapeuta extends javax.swing.JFrame {
         txtContraseña = new javax.swing.JPasswordField();
         lbl_imagen = new javax.swing.JLabel();
         lbl_subirImagen = new javax.swing.JLabel();
-        txt_NombreImagen = new javax.swing.JTextField();
         Fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -152,16 +141,22 @@ public class AgregarTerapeuta extends javax.swing.JFrame {
         getContentPane().add(txtPuesto, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 230, 380, 50));
 
         lblCorreo.setText("Correo");
-        getContentPane().add(lblCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 300, 220, 50));
+        getContentPane().add(lblCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 300, 220, 50));
         getContentPane().add(txtCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 340, 380, 50));
-        getContentPane().add(txtUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 450, 380, 50));
+
+        txtUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtUsuarioActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 450, 380, 50));
 
         lblContraseña.setText("Contraseña");
-        getContentPane().add(lblContraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 510, 220, 50));
+        getContentPane().add(lblContraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 520, 220, 50));
 
         lblUsuario1.setText("Usuario");
-        getContentPane().add(lblUsuario1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 410, 220, 50));
-        getContentPane().add(txtContraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 550, 380, 50));
+        getContentPane().add(lblUsuario1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 410, 220, 50));
+        getContentPane().add(txtContraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 560, 380, 50));
         getContentPane().add(lbl_imagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 10, 450, 440));
 
         lbl_subirImagen.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
@@ -178,9 +173,8 @@ public class AgregarTerapeuta extends javax.swing.JFrame {
             }
         });
         getContentPane().add(lbl_subirImagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 560, -1, -1));
-        getContentPane().add(txt_NombreImagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 460, 380, 50));
 
-        Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoRosa.jpg"))); // NOI18N
+        Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoAzul.jpg"))); // NOI18N
         getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
 
         pack();
@@ -223,6 +217,10 @@ public class AgregarTerapeuta extends javax.swing.JFrame {
         }
 
     }//GEN-LAST:event_lbl_subirImagenMouseClicked
+
+    private void txtUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtUsuarioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtUsuarioActionPerformed
 
     /**
      * @param args the command line arguments
@@ -275,6 +273,5 @@ public class AgregarTerapeuta extends javax.swing.JFrame {
     private javax.swing.JTextField txtNombre;
     private javax.swing.JTextField txtPuesto;
     private javax.swing.JTextField txtUsuario;
-    private javax.swing.JTextField txt_NombreImagen;
     // End of variables declaration//GEN-END:variables
 }
