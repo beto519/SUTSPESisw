@@ -23,7 +23,7 @@ public class DAOAlumnoIMP implements DAOAlumno {
         boolean rs = false;
         try{
           if (DB.connect()) {
-                String query = "INSERT INTO `bxopxuzsnsc4au7ggfnf`.`niños`(nombreCompleto, edad, nivelActual, nombreTutor, telefono, nomImagen, imagen)"
+                String query = "INSERT INTO `bxopxuzsnsc4au7ggfnf`.`niños`(nombreCompleto, edad, nivelActual, nombreTutor, telefono, imagen,porcentaje)"
                         + " VALUES (" +
                         "'" + ga.getNombre() + "', " + 
                         "'" + ga.getEdad() + "', " +
@@ -31,7 +31,8 @@ public class DAOAlumnoIMP implements DAOAlumno {
                         "'" + ga.getNombreTutor() + "', " +
                         "'" + ga.getTelefono() + "', " +
                         "'" + ga.getNomImagen() + "', " +
-                        "'" + ga.getImagen() + "')";
+                         "'" + ga.getImagen() + "', " +
+                        "'" + ga.getPorcentaje()+ "')";
                 rs = (boolean) DB.execute(query, true);
           }
         }catch(Exception ex){
@@ -54,8 +55,8 @@ public class DAOAlumnoIMP implements DAOAlumno {
                         + "'" + niño.getNivel()+ "', " 
                         + "'" + niño.getNombreTutor()+ "', " 
                         + "'" + niño.getTelefono()+ "', "
-                        + "'" + niño.getNomImagen()+ "', " 
-                        + "'" + niño.getImagen()+ "')"
+                        + "'" + niño.getImagen()+ "', " 
+                        + "'" + niño.getPorcentaje()+ "')"
                         + "WHERE idNiño =" + niño.getIdAlumno();
                         
 
@@ -105,7 +106,6 @@ public class DAOAlumnoIMP implements DAOAlumno {
                 alumno.setNivel(rs.getString("nivelActual"));
                 alumno.setNombreTutor(rs.getString("nombreTutor"));
                 alumno.setTelefono(rs.getString("telefono"));
-                alumno.setNomImagen(rs.getString("nomImagen"));
                 alumno.setImagen(rs.getString("imagen"));
                 alumno.setImagen(rs.getString("porcentaje"));
                 alumnos.add(alumno);
@@ -133,8 +133,8 @@ public class DAOAlumnoIMP implements DAOAlumno {
                 alumno.setNivel(rs.getString("nivelActual"));
                 alumno.setNombreTutor(rs.getString("nombreTutor"));
                 alumno.setTelefono(rs.getString("telefono"));
-                alumno.setNomImagen(rs.getString("nomImagen"));
                 alumno.setImagen(rs.getString("imagen"));
+                   alumno.setImagen(rs.getString("porcentaje"));
             }
             }
         } catch (Exception ex) {

@@ -6,12 +6,18 @@ package mx.itson.vistas.instrucciones;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import mx.itson.entidades.Alumno;
+import mx.itson.interfaces.DAOAlumnoIMP;
+import mx.itson.vistas.LoginNiños;
 
 /**
  *
  * @author lopez
  */
 public class AdiosConMano extends javax.swing.JFrame {
+    DAOAlumnoIMP Alumno = new DAOAlumnoIMP();
+    LoginNiños ln = new LoginNiños();
+    
 private int  estadoPorcentaje;
     /**
      * Creates new form AdiosConMano
@@ -142,7 +148,12 @@ jProgressBar1.setValue(estadoPorcentaje);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+private void obtenerNiño(){
+Alumno.editar();
 
+
+
+}
     private void btnCasiLograActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLograActionPerformed
 estadoPorcentaje = 50;    
 CargarBarra();
