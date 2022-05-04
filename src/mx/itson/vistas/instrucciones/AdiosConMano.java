@@ -149,7 +149,6 @@ jProgressBar1.setValue(estadoPorcentaje);
         pack();
     }// </editor-fold>//GEN-END:initComponents
 private void obtenerNiño(){
-Alumno.editar();
 
 
 

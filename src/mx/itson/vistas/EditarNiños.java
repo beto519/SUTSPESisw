@@ -62,15 +62,13 @@ public class EditarNiños extends javax.swing.JFrame {
             NombreTutor = txtTutor.getText().trim();
             long Telefono;
             Telefono = Long.valueOf(txtTelefono.getText().trim());
-            String nombreImg;
-            nombreImg = txt_NombreImagen.getText().trim();
             
             
             try {
                 if(longitudBytes != 0){
                  Connection cn = DBHelper.conectar();
                 PreparedStatement pst = cn.prepareStatement("UPDATE `bxopxuzsnsc4au7ggfnf`.`niños` SET nombreCom = ?, edad = ?, nivelActual = ?, "
-                        + "nombreTutor = ?, telefono = ?, nomImagen = ?, imagen = ? WHERE idNiño = ?");
+                        + "nombreTutor = ?, telefono = ?, imagen = ? WHERE idNiño = ?");
                 
                 
                 pst.setString(1, NombreCompleto);
@@ -78,9 +76,8 @@ public class EditarNiños extends javax.swing.JFrame {
                 pst.setString(3, Nivel+"");
                 pst.setString(4, NombreTutor);
                 pst.setString(5, Telefono+"");
-                pst.setString(6, nombreImg);
-                pst.setBlob(7, fis, longitudBytes);
-                pst.setInt(8, VN.idNiño);
+                pst.setBlob(6, fis, longitudBytes);
+                pst.setInt(7, VN.idNiño);
                 
                 
                 pst.executeUpdate();
@@ -99,8 +96,7 @@ public class EditarNiños extends javax.swing.JFrame {
                 pst.setString(3, Nivel+"");
                 pst.setString(4, NombreTutor);
                 pst.setString(5, Telefono+"");
-                pst.setString(6, nombreImg);
-                pst.setInt(7, VN.idNiño);
+                pst.setInt(6, VN.idNiño);
                 
                 
                 
@@ -131,7 +127,6 @@ public class EditarNiños extends javax.swing.JFrame {
             txtEdad.setText(nino.getEdad()+"");
             txtTutor.setText(nino.getNombreTutor());
             txtTelefono.setText(nino.getTelefono());
-            nino.getNomImagen();
             nino.getImagen();
             
             try {
@@ -142,7 +137,7 @@ public class EditarNiños extends javax.swing.JFrame {
                 
                 if(rs.next()){
                     //leer Binario
-                    Blob blob = rs.getBlob(8);
+                    Blob blob = rs.getBlob(7);
                     //pasar el binario a imagen
                     byte[] data = blob.getBytes(1, (int) blob.length());
                     //lee la imagen

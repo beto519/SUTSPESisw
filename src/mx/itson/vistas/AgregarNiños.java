@@ -61,12 +61,10 @@ public class AgregarNiños extends javax.swing.JFrame {
             NombreTutor = txtTutor.getText().trim();
             long Telefono;
             Telefono = Long.valueOf(txtTelefono.getText().trim());
-            String nombreImg;
-            nombreImg = txt_NombreImagen.getText().trim();
 
             try {
                 Connection cn = DBHelper.conectar();
-                PreparedStatement pst = cn.prepareStatement("insert into `bxopxuzsnsc4au7ggfnf`.`niños` values (?,?,?,?,?,?,?,?)");
+                PreparedStatement pst = cn.prepareStatement("insert into `bxopxuzsnsc4au7ggfnf`.`niños` values (?,?,?,?,?,?,?)");
                 
                 pst.setInt(1, 0);
                 pst.setString(2, NombreCompleto);
@@ -74,8 +72,7 @@ public class AgregarNiños extends javax.swing.JFrame {
                 pst.setString(4, Nivel+"");
                 pst.setString(5, NombreTutor);
                 pst.setString(6, Telefono+"");
-                pst.setString(7, nombreImg);
-                pst.setBlob(8, fis, longitudBytes);
+                pst.setBlob(7, fis, longitudBytes);
                 
                 pst.executeUpdate();
                 cn.close();

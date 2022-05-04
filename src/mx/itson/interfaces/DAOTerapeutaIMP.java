@@ -47,13 +47,12 @@ public class DAOTerapeutaIMP implements DAOTerapeuta {
         boolean resultado = false;
         try {
             if (db.connect()) {
-                String query = "INSERT INTO `bxopxuzsnsc4au7ggfnf`.`terapeuta` (`nombreCom`, `Area`, `email`, `usuario`, `contraseña`, `nomImagen`, `imagen`) "
+                String query = "INSERT INTO `bxopxuzsnsc4au7ggfnf`.`terapeuta` (`nombreCom`, `Area`, `email`, `usuario`, `contraseña`, `imagen`) "
                         + " VALUES ('" + terapeuta.getNombre() + "', "
                         + " '" + terapeuta.getPuesto()+ "', "
                         + " '" + terapeuta.getCorreo()+ "', "
                         + " '" + terapeuta.getCodigoUsuario()+ "', "
                         +("MD5('")+(terapeuta.getContraseña())+("'),")
-                        + " '" + terapeuta.getNomImagen()+ "', "
                         + " '" + terapeuta.getImagen()+ "') ";
                 resultado = (boolean) db.execute(query, true);
             }
@@ -75,7 +74,6 @@ public class DAOTerapeutaIMP implements DAOTerapeuta {
                         + "`email` = '" + terapeuta.getCorreo()+ "', "
                         + "`usuario` = '" + terapeuta.getCodigoUsuario()+ "', "
                         + "`contraseña` = '" + terapeuta.getContraseña()+ "', "
-                        + "`nomImagen` = '" + terapeuta.getNomImagen()+ "', "
                         + "`imagen` = '" + terapeuta.getImagen()+ "' "
                         + " WHERE (`IdTerap` = '" + terapeuta.getId() + "') ";
                 resultado = (boolean) db.execute(query, true);
