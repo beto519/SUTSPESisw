@@ -10,13 +10,15 @@ package mx.itson.vistas;
  */
 public class Menu extends javax.swing.JFrame {
 
+    public static int nivelInstruccion;
+
     /**
      * Creates new form Menu
      */
     public Menu() {
         initComponents();
         setLocationRelativeTo(null);
-        
+
     }
 
     /**
@@ -129,7 +131,9 @@ public class Menu extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnIntruccionesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnIntruccionesMouseClicked
-        Instrucciones1 instruc = new Instrucciones1();
+
+        nivelInstruccion = 1;
+        LoginNiños instruc = new LoginNiños();
         instruc.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnIntruccionesMouseClicked
@@ -147,19 +151,19 @@ public class Menu extends javax.swing.JFrame {
     }//GEN-LAST:event_btnVerTerapeutaMouseClicked
 
     private void btnIntrucciones1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnIntrucciones1MouseClicked
-Instrucciones2 abrir = new Instrucciones2();
-abrir.setVisible(true);
-dispose();
-
+        nivelInstruccion = 2;
+        LoginNiños abrir = new LoginNiños();
+        abrir.setVisible(true);
+        dispose();
 
         // TODO add your handling code here:
     }//GEN-LAST:event_btnIntrucciones1MouseClicked
 
     private void btnIntrucciones2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnIntrucciones2MouseClicked
-
-Intrucciones3 abrir = new Intrucciones3();
-abrir.setVisible(true);
-dispose();
+        nivelInstruccion = 3;
+        LoginNiños abrir = new LoginNiños();
+        abrir.setVisible(true);
+        dispose();
         // TODO add your handling code here:
     }//GEN-LAST:event_btnIntrucciones2MouseClicked
 

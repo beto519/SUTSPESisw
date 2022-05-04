@@ -17,6 +17,7 @@ import mx.itson.interfaces.DAOAlumnoIMP;
 public class LoginNiños extends javax.swing.JFrame {
    DAOAlumnoIMP dao = new DAOAlumnoIMP();
     public static int claveNiño;
+    Menu m = new Menu();
     /**
      * Creates new form LoginNiños
      */
@@ -91,7 +92,15 @@ public class LoginNiños extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-  private void LlenarTabla(){
+  private void comprobarNivel(){
+
+  
+      if (m.nivelInstruccion == 1) {
+          
+      }
+  
+  }
+    private void LlenarTabla(){
     List<Alumno> alumno = dao.obtenerTodos();
     DefaultTableModel model = new DefaultTableModel();
     
@@ -121,9 +130,22 @@ public class LoginNiños extends javax.swing.JFrame {
         claveNiño = id;
 
         if(evt.getClickCount() == 2){
-            Instrucciones1 MN = new Instrucciones1();
+            
+            if (m.nivelInstruccion == 1) {
+           Instrucciones1 MN = new Instrucciones1();
             MN.setVisible(true);
             this.dispose();
+      }else if(m.nivelInstruccion == 2){
+      Instrucciones2 MN = new Instrucciones2();
+            MN.setVisible(true);
+            this.dispose();
+      
+      }else if(m.nivelInstruccion == 3){
+       Intrucciones3 MN = new Intrucciones3();
+            MN.setVisible(true);
+            this.dispose();
+      }
+           
         }
     }//GEN-LAST:event_tbl_NiñosMouseClicked
 
