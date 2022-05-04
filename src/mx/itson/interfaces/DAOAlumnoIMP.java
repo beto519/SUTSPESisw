@@ -50,13 +50,7 @@ public class DAOAlumnoIMP implements DAOAlumno {
         try {
             if(DB.connect()){
                 String query = "UPDATE `bxopxuzsnsc4au7ggfnf`.`niños` SET "
-                        + "'" + niño.getNombre() + "', " 
-                        + "'" + niño.getEdad()+ "', " 
-                        + "'" + niño.getNivel()+ "', " 
-                        + "'" + niño.getNombreTutor()+ "', " 
-                        + "'" + niño.getTelefono()+ "', "
-                        + "'" + niño.getImagen()+ "', " 
-                        + "'" + niño.getPorcentaje()+ "')"
+                      + " `porcentaje` = '" + niño.getPorcentaje()+ "' "
                         + "WHERE idNiño =" + niño.getIdAlumno();
                         
 
@@ -107,7 +101,7 @@ public class DAOAlumnoIMP implements DAOAlumno {
                 alumno.setNombreTutor(rs.getString("nombreTutor"));
                 alumno.setTelefono(rs.getString("telefono"));
                 alumno.setImagen(rs.getString("imagen"));
-                alumno.setImagen(rs.getString("porcentaje"));
+                alumno.setPorcentaje(rs.getDouble("porcentaje"));
                 alumnos.add(alumno);
             }
             }
@@ -134,7 +128,7 @@ public class DAOAlumnoIMP implements DAOAlumno {
                 alumno.setNombreTutor(rs.getString("nombreTutor"));
                 alumno.setTelefono(rs.getString("telefono"));
                 alumno.setImagen(rs.getString("imagen"));
-                   alumno.setImagen(rs.getString("porcentaje"));
+                   alumno.setPorcentaje(rs.getDouble("porcentaje"));
             }
             }
         } catch (Exception ex) {

@@ -15,24 +15,31 @@ import mx.itson.vistas.LoginNiños;
  * @author lopez
  */
 public class AdiosConMano extends javax.swing.JFrame {
+
     DAOAlumnoIMP Alumno = new DAOAlumnoIMP();
     LoginNiños ln = new LoginNiños();
-    
-private int  estadoPorcentaje;
+    Alumno alum = new Alumno();
+
+    private double estadoPorcentaje;
+    double porcentajeActual;
+
     /**
      * Creates new form AdiosConMano
      */
     public AdiosConMano() {
         initComponents();
         setLocationRelativeTo(null);
+        niño();
 
-   this.setExtendedState(MAXIMIZED_BOTH);
+        this.setExtendedState(MAXIMIZED_BOTH);
 
     }
-private void CargarBarra(){
-jProgressBar1.setValue(estadoPorcentaje);
 
-}
+    private void CargarBarra() {
+        jProgressBar1.setValue((int) estadoPorcentaje);
+
+    }
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -148,26 +155,57 @@ jProgressBar1.setValue(estadoPorcentaje);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+<<<<<<< Updated upstream
 private void obtenerNiño(){
+=======
+>>>>>>> Stashed changes
 
+    private void niño() {
+        Alumno alu = Alumno.obtenerPorId(ln.claveNiño);
+        porcentajeActual = alu.getPorcentaje();
+        estadoPorcentaje = porcentajeActual;
+        CargarBarra();
+    }
 
+    private void PorcentajeNiño() {
 
-}
+        try {
+
+            alum.setPorcentaje(estadoPorcentaje);
+            alum.setIdAlumno(ln.claveNiño);
+            Alumno.editar(alum);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
     private void btnCasiLograActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLograActionPerformed
-estadoPorcentaje = 50;    
-CargarBarra();
+        if (porcentajeActual == 0) {
+            estadoPorcentaje = 2.941176470588236;
+            CargarBarra();
+            PorcentajeNiño();
+        }
+
 // TODO add your handling code here:
     }//GEN-LAST:event_btnCasiLograActionPerformed
 
     private void btnRequiereApoyoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyoActionPerformed
-estadoPorcentaje = 0;
-CargarBarra();
+
+        estadoPorcentaje = 0;
+        CargarBarra();
+        PorcentajeNiño();
+
         // TODO add your handling code here:
     }//GEN-LAST:event_btnRequiereApoyoActionPerformed
 
     private void btnCumplioObjetivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivoActionPerformed
-estadoPorcentaje = 100;  
-CargarBarra();// TODO add your handling code here:
+
+        if (porcentajeActual < 5.882352941176471) {
+            estadoPorcentaje = 5.882352941176471;
+            CargarBarra();
+            PorcentajeNiño();
+        }
+// TODO add your handling code here:
     }//GEN-LAST:event_btnCumplioObjetivoActionPerformed
 
     /**

@@ -4,12 +4,20 @@
  */
 package mx.itson.vistas.instrucciones;
 
+import mx.itson.entidades.Alumno;
+import mx.itson.interfaces.DAOAlumnoIMP;
+import mx.itson.vistas.LoginNiños;
+
 /**
  *
  * @author lopez
  */
 public class SaludarMano extends javax.swing.JFrame {
-private int estadoPorcentaje;
+    DAOAlumnoIMP Alumno = new DAOAlumnoIMP();
+    LoginNiños ln = new LoginNiños();
+    Alumno alum = new Alumno();
+    private double estadoPorcentaje;
+    double porcentajeActual;
     /**
      * Creates new form SaludarMano
      */
@@ -17,8 +25,32 @@ private int estadoPorcentaje;
         initComponents();
                  setLocationRelativeTo(null);
          this.setExtendedState(MAXIMIZED_BOTH);
+         niño();
+    }
+    private void CargarBarra() {
+        jProgressBar1.setValue((int) estadoPorcentaje);
     }
 
+    private void niño() {
+        Alumno alu = Alumno.obtenerPorId(ln.claveNiño);
+        porcentajeActual = alu.getPorcentaje();
+        estadoPorcentaje = porcentajeActual;
+        CargarBarra();
+    }
+    
+    
+    private void PorcentajeNiño() {
+
+        try {
+
+            alum.setPorcentaje(estadoPorcentaje);
+            alum.setIdAlumno(ln.claveNiño);
+            Alumno.editar(alum);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -130,25 +162,31 @@ private int estadoPorcentaje;
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-private void CargarBarra(){
-jProgressBar1.setValue(estadoPorcentaje);
 
-}
     private void btnRequiereApoyoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyoActionPerformed
-        estadoPorcentaje = 0;
+
+ 
+        estadoPorcentaje = 5.882352941176471;
         CargarBarra();
+        PorcentajeNiño();
         // TODO add your handling code here:
     }//GEN-LAST:event_btnRequiereApoyoActionPerformed
 
     private void btnCasiLograActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLograActionPerformed
-        estadoPorcentaje = 50;
-        CargarBarra();
+          
+            estadoPorcentaje = 8.823529411764707;
+            CargarBarra();
+            PorcentajeNiño();
+        
         // TODO add your handling code here:
     }//GEN-LAST:event_btnCasiLograActionPerformed
 
     private void btnCumplioObjetivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivoActionPerformed
-        estadoPorcentaje = 100;
-        CargarBarra();// TODO add your handling code here:
+         
+            estadoPorcentaje = 11.76470588235294;
+            CargarBarra();
+            PorcentajeNiño();
+        
     }//GEN-LAST:event_btnCumplioObjetivoActionPerformed
 
     /**
