@@ -107,6 +107,7 @@ public class DAOAlumnoIMP implements DAOAlumno {
                 alumno.setTelefono(rs.getString("telefono"));
                 alumno.setNomImagen(rs.getString("nomImagen"));
                 alumno.setImagen(rs.getString("imagen"));
+                alumno.setImagen(rs.getString("porcentaje"));
                 alumnos.add(alumno);
             }
             }

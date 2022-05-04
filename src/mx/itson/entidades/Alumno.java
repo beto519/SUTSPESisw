@@ -17,6 +17,7 @@ public class Alumno {
     private String NomImagen;
     private String NombreTutor;
     private String Telefono;
+    private double porcentaje;
 
     public int getIdAlumno() {
         return idAlumno;
@@ -80,6 +81,20 @@ public class Alumno {
 
     public void setTelefono(String Telefono) {
         this.Telefono = Telefono;
+    }
+
+    /**
+     * @return the porcentaje
+     */
+    public double getPorcentaje() {
+        return porcentaje;
+    }
+
+    /**
+     * @param porcentaje the porcentaje to set
+     */
+    public void setPorcentaje(double porcentaje) {
+        this.porcentaje = porcentaje;
     }
     
 }
