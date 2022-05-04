@@ -16,7 +16,7 @@ import mx.itson.interfaces.DAOAlumnoIMP;
  */
 public class LoginNiños extends javax.swing.JFrame {
    DAOAlumnoIMP dao = new DAOAlumnoIMP();
-    public static int idNiño;
+    public static int claveNiño;
     /**
      * Creates new form LoginNiños
      */
@@ -118,7 +118,7 @@ public class LoginNiños extends javax.swing.JFrame {
         int id = (int) tbl_Niños.getModel().getValueAt(row, 0);
         lbl_id.setText(id + "");
 
-        idNiño = id;
+        claveNiño = id;
 
         if(evt.getClickCount() == 2){
             Instrucciones1 MN = new Instrucciones1();

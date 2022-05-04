@@ -4,13 +4,13 @@
  */
 package mx.itson.vistas;
 import mx.itson.vistas.instrucciones.*;
-
+import mx.itson.vistas.LoginNiños;
 /**
  *
  * @author vinko
  */
 public class Instrucciones1 extends javax.swing.JFrame {
-
+LoginNiños ln = new LoginNiños();
     /**
      * Creates new form Instrucciones1
      */
@@ -544,6 +544,7 @@ public class Instrucciones1 extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
 
