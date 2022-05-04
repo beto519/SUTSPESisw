@@ -155,10 +155,7 @@ public class AdiosConMano extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-<<<<<<< Updated upstream
-private void obtenerNiño(){
-=======
->>>>>>> Stashed changes
+
 
     private void niño() {
         Alumno alu = Alumno.obtenerPorId(ln.claveNiño);
