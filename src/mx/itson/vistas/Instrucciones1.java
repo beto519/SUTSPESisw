@@ -13,6 +13,7 @@ import mx.itson.vistas.instrucciones.*;
 public class Instrucciones1 extends javax.swing.JFrame {
 LoginNiños ln = new LoginNiños();
     DAOAlumnoIMP alumno = new DAOAlumnoIMP();
+    AtencionCara at = new AtencionCara();
     /**
      * Creates new form Instrucciones1
      */
@@ -565,6 +566,7 @@ public void obtenerNiño(){
 }
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
 
+
         AtencionCara abrir = new AtencionCara();
         abrir.setVisible(true);
         // TODO add your handling code here:
@@ -585,8 +587,16 @@ public void obtenerNiño(){
     }//GEN-LAST:event_jButton12ActionPerformed
 
     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
-        SaludarMano a = new SaludarMano();
-        a.setVisible(true);   // TODO add your handling code here:
+double porcentaje = at.estadoPorcentaje;
+        if (porcentaje == 5.882352941176471) {
+            SaludarMano a = new SaludarMano();
+        a.setVisible(true); 
+        }else{
+         AtencionCara abrir = new AtencionCara();
+        abrir.setVisible(true);
+        }
+
+           // TODO add your handling code here:
     }//GEN-LAST:event_jButton14ActionPerformed
 
     private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed

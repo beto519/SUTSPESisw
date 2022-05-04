@@ -18,7 +18,7 @@ public class AtencionCara extends javax.swing.JFrame {
     DAOAlumnoIMP Alumno = new DAOAlumnoIMP();
     LoginNiños ln = new LoginNiños();
     Alumno alum = new Alumno();
-    private double estadoPorcentaje;
+    public  double estadoPorcentaje;
     double porcentajeActual;
 
     /**
