@@ -5,25 +5,55 @@
  */
 package mx.itson.vistas.instrucciones;
 
+import mx.itson.entidades.Alumno;
+import mx.itson.interfaces.DAOAlumnoIMP;
+import mx.itson.vistas.LoginNiños;
+
 /**
  *
  * @author jotha
  */
 public class AtencionCara extends javax.swing.JFrame {
-private int estadoPorcentaje;   
+
+    DAOAlumnoIMP Alumno = new DAOAlumnoIMP();
+    LoginNiños ln = new LoginNiños();
+    Alumno alum = new Alumno();
+    public  double estadoPorcentaje;
+    double porcentajeActual;
+
     /**
      * Creates new form AtencionCara
      */
     public AtencionCara() {
         initComponents();
-         setLocationRelativeTo(null);
-         this.setExtendedState(MAXIMIZED_BOTH);
+        setLocationRelativeTo(null);
+        this.setExtendedState(MAXIMIZED_BOTH);
+        niño();
 
     }
-    
-    
-    private void CargarBarra(){
-    PB_ProgresoNiño.setValue(estadoPorcentaje);  
+
+    private void CargarBarra() {
+        PB_ProgresoNiño.setValue((int) estadoPorcentaje);
+    }
+
+    private void niño() {
+        Alumno alu = Alumno.obtenerPorId(ln.claveNiño);
+        porcentajeActual = alu.getPorcentaje();
+        estadoPorcentaje = porcentajeActual;
+        CargarBarra();
+    }
+
+    private void PorcentajeNiño() {
+
+        try {
+
+            alum.setPorcentaje(estadoPorcentaje);
+            alum.setIdAlumno(ln.claveNiño);
+            Alumno.editar(alum);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
     }
 
     /**
@@ -116,6 +146,7 @@ private int estadoPorcentaje;
         btn_NoLoHace.setBackground(new java.awt.Color(255, 0, 0));
         btn_NoLoHace.setForeground(new java.awt.Color(255, 255, 255));
         btn_NoLoHace.setText("No Lo Hace");
+        btn_NoLoHace.setBorderPainted(false);
         btn_NoLoHace.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btn_NoLoHaceMouseClicked(evt);
@@ -147,22 +178,30 @@ private int estadoPorcentaje;
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn_LoHaceConAyudaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_LoHaceConAyudaActionPerformed
-        // TODO add your handling code here:
+
+// TODO add your handling code here:
     }//GEN-LAST:event_btn_LoHaceConAyudaActionPerformed
 
     private void btn_LoHaceMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_LoHaceMouseClicked
-        estadoPorcentaje = 100;
-        CargarBarra();
+      
+            estadoPorcentaje = 5.882352941176471;
+            CargarBarra();
+            PorcentajeNiño();
+        
     }//GEN-LAST:event_btn_LoHaceMouseClicked
 
     private void btn_NoLoHaceMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_NoLoHaceMouseClicked
         estadoPorcentaje = 0;
         CargarBarra();
+        PorcentajeNiño();
     }//GEN-LAST:event_btn_NoLoHaceMouseClicked
 
     private void btn_LoHaceConAyudaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_LoHaceConAyudaMouseClicked
-        estadoPorcentaje = 50;
-        CargarBarra();
+
+            estadoPorcentaje = 2.941176470588236;
+            CargarBarra();
+            PorcentajeNiño();
+        
     }//GEN-LAST:event_btn_LoHaceConAyudaMouseClicked
 
     /**

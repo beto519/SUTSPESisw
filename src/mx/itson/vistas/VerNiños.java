@@ -72,11 +72,11 @@ public class VerNiños extends javax.swing.JFrame {
 
             },
             new String [] {
-                "ID", "Nombre", "Apellidos", "Nivel"
+                "ID", "Nombre", "Apellidos", "Nivel", "Porcentaje"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, false, false, false
+                false, false, false, false, false
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
@@ -96,6 +96,7 @@ public class VerNiños extends javax.swing.JFrame {
             tbl_Niños.getColumnModel().getColumn(1).setResizable(false);
             tbl_Niños.getColumnModel().getColumn(2).setResizable(false);
             tbl_Niños.getColumnModel().getColumn(3).setResizable(false);
+            tbl_Niños.getColumnModel().getColumn(4).setResizable(false);
         }
 
         getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 30, 1110, 560));

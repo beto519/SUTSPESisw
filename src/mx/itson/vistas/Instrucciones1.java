@@ -3,19 +3,23 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package mx.itson.vistas;
+import mx.itson.entidades.Alumno;
+import mx.itson.interfaces.DAOAlumnoIMP;
 import mx.itson.vistas.instrucciones.*;
-
 /**
  *
  * @author vinko
  */
 public class Instrucciones1 extends javax.swing.JFrame {
-
+LoginNiños ln = new LoginNiños();
+    DAOAlumnoIMP alumno = new DAOAlumnoIMP();
+    AtencionCara at = new AtencionCara();
     /**
      * Creates new form Instrucciones1
      */
     public Instrucciones1() {
         initComponents();
+        obtenerNiño();
     }
 
     /**
@@ -56,6 +60,7 @@ public class Instrucciones1 extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
+        lbl_Id = new javax.swing.JLabel();
         rSPanelShadow11 = new rojeru_san.rspanel.RSPanelShadow();
         jPanel23 = new javax.swing.JPanel();
         jPanel24 = new javax.swing.JPanel();
@@ -362,12 +367,17 @@ public class Instrucciones1 extends javax.swing.JFrame {
         jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
         jLabel6.setText("Bienvenido");
 
+        lbl_Id.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
+        lbl_Id.setText("Nombre");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(lbl_Id, javax.swing.GroupLayout.PREFERRED_SIZE, 447, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(321, 321, 321)
                 .addComponent(jLabel1)
                 .addGap(29, 29, 29))
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -378,9 +388,11 @@ public class Instrucciones1 extends javax.swing.JFrame {
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+            .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap(25, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lbl_Id, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(20, 20, 20))
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
@@ -545,7 +557,15 @@ public class Instrucciones1 extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+public void obtenerNiño(){
+
+   Alumno niño =   alumno.obtenerPorId(ln.claveNiño);
+    lbl_Id.setText(niño.getNombre());
+
+
+}
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+
 
         AtencionCara abrir = new AtencionCara();
         abrir.setVisible(true);
@@ -567,8 +587,16 @@ public class Instrucciones1 extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton12ActionPerformed
 
     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
-        SaludarMano a = new SaludarMano();
-        a.setVisible(true);   // TODO add your handling code here:
+double porcentaje = at.estadoPorcentaje;
+        if (porcentaje == 5.882352941176471) {
+            SaludarMano a = new SaludarMano();
+        a.setVisible(true); 
+        }else{
+         AtencionCara abrir = new AtencionCara();
+        abrir.setVisible(true);
+        }
+
+           // TODO add your handling code here:
     }//GEN-LAST:event_jButton14ActionPerformed
 
     private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
@@ -652,6 +680,7 @@ public class Instrucciones1 extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel42;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
+    private javax.swing.JLabel lbl_Id;
     private rojeru_san.rspanel.RSPanelShadow rSPanelShadow1;
     private rojeru_san.rspanel.RSPanelShadow rSPanelShadow11;
     private rojeru_san.rspanel.RSPanelShadow rSPanelShadow13;

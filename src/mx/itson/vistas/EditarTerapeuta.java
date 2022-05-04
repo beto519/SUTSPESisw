@@ -58,48 +58,42 @@ public class EditarTerapeuta extends javax.swing.JFrame {
             CodigoUsuario = Long.valueOf(txtUsuario.getText());
             String Contraseña;
             Contraseña = String.valueOf(txtContraseña.getPassword());
-            String nombreImg;
-            nombreImg = txt_NombreImagen.getText().trim();
             
             
             try {
                 if(longitudBytes != 0){
                  Connection cn = DBHelper.conectar();
                 PreparedStatement pst = cn.prepareStatement("UPDATE `bxopxuzsnsc4au7ggfnf`.`terapeuta` SET nombreCom = ?, Area = ?, email = ?, "
-                        + "usuario = ?, contraseña = ?, nomImagen = ?, imagen = ? WHERE IdTerap = ?");
+                        + "usuario = ?, contraseña = ?, imagen = ? WHERE IdTerap = ?");
                 
                 pst.setString(1, NombreCompleto);
                 pst.setString(2, Puesto);
                 pst.setString(3, Email);
                 pst.setString(4, CodigoUsuario+"");
                 pst.setString(5, Contraseña);
-                pst.setString(6, nombreImg);
-                pst.setBlob(7, fis, longitudBytes);
-                pst.setInt(8, vt.idEdit);
-                
-                
-                pst.executeUpdate();
-                cn.close();
-                txt_NombreImagen.setBackground(Color.green);
-                lbl_imagen.setText("Foto");
-                JOptionPane.showMessageDialog(null, "Registro Exitoso");
-            }else{
-                Connection cn = DBHelper.conectar();
-                PreparedStatement pst = cn.prepareStatement("UPDATE `bxopxuzsnsc4au7ggfnf`.`terapeuta` SET nombreCom = ?, Area = ?, email = ?, "
-                        + "usuario = ?, contraseña = ?, nomImagen = ? WHERE IdTerap = ?");
-                
-                pst.setString(1, NombreCompleto);
-                pst.setString(2, Puesto);
-                pst.setString(3, Email);
-                pst.setString(4, CodigoUsuario+"");
-                pst.setString(5, Contraseña);
-                pst.setString(6, nombreImg);
+                pst.setBlob(6, fis, longitudBytes);
                 pst.setInt(7, vt.idEdit);
                 
                 
                 pst.executeUpdate();
                 cn.close();
-                txt_NombreImagen.setBackground(Color.green);
+                lbl_imagen.setText("Foto");
+                JOptionPane.showMessageDialog(null, "Registro Exitoso");
+            }else{
+                Connection cn = DBHelper.conectar();
+                PreparedStatement pst = cn.prepareStatement("UPDATE `bxopxuzsnsc4au7ggfnf`.`terapeuta` SET nombreCom = ?, Area = ?, email = ?, "
+                        + "usuario = ?, contraseña = ? WHERE IdTerap = ?");
+                
+                pst.setString(1, NombreCompleto);
+                pst.setString(2, Puesto);
+                pst.setString(3, Email);
+                pst.setString(4, CodigoUsuario+"");
+                pst.setString(5, Contraseña);
+                pst.setInt(6, vt.idEdit);
+                
+                
+                pst.executeUpdate();
+                cn.close();
                 lbl_imagen.setText("Foto");
                 JOptionPane.showMessageDialog(null, "Registro Exitoso");
                 }
@@ -123,7 +117,6 @@ public class EditarTerapeuta extends javax.swing.JFrame {
             txtCorreo.setText(terapeuta.getCorreo());
             txtUsuario.setText(terapeuta.getCodigoUsuario());
             txtContraseña.setText(terapeuta.getContraseña());
-            terapeuta.getNomImagen();
             terapeuta.getImagen();
             
             try {
@@ -134,7 +127,7 @@ public class EditarTerapeuta extends javax.swing.JFrame {
                 
                 if(rs.next()){
                     //leer Binario
-                    Blob blob = rs.getBlob(8);
+                    Blob blob = rs.getBlob(7);
                     //pasar el binario a imagen
                     byte[] data = blob.getBytes(1, (int) blob.length());
                     //lee la imagen
@@ -183,7 +176,6 @@ public class EditarTerapeuta extends javax.swing.JFrame {
         txtContraseña = new javax.swing.JPasswordField();
         lbl_imagen = new javax.swing.JLabel();
         lbl_subirImagen = new javax.swing.JLabel();
-        txt_NombreImagen = new javax.swing.JTextField();
         Fondo = new javax.swing.JLabel();
         lbl_id = new javax.swing.JLabel();
 
@@ -253,7 +245,6 @@ public class EditarTerapeuta extends javax.swing.JFrame {
             }
         });
         getContentPane().add(lbl_subirImagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 550, -1, -1));
-        getContentPane().add(txt_NombreImagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 470, 380, 50));
 
         Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoAzul.jpg"))); // NOI18N
         getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
@@ -354,6 +345,5 @@ public class EditarTerapeuta extends javax.swing.JFrame {
     private javax.swing.JTextField txtNombre;
     private javax.swing.JTextField txtPuesto;
     private javax.swing.JTextField txtUsuario;
-    private javax.swing.JTextField txt_NombreImagen;
     // End of variables declaration//GEN-END:variables
 }

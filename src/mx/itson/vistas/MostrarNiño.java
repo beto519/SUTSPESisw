@@ -58,7 +58,7 @@ public class MostrarNiño extends javax.swing.JFrame {
                 
                 if(rs.next()){
                     //leer Binario
-                    Blob blob = rs.getBlob(8);
+                    Blob blob = rs.getBlob(7);
                     //pasar el binario a imagen
                     byte[] data = blob.getBytes(1, (int) blob.length());
                     //lee la imagen
