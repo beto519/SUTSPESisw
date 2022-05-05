@@ -211,9 +211,9 @@ public class Instrucciones2 extends javax.swing.JFrame {
 
         jLabel36.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel36.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel36.setText("Emparejamiento de Objetos");
+        jLabel36.setText("Imitacion gruesa");
 
-        jLabel37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/icons8-selección-3d-50.png"))); // NOI18N
+        jLabel37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/teatroblack.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel38Layout = new javax.swing.GroupLayout(jPanel38);
         jPanel38.setLayout(jPanel38Layout);
@@ -275,9 +275,9 @@ public class Instrucciones2 extends javax.swing.JFrame {
 
         jLabel38.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel38.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel38.setText("Emparejamiento de Objetos");
+        jLabel38.setText("Reconocimiento colores");
 
-        jLabel39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/icons8-selección-3d-50.png"))); // NOI18N
+        jLabel39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/icons8-paleta-de-colores-48.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel40Layout = new javax.swing.GroupLayout(jPanel40);
         jPanel40.setLayout(jPanel40Layout);
@@ -345,7 +345,7 @@ public class Instrucciones2 extends javax.swing.JFrame {
         jLabel40.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel40.setText("Emparejamiento de imagenes");
 
-        jLabel41.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/icons8-imágenes-de-carpetas-50.png"))); // NOI18N
+        jLabel41.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/icons8-selección-3d-50.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel42Layout = new javax.swing.GroupLayout(jPanel42);
         jPanel42.setLayout(jPanel42Layout);
@@ -407,9 +407,9 @@ public class Instrucciones2 extends javax.swing.JFrame {
 
         jLabel42.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel42.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel42.setText("Emparejamiento de Objetos");
+        jLabel42.setText("Motricidad gruesa");
 
-        jLabel43.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/icons8-selección-3d-50.png"))); // NOI18N
+        jLabel43.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/icons8-lenguaje-de-señas-b-50.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel44Layout = new javax.swing.GroupLayout(jPanel44);
         jPanel44.setLayout(jPanel44Layout);
@@ -421,18 +421,17 @@ public class Instrucciones2 extends javax.swing.JFrame {
                         .addGap(74, 74, 74)
                         .addComponent(jLabel43))
                     .addGroup(jPanel44Layout.createSequentialGroup()
-                        .addGap(27, 27, 27)
-                        .addComponent(jLabel42, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(51, Short.MAX_VALUE))
+                        .addContainerGap()
+                        .addComponent(jLabel42, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(36, Short.MAX_VALUE))
         );
         jPanel44Layout.setVerticalGroup(
             jPanel44Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel44Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel43)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel42, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
+                .addComponent(jLabel42, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         jButton22.setBackground(new java.awt.Color(0, 153, 255));
@@ -471,9 +470,9 @@ public class Instrucciones2 extends javax.swing.JFrame {
 
         jLabel44.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel44.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel44.setText("Emparejamiento de Objetos");
+        jLabel44.setText("Reconocimiento vocales");
 
-        jLabel45.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/icons8-selección-3d-50.png"))); // NOI18N
+        jLabel45.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/icons8-alfa-50.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel46Layout = new javax.swing.GroupLayout(jPanel46);
         jPanel46.setLayout(jPanel46Layout);
@@ -539,9 +538,9 @@ public class Instrucciones2 extends javax.swing.JFrame {
 
         jLabel52.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel52.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel52.setText("Emparejamiento de imagenes");
+        jLabel52.setText("Imitacion de vocales");
 
-        jLabel53.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/icons8-imágenes-de-carpetas-50.png"))); // NOI18N
+        jLabel53.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/icons8-mayúscula-inicial-60.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel54Layout = new javax.swing.GroupLayout(jPanel54);
         jPanel54.setLayout(jPanel54Layout);
@@ -553,18 +552,17 @@ public class Instrucciones2 extends javax.swing.JFrame {
                         .addGap(88, 88, 88)
                         .addComponent(jLabel53))
                     .addGroup(jPanel54Layout.createSequentialGroup()
-                        .addGap(32, 32, 32)
+                        .addGap(61, 61, 61)
                         .addComponent(jLabel52)))
-                .addContainerGap(57, Short.MAX_VALUE))
+                .addContainerGap(79, Short.MAX_VALUE))
         );
         jPanel54Layout.setVerticalGroup(
             jPanel54Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel54Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel53)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel52, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel52, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         jButton27.setBackground(new java.awt.Color(0, 153, 255));
@@ -603,9 +601,9 @@ public class Instrucciones2 extends javax.swing.JFrame {
 
         jLabel54.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel54.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel54.setText("Emparejamiento de Objetos");
+        jLabel54.setText("Motricidad fina");
 
-        jLabel55.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/icons8-selección-3d-50.png"))); // NOI18N
+        jLabel55.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/icons8-lenguaje-de-señas-b-50.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel56Layout = new javax.swing.GroupLayout(jPanel56);
         jPanel56.setLayout(jPanel56Layout);
@@ -667,9 +665,9 @@ public class Instrucciones2 extends javax.swing.JFrame {
 
         jLabel56.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel56.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel56.setText("Emparejamiento de Objetos");
+        jLabel56.setText("Reconocieminto formas");
 
-        jLabel57.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/icons8-selección-3d-50.png"))); // NOI18N
+        jLabel57.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/icons8-diversidad-50.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel58Layout = new javax.swing.GroupLayout(jPanel58);
         jPanel58.setLayout(jPanel58Layout);
@@ -735,9 +733,9 @@ public class Instrucciones2 extends javax.swing.JFrame {
 
         jLabel58.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel58.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel58.setText("Emparejamiento de imagenes");
+        jLabel58.setText("Imitacion fina");
 
-        jLabel59.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/icons8-imágenes-de-carpetas-50.png"))); // NOI18N
+        jLabel59.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/teatro.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel60Layout = new javax.swing.GroupLayout(jPanel60);
         jPanel60.setLayout(jPanel60Layout);
@@ -749,18 +747,17 @@ public class Instrucciones2 extends javax.swing.JFrame {
                         .addGap(88, 88, 88)
                         .addComponent(jLabel59))
                     .addGroup(jPanel60Layout.createSequentialGroup()
-                        .addGap(32, 32, 32)
+                        .addGap(76, 76, 76)
                         .addComponent(jLabel58)))
-                .addContainerGap(57, Short.MAX_VALUE))
+                .addContainerGap(101, Short.MAX_VALUE))
         );
         jPanel60Layout.setVerticalGroup(
             jPanel60Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel60Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel59)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel58, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel58, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         jButton30.setBackground(new java.awt.Color(0, 153, 255));
@@ -799,9 +796,9 @@ public class Instrucciones2 extends javax.swing.JFrame {
 
         jLabel60.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel60.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel60.setText("Emparejamiento de Objetos");
+        jLabel60.setText("Reconocimiento Corporal");
 
-        jLabel61.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/icons8-selección-3d-50.png"))); // NOI18N
+        jLabel61.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/icons8-escaneo-cuerpo-50.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel62Layout = new javax.swing.GroupLayout(jPanel62);
         jPanel62.setLayout(jPanel62Layout);
@@ -863,9 +860,9 @@ public class Instrucciones2 extends javax.swing.JFrame {
 
         jLabel62.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel62.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel62.setText("Emparejamiento de Objetos");
+        jLabel62.setText("Seguimiento Instrucciones");
 
-        jLabel63.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/icons8-selección-3d-50.png"))); // NOI18N
+        jLabel63.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/icons8-manual-de-usuario-64.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel64Layout = new javax.swing.GroupLayout(jPanel64);
         jPanel64.setLayout(jPanel64Layout);
@@ -931,9 +928,9 @@ public class Instrucciones2 extends javax.swing.JFrame {
 
         jLabel64.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel64.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel64.setText("Emparejamiento de Objetos");
+        jLabel64.setText("Volver");
 
-        jLabel65.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/icons8-selección-3d-50.png"))); // NOI18N
+        jLabel65.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/icons8-volver-64.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel66Layout = new javax.swing.GroupLayout(jPanel66);
         jPanel66.setLayout(jPanel66Layout);
@@ -995,9 +992,9 @@ public class Instrucciones2 extends javax.swing.JFrame {
 
         jLabel66.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel66.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel66.setText("Emparejamiento de Objetos");
+        jLabel66.setText("Salir");
 
-        jLabel67.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/icons8-selección-3d-50.png"))); // NOI18N
+        jLabel67.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/icons8-salida-64.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel68Layout = new javax.swing.GroupLayout(jPanel68);
         jPanel68.setLayout(jPanel68Layout);
@@ -1068,9 +1065,7 @@ public class Instrucciones2 extends javax.swing.JFrame {
                 .addComponent(rSPanelShadow37, javax.swing.GroupLayout.PREFERRED_SIZE, 263, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(rSPanelShadow40, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(0, 0, 0)
-                        .addComponent(rSPanelShadow41, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                    .addComponent(rSPanelShadow41, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1110,59 +1105,72 @@ public class Instrucciones2 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
-        // TODO add your handling code here:
+        EmparejamientoImagenes abrir = new EmparejamientoImagenes();
+        abrir.setVisible(true);
     }//GEN-LAST:event_jButton17ActionPerformed
 
     private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
-        // TODO add your handling code here:
+        ImitacionGruesa abrir = new ImitacionGruesa();
+        abrir.setVisible(true);
     }//GEN-LAST:event_jButton19ActionPerformed
 
     private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
-        // TODO add your handling code here:
+        ReconocimientoColores abrir = new ReconocimientoColores();
+        abrir.setVisible(true);
     }//GEN-LAST:event_jButton20ActionPerformed
 
     private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
-        // TODO add your handling code here:
+        EmparejamientoObjetos abrir = new EmparejamientoObjetos();
+        abrir.setVisible(true);
     }//GEN-LAST:event_jButton21ActionPerformed
 
     private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
-        // TODO add your handling code here:
+        MotricidadGruesa abrir = new MotricidadGruesa();
+        abrir.setVisible(true);
     }//GEN-LAST:event_jButton22ActionPerformed
 
     private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
-        // TODO add your handling code here:
+        ReconocimientoVocales abrir = new ReconocimientoVocales();
+        abrir.setVisible(true);
     }//GEN-LAST:event_jButton23ActionPerformed
 
     private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton27ActionPerformed
-        // TODO add your handling code here:
+        ImitacionVocales abrir = new ImitacionVocales();
+        abrir.setVisible(true);
     }//GEN-LAST:event_jButton27ActionPerformed
 
     private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
-        // TODO add your handling code here:
+        MotricidadFina abrir = new MotricidadFina();
+        abrir.setVisible(true);
     }//GEN-LAST:event_jButton28ActionPerformed
 
     private void jButton29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton29ActionPerformed
-        // TODO add your handling code here:
+        ReconocimientoFormas abrir = new ReconocimientoFormas();
+        abrir.setVisible(true);
     }//GEN-LAST:event_jButton29ActionPerformed
 
     private void jButton30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton30ActionPerformed
-        // TODO add your handling code here:
+        ImitacionFina abrir = new ImitacionFina();
+        abrir.setVisible(true);
     }//GEN-LAST:event_jButton30ActionPerformed
 
     private void jButton31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton31ActionPerformed
-        // TODO add your handling code here:
+        ReconocimientoCorporal abrir = new ReconocimientoCorporal();
+        abrir.setVisible(true);
     }//GEN-LAST:event_jButton31ActionPerformed
 
     private void jButton32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton32ActionPerformed
-        // TODO add your handling code here:
+       SeguimientoInstrucciones abrir = new SeguimientoInstrucciones();
+        abrir.setVisible(true);
     }//GEN-LAST:event_jButton32ActionPerformed
 
     private void jButton33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton33ActionPerformed
-        // TODO add your handling code here:
+        Menu abrir = new Menu();
+        abrir.setVisible(true);
     }//GEN-LAST:event_jButton33ActionPerformed
 
     private void jButton34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton34ActionPerformed
-        // TODO add your handling code here:
+        System.exit(0);
     }//GEN-LAST:event_jButton34ActionPerformed
 
     /**

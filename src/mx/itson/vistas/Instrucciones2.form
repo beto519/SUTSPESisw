@@ -100,10 +100,7 @@
                   <Component id="rSPanelShadow37" min="-2" pref="263" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="rSPanelShadow40" max="32767" attributes="0"/>
-                      <Group type="102" attributes="0">
-                          <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                          <Component id="rSPanelShadow41" max="32767" attributes="0"/>
-                      </Group>
+                      <Component id="rSPanelShadow41" max="32767" attributes="0"/>
                   </Group>
               </Group>
           </Group>
@@ -335,13 +332,13 @@
                               <Font name="Segoe UI" size="12" style="1"/>
                             </Property>
                             <Property name="horizontalAlignment" type="int" value="0"/>
-                            <Property name="text" type="java.lang.String" value="Emparejamiento de Objetos"/>
+                            <Property name="text" type="java.lang.String" value="Imitacion gruesa"/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel37">
                           <Properties>
                             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                              <Image iconType="3" name="/mx/itson/imagenes/icons8-selecci&#xf3;n-3d-50.png"/>
+                              <Image iconType="3" name="/mx/itson/imagenes/teatroblack.png"/>
                             </Property>
                           </Properties>
                         </Component>
@@ -459,13 +456,13 @@
                                   <Font name="Segoe UI" size="12" style="1"/>
                                 </Property>
                                 <Property name="horizontalAlignment" type="int" value="0"/>
-                                <Property name="text" type="java.lang.String" value="Emparejamiento de Objetos"/>
+                                <Property name="text" type="java.lang.String" value="Reconocimiento colores"/>
                               </Properties>
                             </Component>
                             <Component class="javax.swing.JLabel" name="jLabel39">
                               <Properties>
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="3" name="/mx/itson/imagenes/icons8-selecci&#xf3;n-3d-50.png"/>
+                                  <Image iconType="3" name="/mx/itson/imagenes/icons8-paleta-de-colores-48.png"/>
                                 </Property>
                               </Properties>
                             </Component>
@@ -590,7 +587,7 @@
                     <Component class="javax.swing.JLabel" name="jLabel41">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/mx/itson/imagenes/icons8-im&#xe1;genes-de-carpetas-50.png"/>
+                          <Image iconType="3" name="/mx/itson/imagenes/icons8-selecci&#xf3;n-3d-50.png"/>
                         </Property>
                       </Properties>
                     </Component>
@@ -674,18 +671,18 @@
                       <Layout>
                         <DimensionLayout dim="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
+                              <Group type="102" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
                                           <EmptySpace min="-2" pref="74" max="-2" attributes="0"/>
                                           <Component id="jLabel43" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
-                                          <Component id="jLabel42" min="-2" pref="165" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="jLabel42" min="-2" pref="201" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
-                                  <EmptySpace pref="51" max="32767" attributes="0"/>
+                                  <EmptySpace pref="36" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -694,9 +691,8 @@
                               <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="jLabel43" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
+                                  <EmptySpace pref="12" max="32767" attributes="0"/>
                                   <Component id="jLabel42" min="-2" pref="37" max="-2" attributes="0"/>
-                                  <EmptySpace max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -708,13 +704,13 @@
                               <Font name="Segoe UI" size="12" style="1"/>
                             </Property>
                             <Property name="horizontalAlignment" type="int" value="0"/>
-                            <Property name="text" type="java.lang.String" value="Emparejamiento de Objetos"/>
+                            <Property name="text" type="java.lang.String" value="Motricidad gruesa"/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel43">
                           <Properties>
                             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                              <Image iconType="3" name="/mx/itson/imagenes/icons8-selecci&#xf3;n-3d-50.png"/>
+                              <Image iconType="3" name="/mx/itson/imagenes/icons8-lenguaje-de-se&#xf1;as-b-50.png"/>
                             </Property>
                           </Properties>
                         </Component>
@@ -832,13 +828,13 @@
                                   <Font name="Segoe UI" size="12" style="1"/>
                                 </Property>
                                 <Property name="horizontalAlignment" type="int" value="0"/>
-                                <Property name="text" type="java.lang.String" value="Emparejamiento de Objetos"/>
+                                <Property name="text" type="java.lang.String" value="Reconocimiento vocales"/>
                               </Properties>
                             </Component>
                             <Component class="javax.swing.JLabel" name="jLabel45">
                               <Properties>
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="3" name="/mx/itson/imagenes/icons8-selecci&#xf3;n-3d-50.png"/>
+                                  <Image iconType="3" name="/mx/itson/imagenes/icons8-alfa-50.png"/>
                                 </Property>
                               </Properties>
                             </Component>
@@ -923,18 +919,18 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
+                          <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace min="-2" pref="88" max="-2" attributes="0"/>
                                       <Component id="jLabel53" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
                                       <Component id="jLabel52" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-                              <EmptySpace pref="57" max="32767" attributes="0"/>
+                              <EmptySpace pref="79" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -943,9 +939,8 @@
                           <Group type="102" alignment="1" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jLabel53" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jLabel52" min="-2" pref="37" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
+                              <Component id="jLabel52" min="-2" pref="37" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -957,13 +952,13 @@
                           <Font name="Segoe UI" size="12" style="1"/>
                         </Property>
                         <Property name="horizontalAlignment" type="int" value="0"/>
-                        <Property name="text" type="java.lang.String" value="Emparejamiento de imagenes"/>
+                        <Property name="text" type="java.lang.String" value="Imitacion de vocales"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel53">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/mx/itson/imagenes/icons8-im&#xe1;genes-de-carpetas-50.png"/>
+                          <Image iconType="3" name="/mx/itson/imagenes/icons8-may&#xfa;scula-inicial-60.png"/>
                         </Property>
                       </Properties>
                     </Component>
@@ -1081,13 +1076,13 @@
                               <Font name="Segoe UI" size="12" style="1"/>
                             </Property>
                             <Property name="horizontalAlignment" type="int" value="0"/>
-                            <Property name="text" type="java.lang.String" value="Emparejamiento de Objetos"/>
+                            <Property name="text" type="java.lang.String" value="Motricidad fina"/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel55">
                           <Properties>
                             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                              <Image iconType="3" name="/mx/itson/imagenes/icons8-selecci&#xf3;n-3d-50.png"/>
+                              <Image iconType="3" name="/mx/itson/imagenes/icons8-lenguaje-de-se&#xf1;as-b-50.png"/>
                             </Property>
                           </Properties>
                         </Component>
@@ -1205,13 +1200,13 @@
                                   <Font name="Segoe UI" size="12" style="1"/>
                                 </Property>
                                 <Property name="horizontalAlignment" type="int" value="0"/>
-                                <Property name="text" type="java.lang.String" value="Emparejamiento de Objetos"/>
+                                <Property name="text" type="java.lang.String" value="Reconocieminto formas"/>
                               </Properties>
                             </Component>
                             <Component class="javax.swing.JLabel" name="jLabel57">
                               <Properties>
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="3" name="/mx/itson/imagenes/icons8-selecci&#xf3;n-3d-50.png"/>
+                                  <Image iconType="3" name="/mx/itson/imagenes/icons8-diversidad-50.png"/>
                                 </Property>
                               </Properties>
                             </Component>
@@ -1296,18 +1291,18 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
+                          <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace min="-2" pref="88" max="-2" attributes="0"/>
                                       <Component id="jLabel59" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="76" max="-2" attributes="0"/>
                                       <Component id="jLabel58" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-                              <EmptySpace pref="57" max="32767" attributes="0"/>
+                              <EmptySpace pref="101" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -1316,9 +1311,8 @@
                           <Group type="102" alignment="1" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jLabel59" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jLabel58" min="-2" pref="37" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
+                              <Component id="jLabel58" min="-2" pref="37" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -1330,13 +1324,13 @@
                           <Font name="Segoe UI" size="12" style="1"/>
                         </Property>
                         <Property name="horizontalAlignment" type="int" value="0"/>
-                        <Property name="text" type="java.lang.String" value="Emparejamiento de imagenes"/>
+                        <Property name="text" type="java.lang.String" value="Imitacion fina"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel59">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/mx/itson/imagenes/icons8-im&#xe1;genes-de-carpetas-50.png"/>
+                          <Image iconType="3" name="/mx/itson/imagenes/teatro.png"/>
                         </Property>
                       </Properties>
                     </Component>
@@ -1454,13 +1448,13 @@
                               <Font name="Segoe UI" size="12" style="1"/>
                             </Property>
                             <Property name="horizontalAlignment" type="int" value="0"/>
-                            <Property name="text" type="java.lang.String" value="Emparejamiento de Objetos"/>
+                            <Property name="text" type="java.lang.String" value="Reconocimiento Corporal"/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel61">
                           <Properties>
                             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                              <Image iconType="3" name="/mx/itson/imagenes/icons8-selecci&#xf3;n-3d-50.png"/>
+                              <Image iconType="3" name="/mx/itson/imagenes/icons8-escaneo-cuerpo-50.png"/>
                             </Property>
                           </Properties>
                         </Component>
@@ -1578,13 +1572,13 @@
                                   <Font name="Segoe UI" size="12" style="1"/>
                                 </Property>
                                 <Property name="horizontalAlignment" type="int" value="0"/>
-                                <Property name="text" type="java.lang.String" value="Emparejamiento de Objetos"/>
+                                <Property name="text" type="java.lang.String" value="Seguimiento Instrucciones"/>
                               </Properties>
                             </Component>
                             <Component class="javax.swing.JLabel" name="jLabel63">
                               <Properties>
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="3" name="/mx/itson/imagenes/icons8-selecci&#xf3;n-3d-50.png"/>
+                                  <Image iconType="3" name="/mx/itson/imagenes/icons8-manual-de-usuario-64.png"/>
                                 </Property>
                               </Properties>
                             </Component>
@@ -1703,13 +1697,13 @@
                           <Font name="Segoe UI" size="12" style="1"/>
                         </Property>
                         <Property name="horizontalAlignment" type="int" value="0"/>
-                        <Property name="text" type="java.lang.String" value="Emparejamiento de Objetos"/>
+                        <Property name="text" type="java.lang.String" value="Volver"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel65">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/mx/itson/imagenes/icons8-selecci&#xf3;n-3d-50.png"/>
+                          <Image iconType="3" name="/mx/itson/imagenes/icons8-volver-64.png"/>
                         </Property>
                       </Properties>
                     </Component>
@@ -1824,13 +1818,13 @@
                           <Font name="Segoe UI" size="12" style="1"/>
                         </Property>
                         <Property name="horizontalAlignment" type="int" value="0"/>
-                        <Property name="text" type="java.lang.String" value="Emparejamiento de Objetos"/>
+                        <Property name="text" type="java.lang.String" value="Salir"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel67">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/mx/itson/imagenes/icons8-selecci&#xf3;n-3d-50.png"/>
+                          <Image iconType="3" name="/mx/itson/imagenes/icons8-salida-64.png"/>
                         </Property>
                       </Properties>
                     </Component>
