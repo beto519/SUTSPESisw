@@ -352,9 +352,6 @@
           <Color blue="0" green="cc" red="33" type="rgb"/>
         </Property>
         <Property name="borderPainted" type="boolean" value="false"/>
-        <Property name="model" type="javax.swing.ButtonModel" editor="org.netbeans.modules.form.ComponentChooserEditor">
-          <ComponentRef name="default"/>
-        </Property>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCumplioObjetivoActionPerformed"/>
@@ -419,9 +416,6 @@
           <Color blue="0" green="cc" red="33" type="rgb"/>
         </Property>
         <Property name="borderPainted" type="boolean" value="false"/>
-        <Property name="model" type="javax.swing.ButtonModel" editor="org.netbeans.modules.form.ComponentChooserEditor">
-          <ComponentRef name="default"/>
-        </Property>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCumplioObjetivo1ActionPerformed"/>
@@ -470,9 +464,6 @@
           <Color blue="0" green="cc" red="33" type="rgb"/>
         </Property>
         <Property name="borderPainted" type="boolean" value="false"/>
-        <Property name="model" type="javax.swing.ButtonModel" editor="org.netbeans.modules.form.ComponentChooserEditor">
-          <ComponentRef name="default"/>
-        </Property>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCumplioObjetivo2ActionPerformed"/>
@@ -521,9 +512,6 @@
           <Color blue="0" green="cc" red="33" type="rgb"/>
         </Property>
         <Property name="borderPainted" type="boolean" value="false"/>
-        <Property name="model" type="javax.swing.ButtonModel" editor="org.netbeans.modules.form.ComponentChooserEditor">
-          <ComponentRef name="default"/>
-        </Property>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCumplioObjetivo3ActionPerformed"/>
@@ -572,9 +560,6 @@
           <Color blue="0" green="cc" red="33" type="rgb"/>
         </Property>
         <Property name="borderPainted" type="boolean" value="false"/>
-        <Property name="model" type="javax.swing.ButtonModel" editor="org.netbeans.modules.form.ComponentChooserEditor">
-          <ComponentRef name="default"/>
-        </Property>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCumplioObjetivo4ActionPerformed"/>
@@ -623,9 +608,6 @@
           <Color blue="0" green="cc" red="33" type="rgb"/>
         </Property>
         <Property name="borderPainted" type="boolean" value="false"/>
-        <Property name="model" type="javax.swing.ButtonModel" editor="org.netbeans.modules.form.ComponentChooserEditor">
-          <ComponentRef name="default"/>
-        </Property>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCumplioObjetivo5ActionPerformed"/>
@@ -674,9 +656,6 @@
           <Color blue="0" green="cc" red="33" type="rgb"/>
         </Property>
         <Property name="borderPainted" type="boolean" value="false"/>
-        <Property name="model" type="javax.swing.ButtonModel" editor="org.netbeans.modules.form.ComponentChooserEditor">
-          <ComponentRef name="default"/>
-        </Property>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCumplioObjetivo6ActionPerformed"/>
@@ -725,9 +704,6 @@
           <Color blue="0" green="cc" red="33" type="rgb"/>
         </Property>
         <Property name="borderPainted" type="boolean" value="false"/>
-        <Property name="model" type="javax.swing.ButtonModel" editor="org.netbeans.modules.form.ComponentChooserEditor">
-          <ComponentRef name="default"/>
-        </Property>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCumplioObjetivo7ActionPerformed"/>
@@ -776,9 +752,6 @@
           <Color blue="0" green="cc" red="33" type="rgb"/>
         </Property>
         <Property name="borderPainted" type="boolean" value="false"/>
-        <Property name="model" type="javax.swing.ButtonModel" editor="org.netbeans.modules.form.ComponentChooserEditor">
-          <ComponentRef name="default"/>
-        </Property>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCumplioObjetivo8ActionPerformed"/>
@@ -827,9 +800,6 @@
           <Color blue="0" green="cc" red="33" type="rgb"/>
         </Property>
         <Property name="borderPainted" type="boolean" value="false"/>
-        <Property name="model" type="javax.swing.ButtonModel" editor="org.netbeans.modules.form.ComponentChooserEditor">
-          <ComponentRef name="default"/>
-        </Property>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCumplioObjetivo9ActionPerformed"/>
@@ -878,9 +848,6 @@
           <Color blue="0" green="cc" red="33" type="rgb"/>
         </Property>
         <Property name="borderPainted" type="boolean" value="false"/>
-        <Property name="model" type="javax.swing.ButtonModel" editor="org.netbeans.modules.form.ComponentChooserEditor">
-          <ComponentRef name="default"/>
-        </Property>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCumplioObjetivo10ActionPerformed"/>
@@ -929,9 +896,6 @@
           <Color blue="0" green="cc" red="33" type="rgb"/>
         </Property>
         <Property name="borderPainted" type="boolean" value="false"/>
-        <Property name="model" type="javax.swing.ButtonModel" editor="org.netbeans.modules.form.ComponentChooserEditor">
-          <ComponentRef name="default"/>
-        </Property>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCumplioObjetivo11ActionPerformed"/>
@@ -980,9 +944,6 @@
           <Color blue="0" green="cc" red="33" type="rgb"/>
         </Property>
         <Property name="borderPainted" type="boolean" value="false"/>
-        <Property name="model" type="javax.swing.ButtonModel" editor="org.netbeans.modules.form.ComponentChooserEditor">
-          <ComponentRef name="default"/>
-        </Property>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCumplioObjetivo12ActionPerformed"/>
@@ -1031,9 +992,6 @@
           <Color blue="0" green="cc" red="33" type="rgb"/>
         </Property>
         <Property name="borderPainted" type="boolean" value="false"/>
-        <Property name="model" type="javax.swing.ButtonModel" editor="org.netbeans.modules.form.ComponentChooserEditor">
-          <ComponentRef name="default"/>
-        </Property>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCumplioObjetivo13ActionPerformed"/>
@@ -1082,9 +1040,6 @@
           <Color blue="0" green="cc" red="33" type="rgb"/>
         </Property>
         <Property name="borderPainted" type="boolean" value="false"/>
-        <Property name="model" type="javax.swing.ButtonModel" editor="org.netbeans.modules.form.ComponentChooserEditor">
-          <ComponentRef name="default"/>
-        </Property>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCumplioObjetivo14ActionPerformed"/>

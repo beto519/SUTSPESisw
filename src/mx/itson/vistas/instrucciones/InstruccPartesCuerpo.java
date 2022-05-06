@@ -659,7 +659,9 @@ public class InstruccPartesCuerpo extends javax.swing.JFrame {
         estadoPorcentaje = 52.5925925928;
         CargarBarra();
         PorcentajeNiño();
-
+        porcentajeActual = estadoPorcentaje;
+        System.out.println(estadoPorcentaje);
+        System.out.println(porcentajeActual);
         // TODO add your handling code here:
     }//GEN-LAST:event_btnRequiereApoyo5ActionPerformed
 
@@ -668,7 +670,10 @@ public class InstruccPartesCuerpo extends javax.swing.JFrame {
             estadoPorcentaje = 52.9629629632;
             CargarBarra();
             PorcentajeNiño();
+            porcentajeActual = estadoPorcentaje;
         }
+        System.out.println(estadoPorcentaje);
+        System.out.println(porcentajeActual);
         // TODO add your handling code here:
     }//GEN-LAST:event_btnCumplioObjetivoActionPerformed
 
@@ -677,8 +682,10 @@ public class InstruccPartesCuerpo extends javax.swing.JFrame {
             estadoPorcentaje = 51.4814814816;
             CargarBarra();
             PorcentajeNiño();
+            porcentajeActual = estadoPorcentaje;
         }
-
+System.out.println(estadoPorcentaje);
+        System.out.println(porcentajeActual);
         // TODO add your handling code here:
     }//GEN-LAST:event_btnCasiLograActionPerformed
 
@@ -686,6 +693,9 @@ public class InstruccPartesCuerpo extends javax.swing.JFrame {
         estadoPorcentaje = 50.7407407408;
         CargarBarra();
         PorcentajeNiño();
+        porcentajeActual = estadoPorcentaje;
+        System.out.println(estadoPorcentaje);
+        System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnRequiereApoyo6ActionPerformed
 
     private void btnCasiLogra1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra1ActionPerformed
@@ -693,7 +703,10 @@ public class InstruccPartesCuerpo extends javax.swing.JFrame {
             estadoPorcentaje = 50.5555555556;
             CargarBarra();       
             PorcentajeNiño();
+            porcentajeActual = estadoPorcentaje;
         }
+        System.out.println(estadoPorcentaje);
+        System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnCasiLogra1ActionPerformed
 
     private void btnCumplioObjetivo1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo1ActionPerformed
@@ -701,13 +714,19 @@ public class InstruccPartesCuerpo extends javax.swing.JFrame {
             estadoPorcentaje = 51.1111111112;
             CargarBarra();
             PorcentajeNiño();
+            porcentajeActual = estadoPorcentaje;
         }
+        System.out.println(estadoPorcentaje);
+        System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnCumplioObjetivo1ActionPerformed
 
     private void btnRequiereApoyo7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo7ActionPerformed
         estadoPorcentaje = 51.1111111112;
         CargarBarra();
         PorcentajeNiño();
+        porcentajeActual = estadoPorcentaje;
+        System.out.println(estadoPorcentaje);
+        System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnRequiereApoyo7ActionPerformed
 
     private void btnCasiLogra2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra2ActionPerformed
@@ -715,7 +734,10 @@ public class InstruccPartesCuerpo extends javax.swing.JFrame {
             estadoPorcentaje = 50.7407407408;
             CargarBarra();
             PorcentajeNiño();
+            porcentajeActual = estadoPorcentaje;
         }
+        System.out.println(estadoPorcentaje);
+        System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnCasiLogra2ActionPerformed
 
     private void btnCumplioObjetivo2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo2ActionPerformed
@@ -723,13 +745,19 @@ public class InstruccPartesCuerpo extends javax.swing.JFrame {
             estadoPorcentaje = 51.4814814816;
             CargarBarra();
             PorcentajeNiño();
+            porcentajeActual = estadoPorcentaje;
         }
+        System.out.println(estadoPorcentaje);
+        System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnCumplioObjetivo2ActionPerformed
 
     private void btnRequiereApoyo8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo8ActionPerformed
          estadoPorcentaje = 51.4814814816;
         CargarBarra();
         PorcentajeNiño();
+        porcentajeActual = estadoPorcentaje;
+        System.out.println(estadoPorcentaje);
+        System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnRequiereApoyo8ActionPerformed
 
     private void btnCasiLogra3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra3ActionPerformed
@@ -737,7 +765,10 @@ public class InstruccPartesCuerpo extends javax.swing.JFrame {
             estadoPorcentaje = 50.925925926;
             CargarBarra();
             PorcentajeNiño();
+            porcentajeActual = estadoPorcentaje;
         }
+        System.out.println(estadoPorcentaje);
+        System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnCasiLogra3ActionPerformed
 
     private void btnCumplioObjetivo3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo3ActionPerformed
@@ -745,13 +776,19 @@ public class InstruccPartesCuerpo extends javax.swing.JFrame {
             estadoPorcentaje = 51.851851852;
             CargarBarra();
             PorcentajeNiño();
+            porcentajeActual = estadoPorcentaje;
         }
+        System.out.println(estadoPorcentaje);
+        System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnCumplioObjetivo3ActionPerformed
 
     private void btnRequiereApoyo9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo9ActionPerformed
         estadoPorcentaje = 51.851851852;
         CargarBarra();
         PorcentajeNiño();
+        porcentajeActual = estadoPorcentaje;
+        System.out.println(estadoPorcentaje);
+        System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnRequiereApoyo9ActionPerformed
 
     private void btnCasiLogra4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra4ActionPerformed
@@ -759,7 +796,10 @@ public class InstruccPartesCuerpo extends javax.swing.JFrame {
             estadoPorcentaje = 51.1111111112;
             CargarBarra();
             PorcentajeNiño();
+            porcentajeActual = estadoPorcentaje;
         }
+        System.out.println(estadoPorcentaje);
+        System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnCasiLogra4ActionPerformed
 
     private void btnCumplioObjetivo4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo4ActionPerformed
@@ -767,13 +807,19 @@ public class InstruccPartesCuerpo extends javax.swing.JFrame {
             estadoPorcentaje = 52.2222222224;
             CargarBarra();
             PorcentajeNiño();
+            porcentajeActual = estadoPorcentaje;
         }
+        System.out.println(estadoPorcentaje);
+        System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnCumplioObjetivo4ActionPerformed
 
     private void btnRequiereApoyo10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo10ActionPerformed
         estadoPorcentaje = 52.2222222224;
         CargarBarra();
         PorcentajeNiño();
+        porcentajeActual = estadoPorcentaje;
+        System.out.println(estadoPorcentaje);
+        System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnRequiereApoyo10ActionPerformed
 
     private void btnCasiLogra5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra5ActionPerformed
@@ -781,7 +827,10 @@ public class InstruccPartesCuerpo extends javax.swing.JFrame {
             estadoPorcentaje = 51.2962962964;
             CargarBarra();
             PorcentajeNiño();
+            porcentajeActual = estadoPorcentaje;
         }
+        System.out.println(estadoPorcentaje);
+        System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnCasiLogra5ActionPerformed
 
     private void btnCumplioObjetivo5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo5ActionPerformed
@@ -789,13 +838,19 @@ public class InstruccPartesCuerpo extends javax.swing.JFrame {
             estadoPorcentaje = 52.5925925928;
             CargarBarra();
             PorcentajeNiño();
+            porcentajeActual = estadoPorcentaje;
         }
+        System.out.println(estadoPorcentaje);
+        System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnCumplioObjetivo5ActionPerformed
 
     private void btnRequiereApoyo11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo11ActionPerformed
         estadoPorcentaje = 50.37037037041;
         CargarBarra();
         PorcentajeNiño();
+        porcentajeActual = estadoPorcentaje;
+        System.out.println(estadoPorcentaje);
+        System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnRequiereApoyo11ActionPerformed
 
     private void btnCasiLogra6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra6ActionPerformed
@@ -803,7 +858,10 @@ public class InstruccPartesCuerpo extends javax.swing.JFrame {
             estadoPorcentaje = 50.3703703704;
             CargarBarra();
             PorcentajeNiño();
+            porcentajeActual = estadoPorcentaje;
         }
+        System.out.println(estadoPorcentaje);
+        System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnCasiLogra6ActionPerformed
 
     private void btnCumplioObjetivo6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo6ActionPerformed
@@ -811,13 +869,19 @@ public class InstruccPartesCuerpo extends javax.swing.JFrame {
             estadoPorcentaje = 50.7407407408;
             CargarBarra();
             PorcentajeNiño();
+            porcentajeActual = estadoPorcentaje;
         }
+        System.out.println(estadoPorcentaje);
+        System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnCumplioObjetivo6ActionPerformed
 
     private void btnRequiereApoyo12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo12ActionPerformed
         estadoPorcentaje = 52.9629629632;
         CargarBarra();
         PorcentajeNiño();
+        porcentajeActual = estadoPorcentaje;
+        System.out.println(estadoPorcentaje);
+        System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnRequiereApoyo12ActionPerformed
 
     private void btnCasiLogra7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra7ActionPerformed
@@ -825,7 +889,10 @@ public class InstruccPartesCuerpo extends javax.swing.JFrame {
             estadoPorcentaje = 51.6666666668;
             CargarBarra();
             PorcentajeNiño();
+            porcentajeActual = estadoPorcentaje;
         }
+        System.out.println(estadoPorcentaje);
+        System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnCasiLogra7ActionPerformed
 
     private void btnCumplioObjetivo7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo7ActionPerformed
@@ -833,13 +900,19 @@ public class InstruccPartesCuerpo extends javax.swing.JFrame {
             estadoPorcentaje = 53.3333333336;
             CargarBarra();
             PorcentajeNiño();
+            porcentajeActual = estadoPorcentaje;
         }
+        System.out.println(estadoPorcentaje);
+        System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnCumplioObjetivo7ActionPerformed
 
     private void btnRequiereApoyo13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo13ActionPerformed
         estadoPorcentaje = 53.3333333336;
         CargarBarra();
         PorcentajeNiño();
+        porcentajeActual = estadoPorcentaje;
+        System.out.println(estadoPorcentaje);
+        System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnRequiereApoyo13ActionPerformed
 
     private void btnCasiLogra8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra8ActionPerformed
@@ -847,7 +920,10 @@ public class InstruccPartesCuerpo extends javax.swing.JFrame {
             estadoPorcentaje = 51.851851852;
             CargarBarra();
             PorcentajeNiño();
+            porcentajeActual = estadoPorcentaje;
         }
+        System.out.println(estadoPorcentaje);
+        System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnCasiLogra8ActionPerformed
 
     private void btnCumplioObjetivo8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo8ActionPerformed
@@ -855,13 +931,19 @@ public class InstruccPartesCuerpo extends javax.swing.JFrame {
             estadoPorcentaje = 53.703703704;
             CargarBarra();
             PorcentajeNiño();
+            porcentajeActual = estadoPorcentaje;
         }
+        System.out.println(estadoPorcentaje);
+        System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnCumplioObjetivo8ActionPerformed
 
     private void btnRequiereApoyo14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo14ActionPerformed
         estadoPorcentaje = 53.703703704;
         CargarBarra();
         PorcentajeNiño();
+        porcentajeActual = estadoPorcentaje;
+        System.out.println(estadoPorcentaje);
+        System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnRequiereApoyo14ActionPerformed
 
     private void btnCasiLogra9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra9ActionPerformed
@@ -869,7 +951,10 @@ public class InstruccPartesCuerpo extends javax.swing.JFrame {
             estadoPorcentaje = 52.0370370372;
             CargarBarra();
             PorcentajeNiño();
+            porcentajeActual = estadoPorcentaje;
         }
+        System.out.println(estadoPorcentaje);
+        System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnCasiLogra9ActionPerformed
 
     private void btnCumplioObjetivo9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo9ActionPerformed
@@ -877,13 +962,19 @@ public class InstruccPartesCuerpo extends javax.swing.JFrame {
             estadoPorcentaje = 54.0740740744;
             CargarBarra();
             PorcentajeNiño();
+            porcentajeActual = estadoPorcentaje;
         }
+        System.out.println(estadoPorcentaje);
+        System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnCumplioObjetivo9ActionPerformed
 
     private void btnRequiereApoyo15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo15ActionPerformed
         estadoPorcentaje = 54.0740740744;
         CargarBarra();
         PorcentajeNiño();
+        porcentajeActual = estadoPorcentaje;
+        System.out.println(estadoPorcentaje);
+        System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnRequiereApoyo15ActionPerformed
 
     private void btnCasiLogra10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra10ActionPerformed
@@ -891,7 +982,10 @@ public class InstruccPartesCuerpo extends javax.swing.JFrame {
             estadoPorcentaje = 52.2222222224;
             CargarBarra();
             PorcentajeNiño();
+            porcentajeActual = estadoPorcentaje;
         }
+        System.out.println(estadoPorcentaje);
+        System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnCasiLogra10ActionPerformed
 
     private void btnCumplioObjetivo10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo10ActionPerformed
@@ -899,13 +993,19 @@ public class InstruccPartesCuerpo extends javax.swing.JFrame {
             estadoPorcentaje = 54.4444444448;
             CargarBarra();
             PorcentajeNiño();
+            porcentajeActual = estadoPorcentaje;
         }
+        System.out.println(estadoPorcentaje);
+        System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnCumplioObjetivo10ActionPerformed
 
     private void btnRequiereApoyo16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo16ActionPerformed
         estadoPorcentaje = 54.4444444448;
         CargarBarra();
         PorcentajeNiño();
+        porcentajeActual = estadoPorcentaje;
+        System.out.println(estadoPorcentaje);
+        System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnRequiereApoyo16ActionPerformed
 
     private void btnCasiLogra11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra11ActionPerformed
@@ -913,7 +1013,10 @@ public class InstruccPartesCuerpo extends javax.swing.JFrame {
             estadoPorcentaje = 52.4074074076;
             CargarBarra();
             PorcentajeNiño();
+            porcentajeActual = estadoPorcentaje;
         }
+        System.out.println(estadoPorcentaje);
+        System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnCasiLogra11ActionPerformed
 
     private void btnCumplioObjetivo11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo11ActionPerformed
@@ -921,13 +1024,19 @@ public class InstruccPartesCuerpo extends javax.swing.JFrame {
             estadoPorcentaje = 54.8148148152;
             CargarBarra();
             PorcentajeNiño();
+            porcentajeActual = estadoPorcentaje;
         }
+        System.out.println(estadoPorcentaje);
+        System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnCumplioObjetivo11ActionPerformed
 
     private void btnRequiereApoyo17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo17ActionPerformed
         estadoPorcentaje = 54.8148148152;
         CargarBarra();
         PorcentajeNiño();
+        porcentajeActual = estadoPorcentaje;
+        System.out.println(estadoPorcentaje);
+        System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnRequiereApoyo17ActionPerformed
 
     private void btnCasiLogra12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra12ActionPerformed
@@ -935,7 +1044,10 @@ public class InstruccPartesCuerpo extends javax.swing.JFrame {
             estadoPorcentaje = 52.5925925928;
             CargarBarra();
             PorcentajeNiño();
+            porcentajeActual = estadoPorcentaje;
         }
+        System.out.println(estadoPorcentaje);
+        System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnCasiLogra12ActionPerformed
 
     private void btnCumplioObjetivo12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo12ActionPerformed
@@ -943,13 +1055,19 @@ public class InstruccPartesCuerpo extends javax.swing.JFrame {
             estadoPorcentaje = 55.1851851856;
             CargarBarra();
             PorcentajeNiño();
+            porcentajeActual = estadoPorcentaje;
         }
+        System.out.println(estadoPorcentaje);
+        System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnCumplioObjetivo12ActionPerformed
 
     private void btnRequiereApoyo18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo18ActionPerformed
         estadoPorcentaje = 55.1851851856;
         CargarBarra();
         PorcentajeNiño();
+        porcentajeActual = estadoPorcentaje;
+        System.out.println(estadoPorcentaje);
+        System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnRequiereApoyo18ActionPerformed
 
     private void btnCasiLogra13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra13ActionPerformed
@@ -957,7 +1075,10 @@ public class InstruccPartesCuerpo extends javax.swing.JFrame {
             estadoPorcentaje = 52.777777778;
             CargarBarra();
             PorcentajeNiño();
+            porcentajeActual = estadoPorcentaje;
         }
+         System.out.println(estadoPorcentaje);
+        System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnCasiLogra13ActionPerformed
 
     private void btnCumplioObjetivo13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo13ActionPerformed
@@ -965,13 +1086,19 @@ public class InstruccPartesCuerpo extends javax.swing.JFrame {
             estadoPorcentaje = 55.555555556;
             CargarBarra();
             PorcentajeNiño();
+            porcentajeActual = estadoPorcentaje;
         }
+        System.out.println(estadoPorcentaje);
+        System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnCumplioObjetivo13ActionPerformed
 
     private void btnRequiereApoyo19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo19ActionPerformed
         estadoPorcentaje = 50;
         CargarBarra();
         PorcentajeNiño();
+        porcentajeActual = estadoPorcentaje;
+        System.out.println(estadoPorcentaje);
+        System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnRequiereApoyo19ActionPerformed
 
     private void btnCasiLogra14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra14ActionPerformed
@@ -979,7 +1106,10 @@ public class InstruccPartesCuerpo extends javax.swing.JFrame {
             estadoPorcentaje = 50.185185185;
             CargarBarra();
             PorcentajeNiño();
+            porcentajeActual = estadoPorcentaje;
         }
+        System.out.println(estadoPorcentaje);
+        System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnCasiLogra14ActionPerformed
 
     private void btnCumplioObjetivo14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo14ActionPerformed
@@ -987,7 +1117,10 @@ public class InstruccPartesCuerpo extends javax.swing.JFrame {
             estadoPorcentaje = 50.37037037041;
             CargarBarra();
             PorcentajeNiño();
+            porcentajeActual = estadoPorcentaje;
         }
+        System.out.println(estadoPorcentaje);
+        System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnCumplioObjetivo14ActionPerformed
 
     /**
