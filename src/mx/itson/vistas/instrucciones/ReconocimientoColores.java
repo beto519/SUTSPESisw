@@ -4,12 +4,21 @@
  */
 package mx.itson.vistas.instrucciones;
 
+import javax.swing.JOptionPane;
+import mx.itson.entidades.Alumno;
+import mx.itson.interfaces.DAOAlumnoIMP;
+import mx.itson.vistas.LoginNiños;
+
 /**
  *
  * @author vinko
  */
 public class ReconocimientoColores extends javax.swing.JFrame {
-private int estadoPorcentaje;
+    DAOAlumnoIMP Alumno = new DAOAlumnoIMP();
+    LoginNiños ln = new LoginNiños();
+    Alumno alum = new Alumno();
+    public  double estadoPorcentaje;
+    double porcentajeActual;
     /**
      * Creates new form ReconocimientoColores
      */
@@ -17,6 +26,7 @@ private int estadoPorcentaje;
         initComponents();
                  setLocationRelativeTo(null);
          this.setExtendedState(MAXIMIZED_BOTH);
+         niño();
     }
 
     /**
@@ -130,30 +140,65 @@ private int estadoPorcentaje;
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-private void CargarBarra(){
-jProgressBar1.setValue(estadoPorcentaje);
 
-}
+ private void niño() {
+        Alumno alu = Alumno.obtenerPorId(ln.claveNiño);
+        porcentajeActual = alu.getPorcentaje();
+        estadoPorcentaje = porcentajeActual;
+        BarraProgreso();
+    }
     private void btnRequiereApoyoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyoActionPerformed
-        estadoPorcentaje = 0;
-        CargarBarra();
+        int Respuesta = JOptionPane.showConfirmDialog(this, "Seguro que quieres reiniciar el progreso de esta tarea?","Confirmar?",
+        JOptionPane.YES_NO_OPTION,JOptionPane.QUESTION_MESSAGE);
+        if(Respuesta == JOptionPane.YES_OPTION){
+        estadoPorcentaje = 55.555555556;
+        PorcentajeNiño();
+        porcentajeActual = estadoPorcentaje;
+        BarraProgreso();
+        }
         // TODO add your handling code here:
     }//GEN-LAST:event_btnRequiereApoyoActionPerformed
 
     private void btnCasiLograActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLograActionPerformed
-        estadoPorcentaje = 50;
-        CargarBarra();
+       if(estadoPorcentaje == 55.555555556){
+        estadoPorcentaje = 58.33333;
+        PorcentajeNiño();
+        porcentajeActual = estadoPorcentaje;
+        BarraProgreso();
+    }
         // TODO add your handling code here:
     }//GEN-LAST:event_btnCasiLograActionPerformed
 
     private void btnCumplioObjetivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivoActionPerformed
-        estadoPorcentaje = 100;
-        CargarBarra();// TODO add your handling code here:
+        if(estadoPorcentaje < 61.11111){
+        estadoPorcentaje = 61.11111;
+        PorcentajeNiño();
+        porcentajeActual = estadoPorcentaje;
+        BarraProgreso();
+        }
     }//GEN-LAST:event_btnCumplioObjetivoActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
+    public void BarraProgreso()
+   {
+        if(porcentajeActual == 55.555555556){
+          jProgressBar1.setValue(0);
+        }if(porcentajeActual == 58.33333){
+          jProgressBar1.setValue(50);
+        }if(porcentajeActual == 61.11111){
+          jProgressBar1.setValue(100);
+        }
+}
+    private void PorcentajeNiño() {
+
+        try {
+            alum.setPorcentaje(estadoPorcentaje);
+            alum.setIdAlumno(ln.claveNiño);
+            Alumno.editar(alum);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+    
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">

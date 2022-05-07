@@ -5,6 +5,7 @@
  */
 package mx.itson.vistas.instrucciones;
 
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import mx.itson.entidades.Alumno;
 import mx.itson.interfaces.DAOAlumnoIMP;
@@ -120,6 +121,21 @@ public class InstruccPartesCuerpo extends javax.swing.JFrame {
         btnCasiLogra14 = new javax.swing.JButton();
         btnCumplioObjetivo14 = new javax.swing.JButton();
         jProgressBar1 = new javax.swing.JProgressBar();
+        lblResultado1 = new javax.swing.JLabel();
+        lblResultado2 = new javax.swing.JLabel();
+        lblResultado3 = new javax.swing.JLabel();
+        lblResultado4 = new javax.swing.JLabel();
+        lblResultado5 = new javax.swing.JLabel();
+        lblResultado6 = new javax.swing.JLabel();
+        lblResultado7 = new javax.swing.JLabel();
+        lblResultado8 = new javax.swing.JLabel();
+        lblResultado9 = new javax.swing.JLabel();
+        lblResultado10 = new javax.swing.JLabel();
+        lblResultado11 = new javax.swing.JLabel();
+        lblResultado12 = new javax.swing.JLabel();
+        lblResultado13 = new javax.swing.JLabel();
+        lblResultado14 = new javax.swing.JLabel();
+        lblResultado15 = new javax.swing.JLabel();
         Fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -637,6 +653,49 @@ public class InstruccPartesCuerpo extends javax.swing.JFrame {
 
         jProgressBar1.setStringPainted(true);
         getContentPane().add(jProgressBar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 620, 800, 50));
+        getContentPane().add(lblResultado1, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 70, 20, 30));
+
+        lblResultado2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/Rojo.jpg"))); // NOI18N
+        getContentPane().add(lblResultado2, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 130, 20, 30));
+
+        lblResultado3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/Rojo.jpg"))); // NOI18N
+        getContentPane().add(lblResultado3, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 200, 20, 30));
+
+        lblResultado4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/Rojo.jpg"))); // NOI18N
+        getContentPane().add(lblResultado4, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 270, 20, 30));
+
+        lblResultado5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/Rojo.jpg"))); // NOI18N
+        getContentPane().add(lblResultado5, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 340, 20, 30));
+
+        lblResultado6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/Rojo.jpg"))); // NOI18N
+        getContentPane().add(lblResultado6, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 400, 20, 30));
+
+        lblResultado7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/Rojo.jpg"))); // NOI18N
+        getContentPane().add(lblResultado7, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 460, 20, 30));
+
+        lblResultado8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/Rojo.jpg"))); // NOI18N
+        getContentPane().add(lblResultado8, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 520, 20, 30));
+
+        lblResultado9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/Rojo.jpg"))); // NOI18N
+        getContentPane().add(lblResultado9, new org.netbeans.lib.awtextra.AbsoluteConstraints(1210, 70, 20, 30));
+
+        lblResultado10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/Rojo.jpg"))); // NOI18N
+        getContentPane().add(lblResultado10, new org.netbeans.lib.awtextra.AbsoluteConstraints(1210, 130, 20, 30));
+
+        lblResultado11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/Rojo.jpg"))); // NOI18N
+        getContentPane().add(lblResultado11, new org.netbeans.lib.awtextra.AbsoluteConstraints(1210, 190, 20, 30));
+
+        lblResultado12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/Rojo.jpg"))); // NOI18N
+        getContentPane().add(lblResultado12, new org.netbeans.lib.awtextra.AbsoluteConstraints(1210, 250, 20, 30));
+
+        lblResultado13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/Rojo.jpg"))); // NOI18N
+        getContentPane().add(lblResultado13, new org.netbeans.lib.awtextra.AbsoluteConstraints(1210, 310, 20, 30));
+
+        lblResultado14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/Rojo.jpg"))); // NOI18N
+        getContentPane().add(lblResultado14, new org.netbeans.lib.awtextra.AbsoluteConstraints(1210, 370, 20, 30));
+
+        lblResultado15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/Rojo.jpg"))); // NOI18N
+        getContentPane().add(lblResultado15, new org.netbeans.lib.awtextra.AbsoluteConstraints(1210, 430, 20, 30));
 
         Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoAmarillo.jpg"))); // NOI18N
         getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1340, 790));
@@ -1087,6 +1146,7 @@ public class InstruccPartesCuerpo extends javax.swing.JFrame {
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
+            barrita = 100;
         }
         System.out.println(estadoPorcentaje);
         System.out.println(porcentajeActual);
@@ -1285,5 +1345,20 @@ public class InstruccPartesCuerpo extends javax.swing.JFrame {
     private javax.swing.JButton btnRequiereApoyo9;
     private javax.swing.JButton btnVolver;
     private javax.swing.JProgressBar jProgressBar1;
+    private javax.swing.JLabel lblResultado1;
+    private javax.swing.JLabel lblResultado10;
+    private javax.swing.JLabel lblResultado11;
+    private javax.swing.JLabel lblResultado12;
+    private javax.swing.JLabel lblResultado13;
+    private javax.swing.JLabel lblResultado14;
+    private javax.swing.JLabel lblResultado15;
+    private javax.swing.JLabel lblResultado2;
+    private javax.swing.JLabel lblResultado3;
+    private javax.swing.JLabel lblResultado4;
+    private javax.swing.JLabel lblResultado5;
+    private javax.swing.JLabel lblResultado6;
+    private javax.swing.JLabel lblResultado7;
+    private javax.swing.JLabel lblResultado8;
+    private javax.swing.JLabel lblResultado9;
     // End of variables declaration//GEN-END:variables
 }

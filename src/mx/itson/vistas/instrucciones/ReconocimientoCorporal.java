@@ -125,6 +125,8 @@ public class ReconocimientoCorporal extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    
+    
     private void Btn_InstruccionesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Btn_InstruccionesMouseClicked
         InstruccPartesCuerpo instrucciones = new InstruccPartesCuerpo();
         instrucciones.setVisible(true);
