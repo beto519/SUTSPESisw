@@ -3,6 +3,9 @@ package mx.itson.vistas.instrucciones;
 
 import java.awt.BorderLayout;
 import javax.swing.JFrame;
+import mx.itson.entidades.Alumno;
+import mx.itson.interfaces.DAOAlumnoIMP;
+import mx.itson.vistas.LoginNiños;
 
 /**
  *
@@ -10,15 +13,19 @@ import javax.swing.JFrame;
  */
 public class ReconocimientoCorporal extends javax.swing.JFrame {
 
-    /**
-     * Creates new form ReconocimCorporal
-     */
+    DAOAlumnoIMP Alumno = new DAOAlumnoIMP();
+    InstruccPartesCuerpo ipc = new InstruccPartesCuerpo();
+    public  double estadoPorcentaje;
+    double porcentajeActual;
+    LoginNiños ln = new LoginNiños();
+    
     public ReconocimientoCorporal() {
         initComponents();
     
-        setVisible(true);
         setResizable(false);
          setLocationRelativeTo(null);
+         jProgressBar1.setValue(ipc.barrita);
+         niño();
         // this.setExtendedState(MAXIMIZED_BOTH);
      //   setLayout(new BorderLayout());
     }
@@ -124,9 +131,80 @@ public class ReconocimientoCorporal extends javax.swing.JFrame {
          dispose();
     }//GEN-LAST:event_Btn_InstruccionesMouseClicked
 
-    /**
-     * @param args the command line arguments
-     */
+    private void niño() {
+        Alumno alu = Alumno.obtenerPorId(ln.claveNiño);
+        porcentajeActual = alu.getPorcentaje();
+        estadoPorcentaje = porcentajeActual;
+        BarraProgreso();
+    }
+    
+    public void BarraProgreso()
+   {
+    if(porcentajeActual == 50){
+          jProgressBar1.setValue(0);
+        }if(porcentajeActual == 50.185185185){
+          jProgressBar1.setValue(3);
+        }if(porcentajeActual == 50.37037037041){
+          jProgressBar1.setValue(7);
+        }if(porcentajeActual == 50.3703703704){
+          jProgressBar1.setValue(10);
+        }if(porcentajeActual == 50.7407407408){
+          jProgressBar1.setValue(14);
+        }if(porcentajeActual == 50.5555555556){
+          jProgressBar1.setValue(17);
+        }if(porcentajeActual == 51.1111111112){
+          jProgressBar1.setValue(21);
+        }if(porcentajeActual == 50.74074074081){
+          jProgressBar1.setValue(24);
+        }if(porcentajeActual == 51.4814814816){
+          jProgressBar1.setValue(28);
+        }if(porcentajeActual == 50.925925926){
+          jProgressBar1.setValue(31);
+        }if(porcentajeActual == 51.851851852){
+          jProgressBar1.setValue(35);
+        }if(porcentajeActual == 51.11111111121){
+          jProgressBar1.setValue(38);
+        }if(porcentajeActual == 52.2222222224){
+          jProgressBar1.setValue(42);
+        }if(porcentajeActual == 51.2962962964){
+          jProgressBar1.setValue(45);
+        }if(porcentajeActual == 52.5925925928){
+          jProgressBar1.setValue(49);
+        }if(porcentajeActual == 51.48148148161){
+          jProgressBar1.setValue(52);
+        }if(porcentajeActual == 52.9629629632){
+          jProgressBar1.setValue(56);
+        }if(porcentajeActual == 51.6666666668){
+          jProgressBar1.setValue(59);
+        }if(porcentajeActual == 53.3333333336){
+          jProgressBar1.setValue(63);
+        }if(porcentajeActual == 51.8518518521){
+          jProgressBar1.setValue(66);
+        }if(porcentajeActual == 53.703703704){
+          jProgressBar1.setValue(70);
+        }if(porcentajeActual == 52.0370370372){
+          jProgressBar1.setValue(73);
+        }if(porcentajeActual == 54.0740740744){
+          jProgressBar1.setValue(77);
+        }if(porcentajeActual == 52.22222222241){
+          jProgressBar1.setValue(80);
+        }if(porcentajeActual == 54.4444444448){
+          jProgressBar1.setValue(84);
+        }if(porcentajeActual == 52.4074074076){
+          jProgressBar1.setValue(87);
+        }if(porcentajeActual == 54.8148148152){
+          jProgressBar1.setValue(91);
+        }if(porcentajeActual == 52.59259259281){
+          jProgressBar1.setValue(94);
+        }if(porcentajeActual == 55.1851851856){
+          jProgressBar1.setValue(98);
+        }if(porcentajeActual == 52.777777778){
+          jProgressBar1.setValue(99);
+        }if(porcentajeActual == 55.555555556){
+          jProgressBar1.setValue(100);
+        }
+}
+
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -159,6 +237,7 @@ public class ReconocimientoCorporal extends javax.swing.JFrame {
             }
         });
     }
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Btn_Instrucciones;
