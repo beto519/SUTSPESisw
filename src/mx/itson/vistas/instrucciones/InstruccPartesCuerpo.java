@@ -657,9 +657,9 @@ public class InstruccPartesCuerpo extends javax.swing.JFrame {
     private void btnRequiereApoyo5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo5ActionPerformed
 
         estadoPorcentaje = 52.5925925928;
-        CargarBarra();
         PorcentajeNiño();
         porcentajeActual = estadoPorcentaje;
+        BarraProgreso();
         System.out.println(estadoPorcentaje);
         System.out.println(porcentajeActual);
         // TODO add your handling code here:
@@ -668,10 +668,9 @@ public class InstruccPartesCuerpo extends javax.swing.JFrame {
     private void btnCumplioObjetivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivoActionPerformed
         if (porcentajeActual < 52.9629629632) {
             estadoPorcentaje = 52.9629629632;
-            jProgressBar1.setValue(56);
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
-            barrita = 56;
+            BarraProgreso();
         }
         System.out.println(estadoPorcentaje);
         System.out.println(porcentajeActual);
@@ -681,20 +680,20 @@ public class InstruccPartesCuerpo extends javax.swing.JFrame {
     private void btnCasiLograActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLograActionPerformed
         if (porcentajeActual == 52.5925925928) {
             estadoPorcentaje = 51.48148148161;
-            CargarBarra();
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
+            BarraProgreso();
         }
-System.out.println(estadoPorcentaje);
+        System.out.println(estadoPorcentaje);
         System.out.println(porcentajeActual);
         // TODO add your handling code here:
     }//GEN-LAST:event_btnCasiLograActionPerformed
 
     private void btnRequiereApoyo6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo6ActionPerformed
         estadoPorcentaje = 50.7407407408;
-        CargarBarra();
         PorcentajeNiño();
         porcentajeActual = estadoPorcentaje;
+        BarraProgreso();
         System.out.println(estadoPorcentaje);
         System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnRequiereApoyo6ActionPerformed
@@ -702,9 +701,9 @@ System.out.println(estadoPorcentaje);
     private void btnCasiLogra1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra1ActionPerformed
         if (porcentajeActual == 50.7407407408) {
             estadoPorcentaje = 50.5555555556;
-            CargarBarra();       
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
+            BarraProgreso();
         }
         System.out.println(estadoPorcentaje);
         System.out.println(porcentajeActual);
@@ -713,10 +712,9 @@ System.out.println(estadoPorcentaje);
     private void btnCumplioObjetivo1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo1ActionPerformed
         if (porcentajeActual < 51.1111111112) {
             estadoPorcentaje = 51.1111111112;
-            jProgressBar1.setValue(21);
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
-            barrita = 21;
+            BarraProgreso();
         }
         System.out.println(estadoPorcentaje);
         System.out.println(porcentajeActual);
@@ -724,9 +722,9 @@ System.out.println(estadoPorcentaje);
 
     private void btnRequiereApoyo7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo7ActionPerformed
         estadoPorcentaje = 51.1111111112;
-        CargarBarra();
         PorcentajeNiño();
         porcentajeActual = estadoPorcentaje;
+        BarraProgreso();
         System.out.println(estadoPorcentaje);
         System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnRequiereApoyo7ActionPerformed
@@ -734,9 +732,9 @@ System.out.println(estadoPorcentaje);
     private void btnCasiLogra2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra2ActionPerformed
         if (porcentajeActual == 51.1111111112) {
             estadoPorcentaje = 50.74074074081;
-            CargarBarra();
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
+            BarraProgreso();
         }
         System.out.println(estadoPorcentaje);
         System.out.println(porcentajeActual);
@@ -745,10 +743,9 @@ System.out.println(estadoPorcentaje);
     private void btnCumplioObjetivo2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo2ActionPerformed
         if (porcentajeActual < 51.4814814816) {
             estadoPorcentaje = 51.4814814816;
-            jProgressBar1.setValue(28);
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
-            barrita = 28;
+            BarraProgreso();
         }
         System.out.println(estadoPorcentaje);
         System.out.println(porcentajeActual);
@@ -756,9 +753,9 @@ System.out.println(estadoPorcentaje);
 
     private void btnRequiereApoyo8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo8ActionPerformed
          estadoPorcentaje = 51.4814814816;
-        CargarBarra();
         PorcentajeNiño();
         porcentajeActual = estadoPorcentaje;
+        BarraProgreso();
         System.out.println(estadoPorcentaje);
         System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnRequiereApoyo8ActionPerformed
@@ -766,9 +763,9 @@ System.out.println(estadoPorcentaje);
     private void btnCasiLogra3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra3ActionPerformed
         if (porcentajeActual == 51.4814814816) {
             estadoPorcentaje = 50.925925926;
-            CargarBarra();
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
+            BarraProgreso();
         }
         System.out.println(estadoPorcentaje);
         System.out.println(porcentajeActual);
@@ -777,10 +774,9 @@ System.out.println(estadoPorcentaje);
     private void btnCumplioObjetivo3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo3ActionPerformed
         if (porcentajeActual < 51.851851852) {
             estadoPorcentaje = 51.851851852;
-            jProgressBar1.setValue(35);
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
-            barrita = 35;
+            BarraProgreso();
         }
         System.out.println(estadoPorcentaje);
         System.out.println(porcentajeActual);
@@ -788,9 +784,9 @@ System.out.println(estadoPorcentaje);
 
     private void btnRequiereApoyo9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo9ActionPerformed
         estadoPorcentaje = 51.851851852;
-        CargarBarra();
         PorcentajeNiño();
         porcentajeActual = estadoPorcentaje;
+        BarraProgreso();
         System.out.println(estadoPorcentaje);
         System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnRequiereApoyo9ActionPerformed
@@ -798,9 +794,9 @@ System.out.println(estadoPorcentaje);
     private void btnCasiLogra4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra4ActionPerformed
         if (porcentajeActual == 51.851851852) {
             estadoPorcentaje = 51.11111111121;
-            CargarBarra();
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
+            BarraProgreso();
         }
         System.out.println(estadoPorcentaje);
         System.out.println(porcentajeActual);
@@ -809,10 +805,9 @@ System.out.println(estadoPorcentaje);
     private void btnCumplioObjetivo4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo4ActionPerformed
         if (porcentajeActual < 52.2222222224) {
             estadoPorcentaje = 52.2222222224;
-            jProgressBar1.setValue(42);
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
-            barrita = 42;
+            BarraProgreso();
         }
         System.out.println(estadoPorcentaje);
         System.out.println(porcentajeActual);
@@ -820,9 +815,9 @@ System.out.println(estadoPorcentaje);
 
     private void btnRequiereApoyo10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo10ActionPerformed
         estadoPorcentaje = 52.2222222224;
-        CargarBarra();
         PorcentajeNiño();
         porcentajeActual = estadoPorcentaje;
+        BarraProgreso();
         System.out.println(estadoPorcentaje);
         System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnRequiereApoyo10ActionPerformed
@@ -830,9 +825,9 @@ System.out.println(estadoPorcentaje);
     private void btnCasiLogra5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra5ActionPerformed
         if (porcentajeActual == 52.2222222224) {
             estadoPorcentaje = 51.2962962964;
-            CargarBarra();
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
+            BarraProgreso();
         }
         System.out.println(estadoPorcentaje);
         System.out.println(porcentajeActual);
@@ -841,10 +836,9 @@ System.out.println(estadoPorcentaje);
     private void btnCumplioObjetivo5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo5ActionPerformed
         if (porcentajeActual < 52.5925925928) {
             estadoPorcentaje = 52.5925925928;
-            jProgressBar1.setValue(49);
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
-            barrita = 49;
+            BarraProgreso();
         }
         System.out.println(estadoPorcentaje);
         System.out.println(porcentajeActual);
@@ -852,9 +846,9 @@ System.out.println(estadoPorcentaje);
 
     private void btnRequiereApoyo11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo11ActionPerformed
         estadoPorcentaje = 50.37037037041;
-        CargarBarra();
         PorcentajeNiño();
         porcentajeActual = estadoPorcentaje;
+        BarraProgreso();
         System.out.println(estadoPorcentaje);
         System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnRequiereApoyo11ActionPerformed
@@ -862,9 +856,9 @@ System.out.println(estadoPorcentaje);
     private void btnCasiLogra6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra6ActionPerformed
         if (porcentajeActual == 50.37037037041) {
             estadoPorcentaje = 50.3703703704;
-            CargarBarra();
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
+            BarraProgreso();
         }
         System.out.println(estadoPorcentaje);
         System.out.println(porcentajeActual);
@@ -873,10 +867,9 @@ System.out.println(estadoPorcentaje);
     private void btnCumplioObjetivo6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo6ActionPerformed
         if (porcentajeActual < 50.7407407408) {
             estadoPorcentaje = 50.7407407408;
-            jProgressBar1.setValue(14);
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
-            barrita = 14;
+            BarraProgreso();
         }
         System.out.println(estadoPorcentaje);
         System.out.println(porcentajeActual);
@@ -884,9 +877,9 @@ System.out.println(estadoPorcentaje);
 
     private void btnRequiereApoyo12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo12ActionPerformed
         estadoPorcentaje = 52.9629629632;
-        CargarBarra();
         PorcentajeNiño();
         porcentajeActual = estadoPorcentaje;
+        BarraProgreso();
         System.out.println(estadoPorcentaje);
         System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnRequiereApoyo12ActionPerformed
@@ -894,9 +887,9 @@ System.out.println(estadoPorcentaje);
     private void btnCasiLogra7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra7ActionPerformed
         if (porcentajeActual == 52.9629629632) {
             estadoPorcentaje = 51.6666666668;
-            CargarBarra();
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
+            BarraProgreso();
         }
         System.out.println(estadoPorcentaje);
         System.out.println(porcentajeActual);
@@ -905,10 +898,9 @@ System.out.println(estadoPorcentaje);
     private void btnCumplioObjetivo7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo7ActionPerformed
         if (porcentajeActual < 53.3333333336) {
             estadoPorcentaje = 53.3333333336;
-            jProgressBar1.setValue(63);
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
-            barrita = 63;
+            BarraProgreso();
         }
         System.out.println(estadoPorcentaje);
         System.out.println(porcentajeActual);
@@ -916,9 +908,9 @@ System.out.println(estadoPorcentaje);
 
     private void btnRequiereApoyo13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo13ActionPerformed
         estadoPorcentaje = 53.3333333336;
-        CargarBarra();
         PorcentajeNiño();
         porcentajeActual = estadoPorcentaje;
+        BarraProgreso();
         System.out.println(estadoPorcentaje);
         System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnRequiereApoyo13ActionPerformed
@@ -926,9 +918,9 @@ System.out.println(estadoPorcentaje);
     private void btnCasiLogra8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra8ActionPerformed
         if (porcentajeActual == 53.3333333336) {
             estadoPorcentaje = 51.8518518521;
-            CargarBarra();
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
+            BarraProgreso();
         }
         System.out.println(estadoPorcentaje);
         System.out.println(porcentajeActual);
@@ -937,10 +929,9 @@ System.out.println(estadoPorcentaje);
     private void btnCumplioObjetivo8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo8ActionPerformed
         if (porcentajeActual < 53.703703704) {
             estadoPorcentaje = 53.703703704;
-            jProgressBar1.setValue(70);
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
-            barrita = 70;
+            BarraProgreso();
         }
         System.out.println(estadoPorcentaje);
         System.out.println(porcentajeActual);
@@ -948,9 +939,9 @@ System.out.println(estadoPorcentaje);
 
     private void btnRequiereApoyo14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo14ActionPerformed
         estadoPorcentaje = 53.703703704;
-        CargarBarra();
         PorcentajeNiño();
         porcentajeActual = estadoPorcentaje;
+        BarraProgreso();
         System.out.println(estadoPorcentaje);
         System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnRequiereApoyo14ActionPerformed
@@ -958,9 +949,9 @@ System.out.println(estadoPorcentaje);
     private void btnCasiLogra9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra9ActionPerformed
         if (porcentajeActual == 53.703703704) {
             estadoPorcentaje = 52.0370370372;
-            CargarBarra();
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
+            BarraProgreso();
         }
         System.out.println(estadoPorcentaje);
         System.out.println(porcentajeActual);
@@ -969,10 +960,9 @@ System.out.println(estadoPorcentaje);
     private void btnCumplioObjetivo9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo9ActionPerformed
         if (porcentajeActual < 54.0740740744) {
             estadoPorcentaje = 54.0740740744;
-            jProgressBar1.setValue(77);
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
-            barrita = 77;
+            BarraProgreso();
         }
         System.out.println(estadoPorcentaje);
         System.out.println(porcentajeActual);
@@ -980,9 +970,9 @@ System.out.println(estadoPorcentaje);
 
     private void btnRequiereApoyo15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo15ActionPerformed
         estadoPorcentaje = 54.0740740744;
-        CargarBarra();
         PorcentajeNiño();
         porcentajeActual = estadoPorcentaje;
+        BarraProgreso();
         System.out.println(estadoPorcentaje);
         System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnRequiereApoyo15ActionPerformed
@@ -990,9 +980,9 @@ System.out.println(estadoPorcentaje);
     private void btnCasiLogra10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra10ActionPerformed
         if (porcentajeActual == 54.0740740744) {
             estadoPorcentaje = 52.22222222241;
-            CargarBarra();
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
+            BarraProgreso();
         }
         System.out.println(estadoPorcentaje);
         System.out.println(porcentajeActual);
@@ -1001,10 +991,9 @@ System.out.println(estadoPorcentaje);
     private void btnCumplioObjetivo10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo10ActionPerformed
         if (porcentajeActual < 54.4444444448) {
             estadoPorcentaje = 54.4444444448;
-            jProgressBar1.setValue(84);
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
-            barrita = 84;
+            BarraProgreso();
         }
         System.out.println(estadoPorcentaje);
         System.out.println(porcentajeActual);
@@ -1012,9 +1001,9 @@ System.out.println(estadoPorcentaje);
 
     private void btnRequiereApoyo16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo16ActionPerformed
         estadoPorcentaje = 54.4444444448;
-        CargarBarra();
         PorcentajeNiño();
         porcentajeActual = estadoPorcentaje;
+        BarraProgreso();
         System.out.println(estadoPorcentaje);
         System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnRequiereApoyo16ActionPerformed
@@ -1022,9 +1011,9 @@ System.out.println(estadoPorcentaje);
     private void btnCasiLogra11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra11ActionPerformed
         if (porcentajeActual == 54.4444444448) {
             estadoPorcentaje = 52.4074074076;
-            CargarBarra();
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
+            BarraProgreso();
         }
         System.out.println(estadoPorcentaje);
         System.out.println(porcentajeActual);
@@ -1033,10 +1022,9 @@ System.out.println(estadoPorcentaje);
     private void btnCumplioObjetivo11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo11ActionPerformed
         if (porcentajeActual < 54.8148148152) {
             estadoPorcentaje = 54.8148148152;
-            jProgressBar1.setValue(91);
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
-            barrita = 91;
+            BarraProgreso();
         }
         System.out.println(estadoPorcentaje);
         System.out.println(porcentajeActual);
@@ -1044,9 +1032,9 @@ System.out.println(estadoPorcentaje);
 
     private void btnRequiereApoyo17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo17ActionPerformed
         estadoPorcentaje = 54.8148148152;
-        CargarBarra();
         PorcentajeNiño();
         porcentajeActual = estadoPorcentaje;
+        BarraProgreso();
         System.out.println(estadoPorcentaje);
         System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnRequiereApoyo17ActionPerformed
@@ -1054,9 +1042,9 @@ System.out.println(estadoPorcentaje);
     private void btnCasiLogra12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra12ActionPerformed
         if (porcentajeActual == 54.8148148152) {
             estadoPorcentaje = 52.59259259281;
-            CargarBarra();
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
+            BarraProgreso();
         }
         System.out.println(estadoPorcentaje);
         System.out.println(porcentajeActual);
@@ -1065,10 +1053,9 @@ System.out.println(estadoPorcentaje);
     private void btnCumplioObjetivo12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo12ActionPerformed
         if (porcentajeActual < 55.1851851856) {
             estadoPorcentaje = 55.1851851856;
-            jProgressBar1.setValue(98);
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
-            barrita = 98;
+            BarraProgreso();
         }
         System.out.println(estadoPorcentaje);
         System.out.println(porcentajeActual);
@@ -1076,9 +1063,9 @@ System.out.println(estadoPorcentaje);
 
     private void btnRequiereApoyo18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo18ActionPerformed
         estadoPorcentaje = 55.1851851856;
-        CargarBarra();
         PorcentajeNiño();
         porcentajeActual = estadoPorcentaje;
+        BarraProgreso();
         System.out.println(estadoPorcentaje);
         System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnRequiereApoyo18ActionPerformed
@@ -1086,9 +1073,9 @@ System.out.println(estadoPorcentaje);
     private void btnCasiLogra13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra13ActionPerformed
          if (porcentajeActual == 55.1851851856) {
             estadoPorcentaje = 52.777777778;
-            CargarBarra();
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
+            BarraProgreso();
         }
          System.out.println(estadoPorcentaje);
         System.out.println(porcentajeActual);
@@ -1097,10 +1084,9 @@ System.out.println(estadoPorcentaje);
     private void btnCumplioObjetivo13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo13ActionPerformed
         if (porcentajeActual < 55.555555556) {
             estadoPorcentaje = 55.555555556;
-            jProgressBar1.setValue(100);
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
-            barrita = 100;
+            BarraProgreso();
         }
         System.out.println(estadoPorcentaje);
         System.out.println(porcentajeActual);
@@ -1108,9 +1094,9 @@ System.out.println(estadoPorcentaje);
 
     private void btnRequiereApoyo19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo19ActionPerformed
         estadoPorcentaje = 50;
-        CargarBarra();
         PorcentajeNiño();
         porcentajeActual = estadoPorcentaje;
+        BarraProgreso();
         System.out.println(estadoPorcentaje);
         System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnRequiereApoyo19ActionPerformed
@@ -1118,9 +1104,9 @@ System.out.println(estadoPorcentaje);
     private void btnCasiLogra14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra14ActionPerformed
         if (porcentajeActual == 50) {
             estadoPorcentaje = 50.185185185;
-            CargarBarra();
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
+            BarraProgreso();
         }
         System.out.println(estadoPorcentaje);
         System.out.println(porcentajeActual);
@@ -1129,10 +1115,9 @@ System.out.println(estadoPorcentaje);
     private void btnCumplioObjetivo14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo14ActionPerformed
         if (porcentajeActual < 50.3703703704) {
             estadoPorcentaje = 50.37037037041;
-            jProgressBar1.setValue(7);
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
-            barrita = 7;
+            BarraProgreso();
         }
         System.out.println(estadoPorcentaje);
         System.out.println(porcentajeActual);
