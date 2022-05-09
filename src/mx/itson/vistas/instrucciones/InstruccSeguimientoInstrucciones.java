@@ -1318,7 +1318,7 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
 
     private void btnRequiereApoyo5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo5ActionPerformed
 
-        estadoPorcentaje = 52.5925925928;
+        estadoPorcentaje = 73.400671181;
         PorcentajeNiño();
         porcentajeActual = estadoPorcentaje;
         BarraProgreso();
@@ -1328,8 +1328,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnRequiereApoyo5ActionPerformed
 
     private void btnCumplioObjetivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivoActionPerformed
-        if (porcentajeActual < 52.9629629632) {
-            estadoPorcentaje = 52.9629629632;
+        if (porcentajeActual < 73.56902135) {
+            estadoPorcentaje = 73.569021351;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -1340,8 +1340,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCumplioObjetivoActionPerformed
 
     private void btnCasiLograActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLograActionPerformed
-        if (porcentajeActual == 52.5925925928) {
-            estadoPorcentaje = 51.48148148161;
+        if (porcentajeActual == 73.400671181) {
+            estadoPorcentaje = 72.89562067;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -1361,8 +1361,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnRequiereApoyo6ActionPerformed
 
     private void btnCasiLogra1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra1ActionPerformed
-        if (porcentajeActual == 50.7407407408) {
-            estadoPorcentaje = 50.5555555556;
+        if (porcentajeActual == 72.55892034) {
+            estadoPorcentaje = 72.47474525;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -1372,8 +1372,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCasiLogra1ActionPerformed
 
     private void btnCumplioObjetivo1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo1ActionPerformed
-        if (porcentajeActual < 51.1111111112) {
-            estadoPorcentaje = 51.1111111112;
+        if (porcentajeActual < 72.72727051) {
+            estadoPorcentaje = 72.727270511;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -1383,7 +1383,7 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCumplioObjetivo1ActionPerformed
 
     private void btnRequiereApoyo7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo7ActionPerformed
-        estadoPorcentaje = 51.1111111112;
+        estadoPorcentaje = 72.727270511;
         PorcentajeNiño();
         porcentajeActual = estadoPorcentaje;
         BarraProgreso();
@@ -1392,8 +1392,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnRequiereApoyo7ActionPerformed
 
     private void btnCasiLogra2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra2ActionPerformed
-        if (porcentajeActual == 51.1111111112) {
-            estadoPorcentaje = 50.74074074081;
+        if (porcentajeActual == 72.727270511) {
+            estadoPorcentaje = 72.55892034;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -1403,8 +1403,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCasiLogra2ActionPerformed
 
     private void btnCumplioObjetivo2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo2ActionPerformed
-        if (porcentajeActual < 51.4814814816) {
-            estadoPorcentaje = 51.4814814816;
+        if (porcentajeActual < 72.89562067) {
+            estadoPorcentaje = 72.895620671;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -1414,7 +1414,7 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCumplioObjetivo2ActionPerformed
 
     private void btnRequiereApoyo8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo8ActionPerformed
-        estadoPorcentaje = 51.4814814816;
+        estadoPorcentaje = 72.895620671;
         PorcentajeNiño();
         porcentajeActual = estadoPorcentaje;
         BarraProgreso();
@@ -1423,8 +1423,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnRequiereApoyo8ActionPerformed
 
     private void btnCasiLogra3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra3ActionPerformed
-        if (porcentajeActual == 51.4814814816) {
-            estadoPorcentaje = 50.925925926;
+        if (porcentajeActual == 72.895620671) {
+            estadoPorcentaje = 72.64309542;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -1434,8 +1434,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCasiLogra3ActionPerformed
 
     private void btnCumplioObjetivo3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo3ActionPerformed
-        if (porcentajeActual < 51.851851852) {
-            estadoPorcentaje = 51.851851852;
+        if (porcentajeActual < 73.06397084) {
+            estadoPorcentaje = 73.063970841;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -1445,7 +1445,7 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCumplioObjetivo3ActionPerformed
 
     private void btnRequiereApoyo9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo9ActionPerformed
-        estadoPorcentaje = 51.851851852;
+        estadoPorcentaje = 73.063970841;
         PorcentajeNiño();
         porcentajeActual = estadoPorcentaje;
         BarraProgreso();
@@ -1454,8 +1454,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnRequiereApoyo9ActionPerformed
 
     private void btnCasiLogra4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra4ActionPerformed
-        if (porcentajeActual == 51.851851852) {
-            estadoPorcentaje = 51.11111111121;
+        if (porcentajeActual == 73.063970841) {
+            estadoPorcentaje = 72.72727051;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -1465,8 +1465,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCasiLogra4ActionPerformed
 
     private void btnCumplioObjetivo4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo4ActionPerformed
-        if (porcentajeActual < 52.2222222224) {
-            estadoPorcentaje = 52.2222222224;
+        if (porcentajeActual < 73.23232101) {
+            estadoPorcentaje = 73.232321011;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -1476,7 +1476,7 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCumplioObjetivo4ActionPerformed
 
     private void btnRequiereApoyo10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo10ActionPerformed
-        estadoPorcentaje = 52.2222222224;
+        estadoPorcentaje = 73.232321011;
         PorcentajeNiño();
         porcentajeActual = estadoPorcentaje;
         BarraProgreso();
@@ -1485,8 +1485,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnRequiereApoyo10ActionPerformed
 
     private void btnCasiLogra5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra5ActionPerformed
-        if (porcentajeActual == 52.2222222224) {
-            estadoPorcentaje = 51.2962962964;
+        if (porcentajeActual == 73.232321011) {
+            estadoPorcentaje = 72.81144559;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -1496,8 +1496,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCasiLogra5ActionPerformed
 
     private void btnCumplioObjetivo5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo5ActionPerformed
-        if (porcentajeActual < 52.5925925928) {
-            estadoPorcentaje = 52.5925925928;
+        if (porcentajeActual < 73.40067118) {
+            estadoPorcentaje = 73.400671181;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -1528,7 +1528,7 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
 
     private void btnCumplioObjetivo6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo6ActionPerformed
         if (porcentajeActual < 72.55892034) {
-            estadoPorcentaje = 72.55892034;
+            estadoPorcentaje = 72.558920341;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -1538,7 +1538,7 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCumplioObjetivo6ActionPerformed
 
     private void btnRequiereApoyo12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo12ActionPerformed
-        estadoPorcentaje = 52.9629629632;
+        estadoPorcentaje = 73.569021351;
         PorcentajeNiño();
         porcentajeActual = estadoPorcentaje;
         BarraProgreso();
@@ -1547,8 +1547,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnRequiereApoyo12ActionPerformed
 
     private void btnCasiLogra7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra7ActionPerformed
-        if (porcentajeActual == 52.9629629632) {
-            estadoPorcentaje = 51.6666666668;
+        if (porcentajeActual == 73.569021351) {
+            estadoPorcentaje = 72.97979576;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -1558,8 +1558,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCasiLogra7ActionPerformed
 
     private void btnCumplioObjetivo7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo7ActionPerformed
-        if (porcentajeActual < 53.3333333336) {
-            estadoPorcentaje = 53.3333333336;
+        if (porcentajeActual < 73.73737152) {
+            estadoPorcentaje = 73.737371521;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -1569,7 +1569,7 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCumplioObjetivo7ActionPerformed
 
     private void btnRequiereApoyo13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo13ActionPerformed
-        estadoPorcentaje = 53.3333333336;
+        estadoPorcentaje = 73.737371521;
         PorcentajeNiño();
         porcentajeActual = estadoPorcentaje;
         BarraProgreso();
@@ -1578,8 +1578,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnRequiereApoyo13ActionPerformed
 
     private void btnCasiLogra8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra8ActionPerformed
-        if (porcentajeActual == 53.3333333336) {
-            estadoPorcentaje = 51.8518518521;
+        if (porcentajeActual == 73.737371521) {
+            estadoPorcentaje = 73.06397084;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -1589,8 +1589,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCasiLogra8ActionPerformed
 
     private void btnCumplioObjetivo8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo8ActionPerformed
-        if (porcentajeActual < 53.703703704) {
-            estadoPorcentaje = 53.703703704;
+        if (porcentajeActual < 73.90572168) {
+            estadoPorcentaje = 73.905721681;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -1600,7 +1600,7 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCumplioObjetivo8ActionPerformed
 
     private void btnRequiereApoyo14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo14ActionPerformed
-        estadoPorcentaje = 53.703703704;
+        estadoPorcentaje = 73.905721681;
         PorcentajeNiño();
         porcentajeActual = estadoPorcentaje;
         BarraProgreso();
@@ -1609,8 +1609,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnRequiereApoyo14ActionPerformed
 
     private void btnCasiLogra9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra9ActionPerformed
-        if (porcentajeActual == 53.703703704) {
-            estadoPorcentaje = 52.0370370372;
+        if (porcentajeActual == 73.905721681) {
+            estadoPorcentaje = 73.14814593;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -1620,8 +1620,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCasiLogra9ActionPerformed
 
     private void btnCumplioObjetivo9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo9ActionPerformed
-        if (porcentajeActual < 54.0740740744) {
-            estadoPorcentaje = 54.0740740744;
+        if (porcentajeActual < 74.07407185) {
+            estadoPorcentaje = 74.074071851;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -1631,7 +1631,7 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCumplioObjetivo9ActionPerformed
 
     private void btnRequiereApoyo15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo15ActionPerformed
-        estadoPorcentaje = 54.0740740744;
+        estadoPorcentaje = 74.074071851;
         PorcentajeNiño();
         porcentajeActual = estadoPorcentaje;
         BarraProgreso();
@@ -1640,8 +1640,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnRequiereApoyo15ActionPerformed
 
     private void btnCasiLogra10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra10ActionPerformed
-        if (porcentajeActual == 54.0740740744) {
-            estadoPorcentaje = 52.22222222241;
+        if (porcentajeActual == 74.074071851) {
+            estadoPorcentaje = 73.23232101;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -1651,8 +1651,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCasiLogra10ActionPerformed
 
     private void btnCumplioObjetivo10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo10ActionPerformed
-        if (porcentajeActual < 54.4444444448) {
-            estadoPorcentaje = 54.4444444448;
+        if (porcentajeActual < 74.24242202) {
+            estadoPorcentaje = 74.242422021;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -1662,7 +1662,7 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCumplioObjetivo10ActionPerformed
 
     private void btnRequiereApoyo16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo16ActionPerformed
-        estadoPorcentaje = 54.4444444448;
+        estadoPorcentaje = 74.242422021;
         PorcentajeNiño();
         porcentajeActual = estadoPorcentaje;
         BarraProgreso();
@@ -1671,8 +1671,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnRequiereApoyo16ActionPerformed
 
     private void btnCasiLogra11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra11ActionPerformed
-        if (porcentajeActual == 54.4444444448) {
-            estadoPorcentaje = 52.4074074076;
+        if (porcentajeActual == 74.242422021) {
+            estadoPorcentaje = 73.3164961;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -1682,8 +1682,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCasiLogra11ActionPerformed
 
     private void btnCumplioObjetivo11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo11ActionPerformed
-        if (porcentajeActual < 54.8148148152) {
-            estadoPorcentaje = 54.8148148152;
+        if (porcentajeActual < 74.41077219) {
+            estadoPorcentaje = 74.410772191;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -1693,7 +1693,7 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCumplioObjetivo11ActionPerformed
 
     private void btnRequiereApoyo17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo17ActionPerformed
-        estadoPorcentaje = 54.8148148152;
+        estadoPorcentaje = 74.410772191;
         PorcentajeNiño();
         porcentajeActual = estadoPorcentaje;
         BarraProgreso();
@@ -1702,8 +1702,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnRequiereApoyo17ActionPerformed
 
     private void btnCasiLogra12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra12ActionPerformed
-        if (porcentajeActual == 54.8148148152) {
-            estadoPorcentaje = 52.59259259281;
+        if (porcentajeActual == 74.410772191) {
+            estadoPorcentaje = 73.40067118;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -1713,8 +1713,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCasiLogra12ActionPerformed
 
     private void btnCumplioObjetivo12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo12ActionPerformed
-        if (porcentajeActual < 55.1851851856) {
-            estadoPorcentaje = 55.1851851856;
+        if (porcentajeActual < 74.57912236) {
+            estadoPorcentaje = 74.579122361;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -1724,7 +1724,7 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCumplioObjetivo12ActionPerformed
 
     private void btnRequiereApoyo18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo18ActionPerformed
-        estadoPorcentaje = 55.1851851856;
+        estadoPorcentaje = 74.579122361;
         PorcentajeNiño();
         porcentajeActual = estadoPorcentaje;
         BarraProgreso();
@@ -1733,8 +1733,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnRequiereApoyo18ActionPerformed
 
     private void btnCasiLogra13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra13ActionPerformed
-        if (porcentajeActual == 55.1851851856) {
-            estadoPorcentaje = 52.777777778;
+        if (porcentajeActual == 74.579122361) {
+            estadoPorcentaje = 73.48484626;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -1744,8 +1744,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCasiLogra13ActionPerformed
 
     private void btnCumplioObjetivo13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo13ActionPerformed
-        if (porcentajeActual < 55.555555556) {
-            estadoPorcentaje = 55.555555556;
+        if (porcentajeActual < 74.74747253) {
+            estadoPorcentaje = 74.747472531;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -1788,7 +1788,7 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
 
     private void btnRequiereApoyo20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo20ActionPerformed
 
-        estadoPorcentaje = 52.5925925928;
+        estadoPorcentaje = 76.59932438;
         PorcentajeNiño();
         porcentajeActual = estadoPorcentaje;
         BarraProgreso();
@@ -1798,8 +1798,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnRequiereApoyo20ActionPerformed
 
     private void btnCumplioObjetivo15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo15ActionPerformed
-        if (porcentajeActual < 52.9629629632) {
-            estadoPorcentaje = 52.9629629632;
+        if (porcentajeActual < 76.76767455) {
+            estadoPorcentaje = 76.76767455;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -1810,8 +1810,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCumplioObjetivo15ActionPerformed
 
     private void btnCasiLogra15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra15ActionPerformed
-        if (porcentajeActual == 52.5925925928) {
-            estadoPorcentaje = 51.48148148161;
+        if (porcentajeActual == 76.59932438) {
+            estadoPorcentaje = 74.49494727;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -1822,7 +1822,7 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCasiLogra15ActionPerformed
 
     private void btnRequiereApoyo21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo21ActionPerformed
-        estadoPorcentaje = 50.7407407408;
+        estadoPorcentaje = 76.76767455;
         PorcentajeNiño();
         porcentajeActual = estadoPorcentaje;
         BarraProgreso();
@@ -1831,8 +1831,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnRequiereApoyo21ActionPerformed
 
     private void btnCasiLogra16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra16ActionPerformed
-        if (porcentajeActual == 50.7407407408) {
-            estadoPorcentaje = 50.5555555556;
+        if (porcentajeActual == 76.76767455) {
+            estadoPorcentaje = 74.57912236;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -1842,8 +1842,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCasiLogra16ActionPerformed
 
     private void btnCumplioObjetivo16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo16ActionPerformed
-        if (porcentajeActual < 51.1111111112) {
-            estadoPorcentaje = 51.1111111112;
+        if (porcentajeActual < 76.93602472) {
+            estadoPorcentaje = 76.93602472;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -1853,7 +1853,7 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCumplioObjetivo16ActionPerformed
 
     private void btnRequiereApoyo22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo22ActionPerformed
-        estadoPorcentaje = 51.1111111112;
+        estadoPorcentaje = 76.93602472;
         PorcentajeNiño();
         porcentajeActual = estadoPorcentaje;
         BarraProgreso();
@@ -1862,8 +1862,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnRequiereApoyo22ActionPerformed
 
     private void btnCasiLogra17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra17ActionPerformed
-        if (porcentajeActual == 51.1111111112) {
-            estadoPorcentaje = 50.74074074081;
+        if (porcentajeActual == 76.93602472) {
+            estadoPorcentaje = 74.66329744;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -1873,8 +1873,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCasiLogra17ActionPerformed
 
     private void btnCumplioObjetivo17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo17ActionPerformed
-        if (porcentajeActual < 51.4814814816) {
-            estadoPorcentaje = 51.4814814816;
+        if (porcentajeActual < 77.10437489) {
+            estadoPorcentaje = 77.10437489;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -1884,7 +1884,7 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCumplioObjetivo17ActionPerformed
 
     private void btnRequiereApoyo23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo23ActionPerformed
-        estadoPorcentaje = 51.4814814816;
+        estadoPorcentaje = 77.10437489;
         PorcentajeNiño();
         porcentajeActual = estadoPorcentaje;
         BarraProgreso();
@@ -1893,8 +1893,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnRequiereApoyo23ActionPerformed
 
     private void btnCasiLogra18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra18ActionPerformed
-        if (porcentajeActual == 51.4814814816) {
-            estadoPorcentaje = 50.925925926;
+        if (porcentajeActual == 77.10437489) {
+            estadoPorcentaje = 74.74747253;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -1904,8 +1904,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCasiLogra18ActionPerformed
 
     private void btnCumplioObjetivo18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo18ActionPerformed
-        if (porcentajeActual < 51.851851852) {
-            estadoPorcentaje = 51.851851852;
+        if (porcentajeActual < 77.27272505) {
+            estadoPorcentaje = 77.27272505;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -1915,7 +1915,7 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCumplioObjetivo18ActionPerformed
 
     private void btnRequiereApoyo24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo24ActionPerformed
-        estadoPorcentaje = 51.851851852;
+        estadoPorcentaje = 75.92592371;
         PorcentajeNiño();
         porcentajeActual = estadoPorcentaje;
         BarraProgreso();
@@ -1924,8 +1924,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnRequiereApoyo24ActionPerformed
 
     private void btnCasiLogra19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra19ActionPerformed
-        if (porcentajeActual == 51.851851852) {
-            estadoPorcentaje = 51.11111111121;
+        if (porcentajeActual == 75.92592371) {
+            estadoPorcentaje = 74.15824694;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -1935,8 +1935,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCasiLogra19ActionPerformed
 
     private void btnCumplioObjetivo19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo19ActionPerformed
-        if (porcentajeActual < 52.2222222224) {
-            estadoPorcentaje = 52.2222222224;
+        if (porcentajeActual < 76.09427388) {
+            estadoPorcentaje = 76.09427388;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -1946,7 +1946,7 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCumplioObjetivo19ActionPerformed
 
     private void btnRequiereApoyo25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo25ActionPerformed
-        estadoPorcentaje = 52.2222222224;
+        estadoPorcentaje = 76.26262404;
         PorcentajeNiño();
         porcentajeActual = estadoPorcentaje;
         BarraProgreso();
@@ -1955,8 +1955,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnRequiereApoyo25ActionPerformed
 
     private void btnCasiLogra20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra20ActionPerformed
-        if (porcentajeActual == 52.2222222224) {
-            estadoPorcentaje = 51.2962962964;
+        if (porcentajeActual == 76.26262404) {
+            estadoPorcentaje = 74.32659711;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -1966,8 +1966,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCasiLogra20ActionPerformed
 
     private void btnCumplioObjetivo20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo20ActionPerformed
-        if (porcentajeActual < 52.5925925928) {
-            estadoPorcentaje = 52.5925925928;
+        if (porcentajeActual < 76.43097421) {
+            estadoPorcentaje = 76.43097421;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -1977,7 +1977,7 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCumplioObjetivo20ActionPerformed
 
     private void btnRequiereApoyo26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo26ActionPerformed
-        estadoPorcentaje = 50.37037037041;
+        estadoPorcentaje = 74.91582271;
         PorcentajeNiño();
         porcentajeActual = estadoPorcentaje;
         BarraProgreso();
@@ -1986,8 +1986,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnRequiereApoyo26ActionPerformed
 
     private void btnCasiLogra21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra21ActionPerformed
-        if (porcentajeActual == 50.37037037041) {
-            estadoPorcentaje = 50.3703703704;
+        if (porcentajeActual == 74.91582271) {
+            estadoPorcentaje = 73.65319643;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -1997,8 +1997,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCasiLogra21ActionPerformed
 
     private void btnCumplioObjetivo21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo21ActionPerformed
-        if (porcentajeActual < 50.7407407408) {
-            estadoPorcentaje = 50.7407407408;
+        if (porcentajeActual < 75.08417286) {
+            estadoPorcentaje = 75.08417286;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -2008,7 +2008,7 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCumplioObjetivo21ActionPerformed
 
     private void btnRequiereApoyo27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo27ActionPerformed
-        estadoPorcentaje = 52.9629629632;
+        estadoPorcentaje = 75.08417286;
         PorcentajeNiño();
         porcentajeActual = estadoPorcentaje;
         BarraProgreso();
@@ -2017,8 +2017,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnRequiereApoyo27ActionPerformed
 
     private void btnCasiLogra22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra22ActionPerformed
-        if (porcentajeActual == 52.9629629632) {
-            estadoPorcentaje = 51.6666666668;
+        if (porcentajeActual == 75.08417286) {
+            estadoPorcentaje = 73.73737152;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -2028,8 +2028,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCasiLogra22ActionPerformed
 
     private void btnCumplioObjetivo22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo22ActionPerformed
-        if (porcentajeActual < 53.3333333336) {
-            estadoPorcentaje = 53.3333333336;
+        if (porcentajeActual < 75.25252303) {
+            estadoPorcentaje = 75.25252303;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -2039,7 +2039,7 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCumplioObjetivo22ActionPerformed
 
     private void btnRequiereApoyo28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo28ActionPerformed
-        estadoPorcentaje = 53.3333333336;
+        estadoPorcentaje = 75.25252303;
         PorcentajeNiño();
         porcentajeActual = estadoPorcentaje;
         BarraProgreso();
@@ -2048,8 +2048,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnRequiereApoyo28ActionPerformed
 
     private void btnCasiLogra23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra23ActionPerformed
-        if (porcentajeActual == 53.3333333336) {
-            estadoPorcentaje = 51.8518518521;
+        if (porcentajeActual == 75.25252303) {
+            estadoPorcentaje = 73.8215466;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -2059,8 +2059,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCasiLogra23ActionPerformed
 
     private void btnCumplioObjetivo23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo23ActionPerformed
-        if (porcentajeActual < 53.703703704) {
-            estadoPorcentaje = 53.703703704;
+        if (porcentajeActual < 75.4208732) {
+            estadoPorcentaje = 75.4208732;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -2070,7 +2070,7 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCumplioObjetivo23ActionPerformed
 
     private void btnRequiereApoyo29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo29ActionPerformed
-        estadoPorcentaje = 53.703703704;
+        estadoPorcentaje = 75.4208732;
         PorcentajeNiño();
         porcentajeActual = estadoPorcentaje;
         BarraProgreso();
@@ -2079,8 +2079,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnRequiereApoyo29ActionPerformed
 
     private void btnCasiLogra24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra24ActionPerformed
-        if (porcentajeActual == 53.703703704) {
-            estadoPorcentaje = 52.0370370372;
+        if (porcentajeActual == 75.4208732) {
+            estadoPorcentaje = 73.90572168;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -2090,8 +2090,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCasiLogra24ActionPerformed
 
     private void btnCumplioObjetivo24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo24ActionPerformed
-        if (porcentajeActual < 54.0740740744) {
-            estadoPorcentaje = 54.0740740744;
+        if (porcentajeActual < 75.58922337) {
+            estadoPorcentaje = 75.58922337;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -2101,7 +2101,7 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCumplioObjetivo24ActionPerformed
 
     private void btnRequiereApoyo30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo30ActionPerformed
-        estadoPorcentaje = 54.0740740744;
+        estadoPorcentaje = 75.58922337;
         PorcentajeNiño();
         porcentajeActual = estadoPorcentaje;
         BarraProgreso();
@@ -2110,8 +2110,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnRequiereApoyo30ActionPerformed
 
     private void btnCasiLogra25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra25ActionPerformed
-        if (porcentajeActual == 54.0740740744) {
-            estadoPorcentaje = 52.22222222241;
+        if (porcentajeActual == 75.58922337) {
+            estadoPorcentaje = 73.98989677;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -2121,8 +2121,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCasiLogra25ActionPerformed
 
     private void btnCumplioObjetivo25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo25ActionPerformed
-        if (porcentajeActual < 54.4444444448) {
-            estadoPorcentaje = 54.4444444448;
+        if (porcentajeActual < 75.75757354) {
+            estadoPorcentaje = 75.75757354;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -2132,7 +2132,7 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCumplioObjetivo25ActionPerformed
 
     private void btnRequiereApoyo31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo31ActionPerformed
-        estadoPorcentaje = 54.4444444448;
+        estadoPorcentaje = 75.75757354;
         PorcentajeNiño();
         porcentajeActual = estadoPorcentaje;
         BarraProgreso();
@@ -2141,8 +2141,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnRequiereApoyo31ActionPerformed
 
     private void btnCasiLogra26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra26ActionPerformed
-        if (porcentajeActual == 54.4444444448) {
-            estadoPorcentaje = 52.4074074076;
+        if (porcentajeActual == 75.75757354) {
+            estadoPorcentaje = 74.07407185;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -2152,8 +2152,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCasiLogra26ActionPerformed
 
     private void btnCumplioObjetivo26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo26ActionPerformed
-        if (porcentajeActual < 54.8148148152) {
-            estadoPorcentaje = 54.8148148152;
+        if (porcentajeActual < 75.92592371) {
+            estadoPorcentaje = 75.92592371;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -2163,7 +2163,7 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCumplioObjetivo26ActionPerformed
 
     private void btnRequiereApoyo32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo32ActionPerformed
-        estadoPorcentaje = 54.8148148152;
+        estadoPorcentaje = 76.09427388;
         PorcentajeNiño();
         porcentajeActual = estadoPorcentaje;
         BarraProgreso();
@@ -2172,8 +2172,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnRequiereApoyo32ActionPerformed
 
     private void btnCasiLogra27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra27ActionPerformed
-        if (porcentajeActual == 54.8148148152) {
-            estadoPorcentaje = 52.59259259281;
+        if (porcentajeActual == 76.09427388) {
+            estadoPorcentaje = 74.24242202;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -2183,8 +2183,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCasiLogra27ActionPerformed
 
     private void btnCumplioObjetivo27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo27ActionPerformed
-        if (porcentajeActual < 55.1851851856) {
-            estadoPorcentaje = 55.1851851856;
+        if (porcentajeActual < 76.26262404) {
+            estadoPorcentaje = 76.26262404;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -2194,7 +2194,7 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCumplioObjetivo27ActionPerformed
 
     private void btnRequiereApoyo33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo33ActionPerformed
-        estadoPorcentaje = 55.1851851856;
+        estadoPorcentaje = 76.43097421;
         PorcentajeNiño();
         porcentajeActual = estadoPorcentaje;
         BarraProgreso();
@@ -2203,8 +2203,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnRequiereApoyo33ActionPerformed
 
     private void btnCasiLogra28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra28ActionPerformed
-        if (porcentajeActual == 55.1851851856) {
-            estadoPorcentaje = 52.777777778;
+        if (porcentajeActual == 76.43097421) {
+            estadoPorcentaje = 74.41077219;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -2214,8 +2214,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCasiLogra28ActionPerformed
 
     private void btnCumplioObjetivo28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo28ActionPerformed
-        if (porcentajeActual < 55.555555556) {
-            estadoPorcentaje = 55.555555556;
+        if (porcentajeActual < 76.59932438) {
+            estadoPorcentaje = 76.59932438;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -2226,7 +2226,7 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCumplioObjetivo28ActionPerformed
 
     private void btnRequiereApoyo34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo34ActionPerformed
-        estadoPorcentaje = 50;
+        estadoPorcentaje = 74.747472531;
         PorcentajeNiño();
         porcentajeActual = estadoPorcentaje;
         BarraProgreso();
@@ -2235,8 +2235,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnRequiereApoyo34ActionPerformed
 
     private void btnCasiLogra29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra29ActionPerformed
-        if (porcentajeActual == 50) {
-            estadoPorcentaje = 50.185185185;
+        if (porcentajeActual == 74.747472531) {
+            estadoPorcentaje = 73.56902135;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -2246,8 +2246,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCasiLogra29ActionPerformed
 
     private void btnCumplioObjetivo29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo29ActionPerformed
-        if (porcentajeActual < 50.3703703704) {
-            estadoPorcentaje = 50.37037037041;
+        if (porcentajeActual < 74.9158227) {
+            estadoPorcentaje = 74.91582271;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -2257,7 +2257,7 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCumplioObjetivo29ActionPerformed
 
     private void btnRequiereApoyo35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo35ActionPerformed
-        estadoPorcentaje = 50;
+        estadoPorcentaje = 77.27272505;
         PorcentajeNiño();
         porcentajeActual = estadoPorcentaje;
         BarraProgreso();
@@ -2266,7 +2266,7 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnRequiereApoyo35ActionPerformed
 
     private void btnRequiereApoyo36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo36ActionPerformed
-        estadoPorcentaje = 50.37037037041;
+        estadoPorcentaje = 77.44107522;
         PorcentajeNiño();
         porcentajeActual = estadoPorcentaje;
         BarraProgreso();
@@ -2275,7 +2275,7 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnRequiereApoyo36ActionPerformed
 
     private void btnRequiereApoyo37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyo37ActionPerformed
-        estadoPorcentaje = 50.7407407408;
+        estadoPorcentaje = 77.60942539;
         PorcentajeNiño();
         porcentajeActual = estadoPorcentaje;
         BarraProgreso();
@@ -2284,8 +2284,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnRequiereApoyo37ActionPerformed
 
     private void btnCasiLogra30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra30ActionPerformed
-        if (porcentajeActual == 50.7407407408) {
-            estadoPorcentaje = 50.5555555556;
+        if (porcentajeActual == 77.60942539) {
+            estadoPorcentaje = 75;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -2295,8 +2295,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCasiLogra30ActionPerformed
 
     private void btnCasiLogra31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra31ActionPerformed
-        if (porcentajeActual == 50.37037037041) {
-            estadoPorcentaje = 50.3703703704;
+        if (porcentajeActual == 77.44107522) {
+            estadoPorcentaje = 74.9158227;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -2306,8 +2306,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCasiLogra31ActionPerformed
 
     private void btnCasiLogra32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLogra32ActionPerformed
-        if (porcentajeActual == 50) {
-            estadoPorcentaje = 50.185185185;
+        if (porcentajeActual == 77.27272505) {
+            estadoPorcentaje = 74.83164761;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -2317,8 +2317,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCasiLogra32ActionPerformed
 
     private void btnCumplioObjetivo30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo30ActionPerformed
-        if (porcentajeActual < 50.3703703704) {
-            estadoPorcentaje = 50.37037037041;
+        if (porcentajeActual < 77.44107522) {
+            estadoPorcentaje = 77.44107522;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -2328,8 +2328,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCumplioObjetivo30ActionPerformed
 
     private void btnCumplioObjetivo31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo31ActionPerformed
-        if (porcentajeActual < 50.7407407408) {
-            estadoPorcentaje = 50.7407407408;
+        if (porcentajeActual < 77.60942539) {
+            estadoPorcentaje = 77.60942539;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -2339,8 +2339,8 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCumplioObjetivo31ActionPerformed
 
     private void btnCumplioObjetivo32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivo32ActionPerformed
-        if (porcentajeActual < 51.1111111112) {
-            estadoPorcentaje = 51.1111111112;
+        if (porcentajeActual < 77.777778) {
+            estadoPorcentaje = 77.777778;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             BarraProgreso();
@@ -2351,67 +2351,139 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
 
     public void BarraProgreso()
    {
-    if(porcentajeActual == 50){
+    if(porcentajeActual == 72.22222){
           jProgressBar1.setValue(0);
-        }if(porcentajeActual == 50.185185185){
+        }if(porcentajeActual == 72.30639508){
+          jProgressBar1.setValue(1);
+        }if(porcentajeActual == 72.390570171){
           jProgressBar1.setValue(3);
-        }if(porcentajeActual == 50.37037037041){
+        }if(porcentajeActual == 72.39057017){
+          jProgressBar1.setValue(4);
+        }if(porcentajeActual == 72.558920341){
+          jProgressBar1.setValue(6);
+        }if(porcentajeActual == 72.47474525){
           jProgressBar1.setValue(7);
-        }if(porcentajeActual == 50.3703703704){
+        }if(porcentajeActual == 72.727270511){
+          jProgressBar1.setValue(9);
+        }if(porcentajeActual == 72.55892034){
           jProgressBar1.setValue(10);
-        }if(porcentajeActual == 50.7407407408){
-          jProgressBar1.setValue(14);
-        }if(porcentajeActual == 50.5555555556){
-          jProgressBar1.setValue(17);
-        }if(porcentajeActual == 51.1111111112){
+        }if(porcentajeActual == 72.895620671){
+          jProgressBar1.setValue(12);
+        }if(porcentajeActual == 72.64309542){
+          jProgressBar1.setValue(13);
+        }if(porcentajeActual == 73.063970841){
+          jProgressBar1.setValue(15);
+        }if(porcentajeActual == 72.72727051){
+          jProgressBar1.setValue(16);
+        }if(porcentajeActual == 73.232321011){
+          jProgressBar1.setValue(18);
+        }if(porcentajeActual == 72.81144559){
+          jProgressBar1.setValue(19);
+        }if(porcentajeActual == 73.400671181){
           jProgressBar1.setValue(21);
-        }if(porcentajeActual == 50.74074074081){
+        }if(porcentajeActual == 72.89562067){
+          jProgressBar1.setValue(22);
+        }if(porcentajeActual == 73.569021351){
           jProgressBar1.setValue(24);
-        }if(porcentajeActual == 51.4814814816){
+        }if(porcentajeActual == 72.97979576){
+          jProgressBar1.setValue(25);
+        }if(porcentajeActual == 73.737371521){
+          jProgressBar1.setValue(27);
+        }if(porcentajeActual == 73.06397084){
           jProgressBar1.setValue(28);
-        }if(porcentajeActual == 50.925925926){
+        }if(porcentajeActual == 73.905721681){
+          jProgressBar1.setValue(30);
+        }if(porcentajeActual == 73.14814593){
           jProgressBar1.setValue(31);
-        }if(porcentajeActual == 51.851851852){
-          jProgressBar1.setValue(35);
-        }if(porcentajeActual == 51.11111111121){
-          jProgressBar1.setValue(38);
-        }if(porcentajeActual == 52.2222222224){
+        }if(porcentajeActual == 74.074071851){
+          jProgressBar1.setValue(33);
+        }if(porcentajeActual == 73.23232101){
+          jProgressBar1.setValue(34);
+        }if(porcentajeActual == 74.242422021){
+          jProgressBar1.setValue(36);
+        }if(porcentajeActual == 73.3164961){
+          jProgressBar1.setValue(37);
+        }if(porcentajeActual == 74.410772191){
+          jProgressBar1.setValue(39);
+        }if(porcentajeActual == 73.40067118){
+          jProgressBar1.setValue(40);
+        }if(porcentajeActual == 74.579122361){
           jProgressBar1.setValue(42);
-        }if(porcentajeActual == 51.2962962964){
+        }if(porcentajeActual == 73.48484626){
+          jProgressBar1.setValue(43);
+        }if(porcentajeActual == 74.747472531){
           jProgressBar1.setValue(45);
-        }if(porcentajeActual == 52.5925925928){
+        }if(porcentajeActual == 73.56902135){
+          jProgressBar1.setValue(46);
+        }if(porcentajeActual == 74.91582271){
+          jProgressBar1.setValue(48);
+        }if(porcentajeActual == 73.65319643){
           jProgressBar1.setValue(49);
-        }if(porcentajeActual == 51.48148148161){
+        }if(porcentajeActual == 75.08417286){
+          jProgressBar1.setValue(51);
+        }if(porcentajeActual == 73.73737152){
           jProgressBar1.setValue(52);
-        }if(porcentajeActual == 52.9629629632){
-          jProgressBar1.setValue(56);
-        }if(porcentajeActual == 51.6666666668){
-          jProgressBar1.setValue(59);
-        }if(porcentajeActual == 53.3333333336){
+        }if(porcentajeActual == 75.25252303){
+          jProgressBar1.setValue(54);
+        }if(porcentajeActual == 73.8215466){
+          jProgressBar1.setValue(55);
+        }if(porcentajeActual == 75.4208732){
+          jProgressBar1.setValue(57);
+        }if(porcentajeActual == 73.90572168){
+          jProgressBar1.setValue(58);
+        }if(porcentajeActual == 75.58922337){
+          jProgressBar1.setValue(60);
+        }if(porcentajeActual == 73.98989677){
+          jProgressBar1.setValue(61);
+        }if(porcentajeActual == 75.75757354){
           jProgressBar1.setValue(63);
-        }if(porcentajeActual == 51.8518518521){
+        }if(porcentajeActual == 74.07407185){
+          jProgressBar1.setValue(64);
+        }if(porcentajeActual == 75.92592371){
           jProgressBar1.setValue(66);
-        }if(porcentajeActual == 53.703703704){
+        }if(porcentajeActual == 74.15824694){
+          jProgressBar1.setValue(67);
+        }if(porcentajeActual == 76.09427388){
+          jProgressBar1.setValue(69);
+        }if(porcentajeActual == 74.24242202){
           jProgressBar1.setValue(70);
-        }if(porcentajeActual == 52.0370370372){
+        }if(porcentajeActual == 76.26262404){
+          jProgressBar1.setValue(72);
+        }if(porcentajeActual == 74.32659711){
           jProgressBar1.setValue(73);
-        }if(porcentajeActual == 54.0740740744){
-          jProgressBar1.setValue(77);
-        }if(porcentajeActual == 52.22222222241){
-          jProgressBar1.setValue(80);
-        }if(porcentajeActual == 54.4444444448){
+        }if(porcentajeActual == 76.43097421){
+          jProgressBar1.setValue(75);
+        }if(porcentajeActual == 74.41077219){
+          jProgressBar1.setValue(76);
+        }if(porcentajeActual == 76.59932438){
+          jProgressBar1.setValue(78);
+        }if(porcentajeActual == 74.49494727){
+          jProgressBar1.setValue(79);
+        }if(porcentajeActual == 76.76767455){
+          jProgressBar1.setValue(81);
+        }if(porcentajeActual == 74.57912236){
+          jProgressBar1.setValue(82);
+        }if(porcentajeActual == 76.93602472){
           jProgressBar1.setValue(84);
-        }if(porcentajeActual == 52.4074074076){
+        }if(porcentajeActual == 74.66329744){
+          jProgressBar1.setValue(85);
+        }if(porcentajeActual == 77.10437489){
           jProgressBar1.setValue(87);
-        }if(porcentajeActual == 54.8148148152){
+        }if(porcentajeActual == 74.74747253){
+          jProgressBar1.setValue(88);
+        }if(porcentajeActual == 77.27272505){
+          jProgressBar1.setValue(90);
+        }if(porcentajeActual == 74.83164761){
           jProgressBar1.setValue(91);
-        }if(porcentajeActual == 52.59259259281){
+        }if(porcentajeActual == 77.44107522){
+          jProgressBar1.setValue(93);
+        }if(porcentajeActual == 74.9158227){
           jProgressBar1.setValue(94);
-        }if(porcentajeActual == 55.1851851856){
+        }if(porcentajeActual == 77.60942539){
+          jProgressBar1.setValue(96);
+        }if(porcentajeActual == 75){
           jProgressBar1.setValue(98);
-        }if(porcentajeActual == 52.777777778){
-          jProgressBar1.setValue(99);
-        }if(porcentajeActual == 55.555555556){
+        }if(porcentajeActual == 77.777778){
           jProgressBar1.setValue(100);
         }
 }

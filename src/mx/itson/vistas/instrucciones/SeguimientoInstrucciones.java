@@ -4,19 +4,28 @@
  */
 package mx.itson.vistas.instrucciones;
 
+import mx.itson.entidades.Alumno;
+import mx.itson.interfaces.DAOAlumnoIMP;
+import mx.itson.vistas.LoginNiños;
+
 /**
  *
  * @author vinko
  */
 public class SeguimientoInstrucciones extends javax.swing.JFrame {
 
-    /**
-     * Creates new form SeguimientoInstrucciones
-     */
+    DAOAlumnoIMP Alumno = new DAOAlumnoIMP();
+    LoginNiños ln = new LoginNiños();
+    Alumno alum = new Alumno();
+    public  double estadoPorcentaje;
+    double porcentajeActual;
+    public static int barrita;
+    
     public SeguimientoInstrucciones() {
         initComponents();
                  setLocationRelativeTo(null);
          this.setExtendedState(MAXIMIZED_BOTH);
+         niño();
     }
 
     /**
@@ -118,9 +127,152 @@ public class SeguimientoInstrucciones extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_Btn_InstruccionesMouseClicked
 
-    /**
-     * @param args the command line arguments
-     */
+    private void niño() {
+        Alumno alu = Alumno.obtenerPorId(ln.claveNiño);
+        porcentajeActual = alu.getPorcentaje();
+        estadoPorcentaje = porcentajeActual;
+        BarraProgreso();
+    }
+
+ public void BarraProgreso()
+   {
+    if(porcentajeActual == 72.22222){
+          jProgressBar1.setValue(0);
+        }if(porcentajeActual == 72.30639508){
+          jProgressBar1.setValue(1);
+        }if(porcentajeActual == 72.390570171){
+          jProgressBar1.setValue(3);
+        }if(porcentajeActual == 72.39057017){
+          jProgressBar1.setValue(4);
+        }if(porcentajeActual == 72.558920341){
+          jProgressBar1.setValue(6);
+        }if(porcentajeActual == 72.47474525){
+          jProgressBar1.setValue(7);
+        }if(porcentajeActual == 72.727270511){
+          jProgressBar1.setValue(9);
+        }if(porcentajeActual == 72.55892034){
+          jProgressBar1.setValue(10);
+        }if(porcentajeActual == 72.895620671){
+          jProgressBar1.setValue(12);
+        }if(porcentajeActual == 72.64309542){
+          jProgressBar1.setValue(13);
+        }if(porcentajeActual == 73.063970841){
+          jProgressBar1.setValue(15);
+        }if(porcentajeActual == 72.72727051){
+          jProgressBar1.setValue(16);
+        }if(porcentajeActual == 73.232321011){
+          jProgressBar1.setValue(18);
+        }if(porcentajeActual == 72.81144559){
+          jProgressBar1.setValue(19);
+        }if(porcentajeActual == 73.400671181){
+          jProgressBar1.setValue(21);
+        }if(porcentajeActual == 72.89562067){
+          jProgressBar1.setValue(22);
+        }if(porcentajeActual == 73.569021351){
+          jProgressBar1.setValue(24);
+        }if(porcentajeActual == 72.97979576){
+          jProgressBar1.setValue(25);
+        }if(porcentajeActual == 73.737371521){
+          jProgressBar1.setValue(27);
+        }if(porcentajeActual == 73.06397084){
+          jProgressBar1.setValue(28);
+        }if(porcentajeActual == 73.905721681){
+          jProgressBar1.setValue(30);
+        }if(porcentajeActual == 73.14814593){
+          jProgressBar1.setValue(31);
+        }if(porcentajeActual == 74.074071851){
+          jProgressBar1.setValue(33);
+        }if(porcentajeActual == 73.23232101){
+          jProgressBar1.setValue(34);
+        }if(porcentajeActual == 74.242422021){
+          jProgressBar1.setValue(36);
+        }if(porcentajeActual == 73.3164961){
+          jProgressBar1.setValue(37);
+        }if(porcentajeActual == 74.410772191){
+          jProgressBar1.setValue(39);
+        }if(porcentajeActual == 73.40067118){
+          jProgressBar1.setValue(40);
+        }if(porcentajeActual == 74.579122361){
+          jProgressBar1.setValue(42);
+        }if(porcentajeActual == 73.48484626){
+          jProgressBar1.setValue(43);
+        }if(porcentajeActual == 74.747472531){
+          jProgressBar1.setValue(45);
+        }if(porcentajeActual == 73.56902135){
+          jProgressBar1.setValue(46);
+        }if(porcentajeActual == 74.91582271){
+          jProgressBar1.setValue(48);
+        }if(porcentajeActual == 73.65319643){
+          jProgressBar1.setValue(49);
+        }if(porcentajeActual == 75.08417286){
+          jProgressBar1.setValue(51);
+        }if(porcentajeActual == 73.73737152){
+          jProgressBar1.setValue(52);
+        }if(porcentajeActual == 75.25252303){
+          jProgressBar1.setValue(54);
+        }if(porcentajeActual == 73.8215466){
+          jProgressBar1.setValue(55);
+        }if(porcentajeActual == 75.4208732){
+          jProgressBar1.setValue(57);
+        }if(porcentajeActual == 73.90572168){
+          jProgressBar1.setValue(58);
+        }if(porcentajeActual == 75.58922337){
+          jProgressBar1.setValue(60);
+        }if(porcentajeActual == 73.98989677){
+          jProgressBar1.setValue(61);
+        }if(porcentajeActual == 75.75757354){
+          jProgressBar1.setValue(63);
+        }if(porcentajeActual == 74.07407185){
+          jProgressBar1.setValue(64);
+        }if(porcentajeActual == 75.92592371){
+          jProgressBar1.setValue(66);
+        }if(porcentajeActual == 74.15824694){
+          jProgressBar1.setValue(67);
+        }if(porcentajeActual == 76.09427388){
+          jProgressBar1.setValue(69);
+        }if(porcentajeActual == 74.24242202){
+          jProgressBar1.setValue(70);
+        }if(porcentajeActual == 76.26262404){
+          jProgressBar1.setValue(72);
+        }if(porcentajeActual == 74.32659711){
+          jProgressBar1.setValue(73);
+        }if(porcentajeActual == 76.43097421){
+          jProgressBar1.setValue(75);
+        }if(porcentajeActual == 74.41077219){
+          jProgressBar1.setValue(76);
+        }if(porcentajeActual == 76.59932438){
+          jProgressBar1.setValue(78);
+        }if(porcentajeActual == 74.49494727){
+          jProgressBar1.setValue(79);
+        }if(porcentajeActual == 76.76767455){
+          jProgressBar1.setValue(81);
+        }if(porcentajeActual == 74.57912236){
+          jProgressBar1.setValue(82);
+        }if(porcentajeActual == 76.93602472){
+          jProgressBar1.setValue(84);
+        }if(porcentajeActual == 74.66329744){
+          jProgressBar1.setValue(85);
+        }if(porcentajeActual == 77.10437489){
+          jProgressBar1.setValue(87);
+        }if(porcentajeActual == 74.74747253){
+          jProgressBar1.setValue(88);
+        }if(porcentajeActual == 77.27272505){
+          jProgressBar1.setValue(90);
+        }if(porcentajeActual == 74.83164761){
+          jProgressBar1.setValue(91);
+        }if(porcentajeActual == 77.44107522){
+          jProgressBar1.setValue(93);
+        }if(porcentajeActual == 74.9158227){
+          jProgressBar1.setValue(94);
+        }if(porcentajeActual == 77.60942539){
+          jProgressBar1.setValue(96);
+        }if(porcentajeActual == 75){
+          jProgressBar1.setValue(98);
+        }if(porcentajeActual == 77.777778){
+          jProgressBar1.setValue(100);
+        }
+}
+ 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
