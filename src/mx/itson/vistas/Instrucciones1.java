@@ -3,26 +3,31 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package mx.itson.vistas;
+
 import mx.itson.entidades.Alumno;
 import mx.itson.interfaces.DAOAlumnoIMP;
 import mx.itson.vistas.instrucciones.*;
+
 /**
  *
  * @author vinko
  */
 public class Instrucciones1 extends javax.swing.JFrame {
-LoginNiños ln = new LoginNiños();
+
+    LoginNiños ln = new LoginNiños();
     DAOAlumnoIMP alumno = new DAOAlumnoIMP();
     private double estadoPorcentaje;
     double porcentajeActual;
-      Alumno alum = new Alumno();
-      AtencionCara at = new AtencionCara();
+    Alumno alum = new Alumno();
+    AtencionCara at = new AtencionCara();
+
     /**
      * Creates new form Instrucciones1
      */
     public Instrucciones1() {
         initComponents();
         obtenerNiño();
+        niño();
     }
 
     /**
@@ -564,84 +569,95 @@ LoginNiños ln = new LoginNiños();
         }
 
     }
- 
 
-public void obtenerNiño(){
+    private void niño() {
+        Alumno alu = alumno.obtenerPorId(ln.claveNiño);
+        porcentajeActual = alu.getPorcentaje();
+        estadoPorcentaje = porcentajeActual;
 
-   Alumno niño =   alumno.obtenerPorId(ln.claveNiño);
-    lbl_Id.setText(niño.getNombre());
+    }
 
+    public void obtenerNiño() {
 
-}
+        Alumno niño = alumno.obtenerPorId(ln.claveNiño);
+        lbl_Id.setText(niño.getNombre());
+
+    }
     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
 
-     
-        PorcentajeNiño();
-        porcentajeActual = estadoPorcentaje;
-       
-        
+        niño();
         double porcentaje = at.estadoPorcentaje;
-        if (porcentaje >= 4.76190476) {
+        if (porcentaje == 4.76190476) {
+
+            porcentajeActual = estadoPorcentaje;
+
             SaludarMano a = new SaludarMano();
-        a.setVisible(true); 
-        }else{
-         AtencionCara abrir = new AtencionCara();
-        abrir.setVisible(true);
+            a.setVisible(true);
+            dispose();
+        } else {
+            niño();
+            AtencionCara abrir = new AtencionCara();
+            abrir.setVisible(true);
+            dispose();
         }
 
-           // TODO add your handling code here:
+        // TODO add your handling code here:
     }//GEN-LAST:event_jButton14ActionPerformed
 
     private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
-    
 
-        PorcentajeNiño();
-        porcentajeActual = estadoPorcentaje;
        
         double porcentaje = at.estadoPorcentaje;
-        if (porcentaje >=  9.52380952) {
-            
-             AdiosConMano abrir = new AdiosConMano();
-        abrir.setVisible(true);
-           
-        }else{
-        SaludarMano a = new SaludarMano();
-        a.setVisible(true); 
+        if (porcentaje == 9.52380952) {
+
+            porcentajeActual = estadoPorcentaje;
+
+            AdiosConMano abrir = new AdiosConMano();
+            abrir.setVisible(true);
+            dispose();
+
+        } else {
+         
+            SaludarMano a = new SaludarMano();
+            a.setVisible(true);
+            dispose();
         }
-        
-        
-       
+
+
     }//GEN-LAST:event_jButton15ActionPerformed
 
     private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
-
-
-        PorcentajeNiño();
-        porcentajeActual = estadoPorcentaje;
        
+        porcentajeActual = estadoPorcentaje;
         double porcentaje = at.estadoPorcentaje;
-        if (porcentaje >=  14.28571428) {
-            
-             PonerAtencionObjectos abrir = new PonerAtencionObjectos();
-        abrir.setVisible(true);
-           
-        }else{
-         AdiosConMano abrir = new AdiosConMano();
-        abrir.setVisible(true);
+        if (porcentaje == 14.28571428) {
+            estadoPorcentaje = 14.28571428;
+            porcentajeActual = estadoPorcentaje;
+            PonerAtencionObjectos abrir = new PonerAtencionObjectos();
+            abrir.setVisible(true);
+            dispose();
+
+        } else {
+          
+            AdiosConMano abrir = new AdiosConMano();
+            abrir.setVisible(true);
+            dispose();
         }
 
-      
+
     }//GEN-LAST:event_jButton16ActionPerformed
 
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
         Menu abrir = new Menu();
         abrir.setVisible(true);
+        dispose();
     }//GEN-LAST:event_jButton17ActionPerformed
 
     private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
-
+   
         AtencionCara abrir = new AtencionCara();
-        abrir.setVisible(true); 
+        abrir.setVisible(true);
+        dispose();
     }//GEN-LAST:event_jButton18ActionPerformed
 
     private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed

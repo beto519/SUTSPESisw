@@ -6,6 +6,7 @@ package mx.itson.vistas.instrucciones;
 
 import mx.itson.entidades.Alumno;
 import mx.itson.interfaces.DAOAlumnoIMP;
+import mx.itson.vistas.Instrucciones2;
 import mx.itson.vistas.LoginNiños;
 
 /**
@@ -69,6 +70,11 @@ public class EmparejamientoObjetos extends javax.swing.JFrame {
         getContentPane().add(LabelLogo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 60, -1, -1));
 
         LabelLogo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/CENTRO DE APOYO EDUCATIVO INFANTIL EN PNG.png"))); // NOI18N
+        LabelLogo1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                LabelLogo1MouseClicked(evt);
+            }
+        });
         getContentPane().add(LabelLogo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         Elaboro1.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
@@ -203,6 +209,13 @@ public class EmparejamientoObjetos extends javax.swing.JFrame {
     private void btn_LoHaceConAyudaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_LoHaceConAyudaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btn_LoHaceConAyudaActionPerformed
+
+    private void LabelLogo1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LabelLogo1MouseClicked
+Instrucciones2 abrir = new Instrucciones2();
+abrir.setVisible(true);
+dispose();
+        // TODO add your handling code here:
+    }//GEN-LAST:event_LabelLogo1MouseClicked
 
     /**
      * @param args the command line arguments

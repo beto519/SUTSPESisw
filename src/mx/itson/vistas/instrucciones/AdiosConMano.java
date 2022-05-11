@@ -8,6 +8,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import mx.itson.entidades.Alumno;
 import mx.itson.interfaces.DAOAlumnoIMP;
+import mx.itson.vistas.Instrucciones1;
 import mx.itson.vistas.LoginNiños;
 
 /**
@@ -73,6 +74,11 @@ public class AdiosConMano extends javax.swing.JFrame {
         getContentPane().add(LabelLogo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 10, -1, -1));
 
         LabelLogo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/CENTRO DE APOYO EDUCATIVO INFANTIL EN PNG.png"))); // NOI18N
+        LabelLogo1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                LabelLogo1MouseClicked(evt);
+            }
+        });
         getContentPane().add(LabelLogo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         Elaboro1.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
@@ -199,6 +205,13 @@ public class AdiosConMano extends javax.swing.JFrame {
         PorcentajeNiño();
 // TODO add your handling code here:
     }//GEN-LAST:event_btnCumplioObjetivoActionPerformed
+
+    private void LabelLogo1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LabelLogo1MouseClicked
+ Instrucciones1 abrir = new Instrucciones1();
+        abrir.setVisible(true);
+        dispose();
+        // TODO add your handling code here:
+    }//GEN-LAST:event_LabelLogo1MouseClicked
 
     /**
      * @param args the command line arguments

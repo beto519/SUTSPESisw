@@ -14,17 +14,20 @@ import mx.itson.vistas.instrucciones.*;
  */
 public class Instrucciones2 extends javax.swing.JFrame {
 
-   LoginNiños ln = new LoginNiños();
+    LoginNiños ln = new LoginNiños();
     DAOAlumnoIMP alumno = new DAOAlumnoIMP();
     private double estadoPorcentaje;
     double porcentajeActual;
-      Alumno alum = new Alumno();
-      AtencionCara at = new AtencionCara();
+    Alumno alum = new Alumno();
+    AtencionCara at = new AtencionCara();
+
     /**
      * Creates new form Instrucciones2
      */
     public Instrucciones2() {
         initComponents();
+        niño();
+        obtenerNiño();
 
     }
 
@@ -34,8 +37,8 @@ public class Instrucciones2 extends javax.swing.JFrame {
         lbl_Id.setText(niño.getNombre());
 
     }
-    
-     private void PorcentajeNiño() {
+
+    private void PorcentajeNiño() {
 
         try {
 
@@ -47,9 +50,13 @@ public class Instrucciones2 extends javax.swing.JFrame {
         }
 
     }
- 
 
+    private void niño() {
+        Alumno alu = alumno.obtenerPorId(ln.claveNiño);
+        porcentajeActual = alu.getPorcentaje();
+        estadoPorcentaje = porcentajeActual;
 
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -1136,8 +1143,7 @@ public class Instrucciones2 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
- 
-        PorcentajeNiño();
+
         porcentajeActual = estadoPorcentaje;
         double porcentaje = at.estadoPorcentaje;
         if (porcentaje >= 19.04761904) {
@@ -1145,9 +1151,8 @@ public class Instrucciones2 extends javax.swing.JFrame {
             abrir.setVisible(true);
 
         } else {
-             
-        PorcentajeNiño();
-        porcentajeActual = estadoPorcentaje;
+
+            porcentajeActual = estadoPorcentaje;
             PonerAtencionObjectos abrir = new PonerAtencionObjectos();
             abrir.setVisible(true);
 
@@ -1171,139 +1176,175 @@ public class Instrucciones2 extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton19ActionPerformed
 
     private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
-        ReconocimientoColores abrir = new ReconocimientoColores();
-        abrir.setVisible(true);
+
+        porcentajeActual = estadoPorcentaje;
+        double porcentaje = at.estadoPorcentaje;
+        if (porcentaje >= 57.14285712) {
+
+            ReconocimientoColores abrir = new ReconocimientoColores();
+            abrir.setVisible(true);
+            dispose();
+        } else {
+            ReconocimientoCorporal abrir = new ReconocimientoCorporal();
+            abrir.setVisible(true);
+            dispose();
+        }
     }//GEN-LAST:event_jButton20ActionPerformed
 
     private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
-       
-        PorcentajeNiño();
+
         porcentajeActual = estadoPorcentaje;
         double porcentaje = at.estadoPorcentaje;
         if (porcentaje >= 23.8095238) {
             EmparejamientoObjetos abrir = new EmparejamientoObjetos();
             abrir.setVisible(true);
-
+            dispose();
         } else {
-             
-        PorcentajeNiño();
-        porcentajeActual = estadoPorcentaje;
+
+            porcentajeActual = estadoPorcentaje;
             EmparejamientoImagenes abrir = new EmparejamientoImagenes();
             abrir.setVisible(true);
-
+            dispose();
         }
 
 
     }//GEN-LAST:event_jButton21ActionPerformed
 
     private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
-        
-        PorcentajeNiño();
+
         porcentajeActual = estadoPorcentaje;
         double porcentaje = at.estadoPorcentaje;
         if (porcentaje >= 42.85714284) {
             MotricidadGruesa abrir = new MotricidadGruesa();
             abrir.setVisible(true);
-
+            dispose();
         } else {
-             
-        PorcentajeNiño();
-        porcentajeActual = estadoPorcentaje;
+
+            porcentajeActual = estadoPorcentaje;
             ImitacionGruesa abrir = new ImitacionGruesa();
             abrir.setVisible(true);
-
+            dispose();
         }
 
 
     }//GEN-LAST:event_jButton22ActionPerformed
 
     private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
-        ReconocimientoVocales abrir = new ReconocimientoVocales();
-        abrir.setVisible(true);
+
+        porcentajeActual = estadoPorcentaje;
+        double porcentaje = at.estadoPorcentaje;
+        if (porcentaje >= 61.90476188) {
+
+            ReconocimientoVocales abrir = new ReconocimientoVocales();
+            abrir.setVisible(true);
+            dispose();
+        } else {
+            ReconocimientoColores abrir = new ReconocimientoColores();
+            abrir.setVisible(true);
+            dispose();
+        }
     }//GEN-LAST:event_jButton23ActionPerformed
 
     private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton27ActionPerformed
+
         ImitacionVocales abrir = new ImitacionVocales();
         abrir.setVisible(true);
+        dispose();
     }//GEN-LAST:event_jButton27ActionPerformed
 
     private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
-        
-        PorcentajeNiño();
+
         porcentajeActual = estadoPorcentaje;
         double porcentaje = at.estadoPorcentaje;
         if (porcentaje >= 47.6190476) {
             MotricidadFina abrir = new MotricidadFina();
             abrir.setVisible(true);
-
+            dispose();
         } else {
-             
-        PorcentajeNiño();
-        porcentajeActual = estadoPorcentaje;
+
+            porcentajeActual = estadoPorcentaje;
             MotricidadGruesa abrir = new MotricidadGruesa();
             abrir.setVisible(true);
-
+            dispose();
         }
 
 
     }//GEN-LAST:event_jButton28ActionPerformed
 
     private void jButton29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton29ActionPerformed
-        ReconocimientoFormas abrir = new ReconocimientoFormas();
-        abrir.setVisible(true);
+
+        porcentajeActual = estadoPorcentaje;
+        double porcentaje = at.estadoPorcentaje;
+        if (porcentaje >= 66.66666664) {
+
+            ReconocimientoFormas abrir = new ReconocimientoFormas();
+            abrir.setVisible(true);
+            dispose();
+        } else {
+            ReconocimientoFormas abrir = new ReconocimientoFormas();
+            abrir.setVisible(true);
+            dispose();
+        }
     }//GEN-LAST:event_jButton29ActionPerformed
 
     private void jButton30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton30ActionPerformed
-        
-        PorcentajeNiño();
+
         porcentajeActual = estadoPorcentaje;
         double porcentaje = at.estadoPorcentaje;
         if (porcentaje >= 33.33333332) {
             ImitacionFina abrir = new ImitacionFina();
             abrir.setVisible(true);
-
+            dispose();
         } else {
-             
-        PorcentajeNiño();
-        porcentajeActual = estadoPorcentaje;
+
+            porcentajeActual = estadoPorcentaje;
             ImitacionVocales abrir = new ImitacionVocales();
             abrir.setVisible(true);
-
+            dispose();
         }
 
 
     }//GEN-LAST:event_jButton30ActionPerformed
 
     private void jButton31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton31ActionPerformed
- 
-        PorcentajeNiño();
-        porcentajeActual = estadoPorcentaje;
-    double porcentaje = at.estadoPorcentaje;
-        if (porcentaje >= 33.33333332) {
-         ReconocimientoCorporal abrir = new ReconocimientoCorporal();
-        abrir.setVisible(true);
 
-        } else {
-             
-        PorcentajeNiño();
         porcentajeActual = estadoPorcentaje;
+        double porcentaje = at.estadoPorcentaje;
+        if (porcentaje >= 52.38095236) {
+            ReconocimientoCorporal abrir = new ReconocimientoCorporal();
+            abrir.setVisible(true);
+            dispose();
+        } else {
+
+            porcentajeActual = estadoPorcentaje;
             MotricidadFina abrir = new MotricidadFina();
             abrir.setVisible(true);
-
+            dispose();
         }
 
 
-       
     }//GEN-LAST:event_jButton31ActionPerformed
 
     private void jButton32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton32ActionPerformed
-        SeguimientoInstrucciones abrir = new SeguimientoInstrucciones();
-        abrir.setVisible(true);
+
+        porcentajeActual = estadoPorcentaje;
+        double porcentaje = at.estadoPorcentaje;
+        if (porcentaje >= 52.38095236) {
+
+            ReconocimientoFormas abrir = new ReconocimientoFormas();
+            abrir.setVisible(true);
+            dispose();
+        } else {
+            SeguimientoInstrucciones abrir = new SeguimientoInstrucciones();
+            abrir.setVisible(true);
+            dispose();
+        }
     }//GEN-LAST:event_jButton32ActionPerformed
 
     private void jButton33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton33ActionPerformed
         Menu abrir = new Menu();
         abrir.setVisible(true);
+        dispose();
     }//GEN-LAST:event_jButton33ActionPerformed
 
     private void jButton34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton34ActionPerformed

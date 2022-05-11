@@ -7,6 +7,7 @@ package mx.itson.vistas.instrucciones;
 import javax.swing.JOptionPane;
 import mx.itson.entidades.Alumno;
 import mx.itson.interfaces.DAOAlumnoIMP;
+import mx.itson.vistas.Instrucciones2;
 import mx.itson.vistas.LoginNiños;
 
 /**
@@ -14,19 +15,21 @@ import mx.itson.vistas.LoginNiños;
  * @author vinko
  */
 public class ReconocimientoFormas extends javax.swing.JFrame {
+
     DAOAlumnoIMP Alumno = new DAOAlumnoIMP();
     LoginNiños ln = new LoginNiños();
     Alumno alum = new Alumno();
-    public  double estadoPorcentaje;
+    public double estadoPorcentaje;
     double porcentajeActual;
+
     /**
      * Creates new form ReconocimientoFormas
      */
     public ReconocimientoFormas() {
         initComponents();
-                 setLocationRelativeTo(null);
-         this.setExtendedState(MAXIMIZED_BOTH);
-         niño();
+        setLocationRelativeTo(null);
+        this.setExtendedState(MAXIMIZED_BOTH);
+        niño();
     }
 
     @SuppressWarnings("unchecked")
@@ -56,6 +59,11 @@ public class ReconocimientoFormas extends javax.swing.JFrame {
         getContentPane().add(LabelLogo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 0, -1, -1));
 
         LabelLogo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/CENTRO DE APOYO EDUCATIVO INFANTIL EN PNG.png"))); // NOI18N
+        LabelLogo1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                LabelLogo1MouseClicked(evt);
+            }
+        });
         getContentPane().add(LabelLogo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         MtroManuel.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
@@ -136,47 +144,55 @@ public class ReconocimientoFormas extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
     private void btnRequiereApoyoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyoActionPerformed
-        int Respuesta = JOptionPane.showConfirmDialog(this, "Seguro que quieres reiniciar el progreso de esta tarea?","Confirmar?",
-        JOptionPane.YES_NO_OPTION,JOptionPane.QUESTION_MESSAGE);
-        if(Respuesta == JOptionPane.YES_OPTION){
-        estadoPorcentaje = 66.66666664;
-        PorcentajeNiño();
-        porcentajeActual = estadoPorcentaje;
-        CargarBarra();
+        int Respuesta = JOptionPane.showConfirmDialog(this, "Seguro que quieres reiniciar el progreso de esta tarea?", "Confirmar?",
+                JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+        if (Respuesta == JOptionPane.YES_OPTION) {
+            estadoPorcentaje = 66.66666664;
+            PorcentajeNiño();
+            porcentajeActual = estadoPorcentaje;
+            CargarBarra();
         }
 
     }//GEN-LAST:event_btnRequiereApoyoActionPerformed
 
     private void btnCasiLograActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLograActionPerformed
-        if(estadoPorcentaje == 66.66666664){
-        estadoPorcentaje = 69.04761902;
-        PorcentajeNiño();
-        porcentajeActual = estadoPorcentaje;
-        CargarBarra();
+        if (estadoPorcentaje == 66.66666664) {
+            estadoPorcentaje = 69.04761902;
+            PorcentajeNiño();
+            porcentajeActual = estadoPorcentaje;
+            CargarBarra();
         }
     }//GEN-LAST:event_btnCasiLograActionPerformed
 
     private void btnCumplioObjetivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivoActionPerformed
-        if(estadoPorcentaje < 71.4285714){
-        estadoPorcentaje = 71.4285714;
-        PorcentajeNiño();
-        porcentajeActual = estadoPorcentaje;
-        CargarBarra();
+        if (estadoPorcentaje < 71.4285714) {
+            estadoPorcentaje = 71.4285714;
+            PorcentajeNiño();
+            porcentajeActual = estadoPorcentaje;
+            CargarBarra();
         }
     }//GEN-LAST:event_btnCumplioObjetivoActionPerformed
 
-     private void niño() {
+    private void LabelLogo1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LabelLogo1MouseClicked
+
+        Instrucciones2 abrir = new Instrucciones2();
+        abrir.setVisible(true);
+        dispose();
+// TODO add your handling code here:
+    }//GEN-LAST:event_LabelLogo1MouseClicked
+
+    private void niño() {
         Alumno alu = Alumno.obtenerPorId(ln.claveNiño);
         porcentajeActual = alu.getPorcentaje();
         estadoPorcentaje = porcentajeActual;
         CargarBarra();
     }
-    
+
     private void CargarBarra() {
         jProgressBar1.setValue((int) estadoPorcentaje);
 
-    }   
-    
+    }
+
     private void PorcentajeNiño() {
 
         try {
@@ -187,7 +203,7 @@ public class ReconocimientoFormas extends javax.swing.JFrame {
             e.printStackTrace();
         }
     }
-    
+
     /**
      * @param args the command line arguments
      */

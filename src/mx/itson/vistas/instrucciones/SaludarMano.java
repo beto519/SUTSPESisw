@@ -6,6 +6,7 @@ package mx.itson.vistas.instrucciones;
 
 import mx.itson.entidades.Alumno;
 import mx.itson.interfaces.DAOAlumnoIMP;
+import mx.itson.vistas.Instrucciones1;
 import mx.itson.vistas.LoginNiños;
 
 /**
@@ -13,20 +14,23 @@ import mx.itson.vistas.LoginNiños;
  * @author lopez
  */
 public class SaludarMano extends javax.swing.JFrame {
+
     DAOAlumnoIMP Alumno = new DAOAlumnoIMP();
     LoginNiños ln = new LoginNiños();
     Alumno alum = new Alumno();
     private double estadoPorcentaje;
     double porcentajeActual;
+
     /**
      * Creates new form SaludarMano
      */
     public SaludarMano() {
         initComponents();
-                 setLocationRelativeTo(null);
-         this.setExtendedState(MAXIMIZED_BOTH);
-         niño();
+        setLocationRelativeTo(null);
+        this.setExtendedState(MAXIMIZED_BOTH);
+        niño();
     }
+
     private void CargarBarra() {
         jProgressBar1.setValue((int) estadoPorcentaje);
     }
@@ -37,8 +41,7 @@ public class SaludarMano extends javax.swing.JFrame {
         estadoPorcentaje = porcentajeActual;
         CargarBarra();
     }
-    
-    
+
     private void PorcentajeNiño() {
 
         try {
@@ -51,6 +54,7 @@ public class SaludarMano extends javax.swing.JFrame {
         }
 
     }
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -83,6 +87,11 @@ public class SaludarMano extends javax.swing.JFrame {
         getContentPane().add(LabelLogo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 0, -1, -1));
 
         LabelLogo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/CENTRO DE APOYO EDUCATIVO INFANTIL EN PNG.png"))); // NOI18N
+        LabelLogo1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                LabelLogo1MouseClicked(evt);
+            }
+        });
         getContentPane().add(LabelLogo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         Elaboro1.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
@@ -165,7 +174,6 @@ public class SaludarMano extends javax.swing.JFrame {
 
     private void btnRequiereApoyoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyoActionPerformed
 
- 
         estadoPorcentaje = 4.76190476;
         CargarBarra();
         PorcentajeNiño();
@@ -173,21 +181,28 @@ public class SaludarMano extends javax.swing.JFrame {
     }//GEN-LAST:event_btnRequiereApoyoActionPerformed
 
     private void btnCasiLograActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLograActionPerformed
-          
-            estadoPorcentaje = 7.14285714;
-            CargarBarra();
-            PorcentajeNiño();
-        
+
+        estadoPorcentaje = 7.14285714;
+        CargarBarra();
+        PorcentajeNiño();
+
         // TODO add your handling code here:
     }//GEN-LAST:event_btnCasiLograActionPerformed
 
     private void btnCumplioObjetivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivoActionPerformed
-         
-            estadoPorcentaje = 9.52380952;
-            CargarBarra();
-            PorcentajeNiño();
-        
+
+        estadoPorcentaje = 9.52380952;
+        CargarBarra();
+        PorcentajeNiño();
+
     }//GEN-LAST:event_btnCumplioObjetivoActionPerformed
+
+    private void LabelLogo1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LabelLogo1MouseClicked
+        Instrucciones1 abrir = new Instrucciones1();
+        abrir.setVisible(true);
+        dispose();
+        // TODO add your handling code here:
+    }//GEN-LAST:event_LabelLogo1MouseClicked
 
     /**
      * @param args the command line arguments
