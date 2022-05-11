@@ -4,19 +4,28 @@
  */
 package mx.itson.vistas.instrucciones;
 
+import javax.swing.JOptionPane;
+import mx.itson.entidades.Alumno;
+import mx.itson.interfaces.DAOAlumnoIMP;
+import mx.itson.vistas.LoginNiños;
+
 /**
  *
  * @author vinko
  */
 public class UsoPenombres extends javax.swing.JFrame {
 
-    /**
-     * Creates new form UsoPenombres
-     */
+    DAOAlumnoIMP Alumno = new DAOAlumnoIMP();
+    LoginNiños ln = new LoginNiños();
+    Alumno alum = new Alumno();
+    public  double estadoPorcentaje;
+    double porcentajeActual;
+    
     public UsoPenombres() {
         initComponents();
                  setLocationRelativeTo(null);
          this.setExtendedState(MAXIMIZED_BOTH);
+         niño();
     }
 
     /**
@@ -40,6 +49,9 @@ public class UsoPenombres extends javax.swing.JFrame {
         txtProcedimiento = new javax.swing.JTextArea();
         Btn_Instrucciones = new javax.swing.JButton();
         jProgressBar1 = new javax.swing.JProgressBar();
+        btnRequiereApoyo = new javax.swing.JButton();
+        btnCasiLogra = new javax.swing.JButton();
+        btnCumplioObjetivo = new javax.swing.JButton();
         Fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -54,31 +66,31 @@ public class UsoPenombres extends javax.swing.JFrame {
         UsoDePronombres.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         UsoDePronombres.setText("Uso de pronombres");
         UsoDePronombres.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(UsoDePronombres, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 120, 620, 40));
+        getContentPane().add(UsoDePronombres, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 100, 620, 40));
 
         NombreDelPrograma.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         NombreDelPrograma.setText(" Nombre del Programa:");
         NombreDelPrograma.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(NombreDelPrograma, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 120, 500, 40));
+        getContentPane().add(NombreDelPrograma, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 100, 500, 40));
 
         MtroManuel.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         MtroManuel.setText("  Mtro. Manuel Esquer Sumuano  ");
         MtroManuel.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(MtroManuel, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 160, 620, 40));
+        getContentPane().add(MtroManuel, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 140, 620, 40));
 
         Elaboro.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         Elaboro.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         Elaboro.setText(" Elaboró:"); // NOI18N
         Elaboro.setToolTipText("");
         Elaboro.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(Elaboro, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 160, 500, 40));
+        getContentPane().add(Elaboro, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 140, 500, 40));
 
         procedimiento.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         procedimiento.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         procedimiento.setText("PROCEDIMIENTO"); // NOI18N
         procedimiento.setToolTipText("");
         procedimiento.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 200, 1120, 30));
+        getContentPane().add(procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 180, 1120, 30));
 
         Programa.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         Programa.setText("Programa");
@@ -91,7 +103,7 @@ public class UsoPenombres extends javax.swing.JFrame {
         txtProcedimiento.setText("PASO 1. Seleccione 1 mujer y un hombre de apoyo.\nPASO 2. Hagan un círculo junto con el niño.\nPASO 3. Dé al niño un objeto (Auto) y pregunte: ¿Quién tiene el auto?\nPASO 4. La respuesta del niño debe ser “yo”. Si da la respuesta correctamente refuerce. Si no da la \nrespuesta correctamente de apoyo susurrando a su oído diciendo “yo”.\nPASO 5. Dé el auto a el hombre, llame al niño por su nombre y pregunte: ¿Quién tiene el auto? \nPASO 6. La respuesta debe ser él. Si el niño responde correctamente refuerce. Si no da la respuesta \ncorrecta dé apoyo susurrando la respuesta correcta al oído del niño.\nPASO 7. Dé el auto a la mujer, llame al niño por su nombre y pregunte: ¿Quién tiene el auto? \nPASO 8. El niño debe responder ella, si da la respuesta correcta refuerce, si no la da apoye susurrando al \noído.\nPASO 9. Tome el auto, llame al niño por su nombre y diga: ¿Quién tiene el auto?\nPASO 10. El niño debe responder tú. Si da la respuesta correcta refuerce, si no da la respuesta correcta \napoye susurrando al oído.\n");
         Procedimiento.setViewportView(txtProcedimiento);
 
-        getContentPane().add(Procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 230, 1120, 350));
+        getContentPane().add(Procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 210, 1120, 350));
 
         Btn_Instrucciones.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         Btn_Instrucciones.setText("Ver Instrucciones");
@@ -109,7 +121,34 @@ public class UsoPenombres extends javax.swing.JFrame {
         getContentPane().add(Btn_Instrucciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 650, 200, 50));
 
         jProgressBar1.setStringPainted(true);
-        getContentPane().add(jProgressBar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 610, 500, 40));
+        getContentPane().add(jProgressBar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 570, 1090, 40));
+
+        btnRequiereApoyo.setBackground(new java.awt.Color(255, 51, 51));
+        btnRequiereApoyo.setBorderPainted(false);
+        btnRequiereApoyo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRequiereApoyoActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnRequiereApoyo, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 620, 100, 20));
+
+        btnCasiLogra.setBackground(new java.awt.Color(255, 255, 102));
+        btnCasiLogra.setBorderPainted(false);
+        btnCasiLogra.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCasiLograActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCasiLogra, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 620, 100, 20));
+
+        btnCumplioObjetivo.setBackground(new java.awt.Color(51, 204, 0));
+        btnCumplioObjetivo.setBorderPainted(false);
+        btnCumplioObjetivo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCumplioObjetivoActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCumplioObjetivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 620, 100, 20));
 
         Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoRosa.jpg"))); // NOI18N
         getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 710));
@@ -127,6 +166,57 @@ public class UsoPenombres extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_Btn_InstruccionesActionPerformed
 
+    private void btnRequiereApoyoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyoActionPerformed
+        int Respuesta = JOptionPane.showConfirmDialog(this, "Seguro que quieres reiniciar el progreso de esta tarea?","Confirmar?",
+            JOptionPane.YES_NO_OPTION,JOptionPane.QUESTION_MESSAGE);
+        if(Respuesta == JOptionPane.YES_OPTION){
+            estadoPorcentaje = 76.19047616;
+            PorcentajeNiño();
+            porcentajeActual = estadoPorcentaje;
+            CargarBarra();
+        }
+    }//GEN-LAST:event_btnRequiereApoyoActionPerformed
+
+    private void btnCasiLograActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLograActionPerformed
+        if(estadoPorcentaje == 76.19047616){
+            estadoPorcentaje = 78.57142854;
+            PorcentajeNiño();
+            porcentajeActual = estadoPorcentaje;
+            CargarBarra();
+        }
+    }//GEN-LAST:event_btnCasiLograActionPerformed
+
+    private void btnCumplioObjetivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivoActionPerformed
+        if(estadoPorcentaje < 80.95238092){
+            estadoPorcentaje = 80.95238092;
+            PorcentajeNiño();
+            porcentajeActual = estadoPorcentaje;
+            CargarBarra();
+        }
+    }//GEN-LAST:event_btnCumplioObjetivoActionPerformed
+
+    private void niño() {
+        Alumno alu = Alumno.obtenerPorId(ln.claveNiño);
+        porcentajeActual = alu.getPorcentaje();
+        estadoPorcentaje = porcentajeActual;
+        CargarBarra();
+    }
+    
+    private void CargarBarra() {
+        jProgressBar1.setValue((int) estadoPorcentaje);
+
+    }   
+    
+    private void PorcentajeNiño() {
+
+        try {
+            alum.setPorcentaje(estadoPorcentaje);
+            alum.setIdAlumno(ln.claveNiño);
+            Alumno.editar(alum);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
     /**
      * @param args the command line arguments
      */
@@ -173,6 +263,9 @@ public class UsoPenombres extends javax.swing.JFrame {
     private javax.swing.JScrollPane Procedimiento;
     private javax.swing.JLabel Programa;
     private javax.swing.JLabel UsoDePronombres;
+    private javax.swing.JButton btnCasiLogra;
+    private javax.swing.JButton btnCumplioObjetivo;
+    private javax.swing.JButton btnRequiereApoyo;
     private javax.swing.JProgressBar jProgressBar1;
     private javax.swing.JLabel procedimiento;
     private javax.swing.JTextArea txtProcedimiento;
