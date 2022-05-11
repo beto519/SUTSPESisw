@@ -141,53 +141,49 @@ public class ReconocimientoColores extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
- private void niño() {
-        Alumno alu = Alumno.obtenerPorId(ln.claveNiño);
-        porcentajeActual = alu.getPorcentaje();
-        estadoPorcentaje = porcentajeActual;
-        BarraProgreso();
-    }
     private void btnRequiereApoyoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyoActionPerformed
         int Respuesta = JOptionPane.showConfirmDialog(this, "Seguro que quieres reiniciar el progreso de esta tarea?","Confirmar?",
         JOptionPane.YES_NO_OPTION,JOptionPane.QUESTION_MESSAGE);
         if(Respuesta == JOptionPane.YES_OPTION){
-        estadoPorcentaje = 55.555555556;
+        estadoPorcentaje = 57.14285712;
         PorcentajeNiño();
         porcentajeActual = estadoPorcentaje;
-        BarraProgreso();
+        CargarBarra();
         }
         // TODO add your handling code here:
     }//GEN-LAST:event_btnRequiereApoyoActionPerformed
 
     private void btnCasiLograActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLograActionPerformed
-       if(estadoPorcentaje == 55.555555556){
-        estadoPorcentaje = 58.33333;
+       if(estadoPorcentaje == 57.14285712){
+        estadoPorcentaje = 59.5238095;
         PorcentajeNiño();
         porcentajeActual = estadoPorcentaje;
-        BarraProgreso();
+        CargarBarra();
     }
         // TODO add your handling code here:
     }//GEN-LAST:event_btnCasiLograActionPerformed
 
     private void btnCumplioObjetivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivoActionPerformed
-        if(estadoPorcentaje < 61.11111){
-        estadoPorcentaje = 61.11111;
+        if(estadoPorcentaje < 61.90476188){
+        estadoPorcentaje = 61.90476188;
         PorcentajeNiño();
         porcentajeActual = estadoPorcentaje;
-        BarraProgreso();
+        CargarBarra();
         }
     }//GEN-LAST:event_btnCumplioObjetivoActionPerformed
 
-    public void BarraProgreso()
-   {
-        if(porcentajeActual == 55.555555556){
-          jProgressBar1.setValue(0);
-        }if(porcentajeActual == 58.33333){
-          jProgressBar1.setValue(50);
-        }if(porcentajeActual == 61.11111){
-          jProgressBar1.setValue(100);
-        }
-}
+    private void niño() {
+        Alumno alu = Alumno.obtenerPorId(ln.claveNiño);
+        porcentajeActual = alu.getPorcentaje();
+        estadoPorcentaje = porcentajeActual;
+        CargarBarra();
+    }
+    
+    private void CargarBarra() {
+        jProgressBar1.setValue((int) estadoPorcentaje);
+
+    }   
+    
     private void PorcentajeNiño() {
 
         try {
