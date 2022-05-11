@@ -184,7 +184,7 @@ public class AtencionCara extends javax.swing.JFrame {
 
     private void btn_LoHaceMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_LoHaceMouseClicked
       
-            estadoPorcentaje = 5.882352941176471;
+            estadoPorcentaje = 5.555555556;
             CargarBarra();
             PorcentajeNiño();
         
@@ -198,7 +198,7 @@ public class AtencionCara extends javax.swing.JFrame {
 
     private void btn_LoHaceConAyudaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_LoHaceConAyudaMouseClicked
 
-            estadoPorcentaje = 2.941176470588236;
+            estadoPorcentaje = 2.777777778;
             CargarBarra();
             PorcentajeNiño();
         

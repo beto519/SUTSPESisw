@@ -343,7 +343,7 @@ public class Instrucciones2 extends javax.swing.JFrame {
 
         jLabel40.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel40.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel40.setText("Emparejamiento de imagenes");
+        jLabel40.setText("Emparejamiento de objetos");
 
         jLabel41.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/icons8-selección-3d-50.png"))); // NOI18N
 
@@ -359,7 +359,7 @@ public class Instrucciones2 extends javax.swing.JFrame {
                     .addGroup(jPanel42Layout.createSequentialGroup()
                         .addGap(32, 32, 32)
                         .addComponent(jLabel40)))
-                .addContainerGap(57, Short.MAX_VALUE))
+                .addContainerGap(69, Short.MAX_VALUE))
         );
         jPanel42Layout.setVerticalGroup(
             jPanel42Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

@@ -558,7 +558,7 @@
                                       <Component id="jLabel40" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-                              <EmptySpace pref="57" max="32767" attributes="0"/>
+                              <EmptySpace pref="69" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -581,7 +581,7 @@
                           <Font name="Segoe UI" size="12" style="1"/>
                         </Property>
                         <Property name="horizontalAlignment" type="int" value="0"/>
-                        <Property name="text" type="java.lang.String" value="Emparejamiento de imagenes"/>
+                        <Property name="text" type="java.lang.String" value="Emparejamiento de objetos"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel41">

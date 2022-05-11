@@ -15,20 +15,19 @@ import mx.itson.vistas.LoginNiños;
  * @author lopez
  */
 public class AdiosConMano extends javax.swing.JFrame {
-
-    DAOAlumnoIMP Alumno = new DAOAlumnoIMP();
+  DAOAlumnoIMP Alumno = new DAOAlumnoIMP();
     LoginNiños ln = new LoginNiños();
     Alumno alum = new Alumno();
-
     private double estadoPorcentaje;
     double porcentajeActual;
+    
 
     /**
      * Creates new form AdiosConMano
      */
     public AdiosConMano() {
         initComponents();
-        setLocationRelativeTo(null);
+//        setLocationRelativeTo(null);
         niño();
 
         this.setExtendedState(MAXIMIZED_BOTH);
@@ -164,7 +163,7 @@ public class AdiosConMano extends javax.swing.JFrame {
         CargarBarra();
     }
 
-    private void PorcentajeNiño() {
+      private void PorcentajeNiño() {
 
         try {
 
@@ -177,18 +176,16 @@ public class AdiosConMano extends javax.swing.JFrame {
 
     }
     private void btnCasiLograActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLograActionPerformed
-        if (porcentajeActual == 0) {
-            estadoPorcentaje = 2.941176470588236;
-            CargarBarra();
-            PorcentajeNiño();
-        }
+        estadoPorcentaje = 13.88888889;
+        CargarBarra();
+        PorcentajeNiño();
 
 // TODO add your handling code here:
     }//GEN-LAST:event_btnCasiLograActionPerformed
 
     private void btnRequiereApoyoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyoActionPerformed
 
-        estadoPorcentaje = 0;
+       estadoPorcentaje = 11.11111111;
         CargarBarra();
         PorcentajeNiño();
 
@@ -197,11 +194,9 @@ public class AdiosConMano extends javax.swing.JFrame {
 
     private void btnCumplioObjetivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivoActionPerformed
 
-        if (porcentajeActual < 5.882352941176471) {
-            estadoPorcentaje = 5.882352941176471;
-            CargarBarra();
-            PorcentajeNiño();
-        }
+        estadoPorcentaje = 16.66666667;
+        CargarBarra();
+        PorcentajeNiño();
 // TODO add your handling code here:
     }//GEN-LAST:event_btnCumplioObjetivoActionPerformed
 

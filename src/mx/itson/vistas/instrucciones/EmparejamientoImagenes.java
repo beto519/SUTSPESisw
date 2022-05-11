@@ -6,13 +6,20 @@ package mx.itson.vistas.instrucciones;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import mx.itson.entidades.Alumno;
+import mx.itson.interfaces.DAOAlumnoIMP;
+import mx.itson.vistas.LoginNiños;
 
 /**
  *
  * @author lopez
  */
 public class EmparejamientoImagenes extends javax.swing.JFrame {
-    private int estadoPorcentaje;
+    DAOAlumnoIMP Alumno = new DAOAlumnoIMP();
+    LoginNiños ln = new LoginNiños();
+    Alumno alum = new Alumno();
+    private double estadoPorcentaje;
+    double porcentajeActual;
     /**
      * Creates new form EmparejamientoImagenes
      */
@@ -21,11 +28,15 @@ public class EmparejamientoImagenes extends javax.swing.JFrame {
   
          setLocationRelativeTo(null);
          this.setExtendedState(MAXIMIZED_BOTH);
+     niño();
 
     }
-    private void CargarBarra(){
-        PB_ProgresoNiño.setValue(estadoPorcentaje);
+       private void CargarBarra() {
+        PB_ProgresoNiño.setValue((int) estadoPorcentaje);
+
     }
+       
+       
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -144,19 +155,49 @@ public class EmparejamientoImagenes extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btn_LoHaceMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_LoHaceMouseClicked
-        estadoPorcentaje = 100;
+    
+    private void niño() {
+        Alumno alu = Alumno.obtenerPorId(ln.claveNiño);
+        porcentajeActual = alu.getPorcentaje();
+        estadoPorcentaje = porcentajeActual;
         CargarBarra();
+    }
+
+      private void PorcentajeNiño() {
+
+        try {
+
+            alum.setPorcentaje(estadoPorcentaje);
+            alum.setIdAlumno(ln.claveNiño);
+            Alumno.editar(alum);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
+    
+    
+    
+    
+    private void btn_LoHaceMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_LoHaceMouseClicked
+   
+          estadoPorcentaje = 27.77777778;
+        CargarBarra();
+        PorcentajeNiño();
     }//GEN-LAST:event_btn_LoHaceMouseClicked
 
     private void btn_NoLoHaceMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_NoLoHaceMouseClicked
-        estadoPorcentaje = 0;
+   
+          estadoPorcentaje = 22.22222222;
         CargarBarra();
+        PorcentajeNiño();
     }//GEN-LAST:event_btn_NoLoHaceMouseClicked
 
     private void btn_LoHaceConAyudaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_LoHaceConAyudaMouseClicked
-        estadoPorcentaje = 50;
+
+    estadoPorcentaje = 25;
         CargarBarra();
+        PorcentajeNiño();
     }//GEN-LAST:event_btn_LoHaceConAyudaMouseClicked
 
     private void btn_LoHaceConAyudaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_LoHaceConAyudaActionPerformed
