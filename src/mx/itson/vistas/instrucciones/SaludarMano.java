@@ -166,7 +166,7 @@ public class SaludarMano extends javax.swing.JFrame {
     private void btnRequiereApoyoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyoActionPerformed
 
  
-        estadoPorcentaje = 5.555555556;
+        estadoPorcentaje = 4.76190476;
         CargarBarra();
         PorcentajeNiño();
         // TODO add your handling code here:
@@ -174,7 +174,7 @@ public class SaludarMano extends javax.swing.JFrame {
 
     private void btnCasiLograActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLograActionPerformed
           
-            estadoPorcentaje = 8.333333333;
+            estadoPorcentaje = 7.14285714;
             CargarBarra();
             PorcentajeNiño();
         
@@ -183,7 +183,7 @@ public class SaludarMano extends javax.swing.JFrame {
 
     private void btnCumplioObjetivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivoActionPerformed
          
-            estadoPorcentaje = 11.11111111;
+            estadoPorcentaje = 9.52380952;
             CargarBarra();
             PorcentajeNiño();
         

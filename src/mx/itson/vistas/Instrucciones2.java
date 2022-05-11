@@ -3,6 +3,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package mx.itson.vistas;
+
+import mx.itson.entidades.Alumno;
+import mx.itson.interfaces.DAOAlumnoIMP;
 import mx.itson.vistas.instrucciones.*;
 
 /**
@@ -11,11 +14,23 @@ import mx.itson.vistas.instrucciones.*;
  */
 public class Instrucciones2 extends javax.swing.JFrame {
 
+    LoginNiños ln = new LoginNiños();
+    DAOAlumnoIMP alumno = new DAOAlumnoIMP();
+    AtencionCara at = new AtencionCara();
+
     /**
      * Creates new form Instrucciones2
      */
     public Instrucciones2() {
         initComponents();
+
+    }
+
+    public void obtenerNiño() {
+
+        Alumno niño = alumno.obtenerPorId(ln.claveNiño);
+        lbl_Id.setText(niño.getNombre());
+
     }
 
     /**
@@ -29,6 +44,7 @@ public class Instrucciones2 extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
+        lbl_Id = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         rSPanelShadow25 = new rojeru_san.rspanel.RSPanelShadow();
         jPanel33 = new javax.swing.JPanel();
@@ -122,20 +138,27 @@ public class Instrucciones2 extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
         jLabel1.setText("Bienvenido");
 
+        lbl_Id.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
+        lbl_Id.setText("Nombre");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 991, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(lbl_Id, javax.swing.GroupLayout.PREFERRED_SIZE, 447, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(21, 21, 21)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lbl_Id, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(24, Short.MAX_VALUE))
         );
 
@@ -232,11 +255,10 @@ public class Instrucciones2 extends javax.swing.JFrame {
         jPanel38Layout.setVerticalGroup(
             jPanel38Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel38Layout.createSequentialGroup()
-                .addContainerGap()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel37)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel36, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jLabel36, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         jButton19.setBackground(new java.awt.Color(0, 153, 255));
@@ -263,8 +285,7 @@ public class Instrucciones2 extends javax.swing.JFrame {
                 .addGap(0, 0, 0)
                 .addComponent(jButton19, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
-                .addComponent(jPanel38, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(23, 23, 23))
+                .addComponent(jPanel38, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         rSPanelShadow26.add(jPanel37, java.awt.BorderLayout.CENTER);
@@ -326,9 +347,8 @@ public class Instrucciones2 extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel39Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
                 .addComponent(jButton20, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(jPanel40, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(23, 23, 23))
+                .addGap(11, 11, 11)
+                .addComponent(jPanel40, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         rSPanelShadow27.add(jPanel39, java.awt.BorderLayout.CENTER);
@@ -423,7 +443,7 @@ public class Instrucciones2 extends javax.swing.JFrame {
                     .addGroup(jPanel44Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jLabel42, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(36, Short.MAX_VALUE))
+                .addContainerGap(30, Short.MAX_VALUE))
         );
         jPanel44Layout.setVerticalGroup(
             jPanel44Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -458,8 +478,7 @@ public class Instrucciones2 extends javax.swing.JFrame {
                 .addGap(0, 0, 0)
                 .addComponent(jButton22, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
-                .addComponent(jPanel44, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(23, 23, 23))
+                .addComponent(jPanel44, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         rSPanelShadow29.add(jPanel43, java.awt.BorderLayout.CENTER);
@@ -521,9 +540,8 @@ public class Instrucciones2 extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel45Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
                 .addComponent(jButton23, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(jPanel46, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(23, 23, 23))
+                .addGap(9, 9, 9)
+                .addComponent(jPanel46, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         rSPanelShadow30.add(jPanel45, java.awt.BorderLayout.CENTER);
@@ -612,11 +630,11 @@ public class Instrucciones2 extends javax.swing.JFrame {
             .addGroup(jPanel56Layout.createSequentialGroup()
                 .addGroup(jPanel56Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel56Layout.createSequentialGroup()
-                        .addGap(74, 74, 74)
-                        .addComponent(jLabel55))
-                    .addGroup(jPanel56Layout.createSequentialGroup()
                         .addGap(27, 27, 27)
-                        .addComponent(jLabel54, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jLabel54, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel56Layout.createSequentialGroup()
+                        .addGap(92, 92, 92)
+                        .addComponent(jLabel55)))
                 .addContainerGap(51, Short.MAX_VALUE))
         );
         jPanel56Layout.setVerticalGroup(
@@ -653,8 +671,7 @@ public class Instrucciones2 extends javax.swing.JFrame {
                 .addGap(0, 0, 0)
                 .addComponent(jButton28, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
-                .addComponent(jPanel56, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(23, 23, 23))
+                .addComponent(jPanel56, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         rSPanelShadow35.add(jPanel55, java.awt.BorderLayout.CENTER);
@@ -674,14 +691,13 @@ public class Instrucciones2 extends javax.swing.JFrame {
         jPanel58Layout.setHorizontalGroup(
             jPanel58Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel58Layout.createSequentialGroup()
-                .addGroup(jPanel58Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel58Layout.createSequentialGroup()
-                        .addGap(74, 74, 74)
-                        .addComponent(jLabel57))
-                    .addGroup(jPanel58Layout.createSequentialGroup()
-                        .addGap(27, 27, 27)
-                        .addComponent(jLabel56, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(27, 27, 27)
+                .addComponent(jLabel56, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(41, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel58Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel57)
+                .addGap(88, 88, 88))
         );
         jPanel58Layout.setVerticalGroup(
             jPanel58Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -716,9 +732,8 @@ public class Instrucciones2 extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel57Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
                 .addComponent(jButton29, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(jPanel58, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(23, 23, 23))
+                .addGap(10, 10, 10)
+                .addComponent(jPanel58, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         rSPanelShadow36.add(jPanel57, java.awt.BorderLayout.CENTER);
@@ -807,11 +822,11 @@ public class Instrucciones2 extends javax.swing.JFrame {
             .addGroup(jPanel62Layout.createSequentialGroup()
                 .addGroup(jPanel62Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel62Layout.createSequentialGroup()
-                        .addGap(74, 74, 74)
-                        .addComponent(jLabel61))
-                    .addGroup(jPanel62Layout.createSequentialGroup()
                         .addGap(27, 27, 27)
-                        .addComponent(jLabel60, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jLabel60, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel62Layout.createSequentialGroup()
+                        .addGap(91, 91, 91)
+                        .addComponent(jLabel61)))
                 .addContainerGap(51, Short.MAX_VALUE))
         );
         jPanel62Layout.setVerticalGroup(
@@ -821,7 +836,7 @@ public class Instrucciones2 extends javax.swing.JFrame {
                 .addComponent(jLabel61)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel60, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(0, 0, 0))
         );
 
         jButton31.setBackground(new java.awt.Color(0, 153, 255));
@@ -848,8 +863,7 @@ public class Instrucciones2 extends javax.swing.JFrame {
                 .addGap(0, 0, 0)
                 .addComponent(jButton31, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
-                .addComponent(jPanel62, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(23, 23, 23))
+                .addComponent(jPanel62, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         rSPanelShadow38.add(jPanel61, java.awt.BorderLayout.CENTER);
@@ -912,8 +926,7 @@ public class Instrucciones2 extends javax.swing.JFrame {
                 .addGap(0, 0, 0)
                 .addComponent(jButton32, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
-                .addComponent(jPanel64, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(23, 23, 23))
+                .addComponent(jPanel64, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         rSPanelShadow39.add(jPanel63, java.awt.BorderLayout.CENTER);
@@ -1091,7 +1104,7 @@ public class Instrucciones2 extends javax.swing.JFrame {
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(0, 144, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1105,13 +1118,33 @@ public class Instrucciones2 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
-        EmparejamientoImagenes abrir = new EmparejamientoImagenes();
-        abrir.setVisible(true);
+
+        double porcentaje = at.estadoPorcentaje;
+        if (porcentaje == 19.04761904) {
+            EmparejamientoImagenes abrir = new EmparejamientoImagenes();
+            abrir.setVisible(true);
+
+        } else {
+            PonerAtencionObjectos abrir = new PonerAtencionObjectos();
+            abrir.setVisible(true);
+
+        }
+
     }//GEN-LAST:event_jButton17ActionPerformed
 
     private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
-        ImitacionGruesa abrir = new ImitacionGruesa();
-        abrir.setVisible(true);
+
+        double porcentaje = at.estadoPorcentaje;
+        if (porcentaje == 38.09523808) {
+            ImitacionGruesa abrir = new ImitacionGruesa();
+            abrir.setVisible(true);
+
+        } else {
+            ImitacionFina abrir = new ImitacionFina();
+            abrir.setVisible(true);
+
+        }
+
     }//GEN-LAST:event_jButton19ActionPerformed
 
     private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
@@ -1120,13 +1153,33 @@ public class Instrucciones2 extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton20ActionPerformed
 
     private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
-        EmparejamientoObjetos abrir = new EmparejamientoObjetos();
-        abrir.setVisible(true);
+        double porcentaje = at.estadoPorcentaje;
+        if (porcentaje == 23.8095238) {
+            EmparejamientoObjetos abrir = new EmparejamientoObjetos();
+            abrir.setVisible(true);
+
+        } else {
+            EmparejamientoImagenes abrir = new EmparejamientoImagenes();
+            abrir.setVisible(true);
+
+        }
+
+
     }//GEN-LAST:event_jButton21ActionPerformed
 
     private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
-        MotricidadGruesa abrir = new MotricidadGruesa();
-        abrir.setVisible(true);
+        double porcentaje = at.estadoPorcentaje;
+        if (porcentaje == 42.85714284) {
+            MotricidadGruesa abrir = new MotricidadGruesa();
+            abrir.setVisible(true);
+
+        } else {
+            ImitacionGruesa abrir = new ImitacionGruesa();
+            abrir.setVisible(true);
+
+        }
+
+
     }//GEN-LAST:event_jButton22ActionPerformed
 
     private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
@@ -1140,8 +1193,18 @@ public class Instrucciones2 extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton27ActionPerformed
 
     private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
-        MotricidadFina abrir = new MotricidadFina();
-        abrir.setVisible(true);
+        double porcentaje = at.estadoPorcentaje;
+        if (porcentaje == 47.6190476) {
+            MotricidadFina abrir = new MotricidadFina();
+            abrir.setVisible(true);
+
+        } else {
+            MotricidadGruesa abrir = new MotricidadGruesa();
+            abrir.setVisible(true);
+
+        }
+
+
     }//GEN-LAST:event_jButton28ActionPerformed
 
     private void jButton29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton29ActionPerformed
@@ -1150,17 +1213,39 @@ public class Instrucciones2 extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton29ActionPerformed
 
     private void jButton30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton30ActionPerformed
-        ImitacionFina abrir = new ImitacionFina();
-        abrir.setVisible(true);
+        double porcentaje = at.estadoPorcentaje;
+        if (porcentaje == 33.33333332) {
+            ImitacionFina abrir = new ImitacionFina();
+            abrir.setVisible(true);
+
+        } else {
+            ImitacionVocales abrir = new ImitacionVocales();
+            abrir.setVisible(true);
+
+        }
+
+
     }//GEN-LAST:event_jButton30ActionPerformed
 
     private void jButton31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton31ActionPerformed
-        ReconocimientoCorporal abrir = new ReconocimientoCorporal();
+
+    double porcentaje = at.estadoPorcentaje;
+        if (porcentaje == 33.33333332) {
+         ReconocimientoCorporal abrir = new ReconocimientoCorporal();
         abrir.setVisible(true);
+
+        } else {
+            MotricidadFina abrir = new MotricidadFina();
+            abrir.setVisible(true);
+
+        }
+
+
+       
     }//GEN-LAST:event_jButton31ActionPerformed
 
     private void jButton32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton32ActionPerformed
-       SeguimientoInstrucciones abrir = new SeguimientoInstrucciones();
+        SeguimientoInstrucciones abrir = new SeguimientoInstrucciones();
         abrir.setVisible(true);
     }//GEN-LAST:event_jButton32ActionPerformed
 
@@ -1282,6 +1367,7 @@ public class Instrucciones2 extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel66;
     private javax.swing.JPanel jPanel67;
     private javax.swing.JPanel jPanel68;
+    private javax.swing.JLabel lbl_Id;
     private rojeru_san.rspanel.RSPanelShadow rSPanelShadow25;
     private rojeru_san.rspanel.RSPanelShadow rSPanelShadow26;
     private rojeru_san.rspanel.RSPanelShadow rSPanelShadow27;

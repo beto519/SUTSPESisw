@@ -167,7 +167,7 @@ private void niño() {
 
     }
     private void btnRequiereApoyoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyoActionPerformed
-        estadoPorcentaje = 19.44444444;
+        estadoPorcentaje = 14.28571428;
         CargarBarra();
         PorcentajeNiño();
         // TODO add your handling code here:
@@ -181,7 +181,7 @@ private void niño() {
     }//GEN-LAST:event_btnCasiLograActionPerformed
 
     private void btnCumplioObjetivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivoActionPerformed
-     estadoPorcentaje = 22.22222222;
+     estadoPorcentaje = 19.04761904;
         CargarBarra();
         PorcentajeNiño();
 // TODO add your handling code here:

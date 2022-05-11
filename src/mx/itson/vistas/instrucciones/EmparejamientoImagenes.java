@@ -181,21 +181,21 @@ public class EmparejamientoImagenes extends javax.swing.JFrame {
     
     private void btn_LoHaceMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_LoHaceMouseClicked
    
-          estadoPorcentaje = 27.77777778;
+          estadoPorcentaje = 23.8095238;
         CargarBarra();
         PorcentajeNiño();
     }//GEN-LAST:event_btn_LoHaceMouseClicked
 
     private void btn_NoLoHaceMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_NoLoHaceMouseClicked
    
-          estadoPorcentaje = 22.22222222;
+          estadoPorcentaje = 19.04761904;
         CargarBarra();
         PorcentajeNiño();
     }//GEN-LAST:event_btn_NoLoHaceMouseClicked
 
     private void btn_LoHaceConAyudaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_LoHaceConAyudaMouseClicked
 
-    estadoPorcentaje = 25;
+    estadoPorcentaje = 21.42857142;
         CargarBarra();
         PorcentajeNiño();
     }//GEN-LAST:event_btn_LoHaceConAyudaMouseClicked

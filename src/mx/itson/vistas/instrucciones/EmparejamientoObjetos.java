@@ -183,19 +183,19 @@ public class EmparejamientoObjetos extends javax.swing.JFrame {
 
     }
     private void btn_LoHaceMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_LoHaceMouseClicked
-        estadoPorcentaje = 33.33333333;
+        estadoPorcentaje = 28.57142856;
         CargarBarra();
         PorcentajeNiño();
     }//GEN-LAST:event_btn_LoHaceMouseClicked
 
     private void btn_NoLoHaceMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_NoLoHaceMouseClicked
-        estadoPorcentaje = 27.77777778;
+        estadoPorcentaje = 23.8095238;
         CargarBarra();
         PorcentajeNiño();
     }//GEN-LAST:event_btn_NoLoHaceMouseClicked
 
     private void btn_LoHaceConAyudaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_LoHaceConAyudaMouseClicked
-        estadoPorcentaje = 30.55555556;
+        estadoPorcentaje = 26.19047618;
         CargarBarra();
         PorcentajeNiño();
     }//GEN-LAST:event_btn_LoHaceConAyudaMouseClicked

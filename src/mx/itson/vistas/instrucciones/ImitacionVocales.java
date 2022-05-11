@@ -14,36 +14,27 @@ import mx.itson.vistas.LoginNiños;
  */
 public class ImitacionVocales extends javax.swing.JFrame {
     
+
     DAOAlumnoIMP Alumno = new DAOAlumnoIMP();
     LoginNiños ln = new LoginNiños();
     Alumno alum = new Alumno();
-    public  double estadoPorcentaje;
+    private double estadoPorcentaje;
     double porcentajeActual;
-    public static int barrita;
+
     
 public ImitacionVocales() {
         initComponents();
                  setLocationRelativeTo(null);
          this.setExtendedState(MAXIMIZED_BOTH);
-         niño();
+           niño();
     }
-    
-        private void niño() {
-        Alumno alu = Alumno.obtenerPorId(ln.claveNiño);
-        porcentajeActual = alu.getPorcentaje();
-        estadoPorcentaje = porcentajeActual;
-        BarraProgreso();
-    }
-        private void PorcentajeNiño() {
+       private void CargarBarra() {
+        PB_ProgresoNiño.setValue((int) estadoPorcentaje);
 
-        try {
-            alum.setPorcentaje(estadoPorcentaje);
-            alum.setIdAlumno(ln.claveNiño);
-            Alumno.editar(alum);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        }
+    }
+       
+       
+  
         
         
 @SuppressWarnings("unchecked")
@@ -163,36 +154,41 @@ public ImitacionVocales() {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+   private void niño() {
+        Alumno alu = Alumno.obtenerPorId(ln.claveNiño);
+        porcentajeActual = alu.getPorcentaje();
+        estadoPorcentaje = porcentajeActual;
+        CargarBarra();
+    }
 
-    private void btn_LoHaceMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_LoHaceMouseClicked
-        if (porcentajeActual < 83.33333) {
-            estadoPorcentaje = 83.33333;
-            PorcentajeNiño();
-            porcentajeActual = estadoPorcentaje;
-            BarraProgreso();
+    private void PorcentajeNiño() {
+
+        try {
+
+            alum.setPorcentaje(estadoPorcentaje);
+            alum.setIdAlumno(ln.claveNiño);
+            Alumno.editar(alum);
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-        System.out.println(estadoPorcentaje);
-        System.out.println(porcentajeActual);
+
+    }
+    private void btn_LoHaceMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_LoHaceMouseClicked
+          estadoPorcentaje = 33.33333332;
+        CargarBarra();
+        PorcentajeNiño();
     }//GEN-LAST:event_btn_LoHaceMouseClicked
 
     private void btn_NoLoHaceMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_NoLoHaceMouseClicked
-        estadoPorcentaje = 77.777778;
+         estadoPorcentaje = 28.57142856;
+        CargarBarra();
         PorcentajeNiño();
-        porcentajeActual = estadoPorcentaje;
-        BarraProgreso();
-        System.out.println(estadoPorcentaje);
-        System.out.println(porcentajeActual);
     }//GEN-LAST:event_btn_NoLoHaceMouseClicked
 
     private void btn_LoHaceConAyudaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_LoHaceConAyudaMouseClicked
-        if (porcentajeActual == 77.777778) {
-            estadoPorcentaje = 80.55556;
-            PorcentajeNiño();
-            porcentajeActual = estadoPorcentaje;
-            BarraProgreso();
-        }
-        System.out.println(estadoPorcentaje);
-        System.out.println(porcentajeActual);
+           estadoPorcentaje = 30.95238094;
+        CargarBarra();
+        PorcentajeNiño();
     }//GEN-LAST:event_btn_LoHaceConAyudaMouseClicked
 
     private void btn_LoHaceConAyudaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_LoHaceConAyudaActionPerformed
@@ -203,16 +199,7 @@ public ImitacionVocales() {
         // TODO add your handling code here:
     }//GEN-LAST:event_btn_LoHaceActionPerformed
 
-    public void BarraProgreso()
-   {
-    if(porcentajeActual == 77.777778){
-          PB_ProgresoNiño.setValue(0);
-        }if(porcentajeActual == 80.55556){
-          PB_ProgresoNiño.setValue(50);
-        }if(porcentajeActual == 83.33333){
-          PB_ProgresoNiño.setValue(100);
-        }
-   }
+
     
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */

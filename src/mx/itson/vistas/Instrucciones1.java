@@ -559,7 +559,7 @@ public void obtenerNiño(){
 }
     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
 double porcentaje = at.estadoPorcentaje;
-        if (porcentaje == 5.882352941176471) {
+        if (porcentaje == 4.76190476) {
             SaludarMano a = new SaludarMano();
         a.setVisible(true); 
         }else{
@@ -571,13 +571,38 @@ double porcentaje = at.estadoPorcentaje;
     }//GEN-LAST:event_jButton14ActionPerformed
 
     private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
-        AdiosConMano abrir = new AdiosConMano();
+    
+
+        double porcentaje = at.estadoPorcentaje;
+        if (porcentaje ==  9.52380952) {
+            
+             AdiosConMano abrir = new AdiosConMano();
         abrir.setVisible(true);
+           
+        }else{
+        SaludarMano a = new SaludarMano();
+        a.setVisible(true); 
+        }
+        
+        
+       
     }//GEN-LAST:event_jButton15ActionPerformed
 
     private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
-        PonerAtencionObjectos abrir = new PonerAtencionObjectos();
+
+
+        double porcentaje = at.estadoPorcentaje;
+        if (porcentaje ==  14.28571428) {
+            
+             PonerAtencionObjectos abrir = new PonerAtencionObjectos();
         abrir.setVisible(true);
+           
+        }else{
+         AdiosConMano abrir = new AdiosConMano();
+        abrir.setVisible(true);
+        }
+
+      
     }//GEN-LAST:event_jButton16ActionPerformed
 
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
@@ -586,6 +611,7 @@ double porcentaje = at.estadoPorcentaje;
     }//GEN-LAST:event_jButton17ActionPerformed
 
     private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
+
         AtencionCara abrir = new AtencionCara();
         abrir.setVisible(true); 
     }//GEN-LAST:event_jButton18ActionPerformed
