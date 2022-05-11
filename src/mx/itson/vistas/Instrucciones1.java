@@ -559,7 +559,7 @@ public void obtenerNiño(){
 }
     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
 double porcentaje = at.estadoPorcentaje;
-        if (porcentaje == 4.76190476) {
+        if (porcentaje >= 4.76190476) {
             SaludarMano a = new SaludarMano();
         a.setVisible(true); 
         }else{
@@ -574,7 +574,7 @@ double porcentaje = at.estadoPorcentaje;
     
 
         double porcentaje = at.estadoPorcentaje;
-        if (porcentaje ==  9.52380952) {
+        if (porcentaje >=  9.52380952) {
             
              AdiosConMano abrir = new AdiosConMano();
         abrir.setVisible(true);
@@ -592,7 +592,7 @@ double porcentaje = at.estadoPorcentaje;
 
 
         double porcentaje = at.estadoPorcentaje;
-        if (porcentaje ==  14.28571428) {
+        if (porcentaje >=  14.28571428) {
             
              PonerAtencionObjectos abrir = new PonerAtencionObjectos();
         abrir.setVisible(true);
