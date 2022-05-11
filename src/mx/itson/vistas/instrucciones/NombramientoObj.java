@@ -32,9 +32,15 @@ DAOAlumnoIMP Alumno = new DAOAlumnoIMP();
         Alumno alu = Alumno.obtenerPorId(ln.claveNiño);
         porcentajeActual = alu.getPorcentaje();
         estadoPorcentaje = porcentajeActual;
-        BarraProgreso();
+        CargarBarra();
     }
-        private void PorcentajeNiño() {
+    
+    private void CargarBarra() {
+        jProgressBar1.setValue((int) estadoPorcentaje);
+
+    }   
+    
+    private void PorcentajeNiño() {
 
         try {
             alum.setPorcentaje(estadoPorcentaje);
@@ -43,7 +49,7 @@ DAOAlumnoIMP Alumno = new DAOAlumnoIMP();
         } catch (Exception e) {
             e.printStackTrace();
         }
-        }
+    }
         
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -153,48 +159,38 @@ DAOAlumnoIMP Alumno = new DAOAlumnoIMP();
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnRequiereApoyoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyoActionPerformed
-        estadoPorcentaje = 88.888889;
+        estadoPorcentaje = 90.47619044;
         PorcentajeNiño();
         porcentajeActual = estadoPorcentaje;
-        BarraProgreso();
+        CargarBarra();
         System.out.println(estadoPorcentaje);
         System.out.println(porcentajeActual);
         // TODO add your handling code here:
     }//GEN-LAST:event_btnRequiereApoyoActionPerformed
 
     private void btnCasiLograActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLograActionPerformed
-        if (porcentajeActual == 88.888889) {
-            estadoPorcentaje = 91.66667;
+        if (porcentajeActual == 90.47619044) {
+            estadoPorcentaje = 92.85714282;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
-            BarraProgreso();
+            CargarBarra();
         }
         System.out.println(estadoPorcentaje);
         System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnCasiLograActionPerformed
 
     private void btnCumplioObjetivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivoActionPerformed
-        if (porcentajeActual < 94.44444) {
-            estadoPorcentaje = 94.44444;
+        if (porcentajeActual < 95.2380952) {
+            estadoPorcentaje = 95.2380952;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
-            BarraProgreso();
+            CargarBarra();
         }
         System.out.println(estadoPorcentaje);
         System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnCumplioObjetivoActionPerformed
 
-    public void BarraProgreso()
-   {
-    if(porcentajeActual == 88.888889){
-          jProgressBar1.setValue(0);
-        }if(porcentajeActual == 91.66667){
-          jProgressBar1.setValue(50);
-        }if(porcentajeActual == 94.44444){
-          jProgressBar1.setValue(100);
-        }
-   }
-        
+
     public static void main(String args[]) {
         /* SFondoNimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">

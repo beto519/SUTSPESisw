@@ -31,9 +31,15 @@ public class SenalamientoObjetos extends javax.swing.JFrame {
         Alumno alu = Alumno.obtenerPorId(ln.claveNiño);
         porcentajeActual = alu.getPorcentaje();
         estadoPorcentaje = porcentajeActual;
-        BarraProgreso();
+        CargarBarra();
     }
-        private void PorcentajeNiño() {
+    
+    private void CargarBarra() {
+        jProgressBar1.setValue((int) estadoPorcentaje);
+
+    }   
+    
+    private void PorcentajeNiño() {
 
         try {
             alum.setPorcentaje(estadoPorcentaje);
@@ -42,7 +48,7 @@ public class SenalamientoObjetos extends javax.swing.JFrame {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        }
+    }
         
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -152,20 +158,20 @@ public class SenalamientoObjetos extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnRequiereApoyoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyoActionPerformed
-        estadoPorcentaje = 94.44444;
+        estadoPorcentaje = 95.2380952;
         PorcentajeNiño();
         porcentajeActual = estadoPorcentaje;
-        BarraProgreso();
+        CargarBarra();
         System.out.println(estadoPorcentaje);
         System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnRequiereApoyoActionPerformed
 
     private void btnCasiLograActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLograActionPerformed
-        if (porcentajeActual == 94.44444) {
-            estadoPorcentaje = 97.22222;
+        if (porcentajeActual == 95.2380952) {
+            estadoPorcentaje = 97.61904758;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
-            BarraProgreso();
+            CargarBarra();
         }
         System.out.println(estadoPorcentaje);
         System.out.println(porcentajeActual);
@@ -176,23 +182,12 @@ public class SenalamientoObjetos extends javax.swing.JFrame {
             estadoPorcentaje = 100;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
-            BarraProgreso();
+            CargarBarra();
         }
         System.out.println(estadoPorcentaje);
         System.out.println(porcentajeActual);
     }//GEN-LAST:event_btnCumplioObjetivoActionPerformed
 
-    public void BarraProgreso()
-   {
-    if(porcentajeActual == 94.444444){
-          jProgressBar1.setValue(0);
-        }if(porcentajeActual == 97.22222){
-          jProgressBar1.setValue(50);
-        }if(porcentajeActual == 100){
-          jProgressBar1.setValue(100);
-        }
-   }
-    
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">

@@ -174,7 +174,7 @@ dispose();
         int Respuesta = JOptionPane.showConfirmDialog(this, "Seguro que quieres reiniciar el progreso de esta tarea?","Confirmar?",
             JOptionPane.YES_NO_OPTION,JOptionPane.QUESTION_MESSAGE);
         if(Respuesta == JOptionPane.YES_OPTION){
-            estadoPorcentaje = 76.19047616;
+            estadoPorcentaje = 85.71428568;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             CargarBarra();
@@ -182,8 +182,8 @@ dispose();
     }//GEN-LAST:event_btnRequiereApoyoActionPerformed
 
     private void btnCasiLograActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLograActionPerformed
-        if(estadoPorcentaje == 76.19047616){
-            estadoPorcentaje = 78.57142854;
+        if(estadoPorcentaje == 85.71428568){
+            estadoPorcentaje = 88.09523806;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             CargarBarra();
@@ -191,8 +191,8 @@ dispose();
     }//GEN-LAST:event_btnCasiLograActionPerformed
 
     private void btnCumplioObjetivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivoActionPerformed
-        if(estadoPorcentaje < 80.95238092){
-            estadoPorcentaje = 80.95238092;
+        if(estadoPorcentaje < 90.47619044){
+            estadoPorcentaje = 90.47619044;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             CargarBarra();
