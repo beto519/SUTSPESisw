@@ -33,9 +33,6 @@ public class InstruccPartesCuerpo extends javax.swing.JFrame {
          niño();
     }
     
-    private void CargarBarra() {
-
-    }
 
     private void niño() {
         Alumno alu = Alumno.obtenerPorId(ln.claveNiño);

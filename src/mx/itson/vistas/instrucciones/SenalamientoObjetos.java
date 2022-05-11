@@ -152,7 +152,7 @@ public class SenalamientoObjetos extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnRequiereApoyoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyoActionPerformed
-        estadoPorcentaje = 94.444444;
+        estadoPorcentaje = 94.44444;
         PorcentajeNiño();
         porcentajeActual = estadoPorcentaje;
         BarraProgreso();
@@ -161,7 +161,7 @@ public class SenalamientoObjetos extends javax.swing.JFrame {
     }//GEN-LAST:event_btnRequiereApoyoActionPerformed
 
     private void btnCasiLograActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLograActionPerformed
-        if (porcentajeActual == 94.444444) {
+        if (porcentajeActual == 94.44444) {
             estadoPorcentaje = 97.22222;
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
