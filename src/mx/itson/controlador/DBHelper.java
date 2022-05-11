@@ -16,8 +16,8 @@ public class DBHelper {
     private String error;
     private String controller = "com.mysql.cj.jdbc.Driver";
     private String database = "jdbc:mysql://129.146.249.227?useSSL=false";
-    private String user = "sutspes";
-    private String password = "DAjizEle14z3";
+    private String user = "vinko";
+    private String password = "$DOOMCODE70";
 
     public DBHelper() {
         
