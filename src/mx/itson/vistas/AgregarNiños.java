@@ -31,20 +31,23 @@ public class AgregarNiños extends javax.swing.JFrame {
 
     private FileInputStream fis;
     private int longitudBytes;
-    
+
     public AgregarNiños() {
         initComponents();
         setLocationRelativeTo(null);
     }
-    private void limpiarCampos(){
-    txtNombre.setText("");
-    txtTelefono.setText("");
-    txtTutor.setText("");
-    txtTelefono.setText("");
-    txt_NombreImagen.setText("");
+
+    private void limpiarCampos() {
+        //Metodo para limpiar los campos despues de que se hayan guardado
+        txtNombre.setText("");
+        txtTelefono.setText("");
+        txtTutor.setText("");
+        txtTelefono.setText("");
+        txt_NombreImagen.setText("");
     }
-    
+
     public void GuardarImagen() {
+        //Metodo para poder guardar los datos de los niños
 
         if (txt_NombreImagen.getText().equals("")) {
             txt_NombreImagen.setBackground(Color.red);
@@ -65,15 +68,15 @@ public class AgregarNiños extends javax.swing.JFrame {
             try {
                 Connection cn = DBHelper.conectar();
                 PreparedStatement pst = cn.prepareStatement("insert into `bxopxuzsnsc4au7ggfnf`.`niños` values (?,?,?,?,?,?,?)");
-                
+
                 pst.setInt(1, 0);
                 pst.setString(2, NombreCompleto);
                 pst.setString(3, Edad);
-                pst.setString(4, Nivel+"");
+                pst.setString(4, Nivel + "");
                 pst.setString(5, NombreTutor);
-                pst.setString(6, Telefono+"");
+                pst.setString(6, Telefono + "");
                 pst.setBlob(7, fis, longitudBytes);
-                
+
                 pst.executeUpdate();
                 cn.close();
                 limpiarCampos();
@@ -81,7 +84,6 @@ public class AgregarNiños extends javax.swing.JFrame {
                 lbl_imagen.setText("Foto");
                 JOptionPane.showMessageDialog(null, "Registro Exitoso");
 
-                
             } catch (SQLException e) {
                 System.out.println("Error al guardar foto " + e);
                 JOptionPane.showMessageDialog(null, "¡¡Error al guardar foto!!");
@@ -89,10 +91,7 @@ public class AgregarNiños extends javax.swing.JFrame {
 
         }
     }
-    
-    
 
-    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -187,20 +186,20 @@ public class AgregarNiños extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void lbl_VolverMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_VolverMouseClicked
-
+        //Boton para poder volver a la lista de los niños
         VerNiños abrir = new VerNiños();
         abrir.setVisible(true);
         dispose();
-        
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_lbl_VolverMouseClicked
 
     private void lbl_AddTerapeutaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_AddTerapeutaMouseClicked
         GuardarImagen();
-// TODO add your handling code here:
+
     }//GEN-LAST:event_lbl_AddTerapeutaMouseClicked
 
     private void lbl_subirImagenMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_subirImagenMouseClicked
+        //Metodo para subir la imagen desde los archivos o foto de los niños
         JFileChooser se = new JFileChooser();
         se.setFileSelectionMode(JFileChooser.FILES_ONLY);
         int estado = se.showOpenDialog(null);

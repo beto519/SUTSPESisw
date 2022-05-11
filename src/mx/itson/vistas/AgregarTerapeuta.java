@@ -37,6 +37,8 @@ public class AgregarTerapeuta extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }
     private void limpiarCampos(){
+    
+    // Metodo para limpiar los espacios despeus de guardar a un terapeuta    
     txtNombre.setText("");
     txtUsuario.setText("");
     txtCorreo.setText("");
