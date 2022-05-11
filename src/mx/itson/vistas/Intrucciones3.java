@@ -3,8 +3,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package mx.itson.vistas;
-import mx.itson.vistas.instrucciones.*;
 
+import mx.itson.entidades.Alumno;
+import mx.itson.interfaces.DAOAlumnoIMP;
+import mx.itson.vistas.instrucciones.*;
 
 /**
  *
@@ -12,11 +14,20 @@ import mx.itson.vistas.instrucciones.*;
  */
 public class Intrucciones3 extends javax.swing.JFrame {
 
+    LoginNiños ln = new LoginNiños();
+    DAOAlumnoIMP alumno = new DAOAlumnoIMP();
+    private double estadoPorcentaje;
+    double porcentajeActual;
+    Alumno alum = new Alumno();
+    AtencionCara at = new AtencionCara();
+
     /**
      * Creates new form Intrucciones3
      */
     public Intrucciones3() {
         initComponents();
+        niño();
+        obtenerNiño();
     }
 
     /**
@@ -82,6 +93,7 @@ public class Intrucciones3 extends javax.swing.JFrame {
         rSPanelShadow32 = new rojeru_san.rspanel.RSPanelShadow();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
+        lbl_Id = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -552,9 +564,9 @@ public class Intrucciones3 extends javax.swing.JFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(2, 2, 2)
+                .addContainerGap()
                 .addComponent(rSPanelShadow15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(2, 2, 2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(rSPanelShadow21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(2, 2, 2)
                 .addComponent(rSPanelShadow25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -566,11 +578,12 @@ public class Intrucciones3 extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(rSPanelShadow15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(rSPanelShadow21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(rSPanelShadow25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(rSPanelShadow29, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(222, Short.MAX_VALUE))
+                    .addComponent(rSPanelShadow29, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(rSPanelShadow15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(rSPanelShadow25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(217, Short.MAX_VALUE))
         );
 
         jPanel1.setBackground(new java.awt.Color(51, 153, 255));
@@ -578,21 +591,27 @@ public class Intrucciones3 extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
         jLabel1.setText("Bienvenido");
 
+        lbl_Id.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
+        lbl_Id.setText("Nombre");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 991, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 294, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(lbl_Id)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(21, 21, 21)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(24, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(23, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lbl_Id))
+                .addGap(17, 17, 17))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -612,31 +631,94 @@ public class Intrucciones3 extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+ public void obtenerNiño() {
 
+        Alumno niño = alumno.obtenerPorId(ln.claveNiño);
+        lbl_Id.setText(niño.getNombre());
+
+    }
+
+    private void niño() {
+        Alumno alu = alumno.obtenerPorId(ln.claveNiño);
+        porcentajeActual = alu.getPorcentaje();
+        estadoPorcentaje = porcentajeActual;
+
+    }
     private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
-        ManejoEspacial a = new ManejoEspacial();
-        a.setVisible(true);
+
+        porcentajeActual = estadoPorcentaje;
+        double porcentaje = at.estadoPorcentaje;
+        if (porcentaje >= 85.71428568) {
+            ManejoEspacial a = new ManejoEspacial();
+            a.setVisible(true);
+        } else {
+            Intraverbal a = new Intraverbal();
+            a.setVisible(true);
+            dispose();
+
+        }
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton18ActionPerformed
 
     private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
-        UsoPenombres a = new UsoPenombres();
-        a.setVisible(true);
+
+        porcentajeActual = estadoPorcentaje;
+        double porcentaje = at.estadoPorcentaje;
+        if (porcentaje >= 76.19047616) {
+
+            UsoPenombres a = new UsoPenombres();
+            a.setVisible(true);
+            dispose();
+        } else {
+
+            SeguimientoInstrucciones a = new SeguimientoInstrucciones();
+            a.setVisible(true);
+            dispose();
+        }
     }//GEN-LAST:event_jButton19ActionPerformed
 
     private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
+
+  porcentajeActual = estadoPorcentaje;
+        double porcentaje = at.estadoPorcentaje;
+        if (porcentaje >= 90.47619044) {
+
         NombramientoObj a = new NombramientoObj();
         a.setVisible(true);
+        dispose();} else{
+         ManejoEspacial a = new ManejoEspacial();
+        a.setVisible(true);
+        dispose();
+        }
+        
     }//GEN-LAST:event_jButton22ActionPerformed
 
     private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
-        Intraverbal a = new Intraverbal();
-        a.setVisible(true);
+        porcentajeActual = estadoPorcentaje;
+        double porcentaje = at.estadoPorcentaje;
+        if (porcentaje >= 80.95238092) {
+
+            Intraverbal a = new Intraverbal();
+            a.setVisible(true);
+            dispose();
+        } else {
+            UsoPenombres a = new UsoPenombres();
+            a.setVisible(true);
+            dispose();
+        }
     }//GEN-LAST:event_jButton23ActionPerformed
 
     private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
+   porcentajeActual = estadoPorcentaje;
+        double porcentaje = at.estadoPorcentaje;
+        if (porcentaje >= 95.2380952) {
+
         SenalamientoObjetos a = new SenalamientoObjetos();
+        a.setVisible(true);}else{
+        NombramientoObj a = new NombramientoObj();
         a.setVisible(true);
+        dispose();
+        }
     }//GEN-LAST:event_jButton24ActionPerformed
 
     private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
@@ -722,6 +804,7 @@ public class Intrucciones3 extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel50;
     private javax.swing.JPanel jPanel51;
     private javax.swing.JPanel jPanel52;
+    private javax.swing.JLabel lbl_Id;
     private rojeru_san.rspanel.RSPanelShadow rSPanelShadow15;
     private rojeru_san.rspanel.RSPanelShadow rSPanelShadow16;
     private rojeru_san.rspanel.RSPanelShadow rSPanelShadow17;
