@@ -13,7 +13,10 @@ import mx.itson.vistas.instrucciones.*;
 public class Instrucciones1 extends javax.swing.JFrame {
 LoginNiños ln = new LoginNiños();
     DAOAlumnoIMP alumno = new DAOAlumnoIMP();
-    AtencionCara at = new AtencionCara();
+    private double estadoPorcentaje;
+    double porcentajeActual;
+      Alumno alum = new Alumno();
+      AtencionCara at = new AtencionCara();
     /**
      * Creates new form Instrucciones1
      */
@@ -549,6 +552,19 @@ LoginNiños ln = new LoginNiños();
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+ private void PorcentajeNiño() {
+
+        try {
+
+            alum.setPorcentaje(estadoPorcentaje);
+            alum.setIdAlumno(ln.claveNiño);
+            alumno.editar(alum);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
+ 
 
 public void obtenerNiño(){
 
@@ -558,7 +574,13 @@ public void obtenerNiño(){
 
 }
     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
-double porcentaje = at.estadoPorcentaje;
+
+     
+        PorcentajeNiño();
+        porcentajeActual = estadoPorcentaje;
+       
+        
+        double porcentaje = at.estadoPorcentaje;
         if (porcentaje >= 4.76190476) {
             SaludarMano a = new SaludarMano();
         a.setVisible(true); 
@@ -573,6 +595,9 @@ double porcentaje = at.estadoPorcentaje;
     private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
     
 
+        PorcentajeNiño();
+        porcentajeActual = estadoPorcentaje;
+       
         double porcentaje = at.estadoPorcentaje;
         if (porcentaje >=  9.52380952) {
             
@@ -591,6 +616,9 @@ double porcentaje = at.estadoPorcentaje;
     private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
 
 
+        PorcentajeNiño();
+        porcentajeActual = estadoPorcentaje;
+       
         double porcentaje = at.estadoPorcentaje;
         if (porcentaje >=  14.28571428) {
             
