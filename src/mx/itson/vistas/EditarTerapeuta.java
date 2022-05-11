@@ -63,7 +63,7 @@ public class EditarTerapeuta extends javax.swing.JFrame {
             try {
                 if(longitudBytes != 0){
                  Connection cn = DBHelper.conectar();
-                PreparedStatement pst = cn.prepareStatement("UPDATE `bxopxuzsnsc4au7ggfnf`.`terapeuta` SET nombreCom = ?, Area = ?, email = ?, "
+                PreparedStatement pst = cn.prepareStatement("UPDATE `sutspes`.`terapeuta` SET nombreCom = ?, Area = ?, email = ?, "
                         + "usuario = ?, contraseña = ?, imagen = ? WHERE IdTerap = ?");
                 
                 pst.setString(1, NombreCompleto);
@@ -81,7 +81,7 @@ public class EditarTerapeuta extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, "Registro Exitoso");
             }else{
                 Connection cn = DBHelper.conectar();
-                PreparedStatement pst = cn.prepareStatement("UPDATE `bxopxuzsnsc4au7ggfnf`.`terapeuta` SET nombreCom = ?, Area = ?, email = ?, "
+                PreparedStatement pst = cn.prepareStatement("UPDATE `sutspes`.`terapeuta` SET nombreCom = ?, Area = ?, email = ?, "
                         + "usuario = ?, contraseña = ? WHERE IdTerap = ?");
                 
                 pst.setString(1, NombreCompleto);
@@ -122,7 +122,7 @@ public class EditarTerapeuta extends javax.swing.JFrame {
             try {
                 
                 Connection cn = DBHelper.conectar() ;
-                PreparedStatement pst = cn.prepareStatement("SELECT * FROM bxopxuzsnsc4au7ggfnf.terapeuta WHERE IdTerap = " + vt.idEdit);
+                PreparedStatement pst = cn.prepareStatement("SELECT * FROM sutspes.terapeuta WHERE IdTerap = " + vt.idEdit);
                 ResultSet rs = pst.executeQuery();
                 
                 if(rs.next()){

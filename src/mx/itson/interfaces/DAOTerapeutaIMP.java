@@ -47,7 +47,7 @@ public class DAOTerapeutaIMP implements DAOTerapeuta {
         boolean resultado = false;
         try {
             if (db.connect()) {
-                String query = "INSERT INTO `bxopxuzsnsc4au7ggfnf`.`terapeuta` (`nombreCom`, `Area`, `email`, `usuario`, `contraseña`, `imagen`) "
+                String query = "INSERT INTO `sutspes`.`terapeuta` (`nombreCom`, `Area`, `email`, `usuario`, `contraseña`, `imagen`) "
                         + " VALUES ('" + terapeuta.getNombre() + "', "
                         + " '" + terapeuta.getPuesto()+ "', "
                         + " '" + terapeuta.getCorreo()+ "', "
@@ -68,7 +68,7 @@ public class DAOTerapeutaIMP implements DAOTerapeuta {
         boolean resultado = false;
         try {
             if (db.connect()) {
-                String query = "UPDATE `bxopxuzsnsc4au7ggfnf`.`terapeuta` SET  "
+                String query = "UPDATE `sutspes`.`terapeuta` SET  "
                         + "`nombreCom` = '" + terapeuta.getNombre() + "', "
                         + "`Area` = '" + terapeuta.getPuesto()+ "', "
                         + "`email` = '" + terapeuta.getCorreo()+ "', "
@@ -94,7 +94,7 @@ public class DAOTerapeutaIMP implements DAOTerapeuta {
 
         try {
             if (db.connect()) {
-                String query = "DELETE FROM `bxopxuzsnsc4au7ggfnf`.`terapeuta` WHERE (`IdTerap` = '" + id + "');";
+                String query = "DELETE FROM `sutspes`.`terapeuta` WHERE (`IdTerap` = '" + id + "');";
                 resultado = (boolean) db.execute(query, true);
             }
         } catch (Exception e) {
@@ -110,7 +110,7 @@ public class DAOTerapeutaIMP implements DAOTerapeuta {
 
         try {
             if (db.connect()) {
-                String query = "SELECT * FROM bxopxuzsnsc4au7ggfnf." + TABLA;
+                String query = "SELECT * FROM sutspes." + TABLA;
                 ResultSet rs = (ResultSet) db.execute(query, false);
                 while (rs.next()) {
                     Terapeuta terapeuta = new Terapeuta();
@@ -139,7 +139,7 @@ public class DAOTerapeutaIMP implements DAOTerapeuta {
               Terapeuta empleado = new Terapeuta();
         try {
             if (db.connect()) {
-                String query = "SELECT * FROM bxopxuzsnsc4au7ggfnf." + TABLA + " WHERE IdTerap = " + id;
+                String query = "SELECT * FROM sutspes." + TABLA + " WHERE IdTerap = " + id;
                 ResultSet rs = (ResultSet) db.execute(query, false);
                 if (rs.next()) {
                     empleado.setId(rs.getInt("IdTerap"));
@@ -166,7 +166,7 @@ public class DAOTerapeutaIMP implements DAOTerapeuta {
               Terapeuta empleado = new Terapeuta();
         try {
             if (db.connect()) {
-                String query = "SELECT * FROM bxopxuzsnsc4au7ggfnf." + TABLA + " WHERE usuario = " + user;
+                String query = "SELECT * FROM sutspes." + TABLA + " WHERE usuario = " + user;
                 ResultSet rs = (ResultSet) db.execute(query, false);
                 if (rs.next()) {
                     empleado.setId(rs.getInt("IdTerap"));
@@ -190,7 +190,7 @@ public class DAOTerapeutaIMP implements DAOTerapeuta {
          MostrarTerapeuta mt = new MostrarTerapeuta();
         try {
             if (db.connect()) {
-                String query = "SELECT * FROM bxopxuzsnsc4au7ggfnf.terapeuta WHERE IdTerap = " + id;
+                String query = "SELECT * FROM sutspes.terapeuta WHERE IdTerap = " + id;
                 ResultSet rs = (ResultSet) db.execute(query, false);
                 if (rs.next()) {
                     //leer Binario

@@ -67,7 +67,7 @@ public class AgregarNiños extends javax.swing.JFrame {
 
             try {
                 Connection cn = DBHelper.conectar();
-                PreparedStatement pst = cn.prepareStatement("insert into `bxopxuzsnsc4au7ggfnf`.`niños` values (?,?,?,?,?,?,?)");
+                PreparedStatement pst = cn.prepareStatement("insert into `sutspes`.`niños` values (?,?,?,?,?,?,?)");
 
                 pst.setInt(1, 0);
                 pst.setString(2, NombreCompleto);

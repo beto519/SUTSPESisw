@@ -62,7 +62,7 @@ public class AgregarTerapeuta extends javax.swing.JFrame {
             try {
 
                 Connection cn = DBHelper.conectar();
-                PreparedStatement pst = cn.prepareStatement("insert into `bxopxuzsnsc4au7ggfnf`.`terapeuta` values (?,?,?,?,?,MD5(?),?)");
+                PreparedStatement pst = cn.prepareStatement("insert into `sutspes`.`terapeuta` values (?,?,?,?,?,MD5(?),?)");
                 
                 pst.setInt(1, 0);
                 pst.setString(2, NombreCompleto);

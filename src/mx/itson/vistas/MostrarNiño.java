@@ -53,7 +53,7 @@ public class MostrarNiño extends javax.swing.JFrame {
             try {
                 
                 Connection cn = DBHelper.conectar() ;
-                PreparedStatement pst = cn.prepareStatement("SELECT * FROM bxopxuzsnsc4au7ggfnf.niños WHERE idNiño = " + vn.idNiño);
+                PreparedStatement pst = cn.prepareStatement("SELECT * FROM sutspes.niños WHERE idNiño = " + vn.idNiño);
                 ResultSet rs = pst.executeQuery();
                 
                 if(rs.next()){

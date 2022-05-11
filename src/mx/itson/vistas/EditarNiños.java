@@ -67,7 +67,7 @@ public class EditarNiños extends javax.swing.JFrame {
             try {
                 if(longitudBytes != 0){
                  Connection cn = DBHelper.conectar();
-                PreparedStatement pst = cn.prepareStatement("UPDATE `bxopxuzsnsc4au7ggfnf`.`niños` SET nombreCom = ?, edad = ?, nivelActual = ?, "
+                PreparedStatement pst = cn.prepareStatement("UPDATE `sutspes`.`niños` SET nombreCom = ?, edad = ?, nivelActual = ?, "
                         + "nombreTutor = ?, telefono = ?, imagen = ? WHERE idNiño = ?");
                 
                 
@@ -87,7 +87,7 @@ public class EditarNiños extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, "Editado Exitoso");
             }else{
                 Connection cn = DBHelper.conectar();
-                PreparedStatement pst = cn.prepareStatement("UPDATE `bxopxuzsnsc4au7ggfnf`.`niños` SET nombreCom = ?, edad = ?, nivelActual = ?, "
+                PreparedStatement pst = cn.prepareStatement("UPDATE `sutspes`.`niños` SET nombreCom = ?, edad = ?, nivelActual = ?, "
                         + "nombreTutor = ?, telefono = ?, nomImagen = ? WHERE idNiño = ?");
                 
               
@@ -132,7 +132,7 @@ public class EditarNiños extends javax.swing.JFrame {
             try {
                 
                 Connection cn = DBHelper.conectar() ;
-                PreparedStatement pst = cn.prepareStatement("SELECT * FROM bxopxuzsnsc4au7ggfnf.niños WHERE idNiño = " + vn.idNiño);
+                PreparedStatement pst = cn.prepareStatement("SELECT * FROM sutspes.niños WHERE idNiño = " + vn.idNiño);
                 ResultSet rs = pst.executeQuery();
                 
                 if(rs.next()){

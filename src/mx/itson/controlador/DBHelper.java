@@ -16,7 +16,7 @@ public class DBHelper {
     private String error;
     private String controller = "com.mysql.cj.jdbc.Driver";
     private String database = "jdbc:mysql://129.146.249.227?useSSL=false";
-    private String user = "sutpes";
+    private String user = "sutspes";
     private String password = "DAjizEle14z3";
 
     public DBHelper() {
@@ -126,7 +126,7 @@ public class DBHelper {
     public static Connection conectar() {
         try {
 
-            Connection cn = DriverManager.getConnection("jdbc:mysql://bxopxuzsnsc4au7ggfnf-mysql.services.clever-cloud.com?useSSL=false", "uaj8yfspoqzs7svr", "CW5AjYh1MM4kX6VgzOSz");
+            Connection cn = DriverManager.getConnection("jdbc:mysql://129.146.249.227?useSSL=false", "sutspes", "DAjizEle14z3");
             return cn;
 
         } catch (SQLException e) {

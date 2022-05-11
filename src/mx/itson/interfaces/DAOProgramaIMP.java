@@ -25,7 +25,7 @@ DBHelper db = new DBHelper();
         boolean resultado = false;
         try {
             if (db.connect()) {
-                String query = "INSERT INTO `bxopxuzsnsc4au7ggfnf`.`nivelprograma` (`Nivel`, `nombreNivel`, `estadoPorcentaje`, `idNiño`) "
+                String query = "INSERT INTO `sutspes`.`nivelprograma` (`Nivel`, `nombreNivel`, `estadoPorcentaje`, `idNiño`) "
                         + " VALUES ('" + programa.getNivel()+ "', "
                         + " '" + programa.getNombrePrograma()+ "', "
                         + " '" + programa.getEstadoPorcentaje()+ "', "
@@ -46,7 +46,7 @@ DBHelper db = new DBHelper();
        boolean resultado = false;
         try {
             if (db.connect()) {
-                String query = "UPDATE `bxopxuzsnsc4au7ggfnf`.`nivelprograma` SET  "
+                String query = "UPDATE `sutspes`.`nivelprograma` SET  "
                         + "`nombreCom` = '" + c.getNivel()+ "', "
                         + "`contraseña` = '" + c.getNombrePrograma()+ "', "
                         + "`nomImagen` = '" + c.getEstadoPorcentaje()+ "', "
@@ -77,7 +77,7 @@ DBHelper db = new DBHelper();
 
         try {
             if (db.connect()) {
-                String query = "SELECT * FROM bxopxuzsnsc4au7ggfnf." + TABLA;
+                String query = "SELECT * FROM sutspes." + TABLA;
                 ResultSet rs = (ResultSet) db.execute(query, false);
                 while (rs.next()) {
                     Programa programa = new Programa();
@@ -104,7 +104,7 @@ DBHelper db = new DBHelper();
         Programa programa = new Programa();
         try {
             if (db.connect()) {
-                String query = "SELECT * FROM bxopxuzsnsc4au7ggfnf." + TABLA + " WHERE Idnivel = " + id;
+                String query = "SELECT * FROM sutspes." + TABLA + " WHERE Idnivel = " + id;
                 ResultSet rs = (ResultSet) db.execute(query, false);
                 if (rs.next()) {
                     programa.setIdNivel(rs.getInt("Idnivel"));

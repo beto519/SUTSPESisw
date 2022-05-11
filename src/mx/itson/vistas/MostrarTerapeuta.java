@@ -52,7 +52,7 @@ public class MostrarTerapeuta extends javax.swing.JFrame {
             try {
                 
                 Connection cn = DBHelper.conectar() ;
-                PreparedStatement pst = cn.prepareStatement("SELECT * FROM bxopxuzsnsc4au7ggfnf.terapeuta WHERE IdTerap = " + vt.idEdit);
+                PreparedStatement pst = cn.prepareStatement("SELECT * FROM sutspes.terapeuta WHERE IdTerap = " + vt.idEdit);
                 ResultSet rs = pst.executeQuery();
                 
                 if(rs.next()){

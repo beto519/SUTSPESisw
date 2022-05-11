@@ -23,7 +23,7 @@ public class DAOAlumnoIMP implements DAOAlumno {
         boolean rs = false;
         try{
           if (DB.connect()) {
-                String query = "INSERT INTO `bxopxuzsnsc4au7ggfnf`.`niños`(nombreCompleto, edad, nivelActual, nombreTutor, telefono, imagen,porcentaje)"
+                String query = "INSERT INTO `sutspes`.`niños`(nombreCompleto, edad, nivelActual, nombreTutor, telefono, imagen,porcentaje)"
                         + " VALUES (" +
                         "'" + ga.getNombre() + "', " + 
                         "'" + ga.getEdad() + "', " +
@@ -49,7 +49,7 @@ public class DAOAlumnoIMP implements DAOAlumno {
         
         try {
             if(DB.connect()){
-                String query = "UPDATE `bxopxuzsnsc4au7ggfnf`.`niños` SET "
+                String query = "UPDATE `sutspes`.`niños` SET "
                       + " `porcentaje` = '" + niño.getPorcentaje()+ "' "
                         + "WHERE idNiño =" + niño.getIdAlumno();
                         
@@ -72,7 +72,7 @@ public class DAOAlumnoIMP implements DAOAlumno {
         
         try {
             if(DB.connect()){
-            String query = "DELETE FROM `bxopxuzsnsc4au7ggfnf`.`niños` WHERE idNiño ="+id;
+            String query = "DELETE FROM `sutspes`.`niños` WHERE idNiño ="+id;
             
             rs = (boolean) DB.execute(query, true);
             }
@@ -90,7 +90,7 @@ public class DAOAlumnoIMP implements DAOAlumno {
     
         try {
             if(DB.connect()){
-            String query = "SELECT * FROM `bxopxuzsnsc4au7ggfnf`.`niños`";
+            String query = "SELECT * FROM `sutspes`.`niños`";
             ResultSet rs = (ResultSet)DB.execute(query, false);
             while(rs.next()){
                 Alumno alumno = new Alumno();
@@ -118,7 +118,7 @@ public class DAOAlumnoIMP implements DAOAlumno {
         
         try {
             if(DB.connect()){
-            String query = "SELECT * FROM `bxopxuzsnsc4au7ggfnf`.`niños` WHERE idNiño = "+id;
+            String query = "SELECT * FROM `sutspes`.`niños` WHERE idNiño = "+id;
             ResultSet rs = (ResultSet)DB.execute(query, false);
             while(rs.next()){
                 alumno.setIdAlumno(rs.getInt("idNiño"));
@@ -148,7 +148,7 @@ public class DAOAlumnoIMP implements DAOAlumno {
         try {
             if(DB.connect()){
            double     porcentaje = 100;
-            String query = "SELECT * FROM `bxopxuzsnsc4au7ggfnf`.`niños` WHERE porcentaje = "+porcentaje;
+            String query = "SELECT * FROM `sutspes`.`niños` WHERE porcentaje = "+porcentaje;
             ResultSet rs = (ResultSet)DB.execute(query, false);
             while(rs.next()){
                  Alumno alumno = new Alumno();
@@ -179,7 +179,7 @@ public class DAOAlumnoIMP implements DAOAlumno {
         try {
             if(DB.connect()){
               double  porcentaje = 100.0;
-            String query = "SELECT * FROM `bxopxuzsnsc4au7ggfnf`.`niños` WHERE porcentaje != "+porcentaje;
+            String query = "SELECT * FROM `sutspes`.`niños` WHERE porcentaje != "+porcentaje;
             ResultSet rs = (ResultSet)DB.execute(query, false);
             while(rs.next()){
                   Alumno alumno = new Alumno();
