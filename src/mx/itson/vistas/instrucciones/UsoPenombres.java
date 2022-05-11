@@ -7,6 +7,7 @@ package mx.itson.vistas.instrucciones;
 import javax.swing.JOptionPane;
 import mx.itson.entidades.Alumno;
 import mx.itson.interfaces.DAOAlumnoIMP;
+import mx.itson.vistas.Intrucciones3;
 import mx.itson.vistas.LoginNiños;
 
 /**
@@ -61,6 +62,11 @@ public class UsoPenombres extends javax.swing.JFrame {
         getContentPane().add(LabelLogo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 0, -1, -1));
 
         LabelLogo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/CENTRO DE APOYO EDUCATIVO INFANTIL EN PNG.png"))); // NOI18N
+        LabelLogo1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                LabelLogo1MouseClicked(evt);
+            }
+        });
         getContentPane().add(LabelLogo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         UsoDePronombres.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
@@ -194,6 +200,12 @@ public class UsoPenombres extends javax.swing.JFrame {
             CargarBarra();
         }
     }//GEN-LAST:event_btnCumplioObjetivoActionPerformed
+
+    private void LabelLogo1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LabelLogo1MouseClicked
+        Intrucciones3 abrir = new Intrucciones3();
+        abrir.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_LabelLogo1MouseClicked
 
     private void niño() {
         Alumno alu = Alumno.obtenerPorId(ln.claveNiño);
