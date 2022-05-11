@@ -4,6 +4,7 @@
  */
 package mx.itson.vistas.instrucciones;
 
+import javax.swing.JOptionPane;
 import mx.itson.entidades.Alumno;
 import mx.itson.interfaces.DAOAlumnoIMP;
 import mx.itson.vistas.LoginNiños;
@@ -49,6 +50,9 @@ public class SeguimientoInstrucciones extends javax.swing.JFrame {
         txtProcedimiento = new javax.swing.JTextArea();
         Btn_Instrucciones = new javax.swing.JButton();
         jProgressBar1 = new javax.swing.JProgressBar();
+        btnRequiereApoyo = new javax.swing.JButton();
+        btnCasiLogra = new javax.swing.JButton();
+        btnCumplioObjetivo = new javax.swing.JButton();
         Fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -63,31 +67,31 @@ public class SeguimientoInstrucciones extends javax.swing.JFrame {
         SeguimientoDeInstrucciones.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         SeguimientoDeInstrucciones.setText("Seguimiento de instrucciones");
         SeguimientoDeInstrucciones.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(SeguimientoDeInstrucciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 150, 680, 40));
+        getContentPane().add(SeguimientoDeInstrucciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 100, 680, 40));
 
         NombreDelPrograma.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         NombreDelPrograma.setText(" Nombre del Programa:");
         NombreDelPrograma.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(NombreDelPrograma, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 150, 450, 40));
+        getContentPane().add(NombreDelPrograma, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 100, 450, 40));
 
         MtroManuel.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         MtroManuel.setText("  Mtro. Manuel Esquer Sumuano  ");
         MtroManuel.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(MtroManuel, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 190, 680, 40));
+        getContentPane().add(MtroManuel, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 140, 680, 40));
 
         Elaboro.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         Elaboro.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         Elaboro.setText(" Elaboró:"); // NOI18N
         Elaboro.setToolTipText("");
         Elaboro.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(Elaboro, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 190, 450, 40));
+        getContentPane().add(Elaboro, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 140, 450, 40));
 
         procedimiento.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         procedimiento.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         procedimiento.setText("PROCEDIMIENTO"); // NOI18N
         procedimiento.setToolTipText("");
         procedimiento.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 230, 1130, 30));
+        getContentPane().add(procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 180, 1130, 30));
 
         Programa.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         Programa.setText("Programa");
@@ -100,7 +104,7 @@ public class SeguimientoInstrucciones extends javax.swing.JFrame {
         txtProcedimiento.setText("PASO 1. Seleccione la lista de instrucciones.\nPASO 2. Dé la instrucción en 3 ocasiones cada una de las instrucciones de la lista.\nPASO 3. De un reforzador por cada respuesta correcta.\nPASO 4. Si el niño no realiza las instrucciones dé apoyo.\nPASO 5. El apoyo consiste en ayudar físicamente al niño para que haga las instrucciones, por ejemplo, \n“tirar la basura”, se toma al niño de sus manos para que tome el objeto que va a tirar, luego se le conduce al \nbote de basura y después se le abre la mano para que tire la basura.\nPASO 6. Disminuya gradualmente los apoyos hasta cumplir el criterio.\n\n");
         Procedimiento.setViewportView(txtProcedimiento);
 
-        getContentPane().add(Procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 260, 1130, 340));
+        getContentPane().add(Procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 210, 1130, 340));
 
         Btn_Instrucciones.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         Btn_Instrucciones.setText("Ver Instrucciones");
@@ -113,7 +117,34 @@ public class SeguimientoInstrucciones extends javax.swing.JFrame {
         getContentPane().add(Btn_Instrucciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 660, 200, 50));
 
         jProgressBar1.setStringPainted(true);
-        getContentPane().add(jProgressBar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 610, 500, 40));
+        getContentPane().add(jProgressBar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 560, 500, 40));
+
+        btnRequiereApoyo.setBackground(new java.awt.Color(255, 51, 51));
+        btnRequiereApoyo.setBorderPainted(false);
+        btnRequiereApoyo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRequiereApoyoActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnRequiereApoyo, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 610, 100, 40));
+
+        btnCasiLogra.setBackground(new java.awt.Color(255, 255, 102));
+        btnCasiLogra.setBorderPainted(false);
+        btnCasiLogra.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCasiLograActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCasiLogra, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 610, 100, 40));
+
+        btnCumplioObjetivo.setBackground(new java.awt.Color(51, 204, 0));
+        btnCumplioObjetivo.setBorderPainted(false);
+        btnCumplioObjetivo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCumplioObjetivoActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCumplioObjetivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 610, 100, 40));
 
         Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoRosa.jpg"))); // NOI18N
         getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
@@ -127,151 +158,57 @@ public class SeguimientoInstrucciones extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_Btn_InstruccionesMouseClicked
 
+    private void btnRequiereApoyoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequiereApoyoActionPerformed
+        int Respuesta = JOptionPane.showConfirmDialog(this, "Seguro que quieres reiniciar el progreso de esta tarea?","Confirmar?",
+            JOptionPane.YES_NO_OPTION,JOptionPane.QUESTION_MESSAGE);
+        if(Respuesta == JOptionPane.YES_OPTION){
+            estadoPorcentaje = 71.4285714;
+            PorcentajeNiño();
+            porcentajeActual = estadoPorcentaje;
+            CargarBarra();
+        }
+    }//GEN-LAST:event_btnRequiereApoyoActionPerformed
+
+    private void btnCasiLograActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLograActionPerformed
+        if(estadoPorcentaje == 71.4285714){
+            estadoPorcentaje = 73.80952378;
+            PorcentajeNiño();
+            porcentajeActual = estadoPorcentaje;
+            CargarBarra();
+        }
+    }//GEN-LAST:event_btnCasiLograActionPerformed
+
+    private void btnCumplioObjetivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivoActionPerformed
+        if(estadoPorcentaje < 76.19047616){
+            estadoPorcentaje = 76.19047616;
+            PorcentajeNiño();
+            porcentajeActual = estadoPorcentaje;
+            CargarBarra();
+        }
+    }//GEN-LAST:event_btnCumplioObjetivoActionPerformed
+
     private void niño() {
         Alumno alu = Alumno.obtenerPorId(ln.claveNiño);
         porcentajeActual = alu.getPorcentaje();
         estadoPorcentaje = porcentajeActual;
-        BarraProgreso();
+        CargarBarra();
     }
+    
+    private void CargarBarra() {
+        jProgressBar1.setValue((int) estadoPorcentaje);
 
- public void BarraProgreso()
-   {
-    if(porcentajeActual == 72.22222){
-          jProgressBar1.setValue(0);
-        }if(porcentajeActual == 72.30639508){
-          jProgressBar1.setValue(1);
-        }if(porcentajeActual == 72.390570171){
-          jProgressBar1.setValue(3);
-        }if(porcentajeActual == 72.39057017){
-          jProgressBar1.setValue(4);
-        }if(porcentajeActual == 72.558920341){
-          jProgressBar1.setValue(6);
-        }if(porcentajeActual == 72.47474525){
-          jProgressBar1.setValue(7);
-        }if(porcentajeActual == 72.727270511){
-          jProgressBar1.setValue(9);
-        }if(porcentajeActual == 72.55892034){
-          jProgressBar1.setValue(10);
-        }if(porcentajeActual == 72.895620671){
-          jProgressBar1.setValue(12);
-        }if(porcentajeActual == 72.64309542){
-          jProgressBar1.setValue(13);
-        }if(porcentajeActual == 73.063970841){
-          jProgressBar1.setValue(15);
-        }if(porcentajeActual == 72.72727051){
-          jProgressBar1.setValue(16);
-        }if(porcentajeActual == 73.232321011){
-          jProgressBar1.setValue(18);
-        }if(porcentajeActual == 72.81144559){
-          jProgressBar1.setValue(19);
-        }if(porcentajeActual == 73.400671181){
-          jProgressBar1.setValue(21);
-        }if(porcentajeActual == 72.89562067){
-          jProgressBar1.setValue(22);
-        }if(porcentajeActual == 73.569021351){
-          jProgressBar1.setValue(24);
-        }if(porcentajeActual == 72.97979576){
-          jProgressBar1.setValue(25);
-        }if(porcentajeActual == 73.737371521){
-          jProgressBar1.setValue(27);
-        }if(porcentajeActual == 73.06397084){
-          jProgressBar1.setValue(28);
-        }if(porcentajeActual == 73.905721681){
-          jProgressBar1.setValue(30);
-        }if(porcentajeActual == 73.14814593){
-          jProgressBar1.setValue(31);
-        }if(porcentajeActual == 74.074071851){
-          jProgressBar1.setValue(33);
-        }if(porcentajeActual == 73.23232101){
-          jProgressBar1.setValue(34);
-        }if(porcentajeActual == 74.242422021){
-          jProgressBar1.setValue(36);
-        }if(porcentajeActual == 73.3164961){
-          jProgressBar1.setValue(37);
-        }if(porcentajeActual == 74.410772191){
-          jProgressBar1.setValue(39);
-        }if(porcentajeActual == 73.40067118){
-          jProgressBar1.setValue(40);
-        }if(porcentajeActual == 74.579122361){
-          jProgressBar1.setValue(42);
-        }if(porcentajeActual == 73.48484626){
-          jProgressBar1.setValue(43);
-        }if(porcentajeActual == 74.747472531){
-          jProgressBar1.setValue(45);
-        }if(porcentajeActual == 73.56902135){
-          jProgressBar1.setValue(46);
-        }if(porcentajeActual == 74.91582271){
-          jProgressBar1.setValue(48);
-        }if(porcentajeActual == 73.65319643){
-          jProgressBar1.setValue(49);
-        }if(porcentajeActual == 75.08417286){
-          jProgressBar1.setValue(51);
-        }if(porcentajeActual == 73.73737152){
-          jProgressBar1.setValue(52);
-        }if(porcentajeActual == 75.25252303){
-          jProgressBar1.setValue(54);
-        }if(porcentajeActual == 73.8215466){
-          jProgressBar1.setValue(55);
-        }if(porcentajeActual == 75.4208732){
-          jProgressBar1.setValue(57);
-        }if(porcentajeActual == 73.90572168){
-          jProgressBar1.setValue(58);
-        }if(porcentajeActual == 75.58922337){
-          jProgressBar1.setValue(60);
-        }if(porcentajeActual == 73.98989677){
-          jProgressBar1.setValue(61);
-        }if(porcentajeActual == 75.75757354){
-          jProgressBar1.setValue(63);
-        }if(porcentajeActual == 74.07407185){
-          jProgressBar1.setValue(64);
-        }if(porcentajeActual == 75.92592371){
-          jProgressBar1.setValue(66);
-        }if(porcentajeActual == 74.15824694){
-          jProgressBar1.setValue(67);
-        }if(porcentajeActual == 76.09427388){
-          jProgressBar1.setValue(69);
-        }if(porcentajeActual == 74.24242202){
-          jProgressBar1.setValue(70);
-        }if(porcentajeActual == 76.26262404){
-          jProgressBar1.setValue(72);
-        }if(porcentajeActual == 74.32659711){
-          jProgressBar1.setValue(73);
-        }if(porcentajeActual == 76.43097421){
-          jProgressBar1.setValue(75);
-        }if(porcentajeActual == 74.41077219){
-          jProgressBar1.setValue(76);
-        }if(porcentajeActual == 76.59932438){
-          jProgressBar1.setValue(78);
-        }if(porcentajeActual == 74.49494727){
-          jProgressBar1.setValue(79);
-        }if(porcentajeActual == 76.76767455){
-          jProgressBar1.setValue(81);
-        }if(porcentajeActual == 74.57912236){
-          jProgressBar1.setValue(82);
-        }if(porcentajeActual == 76.93602472){
-          jProgressBar1.setValue(84);
-        }if(porcentajeActual == 74.66329744){
-          jProgressBar1.setValue(85);
-        }if(porcentajeActual == 77.10437489){
-          jProgressBar1.setValue(87);
-        }if(porcentajeActual == 74.74747253){
-          jProgressBar1.setValue(88);
-        }if(porcentajeActual == 77.27272505){
-          jProgressBar1.setValue(90);
-        }if(porcentajeActual == 74.83164761){
-          jProgressBar1.setValue(91);
-        }if(porcentajeActual == 77.44107522){
-          jProgressBar1.setValue(93);
-        }if(porcentajeActual == 74.9158227){
-          jProgressBar1.setValue(94);
-        }if(porcentajeActual == 77.60942539){
-          jProgressBar1.setValue(96);
-        }if(porcentajeActual == 75){
-          jProgressBar1.setValue(98);
-        }if(porcentajeActual == 77.777778){
-          jProgressBar1.setValue(100);
+    }   
+    
+    private void PorcentajeNiño() {
+
+        try {
+            alum.setPorcentaje(estadoPorcentaje);
+            alum.setIdAlumno(ln.claveNiño);
+            Alumno.editar(alum);
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-}
+    } 
  
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -316,6 +253,9 @@ public class SeguimientoInstrucciones extends javax.swing.JFrame {
     private javax.swing.JScrollPane Procedimiento;
     private javax.swing.JLabel Programa;
     private javax.swing.JLabel SeguimientoDeInstrucciones;
+    private javax.swing.JButton btnCasiLogra;
+    private javax.swing.JButton btnCumplioObjetivo;
+    private javax.swing.JButton btnRequiereApoyo;
     private javax.swing.JProgressBar jProgressBar1;
     private javax.swing.JLabel procedimiento;
     private javax.swing.JTextArea txtProcedimiento;

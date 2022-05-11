@@ -28,12 +28,6 @@ public class ReconocimientoVocales extends javax.swing.JFrame {
          this.setExtendedState(MAXIMIZED_BOTH);
          niño();
     }
-    private void niño() {
-        Alumno alu = Alumno.obtenerPorId(ln.claveNiño);
-        porcentajeActual = alu.getPorcentaje();
-        estadoPorcentaje = porcentajeActual;
-        BarraProgreso();
-    }
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -146,42 +140,43 @@ public class ReconocimientoVocales extends javax.swing.JFrame {
         int Respuesta = JOptionPane.showConfirmDialog(this, "Seguro que quieres reiniciar el progreso de esta tarea?","Confirmar?",
         JOptionPane.YES_NO_OPTION,JOptionPane.QUESTION_MESSAGE);
         if(Respuesta == JOptionPane.YES_OPTION){
-        estadoPorcentaje = 61.11111;
+        estadoPorcentaje = 61.90476188;
         PorcentajeNiño();
         porcentajeActual = estadoPorcentaje;
-        BarraProgreso();
+        CargarBarra();
         }
     }//GEN-LAST:event_btnRequiereApoyoActionPerformed
 
     private void btnCasiLograActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCasiLograActionPerformed
-        if(estadoPorcentaje == 61.11111){
-        estadoPorcentaje = 63.88889;
+        if(estadoPorcentaje == 61.90476188){
+        estadoPorcentaje = 64.28571426;
         PorcentajeNiño();
         porcentajeActual = estadoPorcentaje;
-        BarraProgreso();
+        CargarBarra();
         }
     }//GEN-LAST:event_btnCasiLograActionPerformed
 
     private void btnCumplioObjetivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivoActionPerformed
-        if(estadoPorcentaje < 66.66667){
-        estadoPorcentaje = 66.66667;
+        if(estadoPorcentaje < 66.66666664){
+        estadoPorcentaje = 66.66666664;
         PorcentajeNiño();
         porcentajeActual = estadoPorcentaje;
-        BarraProgreso();
+        CargarBarra();
         }
     }//GEN-LAST:event_btnCumplioObjetivoActionPerformed
     
+     private void niño() {
+        Alumno alu = Alumno.obtenerPorId(ln.claveNiño);
+        porcentajeActual = alu.getPorcentaje();
+        estadoPorcentaje = porcentajeActual;
+        CargarBarra();
+    }
     
-    public void BarraProgreso()
-   {
-        if(porcentajeActual == 61.11111){
-          jProgressBar1.setValue(0);
-        }if(porcentajeActual == 63.88889){
-          jProgressBar1.setValue(50);
-        }if(porcentajeActual == 66.66667){
-          jProgressBar1.setValue(100);
-        }
-}
+    private void CargarBarra() {
+        jProgressBar1.setValue((int) estadoPorcentaje);
+
+    }   
+    
     private void PorcentajeNiño() {
 
         try {
@@ -192,6 +187,7 @@ public class ReconocimientoVocales extends javax.swing.JFrame {
             e.printStackTrace();
         }
     }
+    
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
