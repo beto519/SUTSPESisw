@@ -140,4 +140,67 @@ public class DAOAlumnoIMP implements DAOAlumno {
         
     }
     
+    
+    
+        public List<Alumno> ObtenerNiñosCompletado(){
+        List<Alumno> alumnos = new ArrayList();
+        
+        try {
+            if(DB.connect()){
+           double     porcentaje = 100;
+            String query = "SELECT * FROM `bxopxuzsnsc4au7ggfnf`.`niños` WHERE porcentaje = "+porcentaje;
+            ResultSet rs = (ResultSet)DB.execute(query, false);
+            while(rs.next()){
+                 Alumno alumno = new Alumno();
+                alumno.setIdAlumno(rs.getInt("idNiño"));
+                alumno.setNombre(rs.getString("nombreCom"));
+                alumno.setEdad(rs.getInt("edad"));
+                alumno.setNivel(rs.getString("nivelActual"));
+                alumno.setNombreTutor(rs.getString("nombreTutor"));
+                alumno.setTelefono(rs.getString("telefono"));
+                alumno.setImagen(rs.getString("imagen"));
+                   alumno.setPorcentaje(rs.getDouble("porcentaje"));
+                      alumnos.add(alumno);
+            }
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }finally{
+            DB.disconnect();
+        }
+        return alumnos;
+        
+    }
+        
+        
+          public List<Alumno> NiñosNoCompletado(){
+      
+         List<Alumno> alumnos = new ArrayList();
+        try {
+            if(DB.connect()){
+              double  porcentaje = 100.0;
+            String query = "SELECT * FROM `bxopxuzsnsc4au7ggfnf`.`niños` WHERE porcentaje != "+porcentaje;
+            ResultSet rs = (ResultSet)DB.execute(query, false);
+            while(rs.next()){
+                  Alumno alumno = new Alumno();
+                alumno.setIdAlumno(rs.getInt("idNiño"));
+                alumno.setNombre(rs.getString("nombreCom"));
+                alumno.setEdad(rs.getInt("edad"));
+                alumno.setNivel(rs.getString("nivelActual"));
+                alumno.setNombreTutor(rs.getString("nombreTutor"));
+                alumno.setTelefono(rs.getString("telefono"));
+                alumno.setImagen(rs.getString("imagen"));
+                   alumno.setPorcentaje(rs.getDouble("porcentaje"));
+                    alumnos.add(alumno);
+            }
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }finally{
+            DB.disconnect();
+        }
+        return alumnos;
+        
+    }
+    
 }

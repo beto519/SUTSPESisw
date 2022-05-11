@@ -18,12 +18,12 @@ import static mx.itson.vistas.VerTerapeutas.idEdit;
  *
  * @author jotha
  */
-public class VerNiños extends javax.swing.JFrame {
+public class VerNiñosComplete extends javax.swing.JFrame {
 
     DAOAlumnoIMP dao = new DAOAlumnoIMP();
     public static int idNiño;
     
-    public VerNiños() {
+    public VerNiñosComplete() {
         initComponents();
         setLocationRelativeTo(null);
         LlenarTabla();
@@ -217,8 +217,7 @@ public class VerNiños extends javax.swing.JFrame {
     }//GEN-LAST:event_lbl_editaMouseClicked
 
     private void lbl_actualizarNiñoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_actualizarNiñoMouseClicked
-     VerNiñosComplete abrir = new VerNiñosComplete();
-     abrir.setVisible(true);
+        LlenarTabla();
     }//GEN-LAST:event_lbl_actualizarNiñoMouseClicked
 
     private void lbl_volverMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_volverMouseClicked
@@ -229,7 +228,7 @@ public class VerNiños extends javax.swing.JFrame {
     public static int idEdit = 0;
    
     private void LlenarTabla(){
-    List<Alumno> alumno = dao.NiñosNoCompletado();
+    List<Alumno> alumno = dao.ObtenerNiñosCompletado();
     DefaultTableModel model = new DefaultTableModel();
     
     model.addColumn("ID");
@@ -264,20 +263,21 @@ public class VerNiños extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(VerNiños.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VerNiñosComplete.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(VerNiños.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VerNiñosComplete.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(VerNiños.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VerNiñosComplete.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(VerNiños.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VerNiñosComplete.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new VerNiños().setVisible(true);
+                new VerNiñosComplete().setVisible(true);
             }
         });
     }

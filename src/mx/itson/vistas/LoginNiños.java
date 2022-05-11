@@ -40,6 +40,7 @@ public class LoginNiños extends javax.swing.JFrame {
         jScrollPane2 = new javax.swing.JScrollPane();
         tbl_Niños = new javax.swing.JTable();
         lbl_id = new javax.swing.JLabel();
+        lbl_volver = new javax.swing.JLabel();
         Fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -82,10 +83,19 @@ public class LoginNiños extends javax.swing.JFrame {
         });
         jScrollPane2.setViewportView(tbl_Niños);
 
-        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 30, 1110, 560));
+        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 60, 1110, 560));
 
         lbl_id.setText("jLabel1");
         getContentPane().add(lbl_id, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 640, -1, -1));
+
+        lbl_volver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/regresar.png"))); // NOI18N
+        lbl_volver.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        lbl_volver.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lbl_volverMouseClicked(evt);
+            }
+        });
+        getContentPane().add(lbl_volver, new org.netbeans.lib.awtextra.AbsoluteConstraints(-30, 0, 110, 70));
 
         Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoRosa.jpg"))); // NOI18N
         getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
@@ -101,7 +111,7 @@ public class LoginNiños extends javax.swing.JFrame {
   
   }
     private void LlenarTabla(){
-    List<Alumno> alumno = dao.obtenerTodos();
+    List<Alumno> alumno = dao.NiñosNoCompletado();
     DefaultTableModel model = new DefaultTableModel();
     
     model.addColumn("ID");
@@ -149,6 +159,12 @@ public class LoginNiños extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_tbl_NiñosMouseClicked
 
+    private void lbl_volverMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_volverMouseClicked
+        Menu abrir = new Menu();
+        abrir.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_lbl_volverMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -188,6 +204,7 @@ public class LoginNiños extends javax.swing.JFrame {
     private javax.swing.JLabel Fondo;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JLabel lbl_id;
+    private javax.swing.JLabel lbl_volver;
     private javax.swing.JTable tbl_Niños;
     // End of variables declaration//GEN-END:variables
 }
