@@ -16,7 +16,7 @@ import mx.itson.interfaces.DAOTerapeutaIMP;
  * @author lopez
  */
 public class IniciarSesion extends javax.swing.JFrame {
-
+Terapeuta terapeuta = new Terapeuta();
     /**
      * Creates new form IniciarSesion
      */
@@ -37,7 +37,7 @@ public class IniciarSesion extends javax.swing.JFrame {
         String empU, empC;
 
         try {
-            terapeuta = terapeutas.obtenerPorUsuario(user);
+            terapeuta = terapeutas.obtenerPorUsuario(user, password);
             empU = terapeuta.getCodigoUsuario();
             empC = terapeuta.getContraseña();
             JFrame panel;
@@ -45,7 +45,7 @@ public class IniciarSesion extends javax.swing.JFrame {
             
 
             
-            if (empU.equals(user) && empC.equals(password)) {
+            if (empU.equals(user) && empC.equals(terapeuta.getContraseña())) {
                  Menu abrir = new Menu();
                  abrir.setVisible(true);
                  dispose();
@@ -53,7 +53,7 @@ public class IniciarSesion extends javax.swing.JFrame {
                
             }
             
-               if (!empU.equals(user) && !empC.equals(password)) {
+               if (!empU.equals(user) && !empC.equals(terapeuta.getContraseña())) {
             
             panel = new JFrame();
             JOptionPane.showMessageDialog(panel, "Los datos ingresados son incorrectos", "Alerta",

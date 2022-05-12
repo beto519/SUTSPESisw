@@ -162,11 +162,11 @@ public class DAOTerapeutaIMP implements DAOTerapeuta {
 
  
  @Override
-    public Terapeuta obtenerPorUsuario(String user) {
+    public Terapeuta obtenerPorUsuario(String user, String password) {
               Terapeuta empleado = new Terapeuta();
         try {
             if (db.connect()) {
-                String query = "SELECT * FROM sutspes." + TABLA + " WHERE usuario = '" + user + "'";
+                String query = "SELECT * FROM sutspes." + TABLA + " WHERE usuario = '" + user + "' and contraseña = MD5('"+password+"')";
                 ResultSet rs = (ResultSet) db.execute(query, false);
                 if (rs.next()) {
                     empleado.setId(rs.getInt("IdTerap"));
@@ -178,6 +178,7 @@ public class DAOTerapeutaIMP implements DAOTerapeuta {
                 }
             }
         } catch (Exception e) {
+            e.printStackTrace();
         } finally {
             db.disconnect();
         }

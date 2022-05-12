@@ -126,7 +126,7 @@ public class DBHelper {
     public static Connection conectar() {
         try {
 
-            Connection cn = DriverManager.getConnection("jdbc:mysql://129.146.249.227?useSSL=false", "sutspes", "DAjizEle14z3");
+            Connection cn = DriverManager.getConnection("jdbc:mysql://129.146.249.227?useSSL=false", "vinko", "$DOOMCODE70");
             return cn;
 
         } catch (SQLException e) {

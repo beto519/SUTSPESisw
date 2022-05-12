@@ -17,6 +17,6 @@ public interface CRUD<C> {
     public boolean eliminar(int id);
     public List<C> obtenerTodos();
     public C obtenerPorId(int id);
-    public C obtenerPorUsuario(String user);
+    public C obtenerPorUsuario(String user, String password);
     public C obtenerFoto(int id);
 }
