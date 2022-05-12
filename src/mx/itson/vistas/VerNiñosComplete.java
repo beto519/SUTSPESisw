@@ -38,10 +38,8 @@ public class VerNiñosComplete extends javax.swing.JFrame {
         jScrollPane2 = new javax.swing.JScrollPane();
         tbl_Niños = new javax.swing.JTable();
         lbl_volver = new javax.swing.JLabel();
-        lbl_actualizarNiño = new javax.swing.JLabel();
         lbl_edita = new javax.swing.JLabel();
         lbl_borrarNiño = new javax.swing.JLabel();
-        lbl_agregarNiño = new javax.swing.JLabel();
         Fondo = new javax.swing.JLabel();
         lbl_id = new javax.swing.JLabel();
 
@@ -110,19 +108,6 @@ public class VerNiñosComplete extends javax.swing.JFrame {
         });
         getContentPane().add(lbl_volver, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 0, 110, 70));
 
-        lbl_actualizarNiño.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        lbl_actualizarNiño.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/actualizarNiño.png"))); // NOI18N
-        lbl_actualizarNiño.setText("Niños 100%");
-        lbl_actualizarNiño.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        lbl_actualizarNiño.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        lbl_actualizarNiño.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        lbl_actualizarNiño.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                lbl_actualizarNiñoMouseClicked(evt);
-            }
-        });
-        getContentPane().add(lbl_actualizarNiño, new org.netbeans.lib.awtextra.AbsoluteConstraints(1080, 600, -1, -1));
-
         lbl_edita.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         lbl_edita.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/editarNiño.png"))); // NOI18N
         lbl_edita.setText("Editar Niño");
@@ -134,7 +119,7 @@ public class VerNiñosComplete extends javax.swing.JFrame {
                 lbl_editaMouseClicked(evt);
             }
         });
-        getContentPane().add(lbl_edita, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 600, -1, -1));
+        getContentPane().add(lbl_edita, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 600, -1, -1));
 
         lbl_borrarNiño.setBackground(new java.awt.Color(0, 0, 0));
         lbl_borrarNiño.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
@@ -148,21 +133,7 @@ public class VerNiñosComplete extends javax.swing.JFrame {
                 lbl_borrarNiñoMouseClicked(evt);
             }
         });
-        getContentPane().add(lbl_borrarNiño, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 600, -1, -1));
-
-        lbl_agregarNiño.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        lbl_agregarNiño.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lbl_agregarNiño.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/agregarNiño.png"))); // NOI18N
-        lbl_agregarNiño.setText("Agregar Niño");
-        lbl_agregarNiño.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        lbl_agregarNiño.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        lbl_agregarNiño.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        lbl_agregarNiño.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                lbl_agregarNiñoMouseClicked(evt);
-            }
-        });
-        getContentPane().add(lbl_agregarNiño, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 600, -1, -1));
+        getContentPane().add(lbl_borrarNiño, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 600, -1, -1));
 
         Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoRosa.jpg"))); // NOI18N
         getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
@@ -172,13 +143,6 @@ public class VerNiñosComplete extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void lbl_agregarNiñoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_agregarNiñoMouseClicked
-        AgregarNiños AN = new AgregarNiños();
-        AN.setVisible(true);
-        this.dispose();
-        
-    }//GEN-LAST:event_lbl_agregarNiñoMouseClicked
 
     private void tbl_NiñosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tbl_NiñosMouseClicked
          int row = tbl_Niños.getSelectedRow();
@@ -215,10 +179,6 @@ public class VerNiñosComplete extends javax.swing.JFrame {
         this.dispose();
         
     }//GEN-LAST:event_lbl_editaMouseClicked
-
-    private void lbl_actualizarNiñoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_actualizarNiñoMouseClicked
-        LlenarTabla();
-    }//GEN-LAST:event_lbl_actualizarNiñoMouseClicked
 
     private void lbl_volverMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_volverMouseClicked
         Menu abrir = new Menu();
@@ -287,8 +247,6 @@ public class VerNiñosComplete extends javax.swing.JFrame {
     private javax.swing.JList<String> jList1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JLabel lbl_actualizarNiño;
-    private javax.swing.JLabel lbl_agregarNiño;
     private javax.swing.JLabel lbl_borrarNiño;
     private javax.swing.JLabel lbl_edita;
     private javax.swing.JLabel lbl_id;
