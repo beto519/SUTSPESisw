@@ -70,7 +70,7 @@ public class EditarTerapeuta extends javax.swing.JFrame {
                 pst.setString(2, Puesto);
                 pst.setString(3, Email);
                 pst.setString(4, CodigoUsuario+"");
-                pst.setString(5, Contraseña);
+                pst.setString(5, ("MD5('"+Contraseña+"'"));
                 pst.setBlob(6, fis, longitudBytes);
                 pst.setInt(7, vt.idEdit);
                 
@@ -229,7 +229,7 @@ public class EditarTerapeuta extends javax.swing.JFrame {
         lblUsuario1.setText("Usuario");
         getContentPane().add(lblUsuario1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 440, 220, 50));
         getContentPane().add(txtContraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 580, 380, 50));
-        getContentPane().add(lbl_imagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 10, 450, 440));
+        getContentPane().add(lbl_imagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 40, 450, 440));
 
         lbl_subirImagen.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         lbl_subirImagen.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);

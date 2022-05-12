@@ -25,6 +25,7 @@ DAOTerapeutaIMP dao = new DAOTerapeutaIMP();
         initComponents();
         LlenarTabla();
         setLocationRelativeTo(null);
+        lbl_id.setVisible(false);
     }
     
     public static int idEdit = 0;
