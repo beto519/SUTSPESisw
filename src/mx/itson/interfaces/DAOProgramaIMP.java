@@ -125,12 +125,12 @@ DBHelper db = new DBHelper();
     }
 
     @Override
-    public Programa obtenerPorUsuario(String user) {
+    public Programa obtenerFoto(int id) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     @Override
-    public Programa obtenerFoto(int id) {
+    public Programa obtenerPorUsuario(String user, String password) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     

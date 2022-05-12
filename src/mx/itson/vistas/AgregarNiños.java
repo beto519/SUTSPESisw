@@ -46,6 +46,7 @@ public class AgregarNiños extends javax.swing.JFrame {
         //Metodo para limpiar los campos despues de que se hayan guardado
         txtNombre.setText("");
         txtTelefono.setText("");
+        txtEdad.setText("");
         txtTutor.setText("");
         txtTelefono.setText("");
         txt_NombreImagen.setText("");
@@ -69,10 +70,11 @@ public class AgregarNiños extends javax.swing.JFrame {
             NombreTutor = txtTutor.getText().trim();
             long Telefono;
             Telefono = Long.valueOf(txtTelefono.getText().trim());
+            Double porcentaje = 0.0;
 
             try {
                 Connection cn = DBHelper.conectar();
-                PreparedStatement pst = cn.prepareStatement("insert into `sutspes`.`niños` values (?,?,?,?,?,?,?)");
+                PreparedStatement pst = cn.prepareStatement("insert into `sutspes`.`niños` values (?,?,?,?,?,?,?,?)");
 
                 pst.setInt(1, 0);
                 pst.setString(2, NombreCompleto);
@@ -81,6 +83,7 @@ public class AgregarNiños extends javax.swing.JFrame {
                 pst.setString(5, NombreTutor);
                 pst.setString(6, Telefono + "");
                 pst.setBlob(7, fis, longitudBytes);
+                pst.setString(8, porcentaje + "");
 
                 pst.executeUpdate();
                 cn.close();
