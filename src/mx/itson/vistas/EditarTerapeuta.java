@@ -70,7 +70,7 @@ public class EditarTerapeuta extends javax.swing.JFrame {
                 pst.setString(2, Puesto);
                 pst.setString(3, Email);
                 pst.setString(4, CodigoUsuario+"");
-                pst.setString(5, "MD5('"+(Contraseña)+"')");
+                pst.setString(5, (Contraseña));
                 pst.setBlob(6, fis, longitudBytes);
                 pst.setInt(7, vt.idEdit);
                 
@@ -82,13 +82,13 @@ public class EditarTerapeuta extends javax.swing.JFrame {
             }else{
                 Connection cn = DBHelper.conectar();
                 PreparedStatement pst = cn.prepareStatement("UPDATE `sutspes`.`terapeuta` SET nombreCom = ?, Area = ?, email = ?, "
-                        + "usuario = ?, contraseña = ? WHERE IdTerap = ?");
+                        + "usuario = ?, contraseña = MD5(?) WHERE IdTerap = ?");
                 
                 pst.setString(1, NombreCompleto);
                 pst.setString(2, Puesto);
                 pst.setString(3, Email);
                 pst.setString(4, CodigoUsuario+"");
-                pst.setString(5,"MD5('"+(Contraseña)+"')");
+                pst.setString(5,(Contraseña));
                 pst.setInt(6, vt.idEdit);
                 
                 
