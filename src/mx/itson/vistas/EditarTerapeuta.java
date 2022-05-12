@@ -88,7 +88,7 @@ public class EditarTerapeuta extends javax.swing.JFrame {
                 pst.setString(2, Puesto);
                 pst.setString(3, Email);
                 pst.setString(4, CodigoUsuario+"");
-                pst.setString(5, Contraseña);
+                pst.setString(5, ("MD5('"+Contraseña+"'"));
                 pst.setInt(6, vt.idEdit);
                 
                 
