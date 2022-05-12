@@ -54,8 +54,8 @@ public class EditarTerapeuta extends javax.swing.JFrame {
             Puesto = txtPuesto.getText().trim();
             String Email;
             Email = txtCorreo.getText().trim();
-            long CodigoUsuario;
-            CodigoUsuario = Long.valueOf(txtUsuario.getText());
+            String CodigoUsuario;
+            CodigoUsuario = (txtUsuario.getText());
             String Contraseña;
             Contraseña = String.valueOf(txtContraseña.getPassword());
             
