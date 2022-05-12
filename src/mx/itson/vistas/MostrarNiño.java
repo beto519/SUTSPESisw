@@ -201,7 +201,7 @@ public class MostrarNiño extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void lbl_volverMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_volverMouseClicked
-        VerTerapeutas vt = new VerTerapeutas();
+        VerNiños vt = new VerNiños();
         vt.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_lbl_volverMouseClicked

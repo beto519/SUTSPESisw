@@ -14,6 +14,7 @@ import java.sql.Blob;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.util.HashSet;
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JFileChooser;
@@ -35,8 +36,12 @@ public class AgregarNiños extends javax.swing.JFrame {
     public AgregarNiños() {
         initComponents();
         setLocationRelativeTo(null);
+        txt_NombreImagen.setVisible(false);
+        txt_NombreImagen.setText("imagen");
+        
     }
 
+    
     private void limpiarCampos() {
         //Metodo para limpiar los campos despues de que se hayan guardado
         txtNombre.setText("");
@@ -104,7 +109,6 @@ public class AgregarNiños extends javax.swing.JFrame {
         lblCorreo = new javax.swing.JLabel();
         txtTutor = new javax.swing.JTextField();
         txtTelefono = new javax.swing.JTextField();
-        lblContraseña = new javax.swing.JLabel();
         lblUsuario1 = new javax.swing.JLabel();
         lbl_imagen = new javax.swing.JLabel();
         lbl_subirImagen = new javax.swing.JLabel();
@@ -140,14 +144,10 @@ public class AgregarNiños extends javax.swing.JFrame {
         getContentPane().add(txtTutor, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 330, 380, 50));
         getContentPane().add(txtTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 440, 380, 50));
 
-        lblContraseña.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        lblContraseña.setText("Nombre de la Imagen");
-        getContentPane().add(lblContraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 500, 220, 50));
-
         lblUsuario1.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         lblUsuario1.setText("Telefono");
         getContentPane().add(lblUsuario1, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 400, 220, 50));
-        getContentPane().add(lbl_imagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, 450, 530));
+        getContentPane().add(lbl_imagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 450, 460));
 
         lbl_subirImagen.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         lbl_subirImagen.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -261,7 +261,6 @@ public class AgregarNiños extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Fondo;
-    private javax.swing.JLabel lblContraseña;
     private javax.swing.JLabel lblCorreo;
     private javax.swing.JLabel lblNombre;
     private javax.swing.JLabel lblPuesto;
