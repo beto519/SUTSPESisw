@@ -4,6 +4,7 @@
  */
 package mx.itson.vistas;
 
+import javax.swing.JOptionPane;
 import mx.itson.entidades.Alumno;
 import mx.itson.interfaces.DAOAlumnoIMP;
 import mx.itson.vistas.instrucciones.*;
@@ -587,7 +588,7 @@ public class Instrucciones1 extends javax.swing.JFrame {
 
         niño();
         double porcentaje = at.estadoPorcentaje;
-        if (porcentaje == 4.76190476) {
+        if (porcentaje >= 4.76190476) {
 
             porcentajeActual = estadoPorcentaje;
 
@@ -595,10 +596,7 @@ public class Instrucciones1 extends javax.swing.JFrame {
             a.setVisible(true);
             dispose();
         } else {
-            niño();
-            AtencionCara abrir = new AtencionCara();
-            abrir.setVisible(true);
-            dispose();
+            JOptionPane.showMessageDialog(this, "El niño aun no tiene el porcentaje requerido, Favor de elegir un programa anterior.");
         }
 
         // TODO add your handling code here:
@@ -608,7 +606,7 @@ public class Instrucciones1 extends javax.swing.JFrame {
 
        
         double porcentaje = at.estadoPorcentaje;
-        if (porcentaje == 9.52380952) {
+        if (porcentaje >= 9.52380952) {
 
             porcentajeActual = estadoPorcentaje;
 
@@ -618,9 +616,7 @@ public class Instrucciones1 extends javax.swing.JFrame {
 
         } else {
          
-            SaludarMano a = new SaludarMano();
-            a.setVisible(true);
-            dispose();
+      JOptionPane.showMessageDialog(this, "El niño aun no tiene el porcentaje requerido, Favor de elegir un programa de la izquierda.");
         }
 
 
@@ -630,7 +626,7 @@ public class Instrucciones1 extends javax.swing.JFrame {
        
         porcentajeActual = estadoPorcentaje;
         double porcentaje = at.estadoPorcentaje;
-        if (porcentaje == 14.28571428) {
+        if (porcentaje >= 14.28571428) {
             estadoPorcentaje = 14.28571428;
             porcentajeActual = estadoPorcentaje;
             PonerAtencionObjectos abrir = new PonerAtencionObjectos();
@@ -638,10 +634,8 @@ public class Instrucciones1 extends javax.swing.JFrame {
             dispose();
 
         } else {
-          
-            AdiosConMano abrir = new AdiosConMano();
-            abrir.setVisible(true);
-            dispose();
+        JOptionPane.showMessageDialog(this, "El niño aun no tiene el porcentaje requerido, Favor de elegir un programa de la izquierda.");
+            
         }
 
 

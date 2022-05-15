@@ -29,6 +29,7 @@ public class SaludarMano extends javax.swing.JFrame {
         setLocationRelativeTo(null);
         this.setExtendedState(MAXIMIZED_BOTH);
         niño();
+        VerificarNivelNiño();
     }
 
     private void CargarBarra() {
@@ -41,6 +42,16 @@ public class SaludarMano extends javax.swing.JFrame {
         estadoPorcentaje = porcentajeActual;
         CargarBarra();
     }
+    
+    private void VerificarNivelNiño(){
+    Alumno alu = Alumno.obtenerPorId(ln.claveNiño);
+    int NivelNiño = Integer.parseInt(alu.getNivel());
+    if(NivelNiño == 2){
+       this.btnCasiLogra.setVisible(false);
+       this.btnCumplioObjetivo.setVisible(false);
+       this.btnRequiereApoyo.setVisible(false);
+    }
+}
 
     private void PorcentajeNiño() {
 

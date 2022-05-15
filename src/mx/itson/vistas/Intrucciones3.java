@@ -94,6 +94,7 @@ public class Intrucciones3 extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         lbl_Id = new javax.swing.JLabel();
+        lbl_nivel = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -594,6 +595,9 @@ public class Intrucciones3 extends javax.swing.JFrame {
         lbl_Id.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
         lbl_Id.setText("Nombre");
 
+        lbl_nivel.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
+        lbl_nivel.setText("Nivel 3");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -602,7 +606,9 @@ public class Intrucciones3 extends javax.swing.JFrame {
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 294, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(lbl_Id)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(lbl_nivel)
+                .addGap(132, 132, 132))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -610,7 +616,8 @@ public class Intrucciones3 extends javax.swing.JFrame {
                 .addContainerGap(23, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lbl_Id))
+                    .addComponent(lbl_Id)
+                    .addComponent(lbl_nivel, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(17, 17, 17))
         );
 
@@ -805,6 +812,7 @@ public class Intrucciones3 extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel51;
     private javax.swing.JPanel jPanel52;
     private javax.swing.JLabel lbl_Id;
+    private javax.swing.JLabel lbl_nivel;
     private rojeru_san.rspanel.RSPanelShadow rSPanelShadow15;
     private rojeru_san.rspanel.RSPanelShadow rSPanelShadow16;
     private rojeru_san.rspanel.RSPanelShadow rSPanelShadow17;

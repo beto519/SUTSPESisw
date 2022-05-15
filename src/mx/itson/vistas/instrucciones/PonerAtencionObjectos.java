@@ -4,6 +4,7 @@
  */
 package mx.itson.vistas.instrucciones;
 
+import com.sun.org.apache.bcel.internal.generic.LNEG;
 import mx.itson.entidades.Alumno;
 import mx.itson.interfaces.DAOAlumnoIMP;
 import mx.itson.vistas.Instrucciones1;
@@ -19,6 +20,7 @@ public class PonerAtencionObjectos extends javax.swing.JFrame {
     Alumno alum = new Alumno();
     private double estadoPorcentaje;
     double porcentajeActual;
+    
 
     /**
      * Creates new form PonerAtencionObjectos
@@ -26,8 +28,8 @@ public class PonerAtencionObjectos extends javax.swing.JFrame {
     public PonerAtencionObjectos() {
         initComponents();
                  setLocationRelativeTo(null);
-         
            niño();
+           VerificarNivelNiño();
     }
 
     /**
@@ -151,6 +153,15 @@ private void CargarBarra() {
 
     }
 
+private void VerificarNivelNiño(){
+    Alumno alu = Alumno.obtenerPorId(ln.claveNiño);
+    int NivelNiño = Integer.parseInt(alu.getNivel());
+    if(NivelNiño == 2){
+       this.btnCasiLogra.setVisible(false);
+       this.btnCumplioObjetivo.setVisible(false);
+       this.btnRequiereApoyo.setVisible(false);
+    }
+}
 
 private void niño() {
         Alumno alu = Alumno.obtenerPorId(ln.claveNiño);
@@ -183,13 +194,15 @@ private void niño() {
    estadoPorcentaje = 16.66666667;
         CargarBarra();
         PorcentajeNiño();
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_btnCasiLograActionPerformed
 
     private void btnCumplioObjetivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCumplioObjetivoActionPerformed
      estadoPorcentaje = 19.04761904;
         CargarBarra();
         PorcentajeNiño();
+        int nivel = 2;
+        Alumno.editarNivelNiño(nivel, ln.claveNiño);
 // TODO add your handling code here:
     }//GEN-LAST:event_btnCumplioObjetivoActionPerformed
 

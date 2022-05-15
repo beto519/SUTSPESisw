@@ -53,9 +53,6 @@ public class DAOAlumnoIMP implements DAOAlumno {
                       + " `porcentaje` = '" + niño.getPorcentaje()+ "' "
                         + "WHERE idNiño =" + niño.getIdAlumno();
                         
-
-                        
-                        
                 rs = (boolean) DB.execute(query, true);
             }
         } catch (Exception ex) {
@@ -202,5 +199,21 @@ public class DAOAlumnoIMP implements DAOAlumno {
         return alumnos;
         
     }
-    
+          
+   
+          public boolean editarNivelNiño(int nivel,int id){
+              boolean rs = false;
+              try {
+                  if(DB.connect()){
+                      String query = "UPDATE sutspes.`niños` SET nivelActual = "+nivel+" WHERE idNiño = "+id;
+                      
+                      rs = (boolean) DB.execute(query, true);
+                  }
+              } catch (Exception e) {
+                  e.printStackTrace();
+              }finally{
+                  DB.disconnect();
+              }
+              return rs;
+          }
 }

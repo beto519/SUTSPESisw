@@ -30,10 +30,21 @@ public class AdiosConMano extends javax.swing.JFrame {
         initComponents();
 //        setLocationRelativeTo(null);
         niño();
+        VerificarNivelNiño();
 
         this.setExtendedState(MAXIMIZED_BOTH);
 
     }
+    
+    private void VerificarNivelNiño(){
+    Alumno alu = Alumno.obtenerPorId(ln.claveNiño);
+    int NivelNiño = Integer.parseInt(alu.getNivel());
+    if(NivelNiño == 2){
+       this.btnCasiLogra.setVisible(false);
+       this.btnCumplioObjetivo.setVisible(false);
+       this.btnRequiereApoyo.setVisible(false);
+    }
+}
 
     private void CargarBarra() {
         jProgressBar1.setValue((int) estadoPorcentaje);
