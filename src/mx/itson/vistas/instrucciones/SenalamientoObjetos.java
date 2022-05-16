@@ -26,6 +26,7 @@ public class SenalamientoObjetos extends javax.swing.JFrame {
                  setLocationRelativeTo(null);
          this.setExtendedState(MAXIMIZED_BOTH);
     niño();
+    VerificarNivelNiño();
     }
 
     private void niño() {
@@ -34,6 +35,16 @@ public class SenalamientoObjetos extends javax.swing.JFrame {
         estadoPorcentaje = porcentajeActual;
         CargarBarra();
     }
+    
+     private void VerificarNivelNiño(){
+    Alumno alu = Alumno.obtenerPorId(ln.claveNiño);
+    int NivelNiño = Integer.parseInt(alu.getNivel());
+    if(NivelNiño == 4){
+       this.btnCasiLogra.setVisible(false);
+       this.btnCumplioObjetivo.setVisible(false);
+       this.btnRequiereApoyo.setVisible(false);
+    }
+}
     
     private void CargarBarra() {
         jProgressBar1.setValue((int) estadoPorcentaje);
@@ -189,6 +200,8 @@ public class SenalamientoObjetos extends javax.swing.JFrame {
             PorcentajeNiño();
             porcentajeActual = estadoPorcentaje;
             CargarBarra();
+            int nivel = 4;
+            Alumno.editarNivelNiño(nivel, ln.claveNiño);
         }
         System.out.println(estadoPorcentaje);
         System.out.println(porcentajeActual);

@@ -4,6 +4,7 @@
  */
 package mx.itson.vistas;
 
+import javax.swing.JOptionPane;
 import mx.itson.entidades.Alumno;
 import mx.itson.interfaces.DAOAlumnoIMP;
 import mx.itson.vistas.instrucciones.*;
@@ -658,11 +659,9 @@ public class Intrucciones3 extends javax.swing.JFrame {
         if (porcentaje >= 85.71428568) {
             ManejoEspacial a = new ManejoEspacial();
             a.setVisible(true);
-        } else {
-            Intraverbal a = new Intraverbal();
-            a.setVisible(true);
             dispose();
-
+        } else {
+            JOptionPane.showMessageDialog(this, "El niño aun no tiene el porcentaje requerido, Favor de elegir un programa anterior.");
         }
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton18ActionPerformed
@@ -678,9 +677,7 @@ public class Intrucciones3 extends javax.swing.JFrame {
             dispose();
         } else {
 
-            SeguimientoInstrucciones a = new SeguimientoInstrucciones();
-            a.setVisible(true);
-            dispose();
+            JOptionPane.showMessageDialog(this, "El niño aun no tiene el porcentaje requerido, Favor de elegir un programa anterior.");
         }
     }//GEN-LAST:event_jButton19ActionPerformed
 
@@ -692,10 +689,9 @@ public class Intrucciones3 extends javax.swing.JFrame {
 
         NombramientoObj a = new NombramientoObj();
         a.setVisible(true);
-        dispose();} else{
-         ManejoEspacial a = new ManejoEspacial();
-        a.setVisible(true);
         dispose();
+        }else{
+         JOptionPane.showMessageDialog(this, "El niño aun no tiene el porcentaje requerido, Favor de elegir un programa anterior.");
         }
         
     }//GEN-LAST:event_jButton22ActionPerformed
@@ -709,9 +705,7 @@ public class Intrucciones3 extends javax.swing.JFrame {
             a.setVisible(true);
             dispose();
         } else {
-            UsoPenombres a = new UsoPenombres();
-            a.setVisible(true);
-            dispose();
+            JOptionPane.showMessageDialog(this, "El niño aun no tiene el porcentaje requerido, Favor de elegir un programa anterior.");
         }
     }//GEN-LAST:event_jButton23ActionPerformed
 
@@ -721,10 +715,10 @@ public class Intrucciones3 extends javax.swing.JFrame {
         if (porcentaje >= 95.2380952) {
 
         SenalamientoObjetos a = new SenalamientoObjetos();
-        a.setVisible(true);}else{
-        NombramientoObj a = new NombramientoObj();
         a.setVisible(true);
         dispose();
+        }else{
+        JOptionPane.showMessageDialog(this, "El niño aun no tiene el porcentaje requerido, Favor de elegir un programa anterior.");
         }
     }//GEN-LAST:event_jButton24ActionPerformed
 
