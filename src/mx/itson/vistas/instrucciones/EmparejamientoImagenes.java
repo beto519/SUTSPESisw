@@ -30,8 +30,20 @@ public class EmparejamientoImagenes extends javax.swing.JFrame {
          setLocationRelativeTo(null);
          this.setExtendedState(MAXIMIZED_BOTH);
      niño();
+     VerificarNivelNiño();
 
     }
+    
+    private void VerificarNivelNiño(){
+    Alumno alu = Alumno.obtenerPorId(ln.claveNiño);
+    int NivelNiño = Integer.parseInt(alu.getNivel());
+    if(NivelNiño == 3){
+       this.btn_LoHace.setVisible(false);
+       this.btn_LoHaceConAyuda.setVisible(false);
+       this.btn_NoLoHace.setVisible(false);
+    }
+}
+    
        private void CargarBarra() {
         PB_ProgresoNiño.setValue((int) estadoPorcentaje);
 

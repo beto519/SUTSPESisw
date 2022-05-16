@@ -28,16 +28,23 @@ public ImitacionVocales() {
                  setLocationRelativeTo(null);
          this.setExtendedState(MAXIMIZED_BOTH);
            niño();
+           VerificarNivelNiño();
     }
        private void CargarBarra() {
         PB_ProgresoNiño.setValue((int) estadoPorcentaje);
 
     }
        
+       private void VerificarNivelNiño(){
+    Alumno alu = Alumno.obtenerPorId(ln.claveNiño);
+    int NivelNiño = Integer.parseInt(alu.getNivel());
+    if(NivelNiño == 3){
+       this.btn_LoHace.setVisible(false);
+       this.btn_LoHaceConAyuda.setVisible(false);
+       this.btn_NoLoHace.setVisible(false);
+    }
+}
        
-  
-        
-        
 @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {

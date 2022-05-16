@@ -25,6 +25,7 @@ public class ReconocimientoCorporal extends javax.swing.JFrame {
         setResizable(false);
          setLocationRelativeTo(null);
          niño();
+         VerificarNivelNiño();
         // this.setExtendedState(MAXIMIZED_BOTH);
      //   setLayout(new BorderLayout());
     }
@@ -153,6 +154,15 @@ public class ReconocimientoCorporal extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void VerificarNivelNiño(){
+    Alumno alu = Alumno.obtenerPorId(ln.claveNiño);
+    int NivelNiño = Integer.parseInt(alu.getNivel());
+    if(NivelNiño == 3){
+       this.btnCasiLogra.setVisible(false);
+       this.btnCumplioObjetivo.setVisible(false);
+       this.btnRequiereApoyo.setVisible(false);
+    }
+}
     
     
     private void Btn_InstruccionesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Btn_InstruccionesMouseClicked

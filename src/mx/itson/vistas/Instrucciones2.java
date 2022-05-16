@@ -4,6 +4,7 @@
  */
 package mx.itson.vistas;
 
+import javax.swing.JOptionPane;
 import mx.itson.entidades.Alumno;
 import mx.itson.interfaces.DAOAlumnoIMP;
 import mx.itson.vistas.instrucciones.*;
@@ -1156,13 +1157,9 @@ public class Instrucciones2 extends javax.swing.JFrame {
         if (porcentaje >= 19.04761904) {
             EmparejamientoImagenes abrir = new EmparejamientoImagenes();
             abrir.setVisible(true);
-
+            dispose();
         } else {
-
-            porcentajeActual = estadoPorcentaje;
-            PonerAtencionObjectos abrir = new PonerAtencionObjectos();
-            abrir.setVisible(true);
-
+            JOptionPane.showMessageDialog(this, "El niño aun no tiene el porcentaje requerido, Favor de elegir un programa anterior.");
         }
 
     }//GEN-LAST:event_jButton17ActionPerformed
@@ -1173,11 +1170,9 @@ public class Instrucciones2 extends javax.swing.JFrame {
         if (porcentaje >= 38.09523808) {
             ImitacionGruesa abrir = new ImitacionGruesa();
             abrir.setVisible(true);
-
+            dispose();
         } else {
-            ImitacionFina abrir = new ImitacionFina();
-            abrir.setVisible(true);
-
+            JOptionPane.showMessageDialog(this, "El niño aun no tiene el porcentaje requerido, Favor de elegir un programa anterior.");
         }
 
     }//GEN-LAST:event_jButton19ActionPerformed
@@ -1187,14 +1182,11 @@ public class Instrucciones2 extends javax.swing.JFrame {
         porcentajeActual = estadoPorcentaje;
         double porcentaje = at.estadoPorcentaje;
         if (porcentaje >= 57.14285712) {
-
             ReconocimientoColores abrir = new ReconocimientoColores();
             abrir.setVisible(true);
             dispose();
         } else {
-            ReconocimientoCorporal abrir = new ReconocimientoCorporal();
-            abrir.setVisible(true);
-            dispose();
+            JOptionPane.showMessageDialog(this, "El niño aun no tiene el porcentaje requerido, Favor de elegir un programa anterior.");
         }
     }//GEN-LAST:event_jButton20ActionPerformed
 
@@ -1207,11 +1199,7 @@ public class Instrucciones2 extends javax.swing.JFrame {
             abrir.setVisible(true);
             dispose();
         } else {
-
-            porcentajeActual = estadoPorcentaje;
-            EmparejamientoImagenes abrir = new EmparejamientoImagenes();
-            abrir.setVisible(true);
-            dispose();
+            JOptionPane.showMessageDialog(this, "El niño aun no tiene el porcentaje requerido, Favor de elegir un programa anterior.");
         }
 
 
@@ -1226,11 +1214,7 @@ public class Instrucciones2 extends javax.swing.JFrame {
             abrir.setVisible(true);
             dispose();
         } else {
-
-            porcentajeActual = estadoPorcentaje;
-            ImitacionGruesa abrir = new ImitacionGruesa();
-            abrir.setVisible(true);
-            dispose();
+            JOptionPane.showMessageDialog(this, "El niño aun no tiene el porcentaje requerido, Favor de elegir un programa anterior.");
         }
 
 
@@ -1246,17 +1230,21 @@ public class Instrucciones2 extends javax.swing.JFrame {
             abrir.setVisible(true);
             dispose();
         } else {
-            ReconocimientoColores abrir = new ReconocimientoColores();
-            abrir.setVisible(true);
-            dispose();
+            JOptionPane.showMessageDialog(this, "El niño aun no tiene el porcentaje requerido, Favor de elegir un programa anterior.");
         }
     }//GEN-LAST:event_jButton23ActionPerformed
 
     private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton27ActionPerformed
 
-        ImitacionVocales abrir = new ImitacionVocales();
-        abrir.setVisible(true);
-        dispose();
+        porcentajeActual = estadoPorcentaje;
+        double porcentaje = at.estadoPorcentaje;
+        if (porcentaje >= 28.57142856) {
+            ImitacionVocales abrir = new ImitacionVocales();
+            abrir.setVisible(true);
+            dispose();
+        } else {
+            JOptionPane.showMessageDialog(this, "El niño aun no tiene el porcentaje requerido, Favor de elegir un programa anterior.");
+        }
     }//GEN-LAST:event_jButton27ActionPerformed
 
     private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
@@ -1268,11 +1256,7 @@ public class Instrucciones2 extends javax.swing.JFrame {
             abrir.setVisible(true);
             dispose();
         } else {
-
-            porcentajeActual = estadoPorcentaje;
-            MotricidadGruesa abrir = new MotricidadGruesa();
-            abrir.setVisible(true);
-            dispose();
+            JOptionPane.showMessageDialog(this, "El niño aun no tiene el porcentaje requerido, Favor de elegir un programa anterior.");
         }
 
 
@@ -1288,9 +1272,7 @@ public class Instrucciones2 extends javax.swing.JFrame {
             abrir.setVisible(true);
             dispose();
         } else {
-            ReconocimientoFormas abrir = new ReconocimientoFormas();
-            abrir.setVisible(true);
-            dispose();
+            JOptionPane.showMessageDialog(this, "El niño aun no tiene el porcentaje requerido, Favor de elegir un programa anterior.");
         }
     }//GEN-LAST:event_jButton29ActionPerformed
 
@@ -1303,11 +1285,7 @@ public class Instrucciones2 extends javax.swing.JFrame {
             abrir.setVisible(true);
             dispose();
         } else {
-
-            porcentajeActual = estadoPorcentaje;
-            ImitacionVocales abrir = new ImitacionVocales();
-            abrir.setVisible(true);
-            dispose();
+            JOptionPane.showMessageDialog(this, "El niño aun no tiene el porcentaje requerido, Favor de elegir un programa anterior.");
         }
 
 
@@ -1322,11 +1300,7 @@ public class Instrucciones2 extends javax.swing.JFrame {
             abrir.setVisible(true);
             dispose();
         } else {
-
-            porcentajeActual = estadoPorcentaje;
-            MotricidadFina abrir = new MotricidadFina();
-            abrir.setVisible(true);
-            dispose();
+            JOptionPane.showMessageDialog(this, "El niño aun no tiene el porcentaje requerido, Favor de elegir un programa anterior.");
         }
 
 
@@ -1336,15 +1310,13 @@ public class Instrucciones2 extends javax.swing.JFrame {
 
         porcentajeActual = estadoPorcentaje;
         double porcentaje = at.estadoPorcentaje;
-        if (porcentaje >= 52.38095236) {
+        if (porcentaje >= 71.4285714) {
 
-            ReconocimientoFormas abrir = new ReconocimientoFormas();
-            abrir.setVisible(true);
-            dispose();
-        } else {
             SeguimientoInstrucciones abrir = new SeguimientoInstrucciones();
             abrir.setVisible(true);
             dispose();
+        } else {
+            JOptionPane.showMessageDialog(this, "El niño aun no tiene el porcentaje requerido, Favor de elegir un programa anterior.");
         }
     }//GEN-LAST:event_jButton32ActionPerformed
 

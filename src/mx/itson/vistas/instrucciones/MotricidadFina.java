@@ -30,6 +30,7 @@ public class MotricidadFina extends javax.swing.JFrame {
         setLocationRelativeTo(null);
         this.setExtendedState(MAXIMIZED_BOTH);
         niño();
+        VerificarNivelNiño();
     }
 
     /**
@@ -66,7 +67,7 @@ public class MotricidadFina extends javax.swing.JFrame {
                 LabelLogo1MouseClicked(evt);
             }
         });
-        getContentPane().add(LabelLogo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, -1, -1));
+        getContentPane().add(LabelLogo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         LabelLogo2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/sutspes  en png.png"))); // NOI18N
         getContentPane().add(LabelLogo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 0, -1, -1));
@@ -151,6 +152,16 @@ public class MotricidadFina extends javax.swing.JFrame {
  private void CargarBarra() {
         jProgressBar1.setValue((int) estadoPorcentaje);
     }
+ 
+ private void VerificarNivelNiño(){
+    Alumno alu = Alumno.obtenerPorId(ln.claveNiño);
+    int NivelNiño = Integer.parseInt(alu.getNivel());
+    if(NivelNiño == 3){
+       this.btnCasiLogra.setVisible(false);
+       this.btnCumplioObjetivo.setVisible(false);
+       this.btnRequiereApoyo.setVisible(false);
+    }
+}
 
     private void niño() {
         Alumno alu = Alumno.obtenerPorId(ln.claveNiño);

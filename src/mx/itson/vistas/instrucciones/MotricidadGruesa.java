@@ -28,6 +28,7 @@ public class MotricidadGruesa extends javax.swing.JFrame {
                  setLocationRelativeTo(null);
          this.setExtendedState(MAXIMIZED_BOTH);
            niño();
+           VerificarNivelNiño();
     }
 
     /**
@@ -149,6 +150,16 @@ public class MotricidadGruesa extends javax.swing.JFrame {
  private void CargarBarra() {
         jProgressBar1.setValue((int) estadoPorcentaje);
     }
+ 
+ private void VerificarNivelNiño(){
+    Alumno alu = Alumno.obtenerPorId(ln.claveNiño);
+    int NivelNiño = Integer.parseInt(alu.getNivel());
+    if(NivelNiño == 3){
+       this.btnCasiLogra.setVisible(false);
+       this.btnCumplioObjetivo.setVisible(false);
+       this.btnRequiereApoyo.setVisible(false);
+    }
+}
  
  private void niño() {
         Alumno alu = Alumno.obtenerPorId(ln.claveNiño);
