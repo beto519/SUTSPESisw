@@ -36,8 +36,6 @@ public class AgregarNiños extends javax.swing.JFrame {
     public AgregarNiños() {
         initComponents();
         setLocationRelativeTo(null);
-        txt_NombreImagen.setVisible(false);
-        txt_NombreImagen.setText("imagen");
         
     }
 
@@ -49,16 +47,10 @@ public class AgregarNiños extends javax.swing.JFrame {
         txtEdad.setText("");
         txtTutor.setText("");
         txtTelefono.setText("");
-        txt_NombreImagen.setText("");
     }
 
     public void GuardarImagen() {
         //Metodo para poder guardar los datos de los niños
-
-        if (txt_NombreImagen.getText().equals("")) {
-            txt_NombreImagen.setBackground(Color.red);
-            JOptionPane.showMessageDialog(null, "Debes llenar todos los campos");
-        } else {
 
             String NombreCompleto;
             NombreCompleto = txtNombre.getText().trim();
@@ -88,7 +80,6 @@ public class AgregarNiños extends javax.swing.JFrame {
                 pst.executeUpdate();
                 cn.close();
                 limpiarCampos();
-                txt_NombreImagen.setBackground(Color.green);
                 lbl_imagen.setText("Foto");
                 JOptionPane.showMessageDialog(null, "Registro Exitoso");
 
@@ -97,7 +88,6 @@ public class AgregarNiños extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, "¡¡Error al guardar foto!!");
             }
 
-        }
     }
 
     @SuppressWarnings("unchecked")
@@ -116,7 +106,6 @@ public class AgregarNiños extends javax.swing.JFrame {
         lbl_imagen = new javax.swing.JLabel();
         lbl_subirImagen = new javax.swing.JLabel();
         lbl_AddTerapeuta = new javax.swing.JLabel();
-        txt_NombreImagen = new javax.swing.JTextField();
         Fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -180,7 +169,6 @@ public class AgregarNiños extends javax.swing.JFrame {
             }
         });
         getContentPane().add(lbl_AddTerapeuta, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 500, -1, -1));
-        getContentPane().add(txt_NombreImagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 550, 380, 50));
 
         Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoAmarillo.jpg"))); // NOI18N
         getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
@@ -276,6 +264,5 @@ public class AgregarNiños extends javax.swing.JFrame {
     private javax.swing.JTextField txtNombre;
     private javax.swing.JTextField txtTelefono;
     private javax.swing.JTextField txtTutor;
-    private javax.swing.JTextField txt_NombreImagen;
     // End of variables declaration//GEN-END:variables
 }
