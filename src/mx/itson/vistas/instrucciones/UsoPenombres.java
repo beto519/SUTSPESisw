@@ -115,7 +115,7 @@ public class UsoPenombres extends javax.swing.JFrame {
         txtProcedimiento.setText("PASO 1. Seleccione 1 mujer y un hombre de apoyo.\nPASO 2. Hagan un círculo junto con el niño.\nPASO 3. Dé al niño un objeto (Auto) y pregunte: ¿Quién tiene el auto?\nPASO 4. La respuesta del niño debe ser “yo”. Si da la respuesta correctamente refuerce. Si no da la \nrespuesta correctamente de apoyo susurrando a su oído diciendo “yo”.\nPASO 5. Dé el auto a el hombre, llame al niño por su nombre y pregunte: ¿Quién tiene el auto? \nPASO 6. La respuesta debe ser él. Si el niño responde correctamente refuerce. Si no da la respuesta \ncorrecta dé apoyo susurrando la respuesta correcta al oído del niño.\nPASO 7. Dé el auto a la mujer, llame al niño por su nombre y pregunte: ¿Quién tiene el auto? \nPASO 8. El niño debe responder ella, si da la respuesta correcta refuerce, si no la da apoye susurrando al \noído.\nPASO 9. Tome el auto, llame al niño por su nombre y diga: ¿Quién tiene el auto?\nPASO 10. El niño debe responder tú. Si da la respuesta correcta refuerce, si no da la respuesta correcta \napoye susurrando al oído.\n");
         Procedimiento.setViewportView(txtProcedimiento);
 
-        getContentPane().add(Procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 210, 1120, 350));
+        getContentPane().add(Procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 210, 1120, 260));
 
         Btn_Instrucciones.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         Btn_Instrucciones.setText("Ver Instrucciones");
@@ -130,10 +130,10 @@ public class UsoPenombres extends javax.swing.JFrame {
                 Btn_InstruccionesActionPerformed(evt);
             }
         });
-        getContentPane().add(Btn_Instrucciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 650, 200, 50));
+        getContentPane().add(Btn_Instrucciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 560, 200, 50));
 
         jProgressBar1.setStringPainted(true);
-        getContentPane().add(jProgressBar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 570, 1090, 40));
+        getContentPane().add(jProgressBar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 480, 1090, 40));
 
         btnRequiereApoyo.setBackground(new java.awt.Color(255, 51, 51));
         btnRequiereApoyo.setBorderPainted(false);
@@ -142,7 +142,7 @@ public class UsoPenombres extends javax.swing.JFrame {
                 btnRequiereApoyoActionPerformed(evt);
             }
         });
-        getContentPane().add(btnRequiereApoyo, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 620, 100, 20));
+        getContentPane().add(btnRequiereApoyo, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 530, 100, 20));
 
         btnCasiLogra.setBackground(new java.awt.Color(255, 255, 102));
         btnCasiLogra.setBorderPainted(false);
@@ -151,7 +151,7 @@ public class UsoPenombres extends javax.swing.JFrame {
                 btnCasiLograActionPerformed(evt);
             }
         });
-        getContentPane().add(btnCasiLogra, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 620, 100, 20));
+        getContentPane().add(btnCasiLogra, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 530, 100, 20));
 
         btnCumplioObjetivo.setBackground(new java.awt.Color(51, 204, 0));
         btnCumplioObjetivo.setBorderPainted(false);
@@ -160,10 +160,10 @@ public class UsoPenombres extends javax.swing.JFrame {
                 btnCumplioObjetivoActionPerformed(evt);
             }
         });
-        getContentPane().add(btnCumplioObjetivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 620, 100, 20));
+        getContentPane().add(btnCumplioObjetivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 530, 100, 20));
 
         Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoRosa.jpg"))); // NOI18N
-        getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 710));
+        getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

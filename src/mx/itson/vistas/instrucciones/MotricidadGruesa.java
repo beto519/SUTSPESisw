@@ -110,7 +110,7 @@ public class MotricidadGruesa extends javax.swing.JFrame {
         txtProcedimiento.setText("Para mejorar la motricidad gruesa se harán circuitos donde debe tratar de hacer equilibrio, correr, saltar, \nrodar, escalar.\nPoner una línea en el suelo, o una tabla al aire, por donde el niño debe pasar cada vez a mayor velocidad \nmanteniendo el equilibrio o cuidando de siempre pisar la línea que le trazaron. Recuerde, inicie lento y vaya \nimprimiendo cada vez más velocidad.\nColocar una hilera de 5 a 10 obstáculos, los cuales el niño debe pasar por ellos saltándolos. \nLos obstáculos pueden ser cilindros pequeños, o aros.\nColocar un circuito, puede apoyarse con aros grandes, o con un gusano de estimulación motriz, \npor donde el niño debe pasar agachado o a gatas.\nColocar un circuito donde el niño deba ir y venir corriendo, por lo menos tres repeticiones en este circuito.\nPara el circuito de escalar puede apoyarse con el uso de una escalera.\nColocar un circuito en donde se acueste y tenga que rodar.\nLanzar una pelota.\nCachar una pelota.\nMantener el equilibrio.\n\n\n");
         Procedimiento.setViewportView(txtProcedimiento);
 
-        getContentPane().add(Procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 170, 1020, 420));
+        getContentPane().add(Procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 170, 1020, 360));
 
         btnRequiereApoyo.setBackground(new java.awt.Color(255, 51, 51));
         btnRequiereApoyo.setBorderPainted(false);
@@ -119,7 +119,7 @@ public class MotricidadGruesa extends javax.swing.JFrame {
                 btnRequiereApoyoActionPerformed(evt);
             }
         });
-        getContentPane().add(btnRequiereApoyo, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 610, 100, 40));
+        getContentPane().add(btnRequiereApoyo, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 540, 100, 40));
 
         btnCasiLogra.setBackground(new java.awt.Color(255, 255, 102));
         btnCasiLogra.setBorderPainted(false);
@@ -128,7 +128,7 @@ public class MotricidadGruesa extends javax.swing.JFrame {
                 btnCasiLograActionPerformed(evt);
             }
         });
-        getContentPane().add(btnCasiLogra, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 610, 100, 40));
+        getContentPane().add(btnCasiLogra, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 540, 100, 40));
 
         btnCumplioObjetivo.setBackground(new java.awt.Color(51, 204, 0));
         btnCumplioObjetivo.setBorderPainted(false);
@@ -137,10 +137,10 @@ public class MotricidadGruesa extends javax.swing.JFrame {
                 btnCumplioObjetivoActionPerformed(evt);
             }
         });
-        getContentPane().add(btnCumplioObjetivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 610, 100, 40));
+        getContentPane().add(btnCumplioObjetivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 540, 100, 40));
 
         jProgressBar1.setStringPainted(true);
-        getContentPane().add(jProgressBar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 670, 500, 40));
+        getContentPane().add(jProgressBar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 600, 500, 40));
 
         Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoAmarillo.jpg"))); // NOI18N
         getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -180, 1280, 1080));

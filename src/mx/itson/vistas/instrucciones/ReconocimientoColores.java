@@ -124,7 +124,7 @@ public class ReconocimientoColores extends javax.swing.JFrame {
                 btnRequiereApoyoActionPerformed(evt);
             }
         });
-        getContentPane().add(btnRequiereApoyo, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 590, 100, 40));
+        getContentPane().add(btnRequiereApoyo, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 520, 100, 40));
 
         btnCasiLogra.setBackground(new java.awt.Color(255, 255, 102));
         btnCasiLogra.setBorderPainted(false);
@@ -133,7 +133,7 @@ public class ReconocimientoColores extends javax.swing.JFrame {
                 btnCasiLograActionPerformed(evt);
             }
         });
-        getContentPane().add(btnCasiLogra, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 590, 100, 40));
+        getContentPane().add(btnCasiLogra, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 520, 100, 40));
 
         btnCumplioObjetivo.setBackground(new java.awt.Color(51, 204, 0));
         btnCumplioObjetivo.setBorderPainted(false);
@@ -142,10 +142,10 @@ public class ReconocimientoColores extends javax.swing.JFrame {
                 btnCumplioObjetivoActionPerformed(evt);
             }
         });
-        getContentPane().add(btnCumplioObjetivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 590, 100, 40));
+        getContentPane().add(btnCumplioObjetivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 520, 100, 40));
 
         jProgressBar1.setStringPainted(true);
-        getContentPane().add(jProgressBar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 650, 500, 40));
+        getContentPane().add(jProgressBar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 580, 500, 40));
 
         TxtFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoRosa.jpg"))); // NOI18N
         getContentPane().add(TxtFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));

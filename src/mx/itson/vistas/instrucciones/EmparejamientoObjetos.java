@@ -58,8 +58,6 @@ public class EmparejamientoObjetos extends javax.swing.JFrame {
         ReconocimientoCorporal1 = new javax.swing.JLabel();
         procedimiento2 = new javax.swing.JLabel();
         MtroManuel2 = new javax.swing.JLabel();
-        jScrollPane3 = new javax.swing.JScrollPane();
-        jTextArea3 = new javax.swing.JTextArea();
         jLabel4 = new javax.swing.JLabel();
         jScrollPane4 = new javax.swing.JScrollPane();
         jTextArea4 = new javax.swing.JTextArea();
@@ -73,7 +71,7 @@ public class EmparejamientoObjetos extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         LabelLogo2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/sutspes  en png.png"))); // NOI18N
-        getContentPane().add(LabelLogo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 60, -1, -1));
+        getContentPane().add(LabelLogo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 0, -1, -1));
 
         LabelLogo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/CENTRO DE APOYO EDUCATIVO INFANTIL EN PNG.png"))); // NOI18N
         LabelLogo1.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -112,24 +110,15 @@ public class EmparejamientoObjetos extends javax.swing.JFrame {
         MtroManuel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         getContentPane().add(MtroManuel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 120, 450, 40));
 
-        jTextArea3.setEditable(false);
-        jTextArea3.setColumns(20);
-        jTextArea3.setFont(new java.awt.Font("Dialog", 0, 20)); // NOI18N
-        jTextArea3.setRows(5);
-        jTextArea3.setText("Objetos comunes para hacer el ejercicio:\nCuchara.\nVaso.\nPlato.\nZapatos.\nCalcetines.\nFrutas.\n");
-        jScrollPane3.setViewportView(jTextArea3);
-
-        getContentPane().add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 530, 1010, 190));
-
         jLabel4.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         jLabel4.setText("Programa ");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 10, 190, 60));
 
         jTextArea4.setEditable(false);
         jTextArea4.setColumns(20);
-        jTextArea4.setFont(new java.awt.Font("Dialog", 0, 20)); // NOI18N
+        jTextArea4.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         jTextArea4.setRows(5);
-        jTextArea4.setText("PASO 1. Seleccione objetos comunes. El criterio de selección de objetos es que deben tener 2 iguales, por\n ejemplo, dos naranjas.\nPASO 2. Siéntese frente al niño en una mesa de trabajo.\nPASO 3. Coloque sobre la mesa  dos objetos distintos (por ejemplo, una naranja y un zapato). \nLos objetos deben estar separados entre sí por una distancia de aproximadamente 40 centímetros.\nPASO 4. Llame al niño por su nombre y diga “Junta las cosas iguales” al mismo tiempo que muestra el objeto y \nse lo entrega en la mano, siempre cuidando que ponga atención al objeto que entregamos.\nPASO 5. La respuesta correcta del niño es la de juntar los objetos iguales. Si no da la respuesta correcta dé\napoyo tomando la mano\ndel niño y dirigiendo su mano hacia el objeto igual, apóyelo para que suelte el objeto.\nPASO 6. Disminuya gradualmente el apoyo hasta cumplir el criterio.\nPASO 7. Refuerce cada respuesta correcta, sin importar si lo hizo o no con apoyo.\n");
+        jTextArea4.setText("PASO 1. Seleccione objetos comunes. El criterio de selección de objetos es que deben tener 2 iguales, por\n ejemplo, dos naranjas.\nPASO 2. Siéntese frente al niño en una mesa de trabajo.\nPASO 3. Coloque sobre la mesa  dos objetos distintos (por ejemplo, una naranja y un zapato). \nLos objetos deben estar separados entre sí por una distancia de aproximadamente 40 centímetros.\nPASO 4. Llame al niño por su nombre y diga “Junta las cosas iguales” al mismo tiempo que muestra el objeto y \nse lo entrega en la mano, siempre cuidando que ponga atención al objeto que entregamos.\nPASO 5. La respuesta correcta del niño es la de juntar los objetos iguales. Si no da la respuesta correcta dé\napoyo tomando la mano\ndel niño y dirigiendo su mano hacia el objeto igual, apóyelo para que suelte el objeto.\nPASO 6. Disminuya gradualmente el apoyo hasta cumplir el criterio.\nPASO 7. Refuerce cada respuesta correcta, sin importar si lo hizo o no con apoyo.\nObjetos comunes para hacer el ejercicio:\nCuchara.\nVaso.\nPlato.\nZapatos.\nCalcetines.\nFrutas.\n\n");
         jScrollPane4.setViewportView(jTextArea4);
 
         getContentPane().add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 190, 1010, 340));
@@ -141,7 +130,7 @@ public class EmparejamientoObjetos extends javax.swing.JFrame {
                 btn_LoHaceMouseClicked(evt);
             }
         });
-        getContentPane().add(btn_LoHace, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 740, -1, -1));
+        getContentPane().add(btn_LoHace, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 540, -1, -1));
 
         btn_NoLoHace.setBackground(new java.awt.Color(255, 0, 0));
         btn_NoLoHace.setForeground(new java.awt.Color(255, 255, 255));
@@ -151,7 +140,7 @@ public class EmparejamientoObjetos extends javax.swing.JFrame {
                 btn_NoLoHaceMouseClicked(evt);
             }
         });
-        getContentPane().add(btn_NoLoHace, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 740, -1, -1));
+        getContentPane().add(btn_NoLoHace, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 540, -1, -1));
 
         btn_LoHaceConAyuda.setBackground(new java.awt.Color(255, 255, 0));
         btn_LoHaceConAyuda.setText("Lo Hace Con Ayuda");
@@ -165,13 +154,13 @@ public class EmparejamientoObjetos extends javax.swing.JFrame {
                 btn_LoHaceConAyudaActionPerformed(evt);
             }
         });
-        getContentPane().add(btn_LoHaceConAyuda, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 740, -1, -1));
+        getContentPane().add(btn_LoHaceConAyuda, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 540, -1, -1));
 
         PB_ProgresoNiño.setStringPainted(true);
-        getContentPane().add(PB_ProgresoNiño, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 800, 1010, 30));
+        getContentPane().add(PB_ProgresoNiño, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 600, 1010, 30));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoAzul.jpg"))); // NOI18N
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 870));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -271,9 +260,7 @@ dispose();
     private javax.swing.JButton btn_NoLoHace;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
-    private javax.swing.JTextArea jTextArea3;
     private javax.swing.JTextArea jTextArea4;
     private javax.swing.JLabel procedimiento2;
     // End of variables declaration//GEN-END:variables

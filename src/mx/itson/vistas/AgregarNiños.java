@@ -36,6 +36,7 @@ public class AgregarNiños extends javax.swing.JFrame {
     public AgregarNiños() {
         initComponents();
         setLocationRelativeTo(null);
+        setExtendedState(MAXIMIZED_BOTH);
         
     }
 

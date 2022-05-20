@@ -184,6 +184,30 @@ public class DAOTerapeutaIMP implements DAOTerapeuta {
         }
         return empleado;  
     }
+    
+  
+    public Terapeuta obtenerUser(String user) {
+              Terapeuta empleado = new Terapeuta();
+        try {
+            if (db.connect()) {
+                String query = "SELECT * FROM sutspes." + TABLA + " WHERE usuario = '" + user + "'";
+                ResultSet rs = (ResultSet) db.execute(query, false);
+                if (rs.next()) {
+                    empleado.setId(rs.getInt("IdTerap"));
+                    empleado.setNombre(rs.getString("nombreCom"));
+                    empleado.setPuesto(rs.getString("Area"));
+                    empleado.setCorreo(rs.getString("email"));
+                    empleado.setCodigoUsuario(rs.getString("usuario"));
+                    empleado.setContraseña(rs.getString("contraseña"));
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            db.disconnect();
+        }
+        return empleado;  
+    }
 
     @Override
     public Terapeuta obtenerFoto(int id) {

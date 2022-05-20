@@ -22,6 +22,7 @@ public class Terapeuta {
     private String imagen;
     private FileInputStream fis;
     private int longitudBytes;
+
  
     public Terapeuta() {
     }
@@ -141,6 +142,8 @@ public class Terapeuta {
     public void setLongitudBytes(int longitudBytes) {
         this.longitudBytes = longitudBytes;
     }
+
+  
 
 
    

@@ -18,7 +18,7 @@
     <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
     <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
     <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
-    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,3,97,0,0,5,0"/>
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,2,-48,0,0,5,0"/>
   </AuxValues>
 
   <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
@@ -33,7 +33,7 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="1170" y="60" width="-1" height="-1"/>
+          <AbsoluteConstraints x="1170" y="0" width="-1" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -146,31 +146,6 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Container class="javax.swing.JScrollPane" name="jScrollPane3">
-      <AuxValues>
-        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
-      </AuxValues>
-      <Constraints>
-        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="120" y="530" width="1010" height="190"/>
-        </Constraint>
-      </Constraints>
-
-      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
-      <SubComponents>
-        <Component class="javax.swing.JTextArea" name="jTextArea3">
-          <Properties>
-            <Property name="editable" type="boolean" value="false"/>
-            <Property name="columns" type="int" value="20"/>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Dialog" size="20" style="0"/>
-            </Property>
-            <Property name="rows" type="int" value="5"/>
-            <Property name="text" type="java.lang.String" value="Objetos comunes para hacer el ejercicio:&#xa;Cuchara.&#xa;Vaso.&#xa;Plato.&#xa;Zapatos.&#xa;Calcetines.&#xa;Frutas.&#xa;"/>
-          </Properties>
-        </Component>
-      </SubComponents>
-    </Container>
     <Component class="javax.swing.JLabel" name="jLabel4">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -201,10 +176,10 @@
             <Property name="editable" type="boolean" value="false"/>
             <Property name="columns" type="int" value="20"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Dialog" size="20" style="0"/>
+              <Font name="Dialog" size="18" style="0"/>
             </Property>
             <Property name="rows" type="int" value="5"/>
-            <Property name="text" type="java.lang.String" value="PASO 1. Seleccione objetos comunes. El criterio de selecci&#xf3;n de objetos es que deben tener 2 iguales, por&#xa; ejemplo, dos naranjas.&#xa;PASO 2. Si&#xe9;ntese frente al ni&#xf1;o en una mesa de trabajo.&#xa;PASO 3. Coloque sobre la mesa  dos objetos distintos (por ejemplo, una naranja y un zapato). &#xa;Los objetos deben estar separados entre s&#xed; por una distancia de aproximadamente 40 cent&#xed;metros.&#xa;PASO 4. Llame al ni&#xf1;o por su nombre y diga &#x201c;Junta las cosas iguales&#x201d; al mismo tiempo que muestra el objeto y &#xa;se lo entrega en la mano, siempre cuidando que ponga atenci&#xf3;n al objeto que entregamos.&#xa;PASO 5. La respuesta correcta del ni&#xf1;o es la de juntar los objetos iguales. Si no da la respuesta correcta d&#xe9;&#xa;apoyo tomando la mano&#xa;del ni&#xf1;o y dirigiendo su mano hacia el objeto igual, ap&#xf3;yelo para que suelte el objeto.&#xa;PASO 6. Disminuya gradualmente el apoyo hasta cumplir el criterio.&#xa;PASO 7. Refuerce cada respuesta correcta, sin importar si lo hizo o no con apoyo.&#xa;"/>
+            <Property name="text" type="java.lang.String" value="PASO 1. Seleccione objetos comunes. El criterio de selecci&#xf3;n de objetos es que deben tener 2 iguales, por&#xa; ejemplo, dos naranjas.&#xa;PASO 2. Si&#xe9;ntese frente al ni&#xf1;o en una mesa de trabajo.&#xa;PASO 3. Coloque sobre la mesa  dos objetos distintos (por ejemplo, una naranja y un zapato). &#xa;Los objetos deben estar separados entre s&#xed; por una distancia de aproximadamente 40 cent&#xed;metros.&#xa;PASO 4. Llame al ni&#xf1;o por su nombre y diga &#x201c;Junta las cosas iguales&#x201d; al mismo tiempo que muestra el objeto y &#xa;se lo entrega en la mano, siempre cuidando que ponga atenci&#xf3;n al objeto que entregamos.&#xa;PASO 5. La respuesta correcta del ni&#xf1;o es la de juntar los objetos iguales. Si no da la respuesta correcta d&#xe9;&#xa;apoyo tomando la mano&#xa;del ni&#xf1;o y dirigiendo su mano hacia el objeto igual, ap&#xf3;yelo para que suelte el objeto.&#xa;PASO 6. Disminuya gradualmente el apoyo hasta cumplir el criterio.&#xa;PASO 7. Refuerce cada respuesta correcta, sin importar si lo hizo o no con apoyo.&#xa;Objetos comunes para hacer el ejercicio:&#xa;Cuchara.&#xa;Vaso.&#xa;Plato.&#xa;Zapatos.&#xa;Calcetines.&#xa;Frutas.&#xa;&#xa;"/>
           </Properties>
         </Component>
       </SubComponents>
@@ -221,7 +196,7 @@
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="160" y="740" width="-1" height="-1"/>
+          <AbsoluteConstraints x="140" y="540" width="-1" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -240,7 +215,7 @@
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="570" y="740" width="-1" height="-1"/>
+          <AbsoluteConstraints x="550" y="540" width="-1" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -257,7 +232,7 @@
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="990" y="740" width="-1" height="-1"/>
+          <AbsoluteConstraints x="970" y="540" width="-1" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -267,7 +242,7 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="130" y="800" width="1010" height="30"/>
+          <AbsoluteConstraints x="110" y="600" width="1010" height="30"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -279,7 +254,7 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="0" y="0" width="1280" height="870"/>
+          <AbsoluteConstraints x="0" y="0" width="1280" height="720"/>
         </Constraint>
       </Constraints>
     </Component>

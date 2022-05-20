@@ -25,6 +25,7 @@ public class ReconocimientoCorporal extends javax.swing.JFrame {
         setResizable(false);
          setLocationRelativeTo(null);
          niño();
+          this.setExtendedState(MAXIMIZED_BOTH);
          VerificarNivelNiño();
         // this.setExtendedState(MAXIMIZED_BOTH);
      //   setLayout(new BorderLayout());
@@ -103,10 +104,10 @@ public class ReconocimientoCorporal extends javax.swing.JFrame {
         txtProcedimiento.setColumns(20);
         txtProcedimiento.setFont(new java.awt.Font("Dialog", 0, 17)); // NOI18N
         txtProcedimiento.setRows(5);
-        txtProcedimiento.setText("PASO 1. Colóquese frente al niño y tenga a la mano la lista de instrucciones.\nPASO 2. Llame al niño por su nombre y dé la instrucción de la lista.\nPASO 3. Si el niño realiza la respuesta correcta de un reforzador.\nPASO 4. Si el niño no responde correctamente apoye físicamente.\nPASO 5. Disminuya el apoyo hasta alcanzar el criterio (reconocer el 80% de las partes del cuerpo).\nPASO 6. Repita 5 veces cada instrucción. Entre una y otra instrucción deje un tiempo de 10 segundos.\nPASO 7. Refuerce cada respuesta correcta.\n");
+        txtProcedimiento.setText("PASO 1. Colóquese frente al niño y tenga a la mano la lista de instrucciones.\nPASO 2. Llame al niño por su nombre y dé la instrucción de la lista.\nPASO 3. Si el niño realiza la respuesta correcta de un reforzador.\nPASO 4. Si el niño no responde correctamente apoye físicamente.\nPASO 5. Disminuya el apoyo hasta alcanzar el criterio (reconocer el 80% de las partes del cuerpo).\nPASO 6. Repita 5 veces cada instrucción. Entre una y otra instrucción deje un tiempo de 10 segundos.\nPASO 7. Refuerce cada respuesta correcta.");
         Procedimiento.setViewportView(txtProcedimiento);
 
-        getContentPane().add(Procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 240, 1100, 310));
+        getContentPane().add(Procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 240, 1100, 210));
 
         Btn_Instrucciones.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         Btn_Instrucciones.setText("Ver Instrucciones");
@@ -116,10 +117,15 @@ public class ReconocimientoCorporal extends javax.swing.JFrame {
                 Btn_InstruccionesMouseClicked(evt);
             }
         });
-        getContentPane().add(Btn_Instrucciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 660, 200, 50));
+        Btn_Instrucciones.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Btn_InstruccionesActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Btn_Instrucciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 560, 200, 50));
 
         jProgressBar1.setStringPainted(true);
-        getContentPane().add(jProgressBar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 560, 1060, 40));
+        getContentPane().add(jProgressBar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 460, 1060, 40));
 
         btnRequiereApoyo.setBackground(new java.awt.Color(255, 51, 51));
         btnRequiereApoyo.setBorderPainted(false);
@@ -128,7 +134,7 @@ public class ReconocimientoCorporal extends javax.swing.JFrame {
                 btnRequiereApoyoActionPerformed(evt);
             }
         });
-        getContentPane().add(btnRequiereApoyo, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 610, 100, 40));
+        getContentPane().add(btnRequiereApoyo, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 510, 100, 40));
 
         btnCasiLogra.setBackground(new java.awt.Color(255, 255, 102));
         btnCasiLogra.setBorderPainted(false);
@@ -137,7 +143,7 @@ public class ReconocimientoCorporal extends javax.swing.JFrame {
                 btnCasiLograActionPerformed(evt);
             }
         });
-        getContentPane().add(btnCasiLogra, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 610, 100, 40));
+        getContentPane().add(btnCasiLogra, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 510, 100, 40));
 
         btnCumplioObjetivo.setBackground(new java.awt.Color(51, 204, 0));
         btnCumplioObjetivo.setBorderPainted(false);
@@ -146,7 +152,7 @@ public class ReconocimientoCorporal extends javax.swing.JFrame {
                 btnCumplioObjetivoActionPerformed(evt);
             }
         });
-        getContentPane().add(btnCumplioObjetivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 610, 100, 40));
+        getContentPane().add(btnCumplioObjetivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 510, 100, 40));
 
         Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoAmarillo.jpg"))); // NOI18N
         getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
@@ -208,6 +214,12 @@ abrir.setVisible(true);
 dispose();
         // TODO add your handling code here:
     }//GEN-LAST:event_LabelLogo1MouseClicked
+
+    private void Btn_InstruccionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_InstruccionesActionPerformed
+
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Btn_InstruccionesActionPerformed
     
      private void CargarBarra() {
         jProgressBar1.setValue((int) estadoPorcentaje);

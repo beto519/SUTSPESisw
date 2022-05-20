@@ -78,7 +78,7 @@ private double pregunta1;
                 txtPregunta27ActionPerformed(evt);
             }
         });
-        getContentPane().add(txtPregunta27, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 530, 310, 40));
+        getContentPane().add(txtPregunta27, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 520, 310, 40));
 
         txtPregunta26.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
         txtPregunta26.setHorizontalAlignment(javax.swing.JTextField.LEFT);
@@ -88,7 +88,7 @@ private double pregunta1;
                 txtPregunta26ActionPerformed(evt);
             }
         });
-        getContentPane().add(txtPregunta26, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 480, 310, 40));
+        getContentPane().add(txtPregunta26, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 470, 310, 40));
 
         txtPregunta25.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
         txtPregunta25.setHorizontalAlignment(javax.swing.JTextField.LEFT);
@@ -98,7 +98,7 @@ private double pregunta1;
                 txtPregunta25ActionPerformed(evt);
             }
         });
-        getContentPane().add(txtPregunta25, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 430, 310, 40));
+        getContentPane().add(txtPregunta25, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 420, 310, 40));
 
         txtPregunta24.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
         txtPregunta24.setHorizontalAlignment(javax.swing.JTextField.LEFT);
@@ -108,7 +108,7 @@ private double pregunta1;
                 txtPregunta24ActionPerformed(evt);
             }
         });
-        getContentPane().add(txtPregunta24, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 380, 310, 40));
+        getContentPane().add(txtPregunta24, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 370, 310, 40));
 
         txtPregunta23.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
         txtPregunta23.setHorizontalAlignment(javax.swing.JTextField.LEFT);
@@ -118,7 +118,7 @@ private double pregunta1;
                 txtPregunta23ActionPerformed(evt);
             }
         });
-        getContentPane().add(txtPregunta23, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 330, 310, 40));
+        getContentPane().add(txtPregunta23, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 320, 310, 40));
 
         txtPregunta22.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
         txtPregunta22.setHorizontalAlignment(javax.swing.JTextField.LEFT);
@@ -128,7 +128,7 @@ private double pregunta1;
                 txtPregunta22ActionPerformed(evt);
             }
         });
-        getContentPane().add(txtPregunta22, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 280, 310, 40));
+        getContentPane().add(txtPregunta22, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 270, 310, 40));
 
         txtPregunta21.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
         txtPregunta21.setHorizontalAlignment(javax.swing.JTextField.LEFT);
@@ -138,7 +138,7 @@ private double pregunta1;
                 txtPregunta21ActionPerformed(evt);
             }
         });
-        getContentPane().add(txtPregunta21, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 230, 310, 40));
+        getContentPane().add(txtPregunta21, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 220, 310, 40));
 
         txtPregunta20.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
         txtPregunta20.setHorizontalAlignment(javax.swing.JTextField.LEFT);
@@ -148,7 +148,7 @@ private double pregunta1;
                 txtPregunta20ActionPerformed(evt);
             }
         });
-        getContentPane().add(txtPregunta20, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 180, 310, 40));
+        getContentPane().add(txtPregunta20, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 170, 310, 40));
 
         txtPregunta19.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
         txtPregunta19.setHorizontalAlignment(javax.swing.JTextField.LEFT);
@@ -158,7 +158,7 @@ private double pregunta1;
                 txtPregunta19ActionPerformed(evt);
             }
         });
-        getContentPane().add(txtPregunta19, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 130, 310, 40));
+        getContentPane().add(txtPregunta19, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 120, 310, 40));
 
         txtPregunta18.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
         txtPregunta18.setHorizontalAlignment(javax.swing.JTextField.LEFT);
@@ -168,7 +168,7 @@ private double pregunta1;
                 txtPregunta18ActionPerformed(evt);
             }
         });
-        getContentPane().add(txtPregunta18, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 530, 310, 40));
+        getContentPane().add(txtPregunta18, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 520, 310, 40));
 
         txtPregunta17.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
         txtPregunta17.setHorizontalAlignment(javax.swing.JTextField.LEFT);
@@ -178,7 +178,7 @@ private double pregunta1;
                 txtPregunta17ActionPerformed(evt);
             }
         });
-        getContentPane().add(txtPregunta17, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 480, 310, 40));
+        getContentPane().add(txtPregunta17, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 470, 310, 40));
 
         txtPregunta16.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
         txtPregunta16.setHorizontalAlignment(javax.swing.JTextField.LEFT);
@@ -188,7 +188,7 @@ private double pregunta1;
                 txtPregunta16ActionPerformed(evt);
             }
         });
-        getContentPane().add(txtPregunta16, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 430, -1, 40));
+        getContentPane().add(txtPregunta16, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 420, -1, 40));
 
         txtPregunta15.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
         txtPregunta15.setHorizontalAlignment(javax.swing.JTextField.LEFT);
@@ -198,7 +198,7 @@ private double pregunta1;
                 txtPregunta15ActionPerformed(evt);
             }
         });
-        getContentPane().add(txtPregunta15, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 380, 310, 40));
+        getContentPane().add(txtPregunta15, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 370, 310, 40));
 
         txtPregunta14.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
         txtPregunta14.setHorizontalAlignment(javax.swing.JTextField.LEFT);
@@ -208,7 +208,7 @@ private double pregunta1;
                 txtPregunta14ActionPerformed(evt);
             }
         });
-        getContentPane().add(txtPregunta14, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 330, 310, 40));
+        getContentPane().add(txtPregunta14, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 320, 310, 40));
 
         txtPregunta13.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
         txtPregunta13.setHorizontalAlignment(javax.swing.JTextField.LEFT);
@@ -218,7 +218,7 @@ private double pregunta1;
                 txtPregunta13ActionPerformed(evt);
             }
         });
-        getContentPane().add(txtPregunta13, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 280, 310, 40));
+        getContentPane().add(txtPregunta13, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 270, 310, 40));
 
         txtPregunta12.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
         txtPregunta12.setHorizontalAlignment(javax.swing.JTextField.LEFT);
@@ -228,7 +228,7 @@ private double pregunta1;
                 txtPregunta12ActionPerformed(evt);
             }
         });
-        getContentPane().add(txtPregunta12, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 230, 310, 40));
+        getContentPane().add(txtPregunta12, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 220, 310, 40));
 
         txtPregunta11.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
         txtPregunta11.setHorizontalAlignment(javax.swing.JTextField.LEFT);
@@ -238,7 +238,7 @@ private double pregunta1;
                 txtPregunta11ActionPerformed(evt);
             }
         });
-        getContentPane().add(txtPregunta11, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 180, 310, 40));
+        getContentPane().add(txtPregunta11, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 170, 310, 40));
 
         txtPregunta10.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
         txtPregunta10.setHorizontalAlignment(javax.swing.JTextField.LEFT);
@@ -248,7 +248,7 @@ private double pregunta1;
                 txtPregunta10ActionPerformed(evt);
             }
         });
-        getContentPane().add(txtPregunta10, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 130, 310, 40));
+        getContentPane().add(txtPregunta10, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 120, 310, 40));
 
         txtPregunta9.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
         txtPregunta9.setHorizontalAlignment(javax.swing.JTextField.LEFT);
@@ -258,7 +258,7 @@ private double pregunta1;
                 txtPregunta9ActionPerformed(evt);
             }
         });
-        getContentPane().add(txtPregunta9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 530, 310, 40));
+        getContentPane().add(txtPregunta9, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 520, 310, 40));
 
         txtPregunta8.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
         txtPregunta8.setHorizontalAlignment(javax.swing.JTextField.LEFT);
@@ -268,7 +268,7 @@ private double pregunta1;
                 txtPregunta8ActionPerformed(evt);
             }
         });
-        getContentPane().add(txtPregunta8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 480, 310, 40));
+        getContentPane().add(txtPregunta8, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 470, 310, 40));
 
         txtPregunta7.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
         txtPregunta7.setHorizontalAlignment(javax.swing.JTextField.LEFT);
@@ -278,7 +278,7 @@ private double pregunta1;
                 txtPregunta7ActionPerformed(evt);
             }
         });
-        getContentPane().add(txtPregunta7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 430, 310, 40));
+        getContentPane().add(txtPregunta7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 420, 310, 40));
 
         txtPregunta6.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
         txtPregunta6.setHorizontalAlignment(javax.swing.JTextField.LEFT);
@@ -288,7 +288,7 @@ private double pregunta1;
                 txtPregunta6ActionPerformed(evt);
             }
         });
-        getContentPane().add(txtPregunta6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 380, 310, 40));
+        getContentPane().add(txtPregunta6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 370, 310, 40));
 
         txtPregunta5.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
         txtPregunta5.setHorizontalAlignment(javax.swing.JTextField.LEFT);
@@ -298,7 +298,7 @@ private double pregunta1;
                 txtPregunta5ActionPerformed(evt);
             }
         });
-        getContentPane().add(txtPregunta5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 330, 310, 40));
+        getContentPane().add(txtPregunta5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 320, 310, 40));
 
         txtPregunta4.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
         txtPregunta4.setHorizontalAlignment(javax.swing.JTextField.LEFT);
@@ -308,7 +308,7 @@ private double pregunta1;
                 txtPregunta4ActionPerformed(evt);
             }
         });
-        getContentPane().add(txtPregunta4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 280, 310, 40));
+        getContentPane().add(txtPregunta4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 270, 310, 40));
 
         txtPregunta3.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
         txtPregunta3.setHorizontalAlignment(javax.swing.JTextField.LEFT);
@@ -318,7 +318,7 @@ private double pregunta1;
                 txtPregunta3ActionPerformed(evt);
             }
         });
-        getContentPane().add(txtPregunta3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, 310, 40));
+        getContentPane().add(txtPregunta3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 220, 310, 40));
 
         txtPregunta2.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
         txtPregunta2.setHorizontalAlignment(javax.swing.JTextField.LEFT);
@@ -328,7 +328,7 @@ private double pregunta1;
                 txtPregunta2ActionPerformed(evt);
             }
         });
-        getContentPane().add(txtPregunta2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 310, 40));
+        getContentPane().add(txtPregunta2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 170, 310, 40));
 
         txtPregunta1.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
         txtPregunta1.setHorizontalAlignment(javax.swing.JTextField.LEFT);
@@ -338,7 +338,7 @@ private double pregunta1;
                 txtPregunta1ActionPerformed(evt);
             }
         });
-        getContentPane().add(txtPregunta1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, 310, 40));
+        getContentPane().add(txtPregunta1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 120, 310, 40));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoAzul.jpg"))); // NOI18N
         jLabel1.setText("jLabel1");

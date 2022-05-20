@@ -109,10 +109,10 @@ public class MotricidadFina extends javax.swing.JFrame {
         txtProcedimiento.setColumns(20);
         txtProcedimiento.setFont(new java.awt.Font("Dialog", 0, 20)); // NOI18N
         txtProcedimiento.setRows(5);
-        txtProcedimiento.setText("Para mejorar la motricidad fina realice los siguientes ejercicios:\n\n1. Colocar pinzas de la ropa en la orilla de algún plástico.\n\n2. Ensartar un mecatito a través de los orificios de figuras o tablas.\n\n3. Colocar canicas dentro de un bote, una por una.\n\n4. Hacer círculos grandes con lápiz o crayolas.\n\n5. Pegar bolitas de papel.\n\n");
+        txtProcedimiento.setText("Para mejorar la motricidad fina realice los siguientes ejercicios:\n\n1. Colocar pinzas de la ropa en la orilla de algún plástico.\n\n2. Ensartar un mecatito a través de los orificios de figuras o tablas.\n\n3. Colocar canicas dentro de un bote, una por una.\n\n4. Hacer círculos grandes con lápiz o crayolas.\n\n5. Pegar bolitas de papel.");
         Procedimiento.setViewportView(txtProcedimiento);
 
-        getContentPane().add(Procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 200, 910, 390));
+        getContentPane().add(Procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 200, 910, 320));
 
         btnRequiereApoyo.setBackground(new java.awt.Color(255, 51, 51));
         btnRequiereApoyo.setBorderPainted(false);
@@ -121,7 +121,7 @@ public class MotricidadFina extends javax.swing.JFrame {
                 btnRequiereApoyoActionPerformed(evt);
             }
         });
-        getContentPane().add(btnRequiereApoyo, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 610, 100, 40));
+        getContentPane().add(btnRequiereApoyo, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 530, 100, 40));
 
         btnCasiLogra.setBackground(new java.awt.Color(255, 255, 102));
         btnCasiLogra.setBorderPainted(false);
@@ -130,7 +130,7 @@ public class MotricidadFina extends javax.swing.JFrame {
                 btnCasiLograActionPerformed(evt);
             }
         });
-        getContentPane().add(btnCasiLogra, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 610, 100, 40));
+        getContentPane().add(btnCasiLogra, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 530, 100, 40));
 
         btnCumplioObjetivo.setBackground(new java.awt.Color(51, 204, 0));
         btnCumplioObjetivo.setBorderPainted(false);
@@ -139,10 +139,10 @@ public class MotricidadFina extends javax.swing.JFrame {
                 btnCumplioObjetivoActionPerformed(evt);
             }
         });
-        getContentPane().add(btnCumplioObjetivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 610, 100, 40));
+        getContentPane().add(btnCumplioObjetivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 530, 100, 40));
 
         jProgressBar1.setStringPainted(true);
-        getContentPane().add(jProgressBar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 670, 500, 40));
+        getContentPane().add(jProgressBar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 590, 500, 40));
 
         Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoAmarillo.jpg"))); // NOI18N
         getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));

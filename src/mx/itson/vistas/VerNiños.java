@@ -21,13 +21,16 @@ import static mx.itson.vistas.VerTerapeutas.idEdit;
 public class VerNiños extends javax.swing.JFrame {
 
     DAOAlumnoIMP dao = new DAOAlumnoIMP();
-    public static int idNiño;
+    public static int idNiño = 0;
     
     public VerNiños() {
         initComponents();
         setLocationRelativeTo(null);
+        setExtendedState(MAXIMIZED_BOTH);
         LlenarTabla();
     }
+    
+ 
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -52,7 +55,8 @@ public class VerNiños extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(jList1);
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setMaximumSize(new java.awt.Dimension(1280, 720));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         tbl_Niños =new JTable(){
@@ -99,7 +103,7 @@ public class VerNiños extends javax.swing.JFrame {
             tbl_Niños.getColumnModel().getColumn(4).setResizable(false);
         }
 
-        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 30, 1110, 560));
+        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 30, 1110, 490));
 
         lbl_volver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/regresar.png"))); // NOI18N
         lbl_volver.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -121,7 +125,7 @@ public class VerNiños extends javax.swing.JFrame {
                 lbl_actualizarNiñoMouseClicked(evt);
             }
         });
-        getContentPane().add(lbl_actualizarNiño, new org.netbeans.lib.awtextra.AbsoluteConstraints(1080, 600, -1, -1));
+        getContentPane().add(lbl_actualizarNiño, new org.netbeans.lib.awtextra.AbsoluteConstraints(1080, 520, -1, -1));
 
         lbl_edita.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         lbl_edita.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/editarNiño.png"))); // NOI18N
@@ -134,7 +138,7 @@ public class VerNiños extends javax.swing.JFrame {
                 lbl_editaMouseClicked(evt);
             }
         });
-        getContentPane().add(lbl_edita, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 600, -1, -1));
+        getContentPane().add(lbl_edita, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 520, -1, -1));
 
         lbl_borrarNiño.setBackground(new java.awt.Color(0, 0, 0));
         lbl_borrarNiño.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
@@ -148,7 +152,7 @@ public class VerNiños extends javax.swing.JFrame {
                 lbl_borrarNiñoMouseClicked(evt);
             }
         });
-        getContentPane().add(lbl_borrarNiño, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 600, -1, -1));
+        getContentPane().add(lbl_borrarNiño, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 520, -1, -1));
 
         lbl_agregarNiño.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         lbl_agregarNiño.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -162,7 +166,7 @@ public class VerNiños extends javax.swing.JFrame {
                 lbl_agregarNiñoMouseClicked(evt);
             }
         });
-        getContentPane().add(lbl_agregarNiño, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 600, -1, -1));
+        getContentPane().add(lbl_agregarNiño, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 520, -1, -1));
 
         Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoRosa.jpg"))); // NOI18N
         getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
@@ -174,6 +178,9 @@ public class VerNiños extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void lbl_agregarNiñoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_agregarNiñoMouseClicked
+
+
+
         AgregarNiños AN = new AgregarNiños();
         AN.setVisible(true);
         this.dispose();
@@ -217,8 +224,11 @@ public class VerNiños extends javax.swing.JFrame {
     }//GEN-LAST:event_lbl_editaMouseClicked
 
     private void lbl_actualizarNiñoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_actualizarNiñoMouseClicked
-     VerNiñosComplete abrir = new VerNiñosComplete();
+
+        VerNiños.idNiño=0;
+        VerNiñosComplete abrir = new VerNiñosComplete();
      abrir.setVisible(true);
+     dispose();
     }//GEN-LAST:event_lbl_actualizarNiñoMouseClicked
 
     private void lbl_volverMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_volverMouseClicked

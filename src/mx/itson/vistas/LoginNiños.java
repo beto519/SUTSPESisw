@@ -24,7 +24,7 @@ public class LoginNiños extends javax.swing.JFrame {
     public LoginNiños() {
         initComponents();
         LlenarTabla();
-        
+           this.setExtendedState(MAXIMIZED_BOTH);
         lbl_id.setVisible(false);
     }
 

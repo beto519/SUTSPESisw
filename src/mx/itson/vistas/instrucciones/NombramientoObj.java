@@ -134,10 +134,10 @@ DAOAlumnoIMP Alumno = new DAOAlumnoIMP();
         txtProcedimiento.setColumns(20);
         txtProcedimiento.setFont(new java.awt.Font("Dialog", 0, 17)); // NOI18N
         txtProcedimiento.setRows(5);
-        txtProcedimiento.setText("PASO 1. Colóquese frente al niño. Seleccione un cuaderno de imágenes comunes, por ejemplo, frutas, \nverduras, medios de transporte, objetos de la casa, etc…\nPASO 2. La imagen debe ser del tamaño aproximado a un cuarto de hoja de tamaño carta.\nPASO 3. Llame al niño por su nombre y diga: “¿Qué es esto?\nPASO 4. La respuesta correcta del niño es que nombre el objeto.\nPASO 5. Si el niño no nombra el objeto, vuelva a realizar la indicación y apoye físicamente moviendo la boca\ndel niño y los labios acorde al movimiento natural para decir la palabra.\nPASO 6. Disminuya el apoyo en forma gradual hasta lograr el criterio.\nPASO 7. Refuerce cada respuesta del niño.\n\n");
+        txtProcedimiento.setText("PASO 1. Colóquese frente al niño. Seleccione un cuaderno de imágenes comunes, por ejemplo, frutas, \nverduras, medios de transporte, objetos de la casa, etc…\nPASO 2. La imagen debe ser del tamaño aproximado a un cuarto de hoja de tamaño carta.\nPASO 3. Llame al niño por su nombre y diga: “¿Qué es esto?\nPASO 4. La respuesta correcta del niño es que nombre el objeto.\nPASO 5. Si el niño no nombra el objeto, vuelva a realizar la indicación y apoye físicamente moviendo la boca\ndel niño y los labios acorde al movimiento natural para decir la palabra.\nPASO 6. Disminuya el apoyo en forma gradual hasta lograr el criterio.\nPASO 7. Refuerce cada respuesta del niño.");
         Procedimiento.setViewportView(txtProcedimiento);
 
-        getContentPane().add(Procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 220, 1130, 270));
+        getContentPane().add(Procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 220, 1130, 230));
 
         btnRequiereApoyo.setBackground(new java.awt.Color(255, 51, 51));
         btnRequiereApoyo.setBorderPainted(false);
@@ -146,7 +146,7 @@ DAOAlumnoIMP Alumno = new DAOAlumnoIMP();
                 btnRequiereApoyoActionPerformed(evt);
             }
         });
-        getContentPane().add(btnRequiereApoyo, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 560, 100, 40));
+        getContentPane().add(btnRequiereApoyo, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 460, 100, 40));
 
         btnCasiLogra.setBackground(new java.awt.Color(255, 255, 102));
         btnCasiLogra.setBorderPainted(false);
@@ -155,7 +155,7 @@ DAOAlumnoIMP Alumno = new DAOAlumnoIMP();
                 btnCasiLograActionPerformed(evt);
             }
         });
-        getContentPane().add(btnCasiLogra, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 560, 100, 40));
+        getContentPane().add(btnCasiLogra, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 460, 100, 40));
 
         btnCumplioObjetivo.setBackground(new java.awt.Color(51, 204, 0));
         btnCumplioObjetivo.setBorderPainted(false);
@@ -164,10 +164,10 @@ DAOAlumnoIMP Alumno = new DAOAlumnoIMP();
                 btnCumplioObjetivoActionPerformed(evt);
             }
         });
-        getContentPane().add(btnCumplioObjetivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 560, 100, 40));
+        getContentPane().add(btnCumplioObjetivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 460, 100, 40));
 
         jProgressBar1.setStringPainted(true);
-        getContentPane().add(jProgressBar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 620, 500, 40));
+        getContentPane().add(jProgressBar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 520, 500, 40));
 
         Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoAmarillo.jpg"))); // NOI18N
         getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));

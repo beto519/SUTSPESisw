@@ -44,6 +44,7 @@ public class EditarTerapeuta extends javax.swing.JFrame {
         setLocationRelativeTo(null);
         RefrescarTerapeutas();
         lbl_id.setText(vt.idEdit+"");
+        setExtendedState(MAXIMIZED_BOTH);
     }
     
     public void EditarTerapeuta() {
@@ -203,33 +204,33 @@ public class EditarTerapeuta extends javax.swing.JFrame {
                 lbl_AddTerapeutaMouseClicked(evt);
             }
         });
-        getContentPane().add(lbl_AddTerapeuta, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 540, -1, -1));
+        getContentPane().add(lbl_AddTerapeuta, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 470, -1, -1));
 
         lblNombre.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         lblNombre.setText("Nombre");
-        getContentPane().add(lblNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 120, 220, 50));
-        getContentPane().add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 160, 380, 50));
+        getContentPane().add(lblNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 50, 220, 50));
+        getContentPane().add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 90, 380, 50));
 
         lblPuesto.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         lblPuesto.setText("Puesto");
-        getContentPane().add(lblPuesto, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 220, 220, 50));
-        getContentPane().add(txtPuesto, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 260, 380, 50));
+        getContentPane().add(lblPuesto, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 150, 220, 50));
+        getContentPane().add(txtPuesto, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 190, 380, 50));
 
         lblCorreo.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         lblCorreo.setText("Correo");
-        getContentPane().add(lblCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 330, 220, 50));
-        getContentPane().add(txtCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 370, 380, 50));
-        getContentPane().add(txtUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 480, 380, 50));
+        getContentPane().add(lblCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 260, 220, 50));
+        getContentPane().add(txtCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 300, 380, 50));
+        getContentPane().add(txtUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 410, 380, 50));
 
         lblContraseña.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         lblContraseña.setText("Contraseña");
-        getContentPane().add(lblContraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 540, 220, 50));
+        getContentPane().add(lblContraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 470, 220, 50));
 
         lblUsuario1.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         lblUsuario1.setText("Usuario");
-        getContentPane().add(lblUsuario1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 440, 220, 50));
-        getContentPane().add(txtContraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 580, 380, 50));
-        getContentPane().add(lbl_imagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 40, 450, 440));
+        getContentPane().add(lblUsuario1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 370, 220, 50));
+        getContentPane().add(txtContraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 510, 380, 50));
+        getContentPane().add(lbl_imagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 140, 380, 290));
 
         lbl_subirImagen.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         lbl_subirImagen.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -244,7 +245,7 @@ public class EditarTerapeuta extends javax.swing.JFrame {
                 lbl_subirImagenMouseClicked(evt);
             }
         });
-        getContentPane().add(lbl_subirImagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 550, -1, -1));
+        getContentPane().add(lbl_subirImagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 470, -1, -1));
 
         Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoAzul.jpg"))); // NOI18N
         getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));

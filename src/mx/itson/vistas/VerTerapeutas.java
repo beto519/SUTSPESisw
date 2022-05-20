@@ -26,6 +26,8 @@ DAOTerapeutaIMP dao = new DAOTerapeutaIMP();
         LlenarTabla();
         setLocationRelativeTo(null);
         lbl_id.setVisible(false);
+           setExtendedState(MAXIMIZED_BOTH);
+        buscarRolTerapeuta();
     }
     
     public static int idEdit = 0;
@@ -73,7 +75,8 @@ DAOTerapeutaIMP dao = new DAOTerapeutaIMP();
         lbl_id = new javax.swing.JLabel();
         Fondo = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setMaximumSize(new java.awt.Dimension(1280, 720));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         tblTerapeutas =new JTable(){
@@ -95,7 +98,7 @@ DAOTerapeutaIMP dao = new DAOTerapeutaIMP();
         });
         jScrollPane1.setViewportView(tblTerapeutas);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 30, 900, 540));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 30, 900, 410));
 
         lbl_AddTerapeuta.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         lbl_AddTerapeuta.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -109,7 +112,7 @@ DAOTerapeutaIMP dao = new DAOTerapeutaIMP();
                 lbl_AddTerapeutaMouseClicked(evt);
             }
         });
-        getContentPane().add(lbl_AddTerapeuta, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 590, -1, -1));
+        getContentPane().add(lbl_AddTerapeuta, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 440, -1, -1));
 
         lbl_EliminarTerapeuta.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         lbl_EliminarTerapeuta.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -123,7 +126,7 @@ DAOTerapeutaIMP dao = new DAOTerapeutaIMP();
                 lbl_EliminarTerapeutaMouseClicked(evt);
             }
         });
-        getContentPane().add(lbl_EliminarTerapeuta, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 590, -1, -1));
+        getContentPane().add(lbl_EliminarTerapeuta, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 440, -1, -1));
 
         lbl_ActualizarLista.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         lbl_ActualizarLista.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -137,7 +140,7 @@ DAOTerapeutaIMP dao = new DAOTerapeutaIMP();
                 lbl_ActualizarListaMouseClicked(evt);
             }
         });
-        getContentPane().add(lbl_ActualizarLista, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 590, -1, -1));
+        getContentPane().add(lbl_ActualizarLista, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 440, -1, -1));
 
         lbl_editarTerapeuta.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         lbl_editarTerapeuta.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -151,7 +154,7 @@ DAOTerapeutaIMP dao = new DAOTerapeutaIMP();
                 lbl_editarTerapeutaMouseClicked(evt);
             }
         });
-        getContentPane().add(lbl_editarTerapeuta, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 590, -1, -1));
+        getContentPane().add(lbl_editarTerapeuta, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 440, -1, -1));
 
         lbl_Volver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/volverazul.png"))); // NOI18N
         lbl_Volver.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -175,8 +178,33 @@ DAOTerapeutaIMP dao = new DAOTerapeutaIMP();
         dispose();
     }//GEN-LAST:event_lbl_VolverMouseClicked
 
+    
+    private void buscarRolTerapeuta(){
+    IniciarSesion terapeuta = new IniciarSesion();
+    String usuario = terapeuta.empU;
+    dao.obtenerUser(usuario);
+    
+    Terapeuta t = new Terapeuta();
+    t = dao.obtenerUser(usuario);
+    t.getPuesto();
+        if (t.getPuesto().equals("Admin")) {
+            
+        }else{
+        
+        this.lbl_AddTerapeuta.setVisible(false);
+        this.lbl_editarTerapeuta.setVisible(false);
+        this.lbl_EliminarTerapeuta.setVisible(false);
+        }
+    
+    
+    
+    }
+    
     private void lbl_AddTerapeutaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_AddTerapeutaMouseClicked
 
+        
+        
+        
 AgregarTerapeuta abrir = new AgregarTerapeuta();
 abrir.setVisible(true);
 dispose();

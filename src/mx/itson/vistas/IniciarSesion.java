@@ -17,6 +17,7 @@ import mx.itson.interfaces.DAOTerapeutaIMP;
  */
 public class IniciarSesion extends javax.swing.JFrame {
 Terapeuta terapeuta = new Terapeuta();
+     public static String empU = "", empC = "";
     /**
      * Creates new form IniciarSesion
      */
@@ -34,7 +35,7 @@ Terapeuta terapeuta = new Terapeuta();
         String user = txtUsuario.getText();
         String password = String.valueOf(txtContraseña.getPassword());
 
-        String empU, empC;
+ 
 
         try {
             terapeuta = terapeutas.obtenerPorUsuario(user, password);

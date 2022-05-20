@@ -69,7 +69,7 @@ public ImitacionVocales() {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         LabelLogo2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/sutspes  en png.png"))); // NOI18N
-        getContentPane().add(LabelLogo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 0, -1, -1));
+        getContentPane().add(LabelLogo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 0, -1, -1));
 
         LabelLogo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/CENTRO DE APOYO EDUCATIVO INFANTIL EN PNG.png"))); // NOI18N
         LabelLogo1.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -79,46 +79,47 @@ public ImitacionVocales() {
         });
         getContentPane().add(LabelLogo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
+        jTextArea2.setEditable(false);
         jTextArea2.setColumns(20);
         jTextArea2.setFont(new java.awt.Font("Dialog", 0, 20)); // NOI18N
         jTextArea2.setRows(5);
         jTextArea2.setText("PASO 1. Colóquese sentado frente al niño.\n\nPASO 2. Llame al niño por su nombre y de la instrucción: “di A”.\n\nPASO 3. Si el niño responde A, refuerce inmediatamente.\n\nPASO 4. Si el niño no responde correctamente, de apoyo físico modelando el sonido de la vocal en su boca.\n\nPASO 5. Repita el procedimiento con cada una de las vocales.\n\nPASO 6. Disminuya el apoyo gradualmente hasta cumplir el criterio.\n");
         jScrollPane2.setViewportView(jTextArea2);
 
-        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 240, 1010, 320));
+        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 170, 1010, 320));
 
         procedimiento1.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         procedimiento1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         procedimiento1.setText("PROCEDIMIENTO"); // NOI18N
         procedimiento1.setToolTipText("");
         procedimiento1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(procedimiento1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 210, 1010, 30));
+        getContentPane().add(procedimiento1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 140, 1010, 30));
 
         Elaboro.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         Elaboro.setText("Mtro. Manuel Esquer Sumuano");
         Elaboro.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(Elaboro, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 170, 560, 40));
+        getContentPane().add(Elaboro, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 100, 560, 40));
 
         MtroManuel1.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         MtroManuel1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MtroManuel1.setText(" Elaboró:"); // NOI18N
         MtroManuel1.setToolTipText("");
         MtroManuel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(MtroManuel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 170, 450, 40));
+        getContentPane().add(MtroManuel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 100, 450, 40));
 
         NombreDelPrograma.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         NombreDelPrograma.setText(" Nombre del Programa:");
         NombreDelPrograma.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(NombreDelPrograma, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 130, 450, 40));
+        getContentPane().add(NombreDelPrograma, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 60, 450, 40));
 
         ReconocimientoCorporal.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         ReconocimientoCorporal.setText("Imitacion de vocales");
         ReconocimientoCorporal.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(ReconocimientoCorporal, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 130, 560, 40));
+        getContentPane().add(ReconocimientoCorporal, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 60, 560, 40));
 
         jLabel2.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         jLabel2.setText("Programa ");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 70, 190, 60));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 0, 190, 60));
 
         btn_LoHace.setBackground(new java.awt.Color(0, 255, 51));
         btn_LoHace.setText("Lo hace");
@@ -132,7 +133,7 @@ public ImitacionVocales() {
                 btn_LoHaceActionPerformed(evt);
             }
         });
-        getContentPane().add(btn_LoHace, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 590, -1, -1));
+        getContentPane().add(btn_LoHace, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 520, -1, -1));
 
         btn_NoLoHace.setBackground(new java.awt.Color(255, 0, 0));
         btn_NoLoHace.setForeground(new java.awt.Color(255, 255, 255));
@@ -142,7 +143,7 @@ public ImitacionVocales() {
                 btn_NoLoHaceMouseClicked(evt);
             }
         });
-        getContentPane().add(btn_NoLoHace, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 590, -1, -1));
+        getContentPane().add(btn_NoLoHace, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 520, -1, -1));
 
         btn_LoHaceConAyuda.setBackground(new java.awt.Color(255, 255, 0));
         btn_LoHaceConAyuda.setText("Lo Hace Con Ayuda");
@@ -156,14 +157,14 @@ public ImitacionVocales() {
                 btn_LoHaceConAyudaActionPerformed(evt);
             }
         });
-        getContentPane().add(btn_LoHaceConAyuda, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 590, -1, -1));
+        getContentPane().add(btn_LoHaceConAyuda, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 520, -1, -1));
 
         PB_ProgresoNiño.setStringPainted(true);
-        getContentPane().add(PB_ProgresoNiño, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 650, 1010, 70));
+        getContentPane().add(PB_ProgresoNiño, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 580, 1010, 40));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoAzul.jpg"))); // NOI18N
         jLabel3.setText("jLabel1");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 760));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

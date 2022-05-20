@@ -82,7 +82,7 @@ public class AdiosConMano extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         LabelLogo2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/sutspes  en png.png"))); // NOI18N
-        getContentPane().add(LabelLogo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 10, -1, -1));
+        getContentPane().add(LabelLogo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 0, -1, -1));
 
         LabelLogo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/CENTRO DE APOYO EDUCATIVO INFANTIL EN PNG.png"))); // NOI18N
         LabelLogo1.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -95,31 +95,31 @@ public class AdiosConMano extends javax.swing.JFrame {
         Elaboro1.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         Elaboro1.setText("Mtro. Manuel Esquer Sumuano");
         Elaboro1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(Elaboro1, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 170, 560, 40));
+        getContentPane().add(Elaboro1, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 110, 560, 40));
 
         ReconocimientoCorporal1.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         ReconocimientoCorporal1.setText("Enseñar a decir adiós con la mano");
         ReconocimientoCorporal1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(ReconocimientoCorporal1, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 130, 560, 40));
+        getContentPane().add(ReconocimientoCorporal1, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 70, 560, 40));
 
         procedimiento2.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         procedimiento2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         procedimiento2.setText("PROCEDIMIENTO"); // NOI18N
         procedimiento2.setToolTipText("");
         procedimiento2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(procedimiento2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 210, 1010, 30));
+        getContentPane().add(procedimiento2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 150, 1010, 30));
 
         NombreDelPrograma1.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         NombreDelPrograma1.setText(" Nombre del Programa:");
         NombreDelPrograma1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(NombreDelPrograma1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 130, 450, 40));
+        getContentPane().add(NombreDelPrograma1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 70, 450, 40));
 
         MtroManuel2.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         MtroManuel2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MtroManuel2.setText(" Elaboró:"); // NOI18N
         MtroManuel2.setToolTipText("");
         MtroManuel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(MtroManuel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 170, 450, 40));
+        getContentPane().add(MtroManuel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 110, 450, 40));
 
         jTextArea3.setEditable(false);
         jTextArea3.setColumns(20);
@@ -128,7 +128,7 @@ public class AdiosConMano extends javax.swing.JFrame {
         jTextArea3.setText("PASO 1. Cuando vaya a despedirse de las personas.\n\nPASO 2. Llámelo por su nombre y dé la instrucción: “di adiós”.\n\nPASO 3. La respuesta correcta es mover la mano diciendo adiós.\n\nPASO 4. Si da la respuesta correcta refuerce.\n\nPASO 5. Si no se da la respuesta correcta ofrezca apoyo físico.\n\nPASO 6. Disminuya el apoyo gradualmente hasta cumplir el criterio.");
         jScrollPane3.setViewportView(jTextArea3);
 
-        getContentPane().add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 240, 1010, 340));
+        getContentPane().add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 180, 1010, 310));
 
         btnRequiereApoyo.setBackground(new java.awt.Color(255, 51, 51));
         btnRequiereApoyo.setBorderPainted(false);
@@ -137,7 +137,7 @@ public class AdiosConMano extends javax.swing.JFrame {
                 btnRequiereApoyoActionPerformed(evt);
             }
         });
-        getContentPane().add(btnRequiereApoyo, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 610, 100, 40));
+        getContentPane().add(btnRequiereApoyo, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 520, 100, 40));
 
         btnCumplioObjetivo.setBackground(new java.awt.Color(51, 204, 0));
         btnCumplioObjetivo.setBorderPainted(false);
@@ -146,7 +146,7 @@ public class AdiosConMano extends javax.swing.JFrame {
                 btnCumplioObjetivoActionPerformed(evt);
             }
         });
-        getContentPane().add(btnCumplioObjetivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 610, 100, 40));
+        getContentPane().add(btnCumplioObjetivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 520, 100, 40));
 
         btnCasiLogra.setBackground(new java.awt.Color(255, 255, 102));
         btnCasiLogra.setBorderPainted(false);
@@ -155,14 +155,14 @@ public class AdiosConMano extends javax.swing.JFrame {
                 btnCasiLograActionPerformed(evt);
             }
         });
-        getContentPane().add(btnCasiLogra, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 610, 100, 40));
+        getContentPane().add(btnCasiLogra, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 520, 100, 40));
 
         jProgressBar1.setStringPainted(true);
-        getContentPane().add(jProgressBar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 670, 500, 40));
+        getContentPane().add(jProgressBar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 590, 500, 40));
 
         jLabel4.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         jLabel4.setText("Programa ");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 70, 190, 60));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 10, 190, 60));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoAzul.jpg"))); // NOI18N
         jLabel6.setMaximumSize(new java.awt.Dimension(1280, 720));

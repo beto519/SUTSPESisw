@@ -149,7 +149,7 @@ public class AtencionCara extends javax.swing.JFrame {
         txtProcedimiento.setText("PASO 1. Sentarse frente a frente.\n\nPASO 2. Llamarlo por su nombre y dar la indicación “Mírame”.\n\nPASO 3. La respuesta correcta del niño debe ser mirar a los ojos del terapeuta.\n\nPASO 4. Si el niño no da la respuesta correcta, en dos ocasiones que haya intentado, \ncomience a ofrecer apoyos.\n\nPASO 5. Seleccione una golosina pequeña visible que pueda tomar entre sus dedos pulgar e índice, \nmuéstrelo al niño para que haga contacto visual con la golosina, luego llévela al inicio de su nariz entre sus \nojos, de tal manera que el niño al mirar la golosina lo estará viendo a usted a los ojos. Al mismo tiempo debe \nllamarlo por su nombre y decir “Mírame”.\n\nPASO 6. Refuerce cada conducta correcta.\n\nPASO 7. Repita el procedimiento hasta eliminar el apoyo y cumplir el criterio.\n\n");
         Procedimiento.setViewportView(txtProcedimiento);
 
-        getContentPane().add(Procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 170, 1000, 500));
+        getContentPane().add(Procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 170, 1000, 350));
 
         btn_LoHace.setBackground(new java.awt.Color(0, 255, 51));
         btn_LoHace.setText("Lo hace");
@@ -163,7 +163,7 @@ public class AtencionCara extends javax.swing.JFrame {
                 btn_LoHaceActionPerformed(evt);
             }
         });
-        getContentPane().add(btn_LoHace, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 690, -1, -1));
+        getContentPane().add(btn_LoHace, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 540, -1, -1));
 
         btn_NoLoHace.setBackground(new java.awt.Color(255, 0, 0));
         btn_NoLoHace.setForeground(new java.awt.Color(255, 255, 255));
@@ -174,7 +174,7 @@ public class AtencionCara extends javax.swing.JFrame {
                 btn_NoLoHaceMouseClicked(evt);
             }
         });
-        getContentPane().add(btn_NoLoHace, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 690, -1, -1));
+        getContentPane().add(btn_NoLoHace, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 540, -1, -1));
 
         btn_LoHaceConAyuda.setBackground(new java.awt.Color(255, 255, 0));
         btn_LoHaceConAyuda.setText("Lo Hace Con Ayuda");
@@ -188,13 +188,13 @@ public class AtencionCara extends javax.swing.JFrame {
                 btn_LoHaceConAyudaActionPerformed(evt);
             }
         });
-        getContentPane().add(btn_LoHaceConAyuda, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 690, -1, -1));
+        getContentPane().add(btn_LoHaceConAyuda, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 540, -1, -1));
 
         PB_ProgresoNiño.setStringPainted(true);
-        getContentPane().add(PB_ProgresoNiño, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 750, 1010, 30));
+        getContentPane().add(PB_ProgresoNiño, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 580, 1010, 30));
 
         Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoAmarillo.jpg"))); // NOI18N
-        getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 830));
+        getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, 1280, 810));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

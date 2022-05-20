@@ -113,10 +113,10 @@ public class SeguimientoInstrucciones extends javax.swing.JFrame {
         txtProcedimiento.setColumns(20);
         txtProcedimiento.setFont(new java.awt.Font("Dialog", 0, 17)); // NOI18N
         txtProcedimiento.setRows(5);
-        txtProcedimiento.setText("PASO 1. Seleccione la lista de instrucciones.\nPASO 2. Dé la instrucción en 3 ocasiones cada una de las instrucciones de la lista.\nPASO 3. De un reforzador por cada respuesta correcta.\nPASO 4. Si el niño no realiza las instrucciones dé apoyo.\nPASO 5. El apoyo consiste en ayudar físicamente al niño para que haga las instrucciones, por ejemplo, \n“tirar la basura”, se toma al niño de sus manos para que tome el objeto que va a tirar, luego se le conduce al \nbote de basura y después se le abre la mano para que tire la basura.\nPASO 6. Disminuya gradualmente los apoyos hasta cumplir el criterio.\n\n");
+        txtProcedimiento.setText("PASO 1. Seleccione la lista de instrucciones.\nPASO 2. Dé la instrucción en 3 ocasiones cada una de las instrucciones de la lista.\nPASO 3. De un reforzador por cada respuesta correcta.\nPASO 4. Si el niño no realiza las instrucciones dé apoyo.\nPASO 5. El apoyo consiste en ayudar físicamente al niño para que haga las instrucciones, por ejemplo, \n“tirar la basura”, se toma al niño de sus manos para que tome el objeto que va a tirar, luego se le conduce al \nbote de basura y después se le abre la mano para que tire la basura.\nPASO 6. Disminuya gradualmente los apoyos hasta cumplir el criterio.\n");
         Procedimiento.setViewportView(txtProcedimiento);
 
-        getContentPane().add(Procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 210, 1130, 340));
+        getContentPane().add(Procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 210, 1130, 230));
 
         Btn_Instrucciones.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         Btn_Instrucciones.setText("Ver Instrucciones");
@@ -126,10 +126,15 @@ public class SeguimientoInstrucciones extends javax.swing.JFrame {
                 Btn_InstruccionesMouseClicked(evt);
             }
         });
-        getContentPane().add(Btn_Instrucciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 660, 200, 50));
+        Btn_Instrucciones.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Btn_InstruccionesActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Btn_Instrucciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 560, 200, 50));
 
         jProgressBar1.setStringPainted(true);
-        getContentPane().add(jProgressBar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 560, 500, 40));
+        getContentPane().add(jProgressBar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 450, 500, 40));
 
         btnRequiereApoyo.setBackground(new java.awt.Color(255, 51, 51));
         btnRequiereApoyo.setBorderPainted(false);
@@ -138,7 +143,7 @@ public class SeguimientoInstrucciones extends javax.swing.JFrame {
                 btnRequiereApoyoActionPerformed(evt);
             }
         });
-        getContentPane().add(btnRequiereApoyo, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 610, 100, 40));
+        getContentPane().add(btnRequiereApoyo, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 500, 100, 40));
 
         btnCasiLogra.setBackground(new java.awt.Color(255, 255, 102));
         btnCasiLogra.setBorderPainted(false);
@@ -147,7 +152,7 @@ public class SeguimientoInstrucciones extends javax.swing.JFrame {
                 btnCasiLograActionPerformed(evt);
             }
         });
-        getContentPane().add(btnCasiLogra, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 610, 100, 40));
+        getContentPane().add(btnCasiLogra, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 500, 100, 40));
 
         btnCumplioObjetivo.setBackground(new java.awt.Color(51, 204, 0));
         btnCumplioObjetivo.setBorderPainted(false);
@@ -156,7 +161,7 @@ public class SeguimientoInstrucciones extends javax.swing.JFrame {
                 btnCumplioObjetivoActionPerformed(evt);
             }
         });
-        getContentPane().add(btnCumplioObjetivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 610, 100, 40));
+        getContentPane().add(btnCumplioObjetivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 500, 100, 40));
 
         Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoRosa.jpg"))); // NOI18N
         getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
@@ -206,6 +211,10 @@ public class SeguimientoInstrucciones extends javax.swing.JFrame {
         abrir.setVisible(true);
         dispose();
     }//GEN-LAST:event_LabelLogo1MouseClicked
+
+    private void Btn_InstruccionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_InstruccionesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Btn_InstruccionesActionPerformed
 
     private void niño() {
         Alumno alu = Alumno.obtenerPorId(ln.claveNiño);

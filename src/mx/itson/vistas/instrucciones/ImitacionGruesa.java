@@ -73,7 +73,7 @@ public class ImitacionGruesa extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         LabelLogo2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/sutspes  en png.png"))); // NOI18N
-        getContentPane().add(LabelLogo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 50, -1, -1));
+        getContentPane().add(LabelLogo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 0, -1, -1));
 
         LabelLogo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/CENTRO DE APOYO EDUCATIVO INFANTIL EN PNG.png"))); // NOI18N
         LabelLogo1.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -90,7 +90,7 @@ public class ImitacionGruesa extends javax.swing.JFrame {
         jTextArea1.setText("Extender el brazo derecho al frente.\nExtender el brazo izquierdo al frente.\nExtender ambos brazos al frente.\nExtender el brazo derecho lateralmente.\nExtender el brazo izquierdo lateralmente.\nExtender ambos brazos lateralmente.\nMover negativamente la cabeza.\nAplaudir.\nTaparse el ojo derecho con la mano derecha.\nTaparse el ojo izquierdo con la mano izquierda.\nTaparse ambos ojos con ambas manos.\nPararse.\nAgacharse.\nFlexionar la pierna izquierda.\nFlexionar la pierna derecha.\nBrincar.\nAbrir y cerrar la puerta.\nSentarse.\nBotar una pelota.\nTocar la puerta.\nTirar un objeto.\nRecoger un objeto.\nAcomodar la silla.\nGuardar en una bolsa.\nTocarse las rodillas.\nTocarse las orejas.\n Tocarse la cabeza con ambas manos.\nAcostarse.");
         jScrollPane1.setViewportView(jTextArea1);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 400, 1010, 310));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 400, 1010, 160));
 
         procedimiento.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         procedimiento.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -148,7 +148,7 @@ public class ImitacionGruesa extends javax.swing.JFrame {
                 btn_LoHaceMouseClicked(evt);
             }
         });
-        getContentPane().add(btn_LoHace, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 740, -1, -1));
+        getContentPane().add(btn_LoHace, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 580, -1, -1));
 
         btn_NoLoHace.setBackground(new java.awt.Color(255, 0, 0));
         btn_NoLoHace.setForeground(new java.awt.Color(255, 255, 255));
@@ -158,7 +158,7 @@ public class ImitacionGruesa extends javax.swing.JFrame {
                 btn_NoLoHaceMouseClicked(evt);
             }
         });
-        getContentPane().add(btn_NoLoHace, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 740, -1, -1));
+        getContentPane().add(btn_NoLoHace, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 580, -1, -1));
 
         btn_LoHaceConAyuda.setBackground(new java.awt.Color(255, 255, 0));
         btn_LoHaceConAyuda.setText("Lo Hace Con Ayuda");
@@ -172,10 +172,10 @@ public class ImitacionGruesa extends javax.swing.JFrame {
                 btn_LoHaceConAyudaActionPerformed(evt);
             }
         });
-        getContentPane().add(btn_LoHaceConAyuda, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 740, -1, -1));
+        getContentPane().add(btn_LoHaceConAyuda, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 580, -1, -1));
 
         PB_ProgresoNiño.setStringPainted(true);
-        getContentPane().add(PB_ProgresoNiño, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 800, 1010, 30));
+        getContentPane().add(PB_ProgresoNiño, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 620, 1010, 30));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoAzul.jpg"))); // NOI18N
         jLabel3.setText("jLabel1");

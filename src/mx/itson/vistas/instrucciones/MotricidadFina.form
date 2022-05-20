@@ -165,7 +165,7 @@
       </AuxValues>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="190" y="200" width="910" height="390"/>
+          <AbsoluteConstraints x="190" y="200" width="910" height="320"/>
         </Constraint>
       </Constraints>
 
@@ -179,7 +179,7 @@
               <Font name="Dialog" size="20" style="0"/>
             </Property>
             <Property name="rows" type="int" value="5"/>
-            <Property name="text" type="java.lang.String" value="Para mejorar la motricidad fina realice los siguientes ejercicios:&#xa;&#xa;1. Colocar pinzas de la ropa en la orilla de alg&#xfa;n pl&#xe1;stico.&#xa;&#xa;2. Ensartar un mecatito a trav&#xe9;s de los orificios de figuras o tablas.&#xa;&#xa;3. Colocar canicas dentro de un bote, una por una.&#xa;&#xa;4. Hacer c&#xed;rculos grandes con l&#xe1;piz o crayolas.&#xa;&#xa;5. Pegar bolitas de papel.&#xa;&#xa;"/>
+            <Property name="text" type="java.lang.String" value="Para mejorar la motricidad fina realice los siguientes ejercicios:&#xa;&#xa;1. Colocar pinzas de la ropa en la orilla de alg&#xfa;n pl&#xe1;stico.&#xa;&#xa;2. Ensartar un mecatito a trav&#xe9;s de los orificios de figuras o tablas.&#xa;&#xa;3. Colocar canicas dentro de un bote, una por una.&#xa;&#xa;4. Hacer c&#xed;rculos grandes con l&#xe1;piz o crayolas.&#xa;&#xa;5. Pegar bolitas de papel."/>
           </Properties>
         </Component>
       </SubComponents>
@@ -196,7 +196,7 @@
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="200" y="610" width="100" height="40"/>
+          <AbsoluteConstraints x="210" y="530" width="100" height="40"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -212,7 +212,7 @@
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="590" y="610" width="100" height="40"/>
+          <AbsoluteConstraints x="600" y="530" width="100" height="40"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -228,7 +228,7 @@
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="980" y="610" width="100" height="40"/>
+          <AbsoluteConstraints x="990" y="530" width="100" height="40"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -238,7 +238,7 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="390" y="670" width="500" height="40"/>
+          <AbsoluteConstraints x="400" y="590" width="500" height="40"/>
         </Constraint>
       </Constraints>
     </Component>

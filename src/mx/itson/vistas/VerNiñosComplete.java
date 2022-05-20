@@ -22,10 +22,11 @@ public class VerNiñosComplete extends javax.swing.JFrame {
 
     DAOAlumnoIMP dao = new DAOAlumnoIMP();
     public static int idNiño;
-    
+
     public VerNiñosComplete() {
         initComponents();
         setLocationRelativeTo(null);
+        setExtendedState(MAXIMIZED_BOTH);
         LlenarTabla();
     }
 
@@ -40,8 +41,8 @@ public class VerNiñosComplete extends javax.swing.JFrame {
         lbl_volver = new javax.swing.JLabel();
         lbl_edita = new javax.swing.JLabel();
         lbl_borrarNiño = new javax.swing.JLabel();
-        Fondo = new javax.swing.JLabel();
         lbl_id = new javax.swing.JLabel();
+        Fondo = new javax.swing.JLabel();
 
         jList1.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
@@ -97,7 +98,7 @@ public class VerNiñosComplete extends javax.swing.JFrame {
             tbl_Niños.getColumnModel().getColumn(4).setResizable(false);
         }
 
-        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 30, 1110, 560));
+        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 30, 1110, 480));
 
         lbl_volver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/regresar.png"))); // NOI18N
         lbl_volver.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -119,7 +120,7 @@ public class VerNiñosComplete extends javax.swing.JFrame {
                 lbl_editaMouseClicked(evt);
             }
         });
-        getContentPane().add(lbl_edita, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 600, -1, -1));
+        getContentPane().add(lbl_edita, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 520, -1, -1));
 
         lbl_borrarNiño.setBackground(new java.awt.Color(0, 0, 0));
         lbl_borrarNiño.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
@@ -133,26 +134,25 @@ public class VerNiñosComplete extends javax.swing.JFrame {
                 lbl_borrarNiñoMouseClicked(evt);
             }
         });
-        getContentPane().add(lbl_borrarNiño, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 600, -1, -1));
-
-        Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoRosa.jpg"))); // NOI18N
-        getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
+        getContentPane().add(lbl_borrarNiño, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 520, -1, -1));
 
         lbl_id.setText("jLabel1");
-        getContentPane().add(lbl_id, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 20, -1, -1));
+        getContentPane().add(lbl_id, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 580, -1, -1));
+
+        Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoRosa.jpg"))); // NOI18N
+        getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 700));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void tbl_NiñosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tbl_NiñosMouseClicked
-         int row = tbl_Niños.getSelectedRow();
+        int row = tbl_Niños.getSelectedRow();
         int id = (int) tbl_Niños.getModel().getValueAt(row, 0);
         lbl_id.setText(id + "");
-        
+
         idNiño = id;
-        
-        
-        if(evt.getClickCount() == 2){
+
+        if (evt.getClickCount() == 2) {
             MostrarNiño MN = new MostrarNiño();
             MN.setVisible(true);
             this.dispose();
@@ -160,55 +160,55 @@ public class VerNiñosComplete extends javax.swing.JFrame {
     }//GEN-LAST:event_tbl_NiñosMouseClicked
 
     private void lbl_borrarNiñoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_borrarNiñoMouseClicked
-       int respuesta = JOptionPane.showConfirmDialog(this, "Seguro que quieres eliminar este/a Niño?", "Confirmar", 
-        JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
-       
-       if(respuesta == JOptionPane.YES_OPTION){
-        dao.eliminar(Integer.parseInt(lbl_id.getText()));
-        LlenarTabla();
-        
-       }
-       if(respuesta == JOptionPane.NO_OPTION){
-           JOptionPane.showMessageDialog(this, "¡¡Ten Cuidado!!");
-       }
+        int respuesta = JOptionPane.showConfirmDialog(this, "Seguro que quieres eliminar este/a Niño?", "Confirmar",
+                JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+
+        if (respuesta == JOptionPane.YES_OPTION) {
+            dao.eliminar(Integer.parseInt(this.lbl_id.getText()));
+            LlenarTabla();
+
+        }
+        if (respuesta == JOptionPane.NO_OPTION) {
+            JOptionPane.showMessageDialog(this, "¡¡Ten Cuidado!!");
+        }
     }//GEN-LAST:event_lbl_borrarNiñoMouseClicked
 
     private void lbl_editaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_editaMouseClicked
         EditarNiños EditNino = new EditarNiños();
         EditNino.setVisible(true);
         this.dispose();
-        
+
     }//GEN-LAST:event_lbl_editaMouseClicked
 
     private void lbl_volverMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_volverMouseClicked
-        Menu abrir = new Menu();
+        VerNiños abrir = new VerNiños();
         abrir.setVisible(true);
         dispose();
     }//GEN-LAST:event_lbl_volverMouseClicked
     public static int idEdit = 0;
-   
-    private void LlenarTabla(){
-    List<Alumno> alumno = dao.ObtenerNiñosCompletado();
-    DefaultTableModel model = new DefaultTableModel();
-    
-    model.addColumn("ID");
-    model.addColumn("Nombre Completo");
-    model.addColumn("Nivel Actual");
-    model.addColumn("Edad");
-    model.addColumn("Nombre Del Tutor");
-    model.addColumn("Telefono");
-    
-    for(int i = 0; i < alumno.size(); i++){
-         model.addRow(
-                 new Object[]{alumno.get(i).getIdAlumno(), alumno.get(i).getNombre(), alumno.get(i).getNivel(), alumno.get(i).getEdad(),
-                     alumno.get(i).getNombreTutor(), alumno.get(i).getTelefono()
+
+    private void LlenarTabla() {
+        List<Alumno> alumno = dao.ObtenerNiñosCompletado();
+        DefaultTableModel model = new DefaultTableModel();
+
+        model.addColumn("ID");
+        model.addColumn("Nombre Completo");
+        model.addColumn("Nivel Actual");
+        model.addColumn("Edad");
+        model.addColumn("Nombre Del Tutor");
+        model.addColumn("Telefono");
+
+        for (int i = 0; i < alumno.size(); i++) {
+            model.addRow(
+                    new Object[]{alumno.get(i).getIdAlumno(), alumno.get(i).getNombre(), alumno.get(i).getNivel(), alumno.get(i).getEdad(),
+                        alumno.get(i).getNombreTutor(), alumno.get(i).getTelefono()
+                    }
+            );
+            tbl_Niños.setModel(model);
+        }
+
     }
-         );
-         tbl_Niños.setModel(model);
-    }
-        
-    }
-    
+
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">

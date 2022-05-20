@@ -35,6 +35,7 @@ public class AgregarTerapeuta extends javax.swing.JFrame {
     public AgregarTerapeuta() {
         initComponents();
         setLocationRelativeTo(null);
+        setExtendedState(MAXIMIZED_BOTH);
     }
     private void limpiarCampos(){
     
@@ -132,7 +133,7 @@ public class AgregarTerapeuta extends javax.swing.JFrame {
                 lbl_AddTerapeutaMouseClicked(evt);
             }
         });
-        getContentPane().add(lbl_AddTerapeuta, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 550, -1, -1));
+        getContentPane().add(lbl_AddTerapeuta, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 460, -1, -1));
 
         lblNombre.setText("Nombre");
         getContentPane().add(lblNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 90, 220, 50));
@@ -159,7 +160,7 @@ public class AgregarTerapeuta extends javax.swing.JFrame {
         lblUsuario1.setText("Usuario");
         getContentPane().add(lblUsuario1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 410, 220, 50));
         getContentPane().add(txtContraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 560, 380, 50));
-        getContentPane().add(lbl_imagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 10, 450, 440));
+        getContentPane().add(lbl_imagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 150, 310, 260));
 
         lbl_subirImagen.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         lbl_subirImagen.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -174,7 +175,7 @@ public class AgregarTerapeuta extends javax.swing.JFrame {
                 lbl_subirImagenMouseClicked(evt);
             }
         });
-        getContentPane().add(lbl_subirImagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 560, -1, -1));
+        getContentPane().add(lbl_subirImagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 470, -1, -1));
 
         Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoAzul.jpg"))); // NOI18N
         getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));

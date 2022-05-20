@@ -32,23 +32,35 @@ import mx.itson.interfaces.DAOAlumnoIMP;
 public class EditarNiños extends javax.swing.JFrame {
 
     VerNiños VN = new VerNiños();
+    VerNiñosComplete niñoComplete = new VerNiñosComplete();
     DAOAlumnoIMP dao = new DAOAlumnoIMP();
     Alumno alumno = dao.obtenerPorId(VN.idNiño);
     private FileInputStream fis;
     private int longitudBytes = 0;
-    
+    private static int valor;
     
     
     public EditarNiños() {
         
         initComponents();
         setLocationRelativeTo(null);
+              if (VN.idNiño != 0) {
+            lbl_id.setText(VN.idNiño+"");
+        }else{
+        lbl_id.setText(niñoComplete.idNiño+"");
+        }
+         valor = Integer.valueOf(this.lbl_id.getText());
+        
         RefrescarAlumnos();
-        lbl_id.setText(VN.idNiño+"");
+        
+  
+       
         txt_NombreImagen.setVisible(false);
         txt_NombreImagen.setText("imagen");
+                setExtendedState(MAXIMIZED_BOTH);
+                 
     }
-    
+   
     
     
     public void EditarNino() {
@@ -79,7 +91,7 @@ public class EditarNiños extends javax.swing.JFrame {
                 pst.setString(4, NombreTutor);
                 pst.setString(5, Telefono+"");
                 pst.setBlob(6, fis, longitudBytes);
-                pst.setInt(7, VN.idNiño);
+                pst.setInt(7, valor);
                 
                 
                 pst.executeUpdate();
@@ -98,7 +110,7 @@ public class EditarNiños extends javax.swing.JFrame {
                 pst.setString(3, Nivel+"");
                 pst.setString(4, NombreTutor);
                 pst.setString(5, Telefono+"");
-                pst.setInt(6, VN.idNiño);
+                pst.setInt(6, valor);
                 
                 
                 
@@ -124,7 +136,7 @@ public class EditarNiños extends javax.swing.JFrame {
         DAOAlumnoIMP dao = new DAOAlumnoIMP();
         
         try {
-            Alumno nino = dao.obtenerPorId(vn.idNiño);
+            Alumno nino = dao.obtenerPorId(valor);
             txtNombre.setText(nino.getNombre());
             txtEdad.setText(nino.getEdad()+"");
             txtTutor.setText(nino.getNombreTutor());
@@ -134,7 +146,7 @@ public class EditarNiños extends javax.swing.JFrame {
             try {
                 
                 Connection cn = DBHelper.conectar() ;
-                PreparedStatement pst = cn.prepareStatement("SELECT * FROM sutspes.niños WHERE idNiño = " + vn.idNiño);
+                PreparedStatement pst = cn.prepareStatement("SELECT * FROM sutspes.niños WHERE idNiño = " + valor);
                 ResultSet rs = pst.executeQuery();
                 
                 if(rs.next()){
@@ -153,6 +165,7 @@ public class EditarNiños extends javax.swing.JFrame {
                     ImageIcon icono = new ImageIcon(img);
                     Icon imagen = new ImageIcon(icono.getImage().getScaledInstance(lbl_imagen.getWidth(), lbl_imagen.getHeight(), Image.SCALE_DEFAULT));
                     lbl_imagen.setIcon(imagen);
+               
                 }
                 
             } catch (SQLException e) {
@@ -235,8 +248,8 @@ public class EditarNiños extends javax.swing.JFrame {
                 lbl_subirImagenMouseClicked(evt);
             }
         });
-        getContentPane().add(lbl_subirImagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 600, -1, -1));
-        getContentPane().add(lbl_imagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, 520, 490));
+        getContentPane().add(lbl_subirImagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 470, -1, -1));
+        getContentPane().add(lbl_imagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 110, 370, 320));
 
         lbl_AddNiño.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         lbl_AddNiño.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -250,11 +263,11 @@ public class EditarNiños extends javax.swing.JFrame {
                 lbl_AddNinoMouseClicked(evt);
             }
         });
-        getContentPane().add(lbl_AddNiño, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 600, -1, -1));
+        getContentPane().add(lbl_AddNiño, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 470, -1, -1));
         getContentPane().add(txt_NombreImagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 560, 380, 50));
 
         Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoRosa.jpg"))); // NOI18N
-        getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
+        getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 710));
 
         lbl_id.setText("jLabel1");
         getContentPane().add(lbl_id, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 10, -1, -1));

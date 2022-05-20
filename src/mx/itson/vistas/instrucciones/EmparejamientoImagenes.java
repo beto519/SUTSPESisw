@@ -93,43 +93,44 @@ public class EmparejamientoImagenes extends javax.swing.JFrame {
         ReconocimientoCorporal1.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         ReconocimientoCorporal1.setText("Emparejamiento de Imagenes");
         ReconocimientoCorporal1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(ReconocimientoCorporal1, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 90, 560, 40));
+        getContentPane().add(ReconocimientoCorporal1, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 50, 560, 40));
 
         procedimiento2.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         procedimiento2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         procedimiento2.setText("PROCEDIMIENTO"); // NOI18N
         procedimiento2.setToolTipText("");
         procedimiento2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(procedimiento2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 170, 1010, 30));
+        getContentPane().add(procedimiento2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 130, 1010, 30));
 
         NombreDelPrograma1.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         NombreDelPrograma1.setText(" Nombre del Programa:");
         NombreDelPrograma1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(NombreDelPrograma1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 90, 450, 40));
+        getContentPane().add(NombreDelPrograma1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 50, 450, 40));
 
         Elaboro1.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         Elaboro1.setText("Mtro. Manuel Esquer Sumuano");
         Elaboro1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(Elaboro1, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 130, 560, 40));
+        getContentPane().add(Elaboro1, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 90, 560, 40));
 
         MtroManuel2.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         MtroManuel2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MtroManuel2.setText(" Elaboró:"); // NOI18N
         MtroManuel2.setToolTipText("");
         MtroManuel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(MtroManuel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 130, 450, 40));
+        getContentPane().add(MtroManuel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 90, 450, 40));
 
         jLabel4.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         jLabel4.setText("Programa ");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 30, 190, 60));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 0, 190, 60));
 
+        jTextArea4.setEditable(false);
         jTextArea4.setColumns(20);
         jTextArea4.setFont(new java.awt.Font("Dialog", 0, 20)); // NOI18N
         jTextArea4.setRows(5);
         jTextArea4.setText("PASO 1. Seleccione tarjetas con imágenes de objetos comunes. El criterio de selección de imágenes es que\ndeben tener 2 iguales, por ejemplo,dos tarjetas completamente idénticas de una naranja.\n\nPASO 2. Siéntese frente al niño en una mesa de trabajo.\n\nPASO 3. Coloque sobre la mesa  dos tarjetas distintas (por ejemplo, la imagen de una naranja y la imagen de\nuna bicicleta).Las tarjetas deben estar separadas entre sí por una distancia de aproximadamente 40 centímetros.\n\nPASO 4. Llame al niño por su nombre y diga “Junta las cosas iguales” al mismo tiempo que le muestra la tarjeta\ny se la entrega en la mano, siempre cuidando que ponga atención a la tarjeta que entregamos.\n\nPASO 5. La respuesta correcta del niño es la de juntar las tarjetas iguales. Si no da la respuesta correcta dé\napoyo tomando la mano del niño y dirigiendo su mano hacia la tarjeta igual, apóyelo para que suelte la tarjeta.\n\nPASO 6. Disminuya gradualmente el apoyo hasta cumplir el criterio.\n\nPASO 7. Refuerce cada respuesta correcta, sin importar si lo hizo o no con apoyo.\n");
         jScrollPane4.setViewportView(jTextArea4);
 
-        getContentPane().add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 200, 1010, 510));
+        getContentPane().add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 160, 1010, 370));
 
         btn_LoHace.setBackground(new java.awt.Color(0, 255, 51));
         btn_LoHace.setText("Lo hace");
@@ -138,7 +139,7 @@ public class EmparejamientoImagenes extends javax.swing.JFrame {
                 btn_LoHaceMouseClicked(evt);
             }
         });
-        getContentPane().add(btn_LoHace, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 720, -1, -1));
+        getContentPane().add(btn_LoHace, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 540, -1, -1));
 
         btn_NoLoHace.setBackground(new java.awt.Color(255, 0, 0));
         btn_NoLoHace.setForeground(new java.awt.Color(255, 255, 255));
@@ -148,7 +149,7 @@ public class EmparejamientoImagenes extends javax.swing.JFrame {
                 btn_NoLoHaceMouseClicked(evt);
             }
         });
-        getContentPane().add(btn_NoLoHace, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 720, -1, -1));
+        getContentPane().add(btn_NoLoHace, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 540, -1, -1));
 
         btn_LoHaceConAyuda.setBackground(new java.awt.Color(255, 255, 0));
         btn_LoHaceConAyuda.setText("Lo Hace Con Ayuda");
@@ -162,10 +163,10 @@ public class EmparejamientoImagenes extends javax.swing.JFrame {
                 btn_LoHaceConAyudaActionPerformed(evt);
             }
         });
-        getContentPane().add(btn_LoHaceConAyuda, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 720, -1, -1));
+        getContentPane().add(btn_LoHaceConAyuda, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 540, -1, -1));
 
         PB_ProgresoNiño.setStringPainted(true);
-        getContentPane().add(PB_ProgresoNiño, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 780, 1000, 30));
+        getContentPane().add(PB_ProgresoNiño, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 600, 1000, 30));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoAzul.jpg"))); // NOI18N
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1540, 890));

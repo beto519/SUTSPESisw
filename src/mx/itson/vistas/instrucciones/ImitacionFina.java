@@ -90,23 +90,23 @@ public class ImitacionFina extends javax.swing.JFrame {
         jTextArea1.setText("1.- Soplar.\n2.- Sacar la lengua.\n3.- Abrir y cerrar la boca.\n4.- Peinarse.\n5.- Mover los hombros.\n6.- Cerrar los ojos.\n7.- Cepillarse los dientes.");
         jScrollPane1.setViewportView(jTextArea1);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 600, 1010, 210));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 430, 1010, 140));
 
         procedimiento.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         procedimiento.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         procedimiento.setText("PROCEDIMIENTO"); // NOI18N
         procedimiento.setToolTipText("");
         procedimiento.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 570, 1010, 30));
+        getContentPane().add(procedimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 400, 1010, 30));
 
         jTextArea2.setEditable(false);
         jTextArea2.setColumns(20);
         jTextArea2.setFont(new java.awt.Font("Dialog", 0, 20)); // NOI18N
         jTextArea2.setRows(5);
-        jTextArea2.setText("PASO 1. Colóquese frente al niño. Seleccione una lista de comportamientos a imitar.\n\nPASO 2. Llame por su nombre al niño y de la instrucción “Haz esto”. Inmediatamente que da la instrucción haga\nun movimiento fino.\n\nPASO 3. Si el niño realiza la respuesta imitando al terapeuta dé un reforzador.\n\nPASO 4. Si no da la respuesta correcta, vuelva a dar la instrucción, luego inmediatamente ofrezca apoyo físico.\n\nPASO 5. Disminuya gradualmente el apoyo físico hasta alcanzar el criterio.\n\nPASO 6. Cada instrucción se repite 10 veces. Entre instrucciones debe haber por lo menos 10 segundos de\nseparación.\n");
+        jTextArea2.setText("PASO 1. Colóquese frente al niño. Seleccione una lista de comportamientos a imitar.\nPASO 2. Llame por su nombre al niño y de la instrucción “Haz esto”. Inmediatamente que da la instrucción haga\nun movimiento fino.\nPASO 3. Si el niño realiza la respuesta imitando al terapeuta dé un reforzador.\nPASO 4. Si no da la respuesta correcta, vuelva a dar la instrucción, luego inmediatamente ofrezca apoyo físico.\nPASO 5. Disminuya gradualmente el apoyo físico hasta alcanzar el criterio.\nPASO 6. Cada instrucción se repite 10 veces. Entre instrucciones debe haber por lo menos 10 segundos de\nseparación.\n");
         jScrollPane2.setViewportView(jTextArea2);
 
-        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 180, 1010, 390));
+        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 180, 1010, 220));
 
         procedimiento1.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         procedimiento1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -148,7 +148,7 @@ public class ImitacionFina extends javax.swing.JFrame {
                 btn_LoHaceMouseClicked(evt);
             }
         });
-        getContentPane().add(btn_LoHace, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 850, -1, -1));
+        getContentPane().add(btn_LoHace, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 580, -1, -1));
 
         btn_NoLoHace.setBackground(new java.awt.Color(255, 0, 0));
         btn_NoLoHace.setForeground(new java.awt.Color(255, 255, 255));
@@ -158,7 +158,7 @@ public class ImitacionFina extends javax.swing.JFrame {
                 btn_NoLoHaceMouseClicked(evt);
             }
         });
-        getContentPane().add(btn_NoLoHace, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 850, -1, -1));
+        getContentPane().add(btn_NoLoHace, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 580, -1, -1));
 
         btn_LoHaceConAyuda.setBackground(new java.awt.Color(255, 255, 0));
         btn_LoHaceConAyuda.setText("Lo Hace Con Ayuda");
@@ -172,10 +172,10 @@ public class ImitacionFina extends javax.swing.JFrame {
                 btn_LoHaceConAyudaActionPerformed(evt);
             }
         });
-        getContentPane().add(btn_LoHaceConAyuda, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 850, -1, -1));
+        getContentPane().add(btn_LoHaceConAyuda, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 580, -1, -1));
 
         PB_ProgresoNiño.setStringPainted(true);
-        getContentPane().add(PB_ProgresoNiño, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 910, 1010, 30));
+        getContentPane().add(PB_ProgresoNiño, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 620, 980, 30));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoAzul.jpg"))); // NOI18N
         jLabel3.setText("jLabel1");

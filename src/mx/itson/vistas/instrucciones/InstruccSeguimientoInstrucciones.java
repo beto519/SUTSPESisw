@@ -27,6 +27,7 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
                  setLocationRelativeTo(null);
          this.setExtendedState(MAXIMIZED_BOTH);
          niño();
+          
     }
 
     private void niño() {
@@ -99,213 +100,178 @@ public class InstruccSeguimientoInstrucciones extends javax.swing.JFrame {
                 btnVolverMouseClicked(evt);
             }
         });
-        getContentPane().add(btnVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 10, 70, -1));
+        getContentPane().add(btnVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 10, 100, 40));
 
         Instrucciones_1.setBackground(new java.awt.Color(0, 0, 0));
         Instrucciones_1.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
-        Instrucciones_1.setForeground(new java.awt.Color(0, 0, 0));
         Instrucciones_1.setText("1. Ponte de pie.");
         getContentPane().add(Instrucciones_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, 40));
 
         Instrucciones_2.setBackground(new java.awt.Color(0, 0, 0));
         Instrucciones_2.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
-        Instrucciones_2.setForeground(new java.awt.Color(0, 0, 0));
         Instrucciones_2.setText("2. Ven.");
         getContentPane().add(Instrucciones_2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, -1, -1));
 
         Instrucciones_3.setBackground(new java.awt.Color(0, 0, 0));
         Instrucciones_3.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
-        Instrucciones_3.setForeground(new java.awt.Color(0, 0, 0));
         Instrucciones_3.setText("3. Toca el piso con las manos.");
         getContentPane().add(Instrucciones_3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, -1, -1));
 
         Instrucciones_4.setBackground(new java.awt.Color(0, 0, 0));
         Instrucciones_4.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
-        Instrucciones_4.setForeground(new java.awt.Color(0, 0, 0));
         Instrucciones_4.setText("4. Levanta los brazos.");
         getContentPane().add(Instrucciones_4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, -1, -1));
 
         Instrucciones_5.setBackground(new java.awt.Color(0, 0, 0));
         Instrucciones_5.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
-        Instrucciones_5.setForeground(new java.awt.Color(0, 0, 0));
         Instrucciones_5.setText("5. Baja los brazos.");
         getContentPane().add(Instrucciones_5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, -1, -1));
 
         Instrucciones_6.setBackground(new java.awt.Color(0, 0, 0));
         Instrucciones_6.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
-        Instrucciones_6.setForeground(new java.awt.Color(0, 0, 0));
         Instrucciones_6.setText("6. Aplaude.");
         getContentPane().add(Instrucciones_6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 210, -1, -1));
 
         Instrucciones_7.setBackground(new java.awt.Color(0, 0, 0));
         Instrucciones_7.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
-        Instrucciones_7.setForeground(new java.awt.Color(0, 0, 0));
         Instrucciones_7.setText("7. Cruza los brazos.");
         getContentPane().add(Instrucciones_7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 250, -1, -1));
 
         Instrucciones_8.setBackground(new java.awt.Color(0, 0, 0));
         Instrucciones_8.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
-        Instrucciones_8.setForeground(new java.awt.Color(0, 0, 0));
         Instrucciones_8.setText("8. Toma esto (cualquier objeto).");
         getContentPane().add(Instrucciones_8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, -1, -1));
 
         Instrucciones_9.setBackground(new java.awt.Color(0, 0, 0));
         Instrucciones_9.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
-        Instrucciones_9.setForeground(new java.awt.Color(0, 0, 0));
         Instrucciones_9.setText("9. Ponlo debajo de la silla.");
         getContentPane().add(Instrucciones_9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 330, -1, -1));
 
         Instrucciones_10.setBackground(new java.awt.Color(0, 0, 0));
         Instrucciones_10.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
-        Instrucciones_10.setForeground(new java.awt.Color(0, 0, 0));
         Instrucciones_10.setText("10. Dame eso.");
         getContentPane().add(Instrucciones_10, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 370, -1, -1));
 
         Instrucciones_11.setBackground(new java.awt.Color(0, 0, 0));
         Instrucciones_11.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
-        Instrucciones_11.setForeground(new java.awt.Color(0, 0, 0));
         Instrucciones_11.setText("11. Abre la puerta.");
         getContentPane().add(Instrucciones_11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 410, -1, -1));
 
         Instrucciones_12.setBackground(new java.awt.Color(0, 0, 0));
         Instrucciones_12.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
-        Instrucciones_12.setForeground(new java.awt.Color(0, 0, 0));
         Instrucciones_12.setText("12. Cierra la puerta.");
         getContentPane().add(Instrucciones_12, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 450, -1, -1));
 
         Instrucciones_13.setBackground(new java.awt.Color(0, 0, 0));
         Instrucciones_13.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
-        Instrucciones_13.setForeground(new java.awt.Color(0, 0, 0));
         Instrucciones_13.setText("15. Cierra el libro.");
         getContentPane().add(Instrucciones_13, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 570, -1, -1));
 
         Instrucciones_14.setBackground(new java.awt.Color(0, 0, 0));
         Instrucciones_14.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
-        Instrucciones_14.setForeground(new java.awt.Color(0, 0, 0));
         Instrucciones_14.setText("14. Abre el libro.");
         getContentPane().add(Instrucciones_14, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 530, -1, -1));
 
         Instrucciones_15.setBackground(new java.awt.Color(0, 0, 0));
         Instrucciones_15.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
-        Instrucciones_15.setForeground(new java.awt.Color(0, 0, 0));
         Instrucciones_15.setText("16. Dame tu mano.");
         getContentPane().add(Instrucciones_15, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 610, -1, -1));
 
         Instrucciones_16.setBackground(new java.awt.Color(0, 0, 0));
         Instrucciones_16.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
-        Instrucciones_16.setForeground(new java.awt.Color(0, 0, 0));
         Instrucciones_16.setText("17. Toma el dulce.");
         getContentPane().add(Instrucciones_16, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 650, -1, -1));
 
         Instrucciones_17.setBackground(new java.awt.Color(0, 0, 0));
         Instrucciones_17.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
-        Instrucciones_17.setForeground(new java.awt.Color(0, 0, 0));
         Instrucciones_17.setText("18. Levántate.");
         getContentPane().add(Instrucciones_17, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 10, -1, -1));
 
         Instrucciones_18.setBackground(new java.awt.Color(0, 0, 0));
         Instrucciones_18.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
-        Instrucciones_18.setForeground(new java.awt.Color(0, 0, 0));
         Instrucciones_18.setText("19. Vete para allá.");
         getContentPane().add(Instrucciones_18, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 50, -1, -1));
 
         Instrucciones_19.setBackground(new java.awt.Color(0, 0, 0));
         Instrucciones_19.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
-        Instrucciones_19.setForeground(new java.awt.Color(0, 0, 0));
         Instrucciones_19.setText("20. Pon tus manos en el escritorio.");
         getContentPane().add(Instrucciones_19, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 90, -1, -1));
 
         Instrucciones_20.setBackground(new java.awt.Color(0, 0, 0));
         Instrucciones_20.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
-        Instrucciones_20.setForeground(new java.awt.Color(0, 0, 0));
         Instrucciones_20.setText("21. Pon las manos sobre la cabeza.");
         getContentPane().add(Instrucciones_20, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 130, -1, -1));
 
         Instrucciones_21.setBackground(new java.awt.Color(0, 0, 0));
         Instrucciones_21.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
-        Instrucciones_21.setForeground(new java.awt.Color(0, 0, 0));
         Instrucciones_21.setText("22. Tócate las rodillas con las manos.");
         getContentPane().add(Instrucciones_21, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 170, -1, -1));
 
         Instrucciones_22.setBackground(new java.awt.Color(0, 0, 0));
         Instrucciones_22.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
-        Instrucciones_22.setForeground(new java.awt.Color(0, 0, 0));
         Instrucciones_22.setText("23. Abre y cierra las manos.");
         getContentPane().add(Instrucciones_22, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 210, -1, -1));
 
         Instrucciones_23.setBackground(new java.awt.Color(0, 0, 0));
         Instrucciones_23.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
-        Instrucciones_23.setForeground(new java.awt.Color(0, 0, 0));
         Instrucciones_23.setText("24. Junta tus dedos.");
         getContentPane().add(Instrucciones_23, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 250, -1, -1));
 
         Instrucciones_24.setBackground(new java.awt.Color(0, 0, 0));
         Instrucciones_24.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
-        Instrucciones_24.setForeground(new java.awt.Color(0, 0, 0));
         Instrucciones_24.setText("25. Ponlo sobre la silla.");
         getContentPane().add(Instrucciones_24, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 290, -1, -1));
 
         Instrucciones_25.setBackground(new java.awt.Color(0, 0, 0));
         Instrucciones_25.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
-        Instrucciones_25.setForeground(new java.awt.Color(0, 0, 0));
         Instrucciones_25.setText("30. Cierra la caja.");
         getContentPane().add(Instrucciones_25, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 490, -1, -1));
 
         Instrucciones_26.setBackground(new java.awt.Color(0, 0, 0));
         Instrucciones_26.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
-        Instrucciones_26.setForeground(new java.awt.Color(0, 0, 0));
         Instrucciones_26.setText("29. Abre la caja.");
         getContentPane().add(Instrucciones_26, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 450, -1, -1));
 
         Instrucciones_27.setBackground(new java.awt.Color(0, 0, 0));
         Instrucciones_27.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
-        Instrucciones_27.setForeground(new java.awt.Color(0, 0, 0));
         Instrucciones_27.setText("31. Dame el cuaderno.");
         getContentPane().add(Instrucciones_27, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 530, -1, -1));
 
         Instrucciones_28.setBackground(new java.awt.Color(0, 0, 0));
         Instrucciones_28.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
-        Instrucciones_28.setForeground(new java.awt.Color(0, 0, 0));
         Instrucciones_28.setText("33. Dame las manos.");
         getContentPane().add(Instrucciones_28, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 610, -1, -1));
 
         Instrucciones_29.setBackground(new java.awt.Color(0, 0, 0));
         Instrucciones_29.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
-        Instrucciones_29.setForeground(new java.awt.Color(0, 0, 0));
         Instrucciones_29.setText("32. Saca la lengua.");
         getContentPane().add(Instrucciones_29, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 570, -1, -1));
 
         Instrucciones_30.setBackground(new java.awt.Color(0, 0, 0));
         Instrucciones_30.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
-        Instrucciones_30.setForeground(new java.awt.Color(0, 0, 0));
         Instrucciones_30.setText("28. Agáchate.");
         getContentPane().add(Instrucciones_30, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 410, -1, -1));
 
         Instrucciones_31.setBackground(new java.awt.Color(0, 0, 0));
         Instrucciones_31.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
-        Instrucciones_31.setForeground(new java.awt.Color(0, 0, 0));
         Instrucciones_31.setText("13. Recoge eso. ");
         getContentPane().add(Instrucciones_31, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 490, 170, -1));
 
         Instrucciones_32.setBackground(new java.awt.Color(0, 0, 0));
         Instrucciones_32.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
-        Instrucciones_32.setForeground(new java.awt.Color(0, 0, 0));
         Instrucciones_32.setText("27. Cierra el frasco.");
         getContentPane().add(Instrucciones_32, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 370, -1, -1));
 
         Instrucciones_33.setBackground(new java.awt.Color(0, 0, 0));
         Instrucciones_33.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
-        Instrucciones_33.setForeground(new java.awt.Color(0, 0, 0));
         Instrucciones_33.setText("26. Abre el frasco.");
         getContentPane().add(Instrucciones_33, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 330, -1, -1));
 
         jLabel1.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("en el suelo)");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 510, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("(algo que esté ");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 490, -1, -1));
 

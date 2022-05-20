@@ -18,7 +18,7 @@ public class Menu extends javax.swing.JFrame {
     public Menu() {
         initComponents();
         setLocationRelativeTo(null);
-
+        setExtendedState(MAXIMIZED_BOTH);
     }
 
     /**
@@ -45,7 +45,7 @@ public class Menu extends javax.swing.JFrame {
         LabelLogo2 = new javax.swing.JLabel();
         LabelFondo = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
