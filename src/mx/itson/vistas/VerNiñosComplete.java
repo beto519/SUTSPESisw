@@ -41,8 +41,8 @@ public class VerNiñosComplete extends javax.swing.JFrame {
         lbl_volver = new javax.swing.JLabel();
         lbl_edita = new javax.swing.JLabel();
         lbl_borrarNiño = new javax.swing.JLabel();
-        lbl_id = new javax.swing.JLabel();
         Fondo = new javax.swing.JLabel();
+        lbl_id = new javax.swing.JLabel();
 
         jList1.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
@@ -136,11 +136,11 @@ public class VerNiñosComplete extends javax.swing.JFrame {
         });
         getContentPane().add(lbl_borrarNiño, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 520, -1, -1));
 
-        lbl_id.setText("jLabel1");
-        getContentPane().add(lbl_id, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 580, -1, -1));
-
         Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/imagenes/FondoRosa.jpg"))); // NOI18N
         getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 700));
+
+        lbl_id.setText("jLabel1");
+        getContentPane().add(lbl_id, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 580, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
